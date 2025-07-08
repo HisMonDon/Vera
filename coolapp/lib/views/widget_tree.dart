@@ -1,6 +1,7 @@
 import 'package:coolapp/views/pages/about_this_app_page.dart';
 import 'package:coolapp/views/pages/help_page.dart';
 import 'package:coolapp/views/pages/home_page.dart';
+import 'package:coolapp/views/pages/locked_page.dart';
 import 'package:coolapp/views/pages/profile_page.dart';
 import 'package:coolapp/views/pages/videos_page.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +21,7 @@ class _WidgetTreeState extends State<WidgetTree> {
     HomePage(),
     VideosPage(),
     HelpPage(),
+    LockedPage(),
   ];
 
   void _onItemTapped(int index) {
