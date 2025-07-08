@@ -1,3 +1,5 @@
+import 'package:coolapp/views/pages/about_this_app_page.dart';
+import 'package:coolapp/views/pages/help_page.dart';
 import 'package:coolapp/views/pages/home_page.dart';
 import 'package:coolapp/views/pages/profile_page.dart';
 import 'package:coolapp/views/pages/videos_page.dart';
@@ -13,9 +15,11 @@ class WidgetTree extends StatefulWidget {
 class _WidgetTreeState extends State<WidgetTree> {
   int _selectedIndex = 1;
   static final List<Widget> _pages = <Widget>[
+    AboutThisAppPage(),
     ProfilePage(),
     HomePage(),
     VideosPage(),
+    HelpPage(),
   ];
 
   void _onItemTapped(int index) {
