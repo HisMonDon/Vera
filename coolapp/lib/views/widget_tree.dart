@@ -11,10 +11,10 @@ class WidgetTree extends StatefulWidget {
 }
 
 class _WidgetTreeState extends State<WidgetTree> {
-  int _selectedIndex = 1; // Default to ProfilePage
+  int _selectedIndex = 1;
   static final List<Widget> _pages = <Widget>[
-    HomePage(),
     ProfilePage(),
+    HomePage(),
     VideosPage(),
   ];
 
@@ -38,11 +38,22 @@ class _WidgetTreeState extends State<WidgetTree> {
         selectedIndex: _selectedIndex,
         onDestinationSelected: _onItemTapped,
         destinations: const [
-          NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
+          NavigationDestination(
+            icon: Icon(Icons.verified_user),
+            label: 'About this App',
+          ),
           NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
+          NavigationDestination(
+            icon: Icon(Icons.home, size: 35),
+            label: 'Home',
+          ),
           NavigationDestination(
             icon: Icon(Icons.ondemand_video),
             label: 'Videos',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.question_answer),
+            label: 'Help',
           ),
         ],
       ),
