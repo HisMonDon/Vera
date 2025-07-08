@@ -11,10 +11,22 @@ class LockedPage extends StatelessWidget {
       children: [
         Text(
           'Content Locked! Please get premium to access these videos.',
-          style: TextStyle(fontSize: 50),
+          style: TextStyle(
+            fontSize: 50,
+            color: const Color.fromARGB(255, 255, 255, 255),
+            decoration: TextDecoration.none,
+          ),
         ),
-        Text('All revenue from subscriptions go towards charity!'),
-        Icon(Icons.lock),
+        Text(
+          'All revenue from subscriptions go towards charity!',
+          style: TextStyle(
+            fontSize: 30,
+            color: Colors.white,
+            decoration: TextDecoration.none,
+          ),
+        ),
+        SizedBox(height: 20),
+        Icon(Icons.lock, size: 150),
       ],
     );
   }
