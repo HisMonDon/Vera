@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:coolapp/globals.dart';
 
 class HelpPage extends StatelessWidget {
   const HelpPage({super.key});
