@@ -27,7 +27,8 @@ class _WidgetTreeState extends State<WidgetTree> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _pages[_selectedIndex],
+      body: Center(child: _pages[_selectedIndex]),
+
       appBar: AppBar(
         centerTitle: true,
         title: Text("Vera"),

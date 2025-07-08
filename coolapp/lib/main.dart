@@ -23,8 +23,7 @@ class _MyAppState extends State<MyApp> {
           seedColor: Colors.teal,
           brightness: Brightness.dark,
         ),
-        textTheme:
-            GoogleFonts.interTextTheme(), // Example of using Google Fonts
+        textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
       ),
       home: WidgetTree(),
     );
