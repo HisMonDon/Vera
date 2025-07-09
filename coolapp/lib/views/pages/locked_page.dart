@@ -41,7 +41,7 @@ class LockedPage extends StatelessWidget {
           ),
           AutoSizeText(
             //change this when i get back from class
-            'All revenue from subscriptions go towards the SickKids Foundation!',
+            'All revenue from subscriptions go towards the SickKids!',
             style: GoogleFonts.openSans(
               fontSize: 30,
               color: Colors.white,

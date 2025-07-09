@@ -30,11 +30,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  firebase_core: ^2.25.4  # Use compatible versions
-  firebase_auth: ^4.17.4
-  cloud_firestore: ^4.15.5  # If needed
+  #firebase_core: ^2.25.4  # Use compatible versions
+  #firebase_auth: ^4.17.4
+  #cloud_firestore: ^4.15.5  # If needed
   google_fonts: ^6.1.0
   auto_size_text: ^3.0.0
+  http: ^1.1.0
+  shared_preferences: ^2.2.2
   
 dev_dependencies:
   flutter_test:
