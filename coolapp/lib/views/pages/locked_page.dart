@@ -1,4 +1,6 @@
 //page that displays whenever someone isn't subscribed
+import 'package:coolapp/main.dart';
+import 'package:coolapp/views/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -15,6 +17,15 @@ class LockedPage extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 15, 48, 40),
       ),
       backgroundColor: Color.fromARGB(255, 4, 34, 26),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => MyApp()),
+          );
+        },
+        child: Icon(Icons.arrow_back),
+      ),
 
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

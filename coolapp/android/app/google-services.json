@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "437357962430",
+    "firebase_url": "https://vera-a4111-default-rtdb.firebaseio.com",
+    "project_id": "vera-a4111",
+    "storage_bucket": "vera-a4111.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437357962430:android:10202b4fb3e20400eb6aef",
+        "android_client_info": {
+          "package_name": "com.example.coolapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuNJAkRB6cQ_7bQhNDk_8R3ktlgD_PlFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
