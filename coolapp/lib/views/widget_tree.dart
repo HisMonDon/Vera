@@ -14,7 +14,7 @@ class WidgetTree extends StatefulWidget {
 }
 
 class _WidgetTreeState extends State<WidgetTree> {
-  int _selectedIndex = 1;
+  int _selectedIndex = 0;
   static final List<Widget> _pages = <Widget>[
     AboutThisAppPage(),
     ProfilePage(),
