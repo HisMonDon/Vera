@@ -51,6 +51,10 @@ class NotLoggedIn extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => ProfilePage()),
                 );
               },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color.fromARGB(255, 28, 150, 109),
+                foregroundColor: Colors.white,
+              ),
               child: Text(
                 'Login or Sign Up',
                 style: GoogleFonts.montserrat(

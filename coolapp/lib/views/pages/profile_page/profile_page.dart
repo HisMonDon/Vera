@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:coolapp/services/auth_service.dart';
+import 'package:coolapp/globals.dart' as globals;
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -13,9 +14,11 @@ class _ProfilePageState extends State<ProfilePage> {
   final _passwordController = TextEditingController();
 
   bool _isLoading = false;
-  bool _isLogin = true; // Toggle between login and register
+  bool _isInitializing = true;
+  bool _isLogin = true;
   bool isLoggedIn = false;
   String _userEmail = '';
+  String? _errorMessage;
 
   @override
   void initState() {
@@ -31,14 +34,28 @@ class _ProfilePageState extends State<ProfilePage> {
   }
 
   Future<void> _checkLoginStatus() async {
-    final loggedIn = await _authService.isLoggedIn();
-    if (loggedIn) {
-      final email = await _authService.getCurrentUserEmail();
+    try {
+      final loggedIn = await _authService.isLoggedIn();
+      if (loggedIn) {
+        final email = await _authService.getCurrentUserEmail();
+        setState(() {
+          isLoggedIn = true;
+          _userEmail = email ?? '';
+        });
+      }
+    } catch (e) {
       setState(() {
-        isLoggedIn = true;
-        _userEmail = email ?? '';
+        _errorMessage = 'Failed to check login status';
+      });
+    } finally {
+      setState(() {
+        _isInitializing = false;
       });
     }
+  }
+
+  bool _isValidEmail(String email) {
+    return RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$').hasMatch(email);
   }
 
   Future<void> _submit() async {
@@ -46,51 +63,84 @@ class _ProfilePageState extends State<ProfilePage> {
       return;
     }
 
-    setState(() => _isLoading = true);
+    setState(() {
+      _isLoading = true;
+      _errorMessage = null;
+    });
 
-    bool success;
-    if (_isLogin) {
-      success = await _authService.signInWithEmail(
-        _emailController.text,
-        _passwordController.text,
-      );
-    } else {
-      success = await _authService.registerWithEmail(
-        _emailController.text,
-        _passwordController.text,
-      );
-    }
+    try {
+      bool success;
+      if (_isLogin) {
+        success = await _authService.signInWithEmail(
+          _emailController.text.trim(),
+          _passwordController.text,
+        );
+      } else {
+        success = await _authService.registerWithEmail(
+          _emailController.text.trim(),
+          _passwordController.text,
+        );
+      }
 
-    setState(() => _isLoading = false);
+      if (success) {
+        _emailController.clear();
+        _passwordController.clear();
+        await _checkLoginStatus();
 
-    if (success) {
-      _emailController.clear();
-      _passwordController.clear();
-      _checkLoginStatus();
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text('Authentication successful!')));
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            'Login failed. Please check your username or password.',
-          ),
-        ),
-      );
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                _isLogin
+                    ? 'Login successful!'
+                    : 'Account created successfully!',
+              ),
+              backgroundColor: Colors.green,
+            ),
+          );
+        }
+      } else {
+        setState(() {
+          _errorMessage = _isLogin
+              ? 'Login failed. Please check your credentials.'
+              : 'Registration failed. Please try again.';
+        });
+      }
+    } catch (e) {
+      setState(() {
+        _errorMessage = 'An error occurred. Please try again.';
+      });
+    } finally {
+      setState(() => _isLoading = false);
     }
   }
 
   Future<void> _signOut() async {
-    await _authService.signOut();
-    isLoggedIn = false;
-    setState(() {
-      isLoggedIn = false;
-      _userEmail = '';
-    });
-    ScaffoldMessenger.of(
-      context,
-    ).showSnackBar(SnackBar(content: Text('Logged out successfully')));
+    try {
+      await _authService.signOut();
+      setState(() {
+        isLoggedIn = false;
+        _userEmail = '';
+      });
+
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Logged out successfully'),
+            backgroundColor: Colors.orange,
+          ),
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Failed to log out'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+    }
   }
 
   Widget _buildLoginForm() {
@@ -102,62 +152,92 @@ class _ProfilePageState extends State<ProfilePage> {
         children: [
           Text(
             _isLogin ? 'Login' : 'Create Account',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
+
+          if (_errorMessage != null) ...[
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: Colors.red.shade50,
+                border: Border.all(color: Colors.red.shade200),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Text(
+                _errorMessage!,
+                style: TextStyle(color: Colors.red.shade700),
+                textAlign: TextAlign.center,
+              ),
+            ),
+            const SizedBox(height: 16),
+          ],
+
           TextFormField(
             controller: _emailController,
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               labelText: 'Email',
               border: OutlineInputBorder(),
               prefixIcon: Icon(Icons.email),
             ),
             keyboardType: TextInputType.emailAddress,
             validator: (value) {
-              if (value == null || value.isEmpty || !value.contains('@')) {
-                return 'Please enter a valid email';
+              if (value == null || value.trim().isEmpty) {
+                return 'Please enter your email';
+              }
+              if (!_isValidEmail(value.trim())) {
+                return 'Please enter a valid email address';
               }
               return null;
             },
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
+
           TextFormField(
             controller: _passwordController,
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               labelText: 'Password',
               border: OutlineInputBorder(),
               prefixIcon: Icon(Icons.lock),
             ),
             obscureText: true,
             validator: (value) {
-              if (value == null || value.isEmpty || value.length < 6) {
+              if (value == null || value.isEmpty) {
+                return 'Please enter your password';
+              }
+              if (value.length < 6) {
                 return 'Password must be at least 6 characters';
               }
               return null;
             },
           ),
-          SizedBox(height: 24),
+          const SizedBox(height: 24),
+
           if (_isLoading)
-            Center(child: CircularProgressIndicator())
+            const Center(child: CircularProgressIndicator())
           else
             ElevatedButton(
               onPressed: _submit,
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.symmetric(vertical: 12),
+                padding: const EdgeInsets.symmetric(vertical: 12),
               ),
               child: Text(
                 _isLogin ? 'Login' : 'Register',
-                style: TextStyle(fontSize: 16),
+                style: const TextStyle(fontSize: 16),
               ),
             ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
+
           TextButton(
-            onPressed: () {
-              setState(() {
-                _isLogin = !_isLogin;
-              });
-            },
+            onPressed: _isLoading
+                ? null
+                : () {
+                    setState(() {
+                      _isLogin = !_isLogin;
+                      _errorMessage = null;
+                    });
+                  },
             child: Text(
               _isLogin ? 'Create new account' : 'I already have an account',
             ),
@@ -168,32 +248,31 @@ class _ProfilePageState extends State<ProfilePage> {
   }
 
   Widget _buildProfileView() {
-    isLoggedIn = true;
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         CircleAvatar(
           radius: 50,
           backgroundColor: Colors.blue.shade100,
-          child: Icon(Icons.person, size: 50, color: Colors.blue),
+          child: const Icon(Icons.person, size: 50, color: Colors.blue),
         ),
-        SizedBox(height: 20),
-        Text(
+        const SizedBox(height: 20),
+        const Text(
           'Welcome!',
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Text(
           _userEmail,
           style: TextStyle(fontSize: 16, color: Colors.grey[700]),
         ),
-        SizedBox(height: 30),
+        const SizedBox(height: 30),
         OutlinedButton.icon(
-          icon: Icon(Icons.exit_to_app),
-          label: Text('Logout'),
+          icon: const Icon(Icons.exit_to_app),
+          label: const Text('Logout'),
           onPressed: _signOut,
           style: OutlinedButton.styleFrom(
-            padding: EdgeInsets.symmetric(horizontal: 30, vertical: 12),
+            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 12),
           ),
         ),
       ],
@@ -203,12 +282,14 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Profile')),
+      appBar: AppBar(title: const Text('Profile')),
       body: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Center(
           child: SingleChildScrollView(
-            child: isLoggedIn ? _buildProfileView() : _buildLoginForm(),
+            child: _isInitializing
+                ? const CircularProgressIndicator()
+                : (isLoggedIn ? _buildProfileView() : _buildLoginForm()),
           ),
         ),
       ),

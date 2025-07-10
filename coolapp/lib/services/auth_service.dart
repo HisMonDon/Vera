@@ -20,6 +20,7 @@ class AuthService {
   // Sign in with email and password
   Future<bool> signInWithEmail(String email, String password) async {
     try {
+      print('AuthService: Attempting to sign in with email: $email');
       final response = await http.post(
         Uri.parse('$_signInUrl?key=$apiKey'),
         headers: {'Content-Type': 'application/json'},
@@ -30,16 +31,28 @@ class AuthService {
         }),
       );
 
+      print('AuthService: Sign in response status: ${response.statusCode}');
+
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
+        print('AuthService: Sign in successful, saving auth data...');
         await _saveAuthData(data, email);
+        print('AuthService: Auth data saved successfully');
+
+        // Verify the data was saved correctly
+        final isLoggedIn = await this.isLoggedIn();
+        print('AuthService: Verification - isLoggedIn after save: $isLoggedIn');
+
         return true;
       } else {
         final error = json.decode(response.body);
+        print(
+          'AuthService: Sign in failed with error: ${error['error']['message']}',
+        );
         throw Exception(error['error']['message']);
       }
     } catch (e) {
-      print('Sign in error: $e');
+      print('AuthService: Sign in error: $e');
       return false;
     }
   }
@@ -47,6 +60,7 @@ class AuthService {
   // Register new user
   Future<bool> registerWithEmail(String email, String password) async {
     try {
+      print('AuthService: Attempting to register with email: $email');
       final response = await http.post(
         Uri.parse('$_signUpUrl?key=$apiKey'),
         headers: {'Content-Type': 'application/json'},
@@ -57,60 +71,114 @@ class AuthService {
         }),
       );
 
+      print('AuthService: Register response status: ${response.statusCode}');
+
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
+        print('AuthService: Registration successful, saving auth data...');
         await _saveAuthData(data, email);
+        print('AuthService: Auth data saved successfully');
+
+        // Verify the data was saved correctly
+        final isLoggedIn = await this.isLoggedIn();
+        print('AuthService: Verification - isLoggedIn after save: $isLoggedIn');
+
         return true;
       } else {
         final error = json.decode(response.body);
+        print(
+          'AuthService: Registration failed with error: ${error['error']['message']}',
+        );
         throw Exception(error['error']['message']);
       }
     } catch (e) {
-      print('Registration error: $e');
+      print('AuthService: Registration error: $e');
       return false;
     }
   }
 
   // Save authentication data to SharedPreferences
   Future<void> _saveAuthData(Map<String, dynamic> data, String email) async {
-    final prefs = await SharedPreferences.getInstance();
+    try {
+      final prefs = await SharedPreferences.getInstance();
 
-    final token = data['idToken'];
-    final expiresIn = int.parse(data['expiresIn']);
-    final expiryTime = DateTime.now()
-        .add(Duration(seconds: expiresIn))
-        .toIso8601String();
+      final token = data['idToken'];
+      final expiresIn = int.parse(data['expiresIn']);
+      final expiryTime = DateTime.now()
+          .add(Duration(seconds: expiresIn))
+          .toIso8601String();
 
-    await prefs.setString(_tokenKey, token);
-    await prefs.setString(_userEmailKey, email);
-    await prefs.setString(_expiryTimeKey, expiryTime);
+      print('AuthService: Saving token: ${token?.substring(0, 20)}...');
+      print('AuthService: Saving email: $email');
+      print('AuthService: Saving expiry time: $expiryTime');
+
+      await prefs.setString(_tokenKey, token);
+      await prefs.setString(_userEmailKey, email);
+      await prefs.setString(_expiryTimeKey, expiryTime);
+
+      print('AuthService: Data saved to SharedPreferences');
+    } catch (e) {
+      print('AuthService: Error saving auth data: $e');
+      rethrow;
+    }
   }
 
-  // Check if user is logged in
+  // isLoggedIn
   Future<bool> isLoggedIn() async {
-    final prefs = await SharedPreferences.getInstance();
-    final token = prefs.getString(_tokenKey);
-    final expiryTimeString = prefs.getString(_expiryTimeKey);
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final token = prefs.getString(_tokenKey);
+      final expiryTimeString = prefs.getString(_expiryTimeKey);
 
-    if (token == null || expiryTimeString == null) {
+      print('AuthService: Checking login status...');
+      print('AuthService: Token exists: ${token != null}');
+      print('AuthService: Expiry time string: $expiryTimeString');
+
+      if (token == null || expiryTimeString == null) {
+        print('AuthService: User not logged in - missing token or expiry time');
+        return false;
+      }
+
+      final expiryTime = DateTime.parse(expiryTimeString);
+      final now = DateTime.now();
+      final isValid = expiryTime.isAfter(now);
+
+      print('AuthService: Expiry time: $expiryTime');
+      print('AuthService: Current time: $now');
+      print('AuthService: Token is valid: $isValid');
+
+      return isValid;
+    } catch (e) {
+      print('AuthService: Error checking login status: $e');
       return false;
     }
-
-    final expiryTime = DateTime.parse(expiryTimeString);
-    return expiryTime.isAfter(DateTime.now());
   }
 
   // Get current user email
   Future<String?> getCurrentUserEmail() async {
-    final prefs = await SharedPreferences.getInstance();
-    return prefs.getString(_userEmailKey);
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final email = prefs.getString(_userEmailKey);
+      print('AuthService: Retrieved email: $email');
+      return email;
+    } catch (e) {
+      print('AuthService: Error getting current user email: $e');
+      return null;
+    }
   }
 
-  // Log out user
+  // Log out
   Future<void> signOut() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.remove(_tokenKey);
-    await prefs.remove(_userEmailKey);
-    await prefs.remove(_expiryTimeKey);
+    try {
+      print('AuthService: Signing out user...');
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.remove(_tokenKey);
+      await prefs.remove(_userEmailKey);
+      await prefs.remove(_expiryTimeKey);
+      print('AuthService: User signed out successfully');
+    } catch (e) {
+      print('AuthService: Error signing out: $e');
+      rethrow;
+    }
   }
 }

@@ -1,11 +1,27 @@
 import 'package:coolapp/views/widget_tree.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:coolapp/globals.dart' as globals;
+import 'package:coolapp/services/auth_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // No Firebase initialization here
+
+  await _initializeAuthState();
+
   runApp(MyApp());
+}
+
+//global debugging
+Future<void> _initializeAuthState() async {
+  try {
+    final authService = AuthService();
+    globals.isLoggedIn = await authService.isLoggedIn();
+    print('App initialized with isLoggedIn: ${globals.isLoggedIn}');
+  } catch (e) {
+    print('Error initializing auth state: $e');
+    globals.isLoggedIn = false;
+  }
 }
 
 class MyApp extends StatefulWidget {
