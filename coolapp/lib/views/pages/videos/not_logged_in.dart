@@ -21,14 +21,24 @@ class NotLoggedIn extends StatelessWidget {
       backgroundColor: Color.fromARGB(255, 4, 34, 26),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           AutoSizeText(
-            'Content Locked! Please create an account or log in to access these videos.',
+            'Content Locked!',
             style: GoogleFonts.montserrat(
-              fontSize: 40,
+              fontSize: 60,
               color: const Color.fromARGB(255, 255, 255, 255),
               decoration: TextDecoration.none,
-            ), //starts at 50, will shrink to fit
+            ), //starts at 60, will shrink to fit
+            maxLines: 1,
+          ),
+          AutoSizeText(
+            'Please create an account or log in to access these videos.',
+            style: GoogleFonts.montserrat(
+              fontSize: 30,
+              color: const Color.fromARGB(255, 255, 255, 255),
+              decoration: TextDecoration.none,
+            ), //starts at 30, will shrink to fit
             maxLines: 1,
           ),
           SizedBox(height: 20),
