@@ -72,7 +72,11 @@ class _ProfilePageState extends State<ProfilePage> {
       ).showSnackBar(SnackBar(content: Text('Authentication successful!')));
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Authentication failed. Please try again.')),
+        SnackBar(
+          content: Text(
+            'Login failed. Please check your username or password.',
+          ),
+        ),
       );
     }
   }
