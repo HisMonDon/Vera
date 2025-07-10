@@ -1,4 +1,5 @@
 library globals;
 
-bool loggedIn = false;
+bool isPremium = false;
+bool isLoggedIn = false;
 bool isAdmin = false;

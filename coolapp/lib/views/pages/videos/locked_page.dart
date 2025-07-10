@@ -1,5 +1,7 @@
 //page that displays whenever someone isn't subscribed
+import 'package:coolapp/main.dart';
 import 'package:coolapp/views/pages/videos/free_videos.dart';
+import 'package:coolapp/views/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:google_fonts/google_fonts.dart';

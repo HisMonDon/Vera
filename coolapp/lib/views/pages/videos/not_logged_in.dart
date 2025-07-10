@@ -19,16 +19,6 @@ class NotLoggedIn extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 15, 48, 40),
       ),
       backgroundColor: Color.fromARGB(255, 4, 34, 26),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(builder: (context) => FreeVideos()),
-          );
-        },
-        child: Icon(Icons.arrow_back),
-      ),
-
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
