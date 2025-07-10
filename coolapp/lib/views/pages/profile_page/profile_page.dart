@@ -14,7 +14,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
   bool _isLoading = false;
   bool _isLogin = true; // Toggle between login and register
-  bool _isLoggedIn = false;
+  bool isLoggedIn = false;
   String _userEmail = '';
 
   @override
@@ -35,7 +35,7 @@ class _ProfilePageState extends State<ProfilePage> {
     if (loggedIn) {
       final email = await _authService.getCurrentUserEmail();
       setState(() {
-        _isLoggedIn = true;
+        isLoggedIn = true;
         _userEmail = email ?? '';
       });
     }
@@ -83,8 +83,9 @@ class _ProfilePageState extends State<ProfilePage> {
 
   Future<void> _signOut() async {
     await _authService.signOut();
+    isLoggedIn = false;
     setState(() {
-      _isLoggedIn = false;
+      isLoggedIn = false;
       _userEmail = '';
     });
     ScaffoldMessenger.of(
@@ -167,6 +168,7 @@ class _ProfilePageState extends State<ProfilePage> {
   }
 
   Widget _buildProfileView() {
+    isLoggedIn = true;
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -206,7 +208,7 @@ class _ProfilePageState extends State<ProfilePage> {
         padding: EdgeInsets.all(16.0),
         child: Center(
           child: SingleChildScrollView(
-            child: _isLoggedIn ? _buildProfileView() : _buildLoginForm(),
+            child: isLoggedIn ? _buildProfileView() : _buildLoginForm(),
           ),
         ),
       ),

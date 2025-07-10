@@ -1,5 +1,6 @@
-import 'package:coolapp/views/pages/locked_page.dart';
-import 'package:coolapp/views/pages/paid_videos.dart';
+import 'package:coolapp/views/pages/videos/locked_page.dart';
+import 'package:coolapp/views/pages/videos/not_logged_in.dart';
+import 'package:coolapp/views/pages/videos/paid_videos.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart';
 
@@ -9,7 +10,7 @@ class VideosPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (loggedIn) {
+      if (isLoggedIn) {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => PaidVideos()),
@@ -17,7 +18,7 @@ class VideosPage extends StatelessWidget {
       } else {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => LockedPage()),
+          MaterialPageRoute(builder: (context) => NotLoggedIn()),
         );
       }
     });

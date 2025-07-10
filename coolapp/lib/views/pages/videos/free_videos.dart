@@ -5,6 +5,6 @@ class FreeVideos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text('Help Page'));
+    return Center(child: Text('Free Videos'));
   }
 }
