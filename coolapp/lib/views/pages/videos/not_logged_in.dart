@@ -1,6 +1,3 @@
-//page that displays whenever someone isn't subscribed
-import 'package:coolapp/views/pages/profile_page/profile_page.dart';
-import 'package:coolapp/views/widget_tree.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -11,7 +8,6 @@ class NotLoggedIn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    global.selectedIndex = 1;
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 4, 34, 26),
       body: Center(
@@ -25,7 +21,7 @@ class NotLoggedIn extends StatelessWidget {
                 fontSize: 60,
                 color: const Color.fromARGB(255, 255, 255, 255),
                 decoration: TextDecoration.none,
-              ), //starts at 60, will shrink to fit
+              ),
               maxLines: 1,
             ),
             AutoSizeText(
@@ -34,21 +30,26 @@ class NotLoggedIn extends StatelessWidget {
                 fontSize: 30,
                 color: const Color.fromARGB(255, 255, 255, 255),
                 decoration: TextDecoration.none,
-              ), //starts at 30, will shrink to fit
+              ),
               maxLines: 1,
             ),
             SizedBox(height: 20),
             Icon(Icons.lock, size: 150),
             ElevatedButton(
               onPressed: () {
-                global.selectedIndex = 1; //probably useless
-                global.globalTabController.index = 1;
+                // Update the selected index
+                global.selectedIndex = 1;
+
+                // Navigate to widget tree with profile tab selected
                 Navigator.of(
                   context,
                   rootNavigator: true,
-                ).pushNamedAndRemoveUntil('/widgetTree', (route) => false);
+                ).pushNamedAndRemoveUntil(
+                  '/widgetTree',
+                  (route) => false,
+                  arguments: 1,
+                );
               },
-
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 28, 150, 109),
                 foregroundColor: Colors.white,

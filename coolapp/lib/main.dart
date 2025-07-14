@@ -38,10 +38,15 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       initialRoute: '/widgetTree',
       routes: {
-        '/widgetTree': (context) => WidgetTree(),
+        '/widgetTree': (context) {
+          final args = ModalRoute.of(context)?.settings.arguments;
+          int initialIndex = 2;
+          if (args != null && args is int) {
+            initialIndex = args;
+          }
+          return WidgetTree(initialIndex: initialIndex);
+        },
         '/notLoggedIn': (context) => NotLoggedIn(),
-
-        //add more routes later if needed
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(

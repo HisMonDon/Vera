@@ -1,27 +1,32 @@
 import 'package:coolapp/views/pages/about_this_app/about_this_app_page.dart';
 import 'package:coolapp/views/pages/help_page/help_page.dart';
 import 'package:coolapp/views/pages/home/home_page.dart';
-import 'package:coolapp/views/pages/videos/locked_page.dart';
 import 'package:coolapp/views/pages/profile_page/profile_page.dart';
-import 'package:coolapp/views/pages/videos/videos_page.dart';
+import 'package:coolapp/views/pages/videos/not_logged_in.dart';
+import 'package:coolapp/views/pages/videos/paid_videos.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:coolapp/globals.dart' as globals;
 
 class WidgetTree extends StatefulWidget {
-  const WidgetTree({super.key});
+  final int initialIndex;
+  const WidgetTree({super.key, this.initialIndex = 0});
 
   @override
   State<WidgetTree> createState() => _WidgetTreeState();
 }
 
 class _WidgetTreeState extends State<WidgetTree> {
-  PersistentTabController get _controller => globals.globalTabController;
+  late PersistentTabController _controller;
   late VoidCallback _tabListener;
+
   @override
   void initState() {
     super.initState();
+    _controller = PersistentTabController(initialIndex: widget.initialIndex);
+    globals.selectedIndex =
+        widget.initialIndex; // Sync global state with initialIndex
+
     _tabListener = () {
       if (mounted && globals.selectedIndex != _controller.index) {
         setState(() {
@@ -40,11 +45,16 @@ class _WidgetTreeState extends State<WidgetTree> {
 
   // Wrap each screen with a Scaffold that has the AppBar
   List<Widget> _buildScreens() {
+    // Use appropriate video page based on login status
+    Widget videoScreen = globals.isLoggedIn
+        ? const PaidVideos()
+        : const NotLoggedIn();
+
     List<Widget> screens = [
       AboutThisAppPage(),
       ProfilePage(),
       HomePage(),
-      VideosPage(),
+      videoScreen,
       HelpPage(),
     ];
 
@@ -108,6 +118,15 @@ class _WidgetTreeState extends State<WidgetTree> {
       items: _navBarsItems(),
       backgroundColor: const Color.fromARGB(255, 15, 48, 40),
       navBarStyle: NavBarStyle.style1,
+      // Rebuild the screens when the login status changes
+      onItemSelected: (index) {
+        if (index == 3) {
+          // Videos tab
+          setState(() {
+            // This forces the screen to be rebuilt with the current login status
+          });
+        }
+      },
     );
   }
 }
