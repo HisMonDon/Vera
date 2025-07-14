@@ -17,26 +17,24 @@ class WidgetTree extends StatefulWidget {
 }
 
 class _WidgetTreeState extends State<WidgetTree> {
-  late PersistentTabController _controller;
-
+  PersistentTabController get _controller => globals.globalTabController;
+  late VoidCallback _tabListener;
   @override
   void initState() {
     super.initState();
-    _controller = PersistentTabController(initialIndex: globals.selectedIndex);
-
-    // Listen to controller changes to update global index
-    _controller.addListener(() {
-      if (globals.selectedIndex != _controller.index) {
+    _tabListener = () {
+      if (mounted && globals.selectedIndex != _controller.index) {
         setState(() {
           globals.selectedIndex = _controller.index;
         });
       }
-    });
+    };
+    _controller.addListener(_tabListener);
   }
 
   @override
   void dispose() {
-    _controller.dispose();
+    _controller.removeListener(_tabListener);
     super.dispose();
   }
 

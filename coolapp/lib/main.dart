@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/services/auth_service.dart';
+import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -35,6 +36,13 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      initialRoute: '/widgetTree',
+      routes: {
+        '/widgetTree': (context) => WidgetTree(),
+        '/notLoggedIn': (context) => NotLoggedIn(),
+
+        //add more routes later if needed
+      },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
@@ -43,7 +51,6 @@ class _MyAppState extends State<MyApp> {
         ),
         textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
       ),
-      home: const WidgetTree(),
     );
   }
 }

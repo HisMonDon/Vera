@@ -41,11 +41,14 @@ class NotLoggedIn extends StatelessWidget {
             Icon(Icons.lock, size: 150),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushReplacement(
+                global.selectedIndex = 1; //probably useless
+                global.globalTabController.index = 1;
+                Navigator.of(
                   context,
-                  MaterialPageRoute(builder: (context) => WidgetTree()),
-                );
+                  rootNavigator: true,
+                ).pushNamedAndRemoveUntil('/widgetTree', (route) => false);
               },
+
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 28, 150, 109),
                 foregroundColor: Colors.white,
