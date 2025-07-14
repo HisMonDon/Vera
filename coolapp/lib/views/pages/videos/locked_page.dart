@@ -12,11 +12,6 @@ class LockedPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text("Vera"),
-        backgroundColor: const Color.fromARGB(255, 15, 48, 40),
-      ),
       backgroundColor: Color.fromARGB(255, 4, 34, 26),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
@@ -28,31 +23,34 @@ class LockedPage extends StatelessWidget {
         child: Icon(Icons.arrow_back),
       ),
 
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          AutoSizeText(
-            'Content Locked! Please purchase premium to access these videos.',
-            style: GoogleFonts.montserrat(
-              fontSize: 40,
-              color: const Color.fromARGB(255, 255, 255, 255),
-              decoration: TextDecoration.none,
-            ), //starts at 50, will shrink to fit
-            maxLines: 1,
-          ),
-          AutoSizeText(
-            //change this when i get back from class
-            'All revenue from subscriptions go towards the SickKids!',
-            style: GoogleFonts.openSans(
-              fontSize: 30,
-              color: Colors.white,
-              decoration: TextDecoration.none,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            AutoSizeText(
+              'Content Locked! Please purchase premium to access these videos.',
+              style: GoogleFonts.montserrat(
+                fontSize: 40,
+                color: const Color.fromARGB(255, 255, 255, 255),
+                decoration: TextDecoration.none,
+              ), //starts at 50, will shrink to fit
+              maxLines: 1,
             ),
-            maxLines: 1,
-          ),
-          SizedBox(height: 20),
-          Icon(Icons.lock, size: 150),
-        ],
+            AutoSizeText(
+              //change this when i get back from class
+              'All revenue from subscriptions go towards the SickKids Foundation!',
+              style: GoogleFonts.openSans(
+                fontSize: 30,
+                color: Colors.white,
+                decoration: TextDecoration.none,
+              ),
+              maxLines: 1,
+            ),
+            SizedBox(height: 20),
+            Icon(Icons.lock, size: 150),
+          ],
+        ),
       ),
     );
   }
