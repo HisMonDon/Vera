@@ -1,3 +1,4 @@
+import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:coolapp/views/pages/videos/locked_page.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/paid_videos.dart';
@@ -22,10 +23,18 @@ class _VideosPageState extends State<VideosPage> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         if (globals.isLoggedIn) {
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(builder: (context) => PaidVideos()),
-          );
+          if (globals.isPremium || globals.isAdmin) {
+            //careful abt the isadmin part ill add this for now
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => PaidVideos()),
+            );
+          } else {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => FreeVideos()),
+            );
+          }
         } else {
           Navigator.pushReplacement(
             context,
