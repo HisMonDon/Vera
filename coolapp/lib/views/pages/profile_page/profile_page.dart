@@ -83,6 +83,7 @@ class _ProfilePageState extends State<ProfilePage> {
       }
 
       if (success) {
+        globals.isLoggedIn = true;
         _emailController.clear();
         _passwordController.clear();
         await _checkLoginStatus();
@@ -122,8 +123,9 @@ class _ProfilePageState extends State<ProfilePage> {
         isLoggedIn = false;
         _userEmail = '';
       });
-
+      globals.isLoggedIn = false;
       if (mounted) {
+        globals.isLoggedIn = false;
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
             content: Text('Logged out successfully'),
@@ -162,12 +164,14 @@ class _ProfilePageState extends State<ProfilePage> {
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
                 color: Colors.red.shade50,
-                border: Border.all(color: Colors.red.shade200),
+                border: Border.all(
+                  color: const Color.fromARGB(255, 245, 159, 159),
+                ),
                 borderRadius: BorderRadius.circular(8),
               ),
               child: Text(
                 _errorMessage!,
-                style: TextStyle(color: Colors.red.shade700),
+                style: TextStyle(color: const Color.fromARGB(255, 211, 42, 42)),
                 textAlign: TextAlign.center,
               ),
             ),
@@ -248,6 +252,7 @@ class _ProfilePageState extends State<ProfilePage> {
   }
 
   Widget _buildProfileView() {
+    globals.isLoggedIn = true;
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
