@@ -5,6 +5,7 @@ import 'package:coolapp/views/pages/profile_page/profile_page.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/paid_videos.dart';
 import 'package:flutter/material.dart';
+import 'package:coolapp/views/pages/videos/videos_page.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:coolapp/globals.dart' as globals;
 
@@ -45,16 +46,12 @@ class _WidgetTreeState extends State<WidgetTree> {
 
   // Wrap each screen with a Scaffold that has the AppBar
   List<Widget> _buildScreens() {
-    // Use appropriate video page based on login status
-    Widget videoScreen = globals.isLoggedIn
-        ? const PaidVideos()
-        : const NotLoggedIn();
-
+    // Use appropriate video page based on login statusR
     List<Widget> screens = [
       AboutThisAppPage(),
       ProfilePage(),
       HomePage(),
-      videoScreen,
+      VideosPage(),
       HelpPage(),
     ];
 
