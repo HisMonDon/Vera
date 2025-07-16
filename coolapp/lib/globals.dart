@@ -7,6 +7,4 @@ bool isLoggedIn = false;
 bool isAdmin = false;
 int selectedIndex = 2;
 bool isNavbarShowing = false;
-PersistentTabController globalTabController = PersistentTabController(
-  initialIndex: 2, //solves duplicate bug problem
-);
+int videosPageNumber = 1;
