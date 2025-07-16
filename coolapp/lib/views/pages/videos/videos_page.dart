@@ -1,3 +1,4 @@
+import 'package:coolapp/services/auth_service.dart';
 import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:coolapp/views/pages/videos/locked_page.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
@@ -13,53 +14,56 @@ class VideosPage extends StatefulWidget {
 }
 
 class _VideosPageState extends State<VideosPage> {
+  bool _checkedAuth = false;
+
   @override
   void initState() {
     super.initState();
     _checkAuthAndNavigate();
   }
 
-  //put this in checkAuthAndNavigate if not working
-  /*
-if mounted:
-if (globals.isLoggedIn) {
-          if (globals.isPremium || globals.isAdmin) {
-            //careful abt the isadmin part ill add this for now
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => PaidVideos()),
-            );
-          } else {
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => FreeVideos()),
-            );
-          }
-        } else {
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(builder: (context) => NotLoggedIn()),
-          );
-        }
-      }
-    });
+  // check auth status when dependencies change
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _checkAuthAndNavigate();
   }
-  */
+
+  //detect if it became active
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      _checkAuthAndNavigate();
+    }
+  }
+
   void _checkAuthAndNavigate() {
+    if (!mounted) return;
+
+    // prevent multiple navigation attempts in the same build cycle
+    if (_checkedAuth) return;
+    _checkedAuth = true;
+
+    // reset the flag after the current build cycle
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) {
-        if (!globals.isLoggedIn) {
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(builder: (context) => NotLoggedIn()),
-          );
-        }
+      _checkedAuth = false;
+
+      if (!globals.isLoggedIn) {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => NotLoggedIn()),
+        );
       }
     });
   }
 
   @override
   Widget build(BuildContext context) {
+    // add an immediate check in build method
+    if (!globals.isLoggedIn && !_checkedAuth) {
+      _checkAuthAndNavigate();
+    }
+
     return Scaffold(
       body: Stack(
         children: [
@@ -73,16 +77,15 @@ if (globals.isLoggedIn) {
                   height: 48,
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(255, 18, 90, 72),
-                    borderRadius: BorderRadius.circular(12), //12 pixels
+                    borderRadius: BorderRadius.circular(12),
                   ),
                 ),
-                SizedBox(width: 2, height: 20),
+                SizedBox(height: 20),
               ],
             ),
           ),
           Positioned(
-            bottom:
-                28, //bottom should be the sizedbox height + container height/8
+            bottom: 28,
             right: MediaQuery.of(context).size.width / 2 + 8,
             child: ElevatedButton(
               onPressed: () {
@@ -92,8 +95,7 @@ if (globals.isLoggedIn) {
             ),
           ),
           Positioned(
-            bottom:
-                28, //bottom should be the sizedbox height + container height/8
+            bottom: 28,
             left: MediaQuery.of(context).size.width / 2 + 8,
             child: ElevatedButton(
               onPressed: () {
@@ -104,6 +106,6 @@ if (globals.isLoggedIn) {
           ),
         ],
       ),
-    ); //loading
+    );
   }
 }
