@@ -5,6 +5,7 @@ import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/paid_videos.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
+import 'package:google_fonts/google_fonts.dart';
 
 class VideosPage extends StatefulWidget {
   const VideosPage({super.key});
@@ -63,7 +64,10 @@ class _VideosPageState extends State<VideosPage> {
     if (!globals.isLoggedIn && !_checkedAuth) {
       _checkAuthAndNavigate();
     }
-
+    int buttonColorShift = 10;
+    bool phy_11_hovered = false;
+    double _width = 400;
+    double _height = 500;
     return Scaffold(
       body:
           /* Stack(
@@ -112,24 +116,72 @@ class _VideosPageState extends State<VideosPage> {
               Positioned(
                 left: 40,
                 top: 40,
-                child: SizedBox(
-                  width: 400,
-                  height: 500,
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color.fromARGB(255, 10, 123, 199),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5),
+                child: MouseRegion(
+                  onEnter: (_) {
+                    setState(() {
+                      _width = 500;
+                      _height = 600;
+                    });
+                  },
+                  onExit: (_) {
+                    setState(() {
+                      _width = 400;
+                      _height = 500;
+                    });
+                  },
+                  child: AnimatedContainer(
+                    duration: Duration(milliseconds: 200),
+                    width: _width,
+                    height: _height,
+                    child: SizedBox(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color.fromARGB(
+                            255,
+                            10,
+                            73,
+                            59,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                        onPressed: () {
+                          print("Phy 1!");
+                        },
+                        /*onHover: (value) {
+                              buttonColorShift += 10;
+                              phy_11_hovered = true;
+                              print("wow"!);
+                            },*/
+                        child: Column(
+                          children: [
+                            const SizedBox(width: 1, height: 30),
+                            Text(
+                              'Grade 11 Physics',
+                              maxLines: 1,
+                              style: GoogleFonts.montserrat(
+                                fontSize: 30,
+                                color: const Color.fromARGB(255, 255, 255, 255),
+                              ),
+                            ),
+                            const SizedBox(width: 1, height: 10),
+                            Image(image: AssetImage('images/physics_11.jpg')),
+                            const SizedBox(width: 1, height: 20),
+                            Text(
+                              "Videos and tutorials for the Grade 11 Physics Ontario curriculum.\n\nCovers introduction to Phyics as well.",
+                              style: GoogleFonts.roboto(
+                                fontSize: 20,
+                                color: const Color.fromARGB(255, 199, 252, 221),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                    onPressed: () {
-                      print("Phy 1!");
-                    },
-                    child: Icon(Icons.import_contacts),
                   ),
                 ),
               ),
-              Image(image: AssetImage('images/physics_11.jpg')),
             ],
           ),
     );
