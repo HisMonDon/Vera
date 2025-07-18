@@ -65,7 +65,8 @@ class _VideosPageState extends State<VideosPage> {
     }
 
     return Scaffold(
-      body: Stack(
+      body:
+          /* Stack(
         children: [
           Align(
             alignment: Alignment.bottomCenter,
@@ -105,7 +106,32 @@ class _VideosPageState extends State<VideosPage> {
             ),
           ),
         ],
-      ),
+      ),*/
+          Stack(
+            children: [
+              Positioned(
+                left: 40,
+                top: 40,
+                child: SizedBox(
+                  width: 400,
+                  height: 500,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 10, 123, 199),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                    ),
+                    onPressed: () {
+                      print("Phy 1!");
+                    },
+                    child: Icon(Icons.import_contacts),
+                  ),
+                ),
+              ),
+              Image(image: AssetImage('coolapp/images/physics_11.jpg')),
+            ],
+          ),
     );
   }
 }
