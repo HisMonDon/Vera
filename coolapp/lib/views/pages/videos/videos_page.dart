@@ -129,7 +129,7 @@ class _VideosPageState extends State<VideosPage> {
                   ),
                 ),
               ),
-              Image(image: AssetImage('coolapp/images/physics_11.jpg')),
+              Image(image: AssetImage('images/physics_11.jpg')),
             ],
           ),
     );
