@@ -66,6 +66,7 @@ class _VideosPageState extends State<VideosPage> {
     if (!globals.isLoggedIn && !_checkedAuth) {
       _checkAuthAndNavigate();
     }
+    _width = MediaQuery.of(context).size.width - 50;
     int buttonColorShift = 10;
     bool phy_11_hovered = false;
     return Scaffold(
