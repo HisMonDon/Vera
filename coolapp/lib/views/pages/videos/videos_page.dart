@@ -7,6 +7,48 @@ import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 
+//ts is basaiclly the page bar thing
+/* Stack(
+        children: [
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  width: 180,
+                  height: 48,
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 18, 90, 72),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                SizedBox(height: 20),
+              ],
+            ),
+          ),
+          Positioned(
+            bottom: 28,
+            right: MediaQuery.of(context).size.width / 2 + 8,
+            child: ElevatedButton(
+              onPressed: () {
+                print("Pressed!");
+              },
+              child: Icon(Icons.arrow_back),
+            ),
+          ),
+          Positioned(
+            bottom: 28,
+            left: MediaQuery.of(context).size.width / 2 + 8,
+            child: ElevatedButton(
+              onPressed: () {
+                print("Pressed!");
+              },
+              child: Icon(Icons.arrow_forward),
+            ),
+          ),
+        ],
+      ),*/
 class VideosPage extends StatefulWidget {
   const VideosPage({super.key});
 
@@ -58,6 +100,64 @@ class _VideosPageState extends State<VideosPage> {
     });
   }
 
+  Widget _buildVideoButton(String title, String imagePath, String description) {
+    return MouseRegion(
+      onEnter: (_) {
+        setState(() {
+          _width = 450;
+          _height = 580;
+        });
+      },
+      onExit: (_) {
+        setState(() {
+          _width = 400;
+          _height = 500;
+        });
+      },
+      child: AnimatedContainer(
+        duration: Duration(milliseconds: 200),
+        width: _width,
+        height: _height,
+        child: SizedBox(
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color.fromARGB(255, 10, 73, 59),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+            onPressed: () {
+              print("Phy 1!");
+            },
+            child: Column(
+              children: [
+                const SizedBox(width: 1, height: 30),
+                Text(
+                  title,
+                  maxLines: 1,
+                  style: GoogleFonts.montserrat(
+                    fontSize: 30,
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                  ),
+                ),
+                const SizedBox(width: 1, height: 10),
+                Image(image: AssetImage(imagePath)),
+                const SizedBox(width: 1, height: 20),
+                Text(
+                  description,
+                  style: GoogleFonts.roboto(
+                    fontSize: 20,
+                    color: const Color.fromARGB(255, 199, 252, 221),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
   double _width = 400;
   double _height = 500;
   @override
@@ -66,397 +166,32 @@ class _VideosPageState extends State<VideosPage> {
     if (!globals.isLoggedIn && !_checkedAuth) {
       _checkAuthAndNavigate();
     }
-    _width = MediaQuery.of(context).size.width - 50;
     int buttonColorShift = 10;
     bool phy_11_hovered = false;
     return Scaffold(
-      body:
-          //ts is basaiclly the page bar thing
-          /* Stack(
-        children: [
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Container(
-                  width: 180,
-                  height: 48,
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 18, 90, 72),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                ),
-                SizedBox(height: 20),
-              ],
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.all(20),
+          child: GridView.builder(
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 3,
+              crossAxisSpacing: 20,
+              mainAxisSpacing: 50,
+              childAspectRatio: 0.8,
             ),
+            itemCount: 6,
+            itemBuilder: (context, index) {
+              return _buildVideoButton(
+                'Physics 11',
+                'images/physics_11.jpg',
+                'function',
+              );
+            },
           ),
-          Positioned(
-            bottom: 28,
-            right: MediaQuery.of(context).size.width / 2 + 8,
-            child: ElevatedButton(
-              onPressed: () {
-                print("Pressed!");
-              },
-              child: Icon(Icons.arrow_back),
-            ),
-          ),
-          Positioned(
-            bottom: 28,
-            left: MediaQuery.of(context).size.width / 2 + 8,
-            child: ElevatedButton(
-              onPressed: () {
-                print("Pressed!");
-              },
-              child: Icon(Icons.arrow_forward),
-            ),
-          ),
-        ],
-      ),*/
-          SingleChildScrollView(
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    Stack(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.only(left: 40, top: 40),
-                          child: MouseRegion(
-                            onEnter: (_) {
-                              setState(() {
-                                _width = 450;
-                                _height = 580;
-                              });
-                            },
-                            onExit: (_) {
-                              setState(() {
-                                _width = 400;
-                                _height = 500;
-                              });
-                            },
-                            child: AnimatedContainer(
-                              duration: Duration(milliseconds: 200),
-                              width: _width,
-                              height: _height,
-                              child: SizedBox(
-                                child: ElevatedButton(
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor: const Color.fromARGB(
-                                      255,
-                                      10,
-                                      73,
-                                      59,
-                                    ),
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(10),
-                                    ),
-                                  ),
-                                  onPressed: () {
-                                    print("Phy 1!");
-                                  },
-                                  /*onHover: (value) {
-                                        buttonColorShift += 10;
-                                        phy_11_hovered = true;
-                                        print("wow"!);
-                                      },*/
-                                  child: Column(
-                                    children: [
-                                      const SizedBox(width: 1, height: 30),
-                                      Text(
-                                        'Grade 11 Physics',
-                                        maxLines: 1,
-                                        style: GoogleFonts.montserrat(
-                                          fontSize: 30,
-                                          color: const Color.fromARGB(
-                                            255,
-                                            255,
-                                            255,
-                                            255,
-                                          ),
-                                        ),
-                                      ),
-                                      const SizedBox(width: 1, height: 10),
-                                      Image(
-                                        image: AssetImage(
-                                          'images/physics_11.jpg',
-                                        ),
-                                      ),
-                                      const SizedBox(width: 1, height: 20),
-                                      Text(
-                                        "Videos and tutorials for the Grade 11 Physics Ontario curriculum.\n\nCovers introduction to Phyics as well.",
-                                        style: GoogleFonts.roboto(
-                                          fontSize: 20,
-                                          color: const Color.fromARGB(
-                                            255,
-                                            199,
-                                            252,
-                                            221,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(left: 40, top: 40),
-                          child: MouseRegion(
-                            onEnter: (_) {
-                              setState(() {
-                                _width = 450;
-                                _height = 580;
-                              });
-                            },
-                            onExit: (_) {
-                              setState(() {
-                                _width = 400;
-                                _height = 500;
-                              });
-                            },
-                            child: AnimatedContainer(
-                              duration: Duration(milliseconds: 200),
-                              width: _width,
-                              height: _height,
-                              child: SizedBox(
-                                child: ElevatedButton(
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor: const Color.fromARGB(
-                                      255,
-                                      10,
-                                      73,
-                                      59,
-                                    ),
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(10),
-                                    ),
-                                  ),
-                                  onPressed: () {
-                                    print("Phy 1!");
-                                  },
-                                  /*onHover: (value) {
-                                        buttonColorShift += 10;
-                                        phy_11_hovered = true;
-                                        print("wow"!);
-                                      },*/
-                                  child: Column(
-                                    children: [
-                                      const SizedBox(width: 1, height: 30),
-                                      Text(
-                                        'AP Physics 1',
-                                        maxLines: 1,
-                                        style: GoogleFonts.montserrat(
-                                          fontSize: 30,
-                                          color: const Color.fromARGB(
-                                            255,
-                                            255,
-                                            255,
-                                            255,
-                                          ),
-                                        ),
-                                      ),
-                                      const SizedBox(width: 1, height: 10),
-                                      Image(
-                                        image: AssetImage(
-                                          'images/physics_11.jpg',
-                                        ),
-                                      ),
-                                      const SizedBox(width: 1, height: 20),
-                                      Text(
-                                        "Videos and tutorials for the Grade 11 Physics Ontario curriculum.\n\nCovers introduction to Physics as well.",
-                                        style: GoogleFonts.roboto(
-                                          fontSize: 20,
-                                          color: const Color.fromARGB(
-                                            255,
-                                            199,
-                                            252,
-                                            221,
-                                          ),
-                                        ),
-                                      ),
-                                      const SizedBox(width: 1, height: 30),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(left: 40, top: 40),
-                          child: MouseRegion(
-                            onEnter: (_) {
-                              setState(() {
-                                _width = 450;
-                                _height = 580;
-                              });
-                            },
-                            onExit: (_) {
-                              setState(() {
-                                _width = 400;
-                                _height = 500;
-                              });
-                            },
-                            child: AnimatedContainer(
-                              duration: Duration(milliseconds: 200),
-                              width: _width,
-                              height: _height,
-                              child: SizedBox(
-                                child: ElevatedButton(
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor: const Color.fromARGB(
-                                      255,
-                                      10,
-                                      73,
-                                      59,
-                                    ),
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(10),
-                                    ),
-                                  ),
-                                  onPressed: () {
-                                    print("Phy 1!");
-                                  },
-                                  /*onHover: (value) {
-                                        buttonColorShift += 10;
-                                        phy_11_hovered = true;
-                                        print("wow"!);
-                                      },*/
-                                  child: Column(
-                                    children: [
-                                      const SizedBox(width: 1, height: 30),
-                                      Text(
-                                        'Grade 11 Physics',
-                                        maxLines: 1,
-                                        style: GoogleFonts.montserrat(
-                                          fontSize: 30,
-                                          color: const Color.fromARGB(
-                                            255,
-                                            255,
-                                            255,
-                                            255,
-                                          ),
-                                        ),
-                                      ),
-                                      const SizedBox(width: 1, height: 10),
-                                      Image(
-                                        image: AssetImage(
-                                          'images/physics_11.jpg',
-                                        ),
-                                      ),
-                                      const SizedBox(width: 1, height: 20),
-                                      Text(
-                                        "Videos and tutorials for the Grade 11 Physics Ontario curriculum.\n\nCovers introduction to Phyics as well.",
-                                        style: GoogleFonts.roboto(
-                                          fontSize: 20,
-                                          color: const Color.fromARGB(
-                                            255,
-                                            199,
-                                            252,
-                                            221,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(left: 40, top: 630),
-                          child: MouseRegion(
-                            onEnter: (_) {
-                              setState(() {
-                                _width = 450;
-                                _height = 580;
-                              });
-                            },
-                            onExit: (_) {
-                              setState(() {
-                                _width = 400;
-                                _height = 500;
-                              });
-                            },
-                            child: AnimatedContainer(
-                              duration: Duration(milliseconds: 200),
-                              width: _width,
-                              height: _height,
-                              child: SizedBox(
-                                child: ElevatedButton(
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor: const Color.fromARGB(
-                                      255,
-                                      10,
-                                      73,
-                                      59,
-                                    ),
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(10),
-                                    ),
-                                  ),
-                                  onPressed: () {
-                                    print("Phy 1!");
-                                  },
-                                  /*onHover: (value) {
-                                        buttonColorShift += 10;
-                                        phy_11_hovered = true;
-                                        print("wow"!);
-                                      },*/
-                                  child: Column(
-                                    children: [
-                                      const SizedBox(width: 1, height: 30),
-                                      Text(
-                                        'AP Physics 1',
-                                        maxLines: 1,
-                                        style: GoogleFonts.montserrat(
-                                          fontSize: 30,
-                                          color: const Color.fromARGB(
-                                            255,
-                                            255,
-                                            255,
-                                            255,
-                                          ),
-                                        ),
-                                      ),
-                                      const SizedBox(width: 1, height: 10),
-                                      Image(
-                                        image: AssetImage(
-                                          'images/physics_11.jpg',
-                                        ),
-                                      ),
-                                      const SizedBox(width: 1, height: 20),
-                                      Text(
-                                        "Videos and tutorials for the Grade 11 Physics Ontario curriculum.\n\nCovers introduction to Physics as well.",
-                                        style: GoogleFonts.roboto(
-                                          fontSize: 20,
-                                          color: const Color.fromARGB(
-                                            255,
-                                            199,
-                                            252,
-                                            221,
-                                          ),
-                                        ),
-                                      ),
-                                      const SizedBox(width: 1, height: 30),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ),
+        ),
+      ),
     );
   }
 }
