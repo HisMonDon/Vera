@@ -100,18 +100,32 @@ class _VideosPageState extends State<VideosPage> {
     });
   }
 
-  Widget _buildVideoButton(String title, String imagePath, String description) {
+  Widget _buildVideoButton(
+    String title,
+    String imagePath,
+    String description,
+    int index,
+  ) {
+    double _width;
+    double _height;
+    bool isHovered = hoveredStates[index] ?? false;
+    if (isHovered) {
+      _width = 450;
+      _height = 550;
+    } else {
+      _height = 500;
+      _width = 500;
+    }
+
     return MouseRegion(
       onEnter: (_) {
         setState(() {
-          _width = 450;
-          _height = 580;
+          hoveredStates[index] = true;
         });
       },
       onExit: (_) {
         setState(() {
-          _width = 400;
-          _height = 500;
+          hoveredStates[index] = false;
         });
       },
       child: AnimatedContainer(
@@ -160,6 +174,56 @@ class _VideosPageState extends State<VideosPage> {
 
   double _width = 400;
   double _height = 500;
+  Map<int, bool> hoveredStates = {};
+  final List<Map<String, String>> courseList = [
+    {
+      'title': 'IB Physics HL',
+      'imagePath': 'images/ib_physics_hl.jpg',
+      'description':
+          'Complete International Baccalaureate Higher Level physics curriculum with focus on experimental skills and data analysis.',
+    },
+    {
+      'title': 'Kinematics',
+      'imagePath': 'images/kinematics.jpg',
+      'description': 'A course all about kinematics and projectile motion',
+    },
+    {
+      'title': 'Electricity and Magnetism',
+      'imagePath': 'images/electricity.jpg',
+      'description':
+          'Focuses on electric fields, circuits, magnetic interactions, and electromagnetic waves',
+    },
+    {
+      'title': 'Introduction to Physics',
+      'imagePath': 'images/intro_to_physics.jpg',
+      'description':
+          'Covers the basics of physics, including vectors, velocity, and displacement',
+    },
+    {
+      'title': 'Grade 11 Physics',
+      'imagePath': 'images/physics_11.jpg',
+      'description':
+          'Videos and tutorials for the Grade 11 Physics Ontario curriculum.',
+    },
+    {
+      'title': 'Grade 12 Physics',
+      'imagePath': 'images/physics_12.jpg',
+      'description':
+          'Videos and tutorials for the Grade 12 Physics Ontario curriculum.',
+    },
+    {
+      'title': 'AP Physics 1',
+      'imagePath': 'images/ap_courses.jpg',
+      'description':
+          'Preparation videos for the AP Physics 1 exam covering kinematics, Newton\'s laws, circular motion, and simple harmonic oscillators.',
+    },
+    {
+      'title': 'AP Physics 2',
+      'imagePath': 'images/ap_physics_2.png',
+      'description':
+          'Algebra-based physics covering fluid mechanics, thermodynamics, electricity, magnetism, optics, and quantum phenomena',
+    },
+  ];
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
@@ -178,15 +242,17 @@ class _VideosPageState extends State<VideosPage> {
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3,
               crossAxisSpacing: 20,
-              mainAxisSpacing: 50,
+              mainAxisSpacing: 20,
               childAspectRatio: 0.8,
             ),
-            itemCount: 6,
+            itemCount: courseList.length,
             itemBuilder: (context, index) {
+              final course = courseList[index];
               return _buildVideoButton(
-                'Physics 11',
-                'images/physics_11.jpg',
-                'function',
+                course['title'] ?? '',
+                course['imagePath'] ?? '',
+                course['description'] ?? '',
+                index,
               );
             },
           ),
