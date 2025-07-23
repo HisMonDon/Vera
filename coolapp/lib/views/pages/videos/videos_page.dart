@@ -60,53 +60,17 @@ class VideosPage extends StatefulWidget {
 class _VideosPageState extends State<VideosPage> {
   bool _checkedAuth = false;
 
-  @override
-  void initState() {
-    super.initState();
-    _checkAuthAndNavigate();
-  }
-
-  // check auth status when dependencies change
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    _checkAuthAndNavigate();
-  }
-
-  //detect if it became active
-  @override
-  void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.resumed) {
-      _checkAuthAndNavigate();
-    }
-  }
-
-  void _checkAuthAndNavigate() {
-    if (!mounted) return;
-
-    // prevent multiple navigation attempts in the same build cycle
-    if (_checkedAuth) return;
-    _checkedAuth = true;
-
-    // reset the flag after the current build cycle
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      _checkedAuth = false;
-
-      if (!globals.isLoggedIn) {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => NotLoggedIn()),
-        );
-      }
-    });
-  }
-
   Widget _buildVideoButton(
     String title,
     String imagePath,
     String description,
     int index,
+    Widget videoPage,
   ) {
+    if (!globals.isLoggedIn) {
+      return NotLoggedIn(); //keep in mind that this js does the message in every single button
+    }
+
     double _width;
     double _height;
     bool isHovered = hoveredStates[index] ?? false;
@@ -129,45 +93,46 @@ class _VideosPageState extends State<VideosPage> {
           hoveredStates[index] = false;
         });
       },
-      child: AnimatedContainer(
+      child: AnimatedScale(
         duration: Duration(milliseconds: 200),
-        width: _width,
-        height: _height,
-        child: SizedBox(
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 10, 73, 59),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
+        scale: isHovered ? 1.05 : 1.0,
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color.fromARGB(255, 10, 73, 59),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
+            ),
+          ),
+          onPressed: () {
+            print("Pushing nav page ontop of stack...");
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => videoPage),
+            );
+          },
+          child: Column(
+            children: [
+              const SizedBox(width: 1, height: 30),
+              Text(
+                title,
+                maxLines: 1,
+                style: GoogleFonts.montserrat(
+                  fontSize: 30,
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                ),
               ),
-            ),
-            onPressed: () {
-              print("Phy 1!");
-            },
-            child: Column(
-              children: [
-                const SizedBox(width: 1, height: 30),
-                Text(
-                  title,
-                  maxLines: 1,
-                  style: GoogleFonts.montserrat(
-                    fontSize: 30,
-                    color: const Color.fromARGB(255, 255, 255, 255),
-                  ),
+              const SizedBox(width: 1, height: 10),
+              Image(image: AssetImage(imagePath)),
+              const SizedBox(width: 1, height: 20),
+              AutoSizeText(
+                description,
+                style: GoogleFonts.roboto(
+                  fontSize: 20,
+                  color: const Color.fromARGB(255, 199, 252, 221),
                 ),
-                const SizedBox(width: 1, height: 10),
-                Image(image: AssetImage(imagePath)),
-                const SizedBox(width: 1, height: 20),
-                AutoSizeText(
-                  description,
-                  style: GoogleFonts.roboto(
-                    fontSize: 20,
-                    color: const Color.fromARGB(255, 199, 252, 221),
-                  ),
-                  maxLines: 3,
-                ),
-              ],
-            ),
+                maxLines: 3,
+              ),
+            ],
           ),
         ),
       ),
@@ -177,63 +142,72 @@ class _VideosPageState extends State<VideosPage> {
   double _width = 400;
   double _height = 500;
   Map<int, bool> hoveredStates = {};
-  final List<Map<String, String>> courseList = [
+  final List<Map<String, dynamic>> courseList = [
     {
       'title': 'IB Physics HL',
       'imagePath': 'images/ib_physics_hl.jpg',
       'description':
           'Complete International Baccalaureate Higher Level physics curriculum with focus on experimental skills and data analysis.',
+      'videoPage': FreeVideos(),
     },
     {
       'title': 'Kinematics',
       'imagePath': 'images/kinematics.jpg',
       'description': 'Tutorial videos on kinematics and projectile motion',
+      'videoPage': FreeVideos(),
     },
     {
       'title': 'Electricity and Magnetism',
       'imagePath': 'images/electricity.jpg',
       'description':
           'Tutorial videos on electric fields, circuits, magnetic interactions, and electromagnetic waves',
+      'videoPage': FreeVideos(),
     },
     {
       'title': 'Introduction to Physics',
       'imagePath': 'images/intro_to_physics.jpg',
       'description':
           'Covers the basics of physics, including vectors, velocity, and displacement',
+      'videoPage': FreeVideos(),
     },
     {
       'title': 'Grade 11 Physics',
       'imagePath': 'images/physics_11.jpg',
       'description':
           'Videos and tutorials for the Grade 11 Physics Ontario curriculum.',
+      'videoPage': FreeVideos(),
     },
     {
       'title': 'Grade 12 Physics',
       'imagePath': 'images/physics_12.jpg',
       'description':
           'Videos and tutorials for the Grade 12 Physics Ontario curriculum.',
+      'videoPage': FreeVideos(),
     },
     {
       'title': 'AP Physics 1',
       'imagePath': 'images/ap_courses.jpg',
       'description':
           'Preparation videos for the AP Physics 1 exam covering kinematics, Newton\'s laws, circular motion, and simple harmonic oscillators.',
+      'videoPage': FreeVideos(),
     },
     {
       'title': 'AP Physics 2',
       'imagePath': 'images/ap_physics_2.png',
       'description':
           'Algebra-based physics covering fluid mechanics, thermodynamics, electricity, magnetism, optics, and quantum phenomena',
+      'videoPage': FreeVideos(),
     },
   ];
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    if (!globals.isLoggedIn && !_checkedAuth) {
-      _checkAuthAndNavigate();
-    }
+
     int buttonColorShift = 10;
     bool phy_11_hovered = false;
+    if (!globals.isLoggedIn) {
+      return NotLoggedIn();
+    }
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -243,11 +217,13 @@ class _VideosPageState extends State<VideosPage> {
             physics: NeverScrollableScrollPhysics(),
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3,
+
               crossAxisSpacing: 20,
               mainAxisSpacing: 20,
               childAspectRatio: 0.8,
             ),
             itemCount: courseList.length,
+
             itemBuilder: (context, index) {
               final course = courseList[index];
               return _buildVideoButton(
@@ -255,6 +231,7 @@ class _VideosPageState extends State<VideosPage> {
                 course['imagePath'] ?? '',
                 course['description'] ?? '',
                 index,
+                course['videoPage']!,
               );
             },
           ),
