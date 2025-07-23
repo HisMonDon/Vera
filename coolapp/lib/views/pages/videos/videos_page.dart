@@ -4,6 +4,8 @@ import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:coolapp/views/pages/videos/locked_page.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/paid_videos.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/ap_physics_1.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/ap_physics_2.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/electricity_and_magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/grade_11_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/grade_12_physics.dart';
@@ -195,14 +197,14 @@ class _VideosPageState extends State<VideosPage> {
       'imagePath': 'images/ap_courses.jpg',
       'description':
           'Preparation videos for the AP Physics 1 exam covering kinematics, Newton\'s laws, circular motion, and simple harmonic oscillators.',
-      'videoPage': FreeVideos(),
+      'videoPage': ApPhysics1(),
     },
     {
       'title': 'AP Physics 2',
       'imagePath': 'images/ap_physics_2.png',
       'description':
           'Algebra-based physics covering fluid mechanics, thermodynamics, electricity, magnetism, optics, and quantum phenomena',
-      'videoPage': FreeVideos(),
+      'videoPage': ApPhysics2(),
     },
   ];
   @override
