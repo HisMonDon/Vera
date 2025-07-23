@@ -4,6 +4,7 @@ import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:coolapp/views/pages/videos/locked_page.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/paid_videos.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/grade_12_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/ib_physics_hl.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/kinematics.dart';
@@ -185,7 +186,7 @@ class _VideosPageState extends State<VideosPage> {
       'imagePath': 'images/physics_12.jpg',
       'description':
           'Videos and tutorials for the Grade 12 Physics Ontario curriculum.',
-      'videoPage': FreeVideos(),
+      'videoPage': Grade12Physics(),
     },
     {
       'title': 'AP Physics 1',
