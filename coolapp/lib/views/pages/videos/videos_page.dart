@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/services/auth_service.dart';
 import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:coolapp/views/pages/videos/locked_page.dart';
@@ -157,12 +158,13 @@ class _VideosPageState extends State<VideosPage> {
                 const SizedBox(width: 1, height: 10),
                 Image(image: AssetImage(imagePath)),
                 const SizedBox(width: 1, height: 20),
-                Text(
+                AutoSizeText(
                   description,
                   style: GoogleFonts.roboto(
                     fontSize: 20,
                     color: const Color.fromARGB(255, 199, 252, 221),
                   ),
+                  maxLines: 3,
                 ),
               ],
             ),
@@ -185,13 +187,13 @@ class _VideosPageState extends State<VideosPage> {
     {
       'title': 'Kinematics',
       'imagePath': 'images/kinematics.jpg',
-      'description': 'A course all about kinematics and projectile motion',
+      'description': 'Tutorial videos on kinematics and projectile motion',
     },
     {
       'title': 'Electricity and Magnetism',
       'imagePath': 'images/electricity.jpg',
       'description':
-          'Focuses on electric fields, circuits, magnetic interactions, and electromagnetic waves',
+          'Tutorial videos on electric fields, circuits, magnetic interactions, and electromagnetic waves',
     },
     {
       'title': 'Introduction to Physics',
