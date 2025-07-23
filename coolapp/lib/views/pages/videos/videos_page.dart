@@ -212,26 +212,35 @@ class _VideosPageState extends State<VideosPage> {
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(20),
-          child: GridView.builder(
-            shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 3,
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              final crossAxisCount = constraints.maxWidth > 1000
+                  ? 3
+                  : constraints.maxWidth > 700
+                  ? 2
+                  : 1;
+              return GridView.builder(
+                shrinkWrap: true,
+                physics: NeverScrollableScrollPhysics(),
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: crossAxisCount,
 
-              crossAxisSpacing: 20,
-              mainAxisSpacing: 20,
-              childAspectRatio: 0.8,
-            ),
-            itemCount: courseList.length,
+                  crossAxisSpacing: 20,
+                  mainAxisSpacing: 20,
+                  childAspectRatio: 0.8,
+                ),
+                itemCount: courseList.length,
 
-            itemBuilder: (context, index) {
-              final course = courseList[index];
-              return _buildVideoButton(
-                course['title'] ?? '',
-                course['imagePath'] ?? '',
-                course['description'] ?? '',
-                index,
-                course['videoPage']!,
+                itemBuilder: (context, index) {
+                  final course = courseList[index];
+                  return _buildVideoButton(
+                    course['title'] ?? '',
+                    course['imagePath'] ?? '',
+                    course['description'] ?? '',
+                    index,
+                    course['videoPage']!,
+                  );
+                },
               );
             },
           ),
