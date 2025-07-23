@@ -4,6 +4,7 @@ import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:coolapp/views/pages/videos/locked_page.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/paid_videos.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/grade_11_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/grade_12_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/ib_physics_hl.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/intro_to_physics.dart';
@@ -179,7 +180,7 @@ class _VideosPageState extends State<VideosPage> {
       'imagePath': 'images/physics_11.jpg',
       'description':
           'Videos and tutorials for the Grade 11 Physics Ontario curriculum.',
-      'videoPage': FreeVideos(),
+      'videoPage': Grade11Physics(),
     },
     {
       'title': 'Grade 12 Physics',
