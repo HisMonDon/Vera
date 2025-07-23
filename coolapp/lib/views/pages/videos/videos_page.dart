@@ -4,6 +4,7 @@ import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:coolapp/views/pages/videos/locked_page.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/paid_videos.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/electricity_and_magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/grade_11_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/grade_12_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/ib_physics_hl.dart';
@@ -166,7 +167,7 @@ class _VideosPageState extends State<VideosPage> {
       'imagePath': 'images/electricity.jpg',
       'description':
           'Tutorial videos on electric fields, circuits, magnetic interactions, and electromagnetic waves',
-      'videoPage': FreeVideos(),
+      'videoPage': ElectricityAndMagnetism(),
     },
     {
       'title': 'Introduction to Physics',
