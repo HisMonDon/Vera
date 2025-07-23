@@ -100,7 +100,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
     {
       'title': 'Unit 2',
       'description':
-          'Basic Concepts of Motion, displacement vs. distance, speed vs. velocity',
+          'Tools and techniques for measurement, error analysis and uncertainty in measurements',
       'videoPage': FreeVideos(),
     },
     {
@@ -112,7 +112,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
     {
       'title': 'Unit 4',
       'description':
-          'Tools and techniques for measurement, error analysis and uncertainty in measurements',
+          'Basic concepts of motion, displacement vs. distance, speed vs. velocity',
       'videoPage': FreeVideos(),
     },
   ];

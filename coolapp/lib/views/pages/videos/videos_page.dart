@@ -4,6 +4,7 @@ import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:coolapp/views/pages/videos/locked_page.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/paid_videos.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/ib_physics_hl.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/kinematics.dart';
 import 'package:flutter/material.dart';
@@ -150,7 +151,7 @@ class _VideosPageState extends State<VideosPage> {
       'imagePath': 'images/ib_physics_hl.jpg',
       'description':
           'Complete International Baccalaureate Higher Level physics curriculum with focus on experimental skills and data analysis.',
-      'videoPage': FreeVideos(),
+      'videoPage': IbPhysicsHl(),
     },
     {
       'title': 'Kinematics',
