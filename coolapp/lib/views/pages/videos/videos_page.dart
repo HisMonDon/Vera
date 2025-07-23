@@ -4,6 +4,7 @@ import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:coolapp/views/pages/videos/locked_page.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/paid_videos.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/kinematics.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
@@ -154,7 +155,7 @@ class _VideosPageState extends State<VideosPage> {
       'title': 'Kinematics',
       'imagePath': 'images/kinematics.jpg',
       'description': 'Tutorial videos on kinematics and projectile motion',
-      'videoPage': FreeVideos(),
+      'videoPage': Kinematics(),
     },
     {
       'title': 'Electricity and Magnetism',

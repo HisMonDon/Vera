@@ -35,6 +35,7 @@ dependencies:
   http: ^1.1.0
   shared_preferences: ^2.2.2
   persistent_bottom_nav_bar: ^6.2.1
+  video_player: ^2.10.0
   
 dev_dependencies:
   flutter_test:

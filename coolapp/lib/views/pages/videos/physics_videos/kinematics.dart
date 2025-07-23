@@ -1,0 +1,173 @@
+import 'package:auto_size_text/auto_size_text.dart';
+import 'package:coolapp/views/pages/videos/free_videos.dart';
+import 'package:flutter/material.dart';
+//import 'package:coolapp/globals.dart' as globals;
+import 'package:google_fonts/google_fonts.dart';
+
+class Kinematics extends StatefulWidget {
+  const Kinematics({super.key});
+
+  @override
+  State<Kinematics> createState() => _KinematicsState();
+}
+
+class _KinematicsState extends State<Kinematics> {
+  Widget _buildVideoButton(
+    String title,
+    String description,
+    int index,
+    Widget videoPage,
+  ) {
+    double _width;
+    double _height;
+    bool isHovered = hoveredStates[index] ?? false;
+    if (isHovered) {
+      _width = 400;
+      _height = 200;
+    } else {
+      _height = 210;
+      _width = 400;
+    }
+
+    return MouseRegion(
+      onEnter: (_) {
+        setState(() {
+          hoveredStates[index] = true;
+        });
+      },
+      onExit: (_) {
+        setState(() {
+          hoveredStates[index] = false;
+        });
+      },
+      child: AnimatedScale(
+        duration: Duration(milliseconds: 200),
+        scale: isHovered ? 1.05 : 1.0,
+        child: SizedBox(
+          width: double.infinity,
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color.fromARGB(255, 10, 73, 59),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+            onPressed: () {
+              print("Pushing nav page ontop of stack...");
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => videoPage),
+              );
+            },
+            child: Column(
+              children: [
+                const SizedBox(width: 1, height: 30),
+                Text(
+                  title,
+                  maxLines: 1,
+                  style: GoogleFonts.montserrat(
+                    fontSize: 30,
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                  ),
+                ),
+                const SizedBox(width: 1, height: 15),
+                AutoSizeText(
+                  description,
+                  style: GoogleFonts.roboto(
+                    fontSize: 20,
+                    color: const Color.fromARGB(255, 199, 252, 221),
+                  ),
+                  maxLines: 1,
+                ),
+                const SizedBox(width: 1, height: 15),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  double _width = 400;
+  double _height = 200;
+  Map<int, bool> hoveredStates = {};
+  final List<Map<String, dynamic>> videosList = [
+    {
+      'title': 'IB Physics HL',
+      'description':
+          'Complete International Baccalaureate Higher Level physics curriculum with focus on experimental skills and data analysis.',
+      'videoPage': FreeVideos(),
+    },
+    {
+      'title': 'Kinematics',
+      'description': 'Tutorial videos on kinematics and projectile motion',
+      'videoPage': FreeVideos(),
+    },
+    {
+      'title': 'Electricity and Magnetism',
+      'description':
+          'Tutorial videos on electric fields, circuits, magnetic interactions, and electromagnetic waves',
+      'videoPage': FreeVideos(),
+    },
+    {
+      'title': 'Introduction to Physics',
+      'description':
+          'Covers the basics of physics, including vectors, velocity, and displacement',
+      'videoPage': FreeVideos(),
+    },
+    {
+      'title': 'Grade 11 Physics',
+      'description':
+          'Videos and tutorials for the Grade 11 Physics Ontario curriculum.',
+      'videoPage': FreeVideos(),
+    },
+    {
+      'title': 'Grade 12 Physics',
+      'description':
+          'Videos and tutorials for the Grade 12 Physics Ontario curriculum.',
+      'videoPage': FreeVideos(),
+    },
+    {
+      'title': 'AP Physics 1',
+      'description':
+          'Preparation videos for the AP Physics 1 exam covering kinematics, Newton\'s laws, circular motion, and simple harmonic oscillators.',
+      'videoPage': FreeVideos(),
+    },
+    {
+      'title': 'AP Physics 2',
+      'description':
+          'Algebra-based physics covering fluid mechanics, thermodynamics, electricity, magnetism, optics, and quantum phenomena',
+      'videoPage': FreeVideos(),
+    },
+  ];
+  @override
+  Widget build(BuildContext context) {
+    // add an immediate check in build method
+
+    int buttonColorShift = 10;
+    bool phy_11_hovered = false;
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.all(20),
+          child: Column(
+            children: List.generate(videosList.length, (index) {
+              final video = videosList[index];
+              return Padding(
+                padding: const EdgeInsets.only(
+                  bottom: 20,
+                ), // spacing between buttons
+                child: _buildVideoButton(
+                  video['title'] ?? '',
+                  video['description'] ?? '',
+                  index,
+                  video['videoPage']!,
+                ),
+              );
+            }),
+          ),
+        ),
+      ),
+    );
+  }
+}
