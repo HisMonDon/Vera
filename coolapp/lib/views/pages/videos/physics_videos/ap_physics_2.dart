@@ -93,38 +93,38 @@ class _ApPhysics2State extends State<ApPhysics2> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 1: Thermodynamics',
+      'description': 'Kinetic Theory Of Gases, Laws of Thermodynamics',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 2',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 2: Electrostatics',
+      'description': "Electric Charge, Coulomb's Law, Electric Field",
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 3',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 3: Capacitance and Electric Potential: ',
+      'description': 'Dielectrics and capacitor networks',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 4',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 4: Electric Circuits',
+      'description': 'RC time constants and circuit analysis',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 5',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 5: Magnetism',
+      'description': 'Magnetic fields, EMF, Moving Charges',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 6',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 6: Optics',
+      'description': 'Lens equations and optical instruments',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 7',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 7: Modern Physics',
+      'description': 'Nuclear, Quantum, Atomic Physics, wave functions',
       'videoPage': FreeVideos(),
     },
   ];

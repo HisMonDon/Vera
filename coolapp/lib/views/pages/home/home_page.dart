@@ -120,7 +120,8 @@ class _HomePageState extends State<HomePage> {
   );
 
   Widget build(BuildContext context) {
-    if (globals.userName != '') {
+    String displayName;
+    /* if (globals.userName != '') {
       if (globals.userName[0] == ",") {
         globals.userName = globals.userName;
         print("all good!");
@@ -130,7 +131,7 @@ class _HomePageState extends State<HomePage> {
       }
     } else {
       print("userName is null.");
-    }
+    }*/
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(

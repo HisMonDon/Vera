@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/free_videos.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/kinematics.dart';
 import 'package:flutter/material.dart';
 //import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
@@ -93,38 +94,44 @@ class _ApPhysics1State extends State<ApPhysics1> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 1: Vectors and Scalars',
+      'description': 'Addition and calculations with vectors and scalars.',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 2',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 2: Kinematics',
+      'description': 'Motion graphs and kinematic equations',
+      'videoPage': Kinematics(),
+    },
+    {
+      'title': 'Unit 3: Circular Motion',
+      'description': "Centripetal acceleration and Kepler's laws",
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 3',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 4: Energy',
+      'description':
+          'Work-energy theorem and conservation of Energy (Very important unit)',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 4',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 5: Momentum', //shared with grade 12 phy
+      'description': 'Collision analysis and center of mass',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 5',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 6: Harmonics',
+      'description': 'Pendulum dynamics and spring systems',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 6',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 7: Rotational Motion',
+      'description': 'Rotational kinematics and moment of inertia',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 7',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 8: Fluids',
+      'description': "Bernoulli's principle and Pascal's law applications",
       'videoPage': FreeVideos(),
     },
   ];
