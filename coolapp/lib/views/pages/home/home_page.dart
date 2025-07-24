@@ -77,7 +77,9 @@ class _HomePageState extends State<HomePage> {
               final newName = _nameController.text.trim();
               setState(() {
                 globals.userName = ", " + newName;
+                print("saved forever!!");
               });
+              await _authService.saveUserName(globals.userName);
               if (newName.isNotEmpty) {
                 final uid = globals.userId;
                 final idToken = globals.idToken;
