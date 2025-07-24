@@ -30,6 +30,18 @@ class _HomePageState extends State<HomePage> {
   Future<void> _loadAuthData() async {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
+      if (globals.userName != '') {
+        if (globals.userName[0] == ",") {
+          globals.userName = globals.userName;
+          print("all good!");
+        } else {
+          globals.userName = ", " + globals.userName;
+          print("added comma");
+        }
+      } else {
+        print("userName is null.");
+      }
+
       globals.userId = prefs.getString('userId') ?? '';
       globals.idToken = prefs.getString('auth_token') ?? '';
     });
@@ -108,6 +120,17 @@ class _HomePageState extends State<HomePage> {
   );
 
   Widget build(BuildContext context) {
+    if (globals.userName != '') {
+      if (globals.userName[0] == ",") {
+        globals.userName = globals.userName;
+        print("all good!");
+      } else {
+        globals.userName = ", " + globals.userName;
+        print("added comma");
+      }
+    } else {
+      print("userName is null.");
+    }
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -159,6 +182,7 @@ class _HomePageState extends State<HomePage> {
               ),
 
               SizedBox(height: 1),
+
               WidgetMask(
                 blendMode: BlendMode.srcATop,
                 childSaveLayer: true,
