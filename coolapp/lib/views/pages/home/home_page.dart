@@ -62,7 +62,9 @@ class _HomePageState extends State<HomePage> {
   Future openDialog() => showDialog(
     context: context,
     builder: (dialogContext) {
-      _nameController.text = globals.userName;
+      _nameController.text = globals.userName.substring(
+        1,
+      ); //strips the ", " off the name
       return AlertDialog(
         title: Text('Please enter your name'),
         content: TextField(
@@ -105,13 +107,14 @@ class _HomePageState extends State<HomePage> {
         child: Padding(
           padding: EdgeInsets.all(20),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              SizedBox(
-                height: 120,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    WidgetMask(
+              Row(
+                //crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Expanded(
+                    child: WidgetMask(
                       blendMode: BlendMode.srcATop,
                       childSaveLayer: true,
                       mask: Image(
@@ -129,23 +132,43 @@ class _HomePageState extends State<HomePage> {
                         maxLines: 1,
                       ),
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        ElevatedButton(
-                          onPressed: openDialog,
-                          child: Icon(Icons.edit_rounded),
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.transparent,
-                            shadowColor: Colors.transparent,
-                            elevation: 0,
-                            iconSize: 20,
-                          ),
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      ElevatedButton(
+                        onPressed: openDialog,
+                        child: Icon(Icons.edit_rounded),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.transparent,
+                          shadowColor: Colors.transparent,
+                          elevation: 0,
+                          iconSize: 20,
                         ),
-                        SizedBox(height: 10),
-                      ],
-                    ),
-                  ],
+                      ),
+                      SizedBox(height: 10),
+                    ],
+                  ),
+                ],
+              ),
+
+              SizedBox(height: 1),
+              WidgetMask(
+                blendMode: BlendMode.srcATop,
+                childSaveLayer: true,
+                mask: Image(
+                  image: AssetImage('images/text_background.jpg'),
+                  fit: BoxFit.cover,
+                ),
+                child: AutoSizeText(
+                  globals.motivationalMessage,
+                  style: GoogleFonts.mPlus1(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30,
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                    decoration: TextDecoration.none,
+                  ),
+                  maxLines: 1,
                 ),
               ),
             ],
