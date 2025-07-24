@@ -11,6 +11,31 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  Future openDialog() => showDialog(
+    context: context,
+    builder: (dialogContext) => AlertDialog(
+      title: Text('Please enter your name'),
+      content: TextField(
+        autofocus: true,
+        decoration: InputDecoration(hintText: 'Enter your name'),
+        onChanged: (value) {
+          globals.userName = ", " + value;
+        },
+      ),
+      actions: [
+        TextButton(
+          child: Text('SUBMIT'),
+          onPressed: () {
+            if (globals.userName == ', ') {
+              globals.userName = '';
+            }
+            Navigator.of(dialogContext).pop();
+          },
+        ),
+      ],
+    ),
+  );
+
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
@@ -30,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                         image: AssetImage('images/text_background.jpg'),
                         fit: BoxFit.cover,
                       ),
-                      child: Text(
+                      child: AutoSizeText(
                         globals.welcomeText,
                         style: GoogleFonts.inter(
                           fontWeight: FontWeight.bold,
@@ -38,13 +63,16 @@ class _HomePageState extends State<HomePage> {
                           color: const Color.fromARGB(255, 255, 255, 255),
                           decoration: TextDecoration.none,
                         ),
+                        maxLines: 1,
                       ),
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            openDialog();
+                          },
                           child: Icon(Icons.edit_rounded),
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.transparent,
