@@ -93,38 +93,29 @@ class _KinematicsState extends State<Kinematics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Vectors and Scalars',
-      'description': 'Addition and calculations with vectors and scalars.',
-      'videoPage': FreeVideos(),
-    },
-    {
-      'title': 'Basic Concepts of Motion',
+      'title': 'Unit 1: 1D Motion Analysis',
       'description': 'EnterDescriptionHere',
       'videoPage': FreeVideos(),
     },
     {
-      'title': '1D Motion Analysis',
+      'title': 'Unit 2: 2D Motion Analysis',
       'description': 'EnterDescriptionHere',
       'videoPage': FreeVideos(),
     },
     {
-      'title': '2D Motion Analysis',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 3: Projectile Motion',
+      'description':
+          'Parabolic trajectory analysis and launch angle optimization',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Projectile Motion',
-      'description': 'EnterDescriptionHere',
-      'videoPage': FreeVideos(),
-    },
-    {
-      'title': 'Relative Motion',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 4: Relative Motion',
+      'description': 'Frame of reference',
       'videoPage': FreeVideos(),
     },
     {
       'title': 'Graphical Kinematics',
-      'description': 'EnterDescriptionHere',
+      'description': 'Slope-area interpretations of motion graphs',
       'videoPage': FreeVideos(),
     },
   ];
