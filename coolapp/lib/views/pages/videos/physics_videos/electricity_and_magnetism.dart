@@ -94,38 +94,34 @@ class _ElectricityAndMagnetismState extends State<ElectricityAndMagnetism> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 1: Electrostatics',
+      'description': "Coulomb's law, electric fields, and potential difference",
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 2',
-      'description': 'EnterDescriptionHere',
+      'title': "Unit 2: DC Circuits",
+      'description': "Ohm's law, Kirchhoff's rules, and circuit analysis",
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 3',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 3: Capacitance',
+      'description':
+          'Parallel plate capacitors, energy storage, and RC circuits',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 4',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 4: Right hand rule',
+      'description': 'How to use the right hand rule',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 5',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 5: Electromagnetic Induction',
+      'description': "Faraday's law, Lenz's law, and motional EMF",
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 6',
-      'description': 'EnterDescriptionHere',
-      'videoPage': FreeVideos(),
-    },
-    {
-      'title': 'Unit 7',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 6: EM Waves',
+      'description': "Spectrum properties and polarization phenomena",
       'videoPage': FreeVideos(),
     },
   ];
