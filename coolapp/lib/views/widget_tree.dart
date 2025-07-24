@@ -71,6 +71,18 @@ class _WidgetTreeState extends State<WidgetTree> {
     } else {
       globals.welcomeText = "Good Evening" + globals.userName;
     }
+    if (_currentTime.hour < 5) {
+      globals.welcomeText = "Midnight lesson?";
+    }
+    if (_currentTime.hour < 12) {
+      globals.motivationalMessage = "Start off your day with fresh knowledge.";
+    } else if (_currentTime.hour < 17) {
+      globals.motivationalMessage = "Let's make this afternoon productive.";
+    } else if (_currentTime.hour < 20) {
+      globals.motivationalMessage = "What will you learn today?";
+    } else {
+      globals.motivationalMessage = "One more video before you sleep?";
+    }
     // Wrap each screen with a Scaffold and AppBar
     return screens
         .map(

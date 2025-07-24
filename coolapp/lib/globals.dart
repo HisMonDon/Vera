@@ -10,3 +10,4 @@ String userName = '';
 String welcomeText = 'Welcome!';
 String userId = '';
 String idToken = '';
+String motivationalMessage = '';
