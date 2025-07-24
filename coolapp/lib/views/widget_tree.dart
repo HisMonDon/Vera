@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:coolapp/views/pages/videos/videos_page.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:coolapp/globals.dart' as globals;
+import 'dart:async';
 
 class WidgetTree extends StatefulWidget {
   final int initialIndex;
@@ -20,7 +21,9 @@ class WidgetTree extends StatefulWidget {
 class _WidgetTreeState extends State<WidgetTree> {
   late PersistentTabController _controller;
   late VoidCallback _tabListener;
+  TimeOfDay _currentTime = TimeOfDay.now();
 
+  Timer? _timer;
   @override
   void initState() {
     super.initState();
@@ -36,11 +39,18 @@ class _WidgetTreeState extends State<WidgetTree> {
       }
     };
     _controller.addListener(_tabListener);
+    _currentTime = TimeOfDay.now();
+    _timer = Timer.periodic(const Duration(seconds: 1), (Timer t) {
+      setState(() {
+        _currentTime = TimeOfDay.now();
+      });
+    });
   }
 
   @override
   void dispose() {
     _controller.removeListener(_tabListener);
+    _timer?.cancel();
     super.dispose();
   }
 
@@ -63,6 +73,12 @@ class _WidgetTreeState extends State<WidgetTree> {
               centerTitle: true,
               title: const Text("Vera"),
               backgroundColor: const Color.fromARGB(255, 15, 48, 40),
+              actions: [
+                Padding(
+                  padding: EdgeInsets.only(right: 16.0),
+                  child: Center(child: Text(_currentTime.format(context))),
+                ),
+              ],
             ),
             body: screen,
           ),
