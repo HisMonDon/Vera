@@ -93,38 +93,33 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 1: Rotational Motion',
+      'description': 'Centripetal force and torque calculations',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 2',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 2: Momentum and Collisions',
+      'description': 'Impulse-momentum theorem in 2D',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 3',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 3: Gravitational Fields',
+      'description': 'Orbital mechanics and gravitational potential',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 4',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 4: Electromagnetic Fields',
+      'description': 'Field interactions and electromagnetic applications',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 5',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 5: Wave Optics',
+      'description': 'Double-slit interference and thin-film phenomena',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 6',
-      'description': 'EnterDescriptionHere',
-      'videoPage': FreeVideos(),
-    },
-    {
-      'title': 'Unit 7',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 6: Quantum Physics',
+      'description': 'Photoelectric effect and Bohr model applications',
       'videoPage': FreeVideos(),
     },
   ];
