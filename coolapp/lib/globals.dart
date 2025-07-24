@@ -8,3 +8,5 @@ bool isNavbarShowing = false;
 int videosPageNumber = 1;
 String userName = '';
 String welcomeText = 'Welcome!';
+String userId = '';
+String idToken = '';

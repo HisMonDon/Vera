@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:coolapp/services/auth_service.dart';
 import 'package:coolapp/globals.dart' as globals;
+import 'package:shared_preferences/shared_preferences.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -12,7 +13,7 @@ class _ProfilePageState extends State<ProfilePage> {
   final _formKey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
-
+  final _userNameController = TextEditingController();
   bool _isLoading = false;
   bool _isInitializing = true;
   bool _isLogin = true;
@@ -30,6 +31,7 @@ class _ProfilePageState extends State<ProfilePage> {
   void dispose() {
     _emailController.dispose();
     _passwordController.dispose();
+    _userNameController.dispose();
     super.dispose();
   }
 
@@ -38,15 +40,13 @@ class _ProfilePageState extends State<ProfilePage> {
       final loggedIn = await _authService.isLoggedIn();
       if (loggedIn) {
         final email = await _authService.getCurrentUserEmail();
+        final name = await _authService.getSavedUserName();
         setState(() {
           isLoggedIn = true;
           _userEmail = email ?? '';
+          globals.userName = name ?? '';
         });
       }
-    } catch (e) {
-      setState(() {
-        _errorMessage = 'Failed to check login status';
-      });
     } finally {
       setState(() {
         _isInitializing = false;
@@ -59,9 +59,7 @@ class _ProfilePageState extends State<ProfilePage> {
   }
 
   Future<void> _submit() async {
-    if (!_formKey.currentState!.validate()) {
-      return;
-    }
+    if (!_formKey.currentState!.validate()) return;
 
     setState(() {
       _isLoading = true;
@@ -79,6 +77,7 @@ class _ProfilePageState extends State<ProfilePage> {
         success = await _authService.registerWithEmail(
           _emailController.text.trim(),
           _passwordController.text,
+          _userNameController.text,
         );
       }
 
@@ -86,6 +85,7 @@ class _ProfilePageState extends State<ProfilePage> {
         globals.isLoggedIn = true;
         _emailController.clear();
         _passwordController.clear();
+        _userNameController.clear();
         await _checkLoginStatus();
 
         if (mounted) {
@@ -125,7 +125,6 @@ class _ProfilePageState extends State<ProfilePage> {
       });
       globals.isLoggedIn = false;
       if (mounted) {
-        globals.isLoggedIn = false;
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
             content: Text('Logged out successfully'),
@@ -158,7 +157,6 @@ class _ProfilePageState extends State<ProfilePage> {
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
-
           if (_errorMessage != null) ...[
             Container(
               padding: const EdgeInsets.all(12),
@@ -177,7 +175,6 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
             const SizedBox(height: 16),
           ],
-
           TextFormField(
             controller: _emailController,
             decoration: const InputDecoration(
@@ -187,17 +184,14 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
             keyboardType: TextInputType.emailAddress,
             validator: (value) {
-              if (value == null || value.trim().isEmpty) {
+              if (value == null || value.trim().isEmpty)
                 return 'Please enter your email';
-              }
-              if (!_isValidEmail(value.trim())) {
+              if (!_isValidEmail(value.trim()))
                 return 'Please enter a valid email address';
-              }
               return null;
             },
           ),
           const SizedBox(height: 16),
-
           TextFormField(
             controller: _passwordController,
             decoration: const InputDecoration(
@@ -207,17 +201,14 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
             obscureText: true,
             validator: (value) {
-              if (value == null || value.isEmpty) {
+              if (value == null || value.isEmpty)
                 return 'Please enter your password';
-              }
-              if (value.length < 6) {
+              if (value.length < 6)
                 return 'Password must be at least 6 characters';
-              }
               return null;
             },
           ),
           const SizedBox(height: 24),
-
           if (_isLoading)
             const Center(child: CircularProgressIndicator())
           else
@@ -232,7 +223,6 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
             ),
           const SizedBox(height: 16),
-
           TextButton(
             onPressed: _isLoading
                 ? null
