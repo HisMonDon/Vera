@@ -93,24 +93,24 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1',
+      'title': 'Unit 1: Vectors and Scalars',
       'description': 'Definition and examples of vectors and scalars',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 2',
+      'title': 'Unit 2: Error Analysis and Measurement',
       'description':
           'Tools and techniques for measurement, error analysis and uncertainty in measurements',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 3',
+      'title': 'Unit 3: Physical Quantities',
       'description':
           'Understanding fundamental and derived physical quantities',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 4',
+      'title': 'Unit 4: Basic Motion Concepts',
       'description':
           'Basic concepts of motion, displacement vs. distance, speed vs. velocity',
       'videoPage': FreeVideos(),
@@ -120,8 +120,6 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
   Widget build(BuildContext context) {
     // add an immediate check in build method
 
-    int buttonColorShift = 10;
-    bool phy_11_hovered = false;
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(

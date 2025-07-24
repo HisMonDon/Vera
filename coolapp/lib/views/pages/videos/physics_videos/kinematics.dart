@@ -93,37 +93,37 @@ class _KinematicsState extends State<Kinematics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1',
+      'title': 'Vectors and Scalars',
       'description': 'EnterDescriptionHere',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 2',
+      'title': 'Basic Concepts of Motion',
       'description': 'EnterDescriptionHere',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 3',
+      'title': '1D Motion Analysis',
       'description': 'EnterDescriptionHere',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 4',
+      'title': '2D Motion Analysis',
       'description': 'EnterDescriptionHere',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 5',
+      'title': 'Projectile Motion',
       'description': 'EnterDescriptionHere',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 6',
+      'title': 'Relative Motion',
       'description': 'EnterDescriptionHere',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 7',
+      'title': 'Graphical Kinematics',
       'description': 'EnterDescriptionHere',
       'videoPage': FreeVideos(),
     },
@@ -132,8 +132,6 @@ class _KinematicsState extends State<Kinematics> {
   Widget build(BuildContext context) {
     // add an immediate check in build method
 
-    int buttonColorShift = 10;
-    bool phy_11_hovered = false;
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(

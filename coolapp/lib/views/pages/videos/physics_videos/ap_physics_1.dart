@@ -109,33 +109,33 @@ class _ApPhysics1State extends State<ApPhysics1> {
       'videoPage': Kinematics(),
     },
     {
-      'title': 'Unit 3: Circular Motion',
+      'title': 'Unit 4: Circular Motion',
       'description': "Centripetal acceleration and Kepler's laws",
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 4: Energy',
+      'title': 'Unit 5: Energy and Work',
       'description':
           'Work-energy theorem and conservation of Energy (Very important unit)',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 5: Momentum', //shared with grade 12 phy
+      'title': 'Unit 6: Momentum', //shared with grade 12 phy
       'description': 'Collision analysis and center of mass',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 6: Harmonics',
+      'title': 'Unit 7: Harmonics',
       'description': 'Pendulum dynamics and spring systems',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 7: Rotational Motion',
+      'title': 'Unit 8: Rotational Motion',
       'description': 'Rotational kinematics and moment of inertia',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 8: Fluids',
+      'title': 'Unit 9: Fluids',
       'description': "Bernoulli's principle and Pascal's law applications",
       'videoPage': FreeVideos(),
     },
@@ -144,8 +144,6 @@ class _ApPhysics1State extends State<ApPhysics1> {
   Widget build(BuildContext context) {
     // add an immediate check in build method
 
-    int buttonColorShift = 10;
-    bool phy_11_hovered = false;
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(

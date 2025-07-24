@@ -130,8 +130,6 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
   Widget build(BuildContext context) {
     // add an immediate check in build method
 
-    int buttonColorShift = 10;
-    bool phy_11_hovered = false;
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
