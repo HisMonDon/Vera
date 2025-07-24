@@ -248,8 +248,12 @@ class _ProfilePageState extends State<ProfilePage> {
       children: [
         CircleAvatar(
           radius: 50,
-          backgroundColor: Colors.blue.shade100,
-          child: const Icon(Icons.person, size: 50, color: Colors.blue),
+          backgroundColor: const Color.fromARGB(255, 187, 251, 201),
+          child: const Icon(
+            Icons.person,
+            size: 50,
+            color: Color.fromARGB(255, 7, 77, 53),
+          ),
         ),
         const SizedBox(height: 20),
         const Text(
