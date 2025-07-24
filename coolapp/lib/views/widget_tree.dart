@@ -64,7 +64,13 @@ class _WidgetTreeState extends State<WidgetTree> {
       VideosPage(),
       HelpPage(),
     ];
-
+    if (_currentTime.hour < 12) {
+      globals.welcomeText = "Good Morning" + globals.userName;
+    } else if (_currentTime.hour < 17) {
+      globals.welcomeText = "Good Afternoon" + globals.userName;
+    } else {
+      globals.welcomeText = "Good Evening" + globals.userName;
+    }
     // Wrap each screen with a Scaffold and AppBar
     return screens
         .map(
