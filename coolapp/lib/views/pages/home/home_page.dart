@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:widget_mask/widget_mask.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:coolapp/globals.dart' as globals;
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -10,7 +11,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  String welcomeText = 'Welcome To Vera';
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
                   fit: BoxFit.cover,
                 ),
                 child: Text(
-                  welcomeText,
+                  globals.welcomeText,
                   style: GoogleFonts.inter(
                     fontWeight: FontWeight.bold,
                     fontSize: 100,
