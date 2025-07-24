@@ -94,7 +94,7 @@ class _KinematicsState extends State<Kinematics> {
   final List<Map<String, dynamic>> videosList = [
     {
       'title': 'Vectors and Scalars',
-      'description': 'EnterDescriptionHere',
+      'description': 'Addition and calculations with vectors and scalars.',
       'videoPage': FreeVideos(),
     },
     {

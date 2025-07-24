@@ -93,26 +93,44 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1',
-      'description': 'Definition and examples of vectors and scalars',
+      'title': 'Unit 1: Measurement and Uncertainties',
+      'description':
+          'Error propagation, uncertainty calculations, and graphical analysis techniques',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 2',
-      'description':
-          'Basic Concepts of Motion, displacement vs. distance, speed vs. velocity',
+      'title': 'Unit 2: Kinematics',
+      'description': 'Motion graphs and kinematic equations',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 3',
-      'description':
-          'Understanding fundamental and derived physical quantities',
+      'title': 'Unit 3: Rotational Motion',
+      'description': 'Rotational kinematics and moment of inertia',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 4',
+      'title':
+          'Unit 4:  Thermal Physics', //make a whole folder for this perchance?
       'description':
-          'Tools and techniques for measurement, error analysis and uncertainty in measurements',
+          'Kinetic theory, thermodynamics laws, and heat transfer mechanisms',
+      'videoPage': FreeVideos(),
+    },
+    {
+      'title': 'Unit 5: Electricity and Magnetism',
+      'description':
+          "Maxwell's equations, electromagnetic induction, and AC circuits",
+      'videoPage': FreeVideos(),
+    },
+    {
+      'title': 'Unit 6: Quantum Physics',
+      'description':
+          "Wave-particle duality, nuclear physics, and radioactive decay",
+      'videoPage': FreeVideos(),
+    },
+    {
+      'title':
+          'HL Extension: Gravitational Field', //shared with grade 12 physics
+      'description': "Orbital mechanics and gravitational potential",
       'videoPage': FreeVideos(),
     },
   ];
