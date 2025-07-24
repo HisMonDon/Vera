@@ -104,6 +104,11 @@ class _ApPhysics1State extends State<ApPhysics1> {
       'videoPage': Kinematics(),
     },
     {
+      'title': "Unit 3: Forces and Newton's Laws",
+      'description': 'Free-body diagrams and friction applications',
+      'videoPage': Kinematics(),
+    },
+    {
       'title': 'Unit 3: Circular Motion',
       'description': "Centripetal acceleration and Kepler's laws",
       'videoPage': FreeVideos(),

@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/free_videos.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/kinematics.dart';
 import 'package:flutter/material.dart';
 //import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
@@ -93,39 +94,36 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1',
+      'title': 'Unit 1: Vectors and Scalars',
+      'description': 'Addition and calculations with vectors and scalars.',
+      'videoPage': FreeVideos(),
+    },
+    {
+      'title': 'Unit 2: Kinematics',
+      'description': 'Motion graphs and kinematic equations',
+      'videoPage': Kinematics(),
+    },
+    {
+      'title': "Unit 3: Forces and Newton's laws",
       'description': 'EnterDescriptionHere',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 2',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 4: Energy and Work',
+      'description':
+          'Work-energy theorem and conservation of Energy (Very important unit)',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 3',
-      'description': 'EnterDescriptionHere',
+      'title': 'Unit 5: Waves and Sound',
+      'description': 'Harmonics, resonance, and Doppler effect',
       'videoPage': FreeVideos(),
     },
     {
-      'title': 'Unit 4',
-      'description': 'EnterDescriptionHere',
-      'videoPage': FreeVideos(),
-    },
-    {
-      'title': 'Unit 5',
-      'description': 'EnterDescriptionHere',
-      'videoPage': FreeVideos(),
-    },
-    {
-      'title': 'Unit 6',
-      'description': 'EnterDescriptionHere',
-      'videoPage': FreeVideos(),
-    },
-    {
-      'title': 'Unit 7',
-      'description': 'EnterDescriptionHere',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 6: DC Ciruits:',
+      'description': 'Series and parallel combinations and power calculations',
+      'videoPage':
+          FreeVideos(), //redirect this to the thing inside electricity unit
     },
   ];
   @override
