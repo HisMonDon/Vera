@@ -18,39 +18,46 @@ class _HomePageState extends State<HomePage> {
           padding: EdgeInsets.all(20),
           child: Column(
             children: [
-              Row(
-                children: [
-                  WidgetMask(
-                    blendMode: BlendMode.srcATop,
-                    childSaveLayer: true,
-                    mask: Image(
-                      image: AssetImage('images/text_background.jpg'),
-                      fit: BoxFit.cover,
-                    ),
-                    child: Text(
-                      globals.welcomeText,
-                      style: GoogleFonts.inter(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 100,
-                        color: const Color.fromARGB(255, 255, 255, 255),
-                        decoration: TextDecoration.none,
+              SizedBox(
+                height: 120,
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    WidgetMask(
+                      blendMode: BlendMode.srcATop,
+                      childSaveLayer: true,
+                      mask: Image(
+                        image: AssetImage('images/text_background.jpg'),
+                        fit: BoxFit.cover,
+                      ),
+                      child: Text(
+                        globals.welcomeText,
+                        style: GoogleFonts.inter(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 100,
+                          color: const Color.fromARGB(255, 255, 255, 255),
+                          decoration: TextDecoration.none,
+                        ),
                       ),
                     ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(20),
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: Icon(Icons.edit_rounded),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.transparent,
-                        shadowColor: Colors.transparent,
-                        elevation: 0,
-                        iconSize: 30,
-                      ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        ElevatedButton(
+                          onPressed: () {},
+                          child: Icon(Icons.edit_rounded),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.transparent,
+                            shadowColor: Colors.transparent,
+                            elevation: 0,
+                            iconSize: 20,
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                      ],
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ],
           ),
