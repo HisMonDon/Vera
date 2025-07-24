@@ -40,7 +40,13 @@ class _HomePageState extends State<HomePage> {
       final savedName = await _authService.getSavedUserName();
       if (savedName != null && savedName.isNotEmpty) {
         setState(() {
-          globals.userName = savedName;
+          if (savedName[0] == ",") {
+            globals.userName = savedName;
+            print("all good!");
+          } else {
+            globals.userName = ", " + savedName;
+            print("added comma");
+          }
         });
         return;
       }
@@ -51,7 +57,7 @@ class _HomePageState extends State<HomePage> {
         final name = await _authService.getUserNameFromFirestore(uid, idToken);
         if (name != null) {
           setState(() {
-            globals.userName = ', ' + name;
+            globals.userName = name;
           });
           await _authService.saveUserName(name);
         }
@@ -78,7 +84,7 @@ class _HomePageState extends State<HomePage> {
             onPressed: () async {
               final newName = _nameController.text.trim();
               setState(() {
-                globals.userName = ", " + newName;
+                globals.userName = newName;
                 print("saved forever!!");
               });
               await _authService.saveUserName(globals.userName);
@@ -88,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                 if (uid.isNotEmpty && idToken.isNotEmpty) {
                   await _authService.saveUserNameToFirestore(
                     uid,
-                    newName,
+                    globals.userName,
                     idToken,
                   );
                 }
