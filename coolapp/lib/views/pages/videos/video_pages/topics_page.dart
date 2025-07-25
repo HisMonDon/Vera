@@ -12,48 +12,6 @@ import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 
-//ts is basaiclly the page bar thing
-/* Stack(
-        children: [
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Container(
-                  width: 180,
-                  height: 48,
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 18, 90, 72),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                ),
-                SizedBox(height: 20),
-              ],
-            ),
-          ),
-          Positioned(
-            bottom: 28,
-            right: MediaQuery.of(context).size.width / 2 + 8,
-            child: ElevatedButton(
-              onPressed: () {
-                print("Pressed!");
-              },
-              child: Icon(Icons.arrow_back),
-            ),
-          ),
-          Positioned(
-            bottom: 28,
-            left: MediaQuery.of(context).size.width / 2 + 8,
-            child: ElevatedButton(
-              onPressed: () {
-                print("Pressed!");
-              },
-              child: Icon(Icons.arrow_forward),
-            ),
-          ),
-        ],
-      ),*/
 class TopicsPage extends StatefulWidget {
   const TopicsPage({super.key});
 
@@ -213,63 +171,81 @@ class _TopicsPageState extends State<TopicsPage> {
       return NotLoggedIn();
     }
     return Scaffold(
-      body: Column(
+      body: Stack(
         children: [
-          Expanded(
-            child: Padding(
-              padding: EdgeInsets.all(20),
-              child: LayoutBuilder(
-                builder: (context, constraints) {
-                  final crossAxisCount = constraints.maxWidth > 1000
-                      ? 3
-                      : constraints.maxWidth > 700
-                      ? 2
-                      : 1;
+          Padding(
+            padding: EdgeInsets.all(20),
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                final crossAxisCount = constraints.maxWidth > 1000
+                    ? 3
+                    : constraints.maxWidth > 700
+                    ? 2
+                    : 1;
 
-                  return GridView.builder(
-                    shrinkWrap: true,
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: crossAxisCount,
-                      crossAxisSpacing: 20,
-                      mainAxisSpacing: 20,
-                      childAspectRatio: 0.8,
-                    ),
-                    itemCount: courseList.length,
-                    itemBuilder: (context, index) {
-                      final course = courseList[index];
-                      return _buildVideoButton(
-                        course['title'] ?? '',
-                        course['imagePath'] ?? '',
-                        course['description'] ?? '',
-                        index,
-                        course['videoPage']!,
-                      );
-                    },
-                  );
-                },
-              ),
+                return GridView.builder(
+                  shrinkWrap: false,
+                  physics: AlwaysScrollableScrollPhysics(),
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: crossAxisCount,
+                    crossAxisSpacing: 20,
+                    mainAxisSpacing: 20,
+                    childAspectRatio: 0.8,
+                  ),
+                  itemCount: courseList.length,
+                  itemBuilder: (context, index) {
+                    final course = courseList[index];
+                    return _buildVideoButton(
+                      course['title'] ?? '',
+                      course['imagePath'] ?? '',
+                      course['description'] ?? '',
+                      index,
+                      course['videoPage']!,
+                    );
+                  },
+                );
+              },
             ),
           ),
-          Container(
-            padding: const EdgeInsets.only(bottom: 20),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    print("Back Pressed");
-                  },
-                  child: Icon(Icons.arrow_back),
+
+          Positioned(
+            bottom: 20,
+            left: MediaQuery.of(context).size.width / 2 - 125,
+            child: SizedBox(
+              width: 250,
+              height: 80,
+              child: Container(
+                height: 80,
+                width: 40,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                  color: const Color.fromARGB(255, 4, 97, 66),
                 ),
-                SizedBox(width: 16),
-                ElevatedButton(
-                  onPressed: () {
-                    print("Forward Pressed");
-                  },
-                  child: Icon(Icons.arrow_forward),
+                alignment: Alignment.center,
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: Size.fromHeight(50),
+                      ),
+                      onPressed: () {
+                        print("Back Pressed");
+                      },
+                      child: Icon(Icons.arrow_back),
+                    ),
+                    SizedBox(width: 16),
+                    ElevatedButton(
+                      onPressed: () {
+                        print("Forward Pressed");
+                      },
+                      child: Icon(Icons.arrow_forward),
+                    ),
+                  ],
                 ),
-              ],
+              ),
             ),
           ),
         ],
