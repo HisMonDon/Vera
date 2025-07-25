@@ -5,6 +5,7 @@ import 'package:coolapp/views/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:widget_mask/widget_mask.dart';
 
 class LockedPage extends StatelessWidget {
   const LockedPage({super.key});
@@ -28,15 +29,25 @@ class LockedPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            AutoSizeText(
-              'Content Locked! Please purchase premium to access these videos.',
-              style: GoogleFonts.montserrat(
-                fontSize: 40,
-                color: const Color.fromARGB(255, 255, 255, 255),
-                decoration: TextDecoration.none,
-              ), //starts at 50, will shrink to fit
-              maxLines: 1,
+            WidgetMask(
+              blendMode: BlendMode.srcATop,
+              childSaveLayer: true,
+              mask: Image(
+                image: AssetImage('images/text_background.jpg'),
+                fit: BoxFit.cover,
+              ),
+              child: AutoSizeText(
+                'Content Locked! Please purchase premium to access these videos.',
+                style: GoogleFonts.inter(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 100,
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                  decoration: TextDecoration.none,
+                ),
+                maxLines: 1,
+              ),
             ),
+
             AutoSizeText(
               //change this when i get back from class
               'All revenue from subscriptions go towards the SickKids Foundation!',

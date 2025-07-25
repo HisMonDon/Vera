@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/globals.dart' as global;
+import 'package:widget_mask/widget_mask.dart';
 
 class NotLoggedIn extends StatelessWidget {
   const NotLoggedIn({super.key});
@@ -17,22 +18,31 @@ class NotLoggedIn extends StatelessWidget {
           children: [
             AutoSizeText(
               'Content Locked!',
-              style: GoogleFonts.montserrat(
-                fontSize: 60,
+              style: GoogleFonts.mPlus1(
+                fontSize: 80,
                 color: const Color.fromARGB(255, 255, 255, 255),
                 decoration: TextDecoration.none,
               ),
               maxLines: 1,
             ),
-            AutoSizeText(
-              'Please create an account or log in to access these videos.',
-              style: GoogleFonts.montserrat(
-                fontSize: 30,
-                color: const Color.fromARGB(255, 255, 255, 255),
-                decoration: TextDecoration.none,
+            WidgetMask(
+              blendMode: BlendMode.srcATop,
+              childSaveLayer: true,
+              mask: Image(
+                image: AssetImage('images/text_background.jpg'),
+                fit: BoxFit.cover,
               ),
-              maxLines: 1,
+              child: AutoSizeText(
+                'Please create a FREE account or log in to access unlimited free videos.',
+                style: GoogleFonts.mPlus1(
+                  fontSize: 40,
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                  decoration: TextDecoration.none,
+                ),
+                maxLines: 1,
+              ),
             ),
+
             SizedBox(height: 20),
             Icon(Icons.lock, size: 150),
             ElevatedButton(
