@@ -210,7 +210,9 @@ class _TopicsPageState extends State<TopicsPage> {
 
           Positioned(
             bottom: 20,
-            left: MediaQuery.of(context).size.width / 2 - 125,
+            left:
+                MediaQuery.of(context).size.width / 2 -
+                125, //change this when dealing with button
             child: SizedBox(
               width: 250,
               height: 80,
@@ -228,20 +230,19 @@ class _TopicsPageState extends State<TopicsPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        fixedSize: Size.fromHeight(50),
-                      ),
+                      style: ElevatedButton.styleFrom(fixedSize: Size(100, 50)),
                       onPressed: () {
                         print("Back Pressed");
                       },
-                      child: Icon(Icons.arrow_back),
+                      child: Icon(Icons.arrow_back, size: 30),
                     ),
                     SizedBox(width: 16),
                     ElevatedButton(
+                      style: ElevatedButton.styleFrom(fixedSize: Size(100, 50)),
                       onPressed: () {
                         print("Forward Pressed");
                       },
-                      child: Icon(Icons.arrow_forward),
+                      child: Icon(Icons.arrow_forward, size: 30),
                     ),
                   ],
                 ),
