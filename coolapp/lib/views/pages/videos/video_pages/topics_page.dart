@@ -8,6 +8,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/grade_12_physics.dart'
 import 'package:coolapp/views/pages/videos/physics_videos/ib_physics_hl.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/kinematics.dart';
+import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
@@ -106,13 +107,6 @@ class _TopicsPageState extends State<TopicsPage> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> courseList = [
     {
-      'title': 'IB Physics HL',
-      'imagePath': 'images/ib_physics_hl.jpg',
-      'description':
-          'Complete International Baccalaureate Higher Level physics curriculum with focus on experimental skills and data analysis.',
-      'videoPage': IbPhysicsHl(),
-    },
-    {
       'title': 'Kinematics',
       'imagePath': 'images/kinematics.jpg',
       'description': 'Tutorial videos on kinematics and projectile motion',
@@ -124,41 +118,6 @@ class _TopicsPageState extends State<TopicsPage> {
       'description':
           'Tutorial videos on electric fields, circuits, magnetic interactions, and electromagnetic waves',
       'videoPage': ElectricityAndMagnetism(),
-    },
-    {
-      'title': 'Introduction to Physics',
-      'imagePath': 'images/intro_to_physics.jpg',
-      'description':
-          'Covers the basics of physics, including vectors, velocity, and displacement',
-      'videoPage': IntroToPhysics(),
-    },
-    {
-      'title': 'Grade 11 Physics',
-      'imagePath': 'images/physics_11.jpg',
-      'description':
-          'Videos and tutorials for the Grade 11 Physics Ontario curriculum.',
-      'videoPage': Grade11Physics(),
-    },
-    {
-      'title': 'Grade 12 Physics',
-      'imagePath': 'images/physics_12.jpg',
-      'description':
-          'Videos and tutorials for the Grade 12 Physics Ontario curriculum.',
-      'videoPage': Grade12Physics(),
-    },
-    {
-      'title': 'AP Physics 1',
-      'imagePath': 'images/ap_courses.jpg',
-      'description':
-          'Preparation videos for the AP Physics 1 exam covering kinematics, Newton\'s laws, circular motion, and simple harmonic oscillators.',
-      'videoPage': ApPhysics1(),
-    },
-    {
-      'title': 'AP Physics 2',
-      'imagePath': 'images/ap_physics_2.png',
-      'description':
-          'Algebra-based physics covering fluid mechanics, thermodynamics, electricity, magnetism, optics, and quantum phenomena',
-      'videoPage': ApPhysics2(),
     },
   ];
   @override
@@ -175,36 +134,50 @@ class _TopicsPageState extends State<TopicsPage> {
         children: [
           Padding(
             padding: EdgeInsets.all(20),
-            child: LayoutBuilder(
-              builder: (context, constraints) {
-                final crossAxisCount = constraints.maxWidth > 1000
-                    ? 3
-                    : constraints.maxWidth > 700
-                    ? 2
-                    : 1;
 
-                return GridView.builder(
-                  shrinkWrap: false,
-                  physics: AlwaysScrollableScrollPhysics(),
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: crossAxisCount,
-                    crossAxisSpacing: 20,
-                    mainAxisSpacing: 20,
-                    childAspectRatio: 0.8,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Physics Topics and Subfields',
+                  style: GoogleFonts.mPlus1(fontSize: 40),
+                ),
+                SizedBox(height: 20),
+                Flexible(
+                  child: LayoutBuilder(
+                    builder: (context, constraints) {
+                      final crossAxisCount = constraints.maxWidth > 1000
+                          ? 3
+                          : constraints.maxWidth > 700
+                          ? 2
+                          : 1;
+
+                      return GridView.builder(
+                        shrinkWrap: false,
+                        physics: AlwaysScrollableScrollPhysics(),
+
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: crossAxisCount,
+                          crossAxisSpacing: 20,
+                          mainAxisSpacing: 20,
+                          childAspectRatio: 0.8,
+                        ),
+                        itemCount: courseList.length,
+                        itemBuilder: (context, index) {
+                          final course = courseList[index];
+                          return _buildVideoButton(
+                            course['title'] ?? '',
+                            course['imagePath'] ?? '',
+                            course['description'] ?? '',
+                            index,
+                            course['videoPage']!,
+                          );
+                        },
+                      );
+                    },
                   ),
-                  itemCount: courseList.length,
-                  itemBuilder: (context, index) {
-                    final course = courseList[index];
-                    return _buildVideoButton(
-                      course['title'] ?? '',
-                      course['imagePath'] ?? '',
-                      course['description'] ?? '',
-                      index,
-                      course['videoPage']!,
-                    );
-                  },
-                );
-              },
+                ),
+              ],
             ),
           ),
 
@@ -230,10 +203,17 @@ class _TopicsPageState extends State<TopicsPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ElevatedButton(
-                      style: ElevatedButton.styleFrom(fixedSize: Size(100, 50)),
-                      onPressed: () {
-                        print("Back Pressed");
-                      },
+                      style: ElevatedButton.styleFrom(
+                        fixedSize: Size(100, 50),
+                        disabledBackgroundColor: const Color.fromARGB(
+                          255,
+                          10,
+                          73,
+                          59,
+                        ),
+                      ),
+                      onPressed: null,
+
                       child: Icon(Icons.arrow_back, size: 30),
                     ),
                     SizedBox(width: 16),
@@ -241,6 +221,10 @@ class _TopicsPageState extends State<TopicsPage> {
                       style: ElevatedButton.styleFrom(fixedSize: Size(100, 50)),
                       onPressed: () {
                         print("Forward Pressed");
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(builder: (context) => CoursePage()),
+                        );
                       },
                       child: Icon(Icons.arrow_forward, size: 30),
                     ),
