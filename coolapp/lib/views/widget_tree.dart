@@ -2,10 +2,8 @@ import 'package:coolapp/views/pages/about_this_app/about_this_app_page.dart';
 import 'package:coolapp/views/pages/help_page/help_page.dart';
 import 'package:coolapp/views/pages/home/home_page.dart';
 import 'package:coolapp/views/pages/profile_page/profile_page.dart';
-import 'package:coolapp/views/pages/videos/not_logged_in.dart';
-import 'package:coolapp/views/pages/videos/paid_videos.dart';
 import 'package:flutter/material.dart';
-import 'package:coolapp/views/pages/videos/videos_page.dart';
+import 'package:coolapp/views/pages/videos/video_pages/topics_page.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'dart:async';
@@ -61,7 +59,7 @@ class _WidgetTreeState extends State<WidgetTree> {
       AboutThisAppPage(),
       ProfilePage(),
       HomePage(),
-      VideosPage(),
+      TopicsPage(),
       HelpPage(),
     ];
     if (_currentTime.hour < 12) {

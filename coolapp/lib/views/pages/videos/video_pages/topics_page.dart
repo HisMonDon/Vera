@@ -1,9 +1,5 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:coolapp/services/auth_service.dart';
-import 'package:coolapp/views/pages/videos/free_videos.dart';
-import 'package:coolapp/views/pages/videos/locked_page.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
-import 'package:coolapp/views/pages/videos/paid_videos.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/ap_physics_1.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/ap_physics_2.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/electricity_and_magnetism.dart';
@@ -58,14 +54,14 @@ import 'package:google_fonts/google_fonts.dart';
           ),
         ],
       ),*/
-class VideosPage extends StatefulWidget {
-  const VideosPage({super.key});
+class TopicsPage extends StatefulWidget {
+  const TopicsPage({super.key});
 
   @override
-  State<VideosPage> createState() => _VideosPageState();
+  State<TopicsPage> createState() => _TopicsPageState();
 }
 
-class _VideosPageState extends State<VideosPage> {
+class _TopicsPageState extends State<TopicsPage> {
   bool _checkedAuth = false;
 
   Widget _buildVideoButton(
@@ -217,42 +213,66 @@ class _VideosPageState extends State<VideosPage> {
       return NotLoggedIn();
     }
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.all(20),
-          child: LayoutBuilder(
-            builder: (context, constraints) {
-              final crossAxisCount = constraints.maxWidth > 1000
-                  ? 3
-                  : constraints.maxWidth > 700
-                  ? 2
-                  : 1;
-              return GridView.builder(
-                shrinkWrap: true,
-                physics: NeverScrollableScrollPhysics(),
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: crossAxisCount,
+      body: Column(
+        children: [
+          Expanded(
+            child: Padding(
+              padding: EdgeInsets.all(20),
+              child: LayoutBuilder(
+                builder: (context, constraints) {
+                  final crossAxisCount = constraints.maxWidth > 1000
+                      ? 3
+                      : constraints.maxWidth > 700
+                      ? 2
+                      : 1;
 
-                  crossAxisSpacing: 20,
-                  mainAxisSpacing: 20,
-                  childAspectRatio: 0.8,
-                ),
-                itemCount: courseList.length,
-
-                itemBuilder: (context, index) {
-                  final course = courseList[index];
-                  return _buildVideoButton(
-                    course['title'] ?? '',
-                    course['imagePath'] ?? '',
-                    course['description'] ?? '',
-                    index,
-                    course['videoPage']!,
+                  return GridView.builder(
+                    shrinkWrap: true,
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: crossAxisCount,
+                      crossAxisSpacing: 20,
+                      mainAxisSpacing: 20,
+                      childAspectRatio: 0.8,
+                    ),
+                    itemCount: courseList.length,
+                    itemBuilder: (context, index) {
+                      final course = courseList[index];
+                      return _buildVideoButton(
+                        course['title'] ?? '',
+                        course['imagePath'] ?? '',
+                        course['description'] ?? '',
+                        index,
+                        course['videoPage']!,
+                      );
+                    },
                   );
                 },
-              );
-            },
+              ),
+            ),
           ),
-        ),
+          Container(
+            padding: const EdgeInsets.only(bottom: 20),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    print("Back Pressed");
+                  },
+                  child: Icon(Icons.arrow_back),
+                ),
+                SizedBox(width: 16),
+                ElevatedButton(
+                  onPressed: () {
+                    print("Forward Pressed");
+                  },
+                  child: Icon(Icons.arrow_forward),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
