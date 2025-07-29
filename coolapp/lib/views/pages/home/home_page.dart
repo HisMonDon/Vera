@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
           TextButton(
             child: Text('SUBMIT'),
             onPressed: () async {
-              final newName = ', ' + _nameController.text.trim();
+              final newName = _nameController.text.trim();
               setState(() {
                 globals.userName = newName;
                 print("saved forever!!");
