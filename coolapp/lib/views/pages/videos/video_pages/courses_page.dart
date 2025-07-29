@@ -61,7 +61,7 @@ class _CoursePageState extends State<CoursePage> {
         scale: isHovered ? 1.05 : 1.0,
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            backgroundColor: const Color.fromARGB(255, 10, 73, 59),
+            backgroundColor: const Color.fromARGB(255, 1, 110, 124),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
@@ -107,24 +107,11 @@ class _CoursePageState extends State<CoursePage> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> courseList = [
     {
-      'title': 'Introduction to Physics',
-      'imagePath': 'images/intro_to_physics.jpg',
-      'description':
-          'Covers the basics of physics, including vectors, velocity, and displacement',
-      'videoPage': IntroToPhysics(),
-    },
-    {
       'title': 'IB Physics HL',
       'imagePath': 'images/ib_physics_hl.jpg',
       'description':
           'Complete International Baccalaureate Higher Level physics curriculum with focus on experimental skills and data analysis.',
       'videoPage': IbPhysicsHl(),
-    },
-    {
-      'title': 'Kinematics',
-      'imagePath': 'images/kinematics.jpg',
-      'description': 'Tutorial videos on kinematics and projectile motion',
-      'videoPage': Kinematics(),
     },
     {
       'title': 'Grade 11 Physics',
@@ -229,7 +216,7 @@ class _CoursePageState extends State<CoursePage> {
                 width: 40,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                  color: const Color.fromARGB(255, 4, 97, 66),
+                  color: const Color.fromARGB(255, 21, 119, 122),
                 ),
                 alignment: Alignment.center,
                 child: Row(
@@ -255,9 +242,9 @@ class _CoursePageState extends State<CoursePage> {
                         fixedSize: Size(100, 50),
                         disabledBackgroundColor: const Color.fromARGB(
                           255,
-                          10,
-                          73,
-                          59,
+                          2,
+                          72,
+                          82,
                         ),
                       ),
                       onPressed: null,

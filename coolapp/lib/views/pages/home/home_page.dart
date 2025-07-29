@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> {
     context: context,
     builder: (dialogContext) {
       _nameController.text = globals.userName.substring(
-        1,
+        2,
       ); //strips the ", " off the name
       return AlertDialog(
         title: Text('Please enter your name'),
@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
           TextButton(
             child: Text('SUBMIT'),
             onPressed: () async {
-              final newName = _nameController.text.trim();
+              final newName = ', ' + _nameController.text.trim();
               setState(() {
                 globals.userName = newName;
                 print("saved forever!!");

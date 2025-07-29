@@ -33,7 +33,7 @@ class NotLoggedIn extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
               child: AutoSizeText(
-                'Please create a FREE account or log in to access unlimited free videos.',
+                'Please create a FREE account or log in to access UNLIMITED free videos.',
                 style: GoogleFonts.mPlus1(
                   fontSize: 40,
                   color: const Color.fromARGB(255, 255, 255, 255),

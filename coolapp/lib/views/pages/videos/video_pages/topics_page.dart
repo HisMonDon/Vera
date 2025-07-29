@@ -107,6 +107,13 @@ class _TopicsPageState extends State<TopicsPage> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> courseList = [
     {
+      'title': 'Introduction to Physics',
+      'imagePath': 'images/intro_to_physics.jpg',
+      'description':
+          'Covers the basics of physics, including vectors, velocity, and displacement',
+      'videoPage': IntroToPhysics(),
+    },
+    {
       'title': 'Kinematics',
       'imagePath': 'images/kinematics.jpg',
       'description': 'Tutorial videos on kinematics and projectile motion',
@@ -117,6 +124,13 @@ class _TopicsPageState extends State<TopicsPage> {
       'imagePath': 'images/electricity.jpg',
       'description':
           'Tutorial videos on electric fields, circuits, magnetic interactions, and electromagnetic waves',
+      'videoPage': ElectricityAndMagnetism(),
+    },
+    {
+      'title': 'Momentum and Collisions',
+      'imagePath': 'images/momentum.jpg',
+      'description':
+          'Tutorial videos on momentum, elastic and non-elastic collisions, and impulse',
       'videoPage': ElectricityAndMagnetism(),
     },
   ];
