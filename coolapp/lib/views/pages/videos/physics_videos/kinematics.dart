@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/free_videos.dart';
+import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:flutter/material.dart';
 //import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
@@ -95,7 +96,7 @@ class _KinematicsState extends State<Kinematics> {
     {
       'title': 'Unit 1: 1D Motion Analysis',
       'description': 'EnterDescriptionHere',
-      'videoPage': FreeVideos(),
+      'videoPage': VideoPlayerScreen(),
     },
     {
       'title': 'Unit 2: 2D Motion Analysis',

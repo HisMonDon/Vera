@@ -4,16 +4,16 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/services/auth_service.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
+import 'package:media_kit/media_kit.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
+  MediaKit.ensureInitialized();
   await _initializeAuthState();
 
   runApp(const MyApp());
 }
 
-//global debugging
 Future<void> _initializeAuthState() async {
   try {
     final authService = AuthService();
