@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:media_kit/media_kit.dart';
 import 'package:media_kit_video/media_kit_video.dart';
+import 'package:coolapp/globals.dart' as globals;
 
 class VideoPlayerScreen extends StatefulWidget {
   const VideoPlayerScreen({super.key});
@@ -66,11 +67,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     });
 
     try {
-      await player.open(
-        Media(
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
-        ),
-      );
+      await player.open(Media(globals.videoLink));
     } catch (e) {
       setState(() {
         hasError = true;
@@ -98,7 +95,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('skibidi')), //add text here
+      appBar: AppBar(title: Text(globals.videoTitle)), //add text here
       body: Column(
         children: [
           Expanded(
@@ -167,8 +164,6 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
               ),
             ],
           ),
-
-          // Volume control
         ],
       ),
     );

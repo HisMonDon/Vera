@@ -11,3 +11,6 @@ String welcomeText = 'Welcome!';
 String userId = '';
 String idToken = '';
 String motivationalMessage = '';
+String videoLink =
+    'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4';
+String videoTitle = 'Physics Video';
