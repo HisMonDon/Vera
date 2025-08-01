@@ -151,13 +151,6 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
         mainAxisSize: MainAxisSize.min,
         children: [
           // progress slider
-          Slider(
-            value: position.inMilliseconds.toDouble(),
-            max: duration.inMilliseconds.toDouble(),
-            onChanged: (value) {
-              player.seek(Duration(milliseconds: value.toInt()));
-            },
-          ),
 
           // Time indicators and controls
           Row(
@@ -167,50 +160,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                 _formatDuration(position),
                 style: const TextStyle(color: Colors.black87),
               ),
-              Row(
-                children: [
-                  IconButton(
-                    icon: const Icon(Icons.replay_10),
-                    onPressed: () {
-                      if (position.inMilliseconds >= 10000) {
-                        player.seek(
-                          Duration(
-                            milliseconds: position.inMilliseconds - 10000,
-                          ),
-                        );
-                      } else {
-                        player.seek(Duration(milliseconds: 0));
-                      }
-                    },
-                  ),
-                  IconButton(
-                    iconSize: 42,
-                    icon: Icon(
-                      isPlaying ? Icons.pause_circle : Icons.play_circle,
-                    ),
-                    onPressed: () {
-                      player.playOrPause();
-                    },
-                  ),
-                  IconButton(
-                    icon: const Icon(Icons.forward_10),
-                    onPressed: () {
-                      if (position.inMilliseconds <=
-                          duration.inMilliseconds - 10000) {
-                        player.seek(
-                          Duration(
-                            milliseconds: position.inMilliseconds + 10000,
-                          ),
-                        );
-                      } else {
-                        player.seek(
-                          Duration(milliseconds: duration.inMilliseconds),
-                        );
-                      }
-                    },
-                  ),
-                ],
-              ),
+
               Text(
                 _formatDuration(duration),
                 style: const TextStyle(color: Colors.black87),
@@ -219,31 +169,6 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
           ),
 
           // Volume control
-          Row(
-            children: [
-              IconButton(
-                icon: Icon(
-                  volume == 0
-                      ? Icons.volume_off
-                      : volume < 0.5
-                      ? Icons.volume_down
-                      : Icons.volume_up,
-                ),
-                onPressed: () {
-                  player.setVolume(volume > 0 ? 0 : 1.0);
-                },
-              ),
-              Expanded(
-                child: Slider(
-                  value: volume,
-                  onChanged: (newVolume) {
-                    player.setVolume(newVolume);
-                  },
-                ),
-              ),
-              IconButton(icon: const Icon(Icons.fullscreen), onPressed: () {}),
-            ],
-          ),
         ],
       ),
     );
