@@ -68,7 +68,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     try {
       await player.open(
         Media(
-          'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4',
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
         ),
       );
     } catch (e) {
@@ -98,7 +98,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Windows Video Player')),
+      appBar: AppBar(title: const Text('skibidi')), //add text here
       body: Column(
         children: [
           Expanded(
@@ -150,7 +150,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          // Progress slider
+          // progress slider
           Slider(
             value: position.inMilliseconds.toDouble(),
             max: duration.inMilliseconds.toDouble(),
