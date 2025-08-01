@@ -172,9 +172,15 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                   IconButton(
                     icon: const Icon(Icons.replay_10),
                     onPressed: () {
-                      player.seek(
-                        Duration(milliseconds: position.inMilliseconds - 10000),
-                      );
+                      if (position.inMilliseconds >= 10000) {
+                        player.seek(
+                          Duration(
+                            milliseconds: position.inMilliseconds - 10000,
+                          ),
+                        );
+                      } else {
+                        player.seek(Duration(milliseconds: 0));
+                      }
                     },
                   ),
                   IconButton(
@@ -189,9 +195,18 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                   IconButton(
                     icon: const Icon(Icons.forward_10),
                     onPressed: () {
-                      player.seek(
-                        Duration(milliseconds: position.inMilliseconds + 10000),
-                      );
+                      if (position.inMilliseconds <=
+                          duration.inMilliseconds - 10000) {
+                        player.seek(
+                          Duration(
+                            milliseconds: position.inMilliseconds + 10000,
+                          ),
+                        );
+                      } else {
+                        player.seek(
+                          Duration(milliseconds: duration.inMilliseconds),
+                        );
+                      }
                     },
                   ),
                 ],
