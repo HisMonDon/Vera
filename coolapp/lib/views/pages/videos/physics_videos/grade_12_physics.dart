@@ -1,9 +1,10 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:flutter/material.dart';
-//import 'package:coolapp/globals.dart' as globals;
+import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 
+//not done
 class Grade12Physics extends StatefulWidget {
   const Grade12Physics({super.key});
 
@@ -96,31 +97,43 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
       'title': 'Unit 1: Rotational Motion',
       'description': 'Centripetal force and torque calculations',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 2: Momentum and Collisions',
       'description': 'Impulse-momentum theorem in 2D',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 3: Gravitational Fields',
       'description': 'Orbital mechanics and gravitational potential',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 4: Electromagnetic Fields',
       'description': 'Field interactions and electromagnetic applications',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 5: Wave Optics',
       'description': 'Double-slit interference and thin-film phenomena',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 6: Quantum Physics',
       'description': 'Photoelectric effect and Bohr model applications',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
   ];
   @override
@@ -149,6 +162,7 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
+                  globals.videoLink = video['videoLink'];
                   return Padding(
                     padding: const EdgeInsets.only(
                       bottom: 20,

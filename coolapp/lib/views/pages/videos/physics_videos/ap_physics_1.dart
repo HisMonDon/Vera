@@ -2,7 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/kinematics.dart';
 import 'package:flutter/material.dart';
-//import 'package:coolapp/globals.dart' as globals;
+import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 
 //not done
@@ -186,6 +186,7 @@ class _ApPhysics1State extends State<ApPhysics1> {
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
+                  globals.videoLink = video['videoLink'];
                   return Padding(
                     padding: const EdgeInsets.only(
                       bottom: 20,
