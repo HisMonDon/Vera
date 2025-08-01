@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 //import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 
+//not done
 class ElectricityAndMagnetism extends StatefulWidget {
   const ElectricityAndMagnetism({super.key});
 
@@ -97,32 +98,44 @@ class _ElectricityAndMagnetismState extends State<ElectricityAndMagnetism> {
       'title': 'Unit 1: Electrostatics',
       'description': "Coulomb's law, electric fields, and potential difference",
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': "Unit 2: DC Circuits",
       'description': "Ohm's law, Kirchhoff's rules, and circuit analysis",
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 3: Capacitance',
       'description':
           'Parallel plate capacitors, energy storage, and RC circuits',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 4: Right hand rule',
       'description': 'How to use the right hand rule',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 5: Electromagnetic Induction',
       'description': "Faraday's law, Lenz's law, and motional EMF",
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 6: EM Waves',
       'description': "Spectrum properties and polarization phenomena",
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
   ];
   @override

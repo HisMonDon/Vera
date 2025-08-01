@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 //import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 
+//not done
 class IbPhysicsHl extends StatefulWidget {
   const IbPhysicsHl({super.key});
 
@@ -97,16 +98,22 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
       'description':
           'Error propagation, uncertainty calculations, and graphical analysis techniques',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 2: Kinematics',
       'description': 'Motion graphs and kinematic equations',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 3: Rotational Motion',
       'description': 'Rotational kinematics and moment of inertia',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title':
@@ -114,24 +121,32 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
       'description':
           'Kinetic theory, thermodynamics laws, and heat transfer mechanisms',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 5: Electricity and Magnetism',
       'description':
           "Maxwell's equations, electromagnetic induction, and AC circuits",
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 6: Quantum Physics',
       'description':
           "Wave-particle duality, nuclear physics, and radioactive decay",
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title':
           'HL Extension: Gravitational Field', //shared with grade 12 physics
       'description': "Orbital mechanics and gravitational potential",
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
   ];
   @override

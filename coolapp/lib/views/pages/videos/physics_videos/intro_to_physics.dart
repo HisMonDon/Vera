@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 //import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 
+//not done
 class IntroToPhysics extends StatefulWidget {
   const IntroToPhysics({super.key});
 
@@ -96,24 +97,32 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
       'title': 'Unit 1: Vectors and Scalars',
       'description': 'Definition and examples of vectors and scalars',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 2: Error Analysis and Measurement',
       'description':
           'Tools and techniques for measurement, error analysis and uncertainty in measurements',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 3: Physical Quantities',
       'description':
           'Understanding fundamental and derived physical quantities',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 4: Basic Motion Concepts',
       'description':
           'Basic concepts of motion, displacement vs. distance, speed vs. velocity',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
   ];
   @override

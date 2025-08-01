@@ -122,7 +122,11 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const Icon(Icons.error_outline, color: Colors.red, size: 48),
+        const Icon(
+          Icons.error_outline,
+          color: Color.fromARGB(255, 2, 110, 74),
+          size: 48,
+        ),
         const SizedBox(height: 16),
         Text('Failed to load video: $errorMessage'),
         const SizedBox(height: 16),
@@ -147,9 +151,6 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          // progress slider
-
-          // Time indicators and controls
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

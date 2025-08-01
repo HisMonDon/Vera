@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 //import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 
+//not done
 class ApPhysics2 extends StatefulWidget {
   const ApPhysics2({super.key});
 
@@ -96,36 +97,50 @@ class _ApPhysics2State extends State<ApPhysics2> {
       'title': 'Unit 1: Thermodynamics',
       'description': 'Kinetic Theory Of Gases, Laws of Thermodynamics',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 2: Electrostatics',
       'description': "Electric Charge, Coulomb's Law, Electric Field",
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 3: Capacitance and Electric Potential: ',
       'description': 'Dielectrics and capacitor networks',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 4: Electric Circuits',
       'description': 'RC time constants and circuit analysis',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 5: Magnetism',
       'description': 'Magnetic fields, EMF, Moving Charges',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 6: Optics',
       'description': 'Lens equations and optical instruments',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 7: Modern Physics',
       'description': 'Nuclear, Quantum, Atomic Physics, wave functions',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
   ];
   @override

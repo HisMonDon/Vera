@@ -2,9 +2,10 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:flutter/material.dart';
-//import 'package:coolapp/globals.dart' as globals;
+import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 
+//not done
 class Kinematics extends StatefulWidget {
   const Kinematics({super.key});
 
@@ -95,29 +96,40 @@ class _KinematicsState extends State<Kinematics> {
   final List<Map<String, dynamic>> videosList = [
     {
       'title': 'Unit 1: 1D Motion Analysis',
-      'description': 'EnterDescriptionHere',
+      'description':
+          'Basic kinematics, introduction to acceleration and velocity',
       'videoPage': VideoPlayerScreen(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 2: 2D Motion Analysis',
-      'description': 'EnterDescriptionHere',
+      'description': 'Free body diagrams, forces',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 3: Projectile Motion',
       'description':
           'Parabolic trajectory analysis and launch angle optimization',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 4: Relative Motion',
       'description': 'Frame of reference',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Graphical Kinematics',
       'description': 'Slope-area interpretations of motion graphs',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
   ];
   @override
@@ -147,6 +159,7 @@ class _KinematicsState extends State<Kinematics> {
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
+                  globals.videoLink = video['videoLink'];
                   return Padding(
                     padding: const EdgeInsets.only(
                       bottom: 20,

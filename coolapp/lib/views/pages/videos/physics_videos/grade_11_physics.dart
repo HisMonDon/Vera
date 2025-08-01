@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 //import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 
+//not done
 class Grade11Physics extends StatefulWidget {
   const Grade11Physics({super.key});
 
@@ -97,33 +98,45 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
       'title': 'Unit 1: Vectors and Scalars',
       'description': 'Addition and calculations with vectors and scalars.',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 2: Kinematics',
       'description': 'Motion graphs and kinematic equations',
       'videoPage': Kinematics(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': "Unit 3: Forces and Newton's laws",
       'description': 'EnterDescriptionHere',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 4: Energy and Work',
       'description':
           'Work-energy theorem and conservation of Energy (Very important unit)',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 5: Waves and Sound',
       'description': 'Harmonics, resonance, and Doppler effect',
       'videoPage': FreeVideos(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 6: DC Ciruits:',
       'description': 'Series and parallel combinations and power calculations',
       'videoPage':
           FreeVideos(), //redirect this to the thing inside electricity unit
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
   ];
   @override
