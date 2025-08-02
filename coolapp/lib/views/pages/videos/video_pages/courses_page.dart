@@ -1,13 +1,10 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/ap_physics_1.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/ap_physics_2.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/electricity_and_magnetism.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/grade_11_physics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/grade_12_physics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/ib_physics_hl.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/intro_to_physics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/kinematics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_courses/ap_physics_1.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_courses/ap_physics_2.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_courses/grade_11_physics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_courses/grade_12_physics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_courses/ib_physics_hl.dart';
 import 'package:coolapp/views/pages/videos/video_pages/topics_page.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
