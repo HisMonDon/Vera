@@ -128,17 +128,12 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
             _buildControls(),
             if (globals.nextVideoTitle != 'last_one')
               Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Next video: ${globals.nextVideoTitle}"),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).pushReplacement(
-                        MaterialPageRoute(
-                          builder: (_) => globals.nextVideoPage,
-                        ),
-                      );
-                    },
-                    child: Icon(Icons.navigate_next_rounded),
+                  Text(
+                    "Next video: ${globals.nextVideoTitle}",
+                    style: TextStyle(fontSize: 20),
                   ),
                 ],
               ),
