@@ -160,7 +160,8 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-
+    globals.courseTitle = 'IB Physics HL';
+    globals.topicTitle = '';
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(

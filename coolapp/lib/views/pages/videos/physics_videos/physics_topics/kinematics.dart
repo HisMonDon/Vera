@@ -145,7 +145,8 @@ class _KinematicsState extends State<Kinematics> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-
+    globals.topicTitle = 'Kinematics';
+    globals.unitTitle = '';
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(

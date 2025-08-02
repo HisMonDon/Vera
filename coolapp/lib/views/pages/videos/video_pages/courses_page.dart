@@ -142,7 +142,9 @@ class _CoursePageState extends State<CoursePage> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-
+    globals.topicTitle = '';
+    globals.unitTitle = '';
+    globals.courseTitle = '';
     int buttonColorShift = 10;
     bool phy_11_hovered = false;
     if (!globals.isLoggedIn) {

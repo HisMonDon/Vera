@@ -95,7 +95,11 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(globals.videoTitle)), //add text here
+      appBar: AppBar(
+        title: Text(
+          globals.courseTitle + globals.topicTitle + globals.unitTitle,
+        ),
+      ), //add text here
       body: SingleChildScrollView(
         child: Column(
           children: [
