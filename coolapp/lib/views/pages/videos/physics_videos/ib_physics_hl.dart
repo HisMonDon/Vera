@@ -3,6 +3,7 @@ import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
+import 'package:coolapp/views/pages/videos/video_player.dart';
 
 //not done
 class IbPhysicsHl extends StatefulWidget {

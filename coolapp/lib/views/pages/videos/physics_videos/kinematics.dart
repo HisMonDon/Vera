@@ -19,6 +19,7 @@ class _KinematicsState extends State<Kinematics> {
     String description,
     int index,
     Widget videoPage,
+    String videoLink,
   ) {
     double _width;
     double _height;
@@ -54,7 +55,16 @@ class _KinematicsState extends State<Kinematics> {
                 borderRadius: BorderRadius.circular(10),
               ),
             ),
+
             onPressed: () {
+              if (index == videosList.length - 1) {
+                globals.nextVideoTitle =
+                    'last_one'; //check if the thing is named 'last_one'
+              } else {
+                globals.nextVideoTitle = videosList[index + 1]['title'];
+              }
+              globals.videoLink = videoLink;
+
               print("Pushing nav page ontop of stack...");
               Navigator.push(
                 context,
@@ -105,7 +115,7 @@ class _KinematicsState extends State<Kinematics> {
     {
       'title': 'Unit 2: 2D Motion Analysis',
       'description': 'Free body diagrams, forces',
-      'videoPage': FreeVideos(),
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -113,21 +123,21 @@ class _KinematicsState extends State<Kinematics> {
       'title': 'Unit 3: Projectile Motion',
       'description':
           'Parabolic trajectory analysis and launch angle optimization',
-      'videoPage': FreeVideos(),
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 4: Relative Motion',
       'description': 'Frame of reference',
-      'videoPage': FreeVideos(),
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Graphical Kinematics',
       'description': 'Slope-area interpretations of motion graphs',
-      'videoPage': FreeVideos(),
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -159,13 +169,6 @@ class _KinematicsState extends State<Kinematics> {
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
-                  if (index - 1 == videosList.length) {
-                    globals.nextVideoTitle =
-                        'last_one'; //check if the thing is named 'last_one'
-                  } else {
-                    globals.nextVideoTitle = videosList[index + 1]['title'];
-                  }
-                  globals.videoLink = video['videoLink'];
                   return Padding(
                     padding: const EdgeInsets.only(
                       bottom: 20,
@@ -175,6 +178,7 @@ class _KinematicsState extends State<Kinematics> {
                       video['description'] ?? '',
                       index,
                       video['videoPage']!,
+                      video['videoLink'],
                     ),
                   );
                 }),

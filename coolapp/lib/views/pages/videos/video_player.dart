@@ -96,24 +96,39 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(globals.videoTitle)), //add text here
-      body: Column(
-        children: [
-          Expanded(
-            child: Center(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Center(
               child: hasError
                   ? _buildErrorDisplay()
-                  : Stack(
-                      alignment: Alignment.center,
-                      children: [
-                        Video(controller: controller),
-                        if (isBuffering)
-                          const CircularProgressIndicator(color: Colors.white),
-                      ],
+                  : Container(
+                      width: MediaQuery.of(context).size.width - 400,
+                      child: AspectRatio(
+                        aspectRatio: 16 / 9,
+                        child: Container(
+                          color: Colors.black,
+                          child: hasError
+                              ? _buildErrorDisplay()
+                              : Stack(
+                                  alignment: Alignment.center,
+                                  children: [
+                                    Video(controller: controller),
+                                    if (isBuffering)
+                                      const CircularProgressIndicator(
+                                        color: Colors.white,
+                                      ),
+                                  ],
+                                ),
+                        ),
+                      ),
                     ),
             ),
-          ),
-          _buildControls(),
-        ],
+
+            _buildControls(),
+            Text("skibidi"),
+          ],
+        ),
       ),
     );
   }

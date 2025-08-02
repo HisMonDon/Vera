@@ -4,6 +4,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/kinematics.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
+import 'package:coolapp/views/pages/videos/video_player.dart';
 
 //not done
 class Grade11Physics extends StatefulWidget {

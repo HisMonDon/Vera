@@ -3,6 +3,7 @@ import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
+import 'package:coolapp/views/pages/videos/video_player.dart';
 
 //not done
 class IntroToPhysics extends StatefulWidget {
@@ -18,6 +19,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
     String description,
     int index,
     Widget videoPage,
+    String videoLink,
   ) {
     double _width;
     double _height;
@@ -54,6 +56,14 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
               ),
             ),
             onPressed: () {
+              if (index == videosList.length - 1) {
+                globals.nextVideoTitle =
+                    'last_one'; //check if the thing is named 'last_one'
+              } else {
+                globals.nextVideoTitle = videosList[index + 1]['title'];
+              }
+              globals.videoLink = videoLink;
+
               print("Pushing nav page ontop of stack...");
               Navigator.push(
                 context,
@@ -96,7 +106,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
     {
       'title': 'Unit 1: Vectors and Scalars',
       'description': 'Definition and examples of vectors and scalars',
-      'videoPage': FreeVideos(),
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -104,7 +114,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
       'title': 'Unit 2: Error Analysis and Measurement',
       'description':
           'Tools and techniques for measurement, error analysis and uncertainty in measurements',
-      'videoPage': FreeVideos(),
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -112,7 +122,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
       'title': 'Unit 3: Physical Quantities',
       'description':
           'Understanding fundamental and derived physical quantities',
-      'videoPage': FreeVideos(),
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -120,7 +130,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
       'title': 'Unit 4: Basic Motion Concepts',
       'description':
           'Basic concepts of motion, displacement vs. distance, speed vs. velocity',
-      'videoPage': FreeVideos(),
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -152,13 +162,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
-                  if (index - 1 == videosList.length) {
-                    globals.nextVideoTitle =
-                        'last_one'; //check if the thing is named 'last_one'
-                  } else {
-                    globals.nextVideoTitle = videosList[index + 1]['title'];
-                  }
-                  globals.videoLink = video['videoLink'];
+
                   return Padding(
                     padding: const EdgeInsets.only(
                       bottom: 20,
@@ -168,6 +172,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
                       video['description'] ?? '',
                       index,
                       video['videoPage']!,
+                      video['videoLink'],
                     ),
                   );
                 }),
