@@ -61,6 +61,7 @@ class _KinematicsState extends State<Kinematics> {
                     'last_one'; //check if the thing is named 'last_one'
               } else {
                 globals.nextVideoTitle = videosList[index + 1]['title'];
+                globals.nextVideoPage = videosList[index + 1]['videoPage'];
               }
               globals.videoLink = videoLink;
 

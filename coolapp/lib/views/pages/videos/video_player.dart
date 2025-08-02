@@ -126,7 +126,22 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
             ),
 
             _buildControls(),
-            Text("skibidi"),
+            if (globals.nextVideoTitle != 'last_one')
+              Row(
+                children: [
+                  Text("Next video: ${globals.nextVideoTitle}"),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(
+                          builder: (_) => globals.nextVideoPage,
+                        ),
+                      );
+                    },
+                    child: Icon(Icons.navigate_next_rounded),
+                  ),
+                ],
+              ),
           ],
         ),
       ),

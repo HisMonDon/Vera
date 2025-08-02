@@ -1,5 +1,7 @@
 library globals;
 
+import 'package:flutter/widgets.dart';
+
 bool isPremium = false;
 bool isLoggedIn = false;
 bool isAdmin = false;
@@ -16,3 +18,4 @@ String videoLink =
 String videoTitle = 'Physics Video';
 String nextVideoTitle =
     'last_one'; //check if it is named "last_one", if it is, then there will be no next video
+dynamic nextVideoPage;
