@@ -6,19 +6,20 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
 
 //not done
-class IbPhysicsHl extends StatefulWidget {
-  const IbPhysicsHl({super.key});
+class ApPhysics2 extends StatefulWidget {
+  const ApPhysics2({super.key});
 
   @override
-  State<IbPhysicsHl> createState() => _IbPhysicsHlState();
+  State<ApPhysics2> createState() => _ApPhysics2State();
 }
 
-class _IbPhysicsHlState extends State<IbPhysicsHl> {
+class _ApPhysics2State extends State<ApPhysics2> {
   Widget _buildVideoButton(
     String title,
     String description,
     int index,
     Widget videoPage,
+    String videoLink,
   ) {
     double _width;
     double _height;
@@ -55,6 +56,13 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
               ),
             ),
             onPressed: () {
+              if (index == videosList.length - 1) {
+                globals.nextVideoTitle =
+                    'last_one'; //check if the thing is named 'last_one'
+              } else {
+                globals.nextVideoTitle = videosList[index + 1]['title'];
+              }
+              globals.videoLink = videoLink;
               print("Pushing nav page ontop of stack...");
               Navigator.push(
                 context,
@@ -95,57 +103,51 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Measurement and Uncertainties',
-      'description':
-          'Error propagation, uncertainty calculations, and graphical analysis techniques',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 1: Thermodynamics',
+      'description': 'Kinetic Theory Of Gases, Laws of Thermodynamics',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 2: Kinematics',
-      'description': 'Motion graphs and kinematic equations',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 2: Electrostatics',
+      'description': "Electric Charge, Coulomb's Law, Electric Field",
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 3: Rotational Motion',
-      'description': 'Rotational kinematics and moment of inertia',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 3: Capacitance and Electric Potential: ',
+      'description': 'Dielectrics and capacitor networks',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title':
-          'Unit 4:  Thermal Physics', //make a whole folder for this perchance?
-      'description':
-          'Kinetic theory, thermodynamics laws, and heat transfer mechanisms',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 4: Electric Circuits',
+      'description': 'RC time constants and circuit analysis',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 5: Electricity and Magnetism',
-      'description':
-          "Maxwell's equations, electromagnetic induction, and AC circuits",
-      'videoPage': FreeVideos(),
+      'title': 'Unit 5: Magnetism',
+      'description': 'Magnetic fields, EMF, Moving Charges',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 6: Quantum Physics',
-      'description':
-          "Wave-particle duality, nuclear physics, and radioactive decay",
-      'videoPage': FreeVideos(),
+      'title': 'Unit 6: Optics',
+      'description': 'Lens equations and optical instruments',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title':
-          'HL Extension: Gravitational Field', //shared with grade 12 physics
-      'description': "Orbital mechanics and gravitational potential",
-      'videoPage': FreeVideos(),
+      'title': 'Unit 7: Modern Physics',
+      'description': 'Nuclear, Quantum, Atomic Physics, wave functions',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -164,7 +166,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
               Row(
                 children: [
                   AutoSizeText(
-                    "IB Physics HL",
+                    "AP Physics 2",
                     maxLines: 1,
                     style: GoogleFonts.mPlus1(
                       fontSize: 30,
@@ -177,13 +179,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
-                  if (index - 1 == videosList.length) {
-                    globals.nextVideoTitle =
-                        'last_one'; //check if the thing is named 'last_one'
-                  } else {
-                    globals.nextVideoTitle = videosList[index + 1]['title'];
-                  }
-                  globals.videoLink = video['videoLink'];
+
                   return Padding(
                     padding: const EdgeInsets.only(
                       bottom: 20,
@@ -193,6 +189,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
                       video['description'] ?? '',
                       index,
                       video['videoPage']!,
+                      video['videoLink'],
                     ),
                   );
                 }),

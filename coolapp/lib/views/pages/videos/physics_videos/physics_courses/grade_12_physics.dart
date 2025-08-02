@@ -6,19 +6,20 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
 
 //not done
-class ApPhysics2 extends StatefulWidget {
-  const ApPhysics2({super.key});
+class Grade12Physics extends StatefulWidget {
+  const Grade12Physics({super.key});
 
   @override
-  State<ApPhysics2> createState() => _ApPhysics2State();
+  State<Grade12Physics> createState() => _Grade12PhysicsState();
 }
 
-class _ApPhysics2State extends State<ApPhysics2> {
+class _Grade12PhysicsState extends State<Grade12Physics> {
   Widget _buildVideoButton(
     String title,
     String description,
     int index,
     Widget videoPage,
+    String videoLink,
   ) {
     double _width;
     double _height;
@@ -55,6 +56,13 @@ class _ApPhysics2State extends State<ApPhysics2> {
               ),
             ),
             onPressed: () {
+              if (index == videosList.length - 1) {
+                globals.nextVideoTitle =
+                    'last_one'; //check if the thing is named 'last_one'
+              } else {
+                globals.nextVideoTitle = videosList[index + 1]['title'];
+              }
+              globals.videoLink = videoLink;
               print("Pushing nav page ontop of stack...");
               Navigator.push(
                 context,
@@ -95,51 +103,44 @@ class _ApPhysics2State extends State<ApPhysics2> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Thermodynamics',
-      'description': 'Kinetic Theory Of Gases, Laws of Thermodynamics',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 1: Rotational Motion',
+      'description': 'Centripetal force and torque calculations',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 2: Electrostatics',
-      'description': "Electric Charge, Coulomb's Law, Electric Field",
-      'videoPage': FreeVideos(),
+      'title': 'Unit 2: Momentum and Collisions',
+      'description': 'Impulse-momentum theorem in 2D',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 3: Capacitance and Electric Potential: ',
-      'description': 'Dielectrics and capacitor networks',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 3: Gravitational Fields',
+      'description': 'Orbital mechanics and gravitational potential',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 4: Electric Circuits',
-      'description': 'RC time constants and circuit analysis',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 4: Electromagnetic Fields',
+      'description': 'Field interactions and electromagnetic applications',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 5: Magnetism',
-      'description': 'Magnetic fields, EMF, Moving Charges',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 5: Wave Optics',
+      'description': 'Double-slit interference and thin-film phenomena',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 6: Optics',
-      'description': 'Lens equations and optical instruments',
-      'videoPage': FreeVideos(),
-      'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
-    },
-    {
-      'title': 'Unit 7: Modern Physics',
-      'description': 'Nuclear, Quantum, Atomic Physics, wave functions',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 6: Quantum Physics',
+      'description': 'Photoelectric effect and Bohr model applications',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -147,7 +148,6 @@ class _ApPhysics2State extends State<ApPhysics2> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -158,7 +158,7 @@ class _ApPhysics2State extends State<ApPhysics2> {
               Row(
                 children: [
                   AutoSizeText(
-                    "AP Physics 2",
+                    "Grade 12 Physics",
                     maxLines: 1,
                     style: GoogleFonts.mPlus1(
                       fontSize: 30,
@@ -171,13 +171,7 @@ class _ApPhysics2State extends State<ApPhysics2> {
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
-                  if (index - 1 == videosList.length) {
-                    globals.nextVideoTitle =
-                        'last_one'; //check if the thing is named 'last_one'
-                  } else {
-                    globals.nextVideoTitle = videosList[index + 1]['title'];
-                  }
-                  globals.videoLink = video['videoLink'];
+
                   return Padding(
                     padding: const EdgeInsets.only(
                       bottom: 20,
@@ -187,6 +181,7 @@ class _ApPhysics2State extends State<ApPhysics2> {
                       video['description'] ?? '',
                       index,
                       video['videoPage']!,
+                      video['videoLink'],
                     ),
                   );
                 }),

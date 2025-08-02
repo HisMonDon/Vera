@@ -1,25 +1,24 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:coolapp/views/pages/videos/free_videos.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/kinematics.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
 
 //not done
-class Grade11Physics extends StatefulWidget {
-  const Grade11Physics({super.key});
+class IbPhysicsHl extends StatefulWidget {
+  const IbPhysicsHl({super.key});
 
   @override
-  State<Grade11Physics> createState() => _Grade11PhysicsState();
+  State<IbPhysicsHl> createState() => _IbPhysicsHlState();
 }
 
-class _Grade11PhysicsState extends State<Grade11Physics> {
+class _IbPhysicsHlState extends State<IbPhysicsHl> {
   Widget _buildVideoButton(
     String title,
     String description,
     int index,
     Widget videoPage,
+    String videoLink,
   ) {
     double _width;
     double _height;
@@ -56,6 +55,13 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
               ),
             ),
             onPressed: () {
+              if (index == videosList.length - 1) {
+                globals.nextVideoTitle =
+                    'last_one'; //check if the thing is named 'last_one'
+              } else {
+                globals.nextVideoTitle = videosList[index + 1]['title'];
+              }
+              globals.videoLink = videoLink;
               print("Pushing nav page ontop of stack...");
               Navigator.push(
                 context,
@@ -96,46 +102,57 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Vectors and Scalars',
-      'description': 'Addition and calculations with vectors and scalars.',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 1: Measurement and Uncertainties',
+      'description':
+          'Error propagation, uncertainty calculations, and graphical analysis techniques',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 2: Kinematics',
       'description': 'Motion graphs and kinematic equations',
-      'videoPage': Kinematics(),
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': "Unit 3: Forces and Newton's laws",
-      'description': 'EnterDescriptionHere',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 3: Rotational Motion',
+      'description': 'Rotational kinematics and moment of inertia',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 4: Energy and Work',
+      'title':
+          'Unit 4:  Thermal Physics', //make a whole folder for this perchance?
       'description':
-          'Work-energy theorem and conservation of Energy (Very important unit)',
-      'videoPage': FreeVideos(),
+          'Kinetic theory, thermodynamics laws, and heat transfer mechanisms',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 5: Waves and Sound',
-      'description': 'Harmonics, resonance, and Doppler effect',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 5: Electricity and Magnetism',
+      'description':
+          "Maxwell's equations, electromagnetic induction, and AC circuits",
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 6: DC Ciruits:',
-      'description': 'Series and parallel combinations and power calculations',
-      'videoPage':
-          FreeVideos(), //redirect this to the thing inside electricity unit
+      'title': 'Unit 6: Quantum Physics',
+      'description':
+          "Wave-particle duality, nuclear physics, and radioactive decay",
+      'videoPage': VideoPlayerScreen(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+    },
+    {
+      'title':
+          'HL Extension: Gravitational Field', //shared with grade 12 physics
+      'description': "Orbital mechanics and gravitational potential",
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -154,7 +171,7 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
               Row(
                 children: [
                   AutoSizeText(
-                    "Grade 11 Physics",
+                    "IB Physics HL",
                     maxLines: 1,
                     style: GoogleFonts.mPlus1(
                       fontSize: 30,
@@ -167,13 +184,7 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
-                  if (index - 1 == videosList.length) {
-                    globals.nextVideoTitle =
-                        'last_one'; //check if the thing is named 'last_one'
-                  } else {
-                    globals.nextVideoTitle = videosList[index + 1]['title'];
-                  }
-                  globals.videoLink = video['videoLink'];
+
                   return Padding(
                     padding: const EdgeInsets.only(
                       bottom: 20,
@@ -183,6 +194,7 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
                       video['description'] ?? '',
                       index,
                       video['videoPage']!,
+                      video['videoLink'],
                     ),
                   );
                 }),

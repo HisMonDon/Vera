@@ -1,23 +1,26 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/free_videos.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
+import 'package:coolapp/views/pages/videos/video_player.dart';
 
 //not done
-class Grade12Physics extends StatefulWidget {
-  const Grade12Physics({super.key});
+class ApPhysics1 extends StatefulWidget {
+  const ApPhysics1({super.key});
 
   @override
-  State<Grade12Physics> createState() => _Grade12PhysicsState();
+  State<ApPhysics1> createState() => _ApPhysics1State();
 }
 
-class _Grade12PhysicsState extends State<Grade12Physics> {
+class _ApPhysics1State extends State<ApPhysics1> {
   Widget _buildVideoButton(
     String title,
     String description,
     int index,
     Widget videoPage,
+    String videoLink,
   ) {
     double _width;
     double _height;
@@ -54,6 +57,13 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
               ),
             ),
             onPressed: () {
+              if (index == videosList.length - 1) {
+                globals.nextVideoTitle =
+                    'last_one'; //check if the thing is named 'last_one'
+              } else {
+                globals.nextVideoTitle = videosList[index + 1]['title'];
+              }
+              globals.videoLink = videoLink;
               print("Pushing nav page ontop of stack...");
               Navigator.push(
                 context,
@@ -94,44 +104,59 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Rotational Motion',
-      'description': 'Centripetal force and torque calculations',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 1: Vectors and Scalars',
+      'description': 'Addition and calculations with vectors and scalars.',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 2: Momentum and Collisions',
-      'description': 'Impulse-momentum theorem in 2D',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 2: Kinematics',
+      'description': 'Motion graphs and kinematic equations',
+      'videoPage': Kinematics(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 3: Gravitational Fields',
-      'description': 'Orbital mechanics and gravitational potential',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 4: Circular Motion',
+      'description': "Centripetal acceleration and Kepler's laws",
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 4: Electromagnetic Fields',
-      'description': 'Field interactions and electromagnetic applications',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 5: Energy and Work',
+      'description':
+          'Work-energy theorem and conservation of Energy (Very important unit)',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 5: Wave Optics',
-      'description': 'Double-slit interference and thin-film phenomena',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 6: Momentum', //shared with grade 12 phy
+      'description': 'Collision analysis and center of mass',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 6: Quantum Physics',
-      'description': 'Photoelectric effect and Bohr model applications',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 7: Harmonics',
+      'description': 'Pendulum dynamics and spring systems',
+      'videoPage': VideoPlayerScreen(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+    },
+    {
+      'title': 'Unit 8: Rotational Motion',
+      'description': 'Rotational kinematics and moment of inertia',
+      'videoPage': VideoPlayerScreen(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+    },
+    {
+      'title': 'Unit 9: Fluids',
+      'description': "Bernoulli's principle and Pascal's law applications",
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -139,6 +164,7 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
+
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -149,7 +175,7 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
               Row(
                 children: [
                   AutoSizeText(
-                    "Grade 12 Physics",
+                    "AP Physics 1",
                     maxLines: 1,
                     style: GoogleFonts.mPlus1(
                       fontSize: 30,
@@ -162,13 +188,6 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
-                  if (index - 1 == videosList.length) {
-                    globals.nextVideoTitle =
-                        'last_one'; //check if the thing is named 'last_one'
-                  } else {
-                    globals.nextVideoTitle = videosList[index + 1]['title'];
-                  }
-                  globals.videoLink = video['videoLink'];
                   return Padding(
                     padding: const EdgeInsets.only(
                       bottom: 20,
@@ -178,6 +197,7 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
                       video['description'] ?? '',
                       index,
                       video['videoPage']!,
+                      video['videoLink'],
                     ),
                   );
                 }),

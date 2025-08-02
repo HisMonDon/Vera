@@ -1,25 +1,26 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/free_videos.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/kinematics.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
 
 //not done
-class ApPhysics1 extends StatefulWidget {
-  const ApPhysics1({super.key});
+class ElectricityAndMagnetism extends StatefulWidget {
+  const ElectricityAndMagnetism({super.key});
 
   @override
-  State<ApPhysics1> createState() => _ApPhysics1State();
+  State<ElectricityAndMagnetism> createState() =>
+      _ElectricityAndMagnetismState();
 }
 
-class _ApPhysics1State extends State<ApPhysics1> {
+class _ElectricityAndMagnetismState extends State<ElectricityAndMagnetism> {
   Widget _buildVideoButton(
     String title,
     String description,
     int index,
     Widget videoPage,
+    String videoLink,
   ) {
     double _width;
     double _height;
@@ -56,6 +57,13 @@ class _ApPhysics1State extends State<ApPhysics1> {
               ),
             ),
             onPressed: () {
+              if (index == videosList.length - 1) {
+                globals.nextVideoTitle =
+                    'last_one'; //check if the thing is named 'last_one'
+              } else {
+                globals.nextVideoTitle = videosList[index + 1]['title'];
+              }
+              globals.videoLink = videoLink;
               print("Pushing nav page ontop of stack...");
               Navigator.push(
                 context,
@@ -96,66 +104,45 @@ class _ApPhysics1State extends State<ApPhysics1> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Vectors and Scalars',
-      'description': 'Addition and calculations with vectors and scalars.',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 1: Electrostatics',
+      'description': "Coulomb's law, electric fields, and potential difference",
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 2: Kinematics',
-      'description': 'Motion graphs and kinematic equations',
-      'videoPage': Kinematics(),
+      'title': "Unit 2: DC Circuits",
+      'description': "Ohm's law, Kirchhoff's rules, and circuit analysis",
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': "Unit 3: Forces and Newton's Laws",
-      'description': 'Free-body diagrams and friction applications',
-      'videoPage': Kinematics(),
-      'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
-    },
-    {
-      'title': 'Unit 4: Circular Motion',
-      'description': "Centripetal acceleration and Kepler's laws",
-      'videoPage': FreeVideos(),
-      'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
-    },
-    {
-      'title': 'Unit 5: Energy and Work',
+      'title': 'Unit 3: Capacitance',
       'description':
-          'Work-energy theorem and conservation of Energy (Very important unit)',
-      'videoPage': FreeVideos(),
+          'Parallel plate capacitors, energy storage, and RC circuits',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 6: Momentum', //shared with grade 12 phy
-      'description': 'Collision analysis and center of mass',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 4: Right hand rule',
+      'description': 'How to use the right hand rule',
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 7: Harmonics',
-      'description': 'Pendulum dynamics and spring systems',
-      'videoPage': FreeVideos(),
+      'title': 'Unit 5: Electromagnetic Induction',
+      'description': "Faraday's law, Lenz's law, and motional EMF",
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 8: Rotational Motion',
-      'description': 'Rotational kinematics and moment of inertia',
-      'videoPage': FreeVideos(),
-      'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
-    },
-    {
-      'title': 'Unit 9: Fluids',
-      'description': "Bernoulli's principle and Pascal's law applications",
-      'videoPage': FreeVideos(),
+      'title': 'Unit 6: EM Waves',
+      'description': "Spectrum properties and polarization phenomena",
+      'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -174,7 +161,7 @@ class _ApPhysics1State extends State<ApPhysics1> {
               Row(
                 children: [
                   AutoSizeText(
-                    "AP Physics 1",
+                    "Electricity and Magnetism",
                     maxLines: 1,
                     style: GoogleFonts.mPlus1(
                       fontSize: 30,
@@ -188,14 +175,6 @@ class _ApPhysics1State extends State<ApPhysics1> {
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
 
-                  globals.videoLink = video['videoLink'];
-                  if (index - 1 == videosList.length) {
-                    globals.nextVideoTitle =
-                        'last_one'; //check if the thing is named 'last_one'
-                  } else {
-                    globals.nextVideoTitle = videosList[index + 1]['title'];
-                  }
-
                   return Padding(
                     padding: const EdgeInsets.only(
                       bottom: 20,
@@ -205,6 +184,7 @@ class _ApPhysics1State extends State<ApPhysics1> {
                       video['description'] ?? '',
                       index,
                       video['videoPage']!,
+                      video['videoLink'],
                     ),
                   );
                 }),
