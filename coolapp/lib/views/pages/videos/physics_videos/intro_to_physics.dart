@@ -152,6 +152,12 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
+                  if (index - 1 == videosList.length) {
+                    globals.nextVideoTitle =
+                        'last_one'; //check if the thing is named 'last_one'
+                  } else {
+                    globals.nextVideoTitle = videosList[index + 1]['title'];
+                  }
                   globals.videoLink = video['videoLink'];
                   return Padding(
                     padding: const EdgeInsets.only(
