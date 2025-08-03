@@ -64,7 +64,7 @@ class _KinematicsState extends State<Kinematics> {
                 globals.nextVideoPage = videosList[index + 1]['videoPage'];
               }
               globals.videoLink = videoLink;
-
+              globals.unitTitle = videosList[index]['title'];
               print("Pushing nav page ontop of stack...");
               Navigator.push(
                 context,
@@ -146,7 +146,7 @@ class _KinematicsState extends State<Kinematics> {
   Widget build(BuildContext context) {
     // add an immediate check in build method
     globals.topicTitle = 'Kinematics';
-    globals.unitTitle = '';
+    print("topic title: kinematics, unit title reset");
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(

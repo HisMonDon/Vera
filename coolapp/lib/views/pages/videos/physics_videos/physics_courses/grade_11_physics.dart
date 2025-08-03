@@ -1,8 +1,11 @@
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 
 //not done
 class Grade11Physics extends StatefulWidget {
@@ -104,21 +107,21 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
     {
       'title': 'Unit 1: Vectors and Scalars',
       'description': 'Addition and calculations with vectors and scalars.',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': IntroToPhysics(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 2: Kinematics',
       'description': 'Motion graphs and kinematic equations',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': Kinematics(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': "Unit 3: Forces and Newton's laws",
-      'description': 'EnterDescriptionHere',
-      'videoPage': VideoPlayerScreen(),
+      'title': "Unit 3: Dynamics",
+      'description': "Forces and Newton's Laws",
+      'videoPage': VideoPlayerScreen(), //change to new physics topic
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -138,10 +141,10 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 6: DC Ciruits:',
+      'title': 'Unit 6: Electricity:',
       'description': 'Series and parallel combinations and power calculations',
       'videoPage':
-          VideoPlayerScreen(), //redirect this to the thing inside electricity unit
+          ElectricityAndMagnetism(), //redirect this to the thing inside electricity unit
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

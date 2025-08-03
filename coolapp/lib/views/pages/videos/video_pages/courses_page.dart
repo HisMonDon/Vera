@@ -73,7 +73,7 @@ class _CoursePageState extends State<CoursePage> {
           child: Column(
             children: [
               const SizedBox(width: 1, height: 30),
-              Text(
+              AutoSizeText(
                 title,
                 maxLines: 1,
                 style: GoogleFonts.montserrat(
@@ -142,9 +142,6 @@ class _CoursePageState extends State<CoursePage> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    globals.topicTitle = '';
-    globals.unitTitle = '';
-    globals.courseTitle = '';
     int buttonColorShift = 10;
     bool phy_11_hovered = false;
     if (!globals.isLoggedIn) {

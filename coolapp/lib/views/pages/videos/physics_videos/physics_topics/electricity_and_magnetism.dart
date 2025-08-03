@@ -63,6 +63,8 @@ class _ElectricityAndMagnetismState extends State<ElectricityAndMagnetism> {
               } else {
                 globals.nextVideoTitle = videosList[index + 1]['title'];
               }
+              globals.unitTitle = videosList[index]['title'];
+              globals.unitTitle = videosList[index]['title'];
               globals.videoLink = videoLink;
               print("Pushing nav page ontop of stack...");
               Navigator.push(

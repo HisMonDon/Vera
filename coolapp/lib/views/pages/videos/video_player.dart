@@ -20,7 +20,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   Duration position = Duration.zero;
   Duration duration = Duration.zero;
   double volume = 1.0;
-
+  String stackedTitle =
+      ''; //github format where u use / to seperate folders or tabs
   @override
   void initState() {
     super.initState();
@@ -94,12 +95,22 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
 
   @override
   Widget build(BuildContext context) {
+    if (globals.courseTitle != '') {
+      //that means that we have all
+      stackedTitle =
+          globals.courseTitle +
+          '/' +
+          globals.topicTitle +
+          '/' +
+          globals.unitTitle;
+    } else if (globals.topicTitle != '') {
+      //put this because I might implement video of the day later on
+      stackedTitle = globals.topicTitle + '/' + globals.unitTitle;
+    } else {
+      stackedTitle = globals.unitTitle;
+    }
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          globals.courseTitle + globals.topicTitle + globals.unitTitle,
-        ),
-      ), //add text here
+      appBar: AppBar(title: Text(stackedTitle)), //add text here
       body: SingleChildScrollView(
         child: Column(
           children: [

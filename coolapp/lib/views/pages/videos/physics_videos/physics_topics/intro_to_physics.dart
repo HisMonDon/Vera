@@ -63,7 +63,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
                 globals.nextVideoTitle = videosList[index + 1]['title'];
               }
               globals.videoLink = videoLink;
-
+              globals.unitTitle = videosList[index]['title'];
               print("Pushing nav page ontop of stack...");
               Navigator.push(
                 context,
