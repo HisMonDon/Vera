@@ -1,19 +1,18 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
+import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
-import 'package:coolapp/views/pages/videos/video_player.dart';
 
 //not done
-class IbPhysicsHl extends StatefulWidget {
-  const IbPhysicsHl({super.key});
+class MomentumAndCollisions extends StatefulWidget {
+  const MomentumAndCollisions({super.key});
 
   @override
-  State<IbPhysicsHl> createState() => _IbPhysicsHlState();
+  State<MomentumAndCollisions> createState() => _MomentumAndCollisionsState();
 }
 
-class _IbPhysicsHlState extends State<IbPhysicsHl> {
+class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
   Widget _buildVideoButton(
     String title,
     String description,
@@ -55,14 +54,17 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
                 borderRadius: BorderRadius.circular(10),
               ),
             ),
+
             onPressed: () {
               if (index == videosList.length - 1) {
                 globals.nextVideoTitle =
                     'last_one'; //check if the thing is named 'last_one'
               } else {
                 globals.nextVideoTitle = videosList[index + 1]['title'];
+                globals.nextVideoPage = videosList[index + 1]['videoPage'];
               }
               globals.videoLink = videoLink;
+              globals.unitTitle = videosList[index]['title'];
               print("Pushing nav page ontop of stack...");
               Navigator.push(
                 context,
@@ -103,56 +105,39 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Measurement and Uncertainties',
+      'title': 'Unit 1: Introduction to Momentum',
       'description':
-          'Error propagation, uncertainty calculations, and graphical analysis techniques',
+          'Introduction to momentum, apply basic momentum formulae to moving objects',
       'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 2: Kinematics',
-      'description': 'Motion graphs and kinematic equations',
-      'videoPage': Kinematics(),
-      'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
-    },
-    {
-      'title': 'Unit 3: Rotational Motion',
-      'description': 'Rotational kinematics and moment of inertia',
-      'videoPage': VideoPlayerScreen(),
-      'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
-    },
-    {
-      'title':
-          'Unit 4:  Thermal Physics', //make a whole folder for this perchance?
+      'title': 'Unit 2: Momentum in 2D',
       'description':
-          'Kinetic theory, thermodynamics laws, and heat transfer mechanisms',
+          'Break momentum into x- and y-components and apply conservation in both directions to solve planar collision problems.',
       'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 5: Electricity and Magnetism',
+      'title': 'Unit 3: Impulse and Momentum change',
+      'description': 'How forces change momentum over time',
+      'videoPage': VideoPlayerScreen(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+    },
+    {
+      'title': 'Unit 4: Types of Collisions',
       'description':
-          "Maxwell's equations, electromagnetic induction, and AC circuits",
+          'Differences between elastic, inelastic, and perfectly inelastic collisions by analyzing how momentum and kinetic energy behave.',
       'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 6: Quantum Physics',
-      'description':
-          "Wave-particle duality, nuclear physics, and radioactive decay",
-      'videoPage': VideoPlayerScreen(),
-      'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
-    },
-    {
-      'title':
-          'HL Extension: Gravitational Field', //shared with grade 12 physics
-      'description': "Orbital mechanics and gravitational potential",
+      'title': 'Momentum practice problems',
+      'description': 'Practice problems with momentum',
       'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
@@ -161,8 +146,8 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    globals.courseTitle = 'IB Physics HL';
-    globals.topicTitle = '';
+    globals.topicTitle = 'Kinematics';
+    print("topic title: kinematics, unit title reset");
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -173,7 +158,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
               Row(
                 children: [
                   AutoSizeText(
-                    "IB Physics HL",
+                    "Kinematics",
                     maxLines: 1,
                     style: GoogleFonts.mPlus1(
                       fontSize: 30,
@@ -186,7 +171,6 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
-
                   return Padding(
                     padding: const EdgeInsets.only(
                       bottom: 20,
@@ -205,7 +189,6 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
                 height: 40,
                 child: ElevatedButton(
                   onPressed: () {
-                    globals.courseTitle = '';
                     Navigator.of(context).pop();
                   },
                   style: ElevatedButton.styleFrom(

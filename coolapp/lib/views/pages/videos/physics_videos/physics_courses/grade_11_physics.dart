@@ -196,6 +196,7 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
                 height: 40,
                 child: ElevatedButton(
                   onPressed: () {
+                    globals.topicTitle = '';
                     Navigator.of(context).pop();
                   },
                   style: ElevatedButton.styleFrom(

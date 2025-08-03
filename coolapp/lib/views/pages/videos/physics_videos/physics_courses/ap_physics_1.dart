@@ -207,6 +207,7 @@ class _ApPhysics1State extends State<ApPhysics1> {
                 height: 40,
                 child: ElevatedButton(
                   onPressed: () {
+                    globals.topicTitle = '';
                     Navigator.of(context).pop();
                   },
                   style: ElevatedButton.styleFrom(

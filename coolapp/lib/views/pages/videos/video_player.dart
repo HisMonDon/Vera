@@ -99,13 +99,13 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       //that means that we have all
       stackedTitle =
           globals.courseTitle +
-          '/' +
+          ', ' +
           globals.topicTitle +
-          '/' +
+          ', ' +
           globals.unitTitle;
     } else if (globals.topicTitle != '') {
       //put this because I might implement video of the day later on
-      stackedTitle = globals.topicTitle + '/' + globals.unitTitle;
+      stackedTitle = globals.topicTitle + ', ' + globals.unitTitle;
     } else {
       stackedTitle = globals.unitTitle;
     }
