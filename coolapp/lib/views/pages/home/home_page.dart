@@ -226,33 +226,47 @@ class _HomePageState extends State<HomePage> {
                             color: const Color.fromARGB(255, 167, 198, 131),
                           ),
                         ),
-                        Stack(
-                          children: [
-                            Container(
-                              width:
-                                  (MediaQuery.of(context).size.width) / 2 - 40,
-                              height: 300,
-                              decoration: BoxDecoration(
-                                color: Color.fromARGB(255, 15, 48, 40),
-                                borderRadius: BorderRadius.circular(15),
+                        SizedBox(
+                          height: 300,
+                          child: Stack(
+                            alignment: Alignment.centerLeft,
+                            children: [
+                              Container(
+                                width:
+                                    (MediaQuery.of(context).size.width) / 2 -
+                                    40,
+                                height: 300,
+                                decoration: BoxDecoration(
+                                  color: Color.fromARGB(255, 15, 48, 40),
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
                               ),
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: globals.pastVideos.map((video) {
-                                return Padding(
-                                  padding: EdgeInsets.symmetric(vertical: 4),
-                                  child: Text(
-                                    video,
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      color: Colors.white,
-                                    ),
+                              Positioned.fill(
+                                child: Align(
+                                  alignment: Alignment.topCenter,
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: globals.pastVideos.map((video) {
+                                      return Padding(
+                                        padding: EdgeInsets.symmetric(
+                                          vertical: 4,
+                                        ),
+                                        child: Text(
+                                          video,
+                                          style: GoogleFonts.montserrat(
+                                            fontSize: 16,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      );
+                                    }).toList(),
                                   ),
-                                );
-                              }).toList(),
-                            ),
-                          ],
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
