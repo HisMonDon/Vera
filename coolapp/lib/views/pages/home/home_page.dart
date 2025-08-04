@@ -245,19 +245,19 @@ class _HomePageState extends State<HomePage> {
                                 child: Align(
                                   alignment: Alignment.topCenter,
                                   child: Column(
-                                    mainAxisSize: MainAxisSize.min,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
+                                    //mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
                                     children: globals.pastVideos.map((video) {
-                                      return Padding(
-                                        padding: EdgeInsets.symmetric(
-                                          vertical: 4,
-                                        ),
-                                        child: Text(
-                                          video,
-                                          style: GoogleFonts.montserrat(
-                                            fontSize: 16,
-                                            color: Colors.white,
+                                      return Text(
+                                        video,
+                                        style: GoogleFonts.montserrat(
+                                          fontSize: 20,
+                                          color: const Color.fromARGB(
+                                            255,
+                                            167,
+                                            198,
+                                            131,
                                           ),
                                         ),
                                       );
