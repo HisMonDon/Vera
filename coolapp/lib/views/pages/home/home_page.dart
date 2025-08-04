@@ -222,7 +222,9 @@ class _HomePageState extends State<HomePage> {
                         Text(
                           'Recent Videos Watched',
                           style: GoogleFonts.mPlus1(
-                            fontSize: 30,
+                            fontSize:
+                                ((MediaQuery.of(context).size.width) / 2 - 40) /
+                                20,
                             color: const Color.fromARGB(255, 167, 198, 131),
                           ),
                         ),
