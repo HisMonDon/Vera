@@ -245,19 +245,40 @@ class _HomePageState extends State<HomePage> {
                                 child: Align(
                                   alignment: Alignment.topCenter,
                                   child: Column(
-                                    //mainAxisSize: MainAxisSize.min,
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceEvenly,
                                     children: globals.pastVideos.map((video) {
-                                      return Text(
-                                        video,
-                                        style: GoogleFonts.montserrat(
-                                          fontSize: 20,
+                                      return Container(
+                                        alignment: Alignment.topCenter,
+                                        decoration: BoxDecoration(
                                           color: const Color.fromARGB(
                                             255,
-                                            167,
-                                            198,
-                                            131,
+                                            5,
+                                            35,
+                                            21,
+                                          ),
+                                          borderRadius: BorderRadius.circular(
+                                            5,
+                                          ),
+                                        ),
+
+                                        width:
+                                            (MediaQuery.of(
+                                                  context,
+                                                ).size.width) /
+                                                2 -
+                                            70,
+                                        height: 50,
+                                        child: Text(
+                                          video,
+                                          style: GoogleFonts.montserrat(
+                                            fontSize: 20,
+                                            color: const Color.fromARGB(
+                                              255,
+                                              217,
+                                              225,
+                                              207,
+                                            ),
                                           ),
                                         ),
                                       );
