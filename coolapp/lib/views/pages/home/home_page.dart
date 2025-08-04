@@ -354,7 +354,7 @@ class _HomePageState extends State<HomePage> {
                                           final video = entry.value;
 
                                           final backgroundColor =
-                                              (index % 2 == 0)
+                                              (index % 2 != 0)
                                               ? const Color.fromARGB(
                                                   255,
                                                   30,
