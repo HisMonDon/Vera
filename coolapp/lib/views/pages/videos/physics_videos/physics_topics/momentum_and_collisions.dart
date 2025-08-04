@@ -146,8 +146,8 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    globals.topicTitle = 'Kinematics';
-    print("topic title: kinematics, unit title reset");
+    globals.topicTitle = 'Momentum and Collisions';
+    print("topic title: Momentum and collisions, unit title reset");
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(

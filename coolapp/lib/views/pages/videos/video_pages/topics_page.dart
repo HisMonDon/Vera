@@ -3,6 +3,7 @@ import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
 import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
@@ -126,7 +127,7 @@ class _TopicsPageState extends State<TopicsPage> {
       'imagePath': 'images/momentum.jpg',
       'description':
           'Tutorial videos on momentum, elastic and non-elastic collisions, and impulse',
-      'videoPage': ElectricityAndMagnetism(),
+      'videoPage': MomentumAndCollisions(),
     },
   ];
   @override

@@ -111,7 +111,11 @@ class _HomePageState extends State<HomePage> {
                   );
                 }
               }
-              Navigator.of(dialogContext).pop();
+              if (mounted && Navigator.of(dialogContext).canPop()) {
+                Navigator.of(dialogContext).pop();
+              } else {
+                print("error?? the popup has been clsoed");
+              }
             },
           ),
         ],

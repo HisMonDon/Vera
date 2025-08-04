@@ -140,7 +140,6 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                     ),
             ),
 
-            _buildControls(),
             if (globals.nextVideoTitle != 'last_one')
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -181,32 +180,6 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
           child: const Text('Retry'),
         ),
       ],
-    );
-  }
-
-  Widget _buildControls() {
-    return Container(
-      padding: const EdgeInsets.all(16),
-      color: Colors.black12,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                _formatDuration(position),
-                style: const TextStyle(color: Colors.black87),
-              ),
-
-              Text(
-                _formatDuration(duration),
-                style: const TextStyle(color: Colors.black87),
-              ),
-            ],
-          ),
-        ],
-      ),
     );
   }
 }
