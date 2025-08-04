@@ -247,42 +247,60 @@ class _HomePageState extends State<HomePage> {
                                   child: Column(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceEvenly,
-                                    children: globals.pastVideos.map((video) {
-                                      return Container(
-                                        alignment: Alignment.topCenter,
-                                        decoration: BoxDecoration(
-                                          color: const Color.fromARGB(
-                                            255,
-                                            5,
-                                            35,
-                                            21,
-                                          ),
-                                          borderRadius: BorderRadius.circular(
-                                            5,
-                                          ),
-                                        ),
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: globals.pastVideos
+                                        .asMap()
+                                        .entries
+                                        .map((entry) {
+                                          final index = entry.key;
+                                          final video = entry.value;
 
-                                        width:
-                                            (MediaQuery.of(
-                                                  context,
-                                                ).size.width) /
-                                                2 -
-                                            70,
-                                        height: 50,
-                                        child: Text(
-                                          video,
-                                          style: GoogleFonts.montserrat(
-                                            fontSize: 20,
-                                            color: const Color.fromARGB(
-                                              255,
-                                              217,
-                                              225,
-                                              207,
+                                          final backgroundColor =
+                                              (index % 2 == 0)
+                                              ? const Color.fromARGB(
+                                                  255,
+                                                  30,
+                                                  60,
+                                                  50,
+                                                )
+                                              : const Color.fromARGB(
+                                                  255,
+                                                  60,
+                                                  90,
+                                                  70,
+                                                ); // Color 2
+
+                                          return Container(
+                                            alignment: Alignment.center,
+                                            decoration: BoxDecoration(
+                                              color: backgroundColor,
+                                              borderRadius:
+                                                  BorderRadius.circular(5),
                                             ),
-                                          ),
-                                        ),
-                                      );
-                                    }).toList(),
+
+                                            width:
+                                                (MediaQuery.of(
+                                                      context,
+                                                    ).size.width) /
+                                                    2 -
+                                                70,
+                                            height: 50,
+                                            child: Text(
+                                              video,
+                                              style: GoogleFonts.montserrat(
+                                                fontSize: 20,
+                                                color: const Color.fromARGB(
+                                                  255,
+                                                  217,
+                                                  225,
+                                                  207,
+                                                ),
+                                              ),
+                                            ),
+                                          );
+                                        })
+                                        .toList(),
                                   ),
                                 ),
                               ),
