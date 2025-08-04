@@ -312,15 +312,96 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                     SizedBox(width: 20),
-                    Stack(
+                    Column(
                       children: [
-                        //SECOND
-                        Container(
-                          width: (MediaQuery.of(context).size.width) / 2 - 40,
+                        Text(
+                          'Second box',
+                          style: GoogleFonts.mPlus1(
+                            fontSize:
+                                ((MediaQuery.of(context).size.width) / 2 - 40) /
+                                20,
+                            color: const Color.fromARGB(255, 167, 198, 131),
+                          ),
+                        ),
+                        SizedBox(
                           height: 300,
-                          decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 15, 48, 40),
-                            borderRadius: BorderRadius.circular(15),
+                          child: Stack(
+                            alignment: Alignment.centerLeft,
+                            children: [
+                              Container(
+                                width:
+                                    (MediaQuery.of(context).size.width) / 2 -
+                                    40,
+                                height: 300,
+                                decoration: BoxDecoration(
+                                  color: Color.fromARGB(255, 15, 48, 40),
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
+                              ),
+                              Positioned.fill(
+                                child: Align(
+                                  alignment: Alignment.topCenter,
+                                  child: Column(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: globals.pastVideos
+                                        .asMap()
+                                        .entries
+                                        .map((entry) {
+                                          final index = entry.key;
+                                          final video = entry.value;
+
+                                          final backgroundColor =
+                                              (index % 2 == 0)
+                                              ? const Color.fromARGB(
+                                                  255,
+                                                  30,
+                                                  60,
+                                                  50,
+                                                )
+                                              : const Color.fromARGB(
+                                                  255,
+                                                  60,
+                                                  90,
+                                                  70,
+                                                ); // Color 2
+
+                                          return Container(
+                                            alignment: Alignment.center,
+                                            decoration: BoxDecoration(
+                                              color: backgroundColor,
+                                              borderRadius:
+                                                  BorderRadius.circular(5),
+                                            ),
+
+                                            width:
+                                                (MediaQuery.of(
+                                                      context,
+                                                    ).size.width) /
+                                                    2 -
+                                                70,
+                                            height: 50,
+                                            child: Text(
+                                              video,
+                                              style: GoogleFonts.montserrat(
+                                                fontSize: 20,
+                                                color: const Color.fromARGB(
+                                                  255,
+                                                  217,
+                                                  225,
+                                                  207,
+                                                ),
+                                              ),
+                                            ),
+                                          );
+                                        })
+                                        .toList(),
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ],
