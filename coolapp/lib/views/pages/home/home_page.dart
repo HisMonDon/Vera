@@ -125,6 +125,10 @@ class _HomePageState extends State<HomePage> {
 
   Widget build(BuildContext context) {
     String displayName;
+    if (globals.userName[0] != ',') {
+      globals.userName = ', ' + globals.userName;
+      print("saved check!");
+    }
     /* if (globals.userName != '') {
       if (globals.userName[0] == ",") {
         globals.userName = globals.userName;
@@ -140,73 +144,136 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Row(
-                //crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Expanded(
-                    child: WidgetMask(
-                      blendMode: BlendMode.srcATop,
-                      childSaveLayer: true,
-                      mask: Image(
-                        image: AssetImage('images/text_background.jpg'),
-                        fit: BoxFit.cover,
-                      ),
-                      child: AutoSizeText(
-                        globals.welcomeText,
-                        style: GoogleFonts.inter(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 100,
-                          color: const Color.fromARGB(255, 255, 255, 255),
-                          decoration: TextDecoration.none,
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Row(
+                  //crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Expanded(
+                      child: WidgetMask(
+                        blendMode: BlendMode.srcATop,
+                        childSaveLayer: true,
+                        mask: Image(
+                          image: AssetImage('images/text_background.jpg'),
+                          fit: BoxFit.cover,
                         ),
-                        maxLines: 1,
+                        child: AutoSizeText(
+                          globals.welcomeText,
+                          style: GoogleFonts.inter(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 100,
+                            color: const Color.fromARGB(255, 255, 255, 255),
+                            decoration: TextDecoration.none,
+                          ),
+                          maxLines: 1,
+                        ),
                       ),
                     ),
-                  ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      ElevatedButton(
-                        onPressed: openDialog,
-                        child: Icon(Icons.edit_rounded),
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.transparent,
-                          shadowColor: Colors.transparent,
-                          elevation: 0,
-                          iconSize: 20,
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        ElevatedButton(
+                          onPressed: openDialog,
+                          child: Icon(Icons.edit_rounded),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.transparent,
+                            shadowColor: Colors.transparent,
+                            elevation: 0,
+                            iconSize: 20,
+                          ),
                         ),
-                      ),
-                      SizedBox(height: 10),
-                    ],
-                  ),
-                ],
-              ),
-
-              SizedBox(height: 1),
-
-              WidgetMask(
-                blendMode: BlendMode.srcATop,
-                childSaveLayer: true,
-                mask: Image(
-                  image: AssetImage('images/text_background.jpg'),
-                  fit: BoxFit.cover,
+                        SizedBox(height: 10),
+                      ],
+                    ),
+                  ],
                 ),
-                child: AutoSizeText(
-                  globals.motivationalMessage,
-                  style: GoogleFonts.mPlus1(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 30,
-                    color: const Color.fromARGB(255, 255, 255, 255),
-                    decoration: TextDecoration.none,
+
+                SizedBox(height: 1),
+
+                WidgetMask(
+                  blendMode: BlendMode.srcATop,
+                  childSaveLayer: true,
+                  mask: Image(
+                    image: AssetImage('images/text_background.jpg'),
+                    fit: BoxFit.cover,
                   ),
-                  maxLines: 1,
+                  child: AutoSizeText(
+                    globals.motivationalMessage,
+                    style: GoogleFonts.mPlus1(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 30,
+                      color: const Color.fromARGB(255, 255, 255, 255),
+                      decoration: TextDecoration.none,
+                    ),
+                    maxLines: 1,
+                  ),
                 ),
-              ),
-            ],
+                SizedBox(height: 30),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    //FIRST
+                    Column(
+                      children: [
+                        Text(
+                          'Recent Videos Watched',
+                          style: GoogleFonts.mPlus1(
+                            fontSize: 30,
+                            color: const Color.fromARGB(255, 167, 198, 131),
+                          ),
+                        ),
+                        Stack(
+                          children: [
+                            Container(
+                              width:
+                                  (MediaQuery.of(context).size.width) / 2 - 40,
+                              height: 300,
+                              decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 15, 48, 40),
+                                borderRadius: BorderRadius.circular(15),
+                              ),
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: globals.pastVideos.map((video) {
+                                return Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 4),
+                                  child: Text(
+                                    video,
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                );
+                              }).toList(),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    SizedBox(width: 20),
+                    Stack(
+                      children: [
+                        //SECOND
+                        Container(
+                          width: (MediaQuery.of(context).size.width) / 2 - 40,
+                          height: 300,
+                          decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 15, 48, 40),
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),

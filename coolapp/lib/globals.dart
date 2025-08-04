@@ -21,3 +21,4 @@ String courseTitle = '';
 String nextVideoTitle =
     'last_one'; //check if it is named "last_one", if it is, then there will be no next video
 dynamic nextVideoPage;
+var pastVideos = List<String>.filled(5, 'skibdii');
