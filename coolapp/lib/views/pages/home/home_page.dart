@@ -81,9 +81,14 @@ class _HomePageState extends State<HomePage> {
   Future openDialog() => showDialog(
     context: context,
     builder: (dialogContext) {
-      _nameController.text = globals.userName.substring(
-        2,
-      ); //strips the ", " off the name
+      if (globals.userName.length >= 2) {
+        _nameController.text = globals.userName.substring(
+          2,
+        ); //strips the ", " off the name
+      } else {
+        _nameController.text = '';
+      }
+
       return AlertDialog(
         title: Text('Please enter your name'),
         content: TextField(
