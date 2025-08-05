@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:coolapp/services/auth_service.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:shared_preferences/shared_preferences.dart';
@@ -14,6 +15,10 @@ class _ProfilePageState extends State<ProfilePage> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   final _userNameController = TextEditingController();
+  final List<TextEditingController> _videoControllers = List.generate(
+    5,
+    (index) => TextEditingController(),
+  );
   bool _isLoading = false;
   bool _isInitializing = true;
   bool _isLogin = true;
@@ -32,6 +37,9 @@ class _ProfilePageState extends State<ProfilePage> {
     _emailController.dispose();
     _passwordController.dispose();
     _userNameController.dispose();
+    for (var controller in _videoControllers) {
+      controller.dispose();
+    }
     super.dispose();
   }
 
@@ -41,10 +49,22 @@ class _ProfilePageState extends State<ProfilePage> {
       if (loggedIn) {
         final email = await _authService.getCurrentUserEmail();
         final name = await _authService.getSavedUserName();
+        final recentVideos = await _authService.getPastVideos();
+
+        //initialize video controllers with recent videos
+        for (int i = 0; i < _videoControllers.length; i++) {
+          if (i < (recentVideos?.length ?? 0)) {
+            _videoControllers[i].text = recentVideos![i];
+          } else {
+            _videoControllers[i].text = '';
+          }
+        }
+
         setState(() {
           isLoggedIn = true;
           _userEmail = email ?? '';
           globals.userName = name ?? '';
+          globals.pastVideos = recentVideos ?? [];
         });
       }
     } finally {
@@ -74,10 +94,17 @@ class _ProfilePageState extends State<ProfilePage> {
           _passwordController.text,
         );
       } else {
+        // Collect video URLs from controllers
+        final videoUrls = _videoControllers
+            .map((controller) => controller.text.trim())
+            .where((url) => url.isNotEmpty)
+            .toList();
+
         success = await _authService.registerWithEmail(
           _emailController.text.trim(),
           _passwordController.text,
           _userNameController.text,
+          videoUrls,
         );
       }
 
@@ -86,6 +113,9 @@ class _ProfilePageState extends State<ProfilePage> {
         _emailController.clear();
         _passwordController.clear();
         _userNameController.clear();
+        for (var controller in _videoControllers) {
+          controller.clear();
+        }
         await _checkLoginStatus();
 
         if (mounted) {
@@ -112,7 +142,9 @@ class _ProfilePageState extends State<ProfilePage> {
         _errorMessage = 'An error occurred. Please try again.';
       });
     } finally {
-      setState(() => _isLoading = false);
+      if (mounted) {
+        setState(() => _isLoading = false);
+      }
     }
   }
 
@@ -144,6 +176,47 @@ class _ProfilePageState extends State<ProfilePage> {
     }
   }
 
+  Widget _buildVideoInputs() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          'Past Videos (max 5)',
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+        ),
+        const SizedBox(height: 8),
+        ...List.generate(5, (index) {
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 12),
+            child: TextFormField(
+              controller: _videoControllers[index],
+              decoration: InputDecoration(
+                labelText: 'Video ${index + 1} URL',
+                border: const OutlineInputBorder(),
+                prefixIcon: const Icon(Icons.video_library),
+                hintText: 'https://example.com/video${index + 1}',
+              ),
+              keyboardType: TextInputType.url,
+              inputFormatters: [
+                FilteringTextInputFormatter.allow(
+                  RegExp(r'[a-zA-Z0-9\-_=?.&/:]+'),
+                ),
+              ],
+              validator: (value) {
+                if (!_isLogin &&
+                    index == 0 &&
+                    (value == null || value.isEmpty)) {
+                  return 'At least one video is required';
+                }
+                return null;
+              },
+            ),
+          );
+        }),
+      ],
+    );
+  }
+
   Widget _buildLoginForm() {
     return Form(
       key: _formKey,
@@ -169,7 +242,10 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               child: Text(
                 _errorMessage!,
-                style: TextStyle(color: const Color.fromARGB(255, 211, 42, 42)),
+                style: TextStyle(
+                  color: const Color.fromARGB(255, 211, 42, 42),
+                  fontSize: 16,
+                ),
                 textAlign: TextAlign.center,
               ),
             ),
@@ -208,6 +284,24 @@ class _ProfilePageState extends State<ProfilePage> {
               return null;
             },
           ),
+          const SizedBox(height: 16),
+          if (!_isLogin) ...[
+            TextFormField(
+              controller: _userNameController,
+              decoration: const InputDecoration(
+                labelText: 'Username',
+                border: OutlineInputBorder(),
+                prefixIcon: Icon(Icons.person),
+              ),
+              validator: (value) {
+                if (value == null || value.trim().isEmpty)
+                  return 'Please enter your username';
+                return null;
+              },
+            ),
+            const SizedBox(height: 16),
+            _buildVideoInputs(),
+          ],
           const SizedBox(height: 24),
           if (_isLoading)
             const Center(child: CircularProgressIndicator())
@@ -216,10 +310,11 @@ class _ProfilePageState extends State<ProfilePage> {
               onPressed: _submit,
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 12),
+                backgroundColor: Theme.of(context).primaryColor,
               ),
               child: Text(
                 _isLogin ? 'Login' : 'Register',
-                style: const TextStyle(fontSize: 16),
+                style: const TextStyle(fontSize: 16, color: Colors.white),
               ),
             ),
           const SizedBox(height: 16),
@@ -234,6 +329,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   },
             child: Text(
               _isLogin ? 'Create new account' : 'I already have an account',
+              style: TextStyle(color: Theme.of(context).primaryColor),
             ),
           ),
         ],
@@ -256,9 +352,9 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
         ),
         const SizedBox(height: 20),
-        const Text(
-          'Welcome!',
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+        Text(
+          'Welcome, ${globals.userName}',
+          style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 10),
         Text(
@@ -272,6 +368,7 @@ class _ProfilePageState extends State<ProfilePage> {
           onPressed: _signOut,
           style: OutlinedButton.styleFrom(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 12),
+            side: BorderSide(color: Theme.of(context).primaryColor),
           ),
         ),
       ],
@@ -281,7 +378,10 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Profile')),
+      appBar: AppBar(
+        title: const Text('Profile'),
+        backgroundColor: Theme.of(context).primaryColor,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Center(

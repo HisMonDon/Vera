@@ -24,6 +24,17 @@ class AuthService {
     return prefs.getString('user_name');
   }
 
+  //var pastVideos = List<String>.filled(5, '');
+  Future<List<String>?> getPastVideos() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getStringList('past_videos_list');
+  }
+
+  Future<void> savePastVideos(List<String> videos) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setStringList('past_videos_list', videos);
+  }
+
   Future<bool> signInWithEmail(String email, String password) async {
     try {
       final response = await http.post(
@@ -61,6 +72,7 @@ class AuthService {
     String email,
     String password,
     String name,
+    List<String> pastVideos,
   ) async {
     try {
       final response = await http.post(
@@ -178,4 +190,76 @@ class AuthService {
     }
     return null;
   }
+}
+
+Future<void> savePastVideosToFirestore(
+  String uid,
+  List<String> pastVideos,
+  String idToken,
+) async {
+  if (uid.isEmpty || idToken.isEmpty) return;
+
+  final url =
+      'https://firestore.googleapis.com/v1/projects/vera-a4111/databases/(default)/documents/users/$uid';
+
+  final videoValues = pastVideos
+      .map((video) => {'stringValue': video})
+      .toList();
+
+  final response = await http.patch(
+    Uri.parse(url),
+    headers: {
+      'Authorization': 'Bearer $idToken',
+      'Content-Type': 'application/json',
+    },
+    body: json.encode({
+      'fields': {
+        'pastVideos': {
+          'arrayValue': {'values': videoValues},
+        },
+      },
+    }),
+  );
+
+  if (response.statusCode == 200) {
+    globals.pastVideos = pastVideos;
+    await savePastVideosLocally(pastVideos);
+  }
+}
+
+Future<List<String>> getPastVideosFromFirestore(
+  String uid,
+  String idToken,
+) async {
+  final url =
+      'https://firestore.googleapis.com/v1/projects/vera-a4111/databases/(default)/documents/users/$uid';
+
+  final response = await http.get(
+    Uri.parse(url),
+    headers: {'Authorization': 'Bearer $idToken'},
+  );
+
+  if (response.statusCode == 200) {
+    final data = json.decode(response.body);
+
+    if (data['fields']?['pastVideos']?['arrayValue']?['values'] != null) {
+      final videoList = data['fields']['pastVideos']['arrayValue']['values']
+          .map<String>((item) => item['stringValue'] as String)
+          .toList();
+
+      return videoList;
+    }
+  }
+
+  return []; //in case somehting goes wrong return empty
+}
+
+Future<void> savePastVideosLocally(List<String> videos) async {
+  final prefs = await SharedPreferences.getInstance();
+  await prefs.setStringList('past_videos', videos);
+}
+
+Future<List<String>> getPastVideosLocally() async {
+  final prefs = await SharedPreferences.getInstance();
+  return prefs.getStringList('past_videos') ?? [];
 }
