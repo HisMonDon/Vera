@@ -85,25 +85,23 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
 
   @override
   Widget build(BuildContext context) {
+    //__________________________________________________________________
     bool isFull = true;
+    int dupeIndex = -1;
+    bool isDuped = false;
+    for (int x = 0; x < 5; x++) {
+      if (globals.pastVideos[x] == globals.unitTitle) {
+        //we remove and put it at most recent.
+        isDuped = true;
+        dupeIndex = x;
+      }
+    }
     for (int x = 0; x < 5; x++) {
       if (globals.pastVideos[x] == '') {
         //if we still have empty space
         globals.pastVideos[x] = globals.unitTitle;
         isFull = false;
         break;
-      } else if (globals.pastVideos[x] == globals.unitTitle) {
-        //we remove and put it at most recent.
-        for (int y = x; y < 4; y++) {
-          globals.pastVideos[y] = globals.pastVideos[y + 1];
-        }
-        for (int z = 0; z < 5; z++) {
-          if (globals.pastVideos[x] == '') {
-            //if we still have empty space
-            globals.pastVideos[x] = globals.unitTitle;
-            isFull = false;
-          }
-        }
       }
     }
     if (isFull) {
@@ -113,6 +111,9 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       }
       globals.pastVideos[0] = globals.unitTitle;
     }
+
+    //__________________________________________________________________
+
     if (globals.courseTitle != '') {
       //that means that we have all
       stackedTitle =
