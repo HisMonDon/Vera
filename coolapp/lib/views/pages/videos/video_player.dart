@@ -86,6 +86,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   @override
   Widget build(BuildContext context) {
     //__________________________________________________________________
+    //update past videos logic
     bool isFull = true;
     int dupeIndex = -1;
     bool isDuped = false;
@@ -94,7 +95,14 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
         //we remove and put it at most recent.
         isDuped = true;
         dupeIndex = x;
+        break;
       }
+    }
+    if (isDuped) {
+      for (int x = dupeIndex; x < 4; x++) {
+        globals.pastVideos[x] = globals.pastVideos[x + 1];
+      }
+      globals.pastVideos[4] = '';
     }
     for (int x = 0; x < 5; x++) {
       if (globals.pastVideos[x] == '') {
