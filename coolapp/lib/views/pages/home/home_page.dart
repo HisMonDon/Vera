@@ -15,6 +15,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final _authService = AuthService();
   final TextEditingController _nameController = TextEditingController();
+  String _displayName = ''; // stores name without comma prefix
+  bool _isLoading = true; // handles initial loading state
 
   @override
   void initState() {
@@ -25,24 +27,13 @@ class _HomePageState extends State<HomePage> {
   Future<void> _initData() async {
     await _loadAuthData();
     await _loadUserName();
+    setState(() => _isLoading = false);
   }
   //**_________________________________________ */
 
   Future<void> _loadAuthData() async {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
-      if (globals.userName != '') {
-        if (globals.userName[0] == ",") {
-          globals.userName = globals.userName;
-          print("all good!");
-        } else {
-          globals.userName = ", " + globals.userName;
-          print("added comma");
-        }
-      } else {
-        print("userName is null.");
-      }
-
       globals.userId = prefs.getString('userId') ?? '';
       globals.idToken = prefs.getString('auth_token') ?? '';
     });
@@ -50,17 +41,21 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> _loadUserName() async {
     try {
-      final savedName = await _authService.getSavedUserName();
-      if (savedName != null && savedName.isNotEmpty) {
-        setState(() {
-          if (savedName[0] == ",") {
-            globals.userName = savedName;
-            print("all good!");
-          } else {
-            globals.userName = ", " + savedName;
-            print("added comma");
-          }
-        });
+      final savedName = await _authService.getSavedUserName() ?? '';
+
+      if (savedName.isNotEmpty) {
+        // handle existing comma prefix
+        if (savedName[0] == ",") {
+          setState(() {
+            _displayName = savedName.substring(2);
+            print("all good! removed comma prefix");
+          });
+        } else {
+          setState(() {
+            _displayName = savedName;
+            print("no comma prefix found");
+          });
+        }
         return;
       }
 
@@ -70,31 +65,27 @@ class _HomePageState extends State<HomePage> {
         final name = await _authService.getUserNameFromFirestore(uid, idToken);
         if (name != null) {
           setState(() {
-            globals.userName = name;
+            // store raw name without comma
+            _displayName = name.startsWith(", ") ? name.substring(2) : name;
           });
-          await _authService.saveUserName(name);
+          await _authService.saveUserName(_displayName); // save without comma
         }
       }
-    } catch (e) {}
+    } catch (e) {
+      print("error loading username: $e");
+    }
   }
 
   Future openDialog() => showDialog(
     context: context,
     builder: (dialogContext) {
-      if (globals.userName.length >= 2) {
-        _nameController.text = globals.userName.substring(
-          2,
-        ); //strips the ", " off the name
-      } else {
-        _nameController.text = '';
-      }
-
+      _nameController.text = _displayName; // show raw name without comma
       return AlertDialog(
-        title: Text('Please enter your name'),
+        title: Text('please enter your name'),
         content: TextField(
           controller: _nameController,
           autofocus: true,
-          decoration: InputDecoration(hintText: 'Enter your name'),
+          decoration: InputDecoration(hintText: 'enter your name'),
         ),
         actions: [
           TextButton(
@@ -102,17 +93,18 @@ class _HomePageState extends State<HomePage> {
             onPressed: () async {
               final newName = _nameController.text.trim();
               setState(() {
-                globals.userName = newName;
+                _displayName = newName; // store raw name
                 print("saved forever!!");
               });
-              await _authService.saveUserName(globals.userName);
+              // save raw name without comma
+              await _authService.saveUserName(_displayName);
               if (newName.isNotEmpty) {
                 final uid = globals.userId;
                 final idToken = globals.idToken;
                 if (uid.isNotEmpty && idToken.isNotEmpty) {
                   await _authService.saveUserNameToFirestore(
                     uid,
-                    globals.userName,
+                    _displayName, // save raw name
                     idToken,
                   );
                 }
@@ -120,7 +112,7 @@ class _HomePageState extends State<HomePage> {
               if (mounted && Navigator.of(dialogContext).canPop()) {
                 Navigator.of(dialogContext).pop();
               } else {
-                print("error?? the popup has been clsoed");
+                print("error?? the popup has been closed");
               }
             },
           ),
@@ -130,11 +122,13 @@ class _HomePageState extends State<HomePage> {
   );
 
   Widget build(BuildContext context) {
-    String displayName;
-    if (globals.userName.isNotEmpty && globals.userName[0] != ',') {
-      globals.userName = ', ' + globals.userName;
-      print("saved check!");
+    if (_isLoading) {
+      return Scaffold(body: Center(child: CircularProgressIndicator()));
     }
+
+    // add comma prefix only for display
+    String displayName = _displayName.isNotEmpty ? ", " + _displayName : "";
+
     /* if (globals.userName != '') {
       if (globals.userName[0] == ",") {
         globals.userName = globals.userName;
@@ -167,7 +161,7 @@ class _HomePageState extends State<HomePage> {
                           fit: BoxFit.cover,
                         ),
                         child: AutoSizeText(
-                          globals.welcomeText,
+                          globals.welcomeText + displayName, // add comma here
                           style: GoogleFonts.inter(
                             fontWeight: FontWeight.bold,
                             fontSize: 100,
@@ -277,7 +271,7 @@ class _HomePageState extends State<HomePage> {
                                                   60,
                                                   90,
                                                   70,
-                                                ); // Color 2
+                                                ); // color 2
 
                                           return Container(
                                             alignment: Alignment.center,
@@ -372,7 +366,7 @@ class _HomePageState extends State<HomePage> {
                                                   60,
                                                   90,
                                                   70,
-                                                ); // Color 2
+                                                ); // color 2
 
                                           return Container(
                                             alignment: Alignment.center,
