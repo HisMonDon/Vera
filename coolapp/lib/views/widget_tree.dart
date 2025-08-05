@@ -5,6 +5,7 @@ import 'package:coolapp/views/pages/profile_page/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/views/pages/videos/video_pages/topics_page.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'dart:async';
 
@@ -87,7 +88,7 @@ class _WidgetTreeState extends State<WidgetTree> {
           (screen) => Scaffold(
             appBar: AppBar(
               centerTitle: true,
-              title: const Text("Vera"),
+              title: Text("Vera", style: GoogleFonts.mPlus1()),
               backgroundColor: const Color.fromARGB(255, 15, 48, 40),
               actions: [
                 Padding(
