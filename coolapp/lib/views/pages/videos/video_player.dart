@@ -91,7 +91,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     int dupeIndex = -1;
     bool isDuped = false;
     for (int x = 0; x < 5; x++) {
-      if (globals.pastVideos[x] == globals.unitTitle) {
+      if (globals.pastVideos[x] ==
+          globals.topicTitle + ', ' + globals.unitTitle) {
         //we remove and put it at most recent.
         isDuped = true;
         dupeIndex = x;
@@ -107,7 +108,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     for (int x = 0; x < 5; x++) {
       if (globals.pastVideos[x] == '') {
         //if we still have empty space
-        globals.pastVideos[x] = globals.unitTitle;
+        globals.pastVideos[x] = globals.topicTitle + ', ' + globals.unitTitle;
         isFull = false;
         break;
       }
