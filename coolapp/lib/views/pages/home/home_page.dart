@@ -26,6 +26,7 @@ class _HomePageState extends State<HomePage> {
     await _loadAuthData();
     await _loadUserName();
   }
+  //**_________________________________________ */
 
   Future<void> _loadAuthData() async {
     final prefs = await SharedPreferences.getInstance();
@@ -125,7 +126,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget build(BuildContext context) {
     String displayName;
-    if (globals.userName[0] != ',') {
+    if (globals.userName.isNotEmpty && globals.userName[0] != ',') {
       globals.userName = ', ' + globals.userName;
       print("saved check!");
     }

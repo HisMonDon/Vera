@@ -77,16 +77,6 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     }
   }
 
-  String _formatDuration(Duration duration) {
-    String twoDigits(int n) => n.toString().padLeft(2, '0');
-    final hours = twoDigits(duration.inHours);
-    final minutes = twoDigits(duration.inMinutes.remainder(60));
-    final seconds = twoDigits(duration.inSeconds.remainder(60));
-    return duration.inHours > 0
-        ? '$hours:$minutes:$seconds'
-        : '$minutes:$seconds';
-  }
-
   @override
   void dispose() {
     player.dispose();
@@ -95,6 +85,23 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
 
   @override
   Widget build(BuildContext context) {
+    bool isFull = true;
+    for (int x = 0; x < 5; x++) {
+      if (globals.pastVideos[x] == '') {
+        //if we still have empty space
+        globals.pastVideos[x] = globals.unitTitle;
+        isFull = false;
+
+        break;
+      }
+    }
+    if (isFull) {
+      for (int x = 4; x > 0; x--) {
+        //pushes last one out, and puts most recent one
+        globals.pastVideos[x] = globals.pastVideos[x - 1];
+      }
+      globals.pastVideos[0] = globals.unitTitle;
+    }
     if (globals.courseTitle != '') {
       //that means that we have all
       stackedTitle =
