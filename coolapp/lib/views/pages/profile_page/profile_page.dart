@@ -176,47 +176,6 @@ class _ProfilePageState extends State<ProfilePage> {
     }
   }
 
-  Widget _buildVideoInputs() {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const Text(
-          'Past Videos (max 5)',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-        ),
-        const SizedBox(height: 8),
-        ...List.generate(5, (index) {
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 12),
-            child: TextFormField(
-              controller: _videoControllers[index],
-              decoration: InputDecoration(
-                labelText: 'Video ${index + 1} URL',
-                border: const OutlineInputBorder(),
-                prefixIcon: const Icon(Icons.video_library),
-                hintText: 'https://example.com/video${index + 1}',
-              ),
-              keyboardType: TextInputType.url,
-              inputFormatters: [
-                FilteringTextInputFormatter.allow(
-                  RegExp(r'[a-zA-Z0-9\-_=?.&/:]+'),
-                ),
-              ],
-              validator: (value) {
-                if (!_isLogin &&
-                    index == 0 &&
-                    (value == null || value.isEmpty)) {
-                  return 'At least one video is required';
-                }
-                return null;
-              },
-            ),
-          );
-        }),
-      ],
-    );
-  }
-
   Widget _buildLoginForm() {
     return Form(
       key: _formKey,
@@ -300,7 +259,6 @@ class _ProfilePageState extends State<ProfilePage> {
               },
             ),
             const SizedBox(height: 16),
-            _buildVideoInputs(),
           ],
           const SizedBox(height: 24),
           if (_isLoading)
