@@ -237,7 +237,7 @@ class _HomePageState extends State<HomePage> {
                           style: GoogleFonts.mPlus1(
                             fontSize:
                                 ((MediaQuery.of(context).size.width) / 2 - 40) /
-                                20,
+                                30,
                             color: const Color.fromARGB(255, 167, 198, 131),
                           ),
                         ),
@@ -333,7 +333,7 @@ class _HomePageState extends State<HomePage> {
                           style: GoogleFonts.mPlus1(
                             fontSize:
                                 ((MediaQuery.of(context).size.width) / 2 - 40) /
-                                20,
+                                30,
                             color: const Color.fromARGB(255, 167, 198, 131),
                           ),
                         ),
