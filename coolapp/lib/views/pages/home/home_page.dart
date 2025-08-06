@@ -27,6 +27,7 @@ class _HomePageState extends State<HomePage> {
   Future<void> _initData() async {
     await _loadAuthData();
     await _loadUserName();
+    await _loadPastVideos(); // Add this to load past videos
     setState(() => _isLoading = false);
   }
   //**_________________________________________ */
@@ -37,6 +38,18 @@ class _HomePageState extends State<HomePage> {
       globals.userId = prefs.getString('userId') ?? '';
       globals.idToken = prefs.getString('auth_token') ?? '';
     });
+  }
+
+  // Add this method to load past videos
+  Future<void> _loadPastVideos() async {
+    try {
+      final recentVideos = await _authService.getPastVideos() ?? [];
+      setState(() {
+        globals.pastVideos = recentVideos;
+      });
+    } catch (e) {
+      print("error loading past videos: $e");
+    }
   }
 
   Future<void> _loadUserName() async {
