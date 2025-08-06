@@ -126,7 +126,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     ? 'Login successful!'
                     : 'Account created successfully!',
               ),
-              backgroundColor: Colors.green,
+              backgroundColor: const Color.fromARGB(255, 34, 200, 134),
             ),
           );
         }
@@ -310,11 +310,14 @@ class _ProfilePageState extends State<ProfilePage> {
               onPressed: _submit,
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 12),
-                backgroundColor: const Color.fromARGB(154, 96, 243, 157),
+                backgroundColor: Theme.of(context).primaryColor,
               ),
               child: Text(
                 _isLogin ? 'Login' : 'Register',
-                style: const TextStyle(fontSize: 16, color: Colors.white),
+                style: const TextStyle(
+                  fontSize: 16,
+                  color: const Color.fromARGB(255, 130, 213, 200),
+                ),
               ),
             ),
           const SizedBox(height: 16),
@@ -329,7 +332,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   },
             child: Text(
               _isLogin ? 'Create new account' : 'I already have an account',
-              style: TextStyle(color: Theme.of(context).primaryColor),
+              style: TextStyle(color: const Color.fromARGB(255, 130, 213, 200)),
             ),
           ),
         ],

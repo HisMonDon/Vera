@@ -9,6 +9,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'dart:async';
 
+//change main theme colors and navbar stuff here
 class WidgetTree extends StatefulWidget {
   final int initialIndex;
   const WidgetTree({super.key, this.initialIndex = 0});
