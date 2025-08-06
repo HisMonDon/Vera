@@ -108,28 +108,12 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
       'description': 'Definition and examples of vectors and scalars',
       'videoPage': VideoPlayerScreen(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/intro_to_physics/vectors%20vs%20scalars.mp4',
     },
     {
       'title': 'Unit 2: Error Analysis and Measurement',
       'description':
           'Tools and techniques for measurement, error analysis and uncertainty in measurements',
-      'videoPage': VideoPlayerScreen(),
-      'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
-    },
-    {
-      'title': 'Unit 3: Physical Quantities',
-      'description':
-          'Understanding fundamental and derived physical quantities',
-      'videoPage': VideoPlayerScreen(),
-      'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
-    },
-    {
-      'title': 'Unit 4: Basic Motion Concepts',
-      'description':
-          'Basic concepts of motion, displacement vs. distance, speed vs. velocity',
       'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',

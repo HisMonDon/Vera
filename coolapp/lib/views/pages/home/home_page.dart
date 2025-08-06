@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
     builder: (dialogContext) {
       _nameController.text = _displayName; // show raw name without comma
       return AlertDialog(
-        title: Text('please enter your name'),
+        title: Text('Please enter your name'),
         content: TextField(
           controller: _nameController,
           autofocus: true,
@@ -174,7 +174,8 @@ class _HomePageState extends State<HomePage> {
                           fit: BoxFit.cover,
                         ),
                         child: AutoSizeText(
-                          globals.welcomeText + displayName, // add comma here
+                          globals
+                              .welcomeText, 
                           style: GoogleFonts.inter(
                             fontWeight: FontWeight.bold,
                             fontSize: 100,
