@@ -301,7 +301,7 @@ class _HomePageState extends State<HomePage> {
                                                     2 -
                                                 70,
                                             height: 50,
-                                            child: Text(
+                                            child: AutoSizeText(
                                               video,
                                               style: GoogleFonts.montserrat(
                                                 fontSize: 20,
@@ -312,6 +312,7 @@ class _HomePageState extends State<HomePage> {
                                                   207,
                                                 ),
                                               ),
+                                              maxLines: 1,
                                             ),
                                           );
                                         })
@@ -396,7 +397,7 @@ class _HomePageState extends State<HomePage> {
                                                     2 -
                                                 70,
                                             height: 50,
-                                            child: Text(
+                                            child: AutoSizeText(
                                               video,
                                               style: GoogleFonts.montserrat(
                                                 fontSize: 20,
@@ -407,6 +408,8 @@ class _HomePageState extends State<HomePage> {
                                                   207,
                                                 ),
                                               ),
+
+                                              maxLines: 1,
                                             ),
                                           );
                                         })
