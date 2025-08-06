@@ -310,7 +310,7 @@ class _ProfilePageState extends State<ProfilePage> {
               onPressed: _submit,
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 12),
-                backgroundColor: Theme.of(context).primaryColor,
+                backgroundColor: const Color.fromARGB(154, 96, 243, 157),
               ),
               child: Text(
                 _isLogin ? 'Login' : 'Register',

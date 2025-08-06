@@ -192,6 +192,11 @@ class AuthService {
   }
 }
 
+Future<void> savePastVideos(List<String> videos) async {
+  final prefs = await SharedPreferences.getInstance();
+  await prefs.setStringList('past_videos_list', videos);
+}
+
 Future<void> savePastVideosToFirestore(
   String uid,
   List<String> pastVideos,

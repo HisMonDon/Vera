@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:media_kit/media_kit.dart';
 import 'package:media_kit_video/media_kit_video.dart';
 import 'package:coolapp/globals.dart' as globals;
+import 'package:coolapp/services/auth_service.dart';
 
 class VideoPlayerScreen extends StatefulWidget {
   const VideoPlayerScreen({super.key});
@@ -22,14 +23,79 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   double volume = 1.0;
   String stackedTitle =
       ''; //github format where u use / to seperate folders or tabs
+  bool _hasSavedPastVideos = false;
+
   @override
   void initState() {
     super.initState();
     _initializePlayer();
+    _updatePastVideos(); // Update videos list when screen loads
+  }
+
+  //__________________________________________________________________
+  //update past videos logic - moved to separate method
+  void _updatePastVideos() {
+    bool isFull = true;
+    int dupeIndex = -1;
+    bool isDuped = false;
+    for (int x = 0; x < 5; x++) {
+      if (globals.pastVideos[x] ==
+          globals.topicTitle + ', ' + globals.unitTitle) {
+        //we remove and put it at most recent.
+        isDuped = true;
+        dupeIndex = x;
+        break;
+      }
+    }
+    if (isDuped) {
+      for (int x = dupeIndex; x < 4; x++) {
+        globals.pastVideos[x] = globals.pastVideos[x + 1];
+      }
+      globals.pastVideos[4] = '';
+    }
+    for (int x = 0; x < 5; x++) {
+      if (globals.pastVideos[x] == '') {
+        //if we still have empty space
+        globals.pastVideos[x] = globals.topicTitle + ', ' + globals.unitTitle;
+        isFull = false;
+        break;
+      }
+    }
+    if (isFull) {
+      for (int x = 4; x > 0; x--) {
+        //pushes last one out, and puts most recent one
+        globals.pastVideos[x] = globals.pastVideos[x - 1];
+      }
+      globals.pastVideos[0] = globals.unitTitle;
+    }
+  }
+  //__________________________________________________________________
+
+  Future<void> _savePastVideos() async {
+    if (_hasSavedPastVideos) return;
+
+    // save to SharedPreferences
+    final authService = AuthService();
+    await authService.savePastVideos(globals.pastVideos);
+
+    // save to firestore if logged in
+    if (globals.userId.isNotEmpty && globals.idToken.isNotEmpty) {
+      try {
+        await savePastVideosToFirestore(
+          globals.userId,
+          globals.pastVideos,
+          globals.idToken,
+        );
+      } catch (e) {
+        print('Error saving to Firestore: $e');
+      }
+    }
+
+    _hasSavedPastVideos = true;
   }
 
   Future<void> _initializePlayer() async {
-    // Listen to player state changes
+    // liisten to player state changes
     player.stream.playing.listen((playing) {
       setState(() {
         isPlaying = playing;
@@ -69,6 +135,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
 
     try {
       await player.open(Media(globals.videoLink));
+      // Save after player is initialized
+      WidgetsBinding.instance.addPostFrameCallback((_) => _savePastVideos());
     } catch (e) {
       setState(() {
         hasError = true;
@@ -85,44 +153,6 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
 
   @override
   Widget build(BuildContext context) {
-    //__________________________________________________________________
-    //update past videos logic
-    bool isFull = true;
-    int dupeIndex = -1;
-    bool isDuped = false;
-    for (int x = 0; x < 5; x++) {
-      if (globals.pastVideos[x] ==
-          globals.topicTitle + ', ' + globals.unitTitle) {
-        //we remove and put it at most recent.
-        isDuped = true;
-        dupeIndex = x;
-        break;
-      }
-    }
-    if (isDuped) {
-      for (int x = dupeIndex; x < 4; x++) {
-        globals.pastVideos[x] = globals.pastVideos[x + 1];
-      }
-      globals.pastVideos[4] = '';
-    }
-    for (int x = 0; x < 5; x++) {
-      if (globals.pastVideos[x] == '') {
-        //if we still have empty space
-        globals.pastVideos[x] = globals.topicTitle + ', ' + globals.unitTitle;
-        isFull = false;
-        break;
-      }
-    }
-    if (isFull) {
-      for (int x = 4; x > 0; x--) {
-        //pushes last one out, and puts most recent one
-        globals.pastVideos[x] = globals.pastVideos[x - 1];
-      }
-      globals.pastVideos[0] = globals.unitTitle;
-    }
-
-    //__________________________________________________________________
-
     if (globals.courseTitle != '') {
       //that means that we have all
       stackedTitle =
@@ -137,6 +167,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     } else {
       stackedTitle = globals.unitTitle;
     }
+
     return Scaffold(
       appBar: AppBar(title: Text(stackedTitle)), //add text here
       body: SingleChildScrollView(

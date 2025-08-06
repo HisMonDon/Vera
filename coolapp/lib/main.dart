@@ -8,13 +8,14 @@ import 'package:media_kit/media_kit.dart';
 
 // color pallette
 /*Name	Hex	RGB	Use Case
-Olive Green	#A7C683	(167, 198, 131)	Primary highlight (you're using it)
-Sage	#C3D7B5	(195, 215, 181)	Alternate to Olive Green
-Soft Mint	#D9E1C7	(217, 225, 199)	Softer alternate or background
-Deep Forest	#0F3028	(15, 48, 40)	Background or card container
-Khaki Gray	#9CA88E	(156, 168, 142)	Text or neutral divider color
-Pale Fern	#BFD8B8	(191, 216, 184)	Even lighter alternating block
-Faded Moss	#CBDDC4	(203, 221, 196)	Use sparingly as soft alt fill
+Olive Green	#A7C683	(167, 198, 131)	Color.fromARGB(255, 167, 198, 131)	Primary highlight
+Sage	#C3D7B5	(195, 215, 181)	Color.fromARGB(255, 195, 215, 181)	Alternate to Olive Green
+Soft Mint	#D9E1C7	(217, 225, 199)	Color.fromARGB(255, 217, 225, 199)	Soft background or alternate fill
+Deep Forest	#0F3028	(15, 48, 40)	Color.fromARGB(255, 15, 48, 40)	Dark background or card container
+Khaki Gray	#9CA88E	(156, 168, 142)	Color.fromARGB(255, 156, 168, 142)	Neutral text or divider
+Pale Fern	#BFD8B8	(191, 216, 184)	Color.fromARGB(255, 191, 216, 184)	Light alternating blocks
+Faded Moss	#CBDDC4	(203, 221, 196)	Color.fromARGB(255, 203, 221, 196)	Subtle soft fill, use sparingly
+
 */
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
