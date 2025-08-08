@@ -111,6 +111,7 @@ class _HomePageState extends State<HomePage> {
               });
               // save raw name without comma
               await _authService.saveUserName(_displayName);
+              print("here1");
               if (newName.isNotEmpty) {
                 final uid = globals.userId;
                 final idToken = globals.idToken;
@@ -122,11 +123,8 @@ class _HomePageState extends State<HomePage> {
                   );
                 }
               }
-              if (mounted && Navigator.of(dialogContext).canPop()) {
-                Navigator.of(dialogContext).pop();
-              } else {
-                print("error?? the popup has been closed");
-              }
+              print("User Name: " + globals.userName);
+              Navigator.of(dialogContext).pop();
             },
           ),
         ],
@@ -236,11 +234,13 @@ class _HomePageState extends State<HomePage> {
                           'Recent Videos Watched',
                           style: GoogleFonts.mPlus1(
                             fontSize:
-                                ((MediaQuery.of(context).size.width) / 2 - 40) /
+                                ((MediaQuery.of(context).size.width) / 3 +
+                                    100) /
                                 30,
                             color: const Color.fromARGB(255, 167, 198, 131),
                           ),
                         ),
+                        SizedBox(height: 10),
                         SizedBox(
                           height: 300,
                           child: Stack(
@@ -332,6 +332,7 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                     SizedBox(width: 20),
+
                     //SECOND
                     //________________________________
                     Column(
@@ -340,11 +341,14 @@ class _HomePageState extends State<HomePage> {
                           'Explore',
                           style: GoogleFonts.mPlus1(
                             fontSize:
-                                ((MediaQuery.of(context).size.width) / 2 - 40) /
+                                ((MediaQuery.of(context).size.width) / 3 +
+                                    100) /
                                 30,
                             color: const Color.fromARGB(255, 167, 198, 131),
                           ),
                         ),
+
+                        SizedBox(height: 10),
                         SizedBox(
                           height: 300,
                           child: Stack(

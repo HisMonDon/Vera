@@ -55,7 +55,7 @@ class AuthService {
           data['idToken'],
         );
         if (name != null) {
-          globals.userName = ', ' + name;
+          globals.userName = name;
           await saveUserName(name);
         }
         return true;
@@ -171,7 +171,7 @@ class AuthService {
     );
 
     if (response.statusCode == 200) {
-      globals.userName = ', ' + name;
+      globals.userName = name;
       await saveUserName(name);
     }
   }

@@ -65,11 +65,11 @@ class _WidgetTreeState extends State<WidgetTree> {
       HelpPage(),
     ];
     if (_currentTime.hour < 12) {
-      globals.welcomeText = "Good Morning" + globals.userName;
+      globals.welcomeText = "Good Morning, " + globals.userName;
     } else if (_currentTime.hour < 17) {
-      globals.welcomeText = "Good Afternoon" + globals.userName;
+      globals.welcomeText = "Good Afternoon, " + globals.userName;
     } else {
-      globals.welcomeText = "Good Evening" + globals.userName;
+      globals.welcomeText = "Good Evening, " + globals.userName;
     }
     if (_currentTime.hour < 5) {
       globals.welcomeText = "Midnight lesson?";
