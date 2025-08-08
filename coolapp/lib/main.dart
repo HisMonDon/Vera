@@ -5,6 +5,8 @@ import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/services/auth_service.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:media_kit/media_kit.dart';
+import 'dart:convert';
+import 'package:crypto/crypto.dart';
 
 // color pallette
 /*Name	Hex	RGB	Use Case
@@ -17,7 +19,19 @@ Pale Fern	#BFD8B8	(191, 216, 184)	Color.fromARGB(255, 191, 216, 184)	Light alter
 Faded Moss	#CBDDC4	(203, 221, 196)	Color.fromARGB(255, 203, 221, 196)	Subtle soft fill, use sparingly
 
 */
+int dailyRandom(int max) {
+  final now = DateTime.now();
+  final dateString = "${now.year}-${now.month}-${now.day}";
+  final bytes = utf8.encode(dateString);
+  final hash = sha256.convert(bytes).toString();
+  final num = int.parse(hash.substring(0, 8), radix: 16) % max + 1;
+  return num;
+}
+
 void main() async {
+  globals.videoOfTheDayIndex =
+      dailyRandom(1) -
+      1; //change the number inside daily random everytime you change the global videoOfTheDays
   WidgetsFlutterBinding.ensureInitialized();
   MediaKit.ensureInitialized();
   await _initializeAuthState();

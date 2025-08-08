@@ -40,3 +40,6 @@ List<dynamic> redirectExplore = [
   MomentumAndCollisions(),
   CoursePage(),
 ];
+List<String> videoOfTheDay = [
+  'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/intro_to_physics/vectors%20vs%20scalars.mp4',
+];
