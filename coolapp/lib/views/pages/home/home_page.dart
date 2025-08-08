@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
 import 'package:widget_mask/widget_mask.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -5,11 +7,16 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/services/auth_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:video_thumbnail/video_thumbnail.dart';
+import 'package:media_kit/media_kit.dart';
+import 'package:media_kit_video/media_kit_video.dart';
+import 'dart:io';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  HomePage({super.key});
   @override
   State<HomePage> createState() => _HomePageState();
+  final String videoUrl = globals.videoOfTheDay[globals.videoOfTheDayIndex];
 }
 
 class _HomePageState extends State<HomePage> {
@@ -17,6 +24,9 @@ class _HomePageState extends State<HomePage> {
   final TextEditingController _nameController = TextEditingController();
   String _displayName = ''; // stores name without comma prefix
   bool _isLoading = true; // handles initial loading state
+  final player = Player();
+  Uint8List? lastFrame;
+  final String videoUrl = globals.videoOfTheDay[globals.videoOfTheDayIndex];
 
   @override
   void initState() {
@@ -24,10 +34,60 @@ class _HomePageState extends State<HomePage> {
     _initData();
   }
 
+  Future<void> _loadLastFrame() async {
+    try {
+      bool completed = false;
+      Future.delayed(const Duration(seconds: 15), () {
+        if (!completed && mounted) {
+          setState(() {
+            print("Video thumbnail loading timed out");
+          });
+        }
+      });
+
+      await player.open(Media(widget.videoUrl));
+
+      try {
+        await player.stream.duration
+            .firstWhere((duration) => duration > Duration.zero)
+            .timeout(const Duration(seconds: 5));
+      } catch (e) {
+        print("Error getting video duration: $e");
+        if (mounted) setState(() => _isLoading = false);
+        return;
+      }
+
+      final duration = player.state.duration;
+      if (duration == Duration.zero) {
+        print("Video duration is zero, cannot get frame");
+        return;
+      }
+
+      try {
+        await player.seek(duration - const Duration(milliseconds: 100));
+        final frame = await player.screenshot();
+        if (mounted) {
+          setState(() {
+            lastFrame = frame;
+            completed = true;
+          });
+        }
+      } catch (e) {
+        print("Error capturing video frame: $e");
+      }
+    } catch (e) {
+      print("Error loading video frame: $e");
+    } finally {
+      await player.dispose();
+      if (mounted) setState(() => _isLoading = false);
+    }
+  }
+
   Future<void> _initData() async {
     await _loadAuthData();
     await _loadUserName();
-    await _loadPastVideos(); // Add this to load past videos
+    await _loadPastVideos();
+    await _loadLastFrame();
     setState(() => _isLoading = false);
   }
   //**_________________________________________ */
@@ -444,6 +504,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ],
                 ),
+                lastFrame != null
+                    ? Image.memory(lastFrame!)
+                    : const CircularProgressIndicator(),
               ],
             ),
           ),

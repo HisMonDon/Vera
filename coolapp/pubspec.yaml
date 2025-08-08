@@ -39,6 +39,7 @@ dependencies:
   media_kit_video: ^1.1.7
   media_kit_libs_video: ^1.0.4
   widget_mask: ^1.0.0+0
+  video_thumbnail: any
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -43,3 +43,4 @@ List<dynamic> redirectExplore = [
 List<String> videoOfTheDay = [
   'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/intro_to_physics/vectors%20vs%20scalars.mp4',
 ];
+int videoOfTheDayIndex = 0;
