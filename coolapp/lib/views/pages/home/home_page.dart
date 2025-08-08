@@ -400,7 +400,15 @@ class _HomePageState extends State<HomePage> {
                                                 70,
                                             height: 50,
                                             child: ElevatedButton(
-                                              onPressed: () {},
+                                              onPressed: () {
+                                                Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                    builder: (context) => globals
+                                                        .redirectExplore[index],
+                                                  ),
+                                                );
+                                              },
                                               style: ElevatedButton.styleFrom(
                                                 backgroundColor:
                                                     Colors.transparent,
