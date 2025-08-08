@@ -174,8 +174,7 @@ class _HomePageState extends State<HomePage> {
                           fit: BoxFit.cover,
                         ),
                         child: AutoSizeText(
-                          globals
-                              .welcomeText, 
+                          globals.welcomeText,
                           style: GoogleFonts.inter(
                             fontWeight: FontWeight.bold,
                             fontSize: 100,
@@ -327,10 +326,12 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                     SizedBox(width: 20),
+                    //SECOND
+                    //________________________________
                     Column(
                       children: [
                         Text(
-                          'Second box',
+                          'Explore',
                           style: GoogleFonts.mPlus1(
                             fontSize:
                                 ((MediaQuery.of(context).size.width) / 2 - 40) /
@@ -361,7 +362,7 @@ class _HomePageState extends State<HomePage> {
                                         MainAxisAlignment.spaceEvenly,
                                     crossAxisAlignment:
                                         CrossAxisAlignment.center,
-                                    children: globals.pastVideos
+                                    children: globals.explore
                                         .asMap()
                                         .entries
                                         .map((entry) {
@@ -398,19 +399,27 @@ class _HomePageState extends State<HomePage> {
                                                     2 -
                                                 70,
                                             height: 50,
-                                            child: AutoSizeText(
-                                              video,
-                                              style: GoogleFonts.montserrat(
-                                                fontSize: 20,
-                                                color: const Color.fromARGB(
-                                                  255,
-                                                  217,
-                                                  225,
-                                                  207,
-                                                ),
+                                            child: ElevatedButton(
+                                              onPressed: () {},
+                                              style: ElevatedButton.styleFrom(
+                                                backgroundColor:
+                                                    Colors.transparent,
+                                                shadowColor: Colors.transparent,
                                               ),
+                                              child: AutoSizeText(
+                                                video,
+                                                style: GoogleFonts.montserrat(
+                                                  fontSize: 20,
+                                                  color: const Color.fromARGB(
+                                                    255,
+                                                    217,
+                                                    225,
+                                                    207,
+                                                  ),
+                                                ),
 
-                                              maxLines: 1,
+                                                maxLines: 1,
+                                              ),
                                             ),
                                           );
                                         })
