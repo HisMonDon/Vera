@@ -248,8 +248,10 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Container(
                                 width:
-                                    (MediaQuery.of(context).size.width) / 2 -
-                                    40,
+                                    (MediaQuery.of(context).size.width) -
+                                    ((MediaQuery.of(context).size.width) / 4 -
+                                        40) -
+                                    100, //replace brackets with whatever explore size is
                                 height: 300,
                                 decoration: BoxDecoration(
                                   color: Color.fromARGB(255, 15, 48, 40),
@@ -296,10 +298,14 @@ class _HomePageState extends State<HomePage> {
 
                                             width:
                                                 (MediaQuery.of(
-                                                      context,
-                                                    ).size.width) /
-                                                    2 -
-                                                70,
+                                                  context,
+                                                ).size.width) -
+                                                ((MediaQuery.of(
+                                                          context,
+                                                        ).size.width) /
+                                                        4 -
+                                                    40) -
+                                                100, //replace brackets with whatever explore size is
                                             height: 50,
                                             child: AutoSizeText(
                                               video,
@@ -346,7 +352,7 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Container(
                                 width:
-                                    (MediaQuery.of(context).size.width) / 2 -
+                                    (MediaQuery.of(context).size.width) / 4 -
                                     40,
                                 height: 300,
                                 decoration: BoxDecoration(
