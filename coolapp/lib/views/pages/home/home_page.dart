@@ -57,18 +57,10 @@ class _HomePageState extends State<HomePage> {
       final savedName = await _authService.getSavedUserName() ?? '';
 
       if (savedName.isNotEmpty) {
-        // handle existing comma prefix
-        if (savedName[0] == ",") {
-          setState(() {
-            _displayName = savedName.substring(2);
-            print("all good! removed comma prefix");
-          });
-        } else {
-          setState(() {
-            _displayName = savedName;
-            print("no comma prefix found");
-          });
-        }
+        globals.userName = savedName;
+        setState(() {
+          _displayName = savedName;
+        });
         return;
       }
 
@@ -77,11 +69,11 @@ class _HomePageState extends State<HomePage> {
       if (uid.isNotEmpty && idToken.isNotEmpty) {
         final name = await _authService.getUserNameFromFirestore(uid, idToken);
         if (name != null) {
+          globals.userName = name;
           setState(() {
-            // store raw name without comma
-            _displayName = name.startsWith(", ") ? name.substring(2) : name;
+            _displayName = name;
           });
-          await _authService.saveUserName(_displayName); // save without comma
+          await _authService.saveUserName(name);
         }
       }
     } catch (e) {
