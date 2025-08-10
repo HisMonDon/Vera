@@ -81,6 +81,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.7.11"
+  extract_video_frame:
+    dependency: "direct dev"
+    description:
+      name: extract_video_frame
+      sha256: "8059f536613fba2bef57c3e33aa7f3aac9896a32dc0574397c019ab9f08dfba4"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.1"
   fake_async:
     dependency: transitive
     description:
@@ -131,6 +139,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_video_info:
+    dependency: transitive
+    description:
+      name: flutter_video_info
+      sha256: bb1e37b5a33e7ea7a3207a7ebb2fa78f401091c2945c9bd14ccf2231b24891db
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.3.3"
   flutter_web_plugins:
     dependency: transitive
     description: flutter
@@ -549,6 +565,38 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.7.4"
+  thumblr:
+    dependency: transitive
+    description:
+      name: thumblr
+      sha256: bfdb4c3d6e95d9595d4d464b255b85845db5f7ab88d8648d3edfe4f19adf043b
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.4"
+  thumblr_macos:
+    dependency: transitive
+    description:
+      name: thumblr_macos
+      sha256: "3b5189db149ee4c6c2fabc6f4bf3d84ed09c96cc45a2153a53ae781742c404c6"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.4.0"
+  thumblr_platform_interface:
+    dependency: transitive
+    description:
+      name: thumblr_platform_interface
+      sha256: abfcd54b5567b3c8d9a5426b43ed4783c613c34194564c47ffba0ea51f328962
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.3.1+1"
+  thumblr_windows:
+    dependency: transitive
+    description:
+      name: thumblr_windows
+      sha256: a1d372ccb4d4981e6d55ff516ee5b102f65d0f905d5d36c9712a095358d9e91a
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.3+1"
   typed_data:
     dependency: transitive
     description:
@@ -589,6 +637,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
+  video_duration:
+    dependency: transitive
+    description:
+      name: video_duration
+      sha256: "5191409201ff7c8b932662ac6f1c4fa3189db0c29583bb5bbaa239f85d7df613"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.3"
   video_thumbnail:
     dependency: "direct main"
     description:

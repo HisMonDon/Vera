@@ -1,5 +1,4 @@
 import 'dart:typed_data';
-
 import 'package:flutter/material.dart';
 import 'package:widget_mask/widget_mask.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -7,10 +6,12 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/services/auth_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:video_thumbnail/video_thumbnail.dart';
+//import 'package:video_thumbnail/video_thumbnail.dart'; perchance use this for later purposes if current extractvideoimage still doesnt support ios or android in future?
 import 'package:media_kit/media_kit.dart';
-import 'package:media_kit_video/media_kit_video.dart';
-import 'dart:io';
+import 'package:extract_video_frame/extract_video_frame.dart';
+import 'dart:ui' as ui;
+//import 'package:media_kit_video/media_kit_video.dart';
+//import 'dart:io';
 
 class HomePage extends StatefulWidget {
   HomePage({super.key});
@@ -27,67 +28,16 @@ class _HomePageState extends State<HomePage> {
   final player = Player();
   Uint8List? lastFrame;
   final String videoUrl = globals.videoOfTheDay[globals.videoOfTheDayIndex];
-
   @override
   void initState() {
     super.initState();
     _initData();
   }
 
-  Future<void> _loadLastFrame() async {
-    try {
-      bool completed = false;
-      Future.delayed(const Duration(seconds: 15), () {
-        if (!completed && mounted) {
-          setState(() {
-            print("Video thumbnail loading timed out");
-          });
-        }
-      });
-
-      await player.open(Media(widget.videoUrl));
-
-      try {
-        await player.stream.duration
-            .firstWhere((duration) => duration > Duration.zero)
-            .timeout(const Duration(seconds: 5));
-      } catch (e) {
-        print("Error getting video duration: $e");
-        if (mounted) setState(() => _isLoading = false);
-        return;
-      }
-
-      final duration = player.state.duration;
-      if (duration == Duration.zero) {
-        print("Video duration is zero, cannot get frame");
-        return;
-      }
-
-      try {
-        await player.seek(duration - const Duration(milliseconds: 100));
-        final frame = await player.screenshot();
-        if (mounted) {
-          setState(() {
-            lastFrame = frame;
-            completed = true;
-          });
-        }
-      } catch (e) {
-        print("Error capturing video frame: $e");
-      }
-    } catch (e) {
-      print("Error loading video frame: $e");
-    } finally {
-      await player.dispose();
-      if (mounted) setState(() => _isLoading = false);
-    }
-  }
-
   Future<void> _initData() async {
     await _loadAuthData();
     await _loadUserName();
     await _loadPastVideos();
-    await _loadLastFrame();
     setState(() => _isLoading = false);
   }
   //**_________________________________________ */
@@ -98,6 +48,13 @@ class _HomePageState extends State<HomePage> {
       globals.userId = prefs.getString('userId') ?? '';
       globals.idToken = prefs.getString('auth_token') ?? '';
     });
+  }
+
+  Future<void> getFrame() async {
+    final ui.Image frame = await extractVideoFrameAt(
+      videoFilePath: videoUrl,
+      positionInSeconds: 3.5,
+    );
   }
 
   // Add this method to load past videos
@@ -203,6 +160,7 @@ class _HomePageState extends State<HomePage> {
     } else {
       print("userName is null.");
     }*/
+
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
