@@ -173,225 +173,228 @@ class _HomePageState extends State<HomePage> {
           padding: EdgeInsets.all(20),
           child: SingleChildScrollView(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Row(
-                  //crossAxisAlignment: CrossAxisAlignment.stretch,
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Expanded(
-                      child: WidgetMask(
-                        blendMode: BlendMode.srcATop,
-                        childSaveLayer: true,
-                        mask: Image(
-                          image: AssetImage('images/text_background.jpg'),
-                          fit: BoxFit.cover,
-                        ),
-                        child: AutoSizeText(
-                          globals.welcomeText,
-                          style: GoogleFonts.inter(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 100,
-                            color: const Color.fromARGB(255, 255, 255, 255),
-                            decoration: TextDecoration.none,
+                    Row(
+                      //crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Expanded(
+                          child: WidgetMask(
+                            blendMode: BlendMode.srcATop,
+                            childSaveLayer: true,
+                            mask: Image(
+                              image: AssetImage('images/text_background.jpg'),
+                              fit: BoxFit.cover,
+                            ),
+                            child: AutoSizeText(
+                              globals.welcomeText,
+                              style: GoogleFonts.inter(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 100,
+                                color: const Color.fromARGB(255, 255, 255, 255),
+                                decoration: TextDecoration.none,
+                              ),
+                              maxLines: 1,
+                            ),
                           ),
-                          maxLines: 1,
                         ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            ElevatedButton(
+                              onPressed: openDialog,
+                              child: Icon(Icons.edit_rounded),
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.transparent,
+                                shadowColor: Colors.transparent,
+                                elevation: 0,
+                                iconSize: 20,
+                              ),
+                            ),
+                            SizedBox(height: 10),
+                          ],
+                        ),
+                      ],
+                    ),
+
+                    SizedBox(height: 1),
+
+                    WidgetMask(
+                      blendMode: BlendMode.srcATop,
+                      childSaveLayer: true,
+                      mask: Image(
+                        image: AssetImage('images/text_background.jpg'),
+                        fit: BoxFit.cover,
+                      ),
+                      child: AutoSizeText(
+                        globals.motivationalMessage,
+                        style: GoogleFonts.mPlus1(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30,
+                          color: const Color.fromARGB(255, 255, 255, 255),
+                          decoration: TextDecoration.none,
+                        ),
+                        maxLines: 1,
                       ),
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
+                    SizedBox(height: 30),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        ElevatedButton(
-                          onPressed: openDialog,
-                          child: Icon(Icons.edit_rounded),
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.transparent,
-                            shadowColor: Colors.transparent,
-                            elevation: 0,
-                            iconSize: 20,
-                          ),
-                        ),
-                        SizedBox(height: 10),
-                      ],
-                    ),
-                  ],
-                ),
-
-                SizedBox(height: 1),
-
-                WidgetMask(
-                  blendMode: BlendMode.srcATop,
-                  childSaveLayer: true,
-                  mask: Image(
-                    image: AssetImage('images/text_background.jpg'),
-                    fit: BoxFit.cover,
-                  ),
-                  child: AutoSizeText(
-                    globals.motivationalMessage,
-                    style: GoogleFonts.mPlus1(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 30,
-                      color: const Color.fromARGB(255, 255, 255, 255),
-                      decoration: TextDecoration.none,
-                    ),
-                    maxLines: 1,
-                  ),
-                ),
-                SizedBox(height: 30),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    //FIRST
-                    Column(
-                      children: [
-                        Text(
-                          'Recent Videos Watched',
-                          style: GoogleFonts.mPlus1(
-                            fontSize:
-                                ((MediaQuery.of(context).size.width) / 3 +
-                                    100) /
-                                30,
-                            color: const Color.fromARGB(255, 167, 198, 131),
-                          ),
-                        ),
-                        SizedBox(height: 10),
-                        SizedBox(
-                          height: 300,
-                          child: Stack(
-                            alignment: Alignment.centerLeft,
-                            children: [
-                              Container(
-                                width:
-                                    (MediaQuery.of(context).size.width) -
-                                    ((MediaQuery.of(context).size.width) / 4 -
-                                        40) -
-                                    100, //replace brackets with whatever explore size is
-                                height: 300,
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 15, 48, 40),
-                                  borderRadius: BorderRadius.circular(15),
-                                ),
+                        //FIRST
+                        Column(
+                          children: [
+                            Text(
+                              'Recent Videos Watched',
+                              style: GoogleFonts.mPlus1(
+                                fontSize:
+                                    ((MediaQuery.of(context).size.width) / 3 +
+                                        100) /
+                                    30,
+                                color: const Color.fromARGB(255, 167, 198, 131),
                               ),
-                              Positioned.fill(
-                                child: Align(
-                                  alignment: Alignment.topCenter,
-                                  child: Column(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceEvenly,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: globals.pastVideos
-                                        .asMap()
-                                        .entries
-                                        .map((entry) {
-                                          final index = entry.key;
-                                          final video = entry.value;
-
-                                          final backgroundColor =
-                                              (index % 2 == 0)
-                                              ? const Color.fromARGB(
-                                                  255,
-                                                  30,
-                                                  60,
-                                                  50,
-                                                )
-                                              : const Color.fromARGB(
-                                                  255,
-                                                  60,
-                                                  90,
-                                                  70,
-                                                ); // color 2
-
-                                          return Container(
-                                            alignment: Alignment.center,
-                                            decoration: BoxDecoration(
-                                              color: backgroundColor,
-                                              borderRadius:
-                                                  BorderRadius.circular(5),
-                                            ),
-
-                                            width:
-                                                (MediaQuery.of(
-                                                  context,
-                                                ).size.width) -
-                                                ((MediaQuery.of(
-                                                          context,
-                                                        ).size.width) /
-                                                        4 -
-                                                    40) -
-                                                100, //replace brackets with whatever explore size is
-                                            height: 50,
-                                            child: AutoSizeText(
-                                              video,
-                                              style: GoogleFonts.montserrat(
-                                                fontSize: 20,
-                                                color: const Color.fromARGB(
-                                                  255,
-                                                  217,
-                                                  225,
-                                                  207,
-                                                ),
-                                              ),
-                                              maxLines: 1,
-                                            ),
-                                          );
-                                        })
-                                        .toList(),
+                            ),
+                            SizedBox(height: 10),
+                            SizedBox(
+                              height: 300,
+                              child: Stack(
+                                alignment: Alignment.centerLeft,
+                                children: [
+                                  Container(
+                                    width:
+                                        (MediaQuery.of(context).size.width) -
+                                        ((MediaQuery.of(context).size.width) /
+                                                4 -
+                                            40) -
+                                        100, //replace brackets with whatever explore size is
+                                    height: 300,
+                                    decoration: BoxDecoration(
+                                      color: Color.fromARGB(255, 15, 48, 40),
+                                      borderRadius: BorderRadius.circular(15),
+                                    ),
                                   ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(width: 20),
+                                  Positioned.fill(
+                                    child: Align(
+                                      alignment: Alignment.topCenter,
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceEvenly,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        children: globals.pastVideos
+                                            .asMap()
+                                            .entries
+                                            .map((entry) {
+                                              final index = entry.key;
+                                              final video = entry.value;
 
-                    //SECOND
-                    //________________________________
-                    Column(
-                      children: [
-                        Text(
-                          'Explore',
-                          style: GoogleFonts.mPlus1(
-                            fontSize:
-                                ((MediaQuery.of(context).size.width) / 3 +
-                                    100) /
-                                30,
-                            color: const Color.fromARGB(255, 167, 198, 131),
-                          ),
-                        ),
+                                              final backgroundColor =
+                                                  (index % 2 == 0)
+                                                  ? const Color.fromARGB(
+                                                      255,
+                                                      30,
+                                                      60,
+                                                      50,
+                                                    )
+                                                  : const Color.fromARGB(
+                                                      255,
+                                                      60,
+                                                      90,
+                                                      70,
+                                                    ); // color 2
 
-                        SizedBox(height: 10),
-                        SizedBox(
-                          height: 300,
-                          child: Stack(
-                            alignment: Alignment.centerLeft,
-                            children: [
-                              Container(
-                                width:
-                                    (MediaQuery.of(context).size.width) / 4 -
-                                    40,
-                                height: 300,
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 15, 48, 40),
-                                  borderRadius: BorderRadius.circular(15),
-                                ),
+                                              return Container(
+                                                alignment: Alignment.center,
+                                                decoration: BoxDecoration(
+                                                  color: backgroundColor,
+                                                  borderRadius:
+                                                      BorderRadius.circular(5),
+                                                ),
+
+                                                width:
+                                                    (MediaQuery.of(
+                                                      context,
+                                                    ).size.width) -
+                                                    ((MediaQuery.of(
+                                                              context,
+                                                            ).size.width) /
+                                                            4 -
+                                                        40) -
+                                                    100, //replace brackets with whatever explore size is
+                                                height: 50,
+                                                child: AutoSizeText(
+                                                  video,
+                                                  style: GoogleFonts.montserrat(
+                                                    fontSize: 20,
+                                                    color: const Color.fromARGB(
+                                                      255,
+                                                      217,
+                                                      225,
+                                                      207,
+                                                    ),
+                                                  ),
+                                                  maxLines: 1,
+                                                ),
+                                              );
+                                            })
+                                            .toList(),
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
-                              Positioned.fill(
-                                child: Align(
-                                  alignment: Alignment.topCenter,
-                                  child: Column(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceEvenly,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: globals.explore
-                                        .asMap()
-                                        .entries
-                                        .map((entry) {
+                            ),
+                          ],
+                        ),
+                        SizedBox(width: 20),
+
+                        //SECOND
+                        //________________________________
+                        Column(
+                          children: [
+                            Text(
+                              'Explore',
+                              style: GoogleFonts.mPlus1(
+                                fontSize:
+                                    ((MediaQuery.of(context).size.width) / 3 +
+                                        100) /
+                                    30,
+                                color: const Color.fromARGB(255, 167, 198, 131),
+                              ),
+                            ),
+
+                            SizedBox(height: 10),
+                            SizedBox(
+                              height: 300,
+                              child: Stack(
+                                alignment: Alignment.centerLeft,
+                                children: [
+                                  Container(
+                                    width:
+                                        (MediaQuery.of(context).size.width) /
+                                            4 -
+                                        40,
+                                    height: 300,
+                                    decoration: BoxDecoration(
+                                      color: Color.fromARGB(255, 15, 48, 40),
+                                      borderRadius: BorderRadius.circular(15),
+                                    ),
+                                  ),
+                                  Positioned.fill(
+                                    child: Align(
+                                      alignment: Alignment.topCenter,
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceEvenly,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        children: globals.explore.asMap().entries.map((
+                                          entry,
+                                        ) {
                                           final index = entry.key;
                                           final video = entry.value;
 
@@ -456,15 +459,51 @@ class _HomePageState extends State<HomePage> {
                                               ),
                                             ),
                                           );
-                                        })
-                                        .toList(),
+                                        }).toList(),
+                                      ),
+                                    ),
                                   ),
-                                ),
+                                ],
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
                       ],
+                    ),
+                  ],
+                ),
+                SizedBox(height: 20),
+                //====================================================================//
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+
+                  children: [
+                    Text(
+                      'Featured Video of the Day',
+                      style: GoogleFonts.mPlus1(
+                        fontSize:
+                            ((MediaQuery.of(context).size.width) / 3 + 100) /
+                            30,
+                        color: const Color.fromARGB(255, 167, 198, 131),
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    SizedBox(
+                      height: 600,
+                      child: Stack(
+                        alignment: Alignment.topCenter,
+                        children: [
+                          Container(
+                            width: (MediaQuery.of(context).size.width) - 80,
+                            height: 600,
+                            decoration: BoxDecoration(
+                              color: Color.fromARGB(255, 15, 48, 40),
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
