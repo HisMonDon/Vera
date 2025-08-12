@@ -17,7 +17,8 @@ class HomePage extends StatefulWidget {
   HomePage({super.key});
   @override
   State<HomePage> createState() => _HomePageState();
-  final String videoUrl = globals.videoOfTheDay[globals.videoOfTheDayIndex];
+  final String videoUrl =
+      globals.videoOfTheDay[globals.videoOfTheDayIndex]['videoLink'] ?? '';
 }
 
 class _HomePageState extends State<HomePage> {
@@ -27,7 +28,8 @@ class _HomePageState extends State<HomePage> {
   bool _isLoading = true; // handles initial loading state
   final player = Player();
   Uint8List? lastFrame;
-  final String videoUrl = globals.videoOfTheDay[globals.videoOfTheDayIndex];
+  final String videoUrl =
+      globals.videoOfTheDay[globals.videoOfTheDayIndex]['videoLink'] ?? '';
   @override
   void initState() {
     super.initState();
