@@ -559,7 +559,18 @@ class _HomePageState extends State<HomePage> {
                                   Column(
                                     children: [
                                       SizedBox(height: 10),
-                                      Text("skibid"),
+                                      Text(
+                                        featuredTitle,
+                                        style: GoogleFonts.bebasNeue(
+                                          fontSize: 30,
+                                          color: const Color.fromARGB(
+                                            255,
+                                            47,
+                                            128,
+                                            101,
+                                          ),
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 ],
