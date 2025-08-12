@@ -504,35 +504,39 @@ class _HomePageState extends State<HomePage> {
                           ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               SizedBox(height: 10),
-                              SizedBox(
-                                //constrain autosizetext
-                                width: (MediaQuery.of(context).size.width) - 80,
-                                child: WidgetMask(
-                                  blendMode: BlendMode.srcATop,
-                                  childSaveLayer: true,
-                                  mask: Image(
-                                    image: AssetImage(
-                                      'images/text_background.jpg',
-                                    ),
-                                    fit: BoxFit.cover,
-                                  ),
-                                  child: AutoSizeText(
-                                    featuredTitle,
-                                    style: GoogleFonts.mPlus1(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 30,
-                                      color: const Color.fromARGB(
-                                        255,
-                                        255,
-                                        255,
-                                        255,
+                              Center(
+                                child: SizedBox(
+                                  //constrain autosizetext
+                                  width:
+                                      (MediaQuery.of(context).size.width) - 80,
+                                  child: WidgetMask(
+                                    blendMode: BlendMode.srcATop,
+                                    childSaveLayer: true,
+                                    mask: Image(
+                                      image: AssetImage(
+                                        'images/text_background.jpg',
                                       ),
-                                      decoration: TextDecoration.none,
+                                      fit: BoxFit.cover,
                                     ),
-                                    maxLines: 2,
+                                    child: AutoSizeText(
+                                      featuredTitle,
+                                      textAlign: TextAlign.center,
+                                      style: GoogleFonts.mPlus1(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 30,
+                                        color: const Color.fromARGB(
+                                          255,
+                                          255,
+                                          255,
+                                          255,
+                                        ),
+                                        decoration: TextDecoration.none,
+                                      ),
+                                      maxLines: 2,
+                                    ),
                                   ),
                                 ),
                               ),
