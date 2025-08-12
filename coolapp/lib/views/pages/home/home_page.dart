@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
       globals.videoOfTheDay[globals.videoOfTheDayIndex]['videoLink'] ?? '';
   final String featuredTitle =
       globals.videoOfTheDay[globals.videoOfTheDayIndex]['videoTitle'] ?? '';
-  final Color thumnailColor =
+  final Color thumbnailColor =
       globals.videoOfTheDay[globals.videoOfTheDayIndex]['thumbnailColor']!;
   @override
   void initState() {
@@ -538,6 +538,16 @@ class _HomePageState extends State<HomePage> {
                                       maxLines: 2,
                                     ),
                                   ),
+                                ),
+                                //-----------
+                              ),
+                              Container(
+                                height: 500,
+                                width:
+                                    (MediaQuery.of(context).size.width) - 120,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(15),
+                                  color: thumbnailColor,
                                 ),
                               ),
                             ],
