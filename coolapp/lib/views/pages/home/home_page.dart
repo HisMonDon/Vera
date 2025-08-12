@@ -541,15 +541,28 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 //-----------
                               ),
-                              Container(
-                                height: 500,
-                                width:
-                                    (MediaQuery.of(context).size.width) - 120,
+                              Stack(
                                 alignment: Alignment.topCenter,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(15),
-                                  color: thumbnailColor,
-                                ),
+                                children: [
+                                  Container(
+                                    height: 500,
+                                    width:
+                                        (MediaQuery.of(context).size.width) -
+                                        120,
+                                    alignment: Alignment.topCenter,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(15),
+                                      color: thumbnailColor,
+                                    ),
+                                  ),
+
+                                  Column(
+                                    children: [
+                                      SizedBox(height: 10),
+                                      Text("skibid"),
+                                    ],
+                                  ),
+                                ],
                               ),
                             ],
                           ),
