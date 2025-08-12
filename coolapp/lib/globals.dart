@@ -45,7 +45,12 @@ List<Map<String, dynamic>> videoOfTheDay = [
     'videoLink':
         'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/intro_to_physics/vectors%20vs%20scalars.mp4',
     'videoTitle': 'Intro To Physics: Vectors and Scalars',
-    'thumbnailColor': Color.fromARGB(255, 0, 0, 0),
+    'thumbnailColor': Color.fromARGB(
+      255,
+      0,
+      0,
+      0,
+    ), //bc I will be generating thumbnail from my code
   },
 ];
 int videoOfTheDayIndex = 0;

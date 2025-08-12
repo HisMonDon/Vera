@@ -27,11 +27,12 @@ class _HomePageState extends State<HomePage> {
   String _displayName = ''; // stores name without comma prefix
   bool _isLoading = true; // handles initial loading state
   final player = Player();
-  Uint8List? lastFrame;
   final String videoUrl =
       globals.videoOfTheDay[globals.videoOfTheDayIndex]['videoLink'] ?? '';
   final String featuredTitle =
       globals.videoOfTheDay[globals.videoOfTheDayIndex]['videoTitle'] ?? '';
+  final Color thumnailColor =
+      globals.videoOfTheDay[globals.videoOfTheDayIndex]['thumbnailColor']!;
   @override
   void initState() {
     super.initState();
@@ -467,9 +468,6 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ],
                 ),
-                lastFrame != null
-                    ? Image.memory(lastFrame!)
-                    : const CircularProgressIndicator(),
               ],
             ),
           ),
