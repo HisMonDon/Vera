@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  // Add this method to load past videos
+  //Add this method to load past videos
   Future<void> _loadPastVideos() async {
     try {
       final recentVideos = await _authService.getPastVideos() ?? [];
@@ -68,6 +68,7 @@ class _HomePageState extends State<HomePage> {
       print("error loading past videos: $e");
     }
   }
+  //
 
   Future<void> _loadUserName() async {
     try {
