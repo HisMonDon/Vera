@@ -545,6 +545,7 @@ class _HomePageState extends State<HomePage> {
                                 height: 500,
                                 width:
                                     (MediaQuery.of(context).size.width) - 120,
+                                alignment: Alignment.topCenter,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(15),
                                   color: thumbnailColor,
