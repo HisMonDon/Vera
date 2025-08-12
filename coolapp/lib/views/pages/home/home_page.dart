@@ -30,6 +30,8 @@ class _HomePageState extends State<HomePage> {
   Uint8List? lastFrame;
   final String videoUrl =
       globals.videoOfTheDay[globals.videoOfTheDayIndex]['videoLink'] ?? '';
+  final String featuredTitle =
+      globals.videoOfTheDay[globals.videoOfTheDayIndex]['videoTitle'] ?? '';
   @override
   void initState() {
     super.initState();

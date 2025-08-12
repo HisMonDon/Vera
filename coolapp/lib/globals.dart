@@ -40,7 +40,12 @@ List<dynamic> redirectExplore = [
   MomentumAndCollisions(),
   CoursePage(),
 ];
-List<String> videoOfTheDay = [
-  'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/intro_to_physics/vectors%20vs%20scalars.mp4',
+List<Map<String, dynamic>> videoOfTheDay = [
+  {
+    'videoLink':
+        'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/intro_to_physics/vectors%20vs%20scalars.mp4',
+    'videoTitle': 'Intro To Physics: Vectors and Scalars',
+    'thumbnailColor': Color.fromARGB(255, 0, 0, 0),
+  },
 ];
 int videoOfTheDayIndex = 0;
