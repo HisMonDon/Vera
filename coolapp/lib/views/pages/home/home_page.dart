@@ -558,7 +558,7 @@ class _HomePageState extends State<HomePage> {
 
                                   Column(
                                     children: [
-                                      SizedBox(height: 10),
+                                      SizedBox(height: 20),
                                       Text(
                                         featuredTitle,
                                         style: GoogleFonts.bebasNeue(
