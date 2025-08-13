@@ -563,29 +563,38 @@ class _HomePageState extends State<HomePage> {
                                         CrossAxisAlignment.center,
                                     children: [
                                       SizedBox(height: 60),
-                                      Text(
-                                        featuredTitle,
-                                        style: GoogleFonts.bebasNeue(
-                                          fontSize: 60,
-                                          color: const Color.fromARGB(
-                                            255,
-                                            217,
-                                            225,
-                                            199,
+                                      Row(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            featuredTitle,
+                                            style: GoogleFonts.bebasNeue(
+                                              fontSize: 60,
+                                              color: const Color.fromARGB(
+                                                255,
+                                                217,
+                                                225,
+                                                199,
+                                              ),
+                                            ),
                                           ),
-                                        ),
+                                          SizedBox(width: 20),
+                                          Icon(
+                                            MdiIcons.atom,
+                                            color: Color.fromARGB(
+                                              255,
+                                              217,
+                                              225,
+                                              199,
+                                            ),
+                                            size: 70,
+                                          ),
+                                        ],
                                       ),
                                       SizedBox(height: 60),
-                                      Icon(
-                                        MdiIcons.atom,
-                                        color: Color.fromARGB(
-                                          255,
-                                          217,
-                                          225,
-                                          199,
-                                        ),
-                                        size: 210,
-                                      ),
                                     ],
                                   ),
                                 ],
