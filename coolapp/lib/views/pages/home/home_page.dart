@@ -585,6 +585,27 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                     ],
                                   ),
+                                  Column(
+                                    children: [
+                                      SizedBox(height: 60),
+                                      Container(
+                                        width:
+                                            (MediaQuery.of(
+                                              context,
+                                            ).size.width) -
+                                            120,
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.rectangle,
+                                          color: const Color.fromARGB(
+                                            255,
+                                            0,
+                                            15,
+                                            4,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ],
                               ),
                             ],
