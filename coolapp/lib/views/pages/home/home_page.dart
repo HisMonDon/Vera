@@ -555,14 +555,18 @@ class _HomePageState extends State<HomePage> {
                                       color: thumbnailColor,
                                     ),
                                   ),
-
+                                  Image(
+                                    image: AssetImage(
+                                      'images/featured_video_background.png',
+                                    ),
+                                  ),
                                   Column(
                                     children: [
-                                      SizedBox(height: 20),
+                                      SizedBox(height: 60),
                                       Text(
                                         featuredTitle,
                                         style: GoogleFonts.bebasNeue(
-                                          fontSize: 30,
+                                          fontSize: 60,
                                           color: const Color.fromARGB(
                                             255,
                                             47,
