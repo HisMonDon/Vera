@@ -12,6 +12,7 @@ import 'package:extract_video_frame/extract_video_frame.dart';
 import 'dart:ui' as ui;
 //import 'package:media_kit_video/media_kit_video.dart';
 //import 'dart:io';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({super.key});
@@ -548,9 +549,9 @@ class _HomePageState extends State<HomePage> {
                                           shape: BoxShape.rectangle,
                                           color: Color.fromARGB(
                                             255,
-                                            97,
-                                            131,
-                                            58,
+                                            15,
+                                            48,
+                                            40,
                                           ),
                                         ),
                                       ),
@@ -573,6 +574,17 @@ class _HomePageState extends State<HomePage> {
                                             199,
                                           ),
                                         ),
+                                      ),
+                                      SizedBox(height: 60),
+                                      Icon(
+                                        MdiIcons.atom,
+                                        color: Color.fromARGB(
+                                          255,
+                                          217,
+                                          225,
+                                          199,
+                                        ),
+                                        size: 210,
                                       ),
                                     ],
                                   ),
