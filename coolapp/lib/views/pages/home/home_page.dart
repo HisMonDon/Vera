@@ -555,9 +555,15 @@ class _HomePageState extends State<HomePage> {
                                       color: thumbnailColor,
                                     ),
                                   ),
-                                  Image(
-                                    image: AssetImage(
-                                      'images/featured_video_background.png',
+                                  SizedBox(
+                                    height: 500,
+                                    width:
+                                        (MediaQuery.of(context).size.width) -
+                                        120,
+                                    child: Image(
+                                      image: AssetImage(
+                                        'images/featured_video_background.png',
+                                      ),
                                     ),
                                   ),
                                   Column(
