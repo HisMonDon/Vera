@@ -557,13 +557,11 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                     ],
                                   ),
-                                  Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                      SizedBox(height: 60),
-                                      Row(
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 60),
+                                    child: Align(
+                                      alignment: Alignment.topCenter,
+                                      child: Row(
                                         crossAxisAlignment:
                                             CrossAxisAlignment.center,
                                         mainAxisAlignment:
@@ -594,8 +592,7 @@ class _HomePageState extends State<HomePage> {
                                           ),
                                         ],
                                       ),
-                                      SizedBox(height: 60),
-                                    ],
+                                    ),
                                   ),
                                 ],
                               ),
