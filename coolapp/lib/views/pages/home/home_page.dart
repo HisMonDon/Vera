@@ -554,39 +554,20 @@ class _HomePageState extends State<HomePage> {
                                       borderRadius: BorderRadius.circular(15),
                                       color: thumbnailColor,
                                     ),
-                                  ),
-                                  Row(
-                                    children: [
-                                      SizedBox(
-                                        height: 500,
-                                        width:
-                                            (MediaQuery.of(
-                                                  context,
-                                                ).size.width) /
-                                                2 -
-                                            60,
-                                        child: Image(
-                                          image: AssetImage(
-                                            'images/featured_video_background.png',
-                                          ),
+                                    child: SizedBox(
+                                      height: 500,
+                                      width:
+                                          (MediaQuery.of(context).size.width) -
+                                          120,
+                                      child: Image(
+                                        fit: BoxFit.cover,
+                                        image: AssetImage(
+                                          'images/featured_video_background.png',
                                         ),
                                       ),
-                                      SizedBox(
-                                        height: 500,
-                                        width:
-                                            (MediaQuery.of(
-                                                  context,
-                                                ).size.width) /
-                                                2 -
-                                            60,
-                                        child: Image(
-                                          image: AssetImage(
-                                            'images/featured_video_background.png',
-                                          ),
-                                        ),
-                                      ),
-                                    ],
+                                    ),
                                   ),
+
                                   Column(
                                     children: [
                                       SizedBox(height: 60),
