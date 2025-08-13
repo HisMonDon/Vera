@@ -506,46 +506,13 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              SizedBox(height: 10),
-                              Center(
-                                child: SizedBox(
-                                  //constrain autosizetext
-                                  width:
-                                      (MediaQuery.of(context).size.width) - 80,
-                                  child: WidgetMask(
-                                    blendMode: BlendMode.srcATop,
-                                    childSaveLayer: true,
-                                    mask: Image(
-                                      image: AssetImage(
-                                        'images/text_background.jpg',
-                                      ),
-                                      fit: BoxFit.cover,
-                                    ),
-                                    child: AutoSizeText(
-                                      featuredTitle,
-                                      textAlign: TextAlign.center,
-                                      style: GoogleFonts.mPlus1(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 30,
-                                        color: const Color.fromARGB(
-                                          255,
-                                          255,
-                                          255,
-                                          255,
-                                        ),
-                                        decoration: TextDecoration.none,
-                                      ),
-                                      maxLines: 2,
-                                    ),
-                                  ),
-                                ),
-                                //-----------
-                              ),
+                              SizedBox(height: 20),
+
                               Stack(
                                 alignment: Alignment.topCenter,
                                 children: [
                                   Container(
-                                    height: 500,
+                                    height: 560,
                                     width:
                                         (MediaQuery.of(context).size.width) -
                                         120,
@@ -555,7 +522,7 @@ class _HomePageState extends State<HomePage> {
                                       color: thumbnailColor,
                                     ),
                                     child: SizedBox(
-                                      height: 500,
+                                      height: 560,
                                       width:
                                           (MediaQuery.of(context).size.width) -
                                           120,
@@ -567,24 +534,6 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                     ),
                                   ),
-
-                                  Column(
-                                    children: [
-                                      SizedBox(height: 60),
-                                      Text(
-                                        featuredTitle,
-                                        style: GoogleFonts.bebasNeue(
-                                          fontSize: 60,
-                                          color: const Color.fromARGB(
-                                            255,
-                                            47,
-                                            128,
-                                            101,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
                                   Column(
                                     children: [
                                       SizedBox(height: 60),
@@ -594,13 +543,34 @@ class _HomePageState extends State<HomePage> {
                                               context,
                                             ).size.width) -
                                             120,
+                                        height: 80,
                                         decoration: BoxDecoration(
                                           shape: BoxShape.rectangle,
+                                          color: Color.fromARGB(
+                                            255,
+                                            97,
+                                            131,
+                                            58,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      SizedBox(height: 60),
+                                      Text(
+                                        featuredTitle,
+                                        style: GoogleFonts.bebasNeue(
+                                          fontSize: 60,
                                           color: const Color.fromARGB(
                                             255,
-                                            0,
-                                            15,
-                                            4,
+                                            217,
+                                            225,
+                                            199,
                                           ),
                                         ),
                                       ),
