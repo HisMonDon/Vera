@@ -152,7 +152,7 @@ class _DynamicsState extends State<Dynamics> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    globals.topicTitle = 'Electricity and Magnetism';
+    globals.topicTitle = 'Forces and Dynamics'; //change this
     globals.unitTitle = '';
     return Scaffold(
       body: SingleChildScrollView(
@@ -164,7 +164,7 @@ class _DynamicsState extends State<Dynamics> {
               Row(
                 children: [
                   AutoSizeText(
-                    "Electricity and Magnetism",
+                    "Forces and Dynamics", //change this
                     maxLines: 1,
                     style: GoogleFonts.mPlus1(
                       fontSize: 30,

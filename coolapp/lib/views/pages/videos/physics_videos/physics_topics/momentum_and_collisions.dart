@@ -158,7 +158,7 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
               Row(
                 children: [
                   AutoSizeText(
-                    "Kinematics",
+                    "Momentum and Collisions",
                     maxLines: 1,
                     style: GoogleFonts.mPlus1(
                       fontSize: 30,
