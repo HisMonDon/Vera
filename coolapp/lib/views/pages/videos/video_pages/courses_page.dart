@@ -6,6 +6,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_courses/grade_
 import 'package:coolapp/views/pages/videos/physics_videos/physics_courses/grade_12_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_courses/ib_physics_hl.dart';
 import 'package:coolapp/views/pages/videos/video_pages/topics_page.dart';
+import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
@@ -148,6 +149,7 @@ class _CoursePageState extends State<CoursePage> {
       return NotLoggedIn();
     }
     return Scaffold(
+      appBar: TimedAppBar(),
       body: Stack(
         children: [
           Padding(

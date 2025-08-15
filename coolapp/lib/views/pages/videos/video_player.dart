@@ -1,3 +1,4 @@
+import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:media_kit/media_kit.dart';
 import 'package:media_kit_video/media_kit_video.dart';
@@ -168,10 +169,11 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text(stackedTitle)), //add text here
+      appBar: TimedAppBar(), //add text here
       body: SingleChildScrollView(
         child: Column(
           children: [
+            SizedBox(height: 30),
             Center(
               child: hasError
                   ? _buildErrorDisplay()

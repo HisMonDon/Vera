@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
+import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
@@ -149,6 +150,7 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
     globals.topicTitle = 'Momentum and Collisions';
     print("topic title: Momentum and collisions, unit title reset");
     return Scaffold(
+      appBar: TimedAppBar(),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(20),

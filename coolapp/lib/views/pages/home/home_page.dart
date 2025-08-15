@@ -1,5 +1,6 @@
 import 'dart:typed_data';
 import 'package:coolapp/views/pages/videos/video_player.dart';
+import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:widget_mask/widget_mask.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -126,11 +127,9 @@ class _HomePageState extends State<HomePage> {
               final newName = _nameController.text.trim();
               setState(() {
                 _displayName = newName; // store raw name
-                print("saved forever!!");
               });
               // save raw name without comma
               await _authService.saveUserName(_displayName);
-              print("here1");
               if (newName.isNotEmpty) {
                 final uid = globals.userId;
                 final idToken = globals.idToken;
@@ -172,6 +171,7 @@ class _HomePageState extends State<HomePage> {
     }*/
 
     return Scaffold(
+      appBar: TimedAppBar(),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(20),

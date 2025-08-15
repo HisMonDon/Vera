@@ -2,6 +2,7 @@
 import 'package:coolapp/main.dart';
 import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:coolapp/views/pages/home/home_page.dart';
+import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -13,6 +14,7 @@ class LockedPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: TimedAppBar(),
       backgroundColor: Color.fromARGB(255, 4, 34, 26),
       floatingActionButton: FloatingActionButton(
         onPressed: () {

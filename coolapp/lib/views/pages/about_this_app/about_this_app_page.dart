@@ -6,6 +6,6 @@ class AboutThisAppPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text('About this app'));
+    return Center(child: Text('About this app')); //rememrber appbar
   }
 }

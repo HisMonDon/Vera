@@ -1,3 +1,4 @@
+import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:coolapp/services/auth_service.dart';
@@ -340,10 +341,7 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Profile'),
-        backgroundColor: Theme.of(context).primaryColor,
-      ),
+      appBar: TimedAppBar(),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Center(

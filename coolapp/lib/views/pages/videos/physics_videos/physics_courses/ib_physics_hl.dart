@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
+import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
@@ -164,6 +165,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
     globals.courseTitle = 'IB Physics HL';
     globals.topicTitle = '';
     return Scaffold(
+      appBar: TimedAppBar(),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(20),

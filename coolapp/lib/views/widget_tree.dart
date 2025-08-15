@@ -3,6 +3,7 @@ import 'package:coolapp/views/pages/help_page/help_page.dart';
 import 'package:coolapp/views/pages/home/home_page.dart';
 import 'package:coolapp/views/pages/profile_page/profile_page.dart';
 import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
+import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -83,25 +84,8 @@ class _WidgetTreeState extends State<WidgetTree> {
     } else {
       globals.motivationalMessage = "One more video before you sleep?";
     }
-    // Wrap each screen with a Scaffold and AppBar
-    return screens
-        .map(
-          (screen) => Scaffold(
-            appBar: AppBar(
-              centerTitle: true,
-              title: Text("Vera", style: GoogleFonts.mPlus1()),
-              backgroundColor: const Color.fromARGB(255, 15, 48, 40),
-              actions: [
-                Padding(
-                  padding: EdgeInsets.only(right: 16.0),
-                  child: Center(child: Text(_currentTime.format(context))),
-                ),
-              ],
-            ),
-            body: screen,
-          ),
-        )
-        .toList();
+    // Wrap each screen with a Scaffold and no AppBar
+    return screens.map((screen) => Scaffold(body: screen)).toList();
   }
 
   List<PersistentBottomNavBarItem> _navBarsItems() {
