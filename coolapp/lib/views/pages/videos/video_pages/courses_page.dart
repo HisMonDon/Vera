@@ -58,7 +58,7 @@ class _CoursePageState extends State<CoursePage> {
         scale: isHovered ? 1.05 : 1.0,
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            backgroundColor: const Color.fromARGB(255, 1, 110, 124),
+            backgroundColor: const Color.fromARGB(255, 60, 90, 70),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
@@ -212,7 +212,7 @@ class _CoursePageState extends State<CoursePage> {
                 width: 40,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                  color: const Color.fromARGB(255, 21, 119, 122),
+                  color: const Color.fromARGB(255, 4, 97, 66),
                 ),
                 alignment: Alignment.center,
                 child: Row(
@@ -238,9 +238,9 @@ class _CoursePageState extends State<CoursePage> {
                         fixedSize: Size(100, 50),
                         disabledBackgroundColor: const Color.fromARGB(
                           255,
-                          2,
-                          72,
-                          82,
+                          10,
+                          73,
+                          59,
                         ),
                       ),
                       onPressed: null,

@@ -52,12 +52,13 @@ class _TopicsPageState extends State<TopicsPage> {
           hoveredStates[index] = false;
         });
       },
+
       child: AnimatedScale(
         duration: Duration(milliseconds: 200),
         scale: isHovered ? 1.05 : 1.0,
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            backgroundColor: const Color.fromARGB(255, 10, 73, 59),
+            backgroundColor: const Color.fromARGB(255, 30, 60, 50),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
