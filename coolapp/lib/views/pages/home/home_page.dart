@@ -509,92 +509,102 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               SizedBox(height: 20),
 
-                              Stack(
-                                alignment: Alignment.topCenter,
-                                children: [
-                                  Container(
-                                    height: 560,
-                                    width:
-                                        (MediaQuery.of(context).size.width) -
-                                        120,
-                                    alignment: Alignment.topCenter,
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(15),
-                                      color: thumbnailColor,
-                                    ),
-                                    child: SizedBox(
+                              ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: Colors.transparent,
+                                  shadowColor: Colors.transparent,
+                                  foregroundColor: Colors.transparent,
+                                ),
+                                onPressed: () {},
+                                child: Stack(
+                                  alignment: Alignment.topCenter,
+                                  children: [
+                                    Container(
                                       height: 560,
                                       width:
                                           (MediaQuery.of(context).size.width) -
                                           120,
-                                      child: Image(
-                                        fit: BoxFit.cover,
-                                        image: AssetImage(
-                                          'images/featured_video_background.png',
-                                        ),
+                                      alignment: Alignment.topCenter,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(15),
+                                        color: thumbnailColor,
                                       ),
-                                    ),
-                                  ),
-                                  Column(
-                                    children: [
-                                      SizedBox(height: 60),
-                                      Container(
+                                      child: SizedBox(
+                                        height: 560,
                                         width:
                                             (MediaQuery.of(
                                               context,
                                             ).size.width) -
                                             120,
-                                        height: 80,
-                                        decoration: BoxDecoration(
-                                          shape: BoxShape.rectangle,
-                                          color: Color.fromARGB(
-                                            255,
-                                            15,
-                                            48,
-                                            40,
+                                        child: Image(
+                                          fit: BoxFit.cover,
+                                          image: AssetImage(
+                                            'images/featured_video_background.png',
                                           ),
                                         ),
                                       ),
-                                    ],
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(top: 60),
-                                    child: Align(
-                                      alignment: Alignment.topCenter,
-                                      child: Row(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.center,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Text(
-                                            featuredTitle,
-                                            style: GoogleFonts.bebasNeue(
-                                              fontSize: 60,
-                                              color: const Color.fromARGB(
+                                    ),
+                                    Column(
+                                      children: [
+                                        SizedBox(height: 60),
+                                        Container(
+                                          width:
+                                              (MediaQuery.of(
+                                                context,
+                                              ).size.width) -
+                                              120,
+                                          height: 80,
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.rectangle,
+                                            color: Color.fromARGB(
+                                              255,
+                                              15,
+                                              48,
+                                              40,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 60),
+                                      child: Align(
+                                        alignment: Alignment.topCenter,
+                                        child: Row(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Text(
+                                              featuredTitle,
+                                              style: GoogleFonts.bebasNeue(
+                                                fontSize: 60,
+                                                color: const Color.fromARGB(
+                                                  255,
+                                                  217,
+                                                  225,
+                                                  199,
+                                                ),
+                                              ),
+                                            ),
+                                            SizedBox(width: 20),
+                                            Icon(
+                                              MdiIcons.atom,
+                                              color: Color.fromARGB(
                                                 255,
                                                 217,
                                                 225,
                                                 199,
                                               ),
+                                              size: 70,
                                             ),
-                                          ),
-                                          SizedBox(width: 20),
-                                          Icon(
-                                            MdiIcons.atom,
-                                            color: Color.fromARGB(
-                                              255,
-                                              217,
-                                              225,
-                                              199,
-                                            ),
-                                            size: 70,
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
                             ],
                           ),
