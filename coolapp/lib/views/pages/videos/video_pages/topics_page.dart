@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
@@ -107,28 +108,35 @@ class _TopicsPageState extends State<TopicsPage> {
       'title': 'Introduction to Physics',
       'imagePath': 'images/intro_to_physics.jpg',
       'description':
-          'Covers the basics of physics, including vectors, velocity, and displacement',
+          'Short Topic explaining the introduction to physics, including vectors, velocity, and displacement',
       'videoPage': IntroToPhysics(),
     },
     {
       'title': 'Kinematics',
       'imagePath': 'images/kinematics.jpg',
-      'description': 'Tutorial videos on kinematics and projectile motion',
+      'description':
+          'Projectile Motion, Kinematics formulae, Movement of objects',
       'videoPage': Kinematics(),
     },
     {
       'title': 'Electricity and Magnetism',
       'imagePath': 'images/electricity.jpg',
       'description':
-          'Tutorial videos on electric fields, circuits, magnetic interactions, and electromagnetic waves',
+          'Electric fields, circuits, magnetic interactions, and electromagnetic waves',
       'videoPage': ElectricityAndMagnetism(),
     },
     {
       'title': 'Momentum and Collisions',
       'imagePath': 'images/momentum.jpg',
       'description':
-          'Tutorial videos on momentum, elastic and non-elastic collisions, and impulse',
+          'Momentum, elastic and non-elastic collisions, and impulse',
       'videoPage': MomentumAndCollisions(),
+    },
+    {
+      'title': 'Forces and Dynamics',
+      'imagePath': 'images/dynamics.jpg',
+      'description': 'Newtons Laws, Introduction to forces, Free Body Diagrams',
+      'videoPage': Dynamics(),
     },
   ];
   @override
