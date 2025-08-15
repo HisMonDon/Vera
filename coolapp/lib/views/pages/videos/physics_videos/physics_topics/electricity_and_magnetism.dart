@@ -153,7 +153,7 @@ class _ElectricityAndMagnetismState extends State<ElectricityAndMagnetism> {
   Widget build(BuildContext context) {
     // add an immediate check in build method
     globals.topicTitle = 'Electricity and Magnetism';
-    globals.unitTitle = '';
+
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(

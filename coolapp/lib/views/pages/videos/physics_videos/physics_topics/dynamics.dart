@@ -153,7 +153,6 @@ class _DynamicsState extends State<Dynamics> {
   Widget build(BuildContext context) {
     // add an immediate check in build method
     globals.topicTitle = 'Forces and Dynamics'; //change this
-    globals.unitTitle = '';
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(

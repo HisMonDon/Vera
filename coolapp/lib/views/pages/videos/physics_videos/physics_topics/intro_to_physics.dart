@@ -123,7 +123,6 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
   Widget build(BuildContext context) {
     // add an immediate check in build method
     globals.topicTitle = 'Introduction to Physics';
-    globals.unitTitle = '';
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(

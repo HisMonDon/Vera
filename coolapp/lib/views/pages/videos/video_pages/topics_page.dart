@@ -108,7 +108,7 @@ class _TopicsPageState extends State<TopicsPage> {
       'title': 'Introduction to Physics',
       'imagePath': 'images/intro_to_physics.jpg',
       'description':
-          'Short Topic explaining the introduction to physics, including vectors, velocity, and displacement',
+          'Short topic explaining the introduction to physics, including vectors, velocity, and displacement',
       'videoPage': IntroToPhysics(),
     },
     {
