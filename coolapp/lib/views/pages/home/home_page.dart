@@ -35,6 +35,8 @@ class _HomePageState extends State<HomePage> {
       globals.videoOfTheDay[globals.videoOfTheDayIndex]['videoTitle'] ?? '';
   final Color thumbnailColor =
       globals.videoOfTheDay[globals.videoOfTheDayIndex]['thumbnailColor']!;
+  final String featuredUnit =
+      globals.videoOfTheDay[globals.videoOfTheDayIndex]['videoUnit'] ?? '';
   @override
   void initState() {
     super.initState();
@@ -519,6 +521,8 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 onPressed: () {
                                   globals.videoLink = videoUrl;
+                                  globals.unitTitle = featuredTitle;
+
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
