@@ -522,7 +522,7 @@ class _HomePageState extends State<HomePage> {
                                 onPressed: () {
                                   globals.videoLink = videoUrl;
                                   globals.unitTitle = featuredTitle;
-
+                                  globals.topicTitle = featuredUnit;
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
@@ -592,7 +592,9 @@ class _HomePageState extends State<HomePage> {
                                               MainAxisAlignment.center,
                                           children: [
                                             Text(
-                                              featuredTitle,
+                                              featuredUnit +
+                                                  ": " +
+                                                  featuredTitle,
                                               style: GoogleFonts.bebasNeue(
                                                 fontSize: 60,
                                                 color: const Color.fromARGB(
