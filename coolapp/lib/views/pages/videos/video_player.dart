@@ -227,6 +227,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
         ),
         const SizedBox(height: 16),
         Text('Failed to load video: $errorMessage'),
+        Text('\nPlease check your internet connection'),
         const SizedBox(height: 16),
         ElevatedButton(
           onPressed: () {

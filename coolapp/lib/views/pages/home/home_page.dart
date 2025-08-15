@@ -1,4 +1,5 @@
 import 'dart:typed_data';
+import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:widget_mask/widget_mask.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -516,7 +517,15 @@ class _HomePageState extends State<HomePage> {
                                   foregroundColor: Colors.transparent,
                                   shape: RoundedRectangleBorder(),
                                 ),
-                                onPressed: () {},
+                                onPressed: () {
+                                  globals.videoLink = videoUrl;
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => VideoPlayerScreen(),
+                                    ),
+                                  );
+                                },
                                 child: Stack(
                                   alignment: Alignment.topCenter,
                                   children: [
