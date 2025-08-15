@@ -514,6 +514,7 @@ class _HomePageState extends State<HomePage> {
                                   backgroundColor: Colors.transparent,
                                   shadowColor: Colors.transparent,
                                   foregroundColor: Colors.transparent,
+                                  shape: RoundedRectangleBorder(),
                                 ),
                                 onPressed: () {},
                                 child: Stack(
@@ -529,6 +530,7 @@ class _HomePageState extends State<HomePage> {
                                         borderRadius: BorderRadius.circular(15),
                                         color: thumbnailColor,
                                       ),
+
                                       child: SizedBox(
                                         height: 560,
                                         width:
@@ -600,6 +602,21 @@ class _HomePageState extends State<HomePage> {
                                               size: 70,
                                             ),
                                           ],
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned.fill(
+                                      child: Align(
+                                        alignment: Alignment.center,
+                                        child: Icon(
+                                          Icons.play_circle_fill_rounded,
+                                          size: 80,
+                                          color: Color.fromARGB(
+                                            255,
+                                            217,
+                                            225,
+                                            199,
+                                          ),
                                         ),
                                       ),
                                     ),
