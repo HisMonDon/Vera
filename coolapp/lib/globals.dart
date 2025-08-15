@@ -1,9 +1,9 @@
 library globals;
 
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
-import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
 import 'package:flutter/widgets.dart';
 
 bool isPremium = false;
@@ -31,14 +31,14 @@ List<String> explore = [
   'Electricity',
   'Magnetism',
   'Momentum',
-  'Courses',
+  'Forces and Dynamics',
 ];
 List<dynamic> redirectExplore = [
   Kinematics(),
   ElectricityAndMagnetism(), // change this later
   ElectricityAndMagnetism(),
   MomentumAndCollisions(),
-  CoursePage(),
+  Dynamics(),
 ];
 List<Map<String, dynamic>> videoOfTheDay = [
   {

@@ -30,17 +30,7 @@ class _TopicsPageState extends State<TopicsPage> {
     if (!globals.isLoggedIn) {
       return NotLoggedIn(); //keep in mind that this js does the message in every single button
     }
-
-    double _width;
-    double _height;
     bool isHovered = hoveredStates[index] ?? false;
-    if (isHovered) {
-      _width = 450;
-      _height = 550;
-    } else {
-      _height = 500;
-      _width = 500;
-    }
 
     return MouseRegion(
       onEnter: (_) {
@@ -101,7 +91,7 @@ class _TopicsPageState extends State<TopicsPage> {
   }
 
   double _width = 400;
-  double _height = 500;
+  double _height = 300;
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> courseList = [
     {
@@ -135,7 +125,8 @@ class _TopicsPageState extends State<TopicsPage> {
     {
       'title': 'Forces and Dynamics',
       'imagePath': 'images/dynamics.jpg',
-      'description': 'Newtons Laws, Introduction to forces, Free Body Diagrams',
+      'description':
+          "Newton's Laws, Introduction to forces, Free Body Diagrams",
       'videoPage': Dynamics(),
     },
   ];
@@ -179,7 +170,7 @@ class _TopicsPageState extends State<TopicsPage> {
                           crossAxisCount: crossAxisCount,
                           crossAxisSpacing: 20,
                           mainAxisSpacing: 20,
-                          childAspectRatio: 0.8,
+                          childAspectRatio: 0.94, //change to change size of box
                         ),
                         itemCount: courseList.length,
                         itemBuilder: (context, index) {

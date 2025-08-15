@@ -178,7 +178,8 @@ class _CoursePageState extends State<CoursePage> {
                           crossAxisCount: crossAxisCount,
                           crossAxisSpacing: 20,
                           mainAxisSpacing: 20,
-                          childAspectRatio: 0.8,
+                          childAspectRatio:
+                              0.94, //change to change size of button
                         ),
                         itemCount: courseList.length,
                         itemBuilder: (context, index) {
