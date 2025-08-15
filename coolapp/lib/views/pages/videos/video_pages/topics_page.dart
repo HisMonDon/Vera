@@ -205,7 +205,7 @@ class _TopicsPageState extends State<TopicsPage> {
                 width: 40,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                  color: const Color.fromARGB(255, 4, 97, 66),
+                  color: Color.fromARGB(255, 60, 90, 70),
                 ),
                 alignment: Alignment.center,
                 child: Row(
@@ -213,6 +213,19 @@ class _TopicsPageState extends State<TopicsPage> {
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(fixedSize: Size(100, 50)),
+                      onPressed: () {
+                        print("Backwards Pressed");
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(builder: (context) => CoursePage()),
+                        );
+                      },
+
+                      child: Icon(Icons.arrow_back, size: 30),
+                    ),
+                    SizedBox(width: 16),
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         fixedSize: Size(100, 50),
@@ -224,19 +237,6 @@ class _TopicsPageState extends State<TopicsPage> {
                         ),
                       ),
                       onPressed: null,
-
-                      child: Icon(Icons.arrow_back, size: 30),
-                    ),
-                    SizedBox(width: 16),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(fixedSize: Size(100, 50)),
-                      onPressed: () {
-                        print("Forward Pressed");
-                        Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(builder: (context) => CoursePage()),
-                        );
-                      },
                       child: Icon(Icons.arrow_forward, size: 30),
                     ),
                   ],

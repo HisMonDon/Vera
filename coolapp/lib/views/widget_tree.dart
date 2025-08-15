@@ -2,8 +2,8 @@ import 'package:coolapp/views/pages/about_this_app/about_this_app_page.dart';
 import 'package:coolapp/views/pages/help_page/help_page.dart';
 import 'package:coolapp/views/pages/home/home_page.dart';
 import 'package:coolapp/views/pages/profile_page/profile_page.dart';
+import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
 import 'package:flutter/material.dart';
-import 'package:coolapp/views/pages/videos/video_pages/topics_page.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/globals.dart' as globals;
@@ -61,7 +61,7 @@ class _WidgetTreeState extends State<WidgetTree> {
       AboutThisAppPage(),
       ProfilePage(),
       HomePage(),
-      TopicsPage(),
+      CoursePage(),
       HelpPage(),
     ];
     if (_currentTime.hour < 12) {
