@@ -48,26 +48,25 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       }
     }
     if (isDuped) {
-      for (int x = dupeIndex; x < 4; x++) {
-        globals.pastVideos[x] = globals.pastVideos[x + 1];
+      for (int x = dupeIndex; x > 0; x--) {
+        globals.pastVideos[x] = globals.pastVideos[x - 1];
       }
-      globals.pastVideos[4] = '';
+      globals.pastVideos[0] = globals.topicTitle + ", " + globals.unitTitle;
+      return;
     }
     for (int x = 0; x < 5; x++) {
       if (globals.pastVideos[x] == '') {
         //if we still have empty space
         globals.pastVideos[x] = globals.topicTitle + ', ' + globals.unitTitle;
         isFull = false;
-        break;
+        return;
       }
     }
-    if (isFull) {
-      for (int x = 4; x > 0; x--) {
-        //pushes last one out, and puts most recent one
-        globals.pastVideos[x] = globals.pastVideos[x - 1];
-      }
-      globals.pastVideos[0] = globals.unitTitle;
+    for (int x = 4; x > 0; x--) {
+      //pushes last one out, and puts most recent one
+      globals.pastVideos[x] = globals.pastVideos[x - 1];
     }
+    globals.pastVideos[0] = globals.topicTitle + ", " + globals.unitTitle;
   }
   //__________________________________________________________________
 
