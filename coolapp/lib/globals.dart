@@ -4,6 +4,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamic
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
+import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
 import 'package:flutter/widgets.dart';
 
 bool isPremium = false;
