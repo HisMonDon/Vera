@@ -92,6 +92,7 @@ class _CoursePageState extends State<CoursePage> {
                   color: const Color.fromARGB(255, 199, 252, 221),
                 ),
                 maxLines: 3,
+                maxFontSize: 20,
               ),
             ],
           ),
