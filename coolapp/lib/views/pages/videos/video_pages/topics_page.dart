@@ -10,6 +10,7 @@ import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
+import 'package:animations/animations.dart';
 
 class TopicsPage extends StatefulWidget {
   const TopicsPage({super.key});
@@ -220,7 +221,31 @@ class _TopicsPageState extends State<TopicsPage> {
                         print("Backwards Pressed");
                         Navigator.pushReplacement(
                           context,
-                          MaterialPageRoute(builder: (context) => CoursePage()),
+                          PageRouteBuilder(
+                            transitionDuration: const Duration(
+                              milliseconds: 200,
+                            ),
+                            pageBuilder:
+                                (context, animation, secondaryAnimation) =>
+                                    const CoursePage(),
+                            transitionsBuilder:
+                                (
+                                  context,
+                                  animation,
+                                  secondaryAnimation,
+                                  child,
+                                ) {
+                                  return SlideTransition(
+                                    position: animation.drive(
+                                      Tween(
+                                        begin: const Offset(-1, 0),
+                                        end: Offset.zero,
+                                      ),
+                                    ),
+                                    child: child,
+                                  );
+                                },
+                          ),
                         );
                       },
 

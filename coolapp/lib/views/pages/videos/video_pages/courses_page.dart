@@ -10,6 +10,7 @@ import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
+import 'package:animations/animations.dart';
 
 class CoursePage extends StatefulWidget {
   const CoursePage({super.key});
@@ -245,7 +246,31 @@ class _CoursePageState extends State<CoursePage> {
                         print("Forward Pressed");
                         Navigator.pushReplacement(
                           context,
-                          MaterialPageRoute(builder: (context) => TopicsPage()),
+                          PageRouteBuilder(
+                            transitionDuration: const Duration(
+                              milliseconds: 200,
+                            ),
+                            pageBuilder:
+                                (context, animation, secondaryAnimation) =>
+                                    const TopicsPage(),
+                            transitionsBuilder:
+                                (
+                                  context,
+                                  animation,
+                                  secondaryAnimation,
+                                  child,
+                                ) {
+                                  return SlideTransition(
+                                    position: animation.drive(
+                                      Tween(
+                                        begin: const Offset(1, 0),
+                                        end: Offset.zero,
+                                      ),
+                                    ),
+                                    child: child,
+                                  );
+                                },
+                          ),
                         );
                       },
                       child: Icon(Icons.arrow_forward, size: 30),
