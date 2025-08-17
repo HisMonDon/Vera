@@ -1,5 +1,7 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:media_kit/media_kit.dart';
 import 'package:media_kit_video/media_kit_video.dart';
 import 'package:coolapp/globals.dart' as globals;
@@ -36,10 +38,10 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   //__________________________________________________________________
   //update past videos logic - moved to separate method
   void _updatePastVideos() {
-    bool isFull = true;
     int dupeIndex = -1;
     bool isDuped = false;
     if (globals.unitTitle == '') {
+      print("Error?? Blank Unit Title");
       return; //error handeling
     }
     for (int x = 0; x < 5; x++) {
@@ -62,7 +64,6 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       if (globals.pastVideos[x] == '') {
         //if we still have empty space
         globals.pastVideos[x] = globals.topicTitle + ', ' + globals.unitTitle;
-        isFull = false;
         return;
       }
     }
@@ -176,7 +177,16 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 30),
+            SizedBox(height: 15),
+            AutoSizeText(
+              stackedTitle,
+              style: GoogleFonts.mPlus1(
+                fontSize: 15,
+                color: const Color.fromARGB(255, 255, 255, 255),
+                decoration: TextDecoration.none,
+              ),
+            ),
+            SizedBox(height: 20),
             Center(
               child: hasError
                   ? _buildErrorDisplay()
