@@ -177,7 +177,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 15),
+            SizedBox(height: 19),
             AutoSizeText(
               stackedTitle,
               style: GoogleFonts.montserrat(

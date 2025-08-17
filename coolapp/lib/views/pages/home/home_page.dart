@@ -122,6 +122,12 @@ class _HomePageState extends State<HomePage> {
         ),
         actions: [
           TextButton(
+            child: Text('CANCEL'),
+            onPressed: () async {
+              Navigator.of(dialogContext).pop();
+            },
+          ),
+          TextButton(
             child: Text('SUBMIT'),
             onPressed: () async {
               final newName = _nameController.text.trim();
@@ -183,7 +189,7 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Row(
-                      //crossAxisAlignment: CrossAxisAlignment.stretch,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(
                           child: WidgetMask(
@@ -208,9 +214,10 @@ class _HomePageState extends State<HomePage> {
                         Column(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
+                            SizedBox(height: 20),
                             ElevatedButton(
                               onPressed: openDialog,
-                              child: Icon(Icons.edit_rounded),
+                              child: Icon(Icons.settings),
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.transparent,
                                 shadowColor: Colors.transparent,
