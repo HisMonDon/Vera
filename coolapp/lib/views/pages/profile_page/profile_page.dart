@@ -86,6 +86,8 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                       obscureText: true,
                     ),
+                    //then have space
+                    SizedBox(height: 15),
                     TextFormField(
                       controller: _newPasswordController,
                       decoration: InputDecoration(
@@ -95,7 +97,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                       obscureText: true,
                     ),
-                    SizedBox(height: 16),
+                    SizedBox(height: 15),
                     TextFormField(
                       controller: _confirmPasswordController,
                       decoration: InputDecoration(
@@ -153,6 +155,30 @@ class _ProfilePageState extends State<ProfilePage> {
                           });
 
                           try {
+                            final email =
+                                await _authService.getCurrentUserEmail() ?? '';
+                            if (email.isEmpty) {
+                              setState(() {
+                                _errorMessage =
+                                    'User session error. Please log in again.';
+                                _isLoading = false;
+                              });
+                              return;
+                            }
+
+                            final isCurrentPasswordValid = await _authService
+                                .verifyCurrentPassword(
+                                  email,
+                                  _currentPasswordController.text,
+                                );
+
+                            if (!isCurrentPasswordValid) {
+                              setState(() {
+                                _errorMessage = 'Current password is incorrect';
+                                _isLoading = false;
+                              });
+                              return;
+                            }
                             final success = await _authService.changePassword(
                               _newPasswordController.text,
                             );
@@ -187,7 +213,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             });
                           }
                         },
-                        child: Text('SubmiRt'),
+                        child: Text('Submit'),
                       ),
               ],
             );

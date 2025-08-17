@@ -16,6 +16,7 @@ import 'dart:ui' as ui;
 //import 'dart:io';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
+// FOR TOMMORWO MAKE A COVER POPUP TO BLOCK EVERYTHIGN IF NOT LOGGED IN (MENTION FREE)
 class HomePage extends StatefulWidget {
   HomePage({super.key});
   @override

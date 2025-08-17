@@ -68,8 +68,26 @@ class AuthService {
     }
   }
 
+  Future<bool> verifyCurrentPassword(String email, String password) async {
+    try {
+      final response = await http.post(
+        Uri.parse('$_signInUrl?key=$apiKey'),
+        headers: {'Content-Type': 'application/json'},
+        body: json.encode({
+          'email': email,
+          'password': password,
+          'returnSecureToken': false,
+        }),
+      );
+
+      return response.statusCode == 200;
+    } catch (e) {
+      print("Password verification error: $e");
+      return false;
+    }
+  }
+
   Future<bool> changePassword(String newPassword) async {
-    final _currentPasswordController = TextEditingController();
     try {
       final idToken = globals.idToken;
       if (idToken.isEmpty) return false;
