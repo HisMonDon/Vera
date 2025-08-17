@@ -170,7 +170,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             });
                           }
                         },
-                        child: Text('Change Password'),
+                        child: Text('Submit'),
                       ),
               ],
             );
@@ -464,11 +464,23 @@ class _ProfilePageState extends State<ProfilePage> {
           style: TextStyle(fontSize: 16, color: Colors.grey[700]),
         ),
         const SizedBox(height: 30),
-        OutlinedButton.icon(
+        ElevatedButton.icon(
+          icon: const Icon(Icons.lock_reset),
+          label: const Text('Change Password'),
+          onPressed: _showChangePasswordDialog,
+          style: ElevatedButton.styleFrom(
+            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 12),
+
+            side: BorderSide(color: Theme.of(context).primaryColor),
+          ),
+        ),
+        const SizedBox(height: 16),
+
+        ElevatedButton.icon(
           icon: const Icon(Icons.exit_to_app),
           label: const Text('Logout'),
           onPressed: _signOut,
-          style: OutlinedButton.styleFrom(
+          style: ElevatedButton.styleFrom(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 12),
             side: BorderSide(color: Theme.of(context).primaryColor),
           ),

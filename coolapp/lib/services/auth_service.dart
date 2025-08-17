@@ -68,6 +68,38 @@ class AuthService {
     }
   }
 
+  Future<bool> changePassword(String newPassword) async {
+    try {
+      final idToken = globals.idToken;
+      if (idToken.isEmpty) return false;
+
+      final url =
+          'https://identitytoolkit.googleapis.com/v1/accounts:update?key=$apiKey';
+      final response = await http.post(
+        Uri.parse(url),
+        headers: {'Content-Type': 'application/json'},
+        body: json.encode({
+          'idToken': idToken,
+          'password': newPassword,
+          'returnSecureToken': true,
+        }),
+      );
+
+      if (response.statusCode == 200) {
+        final data = json.decode(response.body);
+        // Update the stored token with the new one
+        await _saveAuthData(data, await getCurrentUserEmail() ?? '');
+        return true;
+      } else {
+        final error = json.decode(response.body);
+        throw Exception(error['error']['message']);
+      }
+    } catch (e) {
+      print("Password change error: $e");
+      return false;
+    }
+  }
+
   Future<bool> registerWithEmail(
     String email,
     String password,

@@ -114,11 +114,14 @@ class _HomePageState extends State<HomePage> {
     builder: (dialogContext) {
       _nameController.text = _displayName; // show raw name without comma
       return AlertDialog(
-        title: Text('Please enter your name'),
-        content: TextField(
+        title: Text('Edit Name'),
+        content: TextFormField(
           controller: _nameController,
-          autofocus: true,
-          decoration: InputDecoration(hintText: 'enter your name'),
+          decoration: InputDecoration(
+            labelText: 'Enter new name',
+            border: OutlineInputBorder(),
+            prefixIcon: Icon(Icons.person),
+          ),
         ),
         actions: [
           TextButton(
