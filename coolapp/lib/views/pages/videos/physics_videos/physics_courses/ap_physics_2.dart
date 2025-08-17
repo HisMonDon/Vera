@@ -157,7 +157,6 @@ class _ApPhysics2State extends State<ApPhysics2> {
   Widget build(BuildContext context) {
     // add an immediate check in build method
     globals.courseTitle = 'AP Physics 2';
-    globals.topicTitle = '';
     return Scaffold(
       appBar: TimedAppBar(),
       body: SingleChildScrollView(

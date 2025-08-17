@@ -180,8 +180,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
             SizedBox(height: 15),
             AutoSizeText(
               stackedTitle,
-              style: GoogleFonts.mPlus1(
-                fontSize: 15,
+              style: GoogleFonts.montserrat(
+                fontSize: 20,
                 color: const Color.fromARGB(255, 255, 255, 255),
                 decoration: TextDecoration.none,
               ),

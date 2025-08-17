@@ -150,7 +150,6 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
   Widget build(BuildContext context) {
     // add an immediate check in build method
     globals.courseTitle = 'Grade 12 Physics';
-    globals.topicTitle = '';
     return Scaffold(
       appBar: TimedAppBar(),
       body: SingleChildScrollView(
