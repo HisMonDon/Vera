@@ -44,6 +44,145 @@ class _ProfilePageState extends State<ProfilePage> {
     super.dispose();
   }
 
+  Future<void> _showChangePasswordDialog() async {
+    final _newPasswordController = TextEditingController();
+    final _confirmPasswordController = TextEditingController();
+    String? _errorMessage;
+    bool _isLoading = false;
+
+    await showDialog(
+      context: context,
+      builder: (context) {
+        return StatefulBuilder(
+          builder: (context, setState) {
+            return AlertDialog(
+              title: Text('Change Password'),
+              content: SingleChildScrollView(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    if (_errorMessage != null) ...[
+                      Container(
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          color: Colors.red.shade50,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Text(
+                          _errorMessage!,
+                          style: TextStyle(color: Colors.red),
+                        ),
+                      ),
+                      SizedBox(height: 16),
+                    ],
+                    TextFormField(
+                      controller: _newPasswordController,
+                      decoration: InputDecoration(
+                        labelText: 'New Password',
+                        border: OutlineInputBorder(),
+                        prefixIcon: Icon(Icons.lock),
+                      ),
+                      obscureText: true,
+                    ),
+                    SizedBox(height: 16),
+                    TextFormField(
+                      controller: _confirmPasswordController,
+                      decoration: InputDecoration(
+                        labelText: 'Confirm New Password',
+                        border: OutlineInputBorder(),
+                        prefixIcon: Icon(Icons.lock_outline),
+                      ),
+                      obscureText: true,
+                    ),
+                  ],
+                ),
+              ),
+              actions: [
+                TextButton(
+                  onPressed: _isLoading ? null : () => Navigator.pop(context),
+                  child: Text('Cancel'),
+                ),
+                _isLoading
+                    ? CircularProgressIndicator()
+                    : TextButton(
+                        onPressed: () async {
+                          // Validate inputs
+                          if (_newPasswordController.text.isEmpty) {
+                            setState(() {
+                              _errorMessage = 'Please enter a new password';
+                            });
+                            return;
+                          }
+
+                          if (_newPasswordController.text.length < 6) {
+                            setState(() {
+                              _errorMessage =
+                                  'Password must be at least 6 characters';
+                            });
+                            return;
+                          }
+
+                          if (_newPasswordController.text !=
+                              _confirmPasswordController.text) {
+                            setState(() {
+                              _errorMessage = 'Passwords do not match';
+                            });
+                            return;
+                          }
+
+                          setState(() {
+                            _isLoading = true;
+                            _errorMessage = null;
+                          });
+
+                          try {
+                            final success = await _authService.changePassword(
+                              _newPasswordController.text,
+                            );
+
+                            if (success) {
+                              Navigator.pop(context);
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text(
+                                    'Password changed successfully',
+                                  ),
+                                  backgroundColor: const Color.fromARGB(
+                                    255,
+                                    34,
+                                    200,
+                                    134,
+                                  ),
+                                ),
+                              );
+                            } else {
+                              setState(() {
+                                _errorMessage =
+                                    'Failed to change password. Please try again.';
+                                _isLoading = false;
+                              });
+                            }
+                          } catch (e) {
+                            setState(() {
+                              _errorMessage =
+                                  'An error occurred. Please try again.';
+                              _isLoading = false;
+                            });
+                          }
+                        },
+                        child: Text('Change Password'),
+                      ),
+              ],
+            );
+          },
+        );
+      },
+    );
+
+    _newPasswordController.dispose();
+    _confirmPasswordController.dispose();
+  }
+
   Future<void> _checkLoginStatus() async {
     try {
       final loggedIn = await _authService.isLoggedIn();
