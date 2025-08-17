@@ -45,8 +45,10 @@ class _ProfilePageState extends State<ProfilePage> {
   }
 
   Future<void> _showChangePasswordDialog() async {
+    final _currentPasswordController = TextEditingController();
     final _newPasswordController = TextEditingController();
     final _confirmPasswordController = TextEditingController();
+
     String? _errorMessage;
     bool _isLoading = false;
 
@@ -75,6 +77,15 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                       SizedBox(height: 16),
                     ],
+                    TextFormField(
+                      controller: _currentPasswordController,
+                      decoration: InputDecoration(
+                        labelText: 'Current Password',
+                        border: OutlineInputBorder(),
+                        prefixIcon: Icon(Icons.lock_outline),
+                      ),
+                      obscureText: true,
+                    ),
                     TextFormField(
                       controller: _newPasswordController,
                       decoration: InputDecoration(
@@ -106,7 +117,13 @@ class _ProfilePageState extends State<ProfilePage> {
                     ? CircularProgressIndicator()
                     : TextButton(
                         onPressed: () async {
-                          // Validate inputs
+                          if (_currentPasswordController.text.isEmpty) {
+                            setState(() {
+                              _errorMessage =
+                                  'Please enter your current password';
+                            });
+                            return;
+                          }
                           if (_newPasswordController.text.isEmpty) {
                             setState(() {
                               _errorMessage = 'Please enter a new password';
@@ -170,7 +187,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             });
                           }
                         },
-                        child: Text('Submit'),
+                        child: Text('SubmiRt'),
                       ),
               ],
             );

@@ -69,6 +69,7 @@ class AuthService {
   }
 
   Future<bool> changePassword(String newPassword) async {
+    final _currentPasswordController = TextEditingController();
     try {
       final idToken = globals.idToken;
       if (idToken.isEmpty) return false;
