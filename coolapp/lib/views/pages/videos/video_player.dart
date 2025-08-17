@@ -39,6 +39,9 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     bool isFull = true;
     int dupeIndex = -1;
     bool isDuped = false;
+    if (globals.unitTitle == '') {
+      return; //error handeling
+    }
     for (int x = 0; x < 5; x++) {
       if (globals.pastVideos[x] ==
           globals.topicTitle + ', ' + globals.unitTitle) {
