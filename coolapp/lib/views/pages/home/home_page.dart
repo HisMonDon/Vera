@@ -275,94 +275,141 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ),
                             SizedBox(height: 10),
-                            SizedBox(
-                              height: 300,
-                              child: Stack(
-                                alignment: Alignment.centerLeft,
-                                children: [
+                            Stack(
+                              children: [
+                                SizedBox(
+                                  height: 300,
+                                  child: Stack(
+                                    alignment: Alignment.centerLeft,
+                                    children: [
+                                      Container(
+                                        width:
+                                            (MediaQuery.of(
+                                              context,
+                                            ).size.width) -
+                                            ((MediaQuery.of(
+                                                      context,
+                                                    ).size.width) /
+                                                    4 -
+                                                40) -
+                                            100, //replace brackets with whatever explore size is
+                                        height: 300,
+                                        decoration: BoxDecoration(
+                                          color: Color.fromARGB(
+                                            255,
+                                            15,
+                                            48,
+                                            40,
+                                          ),
+                                          borderRadius: BorderRadius.circular(
+                                            15,
+                                          ),
+                                        ),
+                                      ),
+                                      Positioned.fill(
+                                        child: Align(
+                                          alignment: Alignment.topCenter,
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceEvenly,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.center,
+                                            children: globals.pastVideos
+                                                .asMap()
+                                                .entries
+                                                .map((entry) {
+                                                  final index = entry.key;
+                                                  final video = entry.value;
+
+                                                  final backgroundColor =
+                                                      (index % 2 == 0)
+                                                      ? const Color.fromARGB(
+                                                          255,
+                                                          30,
+                                                          60,
+                                                          50,
+                                                        )
+                                                      : const Color.fromARGB(
+                                                          255,
+                                                          60,
+                                                          90,
+                                                          70,
+                                                        ); // color 2
+
+                                                  return Container(
+                                                    alignment: Alignment.center,
+                                                    decoration: BoxDecoration(
+                                                      color: backgroundColor,
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                            5,
+                                                          ),
+                                                    ),
+
+                                                    width:
+                                                        (MediaQuery.of(
+                                                          context,
+                                                        ).size.width) -
+                                                        ((MediaQuery.of(
+                                                                  context,
+                                                                ).size.width) /
+                                                                4 -
+                                                            40) -
+                                                        100, //replace brackets with whatever explore size is
+                                                    height: 50,
+                                                    child: AutoSizeText(
+                                                      video,
+                                                      style: GoogleFonts.montserrat(
+                                                        fontSize: 20,
+                                                        color:
+                                                            const Color.fromARGB(
+                                                              255,
+                                                              217,
+                                                              225,
+                                                              207,
+                                                            ),
+                                                      ),
+                                                      maxLines: 1,
+                                                    ),
+                                                  );
+                                                })
+                                                .toList(),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                if (!globals.isLoggedIn)
                                   Container(
                                     width:
                                         (MediaQuery.of(context).size.width) -
                                         ((MediaQuery.of(context).size.width) /
                                                 4 -
                                             40) -
-                                        100, //replace brackets with whatever explore size is
+                                        100, //replace brackets with whatever explore size is,
                                     height: 300,
+
                                     decoration: BoxDecoration(
-                                      color: Color.fromARGB(255, 15, 48, 40),
                                       borderRadius: BorderRadius.circular(15),
+                                      color: const Color.fromARGB(
+                                        176,
+                                        255,
+                                        255,
+                                        255,
+                                      ),
                                     ),
-                                  ),
-                                  Positioned.fill(
-                                    child: Align(
-                                      alignment: Alignment.topCenter,
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceEvenly,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.center,
-                                        children: globals.pastVideos
-                                            .asMap()
-                                            .entries
-                                            .map((entry) {
-                                              final index = entry.key;
-                                              final video = entry.value;
-
-                                              final backgroundColor =
-                                                  (index % 2 == 0)
-                                                  ? const Color.fromARGB(
-                                                      255,
-                                                      30,
-                                                      60,
-                                                      50,
-                                                    )
-                                                  : const Color.fromARGB(
-                                                      255,
-                                                      60,
-                                                      90,
-                                                      70,
-                                                    ); // color 2
-
-                                              return Container(
-                                                alignment: Alignment.center,
-                                                decoration: BoxDecoration(
-                                                  color: backgroundColor,
-                                                  borderRadius:
-                                                      BorderRadius.circular(5),
-                                                ),
-
-                                                width:
-                                                    (MediaQuery.of(
-                                                      context,
-                                                    ).size.width) -
-                                                    ((MediaQuery.of(
-                                                              context,
-                                                            ).size.width) /
-                                                            4 -
-                                                        40) -
-                                                    100, //replace brackets with whatever explore size is
-                                                height: 50,
-                                                child: AutoSizeText(
-                                                  video,
-                                                  style: GoogleFonts.montserrat(
-                                                    fontSize: 20,
-                                                    color: const Color.fromARGB(
-                                                      255,
-                                                      217,
-                                                      225,
-                                                      207,
-                                                    ),
-                                                  ),
-                                                  maxLines: 1,
-                                                ),
-                                              );
-                                            })
-                                            .toList(),
+                                    child: Center(
+                                      child: Text(
+                                        'Please log in!',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 18,
+                                        ),
                                       ),
                                     ),
                                   ),
-                                ],
-                              ),
+                              ],
                             ),
                           ],
                         ),
