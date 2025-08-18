@@ -1,4 +1,5 @@
 import 'dart:typed_data';
+import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
@@ -445,13 +446,23 @@ class _HomePageState extends State<HomePage> {
                                             height: 50,
                                             child: ElevatedButton(
                                               onPressed: () {
-                                                Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                    builder: (context) => globals
-                                                        .redirectExplore[index],
-                                                  ),
-                                                );
+                                                if (!globals.isLoggedIn) {
+                                                  Navigator.push(
+                                                    context,
+                                                    MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          NotLoggedIn(),
+                                                    ),
+                                                  );
+                                                } else {
+                                                  Navigator.push(
+                                                    context,
+                                                    MaterialPageRoute(
+                                                      builder: (context) => globals
+                                                          .redirectExplore[index],
+                                                    ),
+                                                  );
+                                                }
                                               },
                                               style: ElevatedButton.styleFrom(
                                                 backgroundColor:
