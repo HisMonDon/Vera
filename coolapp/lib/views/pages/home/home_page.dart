@@ -603,57 +603,68 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                     ),
                                   if (!globals.isLoggedIn)
-                                    Container(
-                                      width:
-                                          (MediaQuery.of(context).size.width) /
-                                              4 -
-                                          40,
-                                      height: 300,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(15),
-                                        color: const Color.fromARGB(
-                                          200,
-                                          60,
-                                          90,
-                                          70,
-                                        ),
-                                      ),
-                                      child: Center(
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Icon(
-                                              Icons.lock,
-                                              size:
-                                                  60, // Smaller size due to narrower container
-                                              color: const Color.fromARGB(
-                                                255,
-                                                217,
-                                                225,
-                                                207,
-                                              ),
+                                    MouseRegion(
+                                      cursor: SystemMouseCursors.click,
+                                      child: GestureDetector(
+                                        onTap: () {},
+                                        child: Container(
+                                          width:
+                                              (MediaQuery.of(
+                                                    context,
+                                                  ).size.width) /
+                                                  4 -
+                                              40,
+                                          height: 300,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(
+                                              15,
                                             ),
-                                            Padding(
-                                              padding: EdgeInsets.symmetric(
-                                                horizontal: 8.0,
-                                              ),
-                                              child: AutoSizeText(
-                                                'CLICK HERE TO LOG IN OR REGISTER',
-                                                style: TextStyle(
+                                            color: const Color.fromARGB(
+                                              200,
+                                              60,
+                                              90,
+                                              70,
+                                            ),
+                                          ),
+                                          child: Center(
+                                            child: Column(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              children: [
+                                                Icon(
+                                                  Icons.lock,
+                                                  size:
+                                                      60, // Smaller size due to narrower container
                                                   color: const Color.fromARGB(
                                                     255,
                                                     217,
                                                     225,
                                                     207,
                                                   ),
-                                                  fontSize: 16,
                                                 ),
-                                                maxLines: 2,
-                                                textAlign: TextAlign.center,
-                                              ),
+                                                Padding(
+                                                  padding: EdgeInsets.symmetric(
+                                                    horizontal: 8.0,
+                                                  ),
+                                                  child: AutoSizeText(
+                                                    'CLICK HERE TO LOG IN OR REGISTER',
+                                                    style: TextStyle(
+                                                      color:
+                                                          const Color.fromARGB(
+                                                            255,
+                                                            217,
+                                                            225,
+                                                            207,
+                                                          ),
+                                                      fontSize: 16,
+                                                    ),
+                                                    maxLines: 2,
+                                                    textAlign: TextAlign.center,
+                                                  ),
+                                                ),
+                                              ],
                                             ),
-                                          ],
+                                          ),
                                         ),
                                       ),
                                     ),
