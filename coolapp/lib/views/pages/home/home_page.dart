@@ -417,19 +417,41 @@ class _HomePageState extends State<HomePage> {
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(15),
                                       color: const Color.fromARGB(
-                                        176,
-                                        255,
-                                        255,
-                                        255,
+                                        200,
+                                        60,
+                                        90,
+                                        70,
                                       ),
                                     ),
                                     child: Center(
-                                      child: Text(
-                                        'Please log in!',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 18,
-                                        ),
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Icon(
+                                            Icons.lock,
+                                            size: 80,
+                                            color: const Color.fromARGB(
+                                              255,
+                                              217,
+                                              225,
+                                              207,
+                                            ),
+                                          ),
+                                          AutoSizeText(
+                                            'Please log in or create a FREE account to access UNLIMITED free videos!',
+                                            style: TextStyle(
+                                              color: const Color.fromARGB(
+                                                255,
+                                                217,
+                                                225,
+                                                207,
+                                              ),
+                                              fontSize: 18,
+                                            ),
+                                            maxLines: 2,
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ),
