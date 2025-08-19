@@ -707,6 +707,7 @@ class _HomePageState extends State<HomePage> {
                               borderRadius: BorderRadius.circular(15),
                             ),
                           ),
+
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -841,9 +842,65 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ],
                           ),
+                          if (!globals.isLoggedIn)
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(15),
+                              child: BackdropFilter(
+                                filter: ui.ImageFilter.blur(
+                                  sigmaX: 5.0,
+                                  sigmaY: 5.0,
+                                ),
+                                child: Container(
+                                  width:
+                                      (MediaQuery.of(context).size.width) - 80,
+                                  height: 600,
+                                  color: Colors.black.withAlpha(50),
+                                ),
+                              ),
+                            ),
+                          if (!globals.isLoggedIn)
+                            Container(
+                              width: (MediaQuery.of(context).size.width) - 80,
+                              height: 600,
+
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(15),
+                                color: const Color.fromARGB(200, 60, 90, 70),
+                              ),
+                              child: Center(
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Icon(
+                                      Icons.lock,
+                                      size: 80,
+                                      color: const Color.fromARGB(
+                                        255,
+                                        217,
+                                        225,
+                                        207,
+                                      ),
+                                    ),
+                                    AutoSizeText(
+                                      'Please log in or create a FREE account to access UNLIMITED free videos!',
+                                      style: TextStyle(
+                                        color: const Color.fromARGB(
+                                          255,
+                                          217,
+                                          225,
+                                          207,
+                                        ),
+                                        fontSize: 18,
+                                      ),
+                                      maxLines: 2,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
                         ],
                       ),
-                    ),
+                    ), //end of featured vid
                   ],
                 ),
               ],

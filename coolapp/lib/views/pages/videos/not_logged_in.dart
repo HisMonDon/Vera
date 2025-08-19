@@ -54,6 +54,7 @@ class NotLoggedIn extends StatelessWidget {
 
                 // Navigate to widget tree with profile tab selected
                 Navigator.of(
+                  //basaiclly clears the stack very useful especially for home page
                   context,
                   rootNavigator: true,
                 ).pushNamedAndRemoveUntil(
