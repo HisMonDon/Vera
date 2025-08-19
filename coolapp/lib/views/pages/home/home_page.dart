@@ -1,4 +1,5 @@
 import 'dart:typed_data';
+import 'package:coolapp/views/pages/profile_page/profile_page.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
@@ -606,7 +607,15 @@ class _HomePageState extends State<HomePage> {
                                     MouseRegion(
                                       cursor: SystemMouseCursors.click,
                                       child: GestureDetector(
-                                        onTap: () {},
+                                        onTap: () {
+                                          Navigator.pushReplacement(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  ProfilePage(),
+                                            ),
+                                          );
+                                        },
                                         child: Container(
                                           width:
                                               (MediaQuery.of(
