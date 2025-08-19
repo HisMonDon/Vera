@@ -608,7 +608,7 @@ class _HomePageState extends State<HomePage> {
                                       cursor: SystemMouseCursors.click,
                                       child: GestureDetector(
                                         onTap: () {
-                                          Navigator.pushReplacement(
+                                          Navigator.push(
                                             context,
                                             MaterialPageRoute(
                                               builder: (context) =>
