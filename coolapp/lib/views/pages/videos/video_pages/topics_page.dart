@@ -81,7 +81,7 @@ class _TopicsPageState extends State<TopicsPage> {
       ),
       onPressed: () {
         if (isEnabled) {
-          print("Forward Pressed");
+          print("Backwards Pressed");
           Navigator.pushReplacement(
             context,
             PageRouteBuilder(
@@ -92,7 +92,7 @@ class _TopicsPageState extends State<TopicsPage> {
                   (context, animation, secondaryAnimation, child) {
                     return SlideTransition(
                       position: animation.drive(
-                        Tween(begin: const Offset(1, 0), end: Offset.zero),
+                        Tween(begin: const Offset(-1, 0), end: Offset.zero),
                       ),
                       child: child,
                     );
