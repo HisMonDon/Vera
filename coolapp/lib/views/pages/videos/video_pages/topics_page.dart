@@ -347,76 +347,7 @@ class _TopicsPageState extends State<TopicsPage> {
             left:
                 MediaQuery.of(context).size.width / 2 -
                 125, //change this when dealing with button
-            child: SizedBox(
-              width: 250,
-              height: 80,
-              child: Container(
-                height: 80,
-                width: 40,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                  color: Color.fromARGB(255, 60, 90, 70),
-                ),
-                alignment: Alignment.center,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(fixedSize: Size(100, 50)),
-                      onPressed: () {
-                        print("Backwards Pressed");
-                        Navigator.pushReplacement(
-                          context,
-                          PageRouteBuilder(
-                            transitionDuration: const Duration(
-                              milliseconds: 200,
-                            ),
-                            pageBuilder:
-                                (context, animation, secondaryAnimation) =>
-                                    const CoursePage(),
-                            transitionsBuilder:
-                                (
-                                  context,
-                                  animation,
-                                  secondaryAnimation,
-                                  child,
-                                ) {
-                                  return SlideTransition(
-                                    position: animation.drive(
-                                      Tween(
-                                        begin: const Offset(-1, 0),
-                                        end: Offset.zero,
-                                      ),
-                                    ),
-                                    child: child,
-                                  );
-                                },
-                          ),
-                        );
-                      },
-
-                      child: Icon(Icons.arrow_back, size: 30),
-                    ),
-                    SizedBox(width: 16),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        fixedSize: Size(100, 50),
-                        disabledBackgroundColor: const Color.fromARGB(
-                          255,
-                          10,
-                          73,
-                          59,
-                        ),
-                      ),
-                      onPressed: null,
-                      child: Icon(Icons.arrow_forward, size: 30),
-                    ),
-                  ],
-                ),
-              ),
-            ),
+            child: _combineButtons(),
           ),
         ],
       ),
