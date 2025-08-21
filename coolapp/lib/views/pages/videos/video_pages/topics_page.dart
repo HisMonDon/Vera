@@ -40,17 +40,17 @@ class _TopicsPageState extends State<TopicsPage> {
         children: [
           _buildButtons(
             icon: Icons.arrow_back_rounded,
-            label: "Previous",
-            isEnabled: false,
+            label: "Courses",
+            isEnabled: true,
           ),
           SizedBox(width: 16),
           Container(height: 30, width: 1, color: Colors.white),
           SizedBox(width: 16),
           _buildButtons(
             icon: Icons.arrow_forward_rounded,
-            label: "Topics",
+            label: "Next",
 
-            isEnabled: true,
+            isEnabled: false,
           ),
         ],
       ),
@@ -87,7 +87,7 @@ class _TopicsPageState extends State<TopicsPage> {
             PageRouteBuilder(
               transitionDuration: const Duration(milliseconds: 200),
               pageBuilder: (context, animation, secondaryAnimation) =>
-                  const TopicsPage(),
+                  const CoursePage(),
               transitionsBuilder:
                   (context, animation, secondaryAnimation, child) {
                     return SlideTransition(
