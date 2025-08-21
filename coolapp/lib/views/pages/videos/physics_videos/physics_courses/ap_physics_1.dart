@@ -23,16 +23,8 @@ class _ApPhysics1State extends State<ApPhysics1> {
     Widget videoPage,
     String videoLink,
   ) {
-    double _width;
-    double _height;
+    bool isCompleted = false; //later will implement completion tracking
     bool isHovered = hoveredStates[index] ?? false;
-    if (isHovered) {
-      _width = 400;
-      _height = 200;
-    } else {
-      _height = 210;
-      _width = 400;
-    }
 
     return MouseRegion(
       onEnter: (_) {
@@ -45,54 +37,62 @@ class _ApPhysics1State extends State<ApPhysics1> {
           hoveredStates[index] = false;
         });
       },
-      child: AnimatedScale(
+      child: AnimatedContainer(
         duration: Duration(milliseconds: 200),
-        scale: isHovered ? 1.05 : 1.0,
-        child: SizedBox(
-          width: double.infinity,
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 10, 73, 59),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
-              ),
+        margin: EdgeInsets.only(bottom: 16),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12),
+          boxShadow: [
+            BoxShadow(
+              color: isHovered
+                  ? Color.fromARGB(255, 9, 71, 55).withOpacity(0.25)
+                  : Colors.black.withOpacity(0.1),
+              blurRadius: isHovered ? 8 : 4,
+              offset: isHovered ? Offset(0, 4) : Offset(0, 2),
             ),
-            onPressed: () {
+          ],
+        ),
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            borderRadius: BorderRadius.circular(12),
+            onTap: () {
               if (index == videosList.length - 1) {
-                globals.nextVideoTitle =
-                    'last_one'; //check if the thing is named 'last_one'
+                globals.nextVideoTitle = 'last_one';
               } else {
                 globals.nextVideoTitle = videosList[index + 1]['title'];
               }
               globals.videoLink = videoLink;
-              print("Pushing nav page ontop of stack...");
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (_) => videoPage),
               );
             },
-            child: Column(
-              children: [
-                const SizedBox(width: 1, height: 30),
-                Text(
-                  title,
-                  maxLines: 1,
-                  style: GoogleFonts.montserrat(
-                    fontSize: 30,
-                    color: const Color.fromARGB(255, 255, 255, 255),
-                  ),
+            child: Container(
+              width: double.infinity,
+              padding: EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: isHovered
+                      ? [
+                          Color.fromARGB(255, 10, 97, 80),
+                          Color.fromARGB(255, 7, 61, 51),
+                        ]
+                      : [
+                          Color.fromARGB(255, 8, 77, 63),
+                          Color.fromARGB(255, 5, 46, 39),
+                        ],
                 ),
-                const SizedBox(width: 1, height: 15),
-                AutoSizeText(
-                  description,
-                  style: GoogleFonts.roboto(
-                    fontSize: 20,
-                    color: const Color.fromARGB(255, 199, 252, 221),
-                  ),
-                  maxLines: 1,
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(
+                  color: isHovered
+                      ? Color.fromARGB(255, 34, 197, 94).withOpacity(0.6)
+                      : const Color.fromARGB(0, 121, 27, 27), //transparent
+                  width: 1.5,
                 ),
-                const SizedBox(width: 1, height: 15),
-              ],
+              ),
             ),
           ),
         ),
