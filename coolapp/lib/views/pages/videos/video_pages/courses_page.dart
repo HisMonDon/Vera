@@ -21,20 +21,59 @@ class CoursePage extends StatefulWidget {
 
 class _CoursePageState extends State<CoursePage> {
   bool _checkedAuth = false;
-  Widget _combineButtons() {}
-  Widget _buildButtons(
-    IconData icon, // "left" or "right"
-    String label,
-    bool isEnabled,
-  ) {
+  Widget _combineButtons() {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(14),
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 12,
+            offset: Offset(0, 5),
+          ),
+        ],
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          _buildButtons(
+            icon: Icons.arrow_back_rounded,
+            label: "Previous",
+            isEnabled: false,
+          ),
+          SizedBox(width: 16),
+          Container(height: 30, width: 1, color: Color(0xFFE2E8F0)),
+          SizedBox(width: 16),
+          _buildButtons(
+            icon: Icons.arrow_forward_rounded,
+            label: "Topics",
+
+            isEnabled: true,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildButtons({
+    required IconData icon, // "left" or "right"
+    required String label,
+    required bool isEnabled,
+  }) {
     return ElevatedButton.icon(
       icon: Icon(icon, size: 20),
       label: Text(label),
       style: ElevatedButton.styleFrom(
-        backgroundColor: isEnabled ? Color(0xFF0F766E) : Colors.grey.shade200,
-        foregroundColor: isEnabled ? Colors.white : Colors.grey.shade500,
-        disabledBackgroundColor: Colors.grey.shade200,
-        disabledForegroundColor: Colors.grey.shade500,
+        backgroundColor: isEnabled
+            ? Color.fromARGB(255, 15, 118, 110)
+            : const Color.fromARGB(255, 238, 238, 238),
+        foregroundColor: isEnabled
+            ? Colors.white
+            : const Color.fromARGB(255, 158, 158, 158),
+        disabledBackgroundColor: const Color.fromARGB(255, 238, 238, 238),
+        disabledForegroundColor: const Color.fromARGB(255, 158, 158, 158),
         padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         textStyle: TextStyle(fontWeight: FontWeight.w600),
         elevation: isEnabled ? 0 : 0,
