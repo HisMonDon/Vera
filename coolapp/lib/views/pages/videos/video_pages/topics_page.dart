@@ -211,7 +211,7 @@ class _TopicsPageState extends State<TopicsPage> {
                     alignment: Alignment.centerRight,
                     child: ElevatedButton.icon(
                       icon: Icon(Icons.play_circle_outline, size: 18),
-                      label: Text("Start Course"),
+                      label: Text("Explore Units"),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Color.fromARGB(255, 167, 198, 131),
                         foregroundColor: Color.fromARGB(255, 15, 48, 40),
