@@ -26,7 +26,7 @@ class _CoursePageState extends State<CoursePage> {
       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(14),
-        color: Colors.white,
+        color: const Color.fromARGB(255, 167, 198, 131),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.1),
@@ -44,7 +44,7 @@ class _CoursePageState extends State<CoursePage> {
             isEnabled: false,
           ),
           SizedBox(width: 16),
-          Container(height: 30, width: 1, color: Color(0xFFE2E8F0)),
+          Container(height: 30, width: 1, color: Colors.white),
           SizedBox(width: 16),
           _buildButtons(
             icon: Icons.arrow_forward_rounded,
@@ -164,7 +164,7 @@ class _CoursePageState extends State<CoursePage> {
                     style: GoogleFonts.montserrat(
                       fontSize: 26,
                       fontWeight: FontWeight.w700,
-                      color: Colors.white,
+                      color: const Color.fromARGB(255, 255, 255, 255),
                       letterSpacing: 0.3,
                     ),
                     maxLines: 1,
@@ -347,76 +347,7 @@ class _CoursePageState extends State<CoursePage> {
             left:
                 MediaQuery.of(context).size.width / 2 -
                 125, //change this when dealing with button
-            child: SizedBox(
-              width: 250,
-              height: 80,
-              child: Container(
-                height: 80,
-                width: 40,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                  color: const Color.fromARGB(255, 60, 90, 70),
-                ),
-                alignment: Alignment.center,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        fixedSize: Size(100, 50),
-                        disabledBackgroundColor: const Color.fromARGB(
-                          255,
-                          10,
-                          73,
-                          59,
-                        ),
-                      ),
-                      onPressed: null,
-
-                      child: Icon(Icons.arrow_back, size: 30),
-                    ),
-                    SizedBox(width: 16),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(fixedSize: Size(100, 50)),
-                      onPressed: () {
-                        print("Forward Pressed");
-                        Navigator.pushReplacement(
-                          context,
-                          PageRouteBuilder(
-                            transitionDuration: const Duration(
-                              milliseconds: 200,
-                            ),
-                            pageBuilder:
-                                (context, animation, secondaryAnimation) =>
-                                    const TopicsPage(),
-                            transitionsBuilder:
-                                (
-                                  context,
-                                  animation,
-                                  secondaryAnimation,
-                                  child,
-                                ) {
-                                  return SlideTransition(
-                                    position: animation.drive(
-                                      Tween(
-                                        begin: const Offset(1, 0),
-                                        end: Offset.zero,
-                                      ),
-                                    ),
-                                    child: child,
-                                  );
-                                },
-                          ),
-                        );
-                      },
-                      child: Icon(Icons.arrow_forward, size: 30),
-                    ),
-                  ],
-                ),
-              ),
-            ),
+            child: _combineButtons(),
           ),
         ],
       ),
