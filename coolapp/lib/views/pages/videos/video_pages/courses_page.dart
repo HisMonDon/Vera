@@ -213,8 +213,8 @@ class _CoursePageState extends State<CoursePage> {
                       icon: Icon(Icons.play_circle_outline, size: 18),
                       label: Text("Start Course"),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Color(0xFF22C55E),
-                        foregroundColor: Colors.white,
+                        backgroundColor: Color.fromARGB(255, 167, 198, 131),
+                        foregroundColor: Color.fromARGB(255, 15, 48, 40),
                         padding: EdgeInsets.symmetric(
                           horizontal: 16,
                           vertical: 8,
