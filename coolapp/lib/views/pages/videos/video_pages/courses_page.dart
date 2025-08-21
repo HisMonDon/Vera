@@ -21,6 +21,49 @@ class CoursePage extends StatefulWidget {
 
 class _CoursePageState extends State<CoursePage> {
   bool _checkedAuth = false;
+  Widget _combineButtons() {}
+  Widget _buildButtons(
+    IconData icon, // "left" or "right"
+    String label,
+    bool isEnabled,
+  ) {
+    return ElevatedButton.icon(
+      icon: Icon(icon, size: 20),
+      label: Text(label),
+      style: ElevatedButton.styleFrom(
+        backgroundColor: isEnabled ? Color(0xFF0F766E) : Colors.grey.shade200,
+        foregroundColor: isEnabled ? Colors.white : Colors.grey.shade500,
+        disabledBackgroundColor: Colors.grey.shade200,
+        disabledForegroundColor: Colors.grey.shade500,
+        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        textStyle: TextStyle(fontWeight: FontWeight.w600),
+        elevation: isEnabled ? 0 : 0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      ),
+      onPressed: () {
+        if (isEnabled) {
+          print("Forward Pressed");
+          Navigator.pushReplacement(
+            context,
+            PageRouteBuilder(
+              transitionDuration: const Duration(milliseconds: 200),
+              pageBuilder: (context, animation, secondaryAnimation) =>
+                  const TopicsPage(),
+              transitionsBuilder:
+                  (context, animation, secondaryAnimation, child) {
+                    return SlideTransition(
+                      position: animation.drive(
+                        Tween(begin: const Offset(1, 0), end: Offset.zero),
+                      ),
+                      child: child,
+                    );
+                  },
+            ),
+          );
+        }
+      },
+    );
+  }
 
   Widget _buildVideoButton(
     String title,
