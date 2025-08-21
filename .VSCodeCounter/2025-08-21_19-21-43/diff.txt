@@ -1,0 +1,61 @@
+Date : 2025-08-21 19:21:43
+Directory : c:\Vera\coolapp\lib
+Total : 22 files,  1157 codes, 6 comments, 44 blanks, all 1207 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Dart     |         22 |      1,157 |          6 |         44 |      1,207 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                   |         22 |      1,157 |          6 |         44 |      1,207 |
+| . (Files)                                                                                           |          1 |         12 |          0 |          0 |         12 |
+| services                                                                                            |          1 |         45 |          1 |          5 |         51 |
+| views                                                                                               |         19 |      1,052 |          5 |         31 |      1,088 |
+| views (Files)                                                                                       |          1 |        -16 |          0 |          0 |        -16 |
+| views\pages                                                                                         |         18 |      1,068 |          5 |         31 |      1,104 |
+| views\pages\help_page                                                                               |          1 |          0 |          1 |          0 |          1 |
+| views\pages\home                                                                                    |          1 |        439 |          1 |          6 |        446 |
+| views\pages\profile_page                                                                            |          1 |        178 |          1 |         13 |        192 |
+| views\pages\videos                                                                                  |         15 |        451 |          2 |         12 |        465 |
+| views\pages\videos (Files)                                                                          |          3 |         19 |          1 |          0 |         20 |
+| views\pages\videos\physics_videos                                                                   |         10 |        225 |          1 |         10 |        236 |
+| views\pages\videos\physics_videos\physics_courses                                                   |          5 |          6 |          0 |          0 |          6 |
+| views\pages\videos\physics_videos\physics_topics                                                    |          5 |        219 |          1 |         10 |        230 |
+| views\pages\videos\video_pages                                                                      |          2 |        207 |          0 |          2 |        209 |
+| widgets                                                                                             |          1 |         48 |          0 |          8 |         56 |
++-----------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                            | language | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| c:\Vera\coolapp\lib\globals.dart                                                                    | Dart     |         12 |          0 |          0 |         12 |
+| c:\Vera\coolapp\lib\services\auth_service.dart                                                      | Dart     |         45 |          1 |          5 |         51 |
+| c:\Vera\coolapp\lib\views\pages\help_page\help_page.dart                                            | Dart     |          0 |          1 |          0 |          1 |
+| c:\Vera\coolapp\lib\views\pages\home\home_page.dart                                                 | Dart     |        439 |          1 |          6 |        446 |
+| c:\Vera\coolapp\lib\views\pages\profile_page\profile_page.dart                                      | Dart     |        178 |          1 |         13 |        192 |
+| c:\Vera\coolapp\lib\views\pages\videos\locked_page.dart                                             | Dart     |          2 |          0 |          0 |          2 |
+| c:\Vera\coolapp\lib\views\pages\videos\not_logged_in.dart                                           | Dart     |          2 |          1 |          0 |          3 |
+| c:\Vera\coolapp\lib\views\pages\videos\physics_videos\physics_courses\ap_physics_1.dart             | Dart     |          1 |          0 |          0 |          1 |
+| c:\Vera\coolapp\lib\views\pages\videos\physics_videos\physics_courses\ap_physics_2.dart             | Dart     |          1 |          0 |          0 |          1 |
+| c:\Vera\coolapp\lib\views\pages\videos\physics_videos\physics_courses\grade_11_physics.dart         | Dart     |          1 |          0 |          0 |          1 |
+| c:\Vera\coolapp\lib\views\pages\videos\physics_videos\physics_courses\grade_12_physics.dart         | Dart     |          1 |          0 |          0 |          1 |
+| c:\Vera\coolapp\lib\views\pages\videos\physics_videos\physics_courses\ib_physics_hl.dart            | Dart     |          2 |          0 |          0 |          2 |
+| c:\Vera\coolapp\lib\views\pages\videos\physics_videos\physics_topics\dynamics.dart                  | Dart     |        213 |          1 |          9 |        223 |
+| c:\Vera\coolapp\lib\views\pages\videos\physics_videos\physics_topics\electricity_and_magnetism.dart | Dart     |          1 |          0 |          1 |          2 |
+| c:\Vera\coolapp\lib\views\pages\videos\physics_videos\physics_topics\intro_to_physics.dart          | Dart     |          1 |          0 |          0 |          1 |
+| c:\Vera\coolapp\lib\views\pages\videos\physics_videos\physics_topics\kinematics.dart                | Dart     |          2 |          0 |          0 |          2 |
+| c:\Vera\coolapp\lib\views\pages\videos\physics_videos\physics_topics\momentum_and_collisions.dart   | Dart     |          2 |          0 |          0 |          2 |
+| c:\Vera\coolapp\lib\views\pages\videos\video_pages\courses_page.dart                                | Dart     |         99 |          0 |          1 |        100 |
+| c:\Vera\coolapp\lib\views\pages\videos\video_pages\topics_page.dart                                 | Dart     |        108 |          0 |          1 |        109 |
+| c:\Vera\coolapp\lib\views\pages\videos\video_player.dart                                            | Dart     |         15 |          0 |          0 |         15 |
+| c:\Vera\coolapp\lib\views\widget_tree.dart                                                          | Dart     |        -16 |          0 |          0 |        -16 |
+| c:\Vera\coolapp\lib\widgets\timed_app_bar.dart                                                      | Dart     |         48 |          0 |          8 |         56 |
+| Total                                                                                               |          |      1,157 |          6 |         44 |      1,207 |
++-----------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

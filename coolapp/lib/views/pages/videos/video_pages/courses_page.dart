@@ -314,7 +314,7 @@ class _CoursePageState extends State<CoursePage> {
                   child: Padding(
                     padding: EdgeInsets.only(left: 16, top: 16, bottom: 20),
                     child: Text(
-                      'Physics Topics and Subfields',
+                      'Full Physics Courses',
                       style: GoogleFonts.mPlus1(fontSize: 40),
                     ),
                   ),
