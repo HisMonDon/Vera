@@ -312,12 +312,16 @@ class _TopicsPageState extends State<TopicsPage> {
             Padding(
               padding: EdgeInsets.all(20),
 
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Physics Topics and Subfields',
-                    style: GoogleFonts.mPlus1(fontSize: 40),
+              child: CustomScrollView(
+                slivers: [
+                  SliverToBoxAdapter(
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 16, top: 16, bottom: 20),
+                      child: Text(
+                        'Physics Topics and Subfields',
+                        style: GoogleFonts.mPlus1(fontSize: 40),
+                      ),
+                    ),
                   ),
                   SizedBox(height: 20),
                   Flexible(
