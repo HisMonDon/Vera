@@ -239,6 +239,7 @@ class _CoursePageState extends State<CoursePage> {
 
                           crossAxisSpacing: 20,
                           mainAxisSpacing: 20,
+                          childAspectRatio: 0.94, //change to change size of box
                         ),
                         itemCount: courseList.length,
                         itemBuilder: (context, index) {
