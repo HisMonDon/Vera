@@ -26,7 +26,7 @@ class _CoursePageState extends State<CoursePage> {
       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(14),
-        color: const Color.fromARGB(255, 167, 198, 131),
+        color: const Color.fromARGB(255, 15, 48, 40),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.1),
