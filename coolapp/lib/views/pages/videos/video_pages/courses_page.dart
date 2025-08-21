@@ -45,57 +45,124 @@ class _CoursePageState extends State<CoursePage> {
     }
 
     return MouseRegion(
-      onEnter: (_) {
-        setState(() {
-          hoveredStates[index] = true;
-        });
-      },
-      onExit: (_) {
-        setState(() {
-          hoveredStates[index] = false;
-        });
-      },
-      child: AnimatedScale(
+      onEnter: (_) => setState(() => hoveredStates[index] = true),
+      onExit: (_) => setState(() => hoveredStates[index] = false),
+      child: AnimatedContainer(
         duration: Duration(milliseconds: 200),
-        scale: isHovered ? 1.05 : 1.0,
-        child: ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            backgroundColor: const Color.fromARGB(255, 10, 73, 59),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(5),
+          boxShadow: [
+            BoxShadow(
+              color: isHovered
+                  ? Color(0xFF0A4D3B).withOpacity(0.3)
+                  : Colors.black.withOpacity(0.15),
+              blurRadius: isHovered ? 12 : 8,
+              offset: isHovered ? Offset(0, 6) : Offset(0, 4),
+              spreadRadius: isHovered ? 1 : 0,
             ),
-          ),
-          onPressed: () {
-            print("Pushing nav page ontop of stack...");
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_) => videoPage),
-            );
-          },
-          child: Column(
-            children: [
-              const SizedBox(width: 1, height: 30),
-              AutoSizeText(
-                title,
-                maxLines: 1,
-                style: GoogleFonts.montserrat(
-                  fontSize: 30,
-                  color: const Color.fromARGB(255, 255, 255, 255),
+          ],
+        ),
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            borderRadius: BorderRadius.circular(15),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => videoPage),
+              );
+            },
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: isHovered
+                      ? [Color(0xFF0A6150), Color(0xFF073D33)]
+                      : [Color(0xFF084D3F), Color(0xFF052E27)],
                 ),
+                borderRadius: BorderRadius.circular(15),
               ),
-              const SizedBox(width: 1, height: 10),
-              Image(image: AssetImage(imagePath)),
-              const SizedBox(width: 1, height: 20),
-              AutoSizeText(
-                description,
-                style: GoogleFonts.roboto(
-                  fontSize: 20,
-                  color: const Color.fromARGB(255, 199, 252, 221),
-                ),
-                maxLines: 3,
-                maxFontSize: 20,
+              padding: EdgeInsets.all(20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: GoogleFonts.montserrat(
+                      fontSize: 26,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.white,
+                      letterSpacing: 0.3,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8.0),
+                    child: Container(
+                      height: 2,
+                      width: 60,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 20, 175, 77),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                  ),
+
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(8),
+                    child: Image(
+                      image: AssetImage(imagePath),
+                      fit: BoxFit.cover,
+                      //height: 150,
+                      //width: double.infinity,
+                    ),
+                  ),
+                  SizedBox(height: 16),
+
+                  Text(
+                    description,
+                    style: GoogleFonts.roboto(
+                      fontSize: 15,
+                      color: Color(0xFFCCF7E3),
+                      height: 1.4,
+                    ),
+                    maxLines: 3,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+
+                  Spacer(),
+
+                  Container(
+                    alignment: Alignment.centerRight,
+                    child: ElevatedButton.icon(
+                      icon: Icon(Icons.play_circle_outline, size: 18),
+                      label: Text("Start Course"),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color(0xFF22C55E),
+                        foregroundColor: Colors.white,
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 16,
+                          vertical: 8,
+                        ),
+                        textStyle: TextStyle(fontWeight: FontWeight.w600),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (_) => videoPage),
+                        );
+                      },
+                    ),
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
         ),
       ),
