@@ -290,66 +290,85 @@ class _CoursePageState extends State<CoursePage> {
     }
     return Scaffold(
       appBar: TimedAppBar(),
-      body: Stack(
-        children: [
-          Padding(
-            padding: EdgeInsets.all(20),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color.fromARGB(
+                255,
+                146,
+                243,
+                198,
+              ).withOpacity(0.08), // Very light green tint
+              Color(0xFFD1FAE5).withOpacity(0.04),
+            ],
+          ),
+        ),
+        child: Stack(
+          children: [
+            Padding(
+              padding: EdgeInsets.all(20),
 
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Full Physics Courses',
-                  style: GoogleFonts.mPlus1(fontSize: 40),
-                ),
-                SizedBox(height: 20),
-                Flexible(
-                  child: LayoutBuilder(
-                    builder: (context, constraints) {
-                      final crossAxisCount = constraints.maxWidth > 1000
-                          ? 3
-                          : constraints.maxWidth > 700
-                          ? 2
-                          : 1;
-
-                      return GridView.builder(
-                        shrinkWrap: false,
-                        physics: AlwaysScrollableScrollPhysics(),
-
-                        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                          maxCrossAxisExtent: 500,
-
-                          crossAxisSpacing: 20,
-                          mainAxisSpacing: 20,
-                          childAspectRatio: 0.94, //change to change size of box
-                        ),
-                        itemCount: courseList.length,
-                        itemBuilder: (context, index) {
-                          final course = courseList[index];
-                          return _buildVideoButton(
-                            course['title'] ?? '',
-                            course['imagePath'] ?? '',
-                            course['description'] ?? '',
-                            index,
-                            course['videoPage']!,
-                          );
-                        },
-                      );
-                    },
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Full Physics Courses',
+                    style: GoogleFonts.mPlus1(fontSize: 40),
                   ),
-                ),
-              ],
-            ),
-          ),
+                  SizedBox(height: 20),
+                  Flexible(
+                    child: LayoutBuilder(
+                      builder: (context, constraints) {
+                        final crossAxisCount = constraints.maxWidth > 1000
+                            ? 3
+                            : constraints.maxWidth > 700
+                            ? 2
+                            : 1;
 
-          Positioned(
-            bottom: 20,
-            left:
-                MediaQuery.of(context).size.width / 2 -
-                125, //change this when dealing with button
-            child: _combineButtons(),
-          ),
-        ],
+                        return GridView.builder(
+                          shrinkWrap: false,
+                          physics: AlwaysScrollableScrollPhysics(),
+
+                          gridDelegate:
+                              SliverGridDelegateWithMaxCrossAxisExtent(
+                                maxCrossAxisExtent: 500,
+
+                                crossAxisSpacing: 20,
+                                mainAxisSpacing: 20,
+                                childAspectRatio:
+                                    0.94, //change to change size of box
+                              ),
+                          itemCount: courseList.length,
+                          itemBuilder: (context, index) {
+                            final course = courseList[index];
+                            return _buildVideoButton(
+                              course['title'] ?? '',
+                              course['imagePath'] ?? '',
+                              course['description'] ?? '',
+                              index,
+                              course['videoPage']!,
+                            );
+                          },
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            Positioned(
+              bottom: 20,
+              left:
+                  MediaQuery.of(context).size.width / 2 -
+                  125, //change this when dealing with button
+              child: _combineButtons(),
+            ),
+          ],
+        ),
       ),
     );
   }
