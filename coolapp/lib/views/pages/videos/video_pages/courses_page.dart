@@ -32,22 +32,12 @@ class _CoursePageState extends State<CoursePage> {
     if (!globals.isLoggedIn) {
       return NotLoggedIn(); //keep in mind that this js does the message in every single button
     }
-
-    double _width;
-    double _height;
     bool isHovered = hoveredStates[index] ?? false;
-    if (isHovered) {
-      _width = 450;
-      _height = 550;
-    } else {
-      _height = 500;
-      _width = 500;
-    }
-
     return MouseRegion(
       onEnter: (_) => setState(() => hoveredStates[index] = true),
       onExit: (_) => setState(() => hoveredStates[index] = false),
       child: AnimatedContainer(
+        height: 20,
         duration: Duration(milliseconds: 200),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
@@ -116,8 +106,8 @@ class _CoursePageState extends State<CoursePage> {
                     child: Image(
                       image: AssetImage(imagePath),
                       fit: BoxFit.cover,
-                      //height: 150,
-                      //width: double.infinity,
+                      height: 200,
+                      width: double.infinity,
                     ),
                   ),
                   SizedBox(height: 16),
@@ -160,6 +150,7 @@ class _CoursePageState extends State<CoursePage> {
                       },
                     ),
                   ),
+                  SizedBox(height: 10),
                 ],
               ),
             ),
@@ -169,8 +160,6 @@ class _CoursePageState extends State<CoursePage> {
     );
   }
 
-  double _width = 400;
-  double _height = 500;
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> courseList = [
     {
@@ -245,12 +234,11 @@ class _CoursePageState extends State<CoursePage> {
                         shrinkWrap: false,
                         physics: AlwaysScrollableScrollPhysics(),
 
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: crossAxisCount,
+                        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                          maxCrossAxisExtent: 500,
+
                           crossAxisSpacing: 20,
                           mainAxisSpacing: 20,
-                          childAspectRatio:
-                              0.94, //change to change size of button
                         ),
                         itemCount: courseList.length,
                         itemBuilder: (context, index) {
