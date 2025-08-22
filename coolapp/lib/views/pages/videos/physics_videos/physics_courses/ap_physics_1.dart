@@ -67,19 +67,10 @@ class _ApPhysics1State extends State<ApPhysics1> {
               width: double.infinity,
               padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: isHovered
-                      ? [
-                          Color.fromARGB(255, 8, 77, 63),
-                          Color.fromARGB(255, 5, 46, 39),
-                        ]
-                      : [
-                          Color.fromARGB(255, 8, 77, 63),
-                          Color.fromARGB(255, 5, 46, 39),
-                        ],
-                ),
+                color: isHovered
+                    ? Color.fromARGB(255, 8, 77, 63)
+                    : Color.fromARGB(255, 8, 83, 68),
+
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
                   color: isHovered
