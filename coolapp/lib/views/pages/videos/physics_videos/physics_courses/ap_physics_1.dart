@@ -72,10 +72,8 @@ class _ApPhysics1State extends State<ApPhysics1> {
                   end: Alignment.bottomRight,
                   colors: isHovered
                       ? [
-                          Color.fromARGB(255, 7, 61, 51),
-                          Color.fromARGB(255, 167, 198, 131),
-
-                          Color.fromARGB(255, 7, 61, 51),
+                          Color.fromARGB(255, 8, 77, 63),
+                          Color.fromARGB(255, 5, 46, 39),
                         ]
                       : [
                           Color.fromARGB(255, 8, 77, 63),

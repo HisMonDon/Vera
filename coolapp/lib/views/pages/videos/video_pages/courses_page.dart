@@ -63,11 +63,14 @@ class _CoursePageState extends State<CoursePage> {
     required bool isEnabled,
   }) {
     return ElevatedButton.icon(
-      icon: Icon(icon, size: 20),
-      label: Text(label),
+      icon: Icon(icon, size: 20, color: const Color.fromARGB(255, 15, 48, 40)),
+      label: Text(
+        label,
+        style: TextStyle(color: const Color.fromARGB(255, 15, 48, 40)),
+      ),
       style: ElevatedButton.styleFrom(
         backgroundColor: isEnabled
-            ? Color.fromARGB(255, 15, 118, 110)
+            ? Color.fromARGB(255, 167, 198, 131)
             : const Color.fromARGB(255, 238, 238, 238),
         foregroundColor: isEnabled
             ? Colors.white
@@ -75,7 +78,11 @@ class _CoursePageState extends State<CoursePage> {
         disabledBackgroundColor: const Color.fromARGB(255, 238, 238, 238),
         disabledForegroundColor: const Color.fromARGB(255, 158, 158, 158),
         padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-        textStyle: TextStyle(fontWeight: FontWeight.w600),
+        textStyle: TextStyle(
+          fontWeight: FontWeight.w600,
+          color: const Color.fromARGB(255, 15, 48, 40),
+        ),
+
         elevation: isEnabled ? 0 : 0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
@@ -177,7 +184,7 @@ class _CoursePageState extends State<CoursePage> {
                       height: 2,
                       width: 60,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 20, 175, 77),
+                        color: Color.fromARGB(255, 167, 198, 131),
                         borderRadius: BorderRadius.circular(10),
                       ),
                     ),
@@ -301,7 +308,7 @@ class _CoursePageState extends State<CoursePage> {
                 146,
                 243,
                 198,
-              ).withOpacity(0.08), // Very light green tint
+              ).withOpacity(0.08), // very light green tint
               Color.fromARGB(255, 209, 250, 229).withOpacity(0.04),
             ],
           ),
