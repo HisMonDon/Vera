@@ -329,26 +329,30 @@ class _ApPhysics1State extends State<ApPhysics1> {
                   );
                 }),
               ),
-              SizedBox(
-                height: 40,
-                child: ElevatedButton(
+              Center(
+                child: ElevatedButton.icon(
+                  icon: Icon(Icons.arrow_back),
+                  label: Text("Return to Courses"),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color.fromARGB(255, 167, 198, 131),
+                    foregroundColor: const Color.fromARGB(255, 15, 48, 40),
+                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+                    textStyle: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
                   onPressed: () {
                     globals.topicTitle = '';
                     Navigator.of(context).pop();
                   },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 28, 150, 109),
-                    foregroundColor: Colors.white,
-                  ),
-                  child: Text(
-                    'BACK',
-                    style: GoogleFonts.mPlus1(
-                      fontSize: 20,
-                      color: Colors.white,
-                    ),
-                  ),
                 ),
               ),
+
+              SizedBox(height: 10),
             ],
           ),
         ),
