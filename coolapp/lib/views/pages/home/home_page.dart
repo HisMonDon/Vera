@@ -801,23 +801,35 @@ class _HomePageState extends State<HomePage> {
                                               CrossAxisAlignment.center,
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
+                                          mainAxisSize: MainAxisSize.max,
                                           children: [
-                                            AutoSizeText(
-                                              featuredUnit +
-                                                  ": " +
-                                                  featuredTitle,
-                                              style: GoogleFonts.bebasNeue(
-                                                fontSize: 60,
-                                                color: const Color.fromARGB(
-                                                  255,
-                                                  217,
-                                                  225,
-                                                  199,
+                                            SizedBox(
+                                              width:
+                                                  MediaQuery.of(
+                                                    context,
+                                                  ).size.width -
+                                                  130,
+                                              height: 80,
+                                              child: AutoSizeText(
+                                                featuredUnit +
+                                                    ": " +
+                                                    featuredTitle,
+                                                style: GoogleFonts.bebasNeue(
+                                                  fontSize: 60,
+                                                  color: const Color.fromARGB(
+                                                    255,
+                                                    217,
+                                                    225,
+                                                    199,
+                                                  ),
                                                 ),
+
+                                                textAlign: TextAlign.center,
+                                                maxFontSize: 80,
+                                                maxLines: 2,
                                               ),
-                                              maxFontSize: 80,
                                             ),
-                                            SizedBox(width: 20),
+                                            /*SizedBox(width: 20),
                                             Icon(
                                               MdiIcons.atom,
                                               color: Color.fromARGB(
@@ -827,7 +839,7 @@ class _HomePageState extends State<HomePage> {
                                                 199,
                                               ),
                                               size: 70,
-                                            ),
+                                            ),*/
                                           ],
                                         ),
                                       ),
