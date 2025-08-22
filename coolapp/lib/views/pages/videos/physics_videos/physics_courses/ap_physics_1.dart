@@ -72,7 +72,9 @@ class _ApPhysics1State extends State<ApPhysics1> {
                   end: Alignment.bottomRight,
                   colors: isHovered
                       ? [
-                          Color.fromARGB(255, 10, 97, 80),
+                          Color.fromARGB(255, 7, 61, 51),
+                          Color.fromARGB(255, 167, 198, 131),
+
                           Color.fromARGB(255, 7, 61, 51),
                         ]
                       : [
@@ -83,7 +85,7 @@ class _ApPhysics1State extends State<ApPhysics1> {
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
                   color: isHovered
-                      ? Color.fromARGB(255, 34, 197, 94).withOpacity(0.6)
+                      ? Color.fromARGB(255, 167, 198, 131)
                       : const Color.fromARGB(0, 121, 27, 27), //transparent
                   width: 1.5,
                 ),
@@ -142,7 +144,7 @@ class _ApPhysics1State extends State<ApPhysics1> {
                   SizedBox(width: 8),
                   Container(
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 34, 197, 94),
+                      color: Color.fromARGB(255, 167, 198, 131),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: IconButton(
@@ -202,8 +204,7 @@ class _ApPhysics1State extends State<ApPhysics1> {
     },
     {
       'title': 'Unit 5: Energy and Work',
-      'description':
-          'Work-energy theorem and conservation of Energy (Very important unit)',
+      'description': 'Work-energy theorem and conservation of Energy',
       'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
@@ -276,7 +277,7 @@ class _ApPhysics1State extends State<ApPhysics1> {
                       width: 80,
                       height: 80,
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.1),
+                        color: Color.fromARGB(255, 167, 198, 131),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Icon(Icons.science, size: 40, color: Colors.white),
