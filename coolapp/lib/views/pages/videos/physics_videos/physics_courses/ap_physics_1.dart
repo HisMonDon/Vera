@@ -28,7 +28,9 @@ class _ApPhysics1State extends State<ApPhysics1> {
     bool isHovered = hoveredStates[index] ?? false;
 
     return MouseRegion(
-      onEnter: (_) => setState(() => hoveredStates[index] = true),
+      onEnter: (_) => setState(
+        () => hoveredStates[index] = true,
+      ), // changed this for no error
       onExit: (_) => setState(() => hoveredStates[index] = false),
       child: AnimatedContainer(
         duration: Duration(milliseconds: 200),
@@ -78,7 +80,7 @@ class _ApPhysics1State extends State<ApPhysics1> {
                           Color.fromARGB(255, 5, 46, 39),
                         ],
                 ),
-                borderRadius: BorderRadius.circular(15),
+                borderRadius: BorderRadius.circular(12),
                 border: Border.all(
                   color: isHovered
                       ? Color.fromARGB(255, 34, 197, 94).withOpacity(0.6)
@@ -86,73 +88,77 @@ class _ApPhysics1State extends State<ApPhysics1> {
                   width: 1.5,
                 ),
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              child: Row(
                 children: [
-                  Text(
-                    title,
-                    style: GoogleFonts.montserrat(
-                      fontSize: 26,
-                      fontWeight: FontWeight.w700,
-                      color: Colors.white,
-                      letterSpacing: 0.3,
-                    ),
-                    maxLines: 1,
-                    //overflow: TextOverflow.ellipsis,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8.0),
-                    child: Container(
-                      height: 2,
-                      width: 60,
-                      decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 20, 175, 77),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                  ),
-
-                  /* ClipRRect(
-                    borderRadius: BorderRadius.circular(8),
-                    child: Image(
-                      image: AssetImage(imagePath),
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: double.infinity,
-                    ),
-                  ),
-                  SizedBox(height: 16),*/
-                  Text(
-                    description,
-                    style: GoogleFonts.roboto(
-                      fontSize: 15,
-                      color: Color(0xFFCCF7E3),
-                      height: 1.4,
-                    ),
-                    maxLines: 3,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-
-                  Spacer(),
-
                   Container(
-                    alignment: Alignment.centerRight,
-                    child: ElevatedButton.icon(
-                      icon: Icon(Icons.play_circle_outline, size: 18),
-                      label: Text("Explore Topic"),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Color(0xFF22C55E),
-                        foregroundColor: Colors.white,
-                        padding: EdgeInsets.symmetric(
-                          horizontal: 16,
-                          vertical: 8,
+                    width: 50,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: isCompleted
+                          ? Color.fromARGB(255, 34, 197, 94)
+                          : Color.fromARGB(255, 15, 118, 110).withOpacity(0.3),
+                    ),
+                    child: Center(
+                      child: isCompleted
+                          ? Icon(
+                              Icons.check,
+                              color: Colors.white,
+                            ) // implement isCompleted later
+                          : Text(
+                              '${index + 1}',
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                    ),
+                  ),
+                  SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          title,
+                          style: GoogleFonts.montserrat(
+                            fontSize: 22,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white,
+                          ),
                         ),
-                        textStyle: TextStyle(fontWeight: FontWeight.w600),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
+                        SizedBox(height: 4),
+                        Text(
+                          description,
+                          style: GoogleFonts.roboto(
+                            fontSize: 16,
+                            color: Color.fromARGB(255, 204, 247, 227),
+                          ),
                         ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(width: 8),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 34, 197, 94),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.play_arrow_rounded,
+                        size: 24,
+                        color: Colors.white,
                       ),
                       onPressed: () {
+                        if (index == videosList.length - 1) {
+                          globals.nextVideoTitle = 'last_one';
+                        } else {
+                          globals.nextVideoTitle =
+                              videosList[index + 1]['title'];
+                        }
+                        globals.videoLink = videoLink;
                         Navigator.push(
                           context,
                           MaterialPageRoute(builder: (_) => videoPage),
@@ -160,7 +166,6 @@ class _ApPhysics1State extends State<ApPhysics1> {
                       },
                     ),
                   ),
-                  SizedBox(height: 10),
                 ],
               ),
             ),
