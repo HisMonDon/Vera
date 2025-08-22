@@ -802,7 +802,7 @@ class _HomePageState extends State<HomePage> {
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
                                           children: [
-                                            Text(
+                                            AutoSizeText(
                                               featuredUnit +
                                                   ": " +
                                                   featuredTitle,
@@ -815,6 +815,7 @@ class _HomePageState extends State<HomePage> {
                                                   199,
                                                 ),
                                               ),
+                                              maxFontSize: 80,
                                             ),
                                             SizedBox(width: 20),
                                             Icon(
