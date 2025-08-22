@@ -22,21 +22,14 @@ class _ApPhysics1State extends State<ApPhysics1> {
     int index,
     Widget videoPage,
     String videoLink,
+    //String imagePath,
   ) {
     bool isCompleted = false; //later will implement completion tracking
     bool isHovered = hoveredStates[index] ?? false;
 
     return MouseRegion(
-      onEnter: (_) {
-        setState(() {
-          hoveredStates[index] = true;
-        });
-      },
-      onExit: (_) {
-        setState(() {
-          hoveredStates[index] = false;
-        });
-      },
+      onEnter: (_) => setState(() => hoveredStates[index] = true),
+      onExit: (_) => setState(() => hoveredStates[index] = false),
       child: AnimatedContainer(
         duration: Duration(milliseconds: 200),
         margin: EdgeInsets.only(bottom: 16),
@@ -70,7 +63,7 @@ class _ApPhysics1State extends State<ApPhysics1> {
             },
             child: Container(
               width: double.infinity,
-              padding: EdgeInsets.all(16),
+              padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
@@ -85,13 +78,90 @@ class _ApPhysics1State extends State<ApPhysics1> {
                           Color.fromARGB(255, 5, 46, 39),
                         ],
                 ),
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(15),
                 border: Border.all(
                   color: isHovered
                       ? Color.fromARGB(255, 34, 197, 94).withOpacity(0.6)
                       : const Color.fromARGB(0, 121, 27, 27), //transparent
                   width: 1.5,
                 ),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: GoogleFonts.montserrat(
+                      fontSize: 26,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.white,
+                      letterSpacing: 0.3,
+                    ),
+                    maxLines: 1,
+                    //overflow: TextOverflow.ellipsis,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8.0),
+                    child: Container(
+                      height: 2,
+                      width: 60,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 20, 175, 77),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                  ),
+
+                  /* ClipRRect(
+                    borderRadius: BorderRadius.circular(8),
+                    child: Image(
+                      image: AssetImage(imagePath),
+                      fit: BoxFit.cover,
+                      height: 200,
+                      width: double.infinity,
+                    ),
+                  ),
+                  SizedBox(height: 16),*/
+                  Text(
+                    description,
+                    style: GoogleFonts.roboto(
+                      fontSize: 15,
+                      color: Color(0xFFCCF7E3),
+                      height: 1.4,
+                    ),
+                    maxLines: 3,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+
+                  Spacer(),
+
+                  Container(
+                    alignment: Alignment.centerRight,
+                    child: ElevatedButton.icon(
+                      icon: Icon(Icons.play_circle_outline, size: 18),
+                      label: Text("Explore Topic"),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color(0xFF22C55E),
+                        foregroundColor: Colors.white,
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 16,
+                          vertical: 8,
+                        ),
+                        textStyle: TextStyle(fontWeight: FontWeight.w600),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (_) => videoPage),
+                        );
+                      },
+                    ),
+                  ),
+                  SizedBox(height: 10),
+                ],
               ),
             ),
           ),
