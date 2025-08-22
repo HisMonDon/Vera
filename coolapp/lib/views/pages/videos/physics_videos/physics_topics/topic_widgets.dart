@@ -1,12 +1,8 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
-import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
-import 'package:coolapp/views/pages/videos/video_player.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class CourseWidgets {
   /* Widgets:
@@ -16,6 +12,47 @@ class CourseWidgets {
     =======================================================================
   - buildVideo parameters (everything from before)
    */
+  static Widget _buildBackButton({
+    required String title,
+    required BuildContext context,
+    //use globals.courseTitle for course Title
+  }) {
+    // to go to course, we just push it back instead of actually redirecting to new widget
+    String previousTitle = globals.courseTitle;
+    if (globals.courseTitle == '') {
+      previousTitle = 'Courses';
+    }
+    return Center(
+      child: Row(
+        children: [
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context).pop();
+            },
+            child: Text(
+              previousTitle,
+              style: GoogleFonts.montserrat(
+                fontSize: 15,
+                fontWeight: FontWeight.w600,
+                color: Colors.white,
+              ),
+            ),
+          ),
+          SizedBox(width: 10),
+          Icon(Icons.label_important, color: Colors.white),
+          Text(
+            title,
+            style: GoogleFonts.montserrat(
+              fontSize: 15,
+              fontWeight: FontWeight.w600,
+              color: Colors.white,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   static Widget _buildVideoButton({
     required String title,
     required String description,
