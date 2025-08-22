@@ -1,10 +1,12 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:coolapp/views/pages/videos/free_videos.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 
 //not done
 class Grade12Physics extends StatefulWidget {
@@ -21,77 +23,143 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
     int index,
     Widget videoPage,
     String videoLink,
+    //String imagePath,
   ) {
-    double _width;
-    double _height;
+    bool isCompleted = false; //later will implement completion tracking
     bool isHovered = hoveredStates[index] ?? false;
-    if (isHovered) {
-      _width = 400;
-      _height = 200;
-    } else {
-      _height = 210;
-      _width = 400;
-    }
 
     return MouseRegion(
-      onEnter: (_) {
-        setState(() {
-          hoveredStates[index] = true;
-        });
-      },
-      onExit: (_) {
-        setState(() {
-          hoveredStates[index] = false;
-        });
-      },
-      child: AnimatedScale(
+      onEnter: (_) => setState(
+        () => hoveredStates[index] = true,
+      ), // changed this for no error
+      onExit: (_) => setState(() => hoveredStates[index] = false),
+      child: AnimatedContainer(
         duration: Duration(milliseconds: 200),
-        scale: isHovered ? 1.05 : 1.0,
-        child: SizedBox(
-          width: double.infinity,
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 10, 73, 59),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
-              ),
+        margin: EdgeInsets.only(bottom: 16),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12),
+          boxShadow: [
+            BoxShadow(
+              color: isHovered
+                  ? Color.fromARGB(255, 9, 71, 55).withOpacity(0.25)
+                  : Colors.black.withOpacity(0.1),
+              blurRadius: isHovered ? 8 : 4,
+              offset: isHovered ? Offset(0, 4) : Offset(0, 2),
             ),
-            onPressed: () {
+          ],
+        ),
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            borderRadius: BorderRadius.circular(12),
+            onTap: () {
               if (index == videosList.length - 1) {
-                globals.nextVideoTitle =
-                    'last_one'; //check if the thing is named 'last_one'
+                globals.nextVideoTitle = 'last_one';
               } else {
                 globals.nextVideoTitle = videosList[index + 1]['title'];
               }
               globals.videoLink = videoLink;
-              print("Pushing nav page ontop of stack...");
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (_) => videoPage),
               );
             },
-            child: Column(
-              children: [
-                const SizedBox(width: 1, height: 30),
-                Text(
-                  title,
-                  maxLines: 1,
-                  style: GoogleFonts.montserrat(
-                    fontSize: 30,
-                    color: const Color.fromARGB(255, 255, 255, 255),
-                  ),
+            child: Container(
+              width: double.infinity,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: isHovered
+                    ? Color.fromARGB(255, 8, 77, 63)
+                    : Color.fromARGB(255, 8, 83, 68),
+
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(
+                  color: isHovered
+                      ? Color.fromARGB(255, 167, 198, 131)
+                      : const Color.fromARGB(0, 121, 27, 27), //transparent
+                  width: 1.5,
                 ),
-                const SizedBox(width: 1, height: 15),
-                AutoSizeText(
-                  description,
-                  style: GoogleFonts.roboto(
-                    fontSize: 20,
-                    color: const Color.fromARGB(255, 199, 252, 221),
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    width: 50,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: isCompleted
+                          ? Color.fromARGB(255, 34, 197, 94)
+                          : Color.fromARGB(255, 15, 118, 110).withOpacity(0.3),
+                    ),
+                    child: Center(
+                      child: isCompleted
+                          ? Icon(
+                              Icons.check,
+                              color: Colors.white,
+                            ) // implement isCompleted later
+                          : Text(
+                              '${index + 1}',
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                    ),
                   ),
-                  maxLines: 1,
-                ),
-                const SizedBox(width: 1, height: 15),
-              ],
+                  SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          title,
+                          style: GoogleFonts.montserrat(
+                            fontSize: 22,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white,
+                          ),
+                        ),
+                        SizedBox(height: 4),
+                        Text(
+                          description,
+                          style: GoogleFonts.roboto(
+                            fontSize: 16,
+                            color: Color.fromARGB(255, 204, 247, 227),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(width: 8),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 167, 198, 131),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.play_arrow_rounded,
+                        size: 24,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {
+                        if (index == videosList.length - 1) {
+                          globals.nextVideoTitle = 'last_one';
+                        } else {
+                          globals.nextVideoTitle =
+                              videosList[index + 1]['title'];
+                        }
+                        globals.videoLink = videoLink;
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (_) => videoPage),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
@@ -104,43 +172,44 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Rotational Motion',
-      'description': 'Centripetal force and torque calculations',
+      'title': 'Unit 1: Kinematics & Dynamics Review',
+      'description': 'In-depth review of motion and forces',
+      'videoPage': IntroToPhysics(),
+      'videoLink':
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+    },
+    {
+      'title': 'Unit 2: Energy & Momentum',
+      'description': 'Conservation laws and applications',
       'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 2: Momentum and Collisions',
-      'description': 'Impulse-momentum theorem in 2D',
+      'title': 'Unit 3: Gravitational, Electric & Magnetic Fields',
+      'description': 'Field interactions and calculations',
       'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 3: Gravitational Fields',
-      'description': 'Orbital mechanics and gravitational potential',
+      'title': 'Unit 4: Wave Nature of Light',
+      'description': 'Interference, diffraction, and polarization',
       'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 4: Electromagnetic Fields',
-      'description': 'Field interactions and electromagnetic applications',
+      'title': 'Unit 5: Quantum Mechanics',
+      'description': 'Introduction to wave functions and quantum phenomena',
       'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 5: Wave Optics',
-      'description': 'Double-slit interference and thin-film phenomena',
-      'videoPage': VideoPlayerScreen(),
-      'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
-    },
-    {
-      'title': 'Unit 6: Quantum Physics',
-      'description': 'Photoelectric effect and Bohr model applications',
+      'title': 'Unit 6: Special Relativity',
+      'description':
+          'Time dilation, length contraction, and relativistic effects',
       'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
@@ -158,57 +227,111 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
           child: Column(
             children: [
               SizedBox(width: 2, height: 10),
-              Row(
-                children: [
-                  AutoSizeText(
-                    "Grade 12 Physics",
-                    maxLines: 1,
-                    style: GoogleFonts.mPlus1(
-                      fontSize: 30,
-                      color: const Color.fromARGB(255, 236, 240, 236),
-                    ),
+              Container(
+                padding: EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      Color.fromARGB(255, 10, 97, 80),
+                      Color.fromARGB(255, 7, 61, 51),
+                    ],
                   ),
-                ],
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [
+                    //might look good?
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.2),
+                      blurRadius: 10,
+                      offset: Offset(0, 5),
+                    ),
+                  ],
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 80,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 167, 198, 131),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Icon(Icons.school, size: 40, color: Colors.white),
+                    ),
+                    SizedBox(width: 20),
+                    Expanded(
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            SizedBox(height: 10),
+                            Text(
+                              "Grade 12 Physics",
+                              style: GoogleFonts.montserrat(
+                                fontSize: 28,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(height: 8),
+                            Text(
+                              "Advanced Ontario Grade 12 physics curriculum covering fields, waves, and modern physics",
+                              style: GoogleFonts.roboto(
+                                fontSize: 16,
+                                color: Color(0xFFCCF7E3),
+                              ),
+                            ),
+                            SizedBox(height: 16),
+
+                            //course stats underneath
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
+
               SizedBox(width: 2, height: 20),
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
-
-                  return Padding(
-                    padding: const EdgeInsets.only(
-                      bottom: 20,
-                    ), // spacing between buttons
-                    child: _buildVideoButton(
-                      video['title'] ?? '',
-                      video['description'] ?? '',
-                      index,
-                      video['videoPage']!,
-                      video['videoLink'],
-                    ),
+                  return _buildVideoButton(
+                    video['title'] ?? '',
+                    video['description'] ?? '',
+                    index,
+                    video['videoPage']!,
+                    video['videoLink'],
                   );
                 }),
               ),
-              SizedBox(
-                height: 40,
-                child: ElevatedButton(
+              Center(
+                child: ElevatedButton.icon(
+                  icon: Icon(Icons.arrow_back),
+                  label: Text("Return to Courses"),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color.fromARGB(255, 167, 198, 131),
+                    foregroundColor: const Color.fromARGB(255, 15, 48, 40),
+                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+                    textStyle: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
                   onPressed: () {
                     globals.topicTitle = '';
                     Navigator.of(context).pop();
                   },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 28, 150, 109),
-                    foregroundColor: Colors.white,
-                  ),
-                  child: Text(
-                    'BACK',
-                    style: GoogleFonts.mPlus1(
-                      fontSize: 20,
-                      color: Colors.white,
-                    ),
-                  ),
                 ),
               ),
+
+              SizedBox(height: 10),
             ],
           ),
         ),
