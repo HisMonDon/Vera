@@ -282,6 +282,37 @@ class _ApPhysics1State extends State<ApPhysics1> {
                       child: Icon(Icons.science, size: 40, color: Colors.white),
                     ),
                     SizedBox(width: 20),
+                    Expanded(
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            SizedBox(height: 10),
+                            Text(
+                              "AP Physics 1",
+                              style: GoogleFonts.montserrat(
+                                fontSize: 28,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(height: 8),
+                            Text(
+                              "Algebra-based introductory college-level physics course focused on mechanics and related topics",
+                              style: GoogleFonts.roboto(
+                                fontSize: 16,
+                                color: Color(0xFFCCF7E3),
+                              ),
+                            ),
+                            SizedBox(height: 16),
+
+                            //course stats underneath
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -290,17 +321,12 @@ class _ApPhysics1State extends State<ApPhysics1> {
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
-                  return Padding(
-                    padding: const EdgeInsets.only(
-                      bottom: 20,
-                    ), // spacing between buttons
-                    child: _buildVideoButton(
-                      video['title'] ?? '',
-                      video['description'] ?? '',
-                      index,
-                      video['videoPage']!,
-                      video['videoLink'],
-                    ),
+                  return _buildVideoButton(
+                    video['title'] ?? '',
+                    video['description'] ?? '',
+                    index,
+                    video['videoPage']!,
+                    video['videoLink'],
                   );
                 }),
               ),
