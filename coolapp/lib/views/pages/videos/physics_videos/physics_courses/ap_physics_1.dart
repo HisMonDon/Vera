@@ -249,18 +249,43 @@ class _ApPhysics1State extends State<ApPhysics1> {
           child: Column(
             children: [
               SizedBox(width: 2, height: 10),
-              Row(
-                children: [
-                  AutoSizeText(
-                    "AP Physics 1",
-                    maxLines: 1,
-                    style: GoogleFonts.mPlus1(
-                      fontSize: 30,
-                      color: const Color.fromARGB(255, 236, 240, 236),
-                    ),
+              Container(
+                padding: EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      Color.fromARGB(255, 10, 97, 80),
+                      Color.fromARGB(255, 7, 61, 51),
+                    ],
                   ),
-                ],
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [
+                    //might look good?
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.2),
+                      blurRadius: 10,
+                      offset: Offset(0, 5),
+                    ),
+                  ],
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 80,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Icon(Icons.science, size: 40, color: Colors.white),
+                    ),
+                    SizedBox(width: 20),
+                  ],
+                ),
               ),
+
               SizedBox(width: 2, height: 20),
               Column(
                 children: List.generate(videosList.length, (index) {
