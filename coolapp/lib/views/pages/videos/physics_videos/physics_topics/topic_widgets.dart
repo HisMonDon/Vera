@@ -4,7 +4,7 @@ import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
-class CourseWidgets {
+class TopicWidgets {
   /* Widgets:
   - buildVideo button (can lowk get from any of the course pages)
   - buildCourseHeader(will take parameter globals.courseTitle, might check later if i need to reset in the main page)
