@@ -284,7 +284,7 @@ class _TopicsPageState extends State<TopicsPage> {
       'title': 'Forces and Dynamics',
       'imagePath': 'images/dynamics.jpg',
       'description':
-          "Newton's Laws, Introduction to forces, Free Body Diagrams",
+          "Examine how forces influence motion through Newton’s laws of motion. Concepts such as mass, weight, friction, tension, and normal force, learn how to analyze interactions between objects, use Free Body Diagrams",
       'videoPage': Dynamics(),
     },
   ];
