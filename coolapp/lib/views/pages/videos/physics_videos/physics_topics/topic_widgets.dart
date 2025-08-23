@@ -302,10 +302,16 @@ class TopicWidgets {
   }
 
   static Widget buildBackButton({required BuildContext context}) {
+    String backText;
+    if (globals.courseTitle == '') {
+      backText = "Return to Topics";
+    } else {
+      backText = "Return to " + globals.courseTitle;
+    }
     return Center(
       child: ElevatedButton.icon(
         icon: Icon(Icons.arrow_back),
-        label: Text("Return to Topics"),
+        label: Text(backText),
         style: ElevatedButton.styleFrom(
           backgroundColor: Color.fromARGB(255, 167, 198, 131),
           foregroundColor: const Color.fromARGB(255, 15, 48, 40),

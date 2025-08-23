@@ -1,6 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
@@ -201,7 +202,7 @@ class _ApPhysics1State extends State<ApPhysics1> {
     {
       'title': 'Unit 6: Momentum', //shared with grade 12 phy
       'description': 'Collision analysis and center of mass',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': MomentumAndCollisions(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
