@@ -208,7 +208,7 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 6: Electricity:',
+      'title': 'Unit 6: Electricity',
       'description': 'Series and parallel combinations and power calculations',
       'videoPage':
           ElectricityAndMagnetism(), //redirect this to the thing inside electricity unit

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/topic_widgets.dart';
 
 class Dynamics extends StatefulWidget {
   const Dynamics({super.key});

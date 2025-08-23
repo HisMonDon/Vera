@@ -263,7 +263,7 @@ class _TopicsPageState extends State<TopicsPage> {
       'title': 'Kinematics',
       'imagePath': 'images/kinematics.jpg',
       'description':
-          'Projectile Motion, Kinematics formulae, Movement of objects',
+          'Motion analysis, explore concepts such as displacement, velocity, acceleration, and time, and how to apply kinematic equations to describe motion in one and two dimensions.',
       'videoPage': Kinematics(),
     },
     {

@@ -22,7 +22,7 @@ class TopicWidgets {
     // to go to course, we just push it back instead of actually redirecting to new widget
     String previousTitle = globals.courseTitle;
     if (globals.courseTitle == '') {
-      previousTitle = 'Courses';
+      previousTitle = 'Topics';
     }
     return Container(
       padding: EdgeInsets.all(20),
