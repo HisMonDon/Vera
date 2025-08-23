@@ -270,7 +270,7 @@ class _TopicsPageState extends State<TopicsPage> {
       'title': 'Electricity and Magnetism',
       'imagePath': 'images/electricity.jpg',
       'description':
-          'Electric fields, circuits, magnetic interactions, and electromagnetic waves',
+          'Principles of electric and magnetic phenomena, right hand rule, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits. Extend this understanding to magnetic fields, electromagnetic induction, and the relationship between electricity and magnetism',
       'videoPage': ElectricityAndMagnetism(),
     },
     {
