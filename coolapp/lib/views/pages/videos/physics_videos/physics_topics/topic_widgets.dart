@@ -15,6 +15,8 @@ class CourseWidgets {
   static Widget _buildBackButton({
     required String title,
     required BuildContext context,
+    required String description,
+    required IconData topIcon,
     //use globals.courseTitle for course Title
   }) {
     // to go to course, we just push it back instead of actually redirecting to new widget
@@ -22,7 +24,100 @@ class CourseWidgets {
     if (globals.courseTitle == '') {
       previousTitle = 'Courses';
     }
-    return Center(
+    return Container(
+      padding: EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Color.fromARGB(255, 10, 97, 80),
+            Color.fromARGB(255, 7, 61, 51),
+          ],
+        ),
+        borderRadius: BorderRadius.circular(15),
+        boxShadow: [
+          //might look good?
+          BoxShadow(
+            color: Colors.black.withOpacity(0.2),
+            blurRadius: 10,
+            offset: Offset(0, 5),
+          ),
+        ],
+      ),
+      child: Row(
+        children: [
+          Container(
+            width: 80,
+            height: 80,
+            decoration: BoxDecoration(
+              color: Color.fromARGB(255, 167, 198, 131),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Icon(topIcon, size: 40, color: Colors.white),
+          ),
+          SizedBox(width: 20),
+          Expanded(
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(height: 10),
+                  Row(
+                    children: [
+                      MouseRegion(
+                        cursor: SystemMouseCursors.click,
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).pop();
+                          },
+                          child: Text(
+                            previousTitle,
+                            style: GoogleFonts.montserrat(
+                              fontSize: 28,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Icon(Icons.label_important, color: Colors.white),
+                      SizedBox(width: 10),
+                      MouseRegion(
+                        cursor: SystemMouseCursors
+                            .click, //does nothing but looks better
+                        child: Text(
+                          title,
+                          style: GoogleFonts.montserrat(
+                            fontSize: 28,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    description,
+                    style: GoogleFonts.roboto(
+                      fontSize: 16,
+                      color: Color(0xFFCCF7E3),
+                    ),
+                  ),
+                  SizedBox(height: 16),
+
+                  //course stats underneath
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    ); /*Center(
       child: Row(
         children: [
           GestureDetector(
@@ -50,7 +145,7 @@ class CourseWidgets {
           ),
         ],
       ),
-    );
+    );*/
   }
 
   static Widget _buildVideoButton({
