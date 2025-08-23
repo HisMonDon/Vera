@@ -191,6 +191,7 @@ class TopicWidgets {
               } else {
                 globals.nextVideoTitle = videosList[index + 1]['title'];
               }
+              globals.unitTitle = videosList[index]['title'];
               globals.videoLink = videoLink;
               Navigator.push(
                 context,
