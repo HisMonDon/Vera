@@ -64,7 +64,6 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
             },
             child: Container(
               width: double.infinity,
-              padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
                 color: isHovered
                     ? Color.fromARGB(255, 8, 77, 63)

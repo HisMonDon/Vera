@@ -12,7 +12,7 @@ class TopicWidgets {
     =======================================================================
   - buildVideo parameters (everything from before)
    */
-  static Widget _buildBackButton({
+  static Widget buildTopLayout({
     required String title,
     required BuildContext context,
     required String description,
@@ -300,24 +300,26 @@ class TopicWidgets {
       ),
     );
   }
-}
 
-Widget _buildBackButton({required BuildContext context}) {
-  return Center(
-    child: ElevatedButton.icon(
-      icon: Icon(Icons.arrow_back),
-      label: Text("Return to Topics"),
-      style: ElevatedButton.styleFrom(
-        backgroundColor: Color.fromARGB(255, 167, 198, 131),
-        foregroundColor: const Color.fromARGB(255, 15, 48, 40),
-        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-        textStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+  static Widget buildBackButton({required BuildContext context}) {
+    return Center(
+      child: ElevatedButton.icon(
+        icon: Icon(Icons.arrow_back),
+        label: Text("Return to Topics"),
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Color.fromARGB(255, 167, 198, 131),
+          foregroundColor: const Color.fromARGB(255, 15, 48, 40),
+          padding: EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+          textStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
+        onPressed: () {
+          globals.courseTitle = '';
+          Navigator.of(context).pop();
+        },
       ),
-      onPressed: () {
-        globals.courseTitle = '';
-        Navigator.of(context).pop();
-      },
-    ),
-  );
+    );
+  }
 }

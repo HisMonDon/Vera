@@ -62,7 +62,7 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
   Widget build(BuildContext context) {
     // add an immediate check in build method
     globals.topicTitle = 'Momentum and Collisions';
-    print("topic title: Momentum and collisions, unit title reset");
+    //print("topic title: Momentum and collisions, unit title reset");
     return Scaffold(
       appBar: TimedAppBar(),
       body: SingleChildScrollView(
@@ -71,63 +71,36 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
           child: Column(
             children: [
               SizedBox(width: 2, height: 10),
-              Row(
-                children: [
-                  AutoSizeText(
-                    "Momentum and Collisions",
-                    maxLines: 1,
-                    style: GoogleFonts.mPlus1(
-                      fontSize: 30,
-                      color: const Color.fromARGB(255, 236, 240, 236),
-                    ),
-                  ),
-                ],
+              TopicWidgets.buildTopLayout(
+                title: globals.topicTitle,
+                context: context,
+                description:
+                    'Momentum, elastic and non-elastic collisions, and impulse',
+                topIcon: Icons.train,
               ),
               SizedBox(width: 2, height: 20),
+
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
-                  return Padding(
-                    padding: const EdgeInsets.only(
-                      bottom: 20,
-                    ), // spacing between buttons
-                    child: TopicWidgets.buildVideoButton(
-                      title: video['title'] ?? '',
-                      description: video['description'] ?? '',
-                      index: index,
-                      videoPage: video['videoPage']!,
-                      videosList: videosList,
-                      videoLink: video['videoLink'],
-                      context: context,
-                      hoveredStates: hoveredStates,
-                      onHoverChanged: (index, isHovered) {
-                        setState(() {
-                          hoveredStates[index] = isHovered;
-                        });
-                      },
-                    ),
+                  return TopicWidgets.buildVideoButton(
+                    title: video['title'] ?? '',
+                    description: video['description'] ?? '',
+                    index: index,
+                    videoPage: video['videoPage']!,
+                    videosList: videosList,
+                    videoLink: video['videoLink'],
+                    context: context,
+                    hoveredStates: hoveredStates,
+                    onHoverChanged: (index, isHovered) {
+                      setState(() {
+                        hoveredStates[index] = isHovered;
+                      });
+                    },
                   );
                 }),
               ),
-              SizedBox(
-                height: 40,
-                child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 28, 150, 109),
-                    foregroundColor: Colors.white,
-                  ),
-                  child: Text(
-                    'BACK',
-                    style: GoogleFonts.mPlus1(
-                      fontSize: 20,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ),
+              TopicWidgets.buildBackButton(context: context),
             ],
           ),
         ),
