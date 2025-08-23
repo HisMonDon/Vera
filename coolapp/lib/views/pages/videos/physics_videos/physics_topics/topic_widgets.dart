@@ -148,7 +148,7 @@ class TopicWidgets {
     );*/
   }
 
-  static Widget _buildVideoButton({
+  static Widget buildVideoButton({
     required String title,
     required String description,
     required int index,
@@ -165,7 +165,7 @@ class TopicWidgets {
 
     return MouseRegion(
       onEnter: (_) => onHoverChanged(index, true),
-      onExit: (_) => onHoverChanged(index, true),
+      onExit: (_) => onHoverChanged(index, false),
       child: AnimatedContainer(
         duration: Duration(milliseconds: 200),
         margin: EdgeInsets.only(bottom: 16),

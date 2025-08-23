@@ -15,93 +15,6 @@ class MomentumAndCollisions extends StatefulWidget {
 }
 
 class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
-  Widget _buildVideoButton(
-    String title,
-    String description,
-    int index,
-    Widget videoPage,
-    String videoLink,
-  ) {
-    double _width;
-    double _height;
-    bool isHovered = hoveredStates[index] ?? false;
-    if (isHovered) {
-      _width = 400;
-      _height = 200;
-    } else {
-      _height = 210;
-      _width = 400;
-    }
-
-    return MouseRegion(
-      onEnter: (_) {
-        setState(() {
-          hoveredStates[index] = true;
-        });
-      },
-      onExit: (_) {
-        setState(() {
-          hoveredStates[index] = false;
-        });
-      },
-      child: AnimatedScale(
-        duration: Duration(milliseconds: 200),
-        scale: isHovered ? 1.05 : 1.0,
-        child: SizedBox(
-          width: double.infinity,
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 10, 73, 59),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
-              ),
-            ),
-
-            onPressed: () {
-              if (index == videosList.length - 1) {
-                globals.nextVideoTitle =
-                    'last_one'; //check if the thing is named 'last_one'
-              } else {
-                globals.nextVideoTitle = videosList[index + 1]['title'];
-                globals.nextVideoPage = videosList[index + 1]['videoPage'];
-              }
-              globals.videoLink = videoLink;
-              globals.unitTitle = videosList[index]['title'];
-              print("Pushing nav page ontop of stack...");
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => videoPage),
-              );
-            },
-            child: Column(
-              children: [
-                const SizedBox(width: 1, height: 30),
-                Text(
-                  title,
-                  maxLines: 1,
-                  style: GoogleFonts.montserrat(
-                    fontSize: 30,
-                    color: const Color.fromARGB(255, 255, 255, 255),
-                  ),
-                ),
-                const SizedBox(width: 1, height: 15),
-                AutoSizeText(
-                  description,
-                  style: GoogleFonts.roboto(
-                    fontSize: 20,
-                    color: const Color.fromARGB(255, 199, 252, 221),
-                  ),
-                  maxLines: 1,
-                ),
-                const SizedBox(width: 1, height: 15),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-
   double _width = 400;
   double _height = 200;
   Map<int, bool> hoveredStates = {};
@@ -178,12 +91,20 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
                     padding: const EdgeInsets.only(
                       bottom: 20,
                     ), // spacing between buttons
-                    child: _buildVideoButton(
-                      video['title'] ?? '',
-                      video['description'] ?? '',
-                      index,
-                      video['videoPage']!,
-                      video['videoLink'],
+                    child: TopicWidgets.buildVideoButton(
+                      title: video['title'] ?? '',
+                      description: video['description'] ?? '',
+                      index: index,
+                      videoPage: video['videoPage']!,
+                      videosList: videosList,
+                      videoLink: video['videoLink'],
+                      context: context,
+                      hoveredStates: hoveredStates,
+                      onHoverChanged: (index, isHovered) {
+                        setState(() {
+                          hoveredStates[index] = isHovered;
+                        });
+                      },
                     ),
                   );
                 }),
