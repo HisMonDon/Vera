@@ -62,6 +62,7 @@ class _TopicsPageState extends State<TopicsPage> {
     required String label,
     required bool isEnabled,
   }) {
+    globals.courseTitle = '';
     return ElevatedButton.icon(
       icon: Icon(icon, size: 20, color: const Color.fromARGB(255, 15, 48, 40)),
       label: Text(
@@ -291,6 +292,7 @@ class _TopicsPageState extends State<TopicsPage> {
   Widget build(BuildContext context) {
     // add an immediate check in build method
 
+    globals.courseTitle = '';
     int buttonColorShift = 10;
     bool phy_11_hovered = false;
     if (!globals.isLoggedIn) {
