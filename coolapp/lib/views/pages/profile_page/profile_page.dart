@@ -277,7 +277,7 @@ class _ProfilePageState extends State<ProfilePage> {
           _passwordController.text,
         );
       } else {
-        // Collect video URLs from controllers
+        //collect video URLs from controllers
         final videoUrls = _videoControllers
             .map((controller) => controller.text.trim())
             .where((url) => url.isNotEmpty)
@@ -432,13 +432,13 @@ class _ProfilePageState extends State<ProfilePage> {
             TextFormField(
               controller: _userNameController,
               decoration: const InputDecoration(
-                labelText: 'Username',
+                labelText: 'Name',
                 border: OutlineInputBorder(),
                 prefixIcon: Icon(Icons.person),
               ),
               validator: (value) {
                 if (value == null || value.trim().isEmpty)
-                  return 'Please enter your username';
+                  return 'Please enter your name';
                 return null;
               },
             ),

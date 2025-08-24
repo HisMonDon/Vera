@@ -82,7 +82,7 @@ class _ElectricityAndMagnetismState extends State<ElectricityAndMagnetism> {
                 title: globals.topicTitle,
                 context: context,
                 description:
-                    'Principles of electric and magnetic phenomena, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits. Extend this understanding to magnetic fields, electromagnetic induction, and the relationship between electricity and magnetism',
+                    'Principles of electric and magnetic phenomena, right hand rule, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits. Extend this understanding to magnetic fields, electromagnetic induction, and the relationship between electricity and magnetism',
                 topIcon: Icons.flash_on,
               ),
               SizedBox(width: 2, height: 20),
