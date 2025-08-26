@@ -40,6 +40,8 @@ dependencies:
   media_kit_libs_video: ^1.0.6
   widget_mask: ^1.0.0+0
   video_thumbnail: any
+  visibility_detector: ^0.4.0
+  animate_do: ^3.0.2
 dev_dependencies:
   flutter_test:
     sdk: flutter
