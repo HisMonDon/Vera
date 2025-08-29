@@ -11,7 +11,7 @@ import 'package:animate_do/animate_do.dart';
 class AboutThisAppPage extends StatelessWidget {
   AboutThisAppPage({super.key});
   final List<dynamic> tutorialList = [
-    {Image(image: AssetImage('images_tutorial/vera_tutorial_one.jpg'))},
+    Image(image: AssetImage('images_tutorial/vera_tutorial_one.jpg')),
   ];
   @override
   Widget build(BuildContext context) {
