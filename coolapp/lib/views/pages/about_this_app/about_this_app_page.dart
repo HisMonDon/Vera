@@ -7,11 +7,39 @@ import 'dart:ui' as ui;
 //import 'dart:io';
 
 import 'package:animate_do/animate_do.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AboutThisAppPage extends StatelessWidget {
   AboutThisAppPage({super.key});
   final List<dynamic> tutorialList = [
     Image(image: AssetImage('images_tutorial/vera_tutorial_one.png')),
+
+    Image(image: AssetImage('images_tutorial/vera_tutorial_two.png')),
+
+    Image(image: AssetImage('images_tutorial/vera_tutorial_three.png')),
+  ];
+  final List<dynamic> tutorialText = [
+    Text(
+      "1: Create a new account",
+      style: GoogleFonts.mPlus1(
+        fontSize: 30,
+        color: const Color.fromARGB(255, 255, 255, 255),
+      ),
+    ),
+    Text(
+      "2: Enter new email, name, and password",
+      style: GoogleFonts.mPlus1(
+        fontSize: 30,
+        color: const Color.fromARGB(255, 255, 255, 255),
+      ),
+    ),
+    Text(
+      "3: Access unlimited free video lessons",
+      style: GoogleFonts.mPlus1(
+        fontSize: 30,
+        color: const Color.fromARGB(255, 255, 255, 255),
+      ),
+    ),
   ];
   @override
   Widget build(BuildContext context) {
@@ -44,7 +72,7 @@ class AboutThisAppPage extends StatelessWidget {
       child: Card(
         elevation: 4.0,
         child: ListTile(
-          title: Text('box'),
+          title: tutorialText[index],
           subtitle: tutorialList[index],
           contentPadding: EdgeInsets.all(16),
         ),
