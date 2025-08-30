@@ -77,10 +77,11 @@ class _MyAppState extends State<MyApp> {
       theme: globals.isLight
           ? ThemeData(
               colorScheme: ColorScheme.fromSeed(
-                seedColor: const Color.fromARGB(255, 0, 255, 149),
-                brightness: Brightness.light,
+                seedColor: const Color.fromARGB(255, 0, 34, 20),
+                //brightness: Brightness.light,
               ),
               textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
+              useMaterial3: false,
             )
           : ThemeData(
               colorScheme: ColorScheme.fromSeed(

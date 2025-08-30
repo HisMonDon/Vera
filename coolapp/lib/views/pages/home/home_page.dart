@@ -272,7 +272,7 @@ class _HomePageState extends State<HomePage> {
                                     ((MediaQuery.of(context).size.width) / 3 +
                                         100) /
                                     30,
-                                color: const Color.fromARGB(255, 167, 198, 131),
+                                color: Theme.of(context).colorScheme.primary,
                               ),
                             ),
                             SizedBox(height: 10),
@@ -473,7 +473,7 @@ class _HomePageState extends State<HomePage> {
                                     ((MediaQuery.of(context).size.width) / 3 +
                                         100) /
                                     30,
-                                color: const Color.fromARGB(255, 167, 198, 131),
+                                color: Theme.of(context).colorScheme.primary,
                               ),
                             ),
 
@@ -699,7 +699,7 @@ class _HomePageState extends State<HomePage> {
                         fontSize:
                             ((MediaQuery.of(context).size.width) / 3 + 100) /
                             30,
-                        color: const Color.fromARGB(255, 167, 198, 131),
+                        color: Theme.of(context).colorScheme.primary,
                       ),
                     ),
                     SizedBox(height: 10),

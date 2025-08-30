@@ -4,10 +4,10 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamic
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
-import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
+//import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:google_fonts/google_fonts.dart';
+//import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 
 bool isPremium = false;
