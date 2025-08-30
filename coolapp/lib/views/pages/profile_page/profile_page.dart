@@ -369,7 +369,13 @@ class _ProfilePageState extends State<ProfilePage> {
         children: [
           Text(
             _isLogin ? 'Login' : 'Create Account',
-            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: globals.isLight
+                  ? Color.fromARGB(255, 15, 48, 40)
+                  : Colors.white,
+            ),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
@@ -452,13 +458,15 @@ class _ProfilePageState extends State<ProfilePage> {
               onPressed: _submit,
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 12),
-                backgroundColor: Theme.of(context).primaryColor,
+                backgroundColor: globals.isLight
+                    ? const Color.fromARGB(255, 15, 48, 40)
+                    : Theme.of(context).primaryColor,
               ),
               child: Text(
                 _isLogin ? 'Login' : 'Register',
                 style: const TextStyle(
                   fontSize: 16,
-                  color: const Color.fromARGB(255, 130, 213, 200),
+                  //color: const Color.fromARGB(255, 130, 213, 200),
                 ),
               ),
             ),
@@ -474,7 +482,11 @@ class _ProfilePageState extends State<ProfilePage> {
                   },
             child: Text(
               _isLogin ? 'Create new account' : 'I already have an account',
-              style: TextStyle(color: const Color.fromARGB(255, 130, 213, 200)),
+              style: TextStyle(
+                color: globals.isLight
+                    ? const Color.fromARGB(255, 15, 48, 40)
+                    : const Color.fromARGB(241, 19, 168, 131),
+              ),
             ),
           ),
         ],
@@ -489,7 +501,7 @@ class _ProfilePageState extends State<ProfilePage> {
       children: [
         CircleAvatar(
           radius: 50,
-          backgroundColor: const Color.fromARGB(255, 187, 251, 201),
+          //backgroundColor: const Color.fromARGB(255, 187, 251, 201),
           child: const Icon(
             Icons.person,
             size: 50,
@@ -525,7 +537,7 @@ class _ProfilePageState extends State<ProfilePage> {
           onPressed: _signOut,
           style: ElevatedButton.styleFrom(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 12),
-            side: BorderSide(color: Theme.of(context).primaryColor),
+            //side: BorderSide(color: Theme.of(context).primaryColor),
           ),
         ),
       ],
@@ -535,6 +547,9 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: globals.isLight
+          ? const Color.fromARGB(241, 19, 168, 131)
+          : Colors.black,
       appBar: TimedAppBar(),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
