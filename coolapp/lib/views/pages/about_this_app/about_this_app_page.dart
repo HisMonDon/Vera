@@ -12,6 +12,7 @@ import 'package:google_fonts/google_fonts.dart';
 class AboutThisAppPage extends StatelessWidget {
   AboutThisAppPage({super.key});
   final List<dynamic> tutorialList = [
+    Text('Guide to signing up'),
     Image(image: AssetImage('images_tutorial/vera_tutorial_one.png')),
 
     Image(image: AssetImage('images_tutorial/vera_tutorial_two.png')),
@@ -19,6 +20,13 @@ class AboutThisAppPage extends StatelessWidget {
     Image(image: AssetImage('images_tutorial/vera_tutorial_three.png')),
   ];
   final List<dynamic> tutorialText = [
+    Text(
+      "Get Started with Vera!",
+      style: GoogleFonts.mPlus1(
+        fontSize: 50,
+        color: const Color.fromARGB(255, 255, 255, 255),
+      ),
+    ),
     Text(
       "1: Create a new account",
       style: GoogleFonts.mPlus1(
