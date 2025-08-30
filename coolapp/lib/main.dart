@@ -75,37 +75,51 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      initialRoute: '/widgetTree',
-      routes: {
-        '/widgetTree': (context) {
-          final args = ModalRoute.of(context)?.settings.arguments;
-          int initialIndex = 2;
-          if (args != null && args is int) {
-            initialIndex = args;
-          }
-          return WidgetTree(initialIndex: initialIndex);
-        },
-        '/notLoggedIn': (context) => NotLoggedIn(),
+    return ValueListenableBuilder<bool>(
+      valueListenable: themeNotifier,
+      builder: (context, isLight, child) {
+        return MaterialApp(
+          initialRoute: '/widgetTree',
+          routes: {
+            '/widgetTree': (context) {
+              final args = ModalRoute.of(context)?.settings.arguments;
+              int initialIndex = 2;
+              if (args != null && args is int) {
+                initialIndex = args;
+              }
+              return WidgetTree(initialIndex: initialIndex);
+            },
+            '/notLoggedIn': (context) => NotLoggedIn(),
+          },
+          debugShowCheckedModeBanner: false,
+          theme: globals.isLight
+              ? ThemeData(
+                  colorScheme: ColorScheme.fromSeed(
+                    seedColor: const Color.fromARGB(255, 0, 34, 20),
+                    //brightness: Brightness.light,
+                  ),
+                  textTheme: GoogleFonts.interTextTheme(
+                    ThemeData.dark().textTheme,
+                  ),
+                  useMaterial3: false,
+                  scaffoldBackgroundColor: const Color.fromARGB(
+                    73,
+                    19,
+                    168,
+                    106,
+                  ),
+                )
+              : ThemeData(
+                  colorScheme: ColorScheme.fromSeed(
+                    seedColor: Colors.teal,
+                    brightness: Brightness.dark,
+                  ),
+                  textTheme: GoogleFonts.interTextTheme(
+                    ThemeData.dark().textTheme,
+                  ),
+                ),
+        ); //will also need to change theme data once the button in settings is toggled
       },
-      debugShowCheckedModeBanner: false,
-      theme: globals.isLight
-          ? ThemeData(
-              colorScheme: ColorScheme.fromSeed(
-                seedColor: const Color.fromARGB(255, 0, 34, 20),
-                //brightness: Brightness.light,
-              ),
-              textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
-              useMaterial3: false,
-              scaffoldBackgroundColor: const Color.fromARGB(73, 19, 168, 106),
-            )
-          : ThemeData(
-              colorScheme: ColorScheme.fromSeed(
-                seedColor: Colors.teal,
-                brightness: Brightness.dark,
-              ),
-              textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
-            ), //will also need to change theme data once the button in settings is toggled
     );
   }
 }
