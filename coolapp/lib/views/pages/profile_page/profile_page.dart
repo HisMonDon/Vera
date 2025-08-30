@@ -561,7 +561,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: globals.isLight
-          ? const Color.fromARGB(255, 136, 209, 178)
+          ? const Color.fromARGB(255, 168, 230, 207)
           : Color.fromARGB(255, 14, 21, 20),
       appBar: TimedAppBar(),
       body: Padding(
