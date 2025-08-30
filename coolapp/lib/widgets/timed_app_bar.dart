@@ -39,14 +39,14 @@ class _TimedAppBarState extends State<TimedAppBar> {
     return AppBar(
       centerTitle: true,
       title: Text("Vera", style: GoogleFonts.mPlus1()),
-      //backgroundColor: const Color.fromARGB(255, 15, 48, 40),
+      backgroundColor: const Color.fromARGB(255, 15, 48, 40),
       actions: [
         Padding(
           padding: const EdgeInsets.only(right: 16.0),
           child: Center(
             child: Text(
               "${_currentTime.hour}:${_currentTime.minute.toString().padLeft(2, '0')}",
-              //style: TextStyle(color: Colors.white),
+              style: TextStyle(color: Colors.white),
             ),
           ),
         ),
