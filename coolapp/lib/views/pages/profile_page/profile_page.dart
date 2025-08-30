@@ -471,7 +471,13 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
             ),
           const SizedBox(height: 16),
-          TextButton(
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              padding: const EdgeInsets.symmetric(vertical: 12),
+              backgroundColor: globals.isLight
+                  ? const Color.fromARGB(255, 15, 48, 40)
+                  : Theme.of(context).primaryColor,
+            ),
             onPressed: _isLoading
                 ? null
                 : () {
@@ -483,9 +489,10 @@ class _ProfilePageState extends State<ProfilePage> {
             child: Text(
               _isLogin ? 'Create new account' : 'I already have an account',
               style: TextStyle(
-                color: globals.isLight
+                /*color: globals.isLight
                     ? const Color.fromARGB(255, 15, 48, 40)
-                    : const Color.fromARGB(241, 19, 168, 131),
+                    : 
+                    //Theme.of(context).primaryColor,*/
               ),
             ),
           ),
@@ -549,7 +556,7 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
       backgroundColor: globals.isLight
           ? const Color.fromARGB(241, 19, 168, 131)
-          : Color.fromARGB(255, 4, 34, 26),
+          : Color.fromARGB(255, 14, 21, 20),
       appBar: TimedAppBar(),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

@@ -18,6 +18,12 @@ Khaki Gray	#9CA88E	(156, 168, 142)	Color.fromARGB(255, 156, 168, 142)	Neutral te
 Pale Fern	#BFD8B8	(191, 216, 184)	Color.fromARGB(255, 191, 216, 184)	Light alternating blocks
 Faded Moss	#CBDDC4	(203, 221, 196)	Color.fromARGB(255, 203, 221, 196)	Subtle soft fill, use sparingly
 //pair with deep forest Color.fromARGB(255, 60, 90, 70)
+
+deep forest:
+Color.fromARGB(255, 15, 48, 40)
+
+background dark: 
+Color.fromARGB(255, 4, 34, 26),
 */
 int dailyRandom(int max) {
   final now = DateTime.now();
@@ -86,7 +92,7 @@ class _MyAppState extends State<MyApp> {
             )
           : ThemeData(
               colorScheme: ColorScheme.fromSeed(
-                seedColor: const Color.fromARGB(255, 167, 198, 131),
+                seedColor: Colors.teal,
                 brightness: Brightness.dark,
               ),
               textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
