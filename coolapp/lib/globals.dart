@@ -60,10 +60,11 @@ List<Map<String, dynamic>> videoOfTheDay = [
 ];
 int videoOfTheDayIndex = 0;
 bool isLight = true;
-dynamic appTheme = ThemeData(
+/*dynamic appTheme = ThemeData(
   colorScheme: ColorScheme.fromSeed(
     seedColor: const Color.fromARGB(255, 0, 255, 149),
     brightness: Brightness.light,
   ),
   textTheme: GoogleFonts.interTextTheme(ThemeData.light().textTheme),
-);
+);*/
+//delete this later if dont need
