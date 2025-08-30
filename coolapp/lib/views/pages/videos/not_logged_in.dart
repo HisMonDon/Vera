@@ -46,7 +46,7 @@ class NotLoggedIn extends StatelessWidget {
             ),
 
             SizedBox(height: 20),
-            Icon(Icons.lock, size: 150),
+            Icon(Icons.lock, size: 150, color: Colors.white),
             ElevatedButton(
               onPressed: () {
                 // Update the selected index
@@ -64,15 +64,24 @@ class NotLoggedIn extends StatelessWidget {
                 );
               },
               style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
                 backgroundColor: const Color.fromARGB(255, 28, 150, 109),
                 foregroundColor: Colors.white,
               ),
-              child: Text(
-                'Login or Sign Up',
-                style: GoogleFonts.montserrat(
-                  fontSize: 20,
-                  color: Colors.white,
-                ),
+              child: Column(
+                children: [
+                  SizedBox(height: 5),
+                  Text(
+                    'Login or Sign Up',
+                    style: GoogleFonts.montserrat(
+                      fontSize: 20,
+                      color: Colors.white,
+                    ),
+                  ),
+                  SizedBox(height: 5),
+                ],
               ),
             ),
           ],
