@@ -25,6 +25,7 @@ Color.fromARGB(255, 15, 48, 40)
 background dark: 
 Color.fromARGB(255, 4, 34, 26),
 */
+
 int dailyRandom(int max) {
   final now = DateTime.now();
   final dateString = "${now.year}-${now.month}-${now.day}";
@@ -58,6 +59,14 @@ Future<void> _initializeAuthState() async {
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
+  static final ValueNotifier<bool> themeNotifier = ValueNotifier<bool>(
+    globals.isLight,
+  );
+
+  static void updateTheme(bool isLight) {
+    globals.isLight = isLight;
+    themeNotifier.value = isLight;
+  }
 
   @override
   State<MyApp> createState() => _MyAppState();

@@ -59,7 +59,7 @@ List<Map<String, dynamic>> videoOfTheDay = [
   },
 ];
 int videoOfTheDayIndex = 0;
-bool isLight = true;
+bool isLight = false;
 /*dynamic appTheme = ThemeData(
   colorScheme: ColorScheme.fromSeed(
     seedColor: const Color.fromARGB(255, 0, 255, 149),
