@@ -76,7 +76,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<bool>(
-      valueListenable: themeNotifier,
+      valueListenable: MyApp.themeNotifier,
       builder: (context, isLight, child) {
         return MaterialApp(
           initialRoute: '/widgetTree',
