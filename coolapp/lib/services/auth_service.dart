@@ -49,21 +49,36 @@ class AuthService {
 
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
+
+        // Save auth data first - this is what makes the hot restart work
         await _saveAuthData(data, email);
-        final name = await getUserNameFromFirestore(
-          data['localId'],
-          data['idToken'],
-        );
-        if (name != null) {
-          globals.userName = name;
-          await saveUserName(name);
+
+        try {
+          // Handle Firestore operations separately so authentication still succeeds
+          // even if Firestore operations fail
+          final name = await getUserNameFromFirestore(
+            data['localId'],
+            data['idToken'],
+          );
+          if (name != null) {
+            globals.userName = name;
+            await saveUserName(name);
+          }
+        } catch (firestoreError) {
+          print("Firestore error: $firestoreError");
         }
+        globals.isLoggedIn = true;
+        globals.userId = data['localId'];
+        globals.idToken = data['idToken'];
+
         return true;
       } else {
         final error = json.decode(response.body);
+        print("Login error: ${error['error']['message']}");
         throw Exception(error['error']['message']);
       }
     } catch (e) {
+      print("Login exception: $e");
       return false;
     }
   }
