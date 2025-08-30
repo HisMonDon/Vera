@@ -117,13 +117,28 @@ class _HomePageState extends State<HomePage> {
     builder: (dialogContext) {
       _nameController.text = _displayName; // show raw name without comma
       return AlertDialog(
-        title: Text('Edit Name'),
+        title: Text(
+          'Edit Name',
+          style: TextStyle(
+            color: globals.isLight
+                ? Color.fromARGB(255, 7, 77, 53)
+                : Colors.white,
+          ),
+        ),
         content: TextFormField(
+          style: TextStyle(
+            color: globals.isLight
+                ? Color.fromARGB(255, 7, 77, 53)
+                : Colors.white,
+          ),
           controller: _nameController,
           decoration: InputDecoration(
             labelText: 'Enter new name',
             border: OutlineInputBorder(),
             prefixIcon: Icon(Icons.person),
+            iconColor: globals.isLight
+                ? Color.fromARGB(255, 7, 77, 53)
+                : Colors.white,
           ),
         ),
         actions: [
