@@ -7,6 +7,9 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentu
 import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
 import 'package:flutter/widgets.dart';
 
+import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/material.dart';
+
 bool isPremium = false;
 bool isLoggedIn = false;
 bool isAdmin = false;
@@ -56,3 +59,11 @@ List<Map<String, dynamic>> videoOfTheDay = [
   },
 ];
 int videoOfTheDayIndex = 0;
+bool isLight = true;
+dynamic appTheme = ThemeData(
+  colorScheme: ColorScheme.fromSeed(
+    seedColor: const Color.fromARGB(255, 0, 255, 149),
+    brightness: Brightness.light,
+  ),
+  textTheme: GoogleFonts.interTextTheme(ThemeData.light().textTheme),
+);

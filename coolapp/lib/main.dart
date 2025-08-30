@@ -74,13 +74,21 @@ class _MyAppState extends State<MyApp> {
         '/notLoggedIn': (context) => NotLoggedIn(),
       },
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.teal,
-          brightness: Brightness.dark,
-        ),
-        textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
-      ),
+      theme: globals.isLight
+          ? ThemeData(
+              colorScheme: ColorScheme.fromSeed(
+                seedColor: const Color.fromARGB(255, 0, 255, 149),
+                brightness: Brightness.light,
+              ),
+              textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
+            )
+          : ThemeData(
+              colorScheme: ColorScheme.fromSeed(
+                seedColor: const Color.fromARGB(255, 0, 255, 149),
+                brightness: Brightness.dark,
+              ),
+              textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
+            ), //will also need to change theme data once the button in settings is toggled
     );
   }
 }

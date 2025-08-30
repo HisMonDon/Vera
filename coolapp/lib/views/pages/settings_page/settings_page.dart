@@ -7,6 +7,6 @@ class HelpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //remmeber to add appbar
-    return Center(child: Text('Help Page'));
+    return Center(child: Text('Settings Page'));
   }
 }

@@ -1,5 +1,5 @@
-import 'package:coolapp/views/pages/about_this_app/about_this_app_page.dart';
-import 'package:coolapp/views/pages/help_page/help_page.dart';
+import 'package:coolapp/views/pages/get_started/get_started.dart';
+import 'package:coolapp/views/pages/settings_page/settings_page.dart';
 import 'package:coolapp/views/pages/home/home_page.dart';
 import 'package:coolapp/views/pages/profile_page/profile_page.dart';
 import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
