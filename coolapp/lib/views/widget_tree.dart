@@ -91,7 +91,7 @@ class _WidgetTreeState extends State<WidgetTree> {
   List<PersistentBottomNavBarItem> _navBarsItems() {
     return [
       PersistentBottomNavBarItem(
-        icon: const Icon(Icons.question_mark_sharp),
+        icon: const Icon(Icons.question_mark),
         title: "Get Started",
         activeColorPrimary: Colors.white,
         inactiveColorPrimary: Colors.white,
@@ -116,8 +116,8 @@ class _WidgetTreeState extends State<WidgetTree> {
         inactiveColorPrimary: Colors.white,
       ),
       PersistentBottomNavBarItem(
-        icon: const Icon(Icons.question_answer_rounded),
-        title: "Help",
+        icon: const Icon(Icons.settings),
+        title: "Settings",
         activeColorPrimary: Colors.white,
         inactiveColorPrimary: Colors.white,
       ),
