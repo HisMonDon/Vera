@@ -82,6 +82,7 @@ class _MyAppState extends State<MyApp> {
               ),
               textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
               useMaterial3: false,
+              scaffoldBackgroundColor: const Color.fromARGB(255, 19, 168, 106),
             )
           : ThemeData(
               colorScheme: ColorScheme.fromSeed(
@@ -93,3 +94,4 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
+//const Color.fromARGB(255, 167, 198, 131),
