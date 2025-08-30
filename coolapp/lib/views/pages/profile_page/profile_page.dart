@@ -68,7 +68,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
                           color: Colors.red.shade50,
-                          borderRadius: BorderRadius.circular(8),
+                          borderRadius: BorderRadius.circular(16),
                         ),
                         child: Text(
                           _errorMessage!,
@@ -387,7 +387,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 border: Border.all(
                   color: const Color.fromARGB(255, 245, 159, 159),
                 ),
-                borderRadius: BorderRadius.circular(8),
+                borderRadius: BorderRadius.circular(16),
               ),
               child: Text(
                 _errorMessage!,
@@ -401,9 +401,15 @@ class _ProfilePageState extends State<ProfilePage> {
             const SizedBox(height: 16),
           ],
           TextFormField(
+            style: TextStyle(
+              color: globals.isLight
+                  ? Color.fromARGB(255, 0, 0, 0)
+                  : Color.fromARGB(255, 255, 255, 255),
+            ),
             controller: _emailController,
             decoration: const InputDecoration(
               labelText: 'Email',
+
               border: OutlineInputBorder(),
               prefixIcon: Icon(Icons.email),
             ),
@@ -555,7 +561,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: globals.isLight
-          ? const Color.fromARGB(241, 19, 168, 131)
+          ? const Color.fromARGB(255, 136, 209, 178)
           : Color.fromARGB(255, 14, 21, 20),
       appBar: TimedAppBar(),
       body: Padding(
