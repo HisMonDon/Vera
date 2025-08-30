@@ -58,7 +58,14 @@ class _ProfilePageState extends State<ProfilePage> {
         return StatefulBuilder(
           builder: (context, setState) {
             return AlertDialog(
-              title: Text('Change Password'),
+              title: Text(
+                'Change Password',
+                style: TextStyle(
+                  color: globals.isLight
+                      ? Color.fromARGB(255, 7, 77, 53)
+                      : Colors.white,
+                ),
+              ),
               content: SingleChildScrollView(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -524,7 +531,13 @@ class _ProfilePageState extends State<ProfilePage> {
         const SizedBox(height: 20),
         Text(
           'Welcome, ${globals.userName}',
-          style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: globals.isLight
+                ? Color.fromARGB(255, 7, 77, 53)
+                : Colors.white,
+          ),
         ),
         const SizedBox(height: 10),
         Text(
@@ -538,8 +551,6 @@ class _ProfilePageState extends State<ProfilePage> {
           onPressed: _showChangePasswordDialog,
           style: ElevatedButton.styleFrom(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 12),
-
-            side: BorderSide(color: Theme.of(context).primaryColor),
           ),
         ),
         const SizedBox(height: 16),
