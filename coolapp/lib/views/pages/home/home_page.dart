@@ -201,10 +201,19 @@ class _HomePageState extends State<HomePage> {
                           child: WidgetMask(
                             blendMode: BlendMode.srcATop,
                             childSaveLayer: true,
-                            mask: Image(
-                              image: AssetImage('images/text_background.jpg'),
-                              fit: BoxFit.cover,
-                            ),
+                            mask: globals.isLight
+                                ? Image(
+                                    image: AssetImage(
+                                      'images/text_background_light.png',
+                                    ),
+                                    fit: BoxFit.cover,
+                                  )
+                                : Image(
+                                    image: AssetImage(
+                                      'images/text_background.jpg',
+                                    ),
+                                    fit: BoxFit.cover,
+                                  ),
                             child: AutoSizeText(
                               globals.welcomeText,
                               style: GoogleFonts.inter(
@@ -242,10 +251,17 @@ class _HomePageState extends State<HomePage> {
                     WidgetMask(
                       blendMode: BlendMode.srcATop,
                       childSaveLayer: true,
-                      mask: Image(
-                        image: AssetImage('images/text_background.jpg'),
-                        fit: BoxFit.cover,
-                      ),
+                      mask: globals.isLight
+                          ? Image(
+                              image: AssetImage(
+                                'images/text_background_light.png',
+                              ),
+                              fit: BoxFit.cover,
+                            )
+                          : Image(
+                              image: AssetImage('images/text_background.jpg'),
+                              fit: BoxFit.cover,
+                            ),
                       child: AutoSizeText(
                         globals.motivationalMessage,
                         style: GoogleFonts.mPlus1(
