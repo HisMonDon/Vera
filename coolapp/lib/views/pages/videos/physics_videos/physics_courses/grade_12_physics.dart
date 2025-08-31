@@ -1,6 +1,9 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/quantum_mechanics.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
@@ -179,38 +182,31 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 2: Energy & Momentum',
-      'description': 'Conservation laws and applications',
-      'videoPage': VideoPlayerScreen(),
+      'title': 'Unit 2: Momentum',
+      'description':
+          'Momentum, elastic and non-elastic collisions, and impulse',
+      'videoPage': MomentumAndCollisions(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 3: Gravitational, Electric & Magnetic Fields',
-      'description': 'Field interactions and calculations',
-      'videoPage': VideoPlayerScreen(),
+      'title': 'Unit 3: Energy',
+      'description': 'Potential and Kinetic Energy',
+      'videoPage': MomentumAndCollisions(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 4: Wave Nature of Light',
+      'title': 'Unit 4: Optics',
       'description': 'Interference, diffraction, and polarization',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': Optics(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 5: Quantum Mechanics',
       'description': 'Introduction to wave functions and quantum phenomena',
-      'videoPage': VideoPlayerScreen(),
-      'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
-    },
-    {
-      'title': 'Unit 6: Special Relativity',
-      'description':
-          'Time dilation, length contraction, and relativistic effects',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': QuantumMechanics(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

@@ -1,5 +1,8 @@
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/quantum_mechanics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/rotational_motion.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
@@ -187,7 +190,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
     {
       'title': 'Unit 3: Rotational Motion',
       'description': 'Rotational kinematics and moment of inertia',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': RotationalMotion(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -204,7 +207,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
       'title': 'Unit 5: Electricity and Magnetism',
       'description':
           "Maxwell's equations, electromagnetic induction, and AC circuits",
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': ElectricityAndMagnetism(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -212,15 +215,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
       'title': 'Unit 6: Quantum Physics',
       'description':
           "Wave-particle duality, nuclear physics, and radioactive decay",
-      'videoPage': VideoPlayerScreen(),
-      'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
-    },
-    {
-      'title':
-          'HL Extension: Gravitational Field', //shared with grade 12 physics
-      'description': "Orbital mechanics and gravitational potential",
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': QuantumMechanics(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

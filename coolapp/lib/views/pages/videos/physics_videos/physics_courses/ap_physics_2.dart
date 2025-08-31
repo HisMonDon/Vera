@@ -1,5 +1,9 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/free_videos.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electrostatics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/quantum_mechanics.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
@@ -179,42 +183,30 @@ class _ApPhysics2State extends State<ApPhysics2> {
     {
       'title': 'Unit 2: Electrostatics',
       'description': "Electric Charge, Coulomb's Law, Electric Field",
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': Electrostatics(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 3: Capacitance and Electric Potential: ',
-      'description': 'Dielectrics and capacitor networks',
-      'videoPage': VideoPlayerScreen(),
+      'title': 'Unit 3: Electric Circuits and Magnetism',
+      'description':
+          'RC Time Constants, Circuit Analysis, Magnetic fields, EMF, Moving Charges',
+      'videoPage': ElectricityAndMagnetism(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
+
     {
-      'title': 'Unit 4: Electric Circuits',
-      'description': 'RC time constants and circuit analysis',
-      'videoPage': VideoPlayerScreen(),
-      'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
-    },
-    {
-      'title': 'Unit 5: Magnetism',
-      'description': 'Magnetic fields, EMF, Moving Charges',
-      'videoPage': VideoPlayerScreen(),
-      'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
-    },
-    {
-      'title': 'Unit 6: Optics',
+      'title': 'Unit 4: Optics',
       'description': 'Lens equations and optical instruments',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': Optics(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 7: Modern Physics',
+      'title': 'Unit 5: Modern Physics',
       'description': 'Nuclear, Quantum, Atomic Physics, wave functions',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': QuantumMechanics(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

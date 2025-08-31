@@ -1,7 +1,10 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/free_videos.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/fluids.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/rotational_motion.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
@@ -209,21 +212,21 @@ class _ApPhysics1State extends State<ApPhysics1> {
     {
       'title': 'Unit 7: Harmonics',
       'description': 'Pendulum dynamics and spring systems',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': Harmonics(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 8: Rotational Motion',
       'description': 'Rotational kinematics and moment of inertia',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': RotationalMotion(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 9: Fluids',
       'description': "Bernoulli's principle and Pascal's law applications",
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': Fluids(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

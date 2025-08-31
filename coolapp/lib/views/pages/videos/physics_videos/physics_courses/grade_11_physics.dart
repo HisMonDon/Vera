@@ -1,5 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
@@ -188,7 +190,7 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
     {
       'title': "Unit 3: Dynamics",
       'description': "Forces and Newton's Laws",
-      'videoPage': VideoPlayerScreen(), //change to new physics topic
+      'videoPage': Dynamics(), //change to new physics topic
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -201,9 +203,9 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
-      'title': 'Unit 5: Waves and Sound',
-      'description': 'Harmonics, resonance, and Doppler effect',
-      'videoPage': VideoPlayerScreen(),
+      'title': 'Unit 5: Harmonics',
+      'description': 'Pendulum dynamics, waves and sounds',
+      'videoPage': Harmonics(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
