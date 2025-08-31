@@ -85,6 +85,11 @@ class _ProfilePageState extends State<ProfilePage> {
                       SizedBox(height: 16),
                     ],
                     TextFormField(
+                      style: TextStyle(
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 7, 77, 53)
+                            : Colors.white,
+                      ),
                       controller: _currentPasswordController,
                       decoration: InputDecoration(
                         labelText: 'Current Password',
@@ -96,16 +101,29 @@ class _ProfilePageState extends State<ProfilePage> {
                     //then have space
                     SizedBox(height: 15),
                     TextFormField(
+                      style: TextStyle(
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 7, 77, 53)
+                            : Colors.white,
+                      ),
                       controller: _newPasswordController,
                       decoration: InputDecoration(
                         labelText: 'New Password',
                         border: OutlineInputBorder(),
                         prefixIcon: Icon(Icons.lock),
+                        fillColor: globals.isLight
+                            ? Color.fromARGB(255, 7, 77, 53)
+                            : Colors.white,
                       ),
                       obscureText: true,
                     ),
                     SizedBox(height: 15),
                     TextFormField(
+                      style: TextStyle(
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 7, 77, 53)
+                            : Colors.white,
+                      ),
                       controller: _confirmPasswordController,
                       decoration: InputDecoration(
                         labelText: 'Confirm New Password',
