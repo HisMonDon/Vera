@@ -49,7 +49,7 @@ class NotLoggedIn extends StatelessWidget {
             Icon(Icons.lock, size: 150, color: Colors.white),
             ElevatedButton(
               onPressed: () {
-                // Update the selected index
+                //Update the selected index
                 global.selectedIndex = 1;
 
                 // Navigate to widget tree with profile tab selected

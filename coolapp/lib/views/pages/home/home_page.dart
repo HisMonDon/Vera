@@ -303,7 +303,9 @@ class _HomePageState extends State<HomePage> {
                                     ((MediaQuery.of(context).size.width) / 3 +
                                         100) /
                                     30,
-                                color: Theme.of(context).colorScheme.primary,
+                                color: globals.isLight
+                                    ? Color.fromARGB(255, 7, 77, 53)
+                                    : Color.fromARGB(255, 167, 198, 131),
                               ),
                             ),
                             SizedBox(height: 10),
@@ -504,7 +506,9 @@ class _HomePageState extends State<HomePage> {
                                     ((MediaQuery.of(context).size.width) / 3 +
                                         100) /
                                     30,
-                                color: Theme.of(context).colorScheme.primary,
+                                color: globals.isLight
+                                    ? Color.fromARGB(255, 7, 77, 53)
+                                    : Color.fromARGB(255, 167, 198, 131),
                               ),
                             ),
 
@@ -732,7 +736,9 @@ class _HomePageState extends State<HomePage> {
                         fontSize:
                             ((MediaQuery.of(context).size.width) / 3 + 100) /
                             30,
-                        color: Theme.of(context).colorScheme.primary,
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 7, 77, 53)
+                            : Color.fromARGB(255, 167, 198, 131),
                       ),
                     ),
                     SizedBox(height: 10),
