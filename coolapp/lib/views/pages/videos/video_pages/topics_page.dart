@@ -2,9 +2,15 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electrostatics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/fluids.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/quantum_mechanics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/rotational_motion.dart';
 import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
@@ -284,8 +290,50 @@ class _TopicsPageState extends State<TopicsPage> {
       'title': 'Forces and Dynamics',
       'imagePath': 'images/dynamics.jpg',
       'description':
-          "Examine how forces influence motion through Newton’s laws of motion. Concepts such as mass, weight, friction, tension, and normal force, learn how to analyze interactions between objects, use Free Body Diagrams",
+          "Examine how forces influence motion through Newton's laws of motion. Concepts such as mass, weight, friction, tension, and normal force, learn how to analyze interactions between objects, use Free Body Diagrams",
       'videoPage': Dynamics(),
+    },
+    {
+      'title': 'Rotational Motion',
+      'imagePath': 'images/rotational_motion.jpg',
+      'description':
+          'Angular velocity, torque calculations, moment of inertia for different shapes, angular momentum conservation, and rotational kinetic energy. Learn to solve problems with rotating objects and analyze gyroscopic motion.',
+      'videoPage': RotationalMotion(),
+    },
+    {
+      'title': 'Optics',
+      'imagePath': 'images/optics.png',
+      'description':
+          'Mirror and lens equations, analyze optical instruments, understand diffraction patterns and interference phenomena. Calculate critical angles for total internal reflection and solve problems involving polarization.',
+      'videoPage': Optics(),
+    },
+    {
+      'title': 'Fluids',
+      'imagePath': 'images/fluids.png',
+      'description':
+          'Hydrostatic pressure at different depths, analyze buoyant forces using Archimedes\' principle, apply Bernoulli\'s equation to fluid flow problems, and understand viscosity effects in real-world applications like blood flow and aerodynamics.',
+      'videoPage': Fluids(),
+    },
+    {
+      'title': 'Electrostatics',
+      'imagePath': 'images/electrostatics.png',
+      'description':
+          'Electric fields and forces using Coulomb\'s law, analyze charge distributions, determine electric potential and energy, solve capacitor problems, and understand electric field mapping through equipotential surfaces.',
+      'videoPage': Electrostatics(),
+    },
+    {
+      'title': 'Quantum Mechanics',
+      'imagePath': 'images/quantum_mechanics.jpg',
+      'description':
+          'Photoelectric effect, calculate de Broglie wavelengths, apply Heisenberg\'s uncertainty principle, analyze quantum tunneling scenarios, and explore probability distributions in atomic models and wave functions.',
+      'videoPage': QuantumMechanics(),
+    },
+    {
+      'title': 'Harmonics',
+      'imagePath': 'images/harmonics.jpg',
+      'description':
+          'Analyze simple harmonic motion equations, calculate periods of pendulums and spring systems, understand resonance conditions, solve damped oscillation problems, and model coupled oscillators in mechanical and electrical systems.',
+      'videoPage': Harmonics(),
     },
   ];
   @override
