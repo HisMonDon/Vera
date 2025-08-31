@@ -217,16 +217,22 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
             ),
 
             if (globals.nextVideoTitle != 'last_one')
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
+              Column(
                 children: [
-                  Text(
-                    "Next video: ${globals.nextVideoTitle}",
-                    style: TextStyle(fontSize: 20),
+                  SizedBox(height: 20),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Next video: ${globals.nextVideoTitle}",
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ],
                   ),
                 ],
               ),
+            SizedBox(height: 30),
           ],
         ),
       ),
