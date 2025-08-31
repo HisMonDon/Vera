@@ -226,7 +226,8 @@ class _ProfilePageState extends State<ProfilePage> {
                             } else {
                               setState(() {
                                 _errorMessage =
-                                    'Failed to change password. Please try again.';
+                                    'Failed to change password. ' +
+                                    globals.errorMessage;
                                 _isLoading = false;
                               });
                             }

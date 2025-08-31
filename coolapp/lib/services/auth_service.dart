@@ -130,6 +130,7 @@ class AuthService {
       }
     } catch (e) {
       print("Password change error: $e");
+      globals.errorMessage = e.toString();
       return false;
     }
   }
