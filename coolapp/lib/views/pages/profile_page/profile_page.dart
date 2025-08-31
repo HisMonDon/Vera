@@ -211,6 +211,8 @@ class _ProfilePageState extends State<ProfilePage> {
 
                             if (success) {
                               Navigator.pop(context);
+
+                              ScaffoldMessenger.of(context).clearSnackBars();
                               ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(
                                   content: Text(
@@ -329,6 +331,7 @@ class _ProfilePageState extends State<ProfilePage> {
         await _checkLoginStatus();
 
         if (mounted) {
+          ScaffoldMessenger.of(context).clearSnackBars();
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(
