@@ -1,8 +1,10 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/quantum_mechanics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/rotational_motion.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
@@ -176,7 +178,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
       'title': 'Unit 1: Measurement and Uncertainties',
       'description':
           'Error propagation, uncertainty calculations, and graphical analysis techniques',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': IntroToPhysics(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -199,7 +201,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
           'Unit 4:  Thermal Physics', //make a whole folder for this perchance?
       'description':
           'Kinetic theory, thermodynamics laws, and heat transfer mechanisms',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': ThermalPhysics(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

@@ -4,6 +4,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electri
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electrostatics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/quantum_mechanics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
@@ -176,7 +177,7 @@ class _ApPhysics2State extends State<ApPhysics2> {
     {
       'title': 'Unit 1: Thermodynamics',
       'description': 'Kinetic Theory Of Gases, Laws of Thermodynamics',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': ThermalPhysics(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

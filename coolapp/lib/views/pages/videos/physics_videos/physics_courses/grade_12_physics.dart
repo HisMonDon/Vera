@@ -4,6 +4,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_t
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/quantum_mechanics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_and_energy.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
@@ -192,7 +193,7 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
     {
       'title': 'Unit 3: Energy',
       'description': 'Potential and Kinetic Energy',
-      'videoPage': MomentumAndCollisions(),
+      'videoPage': WorkAndEnergy(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
