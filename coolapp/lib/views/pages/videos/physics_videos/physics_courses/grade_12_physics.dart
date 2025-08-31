@@ -325,7 +325,6 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
                     ),
                   ),
                   onPressed: () {
-                    globals.topicTitle = '';
                     Navigator.of(context).pop();
                   },
                 ),
