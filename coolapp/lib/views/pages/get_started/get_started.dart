@@ -24,28 +24,28 @@ class AboutThisAppPage extends StatelessWidget {
       "Get Started with Vera!",
       style: GoogleFonts.mPlus1(
         fontSize: 50,
-        color: const Color.fromARGB(255, 255, 255, 255),
+        color: globals.isLight ? Color.fromARGB(255, 7, 77, 53) : Colors.white,
       ),
     ),
     Text(
       "1: Create a new account",
       style: GoogleFonts.mPlus1(
         fontSize: 30,
-        color: const Color.fromARGB(255, 255, 255, 255),
+        color: globals.isLight ? Color.fromARGB(255, 7, 77, 53) : Colors.white,
       ),
     ),
     Text(
       "2: Enter new email, name, and password",
       style: GoogleFonts.mPlus1(
         fontSize: 30,
-        color: const Color.fromARGB(255, 255, 255, 255),
+        color: globals.isLight ? Color.fromARGB(255, 7, 77, 53) : Colors.white,
       ),
     ),
     Text(
       "3: Access unlimited free video lessons",
       style: GoogleFonts.mPlus1(
         fontSize: 30,
-        color: const Color.fromARGB(255, 255, 255, 255),
+        color: globals.isLight ? Color.fromARGB(255, 7, 77, 53) : Colors.white,
       ),
     ),
   ];
@@ -80,6 +80,9 @@ class AboutThisAppPage extends StatelessWidget {
       child: Card(
         elevation: 4.0,
         child: ListTile(
+          textColor: globals.isLight
+              ? Color.fromARGB(255, 7, 77, 53)
+              : Colors.white,
           title: tutorialText[index],
           subtitle: tutorialList[index],
           contentPadding: EdgeInsets.all(16),

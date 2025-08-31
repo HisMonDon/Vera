@@ -306,13 +306,13 @@ class _TopicsPageState extends State<TopicsPage> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color.fromARGB(
-                255,
-                146,
-                243,
-                198,
-              ).withOpacity(0.08), // Very light green tint
-              Color.fromARGB(255, 209, 250, 229).withOpacity(0.04),
+              globals.isLight
+                  ? Color.fromARGB(255, 146, 243, 198)
+                  : Color.fromARGB(255, 146, 243, 198).withOpacity(0.08),
+              // very light green tint
+              globals.isLight
+                  ? Color.fromARGB(200, 209, 250, 229)
+                  : Color.fromARGB(255, 209, 250, 229).withOpacity(0.04),
             ],
           ),
         ),
@@ -325,7 +325,12 @@ class _TopicsPageState extends State<TopicsPage> {
                     padding: EdgeInsets.only(left: 16, top: 16, bottom: 20),
                     child: Text(
                       'Physics Topics and Subfields',
-                      style: GoogleFonts.mPlus1(fontSize: 40),
+                      style: GoogleFonts.mPlus1(
+                        fontSize: 40,
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 7, 77, 53)
+                            : Colors.white,
+                      ),
                     ),
                   ),
                 ),
