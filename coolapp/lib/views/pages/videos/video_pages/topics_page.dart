@@ -259,6 +259,41 @@ class _TopicsPageState extends State<TopicsPage> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> courseList = [
     {
+      'title': 'Electricity and Magnetism',
+      'imagePath': 'images/electricity.jpg',
+      'description':
+          'Principles of electric and magnetic phenomena, right hand rule, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits. Extend this understanding to magnetic fields, electromagnetic induction, and the relationship between electricity and magnetism',
+      'videoPage': ElectricityAndMagnetism(),
+    },
+    {
+      'title': 'Electrostatics',
+      'imagePath': 'images/electrostatics.png',
+      'description':
+          'Electric fields and forces using Coulomb\'s law, analyze charge distributions, determine electric potential and energy, solve capacitor problems, and understand electric field mapping through equipotential surfaces.',
+      'videoPage': Electrostatics(),
+    },
+    {
+      'title': 'Fluids',
+      'imagePath': 'images/fluids.png',
+      'description':
+          'Hydrostatic pressure at different depths, analyze buoyant forces using Archimedes\' principle, apply Bernoulli\'s equation to fluid flow problems, and understand viscosity effects in real-world applications like blood flow and aerodynamics.',
+      'videoPage': Fluids(),
+    },
+    {
+      'title': 'Forces and Dynamics',
+      'imagePath': 'images/dynamics.jpg',
+      'description':
+          "Examine how forces influence motion through Newton's laws of motion. Concepts such as mass, weight, friction, tension, and normal force, learn how to analyze interactions between objects, use Free Body Diagrams",
+      'videoPage': Dynamics(),
+    },
+    {
+      'title': 'Harmonics',
+      'imagePath': 'images/harmonics.jpg',
+      'description':
+          'Analyze simple harmonic motion equations, calculate periods of pendulums and spring systems, understand resonance conditions, solve damped oscillation problems, and model coupled oscillators in mechanical and electrical systems.',
+      'videoPage': Harmonics(),
+    },
+    {
       'title': 'Introduction to Physics',
       'imagePath': 'images/intro_to_physics.jpg',
       'description':
@@ -273,32 +308,11 @@ class _TopicsPageState extends State<TopicsPage> {
       'videoPage': Kinematics(),
     },
     {
-      'title': 'Electricity and Magnetism',
-      'imagePath': 'images/electricity.jpg',
-      'description':
-          'Principles of electric and magnetic phenomena, right hand rule, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits. Extend this understanding to magnetic fields, electromagnetic induction, and the relationship between electricity and magnetism',
-      'videoPage': ElectricityAndMagnetism(),
-    },
-    {
       'title': 'Momentum and Collisions',
       'imagePath': 'images/momentum.jpg',
       'description':
           'Momentum, elastic and non-elastic collisions, and impulse',
       'videoPage': MomentumAndCollisions(),
-    },
-    {
-      'title': 'Forces and Dynamics',
-      'imagePath': 'images/dynamics.jpg',
-      'description':
-          "Examine how forces influence motion through Newton's laws of motion. Concepts such as mass, weight, friction, tension, and normal force, learn how to analyze interactions between objects, use Free Body Diagrams",
-      'videoPage': Dynamics(),
-    },
-    {
-      'title': 'Rotational Motion',
-      'imagePath': 'images/rotational_motion.jpg',
-      'description':
-          'Angular velocity, torque calculations, moment of inertia for different shapes, angular momentum conservation, and rotational kinetic energy. Learn to solve problems with rotating objects and analyze gyroscopic motion.',
-      'videoPage': RotationalMotion(),
     },
     {
       'title': 'Optics',
@@ -308,20 +322,6 @@ class _TopicsPageState extends State<TopicsPage> {
       'videoPage': Optics(),
     },
     {
-      'title': 'Fluids',
-      'imagePath': 'images/fluids.png',
-      'description':
-          'Hydrostatic pressure at different depths, analyze buoyant forces using Archimedes\' principle, apply Bernoulli\'s equation to fluid flow problems, and understand viscosity effects in real-world applications like blood flow and aerodynamics.',
-      'videoPage': Fluids(),
-    },
-    {
-      'title': 'Electrostatics',
-      'imagePath': 'images/electrostatics.png',
-      'description':
-          'Electric fields and forces using Coulomb\'s law, analyze charge distributions, determine electric potential and energy, solve capacitor problems, and understand electric field mapping through equipotential surfaces.',
-      'videoPage': Electrostatics(),
-    },
-    {
       'title': 'Quantum Mechanics',
       'imagePath': 'images/quantum_mechanics.jpg',
       'description':
@@ -329,11 +329,11 @@ class _TopicsPageState extends State<TopicsPage> {
       'videoPage': QuantumMechanics(),
     },
     {
-      'title': 'Harmonics',
-      'imagePath': 'images/harmonics.jpg',
+      'title': 'Rotational Motion',
+      'imagePath': 'images/rotational_motion.jpg',
       'description':
-          'Analyze simple harmonic motion equations, calculate periods of pendulums and spring systems, understand resonance conditions, solve damped oscillation problems, and model coupled oscillators in mechanical and electrical systems.',
-      'videoPage': Harmonics(),
+          'Angular velocity, torque calculations, moment of inertia for different shapes, angular momentum conservation, and rotational kinetic energy. Learn to solve problems with rotating objects and analyze gyroscopic motion.',
+      'videoPage': RotationalMotion(),
     },
   ];
   @override

@@ -1,4 +1,5 @@
 import 'dart:typed_data';
+import 'package:coolapp/globals.dart' as global;
 import 'package:coolapp/views/pages/profile_page/profile_page.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
@@ -18,7 +19,6 @@ import 'dart:ui' as ui;
 //import 'dart:io';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
-// FOR TOMMORWO MAKE A COVER POPUP TO BLOCK EVERYTHIGN IF NOT LOGGED IN (MENTION FREE)
 class HomePage extends StatefulWidget {
   HomePage({super.key});
   @override
@@ -639,12 +639,14 @@ class _HomePageState extends State<HomePage> {
                                       cursor: SystemMouseCursors.click,
                                       child: GestureDetector(
                                         onTap: () {
-                                          Navigator.push(
+                                          global.selectedIndex = 1;
+                                          Navigator.of(
                                             context,
-                                            MaterialPageRoute(
-                                              builder: (context) =>
-                                                  ProfilePage(),
-                                            ),
+                                            rootNavigator: true,
+                                          ).pushNamedAndRemoveUntil(
+                                            '/widgetTree',
+                                            (route) => false,
+                                            arguments: 1,
                                           );
                                         },
                                         child: Container(
