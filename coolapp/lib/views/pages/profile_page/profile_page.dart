@@ -205,6 +205,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               return;
                             }
                             final success = await _authService.changePassword(
+                              _currentPasswordController.text,
                               _newPasswordController.text,
                             );
 
@@ -450,6 +451,11 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
           const SizedBox(height: 16),
           TextFormField(
+            style: TextStyle(
+              color: globals.isLight
+                  ? Color.fromARGB(255, 7, 77, 53)
+                  : Colors.white,
+            ),
             controller: _passwordController,
             decoration: const InputDecoration(
               labelText: 'Password',
@@ -468,6 +474,11 @@ class _ProfilePageState extends State<ProfilePage> {
           const SizedBox(height: 16),
           if (!_isLogin) ...[
             TextFormField(
+              style: TextStyle(
+                color: globals.isLight
+                    ? Color.fromARGB(255, 7, 77, 53)
+                    : Colors.white,
+              ),
               controller: _userNameController,
               decoration: const InputDecoration(
                 labelText: 'Name',

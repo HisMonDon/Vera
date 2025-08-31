@@ -102,18 +102,40 @@ class AuthService {
     }
   }
 
-  Future<bool> changePassword(String newPassword) async {
+  Future<bool> changePassword(
+    String currentPassword,
+    String newPassword,
+  ) async {
     try {
-      final idToken = globals.idToken;
-      if (idToken.isEmpty) return false;
+      final email = await getCurrentUserEmail();
+      if (email == null || email.isEmpty) {
+        globals.errorMessage = 'User session error. Please log in again.';
+        return false;
+      }
+      final signInResponse = await http.post(
+        Uri.parse('$_signInUrl?key=$apiKey'),
+        headers: {'Content-Type': 'application/json'},
+        body: json.encode({
+          'email': email,
+          'password': currentPassword,
+          'returnSecureToken': true,
+        }),
+      );
 
+      if (signInResponse.statusCode != 200) {
+        globals.errorMessage =
+            'Authentication failed. Please check your current password.';
+        return false;
+      }
+      final authData = json.decode(signInResponse.body);
+      final freshToken = authData['idToken'];
       final url =
           'https://identitytoolkit.googleapis.com/v1/accounts:update?key=$apiKey';
       final response = await http.post(
         Uri.parse(url),
         headers: {'Content-Type': 'application/json'},
         body: json.encode({
-          'idToken': idToken,
+          'idToken': freshToken,
           'password': newPassword,
           'returnSecureToken': true,
         }),
@@ -121,12 +143,13 @@ class AuthService {
 
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
-        // Update the stored token with the new one
-        await _saveAuthData(data, await getCurrentUserEmail() ?? '');
+        await _saveAuthData(data, email);
+        globals.idToken = data['idToken'];
         return true;
       } else {
         final error = json.decode(response.body);
-        throw Exception(error['error']['message']);
+        globals.errorMessage = error['error']['message'];
+        return false;
       }
     } catch (e) {
       print("Password change error: $e");
