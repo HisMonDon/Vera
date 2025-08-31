@@ -173,6 +173,9 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     }
 
     return Scaffold(
+      backgroundColor: globals.isLight
+          ? Color.fromARGB(255, 6, 188, 124)
+          : const Color.fromARGB(255, 1, 46, 32),
       appBar: TimedAppBar(), //add text here
       body: SingleChildScrollView(
         child: Column(
