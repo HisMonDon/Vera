@@ -9,8 +9,11 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_t
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/other.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/quantum_mechanics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/rotational_motion.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_and_energy.dart';
 import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
@@ -334,6 +337,28 @@ class _TopicsPageState extends State<TopicsPage> {
       'description':
           'Angular velocity, torque calculations, moment of inertia for different shapes, angular momentum conservation, and rotational kinetic energy. Learn to solve problems with rotating objects and analyze gyroscopic motion.',
       'videoPage': RotationalMotion(),
+    },
+    {
+      'title': 'Thermal Physics',
+      'imagePath': 'images/thermal_physics.jpg',
+      'description':
+          'Study of heat, temperature, and thermodynamic laws. Calculate heat capacity, analyze phase changes, understand entropy, and solve problems involving thermodynamic cycles and efficiency.',
+      'videoPage': ThermalPhysics(),
+    },
+    {
+      'title': 'Work and Energy',
+      'imagePath': 'images/work_and_energy.jpg',
+      'description':
+          'Calculate work done by forces, analyze kinetic and potential energy transformations, and apply conservation of energy to solve complex physics problems',
+      'videoPage': WorkAndEnergy(),
+    },
+
+    {
+      'title': 'Other Physics Topics',
+      'imagePath': 'images/other.jpg',
+      'description':
+          'Additional physics topics including mathematical methods, measurement techniques, nuclear physics, astrophysics, and the relationship between physics and society',
+      'videoPage': Other(),
     },
   ];
   @override
