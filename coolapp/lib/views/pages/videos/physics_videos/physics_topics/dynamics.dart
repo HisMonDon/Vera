@@ -75,6 +75,7 @@ class _DynamicsState extends State<Dynamics> {
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(20),
+
           child: Column(
             children: [
               SizedBox(width: 2, height: 10),

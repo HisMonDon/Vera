@@ -7,6 +7,7 @@ import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:media_kit/media_kit.dart';
 import 'dart:convert';
 import 'package:crypto/crypto.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 // color pallette
 /*Name	Hex	RGB	Use Case
@@ -41,8 +42,11 @@ void main() async {
       1; //change the number inside daily random everytime you change the global videoOfTheDays
   WidgetsFlutterBinding.ensureInitialized();
   MediaKit.ensureInitialized();
-  await _initializeAuthState();
+  WidgetsFlutterBinding.ensureInitialized();
+  final prefs = await SharedPreferences.getInstance();
+  globals.isLight = prefs.getBool('isLightTheme') ?? true;
 
+  await _initializeAuthState();
   runApp(const MyApp());
 }
 
@@ -51,6 +55,7 @@ Future<void> _initializeAuthState() async {
     final authService = AuthService();
     globals.isLoggedIn = await authService.isLoggedIn();
     print('App initialized with isLoggedIn: ${globals.isLoggedIn}');
+    print('App initialized with isLight: ${globals.isLight}');
   } catch (e) {
     print('Error initializing auth state: $e');
     globals.isLoggedIn = false;

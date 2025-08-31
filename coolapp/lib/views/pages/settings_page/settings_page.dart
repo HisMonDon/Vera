@@ -13,8 +13,6 @@ class HelpPage extends StatefulWidget {
 }
 
 class _HelpPageState extends State<HelpPage> {
-  bool _isLightMode = globals.isLight;
-
   @override
   void initState() {
     super.initState();
@@ -24,24 +22,19 @@ class _HelpPageState extends State<HelpPage> {
   Future<void> _loadThemePreference() async {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
-      _isLightMode = prefs.getBool('isLightTheme') ?? true;
+      globals.isLight = prefs.getBool('isLightTheme') ?? true;
     });
   }
 
   Future<void> _toggleTheme(bool isLight) async {
     final prefs = await SharedPreferences.getInstance();
-
-    // Save the theme preference
     await prefs.setBool('isLightTheme', isLight);
 
-    // Update the global variable
     globals.isLight = isLight;
 
     setState(() {
-      _isLightMode = isLight;
+      globals.isLight = isLight;
     });
-
-    // Update the app's ThemeData using the MyApp static method
     MyApp.updateTheme(isLight);
   }
 
@@ -128,7 +121,7 @@ class _HelpPageState extends State<HelpPage> {
           Row(
             children: [
               Icon(
-                _isLightMode ? Icons.light_mode : Icons.dark_mode,
+                globals.isLight ? Icons.light_mode : Icons.dark_mode,
                 color: globals.isLight
                     ? const Color.fromARGB(255, 15, 48, 40)
                     : Colors.white,
@@ -146,7 +139,7 @@ class _HelpPageState extends State<HelpPage> {
             ],
           ),
           Switch(
-            value: _isLightMode,
+            value: globals.isLight,
             onChanged: _toggleTheme,
             activeColor: const Color.fromARGB(255, 167, 198, 131),
             activeTrackColor: const Color.fromARGB(255, 15, 48, 40),
