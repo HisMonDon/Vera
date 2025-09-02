@@ -3,6 +3,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamic
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_and_energy.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
@@ -198,7 +199,7 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
       'title': 'Unit 4: Energy and Work',
       'description':
           'Work-energy theorem and conservation of Energy (Very important unit)',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': WorkAndEnergy(),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
