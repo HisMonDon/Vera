@@ -63,7 +63,7 @@ class _HelpPageState extends State<HelpPage> {
                 title: 'Appearance',
                 children: [_buildThemeToggle()],
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 30),
             ],
           ),
         ),

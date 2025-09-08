@@ -961,9 +961,12 @@ class _HomePageState extends State<HomePage> {
                             ),
                         ],
                       ),
-                    ), //end of featured vid
+                    ),
+                    //end of featured vid
                   ],
                 ),
+                SizedBox(height: 20),
+                Text("2025 Chenyu Studios", style: TextStyle(fontSize: 10)),
               ],
             ),
           ),
