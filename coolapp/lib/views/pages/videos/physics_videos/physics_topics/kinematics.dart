@@ -20,12 +20,13 @@ class _KinematicsState extends State<Kinematics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: 1D Motion Analysis',
+      'title':
+          'Unit 1: 1D Motion Analysis', //1D MOTION ANALYSIS DONE 2025/09/11 VERSION 1.0
       'description':
           'Basic kinematics, introduction to acceleration and velocity',
       'videoPage': VideoPlayerScreen(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/kinematics/1D%20Kinematics.mp4',
     },
     {
       'title': 'Unit 2: 2D Motion Analysis',
