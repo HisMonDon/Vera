@@ -29,14 +29,15 @@ class _KinematicsState extends State<Kinematics> {
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/kinematics/1D%20Kinematics.mp4',
     },
     {
-      'title': 'Unit 2: 2D Motion Analysis Part 1',
+      'title':
+          'Unit 2: 2D Motion Analysis Part 1', //DONE 2025/09/14 VERSION 1.0
       'description': 'Introduction to 2D kinematics with velocity',
       'videoPage': VideoPlayerScreen(),
       'videoLink':
           'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/Kinematics%202D%20Part%201.mp4',
     },
     {
-      'title': '2D Motion Analysis Part 2',
+      'title': '2D Motion Analysis Part 2', //DONE 2025/09/14 VERSION 1.0
       'description':
           'Introduces various kinematics formulae and constants used for solving problems',
       'videoPage': VideoPlayerScreen(),
@@ -45,7 +46,7 @@ class _KinematicsState extends State<Kinematics> {
     },
 
     {
-      'title': '2D Motion Analysis Part 3',
+      'title': '2D Motion Analysis Part 3', //DONE 2025/09/14 VERSION 1.0
       'description':
           'Application of kinematics formulae and vectors on an example problem',
       'videoPage': VideoPlayerScreen(),
