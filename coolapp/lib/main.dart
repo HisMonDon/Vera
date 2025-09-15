@@ -38,7 +38,7 @@ int dailyRandom(int max) {
 
 void main() async {
   globals.videoOfTheDayIndex =
-      dailyRandom(1) -
+      dailyRandom(3) -
       1; //change the number inside daily random everytime you change the global videoOfTheDays
   WidgetsFlutterBinding.ensureInitialized();
   MediaKit.ensureInitialized();

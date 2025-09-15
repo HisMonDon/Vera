@@ -57,6 +57,31 @@ List<Map<String, dynamic>> videoOfTheDay = [
       0,
     ), //bc I will be generating thumbnail from my code
   },
+  {
+    'videoLink':
+        'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/Kinematics%202D%20Part%202.mp4',
+    'videoTitle': 'Kinematics Formulae',
+    'videoUnit': 'Kinematics',
+    'thumbnailColor': Color.fromARGB(
+      255,
+      20,
+      96,
+      131,
+    ), //bc I will be generating thumbnail from my code
+  },
+
+  {
+    'videoLink':
+        'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/Kinematics%202D%20Part%203.mp4',
+    'videoTitle': 'Application of Kinematics',
+    'videoUnit': 'Kinematics',
+    'thumbnailColor': Color.fromARGB(
+      255,
+      24,
+      78,
+      65,
+    ), //bc I will be generating thumbnail from my code
+  },
 ];
 int videoOfTheDayIndex = 0;
 bool isLight = false;
