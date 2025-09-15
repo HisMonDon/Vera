@@ -613,9 +613,37 @@ class _ProfilePageState extends State<ProfilePage> {
         padding: const EdgeInsets.all(16.0),
         child: Center(
           child: SingleChildScrollView(
-            child: _isInitializing
-                ? const CircularProgressIndicator()
-                : (isLoggedIn ? _buildProfileView() : _buildLoginForm()),
+            child: Column(
+              children: [
+                _isInitializing
+                    ? const CircularProgressIndicator()
+                    : (isLoggedIn ? _buildProfileView() : _buildLoginForm()),
+                SizedBox(height: 20),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "2025 Chenyu Studios",
+                      style: TextStyle(
+                        fontSize: 10,
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 0, 0, 0)
+                            : Color.fromARGB(255, 255, 255, 255),
+                      ),
+                    ),
+                    SizedBox(width: 3),
+                    Icon(
+                      Icons.copyright_sharp,
+                      size: 15,
+                      color: globals.isLight
+                          ? Color.fromARGB(255, 0, 0, 0)
+                          : Color.fromARGB(255, 255, 255, 255),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),

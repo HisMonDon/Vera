@@ -966,7 +966,29 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
                 SizedBox(height: 20),
-                Text("2025 Chenyu Studios", style: TextStyle(fontSize: 10)),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "2025 Chenyu Studios",
+                      style: TextStyle(
+                        fontSize: 10,
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 0, 0, 0)
+                            : Color.fromARGB(255, 255, 255, 255),
+                      ),
+                    ),
+                    SizedBox(width: 3),
+                    Icon(
+                      Icons.copyright_sharp,
+                      size: 15,
+                      color: globals.isLight
+                          ? Color.fromARGB(255, 0, 0, 0)
+                          : Color.fromARGB(255, 255, 255, 255),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),

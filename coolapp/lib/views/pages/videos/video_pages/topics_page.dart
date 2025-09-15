@@ -394,17 +394,44 @@ class _TopicsPageState extends State<TopicsPage> {
             CustomScrollView(
               slivers: [
                 SliverToBoxAdapter(
-                  child: Padding(
-                    padding: EdgeInsets.only(left: 16, top: 16, bottom: 20),
-                    child: Text(
-                      'Physics Topics and Subfields',
-                      style: GoogleFonts.mPlus1(
-                        fontSize: 40,
-                        color: globals.isLight
-                            ? Color.fromARGB(255, 7, 77, 53)
-                            : Colors.white,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Align(
+                        child: Padding(
+                          padding: EdgeInsets.only(
+                            left: 16,
+                            top: 16,
+                            bottom: 20,
+                          ),
+                          child: Text(
+                            'Physics Topics and Subfields',
+                            style: GoogleFonts.mPlus1(
+                              fontSize: 40,
+                              color: globals.isLight
+                                  ? Color.fromARGB(255, 7, 77, 53)
+                                  : Colors.white,
+                            ),
+                          ),
+                        ),
                       ),
-                    ),
+                      Row(
+                        children: [
+                          ElevatedButton(
+                            onPressed: () {},
+                            child: Text(
+                              'Sort By:',
+                              style: GoogleFonts.mPlus1(
+                                fontSize: 28,
+                                color: globals.isLight
+                                    ? Color.fromARGB(255, 7, 77, 53)
+                                    : Colors.white,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
                 SliverPadding(
