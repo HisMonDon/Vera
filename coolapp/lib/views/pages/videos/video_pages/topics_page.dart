@@ -260,7 +260,7 @@ class _TopicsPageState extends State<TopicsPage> {
   }
 
   Map<int, bool> hoveredStates = {};
-  final List<Map<String, dynamic>> courseList = [
+  List<Map<String, dynamic>> courseList = [
     {
       'title': 'Electricity and Magnetism',
       'imagePath': 'images/electricity.jpg',
@@ -362,17 +362,143 @@ class _TopicsPageState extends State<TopicsPage> {
     },
   ];
 
-  List<String> sortBy = <String>['Relevance', 'Alphabetical'];
+  List<String> sortBy = <String>[
+    'Relevance',
+    'Alphabetical (A-Z)',
+    'Alphabetical (Z-A)',
+  ];
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-
+    String _currentSortOption = sortBy[0];
     globals.courseTitle = '';
     int buttonColorShift = 10;
     bool phy_11_hovered = false;
     if (!globals.isLoggedIn) {
       return NotLoggedIn();
     }
+    void _sortCourseList(String sortOption) {
+      setState(() {
+        switch (sortOption) {
+          case 'Alphabetical (A-Z)':
+            courseList.sort(
+              (a, b) => (a['title'] as String).compareTo(b['title'] as String),
+            );
+            break;
+          case 'Alphabetical (Z-A)':
+            courseList.sort(
+              (a, b) => (b['title'] as String).compareTo(a['title'] as String),
+            );
+            break;
+          case 'Relevance':
+            courseList = [
+              {
+                'title': 'Introduction to Physics',
+                'imagePath': 'images/intro_to_physics.jpg',
+                'description':
+                    'Short topic explaining the introduction to physics, including vectors, velocity, and displacement',
+                'videoPage': IntroToPhysics(),
+              },
+              {
+                'title': 'Kinematics',
+                'imagePath': 'images/kinematics.jpg',
+                'description':
+                    'Motion analysis, explore concepts such as displacement, velocity, acceleration, and time, and how to apply kinematic equations to describe motion in one and two dimensions.',
+                'videoPage': Kinematics(),
+              },
+
+              {
+                'title': 'Forces and Dynamics',
+                'imagePath': 'images/dynamics.jpg',
+                'description':
+                    "Examine how forces influence motion through Newton's laws of motion. Concepts such as mass, weight, friction, tension, and normal force, learn how to analyze interactions between objects, use Free Body Diagrams",
+                'videoPage': Dynamics(),
+              },
+
+              {
+                'title': 'Work and Energy',
+                'imagePath': 'images/work_and_energy.jpg',
+                'description':
+                    'Calculate work done by forces, analyze kinetic and potential energy transformations, and apply conservation of energy to solve complex physics problems',
+                'videoPage': WorkAndEnergy(),
+              },
+              {
+                'title': 'Electricity and Magnetism',
+                'imagePath': 'images/electricity.jpg',
+                'description':
+                    'Principles of electric and magnetic phenomena, right hand rule, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits. Extend this understanding to magnetic fields, electromagnetic induction, and the relationship between electricity and magnetism',
+                'videoPage': ElectricityAndMagnetism(),
+              },
+
+              {
+                'title': 'Momentum and Collisions',
+                'imagePath': 'images/momentum.jpg',
+                'description':
+                    'Momentum, elastic and non-elastic collisions, and impulse',
+                'videoPage': MomentumAndCollisions(),
+              },
+              {
+                'title': 'Optics',
+                'imagePath': 'images/optics.png',
+                'description':
+                    'Mirror and lens equations, analyze optical instruments, understand diffraction patterns and interference phenomena. Calculate critical angles for total internal reflection and solve problems involving polarization.',
+                'videoPage': Optics(),
+              },
+              {
+                'title': 'Fluids',
+                'imagePath': 'images/fluids.png',
+                'description':
+                    'Hydrostatic pressure at different depths, analyze buoyant forces using Archimedes\' principle, apply Bernoulli\'s equation to fluid flow problems, and understand viscosity effects in real-world applications like blood flow and aerodynamics.',
+                'videoPage': Fluids(),
+              },
+              {
+                'title': 'Harmonics',
+                'imagePath': 'images/harmonics.jpg',
+                'description':
+                    'Analyze simple harmonic motion equations, calculate periods of pendulums and spring systems, understand resonance conditions, solve damped oscillation problems, and model coupled oscillators in mechanical and electrical systems.',
+                'videoPage': Harmonics(),
+              },
+              {
+                'title': 'Electrostatics',
+                'imagePath': 'images/electrostatics.png',
+                'description':
+                    'Electric fields and forces using Coulomb\'s law, analyze charge distributions, determine electric potential and energy, solve capacitor problems, and understand electric field mapping through equipotential surfaces.',
+                'videoPage': Electrostatics(),
+              },
+              {
+                'title': 'Quantum Mechanics',
+                'imagePath': 'images/quantum_mechanics.jpg',
+                'description':
+                    'Photoelectric effect, calculate de Broglie wavelengths, apply Heisenberg\'s uncertainty principle, analyze quantum tunneling scenarios, and explore probability distributions in atomic models and wave functions.',
+                'videoPage': QuantumMechanics(),
+              },
+              {
+                'title': 'Rotational Motion',
+                'imagePath': 'images/rotational_motion.jpg',
+                'description':
+                    'Angular velocity, torque calculations, moment of inertia for different shapes, angular momentum conservation, and rotational kinetic energy. Learn to solve problems with rotating objects and analyze gyroscopic motion.',
+                'videoPage': RotationalMotion(),
+              },
+              {
+                'title': 'Thermal Physics',
+                'imagePath': 'images/thermal_physics.jpg',
+                'description':
+                    'Study of heat, temperature, and thermodynamic laws. Calculate heat capacity, analyze phase changes, understand entropy, and solve problems involving thermodynamic cycles and efficiency.',
+                'videoPage': ThermalPhysics(),
+              },
+              {
+                'title': 'Other Physics Topics',
+                'imagePath': 'images/other.jpg',
+                'description':
+                    'Additional physics topics including mathematical methods, measurement techniques, nuclear physics, astrophysics, and the relationship between physics and society',
+                'videoPage': Other(),
+              },
+            ];
+            break;
+        }
+      });
+    }
+
     return Scaffold(
       appBar: TimedAppBar(),
       body: Container(
@@ -456,11 +582,12 @@ class _TopicsPageState extends State<TopicsPage> {
                                   //color: Colors.deepPurpleAccent,
                                 ),
                                 onChanged: (String? value) {
-                                  // This is called when the user selects an item.
+                                  if (value == null) return;
                                   setState(() {
-                                    sortBy[0] = value!;
+                                    _currentSortOption = value;
                                   });
                                 },
+
                                 items: sortBy.map<DropdownMenuItem<String>>((
                                   String value,
                                 ) {
