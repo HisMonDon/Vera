@@ -361,6 +361,8 @@ class _TopicsPageState extends State<TopicsPage> {
       'videoPage': Other(),
     },
   ];
+
+  List<String> sortBy = <String>['Relevance', 'Alphabetical'];
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
@@ -417,18 +419,63 @@ class _TopicsPageState extends State<TopicsPage> {
                       ),
                       Row(
                         children: [
-                          ElevatedButton(
-                            onPressed: () {},
-                            child: Text(
-                              'Sort By:',
-                              style: GoogleFonts.mPlus1(
-                                fontSize: 28,
-                                color: globals.isLight
-                                    ? Color.fromARGB(255, 7, 77, 53)
-                                    : Colors.white,
+                          Container(
+                            margin: EdgeInsets.only(right: 24),
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 12,
+                              vertical: 5,
+                            ),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(12),
+                              color: Color.fromARGB(255, 15, 48, 40),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(0.1),
+                                  blurRadius: 8,
+                                  offset: Offset(0, 3),
+                                ),
+                              ],
+                            ),
+                            child: DropdownButtonHideUnderline(
+                              child: DropdownButton<String>(
+                                icon: Icon(
+                                  Icons.sort,
+                                  color: Color.fromARGB(255, 167, 198, 131),
+                                ),
+                                value: sortBy[0],
+                                elevation: 16,
+                                dropdownColor: Color.fromARGB(255, 15, 48, 40),
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 16,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                                underline: Container(
+                                  height: 6,
+
+                                  //color: Colors.deepPurpleAccent,
+                                ),
+                                onChanged: (String? value) {
+                                  // This is called when the user selects an item.
+                                  setState(() {
+                                    sortBy[0] = value!;
+                                  });
+                                },
+                                items: sortBy.map<DropdownMenuItem<String>>((
+                                  String value,
+                                ) {
+                                  return DropdownMenuItem<String>(
+                                    value: value,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text(value),
+                                    ),
+                                  );
+                                }).toList(),
                               ),
                             ),
                           ),
+                          SizedBox(width: 30),
                         ],
                       ),
                     ],
