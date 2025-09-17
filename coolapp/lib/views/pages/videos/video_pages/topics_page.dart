@@ -262,41 +262,6 @@ class _TopicsPageState extends State<TopicsPage> {
   Map<int, bool> hoveredStates = {};
   List<Map<String, dynamic>> courseList = [
     {
-      'title': 'Electricity and Magnetism',
-      'imagePath': 'images/electricity.jpg',
-      'description':
-          'Principles of electric and magnetic phenomena, right hand rule, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits. Extend this understanding to magnetic fields, electromagnetic induction, and the relationship between electricity and magnetism',
-      'videoPage': ElectricityAndMagnetism(),
-    },
-    {
-      'title': 'Electrostatics',
-      'imagePath': 'images/electrostatics.png',
-      'description':
-          'Electric fields and forces using Coulomb\'s law, analyze charge distributions, determine electric potential and energy, solve capacitor problems, and understand electric field mapping through equipotential surfaces.',
-      'videoPage': Electrostatics(),
-    },
-    {
-      'title': 'Fluids',
-      'imagePath': 'images/fluids.png',
-      'description':
-          'Hydrostatic pressure at different depths, analyze buoyant forces using Archimedes\' principle, apply Bernoulli\'s equation to fluid flow problems, and understand viscosity effects in real-world applications like blood flow and aerodynamics.',
-      'videoPage': Fluids(),
-    },
-    {
-      'title': 'Forces and Dynamics',
-      'imagePath': 'images/dynamics.jpg',
-      'description':
-          "Examine how forces influence motion through Newton's laws of motion. Concepts such as mass, weight, friction, tension, and normal force, learn how to analyze interactions between objects, use Free Body Diagrams",
-      'videoPage': Dynamics(),
-    },
-    {
-      'title': 'Harmonics',
-      'imagePath': 'images/harmonics.jpg',
-      'description':
-          'Analyze simple harmonic motion equations, calculate periods of pendulums and spring systems, understand resonance conditions, solve damped oscillation problems, and model coupled oscillators in mechanical and electrical systems.',
-      'videoPage': Harmonics(),
-    },
-    {
       'title': 'Introduction to Physics',
       'imagePath': 'images/intro_to_physics.jpg',
       'description':
@@ -310,6 +275,30 @@ class _TopicsPageState extends State<TopicsPage> {
           'Motion analysis, explore concepts such as displacement, velocity, acceleration, and time, and how to apply kinematic equations to describe motion in one and two dimensions.',
       'videoPage': Kinematics(),
     },
+
+    {
+      'title': 'Forces and Dynamics',
+      'imagePath': 'images/dynamics.jpg',
+      'description':
+          "Examine how forces influence motion through Newton's laws of motion. Concepts such as mass, weight, friction, tension, and normal force, learn how to analyze interactions between objects, use Free Body Diagrams",
+      'videoPage': Dynamics(),
+    },
+
+    {
+      'title': 'Work and Energy',
+      'imagePath': 'images/work_and_energy.jpg',
+      'description':
+          'Calculate work done by forces, analyze kinetic and potential energy transformations, and apply conservation of energy to solve complex physics problems',
+      'videoPage': WorkAndEnergy(),
+    },
+    {
+      'title': 'Electricity and Magnetism',
+      'imagePath': 'images/electricity.jpg',
+      'description':
+          'Principles of electric and magnetic phenomena, right hand rule, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits. Extend this understanding to magnetic fields, electromagnetic induction, and the relationship between electricity and magnetism',
+      'videoPage': ElectricityAndMagnetism(),
+    },
+
     {
       'title': 'Momentum and Collisions',
       'imagePath': 'images/momentum.jpg',
@@ -323,6 +312,27 @@ class _TopicsPageState extends State<TopicsPage> {
       'description':
           'Mirror and lens equations, analyze optical instruments, understand diffraction patterns and interference phenomena. Calculate critical angles for total internal reflection and solve problems involving polarization.',
       'videoPage': Optics(),
+    },
+    {
+      'title': 'Fluids',
+      'imagePath': 'images/fluids.png',
+      'description':
+          'Hydrostatic pressure at different depths, analyze buoyant forces using Archimedes\' principle, apply Bernoulli\'s equation to fluid flow problems, and understand viscosity effects in real-world applications like blood flow and aerodynamics.',
+      'videoPage': Fluids(),
+    },
+    {
+      'title': 'Harmonics',
+      'imagePath': 'images/harmonics.jpg',
+      'description':
+          'Analyze simple harmonic motion equations, calculate periods of pendulums and spring systems, understand resonance conditions, solve damped oscillation problems, and model coupled oscillators in mechanical and electrical systems.',
+      'videoPage': Harmonics(),
+    },
+    {
+      'title': 'Electrostatics',
+      'imagePath': 'images/electrostatics.png',
+      'description':
+          'Electric fields and forces using Coulomb\'s law, analyze charge distributions, determine electric potential and energy, solve capacitor problems, and understand electric field mapping through equipotential surfaces.',
+      'videoPage': Electrostatics(),
     },
     {
       'title': 'Quantum Mechanics',
@@ -345,14 +355,6 @@ class _TopicsPageState extends State<TopicsPage> {
           'Study of heat, temperature, and thermodynamic laws. Calculate heat capacity, analyze phase changes, understand entropy, and solve problems involving thermodynamic cycles and efficiency.',
       'videoPage': ThermalPhysics(),
     },
-    {
-      'title': 'Work and Energy',
-      'imagePath': 'images/work_and_energy.jpg',
-      'description':
-          'Calculate work done by forces, analyze kinetic and potential energy transformations, and apply conservation of energy to solve complex physics problems',
-      'videoPage': WorkAndEnergy(),
-    },
-
     {
       'title': 'Other Physics Topics',
       'imagePath': 'images/other.jpg',
@@ -585,6 +587,7 @@ class _TopicsPageState extends State<TopicsPage> {
                                   if (value == null) return;
                                   setState(() {
                                     _currentSortOption = value;
+                                    _sortCourseList(value);
                                   });
                                 },
 
