@@ -369,6 +369,7 @@ class _TopicsPageState extends State<TopicsPage> {
     'Alphabetical (A-Z)',
     'Alphabetical (Z-A)',
   ];
+  int sortIndex = 0;
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
@@ -570,7 +571,7 @@ class _TopicsPageState extends State<TopicsPage> {
                                   Icons.sort,
                                   color: Color.fromARGB(255, 167, 198, 131),
                                 ),
-                                value: sortBy[0],
+                                value: sortBy[sortIndex],
                                 elevation: 16,
                                 dropdownColor: Color.fromARGB(255, 15, 48, 40),
                                 style: GoogleFonts.montserrat(
@@ -585,6 +586,7 @@ class _TopicsPageState extends State<TopicsPage> {
                                 ),
                                 onChanged: (String? value) {
                                   if (value == null) return;
+                                  sortIndex = sortBy.indexOf(value);
                                   setState(() {
                                     _currentSortOption = value;
                                     _sortCourseList(value);
