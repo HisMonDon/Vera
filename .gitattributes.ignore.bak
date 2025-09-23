@@ -10,6 +10,8 @@
 .packages
 
 # Large files for Git LFS
+*.jpg
+*.png
 *.zip
 flutter.zip
 flutter/

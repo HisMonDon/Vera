@@ -64,9 +64,9 @@ List<Map<String, dynamic>> videoOfTheDay = [
     'videoUnit': 'Kinematics',
     'thumbnailColor': Color.fromARGB(
       255,
-      20,
-      96,
-      131,
+      0,
+      0,
+      0,
     ), //bc I will be generating thumbnail from my code
   },
 
