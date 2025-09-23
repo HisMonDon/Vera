@@ -70,15 +70,34 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  //Add this method to load past videos
   Future<void> _loadPastVideos() async {
     try {
-      final recentVideos = await _authService.getPastVideos() ?? [];
+      if (globals.isLoggedIn &&
+          globals.userId.isNotEmpty &&
+          globals.idToken.isNotEmpty) {
+        final firestoreVideos = await getPastVideosFromFirestore(
+          globals.userId,
+          globals.idToken,
+        );
+
+        if (firestoreVideos.isNotEmpty) {
+          setState(() {
+            globals.pastVideos = firestoreVideos;
+          });
+          await savePastVideosLocally(firestoreVideos);
+          return;
+        }
+      }
+      final localVideos = await getPastVideosLocally();
       setState(() {
-        globals.pastVideos = recentVideos;
+        globals.pastVideos = localVideos;
       });
     } catch (e) {
-      print("error loading past videos: $e");
+      print("Error loading past videos?! Error: $e");
+      final localVideos = await getPastVideosLocally();
+      setState(() {
+        globals.pastVideos = localVideos;
+      });
     }
   }
   //
