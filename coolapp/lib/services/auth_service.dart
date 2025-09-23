@@ -50,12 +50,9 @@ class AuthService {
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
 
-        // Save auth data first - this is what makes the hot restart work
         await _saveAuthData(data, email);
 
         try {
-          // Handle Firestore operations separately so authentication still succeeds
-          // even if Firestore operations fail
           final name = await getUserNameFromFirestore(
             data['localId'],
             data['idToken'],
@@ -356,5 +353,14 @@ Future<void> savePastVideosLocally(List<String> videos) async {
 
 Future<List<String>> getPastVideosLocally() async {
   final prefs = await SharedPreferences.getInstance();
-  return prefs.getStringList('past_videos') ?? [];
+  final savedVideos = prefs.getStringList('past_videos');
+
+  if (savedVideos == null || savedVideos.isEmpty) {
+    return List<String>.filled(5, '');
+  }
+  var fullList = List<String>.from(savedVideos);
+  while (fullList.length < 5) {
+    fullList.add('');
+  }
+  return fullList.take(5).toList();
 }
