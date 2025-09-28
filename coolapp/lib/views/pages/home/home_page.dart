@@ -994,7 +994,7 @@ class _HomePageState extends State<HomePage> {
                     ),*/
                     SizedBox(width: 3),
                     Icon(
-                      Icons.copyright_sharp,
+                      Icons.cabin,
                       size: 15,
                       color: globals.isLight
                           ? Color.fromARGB(255, 0, 0, 0)
