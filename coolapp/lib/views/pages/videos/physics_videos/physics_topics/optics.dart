@@ -22,7 +22,7 @@ class _OpticsState extends State<Optics> {
       'title': 'Unit 1: Introduction to Optics',
       'description':
           'Light as electromagnetic waves, properties of light, and the electromagnetic spectrum',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -30,14 +30,14 @@ class _OpticsState extends State<Optics> {
       'title': 'Unit 2: Reflection and Mirrors',
       'description':
           'Law of reflection, plane mirrors, curved mirrors, and image formation',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 3: Refraction and Lenses',
       'description': 'Snell\'s law, total internal reflection, and lens optics',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -45,14 +45,14 @@ class _OpticsState extends State<Optics> {
       'title': 'Unit 4: Interference and Diffraction',
       'description':
           'Young\'s double-slit experiment, diffraction gratings, and the wave nature of light',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 5: Optical Instruments',
       'description': 'Microscopes, telescopes, cameras, and the human eye',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

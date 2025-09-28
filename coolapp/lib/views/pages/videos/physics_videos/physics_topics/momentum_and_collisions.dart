@@ -23,7 +23,7 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
       'title': 'Unit 1: Introduction to Momentum',
       'description':
           'Introduction to momentum, apply basic momentum formulae to moving objects',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -31,14 +31,14 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
       'title': 'Unit 2: Momentum in 2D',
       'description':
           'Break momentum into x- and y-components and apply conservation in both directions to solve planar collision problems.',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 3: Impulse and Momentum change',
       'description': 'How forces change momentum over time',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -46,14 +46,14 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
       'title': 'Unit 4: Types of Collisions',
       'description':
           'Differences between elastic, inelastic, and perfectly inelastic collisions by analyzing how momentum and kinetic energy behave.',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Momentum practice problems',
       'description': 'Practice problems with momentum',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

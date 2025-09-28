@@ -22,7 +22,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
       'title': 'Unit 1: Work and Work-Energy Theorem',
       'description':
           'Definition of work, calculating work from forces and displacements, and applying the work-energy theorem',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -30,7 +30,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
       'title': 'Unit 2: Kinetic and Potential Energy',
       'description':
           'Energy of motion, gravitational potential energy, elastic potential energy, and energy conversions',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -38,7 +38,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
       'title': 'Unit 3: Conservation of Energy',
       'description':
           'Energy conservation principles, isolated systems, and solving problems with conservation laws',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -46,7 +46,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
       'title': 'Unit 4: Power and Efficiency',
       'description':
           'Rate of energy transfer, calculation of power, and analyzing efficiency in mechanical and thermal systems',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -54,7 +54,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
       'title': 'Unit 5: Energy in Complex Systems',
       'description':
           'Energy analysis in mechanical, electrical, and thermodynamic systems with multiple interacting parts',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

@@ -22,7 +22,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
       'title': 'Unit 1: Electric Charge',
       'description':
           'Fundamental properties of electric charge, conductors and insulators',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -30,7 +30,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
       'title': 'Unit 2: Coulomb\'s Law',
       'description':
           'Force between electric charges and vector addition of electric forces',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -38,7 +38,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
       'title': 'Unit 3: Electric Fields',
       'description':
           'Field concept, field lines, and calculating electric fields from various charge distributions',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -46,7 +46,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
       'title': 'Unit 4: Electric Potential',
       'description':
           'Electric potential energy, voltage, and equipotential surfaces',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -54,7 +54,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
       'title': 'Unit 5: Capacitance',
       'description':
           'Capacitors, dielectrics, and energy storage in electric fields',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

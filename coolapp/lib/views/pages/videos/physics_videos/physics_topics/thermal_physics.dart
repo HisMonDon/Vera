@@ -22,7 +22,7 @@ class _ThermalPhysicsState extends State<ThermalPhysics> {
       'title': 'Unit 1: Temperature and Heat Transfer',
       'description':
           'Temperature scales, thermal equilibrium, and mechanisms of heat transfer including conduction, convection, and radiation',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -30,7 +30,7 @@ class _ThermalPhysicsState extends State<ThermalPhysics> {
       'title': 'Unit 2: Kinetic Theory of Gases',
       'description':
           'Molecular behavior of gases, ideal gas law derivations, and statistical mechanics fundamentals',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -38,7 +38,7 @@ class _ThermalPhysicsState extends State<ThermalPhysics> {
       'title': 'Unit 3: First Law of Thermodynamics',
       'description':
           'Energy conservation in thermal systems, work done by expanding gases, and internal energy calculations',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -46,7 +46,7 @@ class _ThermalPhysicsState extends State<ThermalPhysics> {
       'title': 'Unit 4: Second Law and Entropy',
       'description':
           'Irreversible processes, entropy changes, efficiency of heat engines, and Carnot cycles',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -54,7 +54,7 @@ class _ThermalPhysicsState extends State<ThermalPhysics> {
       'title': 'Unit 5: Thermodynamic Processes',
       'description':
           'Isothermal, adiabatic, isobaric, and isochoric processes in thermodynamic cycles',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

@@ -22,7 +22,7 @@ class _FluidsState extends State<Fluids> {
       'title': 'Unit 1: Introduction to Fluid Mechanics',
       'description':
           'Density, pressure, and the properties of fluids at rest and in motion',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -30,7 +30,7 @@ class _FluidsState extends State<Fluids> {
       'title': 'Unit 2: Fluid Statics',
       'description':
           'Pascal\'s principle, hydrostatic pressure, and buoyancy (Archimedes\' principle)',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -38,7 +38,7 @@ class _FluidsState extends State<Fluids> {
       'title': 'Unit 3: Fluid Dynamics',
       'description':
           'Continuity equation, Bernoulli\'s equation, and fluid flow analysis',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -46,14 +46,14 @@ class _FluidsState extends State<Fluids> {
       'title': 'Unit 4: Viscosity and Turbulence',
       'description':
           'Viscous forces, Reynolds number, and laminar vs. turbulent flow',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 5: Applications of Fluid Mechanics',
       'description': 'Flight, hydraulic systems, blood flow, and oceanography',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

@@ -22,7 +22,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
       'title': 'Unit 1: Introduction to Rotational Motion',
       'description':
           'Basic concepts of circular motion, angular displacement, and angular velocity',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -30,7 +30,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
       'title': 'Unit 2: Angular Kinematics',
       'description':
           'Angular position, velocity, and acceleration relationships in rotational motion',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -38,7 +38,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
       'title': 'Unit 3: Torque and Rotational Equilibrium',
       'description':
           'How torque causes rotational acceleration and balanced torque systems',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -46,7 +46,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
       'title': 'Unit 4: Moment of Inertia',
       'description':
           'Understanding rotational mass, calculating moment of inertia for different objects',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -54,7 +54,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
       'title': 'Unit 5: Rotational Energy and Angular Momentum',
       'description':
           'Conservation principles in rotating systems and applications',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

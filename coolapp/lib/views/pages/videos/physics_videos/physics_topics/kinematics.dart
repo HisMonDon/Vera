@@ -24,7 +24,7 @@ class _KinematicsState extends State<Kinematics> {
           'Unit 1: 1D Motion Analysis', //1D MOTION ANALYSIS DONE 2025/09/11 VERSION 1.0
       'description':
           'Basic kinematics, introduction to acceleration and velocity',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/kinematics/1D%20Kinematics.mp4',
     },
@@ -32,7 +32,7 @@ class _KinematicsState extends State<Kinematics> {
       'title':
           'Unit 2: 2D Motion Analysis Part 1', //DONE 2025/09/14 VERSION 1.0
       'description': 'Introduction to 2D kinematics with velocity',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/Kinematics%202D%20Part%201.mp4',
     },
@@ -40,7 +40,7 @@ class _KinematicsState extends State<Kinematics> {
       'title': '2D Motion Analysis Part 2', //DONE 2025/09/14 VERSION 1.0
       'description':
           'Introduces various kinematics formulae and constants used for solving problems',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/Kinematics%202D%20Part%202.mp4',
     },
@@ -49,7 +49,7 @@ class _KinematicsState extends State<Kinematics> {
       'title': '2D Motion Analysis Part 3', //DONE 2025/09/14 VERSION 1.0
       'description':
           'Application of kinematics formulae and vectors on an example problem',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/Kinematics%202D%20Part%203.mp4',
     },
@@ -57,7 +57,7 @@ class _KinematicsState extends State<Kinematics> {
       'title':
           'Unit 3: More 2D Kinematics Example', //DONE 2025/09/28 VERSION 1.0
       'description': 'Extra practice on 2D Kinematics',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/More%20Kinematics%20Examples%201.mp4',
     },
@@ -65,14 +65,14 @@ class _KinematicsState extends State<Kinematics> {
       'title':
           'Unit 4: Harder 2D Kinematics Examples', //DONE 2025/09/28 VERSION 1.0
       'description': 'More practice on 2D Kinematics',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/Kinematics%20harder%20quesitons.mp4',
     },
     {
       'title': 'Graphical Kinematics',
       'description': 'Slope-area interpretations of motion graphs',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

@@ -23,7 +23,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
     {
       'title': 'Unit 1: Vectors and Scalars',
       'description': 'Definition and examples of vectors and scalars',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/intro_to_physics/vectors%20vs%20scalars.mp4',
     },
@@ -31,7 +31,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
       'title': 'Unit 2: Error Analysis and Measurement',
       'description':
           'Tools and techniques for measurement, error analysis and uncertainty in measurements',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

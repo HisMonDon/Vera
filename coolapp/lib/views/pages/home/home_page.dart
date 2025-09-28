@@ -63,8 +63,6 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-
-
   Future<void> _loadPastVideos() async {
     try {
       if (globals.isLoggedIn &&
@@ -790,7 +788,8 @@ class _HomePageState extends State<HomePage> {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => VideoPlayerScreen(),
+                                      builder: (context) =>
+                                          VideoPlayerScreen(key: UniqueKey()),
                                     ),
                                   );
                                 },

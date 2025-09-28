@@ -22,7 +22,7 @@ class _QuantumMechanicsState extends State<QuantumMechanics> {
       'title': 'Unit 1: Introduction to Quantum Physics',
       'description':
           'Historical developments, black-body radiation, and the limitations of classical physics',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -30,14 +30,14 @@ class _QuantumMechanicsState extends State<QuantumMechanics> {
       'title': 'Unit 2: Photoelectric Effect and Wave-Particle Duality',
       'description':
           'Light as particles, matter as waves, and de Broglie wavelength',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 3: Atomic Models and Quantum Numbers',
       'description': 'Bohr model, energy levels, and quantum numbers in atoms',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -45,7 +45,7 @@ class _QuantumMechanicsState extends State<QuantumMechanics> {
       'title': 'Unit 4: Uncertainty Principle and Wave Functions',
       'description':
           'Heisenberg\'s uncertainty principle and probabilistic interpretation of quantum mechanics',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -53,7 +53,7 @@ class _QuantumMechanicsState extends State<QuantumMechanics> {
       'title': 'Unit 5: Quantum Applications',
       'description':
           'Quantum tunneling, Schrödinger\'s cat, and modern applications in technology',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

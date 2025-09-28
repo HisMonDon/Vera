@@ -22,7 +22,7 @@ class _HarmonicsState extends State<Harmonics> {
       'title': 'Unit 1: Introduction to Harmonic Motion',
       'description':
           'Basic concepts of periodic motion, restoring forces, and oscillations',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -30,7 +30,7 @@ class _HarmonicsState extends State<Harmonics> {
       'title': 'Unit 2: Simple Harmonic Motion',
       'description':
           'Mathematical analysis of SHM, period, frequency, and amplitude',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -38,7 +38,7 @@ class _HarmonicsState extends State<Harmonics> {
       'title': 'Unit 3: Pendulums',
       'description':
           'Simple pendulums, physical pendulums, and the small-angle approximation',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -46,7 +46,7 @@ class _HarmonicsState extends State<Harmonics> {
       'title': 'Unit 4: Springs and Oscillators',
       'description':
           'Hooke\'s law, mass-spring systems, and energy in simple harmonic motion',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -54,7 +54,7 @@ class _HarmonicsState extends State<Harmonics> {
       'title': 'Unit 5: Resonance and Damped Oscillations',
       'description':
           'Forced oscillations, resonance phenomena, and damped harmonic motion',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

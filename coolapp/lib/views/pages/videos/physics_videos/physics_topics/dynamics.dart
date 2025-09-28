@@ -23,7 +23,7 @@ class _DynamicsState extends State<Dynamics> {
       'title': "Unit 1: Introduction to Dynamics",
       'description':
           "Difference between dynamics and kinematics, Newton's three laws",
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -31,14 +31,14 @@ class _DynamicsState extends State<Dynamics> {
       'title': "Unit 2: Free Body Diagrams",
       'description':
           "Short tutorial on a very important type of diagram in physics",
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 3: Gravity and Normal Force',
       'description': 'Introduces the idea of gravity and normal force',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
@@ -46,21 +46,21 @@ class _DynamicsState extends State<Dynamics> {
       'title': 'Unit 4: Friction',
       'description':
           "Friction calculations with coefficient of friction and normal force",
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 5: Tension and Spring Force',
       'description': "Hooke's Law, introduces tension",
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
     {
       'title': 'Unit 6: Net Forces',
       'description': "Net Forces calculations in detail",
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },

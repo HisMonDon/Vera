@@ -22,7 +22,7 @@ class _OtherState extends State<Other> {
       'title': 'Measurement and Uncertainty',
       'description':
           'Techniques for recording measurements, calculating uncertainties, and analyzing experimental data',
-      'videoPage': VideoPlayerScreen(),
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
     },
