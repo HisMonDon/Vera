@@ -54,18 +54,20 @@ class _KinematicsState extends State<Kinematics> {
           'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/Kinematics%202D%20Part%203.mp4',
     },
     {
-      'title': 'Unit 3: More 2D Kinematics Example',
+      'title':
+          'Unit 3: More 2D Kinematics Example', //DONE 2025/09/28 VERSION 1.0
       'description': 'Extra practice on 2D Kinematics',
       'videoPage': VideoPlayerScreen(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/More%20Kinematics%20Examples%201.mp4',
     },
     {
-      'title': 'Unit 4: Relative Motion',
-      'description': 'Frame of reference',
+      'title':
+          'Unit 4: Harder 2D Kinematics Examples', //DONE 2025/09/28 VERSION 1.0
+      'description': 'More practice on 2D Kinematics',
       'videoPage': VideoPlayerScreen(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/Kinematics%20harder%20quesitons.mp4',
     },
     {
       'title': 'Graphical Kinematics',

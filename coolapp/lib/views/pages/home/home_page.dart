@@ -63,12 +63,7 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  Future<void> getFrame() async {
-    final ui.Image frame = await extractVideoFrameAt(
-      videoFilePath: videoUrl,
-      positionInSeconds: 3.5,
-    );
-  }
+
 
   Future<void> _loadPastVideos() async {
     try {
