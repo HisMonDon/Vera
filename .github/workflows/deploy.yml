@@ -1,0 +1,44 @@
+
+name: Deploy Flutter Web to GitHub Pages
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable' # or 'beta', 'dev', 'master'
+          
+      
+      - name: Change to app directory
+        run: cd coolapp
+
+
+      - name: Get dependencies
+        run: flutter pub get
+        working-directory: ./coolapp 
+
+      - name: Build Flutter web app
+        run: flutter build web --release --base-href /Vera/
+        working-directory: ./coolapp 
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./coolapp/build/web
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
