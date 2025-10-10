@@ -983,7 +983,7 @@ class _HomePageState extends State<HomePage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    /*Text(
+                    Text(
                       "2025 Chenyu Studios",
                       style: TextStyle(
                         fontSize: 10,
@@ -991,15 +991,8 @@ class _HomePageState extends State<HomePage> {
                             ? Color.fromARGB(255, 0, 0, 0)
                             : Color.fromARGB(255, 255, 255, 255),
                       ),
-                    ),*/
-                    SizedBox(width: 3),
-                    Icon(
-                      Icons.cabin,
-                      size: 15,
-                      color: globals.isLight
-                          ? Color.fromARGB(255, 0, 0, 0)
-                          : Color.fromARGB(255, 255, 255, 255),
                     ),
+                    SizedBox(width: 3),
                   ],
                 ),
               ],
