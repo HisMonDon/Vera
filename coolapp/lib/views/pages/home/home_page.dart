@@ -193,217 +193,217 @@ class _HomePageState extends State<HomePage> {
       return Scaffold(body: Center(child: CircularProgressIndicator()));
     }
 
-    // add comma prefix only for display
-    String displayName = _displayName.isNotEmpty ? ", " + _displayName : "";
-
-    /* if (globals.userName != '') {
-      if (globals.userName[0] == ",") {
-        globals.userName = globals.userName;
-        print("all good!");
-      } else {
-        globals.userName = ", " + globals.userName;
-        print("added comma");
-      }
-    } else {
-      print("userName is null.");
-    }*/
-
     return Scaffold(
       appBar: TimedAppBar(),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.all(20),
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                if (kIsWeb)
-                  Row(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.baseline,
-                    textBaseline: TextBaseline.alphabetic,
-                    children: [
-                      Text(
-                        'Vera',
-                        style: GoogleFonts.mPlus1(
-                          fontSize: 48.0,
-                          fontWeight: FontWeight.bold,
-                          color: globals.isLight
-                              ? Color.fromARGB(255, 15, 48, 40)
-                              : Colors.white,
-                        ),
-                      ),
-                      const SizedBox(width: 10),
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 10,
-                          vertical: 4,
-                        ),
-                        decoration: BoxDecoration(
-                          color: globals.isLight
-                              ? Color.fromARGB(255, 15, 48, 40)
-                              : Color.fromARGB(255, 167, 198, 131),
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        child: Text(
-                          'Web',
-                          style: GoogleFonts.montserrat(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.w600,
-                            color: globals.isLight
-                                ? Colors.white
-                                : Color.fromARGB(255, 15, 48, 40),
-                          ),
-                        ),
-                      ),
-                    ],
+      body: Column(
+        children: [
+          // --- FIXED HEADER FOR WEB ---
+          if (kIsWeb)
+            Container(
+              padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
+              width: double.infinity,
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.baseline,
+                textBaseline: TextBaseline.alphabetic,
+                children: [
+                  Text(
+                    'Vera',
+                    style: GoogleFonts.mPlus1(
+                      fontSize: 48.0,
+                      fontWeight: FontWeight.bold,
+                      color: globals.isLight
+                          ? Color.fromARGB(255, 15, 48, 40)
+                          : Colors.white,
+                    ),
                   ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  const SizedBox(width: 10),
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 4,
+                    ),
+                    decoration: BoxDecoration(
+                      color: globals.isLight
+                          ? Color.fromARGB(255, 15, 48, 40)
+                          : Color.fromARGB(255, 167, 198, 131),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Text(
+                      'Web',
+                      style: GoogleFonts.montserrat(
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.w600,
+                        color: globals.isLight
+                            ? Colors.white
+                            : Color.fromARGB(255, 15, 48, 40),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          // --- SCROLLABLE CONTENT ---
+          Expanded(
+            child: SingleChildScrollView(
+              child: Padding(
+                padding: EdgeInsets.all(20),
+                child: Column(
                   children: [
-                    Row(
+                    Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Expanded(
-                          child: WidgetMask(
-                            blendMode: BlendMode.srcATop,
-                            childSaveLayer: true,
-                            mask: globals.isLight
-                                ? Image(
-                                    image: AssetImage(
-                                      'images/text_background_light.png',
-                                    ),
-                                    fit: BoxFit.cover,
-                                  )
-                                : Image(
-                                    image: AssetImage(
-                                      'images/text_background.jpg',
-                                    ),
-                                    fit: BoxFit.cover,
-                                  ),
-                            child: AutoSizeText(
-                              globals.welcomeText,
-                              style: GoogleFonts.inter(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 100,
-                                color: const Color.fromARGB(255, 255, 255, 255),
-                                decoration: TextDecoration.none,
-                              ),
-                              maxLines: 1,
-                            ),
-                          ),
-                        ),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.end,
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            SizedBox(height: 20),
-                            ElevatedButton(
-                              onPressed: openDialog,
-                              child: Icon(Icons.settings),
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.transparent,
-                                shadowColor: Colors.transparent,
-                                elevation: 0,
-                                iconSize: 20,
+                            Expanded(
+                              child: WidgetMask(
+                                blendMode: BlendMode.srcATop,
+                                childSaveLayer: true,
+                                mask: globals.isLight
+                                    ? Image(
+                                        image: AssetImage(
+                                          'images/text_background_light.png',
+                                        ),
+                                        fit: BoxFit.cover,
+                                      )
+                                    : Image(
+                                        image: AssetImage(
+                                          'images/text_background.jpg',
+                                        ),
+                                        fit: BoxFit.cover,
+                                      ),
+                                child: AutoSizeText(
+                                  globals.welcomeText,
+                                  style: GoogleFonts.inter(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 100,
+                                    color: const Color.fromARGB(
+                                      255,
+                                      255,
+                                      255,
+                                      255,
+                                    ),
+                                    decoration: TextDecoration.none,
+                                  ),
+                                  maxLines: 1,
+                                ),
                               ),
                             ),
-                            SizedBox(height: 10),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                SizedBox(height: 20),
+                                ElevatedButton(
+                                  onPressed: openDialog,
+                                  child: Icon(Icons.settings),
+                                  style: ElevatedButton.styleFrom(
+                                    backgroundColor: Colors.transparent,
+                                    shadowColor: Colors.transparent,
+                                    elevation: 0,
+                                    iconSize: 20,
+                                  ),
+                                ),
+                                SizedBox(height: 10),
+                              ],
+                            ),
                           ],
                         ),
-                      ],
-                    ),
 
-                    SizedBox(height: 1),
+                        SizedBox(height: 1),
 
-                    WidgetMask(
-                      blendMode: BlendMode.srcATop,
-                      childSaveLayer: true,
-                      mask: globals.isLight
-                          ? Image(
-                              image: AssetImage(
-                                'images/text_background_light.png',
-                              ),
-                              fit: BoxFit.cover,
-                            )
-                          : Image(
-                              image: AssetImage('images/text_background.jpg'),
-                              fit: BoxFit.cover,
+                        WidgetMask(
+                          blendMode: BlendMode.srcATop,
+                          childSaveLayer: true,
+                          mask: globals.isLight
+                              ? Image(
+                                  image: AssetImage(
+                                    'images/text_background_light.png',
+                                  ),
+                                  fit: BoxFit.cover,
+                                )
+                              : Image(
+                                  image: AssetImage(
+                                    'images/text_background.jpg',
+                                  ),
+                                  fit: BoxFit.cover,
+                                ),
+                          child: AutoSizeText(
+                            globals.motivationalMessage,
+                            style: GoogleFonts.mPlus1(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 30,
+                              color: const Color.fromARGB(255, 255, 255, 255),
+                              decoration: TextDecoration.none,
                             ),
-                      child: AutoSizeText(
-                        globals.motivationalMessage,
-                        style: GoogleFonts.mPlus1(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30,
-                          color: const Color.fromARGB(255, 255, 255, 255),
-                          decoration: TextDecoration.none,
+                            maxLines: 1,
+                          ),
                         ),
-                        maxLines: 1,
-                      ),
-                    ),
-                    SizedBox(height: 30),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        //FIRST
-                        Column(
+                        SizedBox(height: 30),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Text(
-                              'Recent Videos Watched',
-                              style: GoogleFonts.mPlus1(
-                                fontSize:
-                                    ((MediaQuery.of(context).size.width) / 3 +
-                                        100) /
-                                    30,
-                                color: globals.isLight
-                                    ? Color.fromARGB(255, 7, 77, 53)
-                                    : Color.fromARGB(255, 167, 198, 131),
-                              ),
-                            ),
-                            SizedBox(height: 10),
-                            Stack(
+                            //FIRST
+                            Column(
                               children: [
-                                SizedBox(
-                                  height: 300,
-                                  child: Stack(
-                                    alignment: Alignment.centerLeft,
-                                    children: [
-                                      Container(
-                                        width:
-                                            (MediaQuery.of(
-                                              context,
-                                            ).size.width) -
-                                            ((MediaQuery.of(
-                                                      context,
-                                                    ).size.width) /
-                                                    4 -
-                                                40) -
-                                            100, //replace brackets with whatever explore size is
-                                        height: 300,
-                                        decoration: BoxDecoration(
-                                          color: Color.fromARGB(
-                                            255,
-                                            15,
-                                            48,
-                                            40,
+                                Text(
+                                  'Recent Videos Watched',
+                                  style: GoogleFonts.mPlus1(
+                                    fontSize:
+                                        ((MediaQuery.of(context).size.width) /
+                                                3 +
+                                            100) /
+                                        30,
+                                    color: globals.isLight
+                                        ? Color.fromARGB(255, 7, 77, 53)
+                                        : Color.fromARGB(255, 167, 198, 131),
+                                  ),
+                                ),
+                                SizedBox(height: 10),
+                                Stack(
+                                  children: [
+                                    SizedBox(
+                                      height: 300,
+                                      child: Stack(
+                                        alignment: Alignment.centerLeft,
+                                        children: [
+                                          Container(
+                                            width:
+                                                (MediaQuery.of(
+                                                  context,
+                                                ).size.width) -
+                                                ((MediaQuery.of(
+                                                          context,
+                                                        ).size.width) /
+                                                        4 -
+                                                    40) -
+                                                100, //replace brackets with whatever explore size is
+                                            height: 300,
+                                            decoration: BoxDecoration(
+                                              color: Color.fromARGB(
+                                                255,
+                                                15,
+                                                48,
+                                                40,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(15),
+                                            ),
                                           ),
-                                          borderRadius: BorderRadius.circular(
-                                            15,
-                                          ),
-                                        ),
-                                      ),
-                                      Positioned.fill(
-                                        child: Align(
-                                          alignment: Alignment.topCenter,
-                                          child: Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceEvenly,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.center,
-                                            children: globals.pastVideos
-                                                .asMap()
-                                                .entries
-                                                .map((entry) {
+                                          Positioned.fill(
+                                            child: Align(
+                                              alignment: Alignment.topCenter,
+                                              child: Column(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment
+                                                        .spaceEvenly,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.center,
+                                                children: globals.pastVideos.asMap().entries.map((
+                                                  entry,
+                                                ) {
                                                   final index = entry.key;
                                                   final video = entry.value;
 
@@ -458,23 +458,39 @@ class _HomePageState extends State<HomePage> {
                                                       maxLines: 1,
                                                     ),
                                                   );
-                                                })
-                                                .toList(),
+                                                }).toList(),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    if (!globals.isLoggedIn)
+                                      ClipRRect(
+                                        borderRadius: BorderRadius.circular(15),
+                                        child: BackdropFilter(
+                                          filter: ui.ImageFilter.blur(
+                                            sigmaX: 5.0,
+                                            sigmaY: 5.0,
+                                          ),
+                                          child: Container(
+                                            width:
+                                                (MediaQuery.of(
+                                                  context,
+                                                ).size.width) -
+                                                ((MediaQuery.of(
+                                                          context,
+                                                        ).size.width) /
+                                                        4 -
+                                                    40) -
+                                                100,
+                                            height: 300,
+                                            color: Colors.black.withAlpha(50),
                                           ),
                                         ),
                                       ),
-                                    ],
-                                  ),
-                                ),
-                                if (!globals.isLoggedIn)
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
-                                    child: BackdropFilter(
-                                      filter: ui.ImageFilter.blur(
-                                        sigmaX: 5.0,
-                                        sigmaY: 5.0,
-                                      ),
-                                      child: Container(
+                                    if (!globals.isLoggedIn)
+                                      Container(
                                         width:
                                             (MediaQuery.of(
                                               context,
@@ -484,320 +500,235 @@ class _HomePageState extends State<HomePage> {
                                                     ).size.width) /
                                                     4 -
                                                 40) -
-                                            100,
+                                            100, //replace brackets with whatever explore size is,
                                         height: 300,
-                                        color: Colors.black.withAlpha(50),
-                                      ),
-                                    ),
-                                  ),
-                                if (!globals.isLoggedIn)
-                                  Container(
-                                    width:
-                                        (MediaQuery.of(context).size.width) -
-                                        ((MediaQuery.of(context).size.width) /
-                                                4 -
-                                            40) -
-                                        100, //replace brackets with whatever explore size is,
-                                    height: 300,
 
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(15),
-                                      color: const Color.fromARGB(
-                                        200,
-                                        60,
-                                        90,
-                                        70,
-                                      ),
-                                    ),
-                                    child: Center(
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Icon(
-                                            Icons.lock,
-                                            size: 80,
-                                            color: const Color.fromARGB(
-                                              255,
-                                              217,
-                                              225,
-                                              207,
-                                            ),
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(
+                                            15,
                                           ),
-                                          AutoSizeText(
-                                            'Please log in or create a FREE account to access UNLIMITED free videos!',
-                                            style: TextStyle(
-                                              color: const Color.fromARGB(
-                                                255,
-                                                217,
-                                                225,
-                                                207,
-                                              ),
-                                              fontSize: 18,
-                                            ),
-                                            maxLines: 2,
+                                          color: const Color.fromARGB(
+                                            200,
+                                            60,
+                                            90,
+                                            70,
                                           ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                if (kIsWeb && global.isLoggedIn)
-                                  Container(
-                                    width:
-                                        (MediaQuery.of(context).size.width) -
-                                        ((MediaQuery.of(context).size.width) /
-                                                4 -
-                                            40) -
-                                        100, //replace brackets with whatever explore size is,
-                                    height: 300,
-
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(15),
-                                      color: const Color.fromARGB(
-                                        200,
-                                        60,
-                                        90,
-                                        70,
-                                      ),
-                                    ),
-                                    child: Center(
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Icon(
-                                            Icons.lock,
-                                            size: 80,
-                                            color: const Color.fromARGB(
-                                              255,
-                                              217,
-                                              225,
-                                              207,
-                                            ),
-                                          ),
-                                          AutoSizeText(
-                                            'Get the FREE App to Unlock This Feature!',
-                                            style: TextStyle(
-                                              color: const Color.fromARGB(
-                                                255,
-                                                217,
-                                                225,
-                                                207,
-                                              ),
-                                              fontSize: 18,
-                                            ),
-                                            maxLines: 2,
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                              ],
-                            ),
-                          ],
-                        ),
-                        SizedBox(width: 20),
-
-                        //SECOND
-                        //________________________________
-                        Column(
-                          children: [
-                            Text(
-                              'Explore',
-                              style: GoogleFonts.mPlus1(
-                                fontSize:
-                                    ((MediaQuery.of(context).size.width) / 3 +
-                                        100) /
-                                    30,
-                                color: globals.isLight
-                                    ? Color.fromARGB(255, 7, 77, 53)
-                                    : Color.fromARGB(255, 167, 198, 131),
-                              ),
-                            ),
-
-                            SizedBox(height: 10),
-                            SizedBox(
-                              height: 300,
-                              child: Stack(
-                                alignment: Alignment.centerLeft,
-                                children: [
-                                  Container(
-                                    width:
-                                        (MediaQuery.of(context).size.width) /
-                                            4 -
-                                        40,
-                                    height: 300,
-                                    decoration: BoxDecoration(
-                                      color: Color.fromARGB(255, 15, 48, 40),
-                                      borderRadius: BorderRadius.circular(15),
-                                    ),
-                                  ),
-                                  Positioned.fill(
-                                    child: Align(
-                                      alignment: Alignment.topCenter,
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceEvenly,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.center,
-                                        children: globals.explore.asMap().entries.map((
-                                          entry,
-                                        ) {
-                                          final index = entry.key;
-                                          final video = entry.value;
-
-                                          final backgroundColor =
-                                              (index % 2 != 0)
-                                              ? const Color.fromARGB(
+                                        ),
+                                        child: Center(
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [
+                                              Icon(
+                                                Icons.lock,
+                                                size: 80,
+                                                color: const Color.fromARGB(
                                                   255,
-                                                  30,
-                                                  60,
-                                                  50,
-                                                )
-                                              : const Color.fromARGB(
-                                                  255,
-                                                  60,
-                                                  90,
-                                                  70,
-                                                ); // color 2
-
-                                          return Container(
-                                            alignment: Alignment.center,
-                                            decoration: BoxDecoration(
-                                              color: backgroundColor,
-                                              borderRadius:
-                                                  BorderRadius.circular(5),
-                                            ),
-
-                                            width:
-                                                (MediaQuery.of(
+                                                  217,
+                                                  225,
+                                                  207,
+                                                ),
+                                              ),
+                                              AutoSizeText(
+                                                'Please log in or create a FREE account to access UNLIMITED free videos!',
+                                                style: TextStyle(
+                                                  color: const Color.fromARGB(
+                                                    255,
+                                                    217,
+                                                    225,
+                                                    207,
+                                                  ),
+                                                  fontSize: 18,
+                                                ),
+                                                maxLines: 2,
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    if (kIsWeb && global.isLoggedIn)
+                                      Container(
+                                        width:
+                                            (MediaQuery.of(
+                                              context,
+                                            ).size.width) -
+                                            ((MediaQuery.of(
                                                       context,
                                                     ).size.width) /
-                                                    2 -
-                                                70,
-                                            height: 50,
-                                            child: ElevatedButton(
-                                              onPressed: () {
-                                                if (!globals.isLoggedIn) {
-                                                  Navigator.push(
-                                                    context,
-                                                    MaterialPageRoute(
-                                                      builder: (context) =>
-                                                          NotLoggedIn(),
-                                                    ),
-                                                  );
-                                                } else {
-                                                  Navigator.push(
-                                                    context,
-                                                    MaterialPageRoute(
-                                                      builder: (context) => globals
-                                                          .redirectExplore[index],
-                                                    ),
-                                                  );
-                                                }
-                                              },
-                                              style: ElevatedButton.styleFrom(
-                                                backgroundColor:
-                                                    Colors.transparent,
-                                                shadowColor: Colors.transparent,
+                                                    4 -
+                                                40) -
+                                            100, //replace brackets with whatever explore size is,
+                                        height: 300,
+
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(
+                                            15,
+                                          ),
+                                          color: const Color.fromARGB(
+                                            200,
+                                            60,
+                                            90,
+                                            70,
+                                          ),
+                                        ),
+                                        child: Center(
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [
+                                              Icon(
+                                                Icons.lock,
+                                                size: 80,
+                                                color: const Color.fromARGB(
+                                                  255,
+                                                  217,
+                                                  225,
+                                                  207,
+                                                ),
                                               ),
-                                              child: AutoSizeText(
-                                                video,
-                                                style: GoogleFonts.montserrat(
-                                                  fontSize: 20,
+                                              AutoSizeText(
+                                                'Get the FREE App to Unlock This Feature!',
+                                                style: TextStyle(
                                                   color: const Color.fromARGB(
                                                     255,
                                                     217,
                                                     225,
                                                     207,
                                                   ),
+                                                  fontSize: 18,
+                                                ),
+                                                maxLines: 2,
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                            SizedBox(width: 20),
+
+                            //SECOND
+                            //________________________________
+                            Column(
+                              children: [
+                                Text(
+                                  'Explore',
+                                  style: GoogleFonts.mPlus1(
+                                    fontSize:
+                                        ((MediaQuery.of(context).size.width) /
+                                                3 +
+                                            100) /
+                                        30,
+                                    color: globals.isLight
+                                        ? Color.fromARGB(255, 7, 77, 53)
+                                        : Color.fromARGB(255, 167, 198, 131),
+                                  ),
+                                ),
+
+                                SizedBox(height: 10),
+                                SizedBox(
+                                  height: 300,
+                                  child: Stack(
+                                    alignment: Alignment.centerLeft,
+                                    children: [
+                                      Container(
+                                        width:
+                                            (MediaQuery.of(
+                                                  context,
+                                                ).size.width) /
+                                                4 -
+                                            40,
+                                        height: 300,
+                                        decoration: BoxDecoration(
+                                          color: Color.fromARGB(
+                                            255,
+                                            15,
+                                            48,
+                                            40,
+                                          ),
+                                          borderRadius: BorderRadius.circular(
+                                            15,
+                                          ),
+                                        ),
+                                      ),
+                                      Positioned.fill(
+                                        child: Align(
+                                          alignment: Alignment.topCenter,
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceEvenly,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.center,
+                                            children: globals.explore.asMap().entries.map((
+                                              entry,
+                                            ) {
+                                              final index = entry.key;
+                                              final video = entry.value;
+
+                                              final backgroundColor =
+                                                  (index % 2 != 0)
+                                                  ? const Color.fromARGB(
+                                                      255,
+                                                      30,
+                                                      60,
+                                                      50,
+                                                    )
+                                                  : const Color.fromARGB(
+                                                      255,
+                                                      60,
+                                                      90,
+                                                      70,
+                                                    ); // color 2
+
+                                              return Container(
+                                                alignment: Alignment.center,
+                                                decoration: BoxDecoration(
+                                                  color: backgroundColor,
+                                                  borderRadius:
+                                                      BorderRadius.circular(5),
                                                 ),
 
-                                                maxLines: 1,
-                                              ),
-                                            ),
-                                          );
-                                        }).toList(),
-                                      ),
-                                    ),
-                                  ),
-                                  if (!globals.isLoggedIn)
-                                    ClipRRect(
-                                      borderRadius: BorderRadius.circular(15),
-                                      child: BackdropFilter(
-                                        filter: ui.ImageFilter.blur(
-                                          sigmaX: 5.0,
-                                          sigmaY: 5.0,
-                                        ),
-                                        child: Container(
-                                          width:
-                                              (MediaQuery.of(
-                                                    context,
-                                                  ).size.width) /
-                                                  4 -
-                                              40,
-                                          height: 300,
-                                          color: Colors.black.withAlpha(50),
-                                        ),
-                                      ),
-                                    ),
-                                  if (!globals.isLoggedIn)
-                                    MouseRegion(
-                                      cursor: SystemMouseCursors.click,
-                                      child: GestureDetector(
-                                        onTap: () {
-                                          global.selectedIndex = 1;
-                                          Navigator.of(
-                                            context,
-                                            rootNavigator: true,
-                                          ).pushNamedAndRemoveUntil(
-                                            '/widgetTree',
-                                            (route) => false,
-                                            arguments: 1,
-                                          );
-                                        },
-                                        child: Container(
-                                          width:
-                                              (MediaQuery.of(
-                                                    context,
-                                                  ).size.width) /
-                                                  4 -
-                                              40,
-                                          height: 300,
-                                          decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(
-                                              15,
-                                            ),
-                                            color: const Color.fromARGB(
-                                              200,
-                                              60,
-                                              90,
-                                              70,
-                                            ),
-                                          ),
-                                          child: Center(
-                                            child: Column(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.center,
-                                              children: [
-                                                Icon(
-                                                  Icons.lock,
-                                                  size:
-                                                      60, // Smaller size due to narrower container
-                                                  color: const Color.fromARGB(
-                                                    255,
-                                                    217,
-                                                    225,
-                                                    207,
-                                                  ),
-                                                ),
-                                                Padding(
-                                                  padding: EdgeInsets.symmetric(
-                                                    horizontal: 8.0,
-                                                  ),
+                                                width:
+                                                    (MediaQuery.of(
+                                                          context,
+                                                        ).size.width) /
+                                                        2 -
+                                                    70,
+                                                height: 50,
+                                                child: ElevatedButton(
+                                                  onPressed: () {
+                                                    if (!globals.isLoggedIn) {
+                                                      Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(
+                                                          builder: (context) =>
+                                                              NotLoggedIn(),
+                                                        ),
+                                                      );
+                                                    } else {
+                                                      Navigator.push(
+                                                        context,
+                                                        MaterialPageRoute(
+                                                          builder: (context) =>
+                                                              globals
+                                                                  .redirectExplore[index],
+                                                        ),
+                                                      );
+                                                    }
+                                                  },
+                                                  style:
+                                                      ElevatedButton.styleFrom(
+                                                        backgroundColor:
+                                                            Colors.transparent,
+                                                        shadowColor:
+                                                            Colors.transparent,
+                                                      ),
                                                   child: AutoSizeText(
-                                                    'CLICK HERE TO LOG IN OR REGISTER',
-                                                    style: TextStyle(
+                                                    video,
+                                                    style: GoogleFonts.montserrat(
+                                                      fontSize: 20,
                                                       color:
                                                           const Color.fromARGB(
                                                             255,
@@ -805,298 +736,398 @@ class _HomePageState extends State<HomePage> {
                                                             225,
                                                             207,
                                                           ),
-                                                      fontSize: 16,
                                                     ),
-                                                    maxLines: 2,
+                                                    maxLines: 1,
+                                                  ),
+                                                ),
+                                              );
+                                            }).toList(),
+                                          ),
+                                        ),
+                                      ),
+                                      if (!globals.isLoggedIn)
+                                        ClipRRect(
+                                          borderRadius: BorderRadius.circular(
+                                            15,
+                                          ),
+                                          child: BackdropFilter(
+                                            filter: ui.ImageFilter.blur(
+                                              sigmaX: 5.0,
+                                              sigmaY: 5.0,
+                                            ),
+                                            child: Container(
+                                              width:
+                                                  (MediaQuery.of(
+                                                        context,
+                                                      ).size.width) /
+                                                      4 -
+                                                  40,
+                                              height: 300,
+                                              color: Colors.black.withAlpha(50),
+                                            ),
+                                          ),
+                                        ),
+                                      if (!globals.isLoggedIn)
+                                        MouseRegion(
+                                          cursor: SystemMouseCursors.click,
+                                          child: GestureDetector(
+                                            onTap: () {
+                                              global.selectedIndex = 1;
+                                              Navigator.of(
+                                                context,
+                                                rootNavigator: true,
+                                              ).pushNamedAndRemoveUntil(
+                                                '/widgetTree',
+                                                (route) => false,
+                                                arguments: 1,
+                                              );
+                                            },
+                                            child: Container(
+                                              width:
+                                                  (MediaQuery.of(
+                                                        context,
+                                                      ).size.width) /
+                                                      4 -
+                                                  40,
+                                              height: 300,
+                                              decoration: BoxDecoration(
+                                                borderRadius:
+                                                    BorderRadius.circular(15),
+                                                color: const Color.fromARGB(
+                                                  200,
+                                                  60,
+                                                  90,
+                                                  70,
+                                                ),
+                                              ),
+                                              child: Center(
+                                                child: Column(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.center,
+                                                  children: [
+                                                    Icon(
+                                                      Icons.lock,
+                                                      size:
+                                                          60, // Smaller size due to narrower container
+                                                      color:
+                                                          const Color.fromARGB(
+                                                            255,
+                                                            217,
+                                                            225,
+                                                            207,
+                                                          ),
+                                                    ),
+                                                    Padding(
+                                                      padding:
+                                                          EdgeInsets.symmetric(
+                                                            horizontal: 8.0,
+                                                          ),
+                                                      child: AutoSizeText(
+                                                        'CLICK HERE TO LOG IN OR REGISTER',
+                                                        style: TextStyle(
+                                                          color:
+                                                              const Color.fromARGB(
+                                                                255,
+                                                                217,
+                                                                225,
+                                                                207,
+                                                              ),
+                                                          fontSize: 16,
+                                                        ),
+                                                        maxLines: 2,
+                                                        textAlign:
+                                                            TextAlign.center,
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 20),
+                    //====================================================================//
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Featured Video of the Day',
+                          style: GoogleFonts.mPlus1(
+                            fontSize:
+                                ((MediaQuery.of(context).size.width) / 3 +
+                                    100) /
+                                30,
+                            color: globals.isLight
+                                ? Color.fromARGB(255, 7, 77, 53)
+                                : Color.fromARGB(255, 167, 198, 131),
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                        SizedBox(
+                          height: 600,
+                          child: Stack(
+                            alignment: Alignment.topCenter,
+                            children: [
+                              Container(
+                                width: (MediaQuery.of(context).size.width) - 80,
+                                height: 600,
+                                decoration: BoxDecoration(
+                                  color: Color.fromARGB(255, 15, 48, 40),
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  SizedBox(height: 20),
+                                  ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      backgroundColor: Colors.transparent,
+                                      shadowColor: Colors.transparent,
+                                      foregroundColor: Colors.transparent,
+                                      shape: RoundedRectangleBorder(),
+                                    ),
+                                    onPressed: () {
+                                      globals.videoLink = videoUrl;
+                                      globals.unitTitle = featuredTitle;
+                                      globals.topicTitle = featuredUnit;
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              VideoPlayerScreen(
+                                                key: UniqueKey(),
+                                              ),
+                                        ),
+                                      );
+                                    },
+                                    child: Stack(
+                                      alignment: Alignment.topCenter,
+                                      children: [
+                                        Container(
+                                          height: 560,
+                                          width:
+                                              (MediaQuery.of(
+                                                context,
+                                              ).size.width) -
+                                              120,
+                                          alignment: Alignment.topCenter,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(
+                                              15,
+                                            ),
+                                            color: thumbnailColor,
+                                          ),
+                                          child: SizedBox(
+                                            height: 560,
+                                            width:
+                                                (MediaQuery.of(
+                                                  context,
+                                                ).size.width) -
+                                                120,
+                                            child: Image(
+                                              fit: BoxFit.cover,
+                                              image: AssetImage(
+                                                'images/featured_video_background.png',
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Column(
+                                          children: [
+                                            SizedBox(height: 60),
+                                            Container(
+                                              width:
+                                                  (MediaQuery.of(
+                                                    context,
+                                                  ).size.width) -
+                                                  120,
+                                              height: 80,
+                                              decoration: BoxDecoration(
+                                                shape: BoxShape.rectangle,
+                                                color: Color.fromARGB(
+                                                  255,
+                                                  15,
+                                                  48,
+                                                  40,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.only(
+                                            top: 60,
+                                          ),
+                                          child: Align(
+                                            alignment: Alignment.topCenter,
+                                            child: Row(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              mainAxisSize: MainAxisSize.max,
+                                              children: [
+                                                SizedBox(
+                                                  width:
+                                                      MediaQuery.of(
+                                                        context,
+                                                      ).size.width -
+                                                      130,
+                                                  height: 80,
+                                                  child: AutoSizeText(
+                                                    featuredUnit +
+                                                        ": " +
+                                                        featuredTitle,
+                                                    style: GoogleFonts.bebasNeue(
+                                                      fontSize: 60,
+                                                      color:
+                                                          const Color.fromARGB(
+                                                            255,
+                                                            217,
+                                                            225,
+                                                            199,
+                                                          ),
+                                                    ),
                                                     textAlign: TextAlign.center,
+                                                    maxFontSize: 80,
+                                                    maxLines: 2,
                                                   ),
                                                 ),
                                               ],
                                             ),
                                           ),
                                         ),
-                                      ),
-                                    ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-                SizedBox(height: 20),
-                //====================================================================//
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-
-                  children: [
-                    Text(
-                      'Featured Video of the Day',
-                      style: GoogleFonts.mPlus1(
-                        fontSize:
-                            ((MediaQuery.of(context).size.width) / 3 + 100) /
-                            30,
-                        color: globals.isLight
-                            ? Color.fromARGB(255, 7, 77, 53)
-                            : Color.fromARGB(255, 167, 198, 131),
-                      ),
-                    ),
-                    SizedBox(height: 10),
-                    SizedBox(
-                      height: 600,
-                      child: Stack(
-                        alignment: Alignment.topCenter,
-                        children: [
-                          Container(
-                            width: (MediaQuery.of(context).size.width) - 80,
-                            height: 600,
-                            decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 15, 48, 40),
-                              borderRadius: BorderRadius.circular(15),
-                            ),
-                          ),
-
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              SizedBox(height: 20),
-
-                              ElevatedButton(
-                                style: ElevatedButton.styleFrom(
-                                  backgroundColor: Colors.transparent,
-                                  shadowColor: Colors.transparent,
-                                  foregroundColor: Colors.transparent,
-                                  shape: RoundedRectangleBorder(),
-                                ),
-                                onPressed: () {
-                                  globals.videoLink = videoUrl;
-                                  globals.unitTitle = featuredTitle;
-                                  globals.topicTitle = featuredUnit;
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) =>
-                                          VideoPlayerScreen(key: UniqueKey()),
-                                    ),
-                                  );
-                                },
-                                child: Stack(
-                                  alignment: Alignment.topCenter,
-                                  children: [
-                                    Container(
-                                      height: 560,
-                                      width:
-                                          (MediaQuery.of(context).size.width) -
-                                          120,
-                                      alignment: Alignment.topCenter,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(15),
-                                        color: thumbnailColor,
-                                      ),
-
-                                      child: SizedBox(
-                                        height: 560,
-                                        width:
-                                            (MediaQuery.of(
-                                              context,
-                                            ).size.width) -
-                                            120,
-                                        child: Image(
-                                          fit: BoxFit.cover,
-                                          image: AssetImage(
-                                            'images/featured_video_background.png',
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    Column(
-                                      children: [
-                                        SizedBox(height: 60),
-                                        Container(
-                                          width:
-                                              (MediaQuery.of(
-                                                context,
-                                              ).size.width) -
-                                              120,
-                                          height: 80,
-                                          decoration: BoxDecoration(
-                                            shape: BoxShape.rectangle,
-                                            color: Color.fromARGB(
-                                              255,
-                                              15,
-                                              48,
-                                              40,
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: 60),
-                                      child: Align(
-                                        alignment: Alignment.topCenter,
-                                        child: Row(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.center,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            SizedBox(
-                                              width:
-                                                  MediaQuery.of(
-                                                    context,
-                                                  ).size.width -
-                                                  130,
-                                              height: 80,
-                                              child: AutoSizeText(
-                                                featuredUnit +
-                                                    ": " +
-                                                    featuredTitle,
-                                                style: GoogleFonts.bebasNeue(
-                                                  fontSize: 60,
-                                                  color: const Color.fromARGB(
-                                                    255,
-                                                    217,
-                                                    225,
-                                                    199,
-                                                  ),
-                                                ),
-
-                                                textAlign: TextAlign.center,
-                                                maxFontSize: 80,
-                                                maxLines: 2,
-                                              ),
-                                            ),
-                                            /*SizedBox(width: 20),
-                                            Icon(
-                                              MdiIcons.atom,
+                                        Positioned.fill(
+                                          child: Align(
+                                            alignment: Alignment.center,
+                                            child: Icon(
+                                              Icons.play_circle_fill_rounded,
+                                              size: 80,
                                               color: Color.fromARGB(
                                                 255,
                                                 217,
                                                 225,
                                                 199,
                                               ),
-                                              size: 70,
-                                            ),*/
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Positioned.fill(
-                                      child: Align(
-                                        alignment: Alignment.center,
-                                        child: Icon(
-                                          Icons.play_circle_fill_rounded,
-                                          size: 80,
-                                          color: Color.fromARGB(
-                                            255,
-                                            217,
-                                            225,
-                                            199,
+                                            ),
                                           ),
                                         ),
-                                      ),
+                                      ],
                                     ),
-                                  ],
-                                ),
+                                  ),
+                                ],
                               ),
-                            ],
-                          ),
-                          if (!globals.isLoggedIn)
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(15),
-                              child: BackdropFilter(
-                                filter: ui.ImageFilter.blur(
-                                  sigmaX: 5.0,
-                                  sigmaY: 5.0,
+                              if (!globals.isLoggedIn)
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: BackdropFilter(
+                                    filter: ui.ImageFilter.blur(
+                                      sigmaX: 5.0,
+                                      sigmaY: 5.0,
+                                    ),
+                                    child: Container(
+                                      width:
+                                          (MediaQuery.of(context).size.width) -
+                                          80,
+                                      height: 600,
+                                      color: Colors.black.withAlpha(50),
+                                    ),
+                                  ),
                                 ),
-                                child: Container(
+                              if (!globals.isLoggedIn)
+                                Container(
                                   width:
                                       (MediaQuery.of(context).size.width) - 80,
                                   height: 600,
-                                  color: Colors.black.withAlpha(50),
-                                ),
-                              ),
-                            ),
-                          if (!globals.isLoggedIn)
-                            Container(
-                              width: (MediaQuery.of(context).size.width) - 80,
-                              height: 600,
-
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                color: const Color.fromARGB(200, 60, 90, 70),
-                              ),
-                              child: Center(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Icon(
-                                      Icons.lock,
-                                      size: 80,
-                                      color: const Color.fromARGB(
-                                        255,
-                                        217,
-                                        225,
-                                        207,
-                                      ),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(15),
+                                    color: const Color.fromARGB(
+                                      200,
+                                      60,
+                                      90,
+                                      70,
                                     ),
-                                    AutoSizeText(
-                                      'Please log in or create a FREE account to access UNLIMITED free videos!',
-                                      style: TextStyle(
-                                        color: const Color.fromARGB(
-                                          255,
-                                          217,
-                                          225,
-                                          207,
+                                  ),
+                                  child: Center(
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Icon(
+                                          Icons.lock,
+                                          size: 80,
+                                          color: const Color.fromARGB(
+                                            255,
+                                            217,
+                                            225,
+                                            207,
+                                          ),
                                         ),
-                                        fontSize: 18,
-                                      ),
-                                      maxLines: 2,
+                                        AutoSizeText(
+                                          'Please log in or create a FREE account to access UNLIMITED free videos!',
+                                          style: TextStyle(
+                                            color: const Color.fromARGB(
+                                              255,
+                                              217,
+                                              225,
+                                              207,
+                                            ),
+                                            fontSize: 18,
+                                          ),
+                                          maxLines: 2,
+                                        ),
+                                      ],
                                     ),
-                                  ],
+                                  ),
                                 ),
-                              ),
-                            ),
-                        ],
-                      ),
+                            ],
+                          ),
+                        ),
+                        //end of featured vid
+                      ],
                     ),
-                    //end of featured vid
+                    SizedBox(height: 20),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "2025 Chenyu Studios",
+                          style: TextStyle(
+                            fontSize: 10,
+                            color: globals.isLight
+                                ? Color.fromARGB(255, 0, 0, 0)
+                                : Color.fromARGB(255, 255, 255, 255),
+                          ),
+                        ),
+                        SizedBox(width: 3),
+                        Icon(
+                          Icons.copyright_sharp,
+                          size: 15,
+                          color: globals.isLight
+                              ? Color.fromARGB(255, 0, 0, 0)
+                              : Color.fromARGB(255, 255, 255, 255),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
-                SizedBox(height: 20),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "2025 Chenyu Studios",
-                      style: TextStyle(
-                        fontSize: 10,
-                        color: globals.isLight
-                            ? Color.fromARGB(255, 0, 0, 0)
-                            : Color.fromARGB(255, 255, 255, 255),
-                      ),
-                    ),
-                    SizedBox(width: 3),
-                    Icon(
-                      Icons.copyright_sharp,
-                      size: 15,
-                      color: globals.isLight
-                          ? Color.fromARGB(255, 0, 0, 0)
-                          : Color.fromARGB(255, 255, 255, 255),
-                    ),
-                  ],
-                ),
-              ],
+              ),
             ),
           ),
-        ),
+        ],
       ),
     );
   }
