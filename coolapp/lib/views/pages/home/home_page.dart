@@ -430,15 +430,25 @@ class _HomePageState extends State<HomePage> {
                                 if (!globals.isLoggedIn)
                                   ClipRRect(
                                     borderRadius: BorderRadius.circular(15),
-                                    child: Container(
-                                      width:
-                                          (MediaQuery.of(context).size.width) -
-                                          ((MediaQuery.of(context).size.width) /
-                                                  4 -
-                                              40) -
-                                          100,
-                                      height: 300,
-                                      color: Colors.black.withAlpha(50),
+                                    child: BackdropFilter(
+                                      filter: ui.ImageFilter.blur(
+                                        sigmaX: 5.0,
+                                        sigmaY: 5.0,
+                                      ),
+                                      child: Container(
+                                        width:
+                                            (MediaQuery.of(
+                                              context,
+                                            ).size.width) -
+                                            ((MediaQuery.of(
+                                                      context,
+                                                    ).size.width) /
+                                                    4 -
+                                                40) -
+                                            100,
+                                        height: 300,
+                                        color: Colors.black.withAlpha(50),
+                                      ),
                                     ),
                                   ),
                                 if (!globals.isLoggedIn)
@@ -490,20 +500,6 @@ class _HomePageState extends State<HomePage> {
                                           ),
                                         ],
                                       ),
-                                    ),
-                                  ),
-                                if (kIsWeb)
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
-                                    child: Container(
-                                      width:
-                                          (MediaQuery.of(context).size.width) -
-                                          ((MediaQuery.of(context).size.width) /
-                                                  4 -
-                                              40) -
-                                          100,
-                                      height: 300,
-                                      color: Colors.black.withAlpha(50),
                                     ),
                                   ),
                                 if (kIsWeb)
@@ -689,15 +685,21 @@ class _HomePageState extends State<HomePage> {
                                   if (!globals.isLoggedIn)
                                     ClipRRect(
                                       borderRadius: BorderRadius.circular(15),
-                                      child: Container(
-                                        width:
-                                            (MediaQuery.of(
-                                                  context,
-                                                ).size.width) /
-                                                4 -
-                                            40,
-                                        height: 300,
-                                        color: Colors.black.withAlpha(50),
+                                      child: BackdropFilter(
+                                        filter: ui.ImageFilter.blur(
+                                          sigmaX: 5.0,
+                                          sigmaY: 5.0,
+                                        ),
+                                        child: Container(
+                                          width:
+                                              (MediaQuery.of(
+                                                    context,
+                                                  ).size.width) /
+                                                  4 -
+                                              40,
+                                          height: 300,
+                                          color: Colors.black.withAlpha(50),
+                                        ),
                                       ),
                                     ),
                                   if (!globals.isLoggedIn)
@@ -969,10 +971,17 @@ class _HomePageState extends State<HomePage> {
                           if (!globals.isLoggedIn)
                             ClipRRect(
                               borderRadius: BorderRadius.circular(15),
-                              child: Container(
-                                width: (MediaQuery.of(context).size.width) - 80,
-                                height: 600,
-                                color: Colors.black.withAlpha(50),
+                              child: BackdropFilter(
+                                filter: ui.ImageFilter.blur(
+                                  sigmaX: 5.0,
+                                  sigmaY: 5.0,
+                                ),
+                                child: Container(
+                                  width:
+                                      (MediaQuery.of(context).size.width) - 80,
+                                  height: 600,
+                                  color: Colors.black.withAlpha(50),
+                                ),
                               ),
                             ),
                           if (!globals.isLoggedIn)
