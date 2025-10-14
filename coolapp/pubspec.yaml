@@ -42,19 +42,26 @@ dependencies:
   video_thumbnail: any
   visibility_detector: ^0.4.0
   animate_do: ^3.0.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.13.1"
   flutter_lints: ^6.0.0
   extract_video_frame: ^0.0.1
   material_design_icons_flutter: ^7.0.7296
   animations: ^2.0.11
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
+# flutter_launcher_icons configuration
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/icon.png"
+  web:
+    generate: true
+    image_path: "assets/icons/icon.png"
+    background_color: "#012E20"
+    theme_color: "#012E20"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
