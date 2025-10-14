@@ -17,7 +17,6 @@ import 'package:extract_video_frame/extract_video_frame.dart';
 import 'dart:ui' as ui;
 //import 'package:media_kit_video/media_kit_video.dart';
 //import 'dart:io';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
 class HomePage extends StatefulWidget {
@@ -502,7 +501,7 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                     ),
                                   ),
-                                if (kIsWeb)
+                                if (kIsWeb && global.isLoggedIn)
                                   Container(
                                     width:
                                         (MediaQuery.of(context).size.width) -
