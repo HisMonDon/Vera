@@ -1,4 +1,3 @@
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
@@ -19,7 +18,6 @@ import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
-import 'package:animations/animations.dart';
 
 class TopicsPage extends StatefulWidget {
   const TopicsPage({super.key});

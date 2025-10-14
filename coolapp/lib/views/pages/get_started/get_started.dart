@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:coolapp/globals.dart' as globals;
 //import 'package:video_thumbnail/video_thumbnail.dart'; perchance use this for later purposes if current extractvideoimage still doesnt support ios or android in future?
-import 'dart:ui' as ui;
 //import 'package:media_kit_video/media_kit_video.dart';
 //import 'dart:io';
 

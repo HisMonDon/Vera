@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:coolapp/services/auth_service.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:flutter/foundation.dart' show kIsWeb;
 
 class ProfilePage extends StatefulWidget {

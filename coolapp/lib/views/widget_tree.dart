@@ -3,10 +3,8 @@ import 'package:coolapp/views/pages/settings_page/settings_page.dart';
 import 'package:coolapp/views/pages/home/home_page.dart';
 import 'package:coolapp/views/pages/profile_page/profile_page.dart';
 import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
-import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'dart:async';
 

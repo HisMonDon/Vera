@@ -1,5 +1,3 @@
-import 'package:auto_size_text/auto_size_text.dart';
-import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/fluids.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
@@ -11,7 +9,6 @@ import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
-import 'package:coolapp/views/pages/videos/video_player.dart';
 
 //not done
 class ApPhysics1 extends StatefulWidget {
