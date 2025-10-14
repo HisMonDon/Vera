@@ -18,6 +18,7 @@ import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class TopicsPage extends StatefulWidget {
   const TopicsPage({super.key});
@@ -27,7 +28,6 @@ class TopicsPage extends StatefulWidget {
 }
 
 class _TopicsPageState extends State<TopicsPage> {
-  bool _checkedAuth = false;
   Widget _combineButtons() {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
@@ -516,129 +516,201 @@ class _TopicsPageState extends State<TopicsPage> {
             ],
           ),
         ),
-        child: Stack(
+        child: Column(
           children: [
-            CustomScrollView(
-              slivers: [
-                SliverToBoxAdapter(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Align(
-                        child: Padding(
-                          padding: EdgeInsets.only(
-                            left: 16,
-                            top: 16,
-                            bottom: 20,
-                          ),
-                          child: Text(
-                            'Physics Topics and Subfields',
-                            style: GoogleFonts.mPlus1(
-                              fontSize: 40,
-                              color: globals.isLight
-                                  ? Color.fromARGB(255, 7, 77, 53)
-                                  : Colors.white,
-                            ),
-                          ),
+            if (kIsWeb)
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 5,
+                  horizontal: 20,
+                ),
+                width: double.infinity,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.baseline,
+                  textBaseline: TextBaseline.alphabetic,
+                  children: [
+                    Text(
+                      'Vera',
+                      style: GoogleFonts.mPlus1(
+                        fontSize: 48.0,
+                        fontWeight: FontWeight.bold,
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 15, 48, 40)
+                            : Colors.white,
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 4,
+                      ),
+                      decoration: BoxDecoration(
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 15, 48, 40)
+                            : Color.fromARGB(255, 167, 198, 131),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text(
+                        'Web',
+                        style: GoogleFonts.montserrat(
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w600,
+                          color: globals.isLight
+                              ? Colors.white
+                              : Color.fromARGB(255, 15, 48, 40),
                         ),
                       ),
-                      Row(
-                        children: [
-                          Container(
-                            margin: EdgeInsets.only(right: 24),
-                            padding: EdgeInsets.symmetric(
-                              horizontal: 12,
-                              vertical: 5,
-                            ),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(12),
-                              color: Color.fromARGB(255, 15, 48, 40),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.black.withOpacity(0.1),
-                                  blurRadius: 8,
-                                  offset: Offset(0, 3),
+                    ),
+                  ],
+                ),
+              ),
+            Expanded(
+              child: Stack(
+                children: [
+                  CustomScrollView(
+                    slivers: [
+                      SliverToBoxAdapter(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Align(
+                              child: Padding(
+                                padding: EdgeInsets.only(
+                                  left: 16,
+                                  top: 16,
+                                  bottom: 20,
                                 ),
-                              ],
-                            ),
-                            child: DropdownButtonHideUnderline(
-                              child: DropdownButton<String>(
-                                icon: Icon(
-                                  Icons.sort,
-                                  color: Color.fromARGB(255, 167, 198, 131),
+                                child: Text(
+                                  'Physics Topics and Subfields',
+                                  style: GoogleFonts.mPlus1(
+                                    fontSize: 40,
+                                    color: globals.isLight
+                                        ? Color.fromARGB(255, 7, 77, 53)
+                                        : Colors.white,
+                                  ),
                                 ),
-                                value: sortBy[sortIndex],
-                                elevation: 16,
-                                dropdownColor: Color.fromARGB(255, 15, 48, 40),
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 16,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                                underline: Container(
-                                  height: 6,
-
-                                  //color: Colors.deepPurpleAccent,
-                                ),
-                                onChanged: (String? value) {
-                                  if (value == null) return;
-                                  sortIndex = sortBy.indexOf(value);
-                                  setState(() {
-                                    _currentSortOption = value;
-                                    _sortCourseList(value);
-                                  });
-                                },
-
-                                items: sortBy.map<DropdownMenuItem<String>>((
-                                  String value,
-                                ) {
-                                  return DropdownMenuItem<String>(
-                                    value: value,
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Text(value),
-                                    ),
-                                  );
-                                }).toList(),
                               ),
                             ),
-                          ),
-                          SizedBox(width: 30),
-                        ],
+                            Row(
+                              children: [
+                                Container(
+                                  margin: EdgeInsets.only(right: 24),
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 12,
+                                    vertical: 5,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(12),
+                                    color: Color.fromARGB(255, 15, 48, 40),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.black.withOpacity(0.1),
+                                        blurRadius: 8,
+                                        offset: Offset(0, 3),
+                                      ),
+                                    ],
+                                  ),
+                                  child: DropdownButtonHideUnderline(
+                                    child: DropdownButton<String>(
+                                      icon: Icon(
+                                        Icons.sort,
+                                        color: Color.fromARGB(
+                                          255,
+                                          167,
+                                          198,
+                                          131,
+                                        ),
+                                      ),
+                                      value: sortBy[sortIndex],
+                                      elevation: 16,
+                                      dropdownColor: Color.fromARGB(
+                                        255,
+                                        15,
+                                        48,
+                                        40,
+                                      ),
+                                      style: GoogleFonts.montserrat(
+                                        fontSize: 16,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                      underline: Container(
+                                        height: 6,
+
+                                        //color: Colors.deepPurpleAccent,
+                                      ),
+                                      onChanged: (String? value) {
+                                        if (value == null) return;
+                                        sortIndex = sortBy.indexOf(value);
+                                        setState(() {
+                                          _currentSortOption = value;
+                                          _sortCourseList(value);
+                                        });
+                                      },
+
+                                      items: sortBy
+                                          .map<DropdownMenuItem<String>>((
+                                            String value,
+                                          ) {
+                                            return DropdownMenuItem<String>(
+                                              value: value,
+                                              child: Padding(
+                                                padding: const EdgeInsets.all(
+                                                  8.0,
+                                                ),
+                                                child: Text(value),
+                                              ),
+                                            );
+                                          })
+                                          .toList(),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(width: 30),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      SliverPadding(
+                        padding: EdgeInsets.symmetric(horizontal: 16),
+                        sliver: SliverGrid(
+                          gridDelegate:
+                              SliverGridDelegateWithMaxCrossAxisExtent(
+                                maxCrossAxisExtent: 500,
+                                crossAxisSpacing: 20,
+                                mainAxisSpacing: 20,
+                                childAspectRatio: 0.94,
+                              ),
+                          delegate: SliverChildBuilderDelegate((
+                            context,
+                            index,
+                          ) {
+                            final course = courseList[index];
+                            return _buildVideoButton(
+                              course['title'] ?? '',
+                              course['imagePath'] ?? '',
+                              course['description'] ?? '',
+                              index,
+                              course['videoPage']!,
+                            );
+                          }, childCount: courseList.length),
+                        ),
                       ),
                     ],
                   ),
-                ),
-                SliverPadding(
-                  padding: EdgeInsets.symmetric(horizontal: 16),
-                  sliver: SliverGrid(
-                    gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                      maxCrossAxisExtent: 500,
-                      crossAxisSpacing: 20,
-                      mainAxisSpacing: 20,
-                      childAspectRatio: 0.94,
-                    ),
-                    delegate: SliverChildBuilderDelegate((context, index) {
-                      final course = courseList[index];
-                      return _buildVideoButton(
-                        course['title'] ?? '',
-                        course['imagePath'] ?? '',
-                        course['description'] ?? '',
-                        index,
-                        course['videoPage']!,
-                      );
-                    }, childCount: courseList.length),
-                  ),
-                ),
-              ],
-            ),
 
-            Positioned(
-              bottom: 20,
-              left:
-                  MediaQuery.of(context).size.width / 2 -
-                  125, //change this when dealing with button
-              child: _combineButtons(),
+                  Positioned(
+                    bottom: 20,
+                    left:
+                        MediaQuery.of(context).size.width / 2 -
+                        125, //change this when dealing with button
+                    child: _combineButtons(),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
