@@ -47,10 +47,10 @@ class _HelpPageState extends State<HelpPage> {
         children: [
           if (kIsWeb)
             Container(
-              padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
+              padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 20),
               width: double.infinity,
               child: Row(
-                mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.baseline,
                 textBaseline: TextBaseline.alphabetic,
                 children: [
