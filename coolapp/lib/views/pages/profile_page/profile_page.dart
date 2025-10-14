@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:coolapp/services/auth_service.dart';
 import 'package:coolapp/globals.dart' as globals;
+import 'package:google_fonts/google_fonts.dart';
+
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -610,40 +613,94 @@ class _ProfilePageState extends State<ProfilePage> {
       appBar: TimedAppBar(),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Center(
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                _isInitializing
-                    ? const CircularProgressIndicator()
-                    : (isLoggedIn ? _buildProfileView() : _buildLoginForm()),
-                SizedBox(height: 20),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
+        child: Column(
+          children: [
+            if (kIsWeb)
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 12,
+                  horizontal: 20,
+                ),
+                width: double.infinity,
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.baseline,
+                  textBaseline: TextBaseline.alphabetic,
                   children: [
                     Text(
-                      "2025 Chenyu Studios",
-                      style: TextStyle(
-                        fontSize: 10,
+                      'Vera',
+                      style: GoogleFonts.mPlus1(
+                        fontSize: 48.0,
+                        fontWeight: FontWeight.bold,
                         color: globals.isLight
-                            ? Color.fromARGB(255, 0, 0, 0)
-                            : Color.fromARGB(255, 255, 255, 255),
+                            ? Color.fromARGB(255, 15, 48, 40)
+                            : Colors.white,
                       ),
                     ),
-                    SizedBox(width: 3),
-                    Icon(
-                      Icons.copyright_sharp,
-                      size: 15,
-                      color: globals.isLight
-                          ? Color.fromARGB(255, 0, 0, 0)
-                          : Color.fromARGB(255, 255, 255, 255),
+                    const SizedBox(width: 10),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 4,
+                      ),
+                      decoration: BoxDecoration(
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 15, 48, 40)
+                            : Color.fromARGB(255, 167, 198, 131),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text(
+                        'Web',
+                        style: GoogleFonts.montserrat(
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w600,
+                          color: globals.isLight
+                              ? Colors.white
+                              : Color.fromARGB(255, 15, 48, 40),
+                        ),
+                      ),
                     ),
                   ],
                 ),
-              ],
+              ),
+            Center(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    _isInitializing
+                        ? const CircularProgressIndicator()
+                        : (isLoggedIn
+                              ? _buildProfileView()
+                              : _buildLoginForm()),
+                    SizedBox(height: 20),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "2025 Chenyu Studios",
+                          style: TextStyle(
+                            fontSize: 10,
+                            color: globals.isLight
+                                ? Color.fromARGB(255, 0, 0, 0)
+                                : Color.fromARGB(255, 255, 255, 255),
+                          ),
+                        ),
+                        SizedBox(width: 3),
+                        Icon(
+                          Icons.copyright_sharp,
+                          size: 15,
+                          color: globals.isLight
+                              ? Color.fromARGB(255, 0, 0, 0)
+                              : Color.fromARGB(255, 255, 255, 255),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ),
-          ),
+          ],
         ),
       ),
     );
