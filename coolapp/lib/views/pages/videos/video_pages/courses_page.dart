@@ -366,11 +366,9 @@ class _CoursePageState extends State<CoursePage> {
                     slivers: [
                       SliverToBoxAdapter(
                         child: Padding(
-                          padding: EdgeInsets.only(
-                            left: 16,
-                            top: 16,
-                            bottom: 20,
-                          ),
+                          padding: kIsWeb
+                              ? EdgeInsets.only(left: 16, top: 0, bottom: 20)
+                              : EdgeInsets.only(left: 16, top: 16, bottom: 20),
                           child: Text(
                             'Full Physics Courses',
                             style: GoogleFonts.mPlus1(

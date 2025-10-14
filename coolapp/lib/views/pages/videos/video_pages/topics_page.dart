@@ -577,11 +577,17 @@ class _TopicsPageState extends State<TopicsPage> {
                           children: [
                             Align(
                               child: Padding(
-                                padding: EdgeInsets.only(
-                                  left: 16,
-                                  top: 16,
-                                  bottom: 20,
-                                ),
+                                padding: kIsWeb
+                                    ? EdgeInsets.only(
+                                        left: 16,
+                                        top: 0,
+                                        bottom: 20,
+                                      )
+                                    : EdgeInsets.only(
+                                        left: 16,
+                                        top: 16,
+                                        bottom: 20,
+                                      ),
                                 child: Text(
                                   'Physics Topics and Subfields',
                                   style: GoogleFonts.mPlus1(
