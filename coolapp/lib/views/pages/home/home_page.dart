@@ -197,7 +197,6 @@ class _HomePageState extends State<HomePage> {
       appBar: TimedAppBar(),
       body: Column(
         children: [
-          // --- FIXED HEADER FOR WEB ---
           if (kIsWeb)
             Container(
               padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
@@ -243,7 +242,6 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-          // --- SCROLLABLE CONTENT ---
           Expanded(
             child: SingleChildScrollView(
               child: Padding(

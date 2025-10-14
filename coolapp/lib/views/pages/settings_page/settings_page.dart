@@ -42,31 +42,35 @@ class _HelpPageState extends State<HelpPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: TimedAppBar(),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Settings',
-                style: GoogleFonts.mPlus1(
-                  fontSize: 40,
-                  fontWeight: FontWeight.bold,
-                  color: globals.isLight
-                      ? const Color.fromARGB(255, 15, 48, 40)
-                      : Colors.white,
-                ),
+      body: Column(
+        children: [
+          SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Settings',
+                    style: GoogleFonts.mPlus1(
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold,
+                      color: globals.isLight
+                          ? const Color.fromARGB(255, 15, 48, 40)
+                          : Colors.white,
+                    ),
+                  ),
+                  const SizedBox(height: 30),
+                  _buildSettingsCard(
+                    title: 'Appearance',
+                    children: [_buildThemeToggle()],
+                  ),
+                  const SizedBox(height: 30),
+                ],
               ),
-              const SizedBox(height: 30),
-              _buildSettingsCard(
-                title: 'Appearance',
-                children: [_buildThemeToggle()],
-              ),
-              const SizedBox(height: 30),
-            ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }
