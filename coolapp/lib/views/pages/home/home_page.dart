@@ -18,6 +18,7 @@ import 'dart:ui' as ui;
 //import 'package:media_kit_video/media_kit_video.dart';
 //import 'dart:io';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class HomePage extends StatefulWidget {
   HomePage({super.key});
@@ -486,6 +487,81 @@ class _HomePageState extends State<HomePage> {
                                           ),
                                           AutoSizeText(
                                             'Please log in or create a FREE account to access UNLIMITED free videos!',
+                                            style: TextStyle(
+                                              color: const Color.fromARGB(
+                                                255,
+                                                217,
+                                                225,
+                                                207,
+                                              ),
+                                              fontSize: 18,
+                                            ),
+                                            maxLines: 2,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                if (kIsWeb)
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(15),
+                                    child: BackdropFilter(
+                                      filter: ui.ImageFilter.blur(
+                                        sigmaX: 5.0,
+                                        sigmaY: 5.0,
+                                      ),
+                                      child: Container(
+                                        width:
+                                            (MediaQuery.of(
+                                              context,
+                                            ).size.width) -
+                                            ((MediaQuery.of(
+                                                      context,
+                                                    ).size.width) /
+                                                    4 -
+                                                40) -
+                                            100,
+                                        height: 300,
+                                        color: Colors.black.withAlpha(50),
+                                      ),
+                                    ),
+                                  ),
+                                if (kIsWeb)
+                                  Container(
+                                    width:
+                                        (MediaQuery.of(context).size.width) -
+                                        ((MediaQuery.of(context).size.width) /
+                                                4 -
+                                            40) -
+                                        100, //replace brackets with whatever explore size is,
+                                    height: 300,
+
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(15),
+                                      color: const Color.fromARGB(
+                                        200,
+                                        60,
+                                        90,
+                                        70,
+                                      ),
+                                    ),
+                                    child: Center(
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Icon(
+                                            Icons.lock,
+                                            size: 80,
+                                            color: const Color.fromARGB(
+                                              255,
+                                              217,
+                                              225,
+                                              207,
+                                            ),
+                                          ),
+                                          AutoSizeText(
+                                            'Get the FREE App to Unlock This Feature!',
                                             style: TextStyle(
                                               color: const Color.fromARGB(
                                                 255,

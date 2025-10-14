@@ -273,7 +273,11 @@ class AuthService {
 
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
-      return data['fields']['name']['stringValue'];
+      if (data['fields'] != null &&
+          data['fields']['name'] != null &&
+          data['fields']['name']['stringValue'] != null) {
+        return data['fields']['name']['stringValue'];
+      }
     }
     return null;
   }
