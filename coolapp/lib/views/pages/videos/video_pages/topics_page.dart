@@ -373,8 +373,6 @@ class _TopicsPageState extends State<TopicsPage> {
     // add an immediate check in build method
     String _currentSortOption = sortBy[0];
     globals.courseTitle = '';
-    int buttonColorShift = 10;
-    bool phy_11_hovered = false;
     if (!globals.isLoggedIn) {
       return NotLoggedIn();
     }
