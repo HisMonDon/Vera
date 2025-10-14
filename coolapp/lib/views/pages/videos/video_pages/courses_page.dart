@@ -9,6 +9,7 @@ import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class CoursePage extends StatefulWidget {
   const CoursePage({super.key});
@@ -18,7 +19,6 @@ class CoursePage extends StatefulWidget {
 }
 
 class _CoursePageState extends State<CoursePage> {
-  bool _checkedAuth = false;
   Widget _combineButtons() {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
@@ -288,8 +288,6 @@ class _CoursePageState extends State<CoursePage> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    int buttonColorShift = 10;
-    bool phy_11_hovered = false;
     if (!globals.isLoggedIn) {
       return NotLoggedIn();
     }
@@ -311,54 +309,116 @@ class _CoursePageState extends State<CoursePage> {
             ],
           ),
         ),
-        child: Stack(
+        child: Column(
           children: [
-            CustomScrollView(
-              slivers: [
-                SliverToBoxAdapter(
-                  child: Padding(
-                    padding: EdgeInsets.only(left: 16, top: 16, bottom: 20),
-                    child: Text(
-                      'Full Physics Courses',
+            if (kIsWeb)
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 5,
+                  horizontal: 20,
+                ),
+                width: double.infinity,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.baseline,
+                  textBaseline: TextBaseline.alphabetic,
+                  children: [
+                    Text(
+                      'Vera',
                       style: GoogleFonts.mPlus1(
-                        fontSize: 40,
+                        fontSize: 48.0,
+                        fontWeight: FontWeight.bold,
                         color: globals.isLight
-                            ? Color.fromARGB(255, 7, 77, 53)
+                            ? Color.fromARGB(255, 15, 48, 40)
                             : Colors.white,
                       ),
                     ),
-                  ),
-                ),
-                SliverPadding(
-                  padding: EdgeInsets.symmetric(horizontal: 16),
-                  sliver: SliverGrid(
-                    gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                      maxCrossAxisExtent: 500,
-                      crossAxisSpacing: 20,
-                      mainAxisSpacing: 20,
-                      childAspectRatio: 0.94,
+                    const SizedBox(width: 10),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 4,
+                      ),
+                      decoration: BoxDecoration(
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 15, 48, 40)
+                            : Color.fromARGB(255, 167, 198, 131),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text(
+                        'Web',
+                        style: GoogleFonts.montserrat(
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w600,
+                          color: globals.isLight
+                              ? Colors.white
+                              : Color.fromARGB(255, 15, 48, 40),
+                        ),
+                      ),
                     ),
-                    delegate: SliverChildBuilderDelegate((context, index) {
-                      final course = courseList[index];
-                      return _buildVideoButton(
-                        course['title'] ?? '',
-                        course['imagePath'] ?? '',
-                        course['description'] ?? '',
-                        index,
-                        course['videoPage']!,
-                      );
-                    }, childCount: courseList.length),
-                  ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+            Expanded(
+              child: Stack(
+                children: [
+                  CustomScrollView(
+                    slivers: [
+                      SliverToBoxAdapter(
+                        child: Padding(
+                          padding: EdgeInsets.only(
+                            left: 16,
+                            top: 16,
+                            bottom: 20,
+                          ),
+                          child: Text(
+                            'Full Physics Courses',
+                            style: GoogleFonts.mPlus1(
+                              fontSize: 40,
+                              color: globals.isLight
+                                  ? Color.fromARGB(255, 7, 77, 53)
+                                  : Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SliverPadding(
+                        padding: EdgeInsets.symmetric(horizontal: 16),
+                        sliver: SliverGrid(
+                          gridDelegate:
+                              SliverGridDelegateWithMaxCrossAxisExtent(
+                                maxCrossAxisExtent: 500,
+                                crossAxisSpacing: 20,
+                                mainAxisSpacing: 20,
+                                childAspectRatio: 0.94,
+                              ),
+                          delegate: SliverChildBuilderDelegate((
+                            context,
+                            index,
+                          ) {
+                            final course = courseList[index];
+                            return _buildVideoButton(
+                              course['title'] ?? '',
+                              course['imagePath'] ?? '',
+                              course['description'] ?? '',
+                              index,
+                              course['videoPage']!,
+                            );
+                          }, childCount: courseList.length),
+                        ),
+                      ),
+                    ],
+                  ),
 
-            Positioned(
-              bottom: 20,
-              left:
-                  MediaQuery.of(context).size.width / 2 -
-                  125, //change this when dealing with button
-              child: _combineButtons(),
+                  Positioned(
+                    bottom: 20,
+                    left:
+                        MediaQuery.of(context).size.width / 2 -
+                        125, //change this when dealing with button
+                    child: _combineButtons(),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
