@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'dart:io' show Platform;
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class TimedAppBar extends StatefulWidget implements PreferredSizeWidget {
   const TimedAppBar({Key? key})
@@ -36,21 +38,25 @@ class _TimedAppBarState extends State<TimedAppBar> {
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-      centerTitle: true,
-      title: Text("Vera", style: GoogleFonts.mPlus1()),
-      backgroundColor: const Color.fromARGB(255, 15, 48, 40),
-      actions: [
-        Padding(
-          padding: const EdgeInsets.only(right: 16.0),
-          child: Center(
-            child: Text(
-              "${_currentTime.hour}:${_currentTime.minute.toString().padLeft(2, '0')}",
-              style: TextStyle(color: Colors.white),
+    if (kIsWeb) {
+      return Container(height: 0);
+    } else {
+      return AppBar(
+        centerTitle: true,
+        title: Text("Vera", style: GoogleFonts.mPlus1()),
+        backgroundColor: const Color.fromARGB(255, 15, 48, 40),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 16.0),
+            child: Center(
+              child: Text(
+                "${_currentTime.hour}:${_currentTime.minute.toString().padLeft(2, '0')}",
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           ),
-        ),
-      ],
-    );
+        ],
+      );
+    }
   }
 }
