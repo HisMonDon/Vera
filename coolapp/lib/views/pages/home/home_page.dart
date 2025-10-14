@@ -13,7 +13,6 @@ import 'package:coolapp/services/auth_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 //import 'package:video_thumbnail/video_thumbnail.dart'; perchance use this for later purposes if current extractvideoimage still doesnt support ios or android in future?
 import 'package:media_kit/media_kit.dart';
-import 'package:extract_video_frame/extract_video_frame.dart';
 import 'dart:ui' as ui;
 //import 'package:media_kit_video/media_kit_video.dart';
 //import 'dart:io';
@@ -1044,6 +1043,13 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     SizedBox(width: 3),
+                    Icon(
+                      Icons.copyright_sharp,
+                      size: 15,
+                      color: globals.isLight
+                          ? Color.fromARGB(255, 0, 0, 0)
+                          : Color.fromARGB(255, 255, 255, 255),
+                    ),
                   ],
                 ),
               ],
