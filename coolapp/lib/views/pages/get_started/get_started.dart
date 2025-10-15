@@ -10,7 +10,14 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AboutThisAppPage extends StatelessWidget {
   AboutThisAppPage({super.key});
-  final List<Map<String, String>> instructorList = [];
+  final List<Map<String, String>> instructorList = [
+    {
+      'name': 'Chenyu Lu',
+      'title': 'Founder, CEO, Lead Developer & Physics Instructor',
+      'image': 'images/PLACEHOLDER',
+      'achievements': '',
+    },
+  ];
 
   @override
   Widget build(BuildContext context) {
