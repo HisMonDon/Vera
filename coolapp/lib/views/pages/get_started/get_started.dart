@@ -50,7 +50,13 @@ class AboutThisAppPage extends StatelessWidget {
     final ceo = instructorList[0];
     return FadeInDown(
       duration: const Duration(milliseconds: 500),
-      child: Container(padding: EdgeInsets.all(20)),
+      child: Container(
+        padding: EdgeInsets.all(20),
+        decoration: BoxDecoration(
+          color: const Color.fromARGB(255, 44, 170, 143),
+        ),
+        child: Row(children: [CircleAvatar(radius: 60)]),
+      ),
     );
   }
 }
