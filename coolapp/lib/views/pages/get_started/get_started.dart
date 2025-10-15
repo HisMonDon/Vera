@@ -48,9 +48,58 @@ class AboutThisAppPage extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: 30),
+              Column(
+                children: [
+                  Text(
+                    "What is Vera?",
+                    style: GoogleFonts.mPlus1(
+                      fontSize: 36,
+                      fontWeight: FontWeight.bold,
+                      color: globals.isLight
+                          ? const Color.fromARGB(255, 7, 77, 53)
+                          : const Color.fromARGB(255, 255, 255, 255),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  Text(
+                    "Vera is a revolutionary video platform dedicated to making learning physics accessible and easy for everyone. From high school curricula to advanced AP topics, our student-led video lessons break down physics concepts into easy-to-understand modules, with many tips and tricks to help you score well in your school physics courses. Join us for free to unlock your potential and master physics!",
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.roboto(
+                      fontSize: 18,
+                      color: globals.isLight
+                          ? const Color.fromARGB(221, 0, 0, 0)
+                          : const Color.fromARGB(181, 255, 255, 255),
+                      height: 1.6,
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 30),
               _buildChenyuLu(),
               SizedBox(height: 30),
-              Text('skibidi'),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "2025 Chenyu Studios",
+                    style: TextStyle(
+                      fontSize: 10,
+                      color: globals.isLight
+                          ? Color.fromARGB(255, 0, 0, 0)
+                          : Color.fromARGB(255, 255, 255, 255),
+                    ),
+                  ),
+                  SizedBox(width: 3),
+                  Icon(
+                    Icons.copyright_sharp,
+                    size: 15,
+                    color: globals.isLight
+                        ? Color.fromARGB(255, 0, 0, 0)
+                        : Color.fromARGB(255, 255, 255, 255),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
