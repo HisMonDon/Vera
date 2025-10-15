@@ -42,6 +42,12 @@ class AboutThisAppPage extends StatelessWidget {
       'image': 'images/PLACEHOLDER',
       'achievements': '• a\n• b\n• c\n• d\n• e',
     },
+    {
+      'name': 'Person 5',
+      'title': 'Grade x IB Student at school name PS',
+      'image': 'images/PLACEHOLDER',
+      'achievements': '• a\n• b\n• c\n• d\n• e',
+    },
   ];
 
   @override
@@ -50,37 +56,22 @@ class AboutThisAppPage extends StatelessWidget {
       appBar: TimedAppBar(),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsetsGeometry.symmetric(horizontal: 20, vertical: 3),
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
           child: Column(
             children: [
-              SizedBox(height: 30),
-              Column(
-                children: [
-                  Text(
-                    "What is Vera?",
-                    style: GoogleFonts.mPlus1(
-                      fontSize: 36,
-                      fontWeight: FontWeight.bold,
-                      color: globals.isLight
-                          ? const Color.fromARGB(255, 7, 77, 53)
-                          : const Color.fromARGB(255, 255, 255, 255),
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                  Text(
-                    "Vera is a revolutionary video platform dedicated to making learning physics accessible and easy for everyone. From high school curricula to advanced AP topics, our student-led video lessons break down physics concepts into easy-to-understand modules, with many tips and tricks to help you score well in your school physics courses. Join us for free to unlock your potential and master physics!",
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.roboto(
-                      fontSize: 18,
-                      color: globals.isLight
-                          ? const Color.fromARGB(221, 0, 0, 0)
-                          : const Color.fromARGB(181, 255, 255, 255),
-                      height: 1.6,
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 30),
+              // --- 1. Meet the Founder (Hero Section) ---
+              _buildChenyuLu(),
+              const SizedBox(height: 48),
+
+              // --- 2. What is Vera? ---
+              _buildWhatIsVeraSection(context),
+              const SizedBox(height: 48),
+
+              // --- 3. Meet the Instructors ---
+              _buildInstructorsSection(),
+              const SizedBox(height: 48),
+
+              // --- 4. Call to Action Button ---
               MouseRegion(
                 cursor: SystemMouseCursors.click,
                 child: GestureDetector(
@@ -101,27 +92,28 @@ class AboutThisAppPage extends StatelessWidget {
                       vertical: 16,
                     ),
                     decoration: BoxDecoration(
-                      gradient: LinearGradient(
+                      gradient: const LinearGradient(
                         colors: [
-                          const Color.fromARGB(255, 18, 59, 49),
-                          const Color.fromARGB(214, 10, 97, 80),
+                          Color.fromARGB(255, 18, 59, 49),
+                          Color.fromARGB(214, 10, 97, 80),
                         ],
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                       ),
                       borderRadius: BorderRadius.circular(12),
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
-                          color: const Color.fromARGB(255, 0, 0, 0),
+                          color: Color.fromARGB(255, 0, 0, 0),
                           blurRadius: 10,
-                          offset: const Offset(0, 5),
+                          offset: Offset(0, 5),
                         ),
                       ],
                     ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.min,
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.person_add_alt_1,
                           color: Colors.white,
                           size: 24,
@@ -140,22 +132,9 @@ class AboutThisAppPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 30),
-              Text(
-                "Meet the Team",
-                style: GoogleFonts.mPlus1(
-                  fontSize: 36,
-                  fontWeight: FontWeight.bold,
-                  color: globals.isLight
-                      ? const Color.fromARGB(255, 7, 77, 53)
-                      : const Color.fromARGB(255, 255, 255, 255),
-                ),
-              ),
-              const SizedBox(height: 16),
-              _buildChenyuLu(),
-              SizedBox(height: 30),
-              _buildInstructorsSection(),
-              SizedBox(height: 30),
+              const SizedBox(height: 48),
+
+              // --- 5. Footer ---
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -165,17 +144,17 @@ class AboutThisAppPage extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 10,
                       color: globals.isLight
-                          ? Color.fromARGB(255, 0, 0, 0)
-                          : Color.fromARGB(255, 255, 255, 255),
+                          ? const Color.fromARGB(255, 0, 0, 0)
+                          : const Color.fromARGB(255, 255, 255, 255),
                     ),
                   ),
-                  SizedBox(width: 3),
+                  const SizedBox(width: 3),
                   Icon(
                     Icons.copyright_sharp,
                     size: 15,
                     color: globals.isLight
-                        ? Color.fromARGB(255, 0, 0, 0)
-                        : Color.fromARGB(255, 255, 255, 255),
+                        ? const Color.fromARGB(255, 0, 0, 0)
+                        : const Color.fromARGB(255, 255, 255, 255),
                   ),
                 ],
               ),
@@ -183,75 +162,154 @@ class AboutThisAppPage extends StatelessWidget {
           ),
         ),
       ),
-    ); //rememrber appbar
+    );
   }
 
   Widget _buildChenyuLu() {
     final ceo = instructorList[0];
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        gradient: LinearGradient(
+        gradient: const LinearGradient(
           colors: [
-            const Color.fromARGB(255, 18, 59, 49),
-            const Color.fromARGB(214, 10, 97, 80),
+            Color.fromARGB(255, 18, 59, 49),
+            Color.fromARGB(214, 10, 97, 80),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(20),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
-            color: const Color.fromARGB(73, 0, 0, 0),
+            color: Color.fromARGB(73, 0, 0, 0),
             blurRadius: 15,
             offset: Offset(0, 8),
           ),
         ],
       ),
-
       child: Row(
         children: [
-          CircleAvatar(
+          const CircleAvatar(
             radius: 60, //backgroundImage: AssetImage(ceo['image']!)
           ),
-          SizedBox(width: 24),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Chenyu Lu",
-                style: GoogleFonts.mPlus1(
-                  fontSize: 32,
-                  fontWeight: FontWeight.bold,
+          const SizedBox(width: 24),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Chenyu Lu",
+                  style: GoogleFonts.mPlus1(
+                    fontSize: 32,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
                 ),
-              ),
-              //SizedBox(height: 1),
-              Text(
-                ceo['title']!,
-                style: GoogleFonts.montserrat(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
-                  color: const Color.fromARGB(255, 195, 215, 181),
+                Text(
+                  ceo['title']!,
+                  style: GoogleFonts.montserrat(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                    color: const Color.fromARGB(255, 195, 215, 181),
+                  ),
                 ),
-              ),
-              SizedBox(height: 10),
-              Text(
-                ceo['achievements']!,
-                style: GoogleFonts.roboto(
-                  fontSize: 16,
-                  color: const Color.fromARGB(
-                    255,
-                    246,
-                    248,
-                    247,
-                  ).withOpacity(0.9),
-                  height: 1.5,
+                const SizedBox(height: 10),
+                Text(
+                  ceo['achievements']!,
+                  style: GoogleFonts.roboto(
+                    fontSize: 16,
+                    color: const Color.fromARGB(
+                      255,
+                      246,
+                      248,
+                      247,
+                    ).withOpacity(0.9),
+                    height: 1.5,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ],
       ),
+    );
+  }
+
+  Widget _buildWhatIsVeraSection(BuildContext context) {
+    return Column(
+      children: [
+        Text(
+          "What is Vera?",
+          style: GoogleFonts.mPlus1(
+            fontSize: 36,
+            fontWeight: FontWeight.bold,
+            color: globals.isLight
+                ? const Color.fromARGB(255, 7, 77, 53)
+                : const Color.fromARGB(255, 255, 255, 255),
+          ),
+        ),
+        const SizedBox(height: 1),
+        Text(
+          "Vera is a revolutionary video platform dedicated to making learning physics accessible and easy for everyone. From high school curricula to advanced AP topics, our student-led video lessons break down physics concepts into easy-to-understand modules, with many tips and tricks to help you score well in your school physics courses. Join us for free to unlock your potential and master physics!",
+          textAlign: TextAlign.center,
+          style: GoogleFonts.mPlus1(
+            fontSize: 20,
+            color: globals.isLight
+                ? const Color.fromARGB(221, 0, 0, 0)
+                : const Color.fromARGB(221, 255, 255, 255),
+            height: 1.6,
+          ),
+        ),
+        const SizedBox(height: 32),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              width: 400,
+              height: 200,
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 18, 59, 49),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: Colors.grey),
+              ),
+              child: const Center(child: Text('Image 1')),
+            ),
+            const SizedBox(width: 16),
+            Container(
+              width: 400,
+              height: 200,
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 18, 59, 49),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: Colors.grey),
+              ),
+              child: const Center(child: Text('Image 2')),
+            ),
+            const SizedBox(width: 16),
+            Container(
+              width: 400,
+              height: 200,
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 18, 59, 49),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: Colors.grey),
+              ),
+              child: const Center(child: Text('Image 3')),
+            ),
+            const SizedBox(width: 16),
+            Container(
+              width: 400,
+              height: 200,
+              decoration: BoxDecoration(
+                color: Color.fromARGB(255, 18, 59, 49),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: Colors.grey),
+              ),
+              child: const Center(child: Text('Image 4')),
+            ),
+          ],
+        ),
+      ],
     );
   }
 
@@ -259,7 +317,7 @@ class AboutThisAppPage extends StatelessWidget {
     return Column(
       children: [
         Text(
-          "Meet Our Instructors",
+          "Meet the Instructors",
           style: GoogleFonts.mPlus1(
             fontSize: 36,
             fontWeight: FontWeight.bold,
@@ -268,7 +326,6 @@ class AboutThisAppPage extends StatelessWidget {
                 : Colors.white,
           ),
         ),
-
         const SizedBox(height: 24),
         Wrap(
           spacing: 24,
@@ -301,10 +358,10 @@ class AboutThisAppPage extends StatelessWidget {
       ),
       child: Column(
         children: [
-          CircleAvatar(
+          const CircleAvatar(
             radius: 50,
             //backgroundImage: AssetImage(instructor['image']!),
-            backgroundColor: const Color.fromARGB(255, 195, 215, 181),
+            backgroundColor: Color.fromARGB(255, 195, 215, 181),
           ),
           const SizedBox(height: 16),
           Text(
