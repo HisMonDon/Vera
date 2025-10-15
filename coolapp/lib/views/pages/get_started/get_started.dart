@@ -16,7 +16,7 @@ class AboutThisAppPage extends StatelessWidget {
       'title': 'Founder, CEO, Lead Developer & Physics Instructor',
       'image': 'images/PLACEHOLDER',
       'achievements':
-          '• Creator of Vera\n• St.Robert Physics Executive Trainer\n• Placed Third Nationally for the Canadian Young Physics Tournament\n• 5 On AP Physics 1, AP Chemistry, and AP Computer Science A\n• Grade 11 IB Student at St.Robert CHS',
+          '• St. Robert Physics Club Executive Trainer\n• 3rd Place in the Canadian Young Physics Tournament\n• 5 On AP Physics 1, AP Chemistry, and AP Computer Science A',
     },
     {
       'name': 'Person 1',
@@ -95,6 +95,15 @@ class AboutThisAppPage extends StatelessWidget {
                 style: GoogleFonts.mPlus1(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
+                ),
+              ),
+              //SizedBox(height: 1),
+              Text(
+                ceo['title']!,
+                style: GoogleFonts.montserrat(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                  color: const Color.fromARGB(255, 195, 215, 181),
                 ),
               ),
               SizedBox(height: 10),
