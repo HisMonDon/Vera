@@ -68,6 +68,8 @@ class AboutThisAppPage extends StatelessWidget {
             const Color.fromARGB(255, 18, 59, 49),
             const Color.fromARGB(214, 10, 97, 80),
           ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
@@ -79,7 +81,16 @@ class AboutThisAppPage extends StatelessWidget {
         ],
       ),
 
-      child: Row(children: [CircleAvatar(radius: 60)]),
+      child: Row(
+        children: [
+          CircleAvatar(
+            radius: 60,
+            backgroundImage: AssetImage(ceo['image']!),
+          ), //right now it is a placeholder
+          SizedBox(width: 24),
+          Column(children: []),
+        ],
+      ),
     );
   }
 }
