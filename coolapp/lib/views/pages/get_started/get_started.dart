@@ -295,7 +295,7 @@ class AboutThisAppPage extends StatelessWidget {
               child: const Center(child: Text('Image 3')),
             ),
             const SizedBox(width: 16),
-            Container(
+            /*Container(
               width: 400,
               height: 200,
               decoration: BoxDecoration(
@@ -304,7 +304,7 @@ class AboutThisAppPage extends StatelessWidget {
                 border: Border.all(color: Colors.grey),
               ),
               child: const Center(child: Text('Image 4')),
-            ),
+            ),*/
           ],
         ),
       ],

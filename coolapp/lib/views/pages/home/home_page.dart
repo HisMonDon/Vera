@@ -296,7 +296,7 @@ class _HomePageState extends State<HomePage> {
                                 SizedBox(height: 20),
                                 ElevatedButton(
                                   onPressed: openDialog,
-                                  child: Icon(Icons.settings),
+                                  child: Icon(Icons.edit),
                                   style: ElevatedButton.styleFrom(
                                     backgroundColor: Colors.transparent,
                                     shadowColor: Colors.transparent,
