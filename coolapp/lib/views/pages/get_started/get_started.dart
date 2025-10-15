@@ -42,7 +42,14 @@ class AboutThisAppPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: TimedAppBar(),
-      //body:
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsetsGeometry.symmetric(horizontal: 20, vertical: 3),
+          child: Column(
+            children: [_buildChenyuLu(), SizedBox(height: 30), Text('skibidi')],
+          ),
+        ),
+      ),
     ); //rememrber appbar
   }
 
