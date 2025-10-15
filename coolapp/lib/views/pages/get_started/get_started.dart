@@ -15,7 +15,8 @@ class AboutThisAppPage extends StatelessWidget {
       'name': 'Chenyu Lu',
       'title': 'Founder, CEO, Lead Developer & Physics Instructor',
       'image': 'images/PLACEHOLDER',
-      'achievements': '',
+      'achievements':
+          '• Creator of Vera\n• St.Robert Physics Executive Trainer\n• Placed Third Nationally for the Canadian Young Physics Tournament\n• 5 On AP Physics 1, AP Chemistry, and AP Computer Science A\n• Grade 11 IB Student at St.Robert CHS',
     },
   ];
 
