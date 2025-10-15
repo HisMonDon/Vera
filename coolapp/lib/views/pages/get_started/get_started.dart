@@ -46,7 +46,12 @@ class AboutThisAppPage extends StatelessWidget {
         child: Padding(
           padding: EdgeInsetsGeometry.symmetric(horizontal: 20, vertical: 3),
           child: Column(
-            children: [_buildChenyuLu(), SizedBox(height: 30), Text('skibidi')],
+            children: [
+              SizedBox(height: 30),
+              _buildChenyuLu(),
+              SizedBox(height: 30),
+              Text('skibidi'),
+            ],
           ),
         ),
       ),
@@ -58,7 +63,12 @@ class AboutThisAppPage extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: const Color.fromARGB(255, 44, 170, 143),
+        gradient: LinearGradient(
+          colors: [
+            const Color.fromARGB(255, 18, 59, 49),
+            const Color.fromARGB(214, 10, 97, 80),
+          ],
+        ),
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
