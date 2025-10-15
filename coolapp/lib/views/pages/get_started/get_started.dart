@@ -20,19 +20,19 @@ class AboutThisAppPage extends StatelessWidget {
     },
     {
       'name': 'Person 1',
-      'title': 'Physics Instructor',
+      'title': 'Grade 11 IB Student at St.Robert CHS',
       'image': 'images/PLACEHOLDER',
       'achievements': '• a\n• b\n• c\n• d\n• e',
     },
     {
       'name': 'Person 2',
-      'title': 'Physics Instructor',
+      'title': 'Grade 11 IB Student at St.Robert CHS',
       'image': 'images/PLACEHOLDER',
       'achievements': '• a\n• b\n• c\n• d\n• e',
     },
     {
-      'name': 'Person 2',
-      'title': 'Physics Instructor',
+      'name': 'Person 3',
+      'title': 'Grade 11 IB Student at St.Robert CHS',
       'image': 'images/PLACEHOLDER',
       'achievements': '• a\n• b\n• c\n• d\n• e',
     },
@@ -44,5 +44,13 @@ class AboutThisAppPage extends StatelessWidget {
       appBar: TimedAppBar(),
       //body:
     ); //rememrber appbar
+  }
+
+  Widget _buildChenyuLu() {
+    final ceo = instructorList[0];
+    return FadeInDown(
+      duration: const Duration(milliseconds: 500),
+      child: Container(padding: EdgeInsets.all(20)),
+    );
   }
 }
