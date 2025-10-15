@@ -14,7 +14,7 @@ class AboutThisAppPage extends StatelessWidget {
     {
       'name': 'Chenyu Lu',
       'title': 'Founder, CEO, Lead Developer & Physics Instructor',
-      'image': 'images/PLACEHOLDER',
+      'image': 'images/chenyuluPFP.png',
       'achievements':
           '• St. Robert Physics Club Executive Trainer\n• 3rd Place in the Canadian Young Physics Tournament\n• 5 On AP Physics 1, AP Chemistry, and AP Computer Science A',
     },
@@ -189,9 +189,7 @@ class AboutThisAppPage extends StatelessWidget {
       ),
       child: Row(
         children: [
-          const CircleAvatar(
-            radius: 60, //backgroundImage: AssetImage(ceo['image']!)
-          ),
+          CircleAvatar(radius: 60, backgroundImage: AssetImage(ceo['image']!)),
           const SizedBox(width: 24),
           Expanded(
             child: Column(
