@@ -9,7 +9,14 @@ import 'package:animate_do/animate_do.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AboutThisAppPage extends StatelessWidget {
+  AboutThisAppPage({super.key});
+  final List<Map<String, String>> instructorList = [];
 
- 
   @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: TimedAppBar(),
+      //body:
+    ); //rememrber appbar
   }
+}
