@@ -88,12 +88,22 @@ class AboutThisAppPage extends StatelessWidget {
           ),
           SizedBox(width: 24),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 "Chenyu Lu",
                 style: GoogleFonts.mPlus1(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(height: 10),
+              Text(
+                ceo['achievements']!,
+                style: GoogleFonts.roboto(
+                  fontSize: 16,
+                  color: Colors.white.withOpacity(0.9),
+                  height: 1.5,
                 ),
               ),
             ],
