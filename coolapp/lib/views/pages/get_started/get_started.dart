@@ -84,11 +84,20 @@ class AboutThisAppPage extends StatelessWidget {
       child: Row(
         children: [
           CircleAvatar(
-            radius: 60,
-            backgroundImage: AssetImage(ceo['image']!),
-          ), //right now it is a placeholder
+            radius: 60, //backgroundImage: AssetImage(ceo['image']!)
+          ),
           SizedBox(width: 24),
-          Column(children: []),
+          Column(
+            children: [
+              Text(
+                "Chenyu Lu",
+                style: GoogleFonts.mPlus1(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
