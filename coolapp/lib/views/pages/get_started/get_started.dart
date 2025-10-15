@@ -18,6 +18,24 @@ class AboutThisAppPage extends StatelessWidget {
       'achievements':
           '• Creator of Vera\n• St.Robert Physics Executive Trainer\n• Placed Third Nationally for the Canadian Young Physics Tournament\n• 5 On AP Physics 1, AP Chemistry, and AP Computer Science A\n• Grade 11 IB Student at St.Robert CHS',
     },
+    {
+      'name': 'Person 1',
+      'title': 'Physics Instructor',
+      'image': 'images/PLACEHOLDER',
+      'achievements': '• a\n• b\n• c\n• d\n• e',
+    },
+    {
+      'name': 'Person 2',
+      'title': 'Physics Instructor',
+      'image': 'images/PLACEHOLDER',
+      'achievements': '• a\n• b\n• c\n• d\n• e',
+    },
+    {
+      'name': 'Person 2',
+      'title': 'Physics Instructor',
+      'image': 'images/PLACEHOLDER',
+      'achievements': '• a\n• b\n• c\n• d\n• e',
+    },
   ];
 
   @override
