@@ -248,7 +248,7 @@ class AboutThisAppPage extends StatelessWidget {
         ),
         const SizedBox(height: 1),
         Text(
-          "Vera is a revolutionary video platform dedicated to making learning physics accessible and easy for everyone. From high school curricula to advanced AP topics, our student-led video lessons break down physics concepts into easy-to-understand modules, with many tips and tricks to help you score well in your school physics courses. Join us for free to unlock your potential and master physics!",
+          "Vera is a revolutionary video platform made with Flutter and Dart dedicated to making learning physics accessible and easy for everyone. From high school curricula to advanced AP topics, our student-led video lessons break down physics concepts into easy-to-understand modules, with many tips and tricks to help you score well in your school physics courses. Join us for free to unlock your potential and master physics!",
           textAlign: TextAlign.center,
           style: GoogleFonts.mPlus1(
             fontSize: 20,
