@@ -5,7 +5,7 @@ import 'package:coolapp/globals.dart' as globals;
 //import 'package:media_kit_video/media_kit_video.dart';
 //import 'dart:io';
 
-import 'package:animate_do/animate_do.dart';
+//import 'package:animate_do/animate_do.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AboutThisAppPage extends StatelessWidget {
@@ -55,15 +55,21 @@ class AboutThisAppPage extends StatelessWidget {
 
   Widget _buildChenyuLu() {
     final ceo = instructorList[0];
-    return FadeInDown(
-      duration: const Duration(milliseconds: 500),
-      child: Container(
-        padding: EdgeInsets.all(20),
-        decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 44, 170, 143),
-        ),
-        child: Row(children: [CircleAvatar(radius: 60)]),
+    return Container(
+      padding: EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: const Color.fromARGB(255, 44, 170, 143),
+        borderRadius: BorderRadius.circular(20),
+        boxShadow: [
+          BoxShadow(
+            color: const Color.fromARGB(73, 0, 0, 0),
+            blurRadius: 15,
+            offset: Offset(0, 8),
+          ),
+        ],
       ),
+
+      child: Row(children: [CircleAvatar(radius: 60)]),
     );
   }
 }
