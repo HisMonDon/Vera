@@ -32,7 +32,13 @@ class AboutThisAppPage extends StatelessWidget {
     },
     {
       'name': 'Person 3',
-      'title': 'Grade 11 IB Student at St.Robert CHS',
+      'title': 'Grade x IB Student at school PS',
+      'image': 'images/PLACEHOLDER',
+      'achievements': '• a\n• b\n• c\n• d\n• e',
+    },
+    {
+      'name': 'Person 4',
+      'title': 'Grade x IB Student at school name PS',
       'image': 'images/PLACEHOLDER',
       'achievements': '• a\n• b\n• c\n• d\n• e',
     },
@@ -75,7 +81,20 @@ class AboutThisAppPage extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 30),
+              Text(
+                "Meet the Team",
+                style: GoogleFonts.mPlus1(
+                  fontSize: 36,
+                  fontWeight: FontWeight.bold,
+                  color: globals.isLight
+                      ? const Color.fromARGB(255, 7, 77, 53)
+                      : const Color.fromARGB(255, 255, 255, 255),
+                ),
+              ),
+              const SizedBox(height: 16),
               _buildChenyuLu(),
+              SizedBox(height: 30),
+              _buildInstructorsSection(),
               SizedBox(height: 30),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -160,11 +179,100 @@ class AboutThisAppPage extends StatelessWidget {
                 ceo['achievements']!,
                 style: GoogleFonts.roboto(
                   fontSize: 16,
-                  color: Colors.white.withOpacity(0.9),
+                  color: const Color.fromARGB(
+                    255,
+                    246,
+                    248,
+                    247,
+                  ).withOpacity(0.9),
                   height: 1.5,
                 ),
               ),
             ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildInstructorsSection() {
+    return Column(
+      children: [
+        Text(
+          "Meet Our Instructors",
+          style: GoogleFonts.mPlus1(
+            fontSize: 36,
+            fontWeight: FontWeight.bold,
+            color: globals.isLight
+                ? const Color.fromARGB(255, 7, 77, 53)
+                : Colors.white,
+          ),
+        ),
+
+        const SizedBox(height: 24),
+        Wrap(
+          spacing: 24,
+          runSpacing: 24,
+          alignment: WrapAlignment.center,
+          children: instructorList.skip(1).map((instructor) {
+            return _buildInstructorCard(instructor);
+          }).toList(),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildInstructorCard(Map<String, String> instructor) {
+    return Container(
+      width: 350,
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: globals.isLight
+            ? Colors.white
+            : const Color.fromARGB(255, 15, 48, 40),
+        borderRadius: BorderRadius.circular(15),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 10,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Column(
+        children: [
+          CircleAvatar(
+            radius: 50,
+            //backgroundImage: AssetImage(instructor['image']!),
+            backgroundColor: const Color.fromARGB(255, 195, 215, 181),
+          ),
+          const SizedBox(height: 16),
+          Text(
+            instructor['name']!,
+            style: GoogleFonts.montserrat(
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+              color: globals.isLight
+                  ? const Color.fromARGB(255, 7, 77, 53)
+                  : Colors.white,
+            ),
+          ),
+          Text(
+            instructor['title']!,
+            style: GoogleFonts.montserrat(
+              fontSize: 14,
+              color: globals.isLight ? Colors.grey[600] : Colors.grey[400],
+            ),
+          ),
+          const SizedBox(height: 12),
+          Text(
+            instructor['achievements']!,
+            textAlign: TextAlign.center,
+            style: GoogleFonts.roboto(
+              fontSize: 14,
+              color: globals.isLight ? Colors.black54 : Colors.white60,
+              height: 1.5,
+            ),
           ),
         ],
       ),
