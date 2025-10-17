@@ -190,15 +190,17 @@ class _HomePageState extends State<HomePage> {
     if (_isLoading) {
       return Scaffold(body: Center(child: CircularProgressIndicator()));
     }
-    if (global.userName == '') {
+
+    /* if (global.userName == '') {
       global.userName = 'User';
       global.isLight = false;
-    }
+    }*/
+
     return Scaffold(
       appBar: TimedAppBar(),
       body: Column(
         children: [
-          if (kIsWeb)
+          if (kIsWeb && (1 + 1 == 2))
             Container(
               padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
               width: double.infinity,
