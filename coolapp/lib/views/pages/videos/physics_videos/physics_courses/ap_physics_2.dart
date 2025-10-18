@@ -176,14 +176,14 @@ class _ApPhysics2State extends State<ApPhysics2> {
       'description': 'Kinetic Theory Of Gases, Laws of Thermodynamics',
       'videoPage': ThermalPhysics(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 2: Electrostatics',
       'description': "Electric Charge, Coulomb's Law, Electric Field",
       'videoPage': Electrostatics(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 3: Electric Circuits and Magnetism',
@@ -191,7 +191,7 @@ class _ApPhysics2State extends State<ApPhysics2> {
           'RC Time Constants, Circuit Analysis, Magnetic fields, EMF, Moving Charges',
       'videoPage': ElectricityAndMagnetism(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
 
     {
@@ -199,14 +199,14 @@ class _ApPhysics2State extends State<ApPhysics2> {
       'description': 'Lens equations and optical instruments',
       'videoPage': Optics(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 5: Modern Physics',
       'description': 'Nuclear, Quantum, Atomic Physics, wave functions',
       'videoPage': QuantumMechanics(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
   ];
   @override

@@ -24,7 +24,7 @@ class _OpticsState extends State<Optics> {
           'Light as electromagnetic waves, properties of light, and the electromagnetic spectrum',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 2: Reflection and Mirrors',
@@ -32,14 +32,14 @@ class _OpticsState extends State<Optics> {
           'Law of reflection, plane mirrors, curved mirrors, and image formation',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 3: Refraction and Lenses',
       'description': 'Snell\'s law, total internal reflection, and lens optics',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 4: Interference and Diffraction',
@@ -47,14 +47,14 @@ class _OpticsState extends State<Optics> {
           'Young\'s double-slit experiment, diffraction gratings, and the wave nature of light',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 5: Optical Instruments',
       'description': 'Microscopes, telescopes, cameras, and the human eye',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
   ];
   @override

@@ -177,21 +177,21 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
       'description': 'Addition and calculations with vectors and scalars.',
       'videoPage': IntroToPhysics(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 2: Kinematics',
       'description': 'Motion graphs and kinematic equations',
       'videoPage': Kinematics(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': "Unit 3: Dynamics",
       'description': "Forces and Newton's Laws",
       'videoPage': Dynamics(), //change to new physics topic
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 4: Energy and Work',
@@ -199,14 +199,14 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
           'Work-energy theorem and conservation of Energy (Very important unit)',
       'videoPage': WorkAndEnergy(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 5: Harmonics',
       'description': 'Pendulum dynamics, waves and sounds',
       'videoPage': Harmonics(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 6: Electricity',
@@ -214,7 +214,7 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
       'videoPage':
           ElectricityAndMagnetism(), //redirect this to the thing inside electricity unit
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
   ];
   @override

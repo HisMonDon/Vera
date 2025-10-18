@@ -24,7 +24,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
           'Definition of work, calculating work from forces and displacements, and applying the work-energy theorem',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 2: Kinetic and Potential Energy',
@@ -32,7 +32,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
           'Energy of motion, gravitational potential energy, elastic potential energy, and energy conversions',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 3: Conservation of Energy',
@@ -40,7 +40,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
           'Energy conservation principles, isolated systems, and solving problems with conservation laws',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 4: Power and Efficiency',
@@ -48,7 +48,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
           'Rate of energy transfer, calculation of power, and analyzing efficiency in mechanical and thermal systems',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 5: Energy in Complex Systems',
@@ -56,7 +56,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
           'Energy analysis in mechanical, electrical, and thermodynamic systems with multiple interacting parts',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
   ];
   @override

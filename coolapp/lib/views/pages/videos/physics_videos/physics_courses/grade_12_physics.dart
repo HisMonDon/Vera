@@ -176,7 +176,7 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
       'description': 'In-depth review of motion and forces',
       'videoPage': IntroToPhysics(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 2: Momentum',
@@ -184,28 +184,28 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
           'Momentum, elastic and non-elastic collisions, and impulse',
       'videoPage': MomentumAndCollisions(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 3: Energy',
       'description': 'Potential and Kinetic Energy',
       'videoPage': WorkAndEnergy(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 4: Optics',
       'description': 'Interference, diffraction, and polarization',
       'videoPage': Optics(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 5: Quantum Mechanics',
       'description': 'Introduction to wave functions and quantum phenomena',
       'videoPage': QuantumMechanics(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
   ];
   @override

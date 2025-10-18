@@ -33,7 +33,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
           'Tools and techniques for measurement, error analysis and uncertainty in measurements',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
   ];
   @override

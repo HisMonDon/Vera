@@ -24,7 +24,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
           'Basic concepts of circular motion, angular displacement, and angular velocity',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 2: Angular Kinematics',
@@ -32,7 +32,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
           'Angular position, velocity, and acceleration relationships in rotational motion',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 3: Torque and Rotational Equilibrium',
@@ -40,7 +40,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
           'How torque causes rotational acceleration and balanced torque systems',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 4: Moment of Inertia',
@@ -48,7 +48,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
           'Understanding rotational mass, calculating moment of inertia for different objects',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 5: Rotational Energy and Angular Momentum',
@@ -56,7 +56,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
           'Conservation principles in rotating systems and applications',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
   ];
   @override

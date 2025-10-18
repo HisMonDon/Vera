@@ -178,21 +178,21 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
           'Error propagation, uncertainty calculations, and graphical analysis techniques',
       'videoPage': IntroToPhysics(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 2: Kinematics',
       'description': 'Motion graphs and kinematic equations',
       'videoPage': Kinematics(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 3: Rotational Motion',
       'description': 'Rotational kinematics and moment of inertia',
       'videoPage': RotationalMotion(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title':
@@ -201,7 +201,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
           'Kinetic theory, thermodynamics laws, and heat transfer mechanisms',
       'videoPage': ThermalPhysics(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 5: Electricity and Magnetism',
@@ -209,7 +209,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
           "Maxwell's equations, electromagnetic induction, and AC circuits",
       'videoPage': ElectricityAndMagnetism(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 6: Quantum Physics',
@@ -217,7 +217,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
           "Wave-particle duality, nuclear physics, and radioactive decay",
       'videoPage': QuantumMechanics(),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
   ];
   @override

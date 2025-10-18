@@ -24,7 +24,7 @@ class _QuantumMechanicsState extends State<QuantumMechanics> {
           'Historical developments, black-body radiation, and the limitations of classical physics',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 2: Photoelectric Effect and Wave-Particle Duality',
@@ -32,14 +32,14 @@ class _QuantumMechanicsState extends State<QuantumMechanics> {
           'Light as particles, matter as waves, and de Broglie wavelength',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 3: Atomic Models and Quantum Numbers',
       'description': 'Bohr model, energy levels, and quantum numbers in atoms',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 4: Uncertainty Principle and Wave Functions',
@@ -47,7 +47,7 @@ class _QuantumMechanicsState extends State<QuantumMechanics> {
           'Heisenberg\'s uncertainty principle and probabilistic interpretation of quantum mechanics',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 5: Quantum Applications',
@@ -55,7 +55,7 @@ class _QuantumMechanicsState extends State<QuantumMechanics> {
           'Quantum tunneling, Schrödinger\'s cat, and modern applications in technology',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/testVideo.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
   ];
   @override
