@@ -47,7 +47,7 @@ List<dynamic> redirectExplore = [
 List<Map<String, dynamic>> videoOfTheDay = [
   {
     'videoLink':
-        'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/intro_to_physics/vectors%20vs%20scalars.mp4',
+        'https://pub-56767059a1844d06818006869a91df08.r2.dev/vectors%20vs%20scalars.mp4',
     'videoTitle': 'Vectors and Scalars',
     'videoUnit': 'Intro To Physics',
     'thumbnailColor': Color.fromARGB(
@@ -59,7 +59,7 @@ List<Map<String, dynamic>> videoOfTheDay = [
   },
   {
     'videoLink':
-        'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/Kinematics%202D%20Part%202.mp4',
+        'https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%202D%20Part%202.mp4',
     'videoTitle': 'Kinematics Formulae',
     'videoUnit': 'Kinematics',
     'thumbnailColor': Color.fromARGB(
@@ -72,7 +72,7 @@ List<Map<String, dynamic>> videoOfTheDay = [
 
   {
     'videoLink':
-        'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/Kinematics%202D%20Part%203.mp4',
+        'https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%202D%20Part%203.mp4',
     'videoTitle': 'Application of Kinematics',
     'videoUnit': 'Kinematics',
     'thumbnailColor': Color.fromARGB(
