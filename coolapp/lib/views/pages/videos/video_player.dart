@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:media_kit/media_kit.dart';
@@ -180,6 +181,25 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            if (kIsWeb)
+              Padding(
+                padding: const EdgeInsets.only(left: 20, top: 20, right: 20),
+                child: Row(
+                  children: [
+                    ElevatedButton.icon(
+                      icon: Icon(Icons.arrow_back),
+                      label: Text('Back'),
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color.fromARGB(255, 15, 48, 40),
+                        foregroundColor: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             SizedBox(height: 19),
             AutoSizeText(
               stackedTitle,
@@ -226,7 +246,12 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                     children: [
                       Text(
                         "Next video: ${globals.nextVideoTitle}",
-                        style: TextStyle(fontSize: 20),
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: globals.isLight
+                              ? Colors.black87
+                              : Colors.white,
+                        ),
                       ),
                     ],
                   ),
