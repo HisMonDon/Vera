@@ -25,7 +25,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
       'description': 'Definition and examples of vectors and scalars',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/intro_to_physics/vectors%20vs%20scalars.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/vectors%20vs%20scalars.mp4', //completed with cloudflare on 2025/10/18
     },
     {
       'title': 'Unit 2: Error Analysis and Measurement',

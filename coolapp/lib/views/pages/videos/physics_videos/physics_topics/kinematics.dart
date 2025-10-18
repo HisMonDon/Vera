@@ -26,7 +26,7 @@ class _KinematicsState extends State<Kinematics> {
           'Basic kinematics, introduction to acceleration and velocity',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://raw.githubusercontent.com/HisMonDon/Vera_Videos/main/videos/kinematics/1D%20Kinematics.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/1D%20Kinematics.mp4',
     },
     {
       'title':
@@ -34,7 +34,7 @@ class _KinematicsState extends State<Kinematics> {
       'description': 'Introduction to 2D kinematics with velocity',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/Kinematics%202D%20Part%201.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%202D%20Part%201.mp4',
     },
     {
       'title': '2D Motion Analysis Part 2', //DONE 2025/09/14 VERSION 1.0
@@ -42,7 +42,7 @@ class _KinematicsState extends State<Kinematics> {
           'Introduces various kinematics formulae and constants used for solving problems',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/Kinematics%202D%20Part%202.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%202D%20Part%202.mp4',
     },
 
     {
@@ -51,7 +51,7 @@ class _KinematicsState extends State<Kinematics> {
           'Application of kinematics formulae and vectors on an example problem',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/Kinematics%202D%20Part%203.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%202D%20Part%203.mp4',
     },
     {
       'title':
@@ -59,7 +59,7 @@ class _KinematicsState extends State<Kinematics> {
       'description': 'Extra practice on 2D Kinematics',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/More%20Kinematics%20Examples%201.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/More%20Kinematics%20Examples%201.mp4',
     },
     {
       'title':
@@ -67,7 +67,7 @@ class _KinematicsState extends State<Kinematics> {
       'description': 'More practice on 2D Kinematics',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://github.com/HisMonDon/Vera_Videos/raw/main/videos/kinematics/Kinematics%20harder%20quesitons.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%20harder%20quesitons.mp4',
     },
     {
       'title': 'Graphical Kinematics',
