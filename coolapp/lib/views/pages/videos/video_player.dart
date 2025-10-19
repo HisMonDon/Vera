@@ -175,8 +175,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
 
     return Scaffold(
       backgroundColor: globals.isLight
-          ? Color.fromARGB(255, 6, 188, 124)
-          : const Color.fromARGB(255, 1, 46, 32),
+          ? Color.fromARGB(255, 196, 221, 207)
+          : Color.fromARGB(255, 4, 34, 26),
       appBar: TimedAppBar(), //add text here
       body: SingleChildScrollView(
         child: Column(
@@ -254,9 +254,11 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
             SizedBox(height: 19),
             AutoSizeText(
               stackedTitle,
-              style: GoogleFonts.montserrat(
+              style: GoogleFonts.mPlus1(
                 fontSize: 20,
-                color: const Color.fromARGB(255, 255, 255, 255),
+                color: globals.isLight
+                    ? Color.fromARGB(255, 15, 48, 40)
+                    : const Color.fromARGB(255, 255, 255, 255),
                 decoration: TextDecoration.none,
               ),
             ),
@@ -300,7 +302,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                         style: TextStyle(
                           fontSize: 20,
                           color: globals.isLight
-                              ? Colors.black87
+                              ? Color.fromARGB(255, 15, 48, 40)
                               : Colors.white,
                         ),
                       ),
