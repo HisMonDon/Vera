@@ -44,7 +44,7 @@ void main() async {
   MediaKit.ensureInitialized();
   WidgetsFlutterBinding.ensureInitialized();
   final prefs = await SharedPreferences.getInstance();
-  globals.isLight = prefs.getBool('isLightTheme') ?? true;
+  globals.isLight = prefs.getBool('isLightTheme') ?? false;
 
   await _initializeAuthState();
   runApp(const MyApp());
