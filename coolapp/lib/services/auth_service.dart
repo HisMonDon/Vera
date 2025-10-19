@@ -329,25 +329,30 @@ Future<List<String>> getPastVideosFromFirestore(
 ) async {
   final url =
       'https://firestore.googleapis.com/v1/projects/vera-a4111/databases/(default)/documents/users/$uid';
+  List<String> videoList = [];
 
-  final response = await http.get(
-    Uri.parse(url),
-    headers: {'Authorization': 'Bearer $idToken'},
-  );
+  try {
+    final response = await http.get(
+      Uri.parse(url),
+      headers: {'Authorization': 'Bearer $idToken'},
+    );
 
-  if (response.statusCode == 200) {
-    final data = json.decode(response.body);
-
-    if (data['fields']?['pastVideos']?['arrayValue']?['values'] != null) {
-      final videoList = data['fields']['pastVideos']['arrayValue']['values']
-          .map<String>((item) => item['stringValue'] as String)
-          .toList();
-
-      return videoList;
+    if (response.statusCode == 200) {
+      final data = json.decode(response.body);
+      if (data['fields']?['pastVideos']?['arrayValue']?['values'] != null) {
+        videoList = data['fields']['pastVideos']['arrayValue']['values']
+            .map<String>((item) => item['stringValue'] as String)
+            .toList();
+      }
     }
+  } catch (e) {
+    print("Error fetching past videos from Firestore: $e");
   }
 
-  return []; //in case somehting goes wrong return empty
+  while (videoList.length < 5) {
+    videoList.add('');
+  }
+  return videoList.take(5).toList();
 }
 
 Future<void> savePastVideosLocally(List<String> videos) async {

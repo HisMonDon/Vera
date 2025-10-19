@@ -200,7 +200,7 @@ class _HomePageState extends State<HomePage> {
       appBar: TimedAppBar(),
       body: Column(
         children: [
-          if (kIsWeb && (1 + 1 == 2))
+          if (kIsWeb)
             Container(
               padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
               width: double.infinity,

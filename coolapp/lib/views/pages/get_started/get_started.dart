@@ -8,6 +8,8 @@ import 'package:coolapp/globals.dart' as globals;
 //import 'package:animate_do/animate_do.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'package:flutter/foundation.dart' show kIsWeb;
+
 class AboutThisAppPage extends StatelessWidget {
   AboutThisAppPage({super.key});
   final List<Map<String, String>> instructorList = [
@@ -59,19 +61,62 @@ class AboutThisAppPage extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
           child: Column(
             children: [
-              // --- 1. Meet the Founder (Hero Section) ---
+              if (kIsWeb)
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 12,
+                    horizontal: 20,
+                  ),
+                  width: double.infinity,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.baseline,
+                    textBaseline: TextBaseline.alphabetic,
+                    children: [
+                      Text(
+                        'Vera',
+                        style: GoogleFonts.mPlus1(
+                          fontSize: 48.0,
+                          fontWeight: FontWeight.bold,
+                          color: globals.isLight
+                              ? Color.fromARGB(255, 15, 48, 40)
+                              : Colors.white,
+                        ),
+                      ),
+                      const SizedBox(width: 10),
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 10,
+                          vertical: 4,
+                        ),
+                        decoration: BoxDecoration(
+                          color: globals.isLight
+                              ? Color.fromARGB(255, 15, 48, 40)
+                              : Color.fromARGB(255, 167, 198, 131),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Text(
+                          'Web',
+                          style: GoogleFonts.montserrat(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w600,
+                            color: globals.isLight
+                                ? Colors.white
+                                : Color.fromARGB(255, 15, 48, 40),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               _buildChenyuLu(),
               const SizedBox(height: 48),
 
-              // --- 2. What is Vera? ---
               _buildWhatIsVeraSection(context),
               const SizedBox(height: 48),
 
-              // --- 3. Meet the Instructors ---
               _buildInstructorsSection(),
               const SizedBox(height: 48),
-
-              // --- 4. Call to Action Button ---
               MouseRegion(
                 cursor: SystemMouseCursors.click,
                 child: GestureDetector(
@@ -134,7 +179,6 @@ class AboutThisAppPage extends StatelessWidget {
               ),
               const SizedBox(height: 48),
 
-              // --- 5. Footer ---
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,

@@ -262,12 +262,12 @@ class _ProfilePageState extends State<ProfilePage> {
       if (loggedIn) {
         final email = await _authService.getCurrentUserEmail();
         final name = await _authService.getSavedUserName();
-        final recentVideos = await _authService.getPastVideos();
+        final recentVideos = await getPastVideosLocally();
 
         //initialize video controllers with recent videos
         for (int i = 0; i < _videoControllers.length; i++) {
-          if (i < (recentVideos?.length ?? 0)) {
-            _videoControllers[i].text = recentVideos![i];
+          if (i < recentVideos.length) {
+            _videoControllers[i].text = recentVideos[i];
           } else {
             _videoControllers[i].text = '';
           }
@@ -277,13 +277,15 @@ class _ProfilePageState extends State<ProfilePage> {
           isLoggedIn = true;
           _userEmail = email ?? '';
           globals.userName = name ?? '';
-          globals.pastVideos = recentVideos ?? [];
+          globals.pastVideos = recentVideos;
         });
       }
     } finally {
-      setState(() {
-        _isInitializing = false;
-      });
+      if (mounted) {
+        setState(() {
+          _isInitializing = false;
+        });
+      }
     }
   }
 
