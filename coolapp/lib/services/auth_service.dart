@@ -4,7 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:coolapp/globals.dart' as globals;
 
 class AuthService {
-  final String apiKey = 'AIzaSyBdq8QD00AVwIgVCP66RfUq_0X14mU5HlE';
+  final String apiKey = const String.fromEnvironment('FIREBASE_API_KEY');
   final String _signInUrl =
       'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword';
   final String _signUpUrl =
