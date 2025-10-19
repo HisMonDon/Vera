@@ -182,7 +182,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
         child: Column(
           children: [
             if (kIsWeb)
-              SizedBox(
+              Container(
+                padding: EdgeInsets.all(15),
                 width: double.infinity,
                 child: Stack(
                   alignment: Alignment.center,
