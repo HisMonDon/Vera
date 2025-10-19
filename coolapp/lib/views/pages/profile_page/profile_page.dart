@@ -1,3 +1,4 @@
+import 'package:coolapp/main.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -263,6 +264,14 @@ class _ProfilePageState extends State<ProfilePage> {
         final email = await _authService.getCurrentUserEmail();
         final name = await _authService.getSavedUserName();
         final recentVideos = await getPastVideosLocally();
+        //load new firestore
+        final isLightFromFirestore = await _authService
+            .getThemePreferenceFromFirestore(globals.userId, globals.idToken);
+
+        if (isLightFromFirestore != null &&
+            isLightFromFirestore != globals.isLight) {
+          MyApp.updateTheme(isLightFromFirestore);
+        }
 
         //initialize video controllers with recent videos
         for (int i = 0; i < _videoControllers.length; i++) {
@@ -591,7 +600,6 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
         ),
         const SizedBox(height: 16),
-
         ElevatedButton.icon(
           icon: const Icon(Icons.exit_to_app),
           label: const Text('Logout'),

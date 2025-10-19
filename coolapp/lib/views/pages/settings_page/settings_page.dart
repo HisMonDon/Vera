@@ -1,3 +1,4 @@
+import 'package:coolapp/services/auth_service.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -14,6 +15,8 @@ class HelpPage extends StatefulWidget {
 }
 
 class _HelpPageState extends State<HelpPage> {
+  final AuthService _authService = AuthService();
+
   @override
   void initState() {
     super.initState();
@@ -32,6 +35,16 @@ class _HelpPageState extends State<HelpPage> {
     await prefs.setBool('isLightTheme', isLight);
 
     globals.isLight = isLight;
+    //save to firestore
+    if (globals.isLoggedIn &&
+        globals.userId.isNotEmpty &&
+        globals.idToken.isNotEmpty) {
+      await _authService.saveThemePreferenceToFirestore(
+        globals.userId,
+        isLight,
+        globals.idToken,
+      );
+    }
 
     setState(() {
       globals.isLight = isLight;

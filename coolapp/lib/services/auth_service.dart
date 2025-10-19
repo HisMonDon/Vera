@@ -176,6 +176,12 @@ class AuthService {
         final data = json.decode(response.body);
         await _saveAuthData(data, email);
         await saveUserNameToFirestore(data['localId'], name, data['idToken']);
+        // When a new user registers, default their theme to light mode
+        await saveThemePreferenceToFirestore(
+          data['localId'],
+          true,
+          data['idToken'],
+        );
         return true;
       } else {
         final error = json.decode(response.body);
@@ -278,6 +284,54 @@ class AuthService {
           data['fields']['name']['stringValue'] != null) {
         return data['fields']['name']['stringValue'];
       }
+    }
+    return null;
+  }
+
+  //save new theme method
+  Future<void> saveThemePreferenceToFirestore(
+    String uid,
+    bool isLight,
+    String idToken,
+  ) async {
+    if (uid.isEmpty || idToken.isEmpty) return;
+    final url =
+        'https://firestore.googleapis.com/v1/projects/vera-a4111/databases/(default)/documents/users/$uid';
+
+    await http.patch(
+      Uri.parse(url),
+      headers: {
+        'Authorization': 'Bearer $idToken',
+        'Content-Type': 'application/json',
+      },
+      body: json.encode({
+        'fields': {
+          'isLightTheme': {'booleanValue': isLight},
+        },
+      }),
+    );
+  }
+
+  Future<bool?> getThemePreferenceFromFirestore(
+    String uid,
+    String idToken,
+  ) async {
+    final url =
+        'https://firestore.googleapis.com/v1/projects/vera-a4111/databases/(default)/documents/users/$uid';
+    try {
+      final response = await http.get(
+        Uri.parse(url),
+        headers: {'Authorization': 'Bearer $idToken'},
+      );
+
+      if (response.statusCode == 200) {
+        final data = json.decode(response.body);
+        if (data['fields']?['isLightTheme']?['booleanValue'] != null) {
+          return data['fields']['isLightTheme']['booleanValue'];
+        }
+      }
+    } catch (e) {
+      print("Error getting theme from Firestore: $e");
     }
     return null;
   }
