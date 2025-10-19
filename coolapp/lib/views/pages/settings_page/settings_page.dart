@@ -26,7 +26,7 @@ class _HelpPageState extends State<HelpPage> {
   Future<void> _loadThemePreference() async {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
-      globals.isLight = prefs.getBool('isLightTheme') ?? true;
+      globals.isLight = prefs.getBool('isLightTheme') ?? false;
     });
   }
 
