@@ -182,24 +182,74 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
         child: Column(
           children: [
             if (kIsWeb)
-              Padding(
-                padding: const EdgeInsets.only(left: 20, top: 20, right: 20),
-                child: Row(
+              SizedBox(
+                width: double.infinity,
+                child: Stack(
+                  alignment: Alignment.center,
                   children: [
-                    ElevatedButton.icon(
-                      icon: Icon(Icons.arrow_back),
-                      label: Text('Back'),
-                      onPressed: () {
-                        Navigator.of(context).pop();
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color.fromARGB(255, 15, 48, 40),
-                        foregroundColor: Colors.white,
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: ElevatedButton.icon(
+                        icon: Icon(Icons.arrow_back),
+                        label: Text('Back'),
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color.fromARGB(
+                            255,
+                            15,
+                            48,
+                            40,
+                          ),
+                          foregroundColor: Colors.white,
+                        ),
                       ),
+                    ),
+                    Row(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.baseline,
+                      textBaseline: TextBaseline.alphabetic,
+                      children: [
+                        Text(
+                          'Vera',
+                          style: GoogleFonts.mPlus1(
+                            fontSize: 48.0,
+                            fontWeight: FontWeight.bold,
+                            color: globals.isLight
+                                ? Color.fromARGB(255, 15, 48, 40)
+                                : Colors.white,
+                          ),
+                        ),
+                        const SizedBox(width: 10),
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 10,
+                            vertical: 4,
+                          ),
+                          decoration: BoxDecoration(
+                            color: globals.isLight
+                                ? Color.fromARGB(255, 15, 48, 40)
+                                : Color.fromARGB(255, 167, 198, 131),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Text(
+                            'Web',
+                            style: GoogleFonts.montserrat(
+                              fontSize: 16.0,
+                              fontWeight: FontWeight.w600,
+                              color: globals.isLight
+                                  ? Colors.white
+                                  : Color.fromARGB(255, 15, 48, 40),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
               ),
+
             SizedBox(height: 19),
             AutoSizeText(
               stackedTitle,
