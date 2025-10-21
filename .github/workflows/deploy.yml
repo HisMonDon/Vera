@@ -1,47 +1,35 @@
-name: Deploy Flutter Web to GitHub Pages
+name: Deploy Flutter Web
+
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main" ] 
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Set up Flutter
+      - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          channel: 'stable' # or 'beta', 'dev', 'master'
-          
-      
-      - name: Change to app directory
-        run: cd coolapp
+          channel: 'stable'
 
-
-      - name: Get dependencies
+      - name: Install dependencies
         run: flutter pub get
-        working-directory: ./coolapp 
+        working-directory: ./coolapp
 
-      - name: Build Flutter web app
-        run: |
-          flutter build web --release \
-            --base-href /Vera/ \
-            --csp \
-            --dart-define=FIREBASE_API_KEY=${{ secrets.FIREBASE_API_KEY }}
-        working-directory: ./coolapp 
+      - name: Build Flutter web
+        run: flutter build web --release --base-href /
+        working-directory: ./coolapp
 
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./coolapp/build/web
+      - name: Add .nojekyll file
+        run: touch ./coolapp/build/web/.nojekyll
 
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./coolapp/build/web
