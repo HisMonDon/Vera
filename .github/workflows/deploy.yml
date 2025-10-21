@@ -2,7 +2,7 @@ name: Deploy Flutter Web
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main" ] 
 
 jobs:
   build_and_deploy:
@@ -21,8 +21,8 @@ jobs:
         run: flutter pub get
         working-directory: ./coolapp
 
-      - name: Build Flutter web
-        run: flutter build web --release --base-href /
+      - name: Build Flutter web with HTML renderer
+        run: flutter build web --web-renderer html --release --base-href /
         working-directory: ./coolapp
 
       - name: Add .nojekyll file
