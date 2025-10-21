@@ -22,7 +22,7 @@ jobs:
         working-directory: ./coolapp
 
       - name: Build Flutter web
-        run: flutter build web --release --base-href /
+        run: flutter build web --release --base-href /Vera/
         working-directory: ./coolapp
 
       - name: Add .nojekyll file
