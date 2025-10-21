@@ -47,8 +47,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_launcher_icons: "^0.13.1"
-  flutter_lints: ^6.0.0
-  # extract_video_frame: ^0.0.1 # Temporarily removed to resolve dependency conflict
+  flutter_lints: ^3.0.0
   material_design_icons_flutter: ^7.0.7296
   animations: ^2.0.11
 
