@@ -35,7 +35,7 @@ dependencies:
   http: ^1.1.0
   shared_preferences: ^2.2.2
   persistent_bottom_nav_bar: ^6.2.1
-  media_kit: ^1.2.0
+  media_kit: ^1.1.11
   media_kit_video: ^1.2.4
   media_kit_libs_video: ^1.0.6
   widget_mask: ^1.0.0+0
@@ -50,6 +50,7 @@ dev_dependencies:
   flutter_lints: ^3.0.0
   material_design_icons_flutter: ^7.0.7296
   animations: ^2.0.11
+  # extract_video_frame: ^0.0.1 # Temporarily removed to resolve dependency conflict
 
 # flutter_launcher_icons configuration
 flutter_launcher_icons:
@@ -80,6 +81,7 @@ flutter:
   assets:
     - images/
     - images_tutorial/
+    - icons/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
