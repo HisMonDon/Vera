@@ -1,5 +1,6 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <application
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.coolapp">
+   <application
         android:label="coolapp"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
@@ -21,10 +22,7 @@
               />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.action.DEFAULT"/>
-                <category android:name="android.intent.action.BROWSABLE"/>
-                <data android:scheme="https" android:host="vera.com" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <!-- Don't delete the meta-data below.
