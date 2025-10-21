@@ -2,7 +2,7 @@ name: Deploy Flutter Web
 
 on:
   push:
-    branches: [ "main" ] 
+    branches: [ "main" ]
 
 jobs:
   build_and_deploy:
@@ -22,7 +22,7 @@ jobs:
         working-directory: ./coolapp
 
       - name: Build Flutter web
-        run: flutter build web --release --base-href /Vera/
+        run: flutter build web --release --base-href /
         working-directory: ./coolapp
 
       - name: Add .nojekyll file
@@ -33,3 +33,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./coolapp/build/web
+          publish_branch: gh-pages
