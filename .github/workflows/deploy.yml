@@ -30,7 +30,11 @@ jobs:
             --base-href / \
             --csp \
             --dart-define=FIREBASE_API_KEY=${{ secrets.FIREBASE_API_KEY }}
-        working-directory: ./coolapp 
+        working-directory: ./coolapp
+
+      - name: Relax CSP
+        run: |
+          sed -i "s|script-src 'self' blob: 'wasm-unsafe-eval'|script-src 'self' blob: 'wasm-unsafe-eval' static.cloudflareinsights.com www.gstatic.com|g" ./coolapp/build/web/index.html
 
       - name: Add .nojekyll file
         run: touch ./coolapp/build/web/.nojekyll
