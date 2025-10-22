@@ -84,6 +84,7 @@ class _MyAppState extends State<MyApp> {
       valueListenable: MyApp.themeNotifier,
       builder: (context, isLight, child) {
         return MaterialApp(
+          title: 'Vera',
           initialRoute: '/widgetTree',
           routes: {
             '/widgetTree': (context) {
