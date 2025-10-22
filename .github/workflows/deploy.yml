@@ -15,23 +15,26 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.19.6'
           channel: 'stable'
-          cache: true 
-      - name: Install dependencies
+          
+      - name: Change to app directory
+        run: cd coolapp
+
+      - name: Get dependencies
         run: flutter pub get
         working-directory: ./coolapp
 
-      - name: Build Flutter web with HTML renderer
-        run: flutter build web --web-renderer html --release --base-href /
-        working-directory: ./coolapp
+      - name: Build Flutter web app
+        run: |
+          flutter build web --release \
+            --base-href / \
+            --csp \
+            --dart-define=FIREBASE_API_KEY=${{ secrets.FIREBASE_API_KEY }}
+        working-directory: ./coolapp 
 
       - name: Add .nojekyll file
         run: touch ./coolapp/build/web/.nojekyll
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./coolapp/build/web
-          publish_branch: gh-pages
+        id: deployment
+        uses: actions/deploy-pages@v4
