@@ -927,6 +927,7 @@ class _HomePageState extends State<HomePage> {
                                       globals.videoLink = videoUrl;
                                       globals.unitTitle = featuredTitle;
                                       globals.topicTitle = featuredUnit;
+                                      globals.courseTitle = ''; // ** THE FIX **
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
