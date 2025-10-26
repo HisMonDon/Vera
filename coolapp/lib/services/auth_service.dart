@@ -9,8 +9,10 @@ class AuthService {
       'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword';
   final String _signUpUrl =
       'https://identitytoolkit.googleapis.com/v1/accounts:signUp';
+  final String _tokenRefreshUrl = 'https://securetoken.googleapis.com/v1/token';
 
   static const String _tokenKey = 'auth_token';
+  static const String _refreshTokenKey = 'refresh_token';
   static const String _userEmailKey = 'user_email';
   static const String _expiryTimeKey = 'expiry_time';
 
@@ -176,7 +178,6 @@ class AuthService {
         final data = json.decode(response.body);
         await _saveAuthData(data, email);
         await saveUserNameToFirestore(data['localId'], name, data['idToken']);
-        // When a new user registers, default their theme to light mode
         await saveThemePreferenceToFirestore(
           data['localId'],
           true,
@@ -195,6 +196,7 @@ class AuthService {
   Future<void> _saveAuthData(Map<String, dynamic> data, String email) async {
     final prefs = await SharedPreferences.getInstance();
     final token = data['idToken'];
+    final refreshToken = data['refreshToken'];
     final expiresIn = int.parse(data['expiresIn']);
     final expiryTime = DateTime.now()
         .add(Duration(seconds: expiresIn))
@@ -202,11 +204,51 @@ class AuthService {
     final localId = data['localId'];
 
     await prefs.setString(_tokenKey, token);
+    await prefs.setString(_refreshTokenKey, refreshToken);
     await prefs.setString(_userEmailKey, email);
     await prefs.setString(_expiryTimeKey, expiryTime);
     await prefs.setString('userId', localId);
     globals.userId = localId;
     globals.idToken = token;
+  }
+
+  Future<void> refreshToken() async {
+    final prefs = await SharedPreferences.getInstance();
+    final refreshToken = prefs.getString(_refreshTokenKey);
+
+    if (refreshToken == null) return;
+
+    final expiryTimeString = prefs.getString(_expiryTimeKey);
+    if (expiryTimeString != null) {
+      final expiryTime = DateTime.parse(expiryTimeString);
+      if (expiryTime.isAfter(DateTime.now().add(Duration(minutes: 5)))) {
+        return;
+      }
+    }
+
+    final response = await http.post(
+      Uri.parse('$_tokenRefreshUrl?key=$apiKey'),
+      headers: {'Content-Type': 'application/json'},
+      body: json.encode({
+        'grant_type': 'refresh_token',
+        'refresh_token': refreshToken,
+      }),
+    );
+
+    if (response.statusCode == 200) {
+      final data = json.decode(response.body);
+      final email = prefs.getString(_userEmailKey) ?? '';
+      final mappedData = {
+        'idToken': data['id_token'],
+        'refreshToken': data['refresh_token'],
+        'expiresIn': data['expires_in'],
+        'localId': data['user_id'],
+      };
+      await _saveAuthData(mappedData, email);
+      print("Token refreshed successfully.");
+    } else {
+      print("Failed to refresh token");
+    }
   }
 
   Future<bool> isLoggedIn() async {
@@ -237,6 +279,7 @@ class AuthService {
   Future<void> signOut() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_tokenKey);
+    await prefs.remove(_refreshTokenKey);
     await prefs.remove(_userEmailKey);
     await prefs.remove(_expiryTimeKey);
   }
@@ -288,7 +331,6 @@ class AuthService {
     return null;
   }
 
-  //save new theme method
   Future<void> saveThemePreferenceToFirestore(
     String uid,
     bool isLight,
@@ -347,7 +389,12 @@ Future<void> savePastVideosToFirestore(
   List<String> pastVideos,
   String idToken,
 ) async {
-  if (uid.isEmpty || idToken.isEmpty) return;
+  if (uid.isEmpty) return;
+  final authService = AuthService();
+  await authService.refreshToken();
+
+  final freshToken = globals.idToken;
+  if (freshToken.isEmpty) return;
 
   final url =
       'https://firestore.googleapis.com/v1/projects/vera-a4111/databases/(default)/documents/users/$uid';
@@ -359,7 +406,7 @@ Future<void> savePastVideosToFirestore(
   final response = await http.patch(
     Uri.parse(url),
     headers: {
-      'Authorization': 'Bearer $idToken',
+      'Authorization': 'Bearer $freshToken',
       'Content-Type': 'application/json',
     },
     body: json.encode({
@@ -374,6 +421,11 @@ Future<void> savePastVideosToFirestore(
   if (response.statusCode == 200) {
     globals.pastVideos = pastVideos;
     await savePastVideosLocally(pastVideos);
+    print("Successfully saved past videos to Firestore.");
+  } else {
+    print(
+      "Failed to save past videos to Firestore. Status: ${response.statusCode}, Body: ${response.body}",
+    );
   }
 }
 
