@@ -85,9 +85,9 @@ class _MyAppState extends State<MyApp> {
       builder: (context, isLight, child) {
         return MaterialApp(
           title: 'Vera',
-          initialRoute: '/widgetTree',
+          initialRoute: '/',
           routes: {
-            '/widgetTree': (context) {
+            '/': (context) {
               final args = ModalRoute.of(context)?.settings.arguments;
               int initialIndex = 2;
               if (args != null && args is int) {

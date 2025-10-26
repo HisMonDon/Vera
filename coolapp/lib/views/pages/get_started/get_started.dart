@@ -126,7 +126,7 @@ class AboutThisAppPage extends StatelessWidget {
                       context,
                       rootNavigator: true,
                     ).pushNamedAndRemoveUntil(
-                      '/widgetTree',
+                      '/',
                       (route) => false,
                       arguments: 1,
                     );
