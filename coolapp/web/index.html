@@ -14,7 +14,7 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <meta http-equiv="Content-Security-Policy-Report-Only" content="script-src 'self' blob: 'wasm-unsafe-eval'; object-src 'none'">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-1P2L275yI8p8j/yHkM5i3r2GouP2d/nt4s1iV5h3d/A=' 'sha256-4rG0v1Yq4T3o2wFp2FzP5z5s5y5r4T3o2wFp2FzP5z4=' 'sha256-9iG1v1Yq4T3o2wFp2FzP5z5s5y5r4T3o2wFp2FzP5z3='; object-src 'none'">
 
   <!--
     CHENYU LU 2025 COPYRIGHT
@@ -39,6 +39,11 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <script>
+    window.flutterConfiguration = {
+      canvasKitBaseUrl: "https://www.gstatic.com/flutter-canvaskit/e7f43b679639554f4b237b008d3f57e5e39665b1/"
+    };
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
