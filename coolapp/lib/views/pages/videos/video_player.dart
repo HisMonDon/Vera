@@ -274,15 +274,9 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                           color: Colors.black,
                           child: hasError
                               ? _buildErrorDisplay()
-                              : Stack(
-                                  alignment: Alignment.center,
-                                  children: [
-                                    Video(controller: controller),
-                                    if (isBuffering)
-                                      const CircularProgressIndicator(
-                                        color: Colors.white,
-                                      ),
-                                  ],
+                              : Video(
+                                  controller: controller,
+                                  controls: MaterialVideoControls,
                                 ),
                         ),
                       ),
