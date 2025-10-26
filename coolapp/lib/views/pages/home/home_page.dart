@@ -927,14 +927,12 @@ class _HomePageState extends State<HomePage> {
                                       globals.videoLink = videoUrl;
                                       globals.unitTitle = featuredTitle;
                                       globals.topicTitle = featuredUnit;
-                                      globals.courseTitle = ''; // ** THE FIX **
+                                      globals.courseTitle = '';
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
-                                              VideoPlayerScreen(
-                                                key: UniqueKey(),
-                                              ),
+                                              const VideoPlayerScreen(),
                                         ),
                                       );
                                     },
