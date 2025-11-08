@@ -24,7 +24,7 @@ class _FluidsState extends State<Fluids> {
           'Density, pressure, and the properties of fluids at rest and in motion',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/intro%20to%20fluids.webm', //done 2025/11/01
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/intro%20to%20fluids.mp4', //done 2025/11/01, patched 2025/11/08
     },
     {
       'title': 'Extra: IB and AP Tips and Tricks',
@@ -39,7 +39,7 @@ class _FluidsState extends State<Fluids> {
           'Pascal\'s principle, hydrostatic pressure, and buoyancy (Archimedes\' principle)',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/buoyancy%20intro.webm', //done 2025/11/01
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/buoyancy%20intro.mp4', //done 2025/11/01
     },
     {
       'title': 'Unit 3: Fluid Dynamics',
@@ -47,7 +47,7 @@ class _FluidsState extends State<Fluids> {
           'Continuity equation, Bernoulli\'s equation, and fluid flow analysis',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/bernoullis%20equation.webm', //done 2025/11/01
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/bernoullis%20equation.mp4', //done 2025/11/01, patched 2025/11/08
     },
     {
       'title': 'Unit 5: Fluid Statics and Dynamics Examples',
