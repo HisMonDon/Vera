@@ -25,7 +25,7 @@ class _DynamicsState extends State<Dynamics> {
           "Difference between dynamics and kinematics, Newton's three laws",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/introduction_to_dynamics.mp4', //Completed 2025/12/17
     },
     {
       'title': "Unit 2: Free Body Diagrams",
@@ -33,14 +33,14 @@ class _DynamicsState extends State<Dynamics> {
           "Short tutorial on a very important type of diagram in physics",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/free_body_diagrams.mp4', //Completed 2025/12/17
     },
     {
       'title': 'Unit 3: Gravity and Normal Force',
       'description': 'Introduces the idea of gravity and normal force',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/normal_force.mp4', //Completed 2025/12/17
     },
     {
       'title': 'Unit 4: Friction',
@@ -48,21 +48,14 @@ class _DynamicsState extends State<Dynamics> {
           "Friction calculations with coefficient of friction and normal force",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'hhttps://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/friction.mp4', //Completed 2025/12/17
     },
     {
-      'title': 'Unit 5: Tension and Spring Force',
-      'description': "Hooke's Law, introduces tension",
+      'title': 'Unit 5: Extra Dynamics Examples',
+      'description': "More problems on net force and normal force",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
-    },
-    {
-      'title': 'Unit 6: Net Forces',
-      'description': "Net Forces calculations in detail",
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/extra_dynamics_problems.mp4', //Completed 2025/12/17
     },
   ];
   @override
