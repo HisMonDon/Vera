@@ -42,6 +42,7 @@ dependencies:
   video_thumbnail: any
   visibility_detector: ^0.4.0
   animate_do: ^3.0.2
+  url_launcher: ^6.3.2
 
 dev_dependencies:
   flutter_test:
