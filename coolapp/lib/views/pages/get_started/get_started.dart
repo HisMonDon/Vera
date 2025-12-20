@@ -3,10 +3,17 @@ import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:url_launcher/url_launcher.dart';
+import 'package:media_kit/media_kit.dart';
+import 'package:media_kit_video/media_kit_video.dart';
 
-class AboutThisAppPage extends StatelessWidget {
+class AboutThisAppPage extends StatefulWidget {
   AboutThisAppPage({super.key});
 
+  @override
+  State<AboutThisAppPage> createState() => _AboutThisAppPageState();
+}
+
+class _AboutThisAppPageState extends State<AboutThisAppPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,6 +28,10 @@ class AboutThisAppPage extends StatelessWidget {
               _buildChenyuLuSection(context),
               const SizedBox(height: 48),
               _buildWhatIsVeraSection(context),
+              const SizedBox(height: 48),
+              _buildIntroVideoSection(),
+              const SizedBox(height: 48),
+              _buildSignUpButton(),
               const SizedBox(height: 48),
               _buildBottomCopyright(),
             ],
@@ -168,7 +179,7 @@ class AboutThisAppPage extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         Text(
-          "Vera is a video platform made with Flutter and Dart dedicated to making learning physics accessible and easy for everyone. From high school IB curricula to advanced AP topics, our student-led video lessons break down physics concepts into easy-to-understand modules, with many tips and tricks to help you score well in your school physics courses. Join us for free to unlock your potential and master physics!",
+          "Vera is a video platform made with Flutter and Dart dedicated to making learning physics accessible and easy for everyone. From high school IB curricula to advanced AP topics, our stud[...]",
           textAlign: TextAlign.center,
           style: GoogleFonts.mPlus1(
             fontSize: 20,
@@ -210,6 +221,63 @@ class AboutThisAppPage extends StatelessWidget {
     );
   }
 
+  Widget _buildIntroVideoSection() {
+    return Column(
+      children: [
+        Text(
+          "Intro to Vera",
+          style: GoogleFonts.mPlus1(
+            fontSize: 36,
+            fontWeight: FontWeight.bold,
+            color: globals.isLight
+                ? const Color.fromARGB(255, 7, 77, 53)
+                : Colors.white,
+          ),
+        ),
+        const SizedBox(height: 20),
+        Container(
+          width: 800,
+          height: 450,
+          decoration: BoxDecoration(
+            color: Colors.black,
+            borderRadius: BorderRadius.circular(12),
+            boxShadow: const [
+              BoxShadow(
+                color: Color.fromARGB(73, 0, 0, 0),
+                blurRadius: 15,
+                offset: Offset(0, 8),
+              ),
+            ],
+          ),
+          child: _IntroVideoPlayer(),
+        )
+      ],
+    );
+  }
+
+  Widget _buildSignUpButton() {
+    return ElevatedButton(
+      onPressed: () {
+        launchUrl(Uri.parse("https://github.com/signup"));
+      },
+      style: ElevatedButton.styleFrom(
+        backgroundColor: const Color.fromARGB(255, 167, 198, 131),
+        foregroundColor: const Color.fromARGB(255, 15, 48, 40),
+        padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(30),
+        ),
+      ),
+      child: Text(
+        "Click Here to Sign Up Now",
+        style: GoogleFonts.montserrat(
+          fontSize: 18,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+    );
+  }
+
   Widget _buildBottomCopyright() {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -240,5 +308,37 @@ class AboutThisAppPage extends StatelessWidget {
     if (!await launchUrl(_url)) {
       throw Exception('Could not launch $_url');
     }
+  }
+}
+
+class _IntroVideoPlayer extends StatefulWidget {
+  @override
+  _IntroVideoPlayerState createState() => _IntroVideoPlayerState();
+}
+
+class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
+  late final Player player;
+  late final VideoController controller;
+
+  @override
+  void initState() {
+    super.initState();
+    player = Player();
+    controller = VideoController(player);
+    player.open(Media(
+        'https://pub-56767059a1844d06818006869a91df08.r2.dev/Vera%20Introduction.mp4'));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Video(
+      controller: controller,
+    );
+  }
+
+  @override
+  void dispose() {
+    player.dispose();
+    super.dispose();
   }
 }
