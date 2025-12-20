@@ -48,7 +48,7 @@ class _DynamicsState extends State<Dynamics> {
           "Friction calculations with coefficient of friction and normal force",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'hhttps://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/friction.mp4', //Completed 2025/12/17
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/friction.mp4', //Completed 2025/12/17, fixed 2025/12/20
     },
     {
       'title': 'Unit 5: Extra Dynamics Examples',
@@ -68,7 +68,6 @@ class _DynamicsState extends State<Dynamics> {
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(20),
-
           child: Column(
             children: [
               SizedBox(width: 2, height: 10),
@@ -80,7 +79,6 @@ class _DynamicsState extends State<Dynamics> {
                 topIcon: Icons.rectangle,
               ),
               SizedBox(width: 2, height: 20),
-
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];

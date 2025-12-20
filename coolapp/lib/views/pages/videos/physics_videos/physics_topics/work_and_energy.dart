@@ -24,7 +24,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
           'Definition of work, calculating work from forces and displacements, and applying the work-energy theorem',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/work_and_energy/Unit%201%20Work-Energy%20Theorem.mp4', //completed 2025/12/20
     },
     {
       'title': 'Unit 2: Kinetic and Potential Energy',
@@ -32,7 +32,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
           'Energy of motion, gravitational potential energy, elastic potential energy, and energy conversions',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/work_and_energy/Unit%202%20Kinetic%20and%20Potential%20Energy.mp4', //completed 2025/12/20
     },
     {
       'title': 'Unit 3: Conservation of Energy',
@@ -40,23 +40,23 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
           'Energy conservation principles, isolated systems, and solving problems with conservation laws',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/work_and_energy/Unit%203%20Conservation%20of%20Energy.mp4', //completed 2025/12/20
+    },
+    {
+      'title': 'Practice: AP Physics 1 2024 Energy Problem',
+      'description':
+          'Use gravitational potential energy and kinetic energy to solve a practical AP exam problem.',
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/work_and_energy/Unit%204%20Conservation%20of%20Energy%20Example%20AP%20Physics%201%202024%20Exam.mp4', //completed 2025/12/20
     },
     {
       'title': 'Unit 4: Power and Efficiency',
       'description':
-          'Rate of energy transfer, calculation of power, and analyzing efficiency in mechanical and thermal systems',
+          'Real life application of energy, efficiency calculations.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
-    },
-    {
-      'title': 'Unit 5: Energy in Complex Systems',
-      'description':
-          'Energy analysis in mechanical, electrical, and thermodynamic systems with multiple interacting parts',
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/work_and_energy/Unit%205%20Energy%20Efficiency.mp4', //completed 2025/12/20
     },
   ];
   @override
@@ -79,7 +79,6 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
                 topIcon: Icons.bolt_outlined,
               ),
               SizedBox(width: 2, height: 20),
-
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
