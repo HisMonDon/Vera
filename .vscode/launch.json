@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Vera (debug)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define=FIREBASE_API_KEY=AIzaSyBAzWhvwJ7xkP4MVlmKRmdwL4POn8i4PuY"
+            ]
+        },
+        {
+            "name": "Vera (profile)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define=FIREBASE_API_KEY=AIzaSyBAzWhvwJ7xkP4MVlmKRmdwL4POn8i4PuY"
+            ]
+        },
+        {
+            "name": "Vera (release)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define=FIREBASE_API_KEY=AIzaSyBAzWhvwJ7xkP4MVlmKRmdwL4POn8i4PuY"
+            ]
+        }
+    ]
+}

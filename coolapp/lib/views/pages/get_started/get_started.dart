@@ -184,21 +184,26 @@ class AboutThisAppPage extends StatelessWidget {
     );
   }
 
+  final List<String> displayPaths = [
+    'images_tutorial/display1.png',
+    'images_tutorial/display2.png',
+    'images_tutorial/display3.png',
+  ];
   Widget _buildSampleImagesRow() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: List.generate(3, (index) {
+      children: List.generate(displayPaths.length, (index) {
         return Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8.0),
           child: Container(
-            width: 120,
-            height: 120,
+            width: 600,
+            height: 300,
             decoration: BoxDecoration(
-              color: const Color.fromARGB(255, 18, 59, 49),
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: Colors.grey),
-            ),
-            child: Center(child: Text('Image ${index + 1}')),
+                color: const Color.fromARGB(255, 18, 59, 49),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: Colors.grey),
+                image: DecorationImage(
+                    image: AssetImage(displayPaths[index]), fit: BoxFit.cover)),
           ),
         );
       }),

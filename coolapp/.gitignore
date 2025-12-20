@@ -38,7 +38,8 @@ app.*.symbols
 
 # Obfuscation related
 app.*.map.json
-
+#vscode api keys (firebase)
+.vscode/ 
 # Android Studio will place build artifacts here
 /android/app/debug
 /android/app/profile

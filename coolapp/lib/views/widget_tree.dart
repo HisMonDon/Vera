@@ -27,8 +27,7 @@ class _WidgetTreeState extends State<WidgetTree> {
   void initState() {
     super.initState();
     _controller = PersistentTabController(initialIndex: widget.initialIndex);
-    globals.selectedIndex =
-        widget.initialIndex; // Sync global state with initialIndex
+    globals.selectedIndex = widget.initialIndex;
 
     _tabListener = () {
       if (mounted && globals.selectedIndex != _controller.index) {

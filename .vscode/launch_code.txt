@@ -1,0 +1,1 @@
+flutter run --dart-define=FIREBASE_API_KEY=AIzaSyDFdwo17uepeI60xKHGrn-7i1UaO4jV3Wc
