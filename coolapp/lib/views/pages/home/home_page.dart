@@ -122,69 +122,69 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future openDialog() => showDialog(
-    context: context,
-    builder: (dialogContext) {
-      _nameController.text = _displayName; // show raw name without comma
-      return AlertDialog(
-        title: Text(
-          'Edit Name',
-          style: TextStyle(
-            color: globals.isLight
-                ? Color.fromARGB(255, 7, 77, 53)
-                : Colors.white,
-          ),
-        ),
-        content: TextFormField(
-          style: TextStyle(
-            color: globals.isLight
-                ? Color.fromARGB(255, 7, 77, 53)
-                : Colors.white,
-          ),
-          controller: _nameController,
-          decoration: InputDecoration(
-            labelText: 'Enter new name',
-            border: OutlineInputBorder(),
-            prefixIcon: Icon(Icons.person),
-            iconColor: globals.isLight
-                ? Color.fromARGB(255, 7, 77, 53)
-                : Colors.white,
-          ),
-        ),
-        actions: [
-          TextButton(
-            child: Text('CANCEL'),
-            onPressed: () async {
-              Navigator.of(dialogContext).pop();
-            },
-          ),
-          TextButton(
-            child: Text('SUBMIT'),
-            onPressed: () async {
-              final newName = _nameController.text.trim();
-              setState(() {
-                _displayName = newName; // store raw name
-              });
-              // save raw name without comma
-              await _authService.saveUserName(_displayName);
-              if (newName.isNotEmpty) {
-                final uid = globals.userId;
-                final idToken = globals.idToken;
-                if (uid.isNotEmpty && idToken.isNotEmpty) {
-                  await _authService.saveUserNameToFirestore(
-                    uid,
-                    _displayName, // save raw name
-                    idToken,
-                  );
-                }
-              }
-              print("User Name: " + globals.userName);
-              Navigator.of(dialogContext).pop();
-            },
-          ),
-        ],
+        context: context,
+        builder: (dialogContext) {
+          _nameController.text = _displayName; // show raw name without comma
+          return AlertDialog(
+            title: Text(
+              'Edit Name',
+              style: TextStyle(
+                color: globals.isLight
+                    ? Color.fromARGB(255, 7, 77, 53)
+                    : Colors.white,
+              ),
+            ),
+            content: TextFormField(
+              style: TextStyle(
+                color: globals.isLight
+                    ? Color.fromARGB(255, 7, 77, 53)
+                    : Colors.white,
+              ),
+              controller: _nameController,
+              decoration: InputDecoration(
+                labelText: 'Enter new name',
+                border: OutlineInputBorder(),
+                prefixIcon: Icon(Icons.person),
+                iconColor: globals.isLight
+                    ? Color.fromARGB(255, 7, 77, 53)
+                    : Colors.white,
+              ),
+            ),
+            actions: [
+              TextButton(
+                child: Text('CANCEL'),
+                onPressed: () async {
+                  Navigator.of(dialogContext).pop();
+                },
+              ),
+              TextButton(
+                child: Text('SUBMIT'),
+                onPressed: () async {
+                  final newName = _nameController.text.trim();
+                  setState(() {
+                    _displayName = newName; // store raw name
+                  });
+                  // save raw name without comma
+                  await _authService.saveUserName(_displayName);
+                  if (newName.isNotEmpty) {
+                    final uid = globals.userId;
+                    final idToken = globals.idToken;
+                    if (uid.isNotEmpty && idToken.isNotEmpty) {
+                      await _authService.saveUserNameToFirestore(
+                        uid,
+                        _displayName, // save raw name
+                        idToken,
+                      );
+                    }
+                  }
+                  print("User Name: " + globals.userName);
+                  Navigator.of(dialogContext).pop();
+                },
+              ),
+            ],
+          );
+        },
       );
-    },
-  );
 
   Widget build(BuildContext context) {
     if (_isLoading) {
@@ -311,9 +311,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ],
                         ),
-
                         SizedBox(height: 1),
-
                         WidgetMask(
                           blendMode: BlendMode.srcATop,
                           childSaveLayer: true,
@@ -354,9 +352,9 @@ class _HomePageState extends State<HomePage> {
                                   style: GoogleFonts.mPlus1(
                                     fontSize:
                                         ((MediaQuery.of(context).size.width) /
-                                                3 +
-                                            100) /
-                                        30,
+                                                    3 +
+                                                100) /
+                                            30,
                                     color: globals.isLight
                                         ? Color.fromARGB(255, 7, 77, 53)
                                         : Color.fromARGB(255, 167, 198, 131),
@@ -371,8 +369,7 @@ class _HomePageState extends State<HomePage> {
                                         alignment: Alignment.centerLeft,
                                         children: [
                                           Container(
-                                            width:
-                                                (MediaQuery.of(
+                                            width: (MediaQuery.of(
                                                   context,
                                                 ).size.width) -
                                                 ((MediaQuery.of(
@@ -402,7 +399,10 @@ class _HomePageState extends State<HomePage> {
                                                         .spaceEvenly,
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.center,
-                                                children: globals.pastVideos.asMap().entries.map((
+                                                children: globals.pastVideos
+                                                    .asMap()
+                                                    .entries
+                                                    .map((
                                                   entry,
                                                 ) {
                                                   final index = entry.key;
@@ -410,18 +410,20 @@ class _HomePageState extends State<HomePage> {
 
                                                   final backgroundColor =
                                                       (index % 2 == 0)
-                                                      ? const Color.fromARGB(
-                                                          255,
-                                                          30,
-                                                          60,
-                                                          50,
-                                                        )
-                                                      : const Color.fromARGB(
-                                                          255,
-                                                          60,
-                                                          90,
-                                                          70,
-                                                        ); // color 2
+                                                          ? const Color
+                                                              .fromARGB(
+                                                              255,
+                                                              30,
+                                                              60,
+                                                              50,
+                                                            )
+                                                          : const Color
+                                                              .fromARGB(
+                                                              255,
+                                                              60,
+                                                              90,
+                                                              70,
+                                                            ); // color 2
 
                                                   return Container(
                                                     alignment: Alignment.center,
@@ -429,12 +431,11 @@ class _HomePageState extends State<HomePage> {
                                                       color: backgroundColor,
                                                       borderRadius:
                                                           BorderRadius.circular(
-                                                            5,
-                                                          ),
+                                                        5,
+                                                      ),
                                                     ),
 
-                                                    width:
-                                                        (MediaQuery.of(
+                                                    width: (MediaQuery.of(
                                                           context,
                                                         ).size.width) -
                                                         ((MediaQuery.of(
@@ -446,15 +447,16 @@ class _HomePageState extends State<HomePage> {
                                                     height: 50,
                                                     child: AutoSizeText(
                                                       video,
-                                                      style: GoogleFonts.montserrat(
+                                                      style: GoogleFonts
+                                                          .montserrat(
                                                         fontSize: 20,
-                                                        color:
-                                                            const Color.fromARGB(
-                                                              255,
-                                                              217,
-                                                              225,
-                                                              207,
-                                                            ),
+                                                        color: const Color
+                                                            .fromARGB(
+                                                          255,
+                                                          217,
+                                                          225,
+                                                          207,
+                                                        ),
                                                       ),
                                                       maxLines: 1,
                                                     ),
@@ -475,8 +477,7 @@ class _HomePageState extends State<HomePage> {
                                             sigmaY: 5.0,
                                           ),
                                           child: Container(
-                                            width:
-                                                (MediaQuery.of(
+                                            width: (MediaQuery.of(
                                                   context,
                                                 ).size.width) -
                                                 ((MediaQuery.of(
@@ -492,8 +493,7 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                     if (!globals.isLoggedIn)
                                       Container(
-                                        width:
-                                            (MediaQuery.of(
+                                        width: (MediaQuery.of(
                                               context,
                                             ).size.width) -
                                             ((MediaQuery.of(
@@ -556,8 +556,7 @@ class _HomePageState extends State<HomePage> {
                                             sigmaY: 5.0,
                                           ),
                                           child: Container(
-                                            width:
-                                                (MediaQuery.of(
+                                            width: (MediaQuery.of(
                                                   context,
                                                 ).size.width) -
                                                 ((MediaQuery.of(
@@ -568,63 +567,6 @@ class _HomePageState extends State<HomePage> {
                                                 100,
                                             height: 300,
                                             color: Colors.black.withAlpha(50),
-                                          ),
-                                        ),
-                                      ),
-                                    if (kIsWeb && global.isLoggedIn)
-                                      Container(
-                                        width:
-                                            (MediaQuery.of(
-                                              context,
-                                            ).size.width) -
-                                            ((MediaQuery.of(
-                                                      context,
-                                                    ).size.width) /
-                                                    4 -
-                                                40) -
-                                            100, //replace brackets with whatever explore size is,
-                                        height: 300,
-
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(
-                                            15,
-                                          ),
-                                          color: const Color.fromARGB(
-                                            200,
-                                            60,
-                                            90,
-                                            70,
-                                          ),
-                                        ),
-                                        child: Center(
-                                          child: Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            children: [
-                                              Icon(
-                                                Icons.lock,
-                                                size: 80,
-                                                color: const Color.fromARGB(
-                                                  255,
-                                                  217,
-                                                  225,
-                                                  207,
-                                                ),
-                                              ),
-                                              AutoSizeText(
-                                                'Get the FREE App to Unlock This Feature!',
-                                                style: TextStyle(
-                                                  color: const Color.fromARGB(
-                                                    255,
-                                                    217,
-                                                    225,
-                                                    207,
-                                                  ),
-                                                  fontSize: 18,
-                                                ),
-                                                maxLines: 2,
-                                              ),
-                                            ],
                                           ),
                                         ),
                                       ),
@@ -643,15 +585,14 @@ class _HomePageState extends State<HomePage> {
                                   style: GoogleFonts.mPlus1(
                                     fontSize:
                                         ((MediaQuery.of(context).size.width) /
-                                                3 +
-                                            100) /
-                                        30,
+                                                    3 +
+                                                100) /
+                                            30,
                                     color: globals.isLight
                                         ? Color.fromARGB(255, 7, 77, 53)
                                         : Color.fromARGB(255, 167, 198, 131),
                                   ),
                                 ),
-
                                 SizedBox(height: 10),
                                 SizedBox(
                                   height: 300,
@@ -659,8 +600,7 @@ class _HomePageState extends State<HomePage> {
                                     alignment: Alignment.centerLeft,
                                     children: [
                                       Container(
-                                        width:
-                                            (MediaQuery.of(
+                                        width: (MediaQuery.of(
                                                   context,
                                                 ).size.width) /
                                                 4 -
@@ -686,7 +626,10 @@ class _HomePageState extends State<HomePage> {
                                                 MainAxisAlignment.spaceEvenly,
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.center,
-                                            children: globals.explore.asMap().entries.map((
+                                            children: globals.explore
+                                                .asMap()
+                                                .entries
+                                                .map((
                                               entry,
                                             ) {
                                               final index = entry.key;
@@ -694,18 +637,18 @@ class _HomePageState extends State<HomePage> {
 
                                               final backgroundColor =
                                                   (index % 2 != 0)
-                                                  ? const Color.fromARGB(
-                                                      255,
-                                                      30,
-                                                      60,
-                                                      50,
-                                                    )
-                                                  : const Color.fromARGB(
-                                                      255,
-                                                      60,
-                                                      90,
-                                                      70,
-                                                    ); // color 2
+                                                      ? const Color.fromARGB(
+                                                          255,
+                                                          30,
+                                                          60,
+                                                          50,
+                                                        )
+                                                      : const Color.fromARGB(
+                                                          255,
+                                                          60,
+                                                          90,
+                                                          70,
+                                                        ); // color 2
 
                                               return Container(
                                                 alignment: Alignment.center,
@@ -714,9 +657,7 @@ class _HomePageState extends State<HomePage> {
                                                   borderRadius:
                                                       BorderRadius.circular(5),
                                                 ),
-
-                                                width:
-                                                    (MediaQuery.of(
+                                                width: (MediaQuery.of(
                                                           context,
                                                         ).size.width) /
                                                         2 -
@@ -737,30 +678,31 @@ class _HomePageState extends State<HomePage> {
                                                         context,
                                                         MaterialPageRoute(
                                                           builder: (context) =>
-                                                              globals
-                                                                  .redirectExplore[index],
+                                                              globals.redirectExplore[
+                                                                  index],
                                                         ),
                                                       );
                                                     }
                                                   },
                                                   style:
                                                       ElevatedButton.styleFrom(
-                                                        backgroundColor:
-                                                            Colors.transparent,
-                                                        shadowColor:
-                                                            Colors.transparent,
-                                                      ),
+                                                    backgroundColor:
+                                                        Colors.transparent,
+                                                    shadowColor:
+                                                        Colors.transparent,
+                                                  ),
                                                   child: AutoSizeText(
                                                     video,
-                                                    style: GoogleFonts.montserrat(
+                                                    style:
+                                                        GoogleFonts.montserrat(
                                                       fontSize: 20,
                                                       color:
                                                           const Color.fromARGB(
-                                                            255,
-                                                            217,
-                                                            225,
-                                                            207,
-                                                          ),
+                                                        255,
+                                                        217,
+                                                        225,
+                                                        207,
+                                                      ),
                                                     ),
                                                     maxLines: 1,
                                                   ),
@@ -781,8 +723,7 @@ class _HomePageState extends State<HomePage> {
                                               sigmaY: 5.0,
                                             ),
                                             child: Container(
-                                              width:
-                                                  (MediaQuery.of(
+                                              width: (MediaQuery.of(
                                                         context,
                                                       ).size.width) /
                                                       4 -
@@ -808,8 +749,7 @@ class _HomePageState extends State<HomePage> {
                                               );
                                             },
                                             child: Container(
-                                              width:
-                                                  (MediaQuery.of(
+                                              width: (MediaQuery.of(
                                                         context,
                                                       ).size.width) /
                                                       4 -
@@ -836,27 +776,27 @@ class _HomePageState extends State<HomePage> {
                                                           60, // Smaller size due to narrower container
                                                       color:
                                                           const Color.fromARGB(
+                                                        255,
+                                                        217,
+                                                        225,
+                                                        207,
+                                                      ),
+                                                    ),
+                                                    Padding(
+                                                      padding:
+                                                          EdgeInsets.symmetric(
+                                                        horizontal: 8.0,
+                                                      ),
+                                                      child: AutoSizeText(
+                                                        'CLICK HERE TO LOG IN OR REGISTER',
+                                                        style: TextStyle(
+                                                          color: const Color
+                                                              .fromARGB(
                                                             255,
                                                             217,
                                                             225,
                                                             207,
                                                           ),
-                                                    ),
-                                                    Padding(
-                                                      padding:
-                                                          EdgeInsets.symmetric(
-                                                            horizontal: 8.0,
-                                                          ),
-                                                      child: AutoSizeText(
-                                                        'CLICK HERE TO LOG IN OR REGISTER',
-                                                        style: TextStyle(
-                                                          color:
-                                                              const Color.fromARGB(
-                                                                255,
-                                                                217,
-                                                                225,
-                                                                207,
-                                                              ),
                                                           fontSize: 16,
                                                         ),
                                                         maxLines: 2,
@@ -888,8 +828,7 @@ class _HomePageState extends State<HomePage> {
                         Text(
                           'Featured Video of the Day',
                           style: GoogleFonts.mPlus1(
-                            fontSize:
-                                ((MediaQuery.of(context).size.width) / 3 +
+                            fontSize: ((MediaQuery.of(context).size.width) / 3 +
                                     100) /
                                 30,
                             color: globals.isLight
@@ -941,8 +880,7 @@ class _HomePageState extends State<HomePage> {
                                       children: [
                                         Container(
                                           height: 560,
-                                          width:
-                                              (MediaQuery.of(
+                                          width: (MediaQuery.of(
                                                 context,
                                               ).size.width) -
                                               120,
@@ -955,8 +893,7 @@ class _HomePageState extends State<HomePage> {
                                           ),
                                           child: SizedBox(
                                             height: 560,
-                                            width:
-                                                (MediaQuery.of(
+                                            width: (MediaQuery.of(
                                                   context,
                                                 ).size.width) -
                                                 120,
@@ -972,8 +909,7 @@ class _HomePageState extends State<HomePage> {
                                           children: [
                                             SizedBox(height: 60),
                                             Container(
-                                              width:
-                                                  (MediaQuery.of(
+                                              width: (MediaQuery.of(
                                                     context,
                                                   ).size.width) -
                                                   120,
@@ -1004,8 +940,7 @@ class _HomePageState extends State<HomePage> {
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 SizedBox(
-                                                  width:
-                                                      MediaQuery.of(
+                                                  width: MediaQuery.of(
                                                         context,
                                                       ).size.width -
                                                       130,
@@ -1014,15 +949,16 @@ class _HomePageState extends State<HomePage> {
                                                     featuredUnit +
                                                         ": " +
                                                         featuredTitle,
-                                                    style: GoogleFonts.bebasNeue(
+                                                    style:
+                                                        GoogleFonts.bebasNeue(
                                                       fontSize: 60,
                                                       color:
                                                           const Color.fromARGB(
-                                                            255,
-                                                            217,
-                                                            225,
-                                                            199,
-                                                          ),
+                                                        255,
+                                                        217,
+                                                        225,
+                                                        199,
+                                                      ),
                                                     ),
                                                     textAlign: TextAlign.center,
                                                     maxFontSize: 80,
@@ -1064,7 +1000,7 @@ class _HomePageState extends State<HomePage> {
                                     child: Container(
                                       width:
                                           (MediaQuery.of(context).size.width) -
-                                          80,
+                                              80,
                                       height: 600,
                                       color: Colors.black.withAlpha(50),
                                     ),
