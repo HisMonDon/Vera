@@ -258,7 +258,16 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
   Widget _buildSignUpButton() {
     return ElevatedButton(
       onPressed: () {
-        launchUrl(Uri.parse("https://github.com/signup"));
+        globals.selectedIndex = 1;
+        Navigator.of(
+          //basaiclly clears the stack very useful especially for home page
+          context,
+          rootNavigator: true,
+        ).pushNamedAndRemoveUntil(
+          '/',
+          (route) => false,
+          arguments: 1,
+        );
       },
       style: ElevatedButton.styleFrom(
         backgroundColor: const Color.fromARGB(255, 167, 198, 131),

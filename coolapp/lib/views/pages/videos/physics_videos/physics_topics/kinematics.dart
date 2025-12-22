@@ -44,7 +44,6 @@ class _KinematicsState extends State<Kinematics> {
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%202D%20Part%202.mp4',
     },
-
     {
       'title': '2D Motion Analysis Part 3', //DONE 2025/09/14 VERSION 1.0
       'description':
@@ -74,7 +73,7 @@ class _KinematicsState extends State<Kinematics> {
       'description': 'Slope-area interpretations of motion graphs',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Graphical%20Kinematics.mp4', //Done 2025/12/21 time flies
     },
   ];
   @override
@@ -99,7 +98,6 @@ class _KinematicsState extends State<Kinematics> {
                 topIcon: Icons.my_location,
               ),
               SizedBox(width: 2, height: 20),
-
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
