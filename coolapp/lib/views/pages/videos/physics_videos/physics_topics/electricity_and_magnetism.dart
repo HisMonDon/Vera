@@ -22,47 +22,52 @@ class _ElectricityAndMagnetismState extends State<ElectricityAndMagnetism> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Electrostatics',
-      'description': "Coulomb's law, electric fields, and potential difference",
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
-    },
-    {
-      'title': "Unit 2: DC Circuits",
-      'description': "Ohm's law, Kirchhoff's rules, and circuit analysis",
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
-    },
-    {
-      'title': 'Unit 3: Capacitance',
+      'title': 'Unit 1: Introduction to Circuits',
       'description':
-          'Parallel plate capacitors, energy storage, and RC circuits',
+          "Ohm's law, behaviour of current, voltage, and resistance in different types of circuits.",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/1%20Introduction%20to%20Circuits.mp4', // added 2025/12/21
     },
     {
-      'title': 'Unit 4: Right hand rule',
-      'description': 'How to use the right hand rule',
+      'title': "Unit 2: Kirchhoff's Current Law",
+      'description':
+          "Introduction to Kirchhoff's Current Law, example problems on application.",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          "https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/2%20Kirchhoff's%20Current%20Law.mp4", // added 2025/12/21
     },
     {
-      'title': 'Unit 5: Electromagnetic Induction',
-      'description': "Faraday's law, Lenz's law, and motional EMF",
+      'title': "Unit 3: AP/IB style Circuit Problem",
+      'description':
+          "Example on a combination of ohm's law, circuit behaviour, and Kirchhoff's Current law.",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          "https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/3%20Circuit%20Example.mp4", // added 2025/12/21
     },
     {
-      'title': 'Unit 6: EM Waves',
-      'description': "Spectrum properties and polarization phenomena",
+      'title': 'Unit 4: Capacitance',
+      'description':
+          'Parallel plate capacitors, energy storage, and behaviour of capaciters over time.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/4%20Capacitance.mp4', // added 2025/12/21
+    },
+    {
+      'title': 'Unit 5: Right hand rule',
+      'description':
+          'Introduction on how to use the right hand rule, applications.',
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/5%20Right%20hand%20rule.mp4', // added 2025/12/21
+    },
+    {
+      'title': 'Unit 6: Magnetic Flux (IB/AP)',
+      'description':
+          "Introcution to magnetic flux, effect of angles, applications",
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/IBAP%20Introduction%20to%20Magnetic%20Flux.mp4', // added 2025/12/21
     },
   ];
   @override
@@ -86,7 +91,6 @@ class _ElectricityAndMagnetismState extends State<ElectricityAndMagnetism> {
                 topIcon: Icons.flash_on,
               ),
               SizedBox(width: 2, height: 20),
-
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
