@@ -69,72 +69,74 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               content: SingleChildScrollView(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    if (_errorMessage != null) ...[
-                      Container(
-                        padding: const EdgeInsets.all(8),
-                        decoration: BoxDecoration(
-                          color: Colors.red.shade50,
-                          borderRadius: BorderRadius.circular(16),
+                child: AutofillGroup(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      if (_errorMessage != null) ...[
+                        Container(
+                          padding: const EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            color: Colors.red.shade50,
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Text(
+                            _errorMessage!,
+                            style: TextStyle(color: Colors.red),
+                          ),
                         ),
-                        child: Text(
-                          _errorMessage!,
-                          style: TextStyle(color: Colors.red),
+                        SizedBox(height: 16),
+                      ],
+                      TextFormField(
+                        style: TextStyle(
+                          color: globals.isLight
+                              ? Color.fromARGB(255, 7, 77, 53)
+                              : Colors.white,
                         ),
+                        controller: _currentPasswordController,
+                        decoration: InputDecoration(
+                          labelText: 'Current Password',
+                          border: OutlineInputBorder(),
+                          prefixIcon: Icon(Icons.lock_outline),
+                        ),
+                        obscureText: true,
                       ),
-                      SizedBox(height: 16),
+                      //then have space
+                      SizedBox(height: 15),
+                      TextFormField(
+                        style: TextStyle(
+                          color: globals.isLight
+                              ? Color.fromARGB(255, 7, 77, 53)
+                              : Colors.white,
+                        ),
+                        controller: _newPasswordController,
+                        decoration: InputDecoration(
+                          labelText: 'New Password',
+                          border: OutlineInputBorder(),
+                          prefixIcon: Icon(Icons.lock),
+                          fillColor: globals.isLight
+                              ? Color.fromARGB(255, 7, 77, 53)
+                              : Colors.white,
+                        ),
+                        obscureText: true,
+                      ),
+                      SizedBox(height: 15),
+                      TextFormField(
+                        style: TextStyle(
+                          color: globals.isLight
+                              ? Color.fromARGB(255, 7, 77, 53)
+                              : Colors.white,
+                        ),
+                        controller: _confirmPasswordController,
+                        decoration: InputDecoration(
+                          labelText: 'Confirm New Password',
+                          border: OutlineInputBorder(),
+                          prefixIcon: Icon(Icons.lock_outline),
+                        ),
+                        obscureText: true,
+                      ),
                     ],
-                    TextFormField(
-                      style: TextStyle(
-                        color: globals.isLight
-                            ? Color.fromARGB(255, 7, 77, 53)
-                            : Colors.white,
-                      ),
-                      controller: _currentPasswordController,
-                      decoration: InputDecoration(
-                        labelText: 'Current Password',
-                        border: OutlineInputBorder(),
-                        prefixIcon: Icon(Icons.lock_outline),
-                      ),
-                      obscureText: true,
-                    ),
-                    //then have space
-                    SizedBox(height: 15),
-                    TextFormField(
-                      style: TextStyle(
-                        color: globals.isLight
-                            ? Color.fromARGB(255, 7, 77, 53)
-                            : Colors.white,
-                      ),
-                      controller: _newPasswordController,
-                      decoration: InputDecoration(
-                        labelText: 'New Password',
-                        border: OutlineInputBorder(),
-                        prefixIcon: Icon(Icons.lock),
-                        fillColor: globals.isLight
-                            ? Color.fromARGB(255, 7, 77, 53)
-                            : Colors.white,
-                      ),
-                      obscureText: true,
-                    ),
-                    SizedBox(height: 15),
-                    TextFormField(
-                      style: TextStyle(
-                        color: globals.isLight
-                            ? Color.fromARGB(255, 7, 77, 53)
-                            : Colors.white,
-                      ),
-                      controller: _confirmPasswordController,
-                      decoration: InputDecoration(
-                        labelText: 'Confirm New Password',
-                        border: OutlineInputBorder(),
-                        prefixIcon: Icon(Icons.lock_outline),
-                      ),
-                      obscureText: true,
-                    ),
-                  ],
+                  ),
                 ),
               ),
               actions: [
@@ -193,11 +195,11 @@ class _ProfilePageState extends State<ProfilePage> {
                               return;
                             }
 
-                            final isCurrentPasswordValid = await _authService
-                                .verifyCurrentPassword(
-                                  email,
-                                  _currentPasswordController.text,
-                                );
+                            final isCurrentPasswordValid =
+                                await _authService.verifyCurrentPassword(
+                              email,
+                              _currentPasswordController.text,
+                            );
 
                             if (!isCurrentPasswordValid) {
                               setState(() {
@@ -230,8 +232,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               );
                             } else {
                               setState(() {
-                                _errorMessage =
-                                    'Failed to change password. ' +
+                                _errorMessage = 'Failed to change password. ' +
                                     globals.errorMessage;
                                 _isLoading = false;
                               });
@@ -452,7 +453,6 @@ class _ProfilePageState extends State<ProfilePage> {
             controller: _emailController,
             decoration: const InputDecoration(
               labelText: 'Email',
-
               border: OutlineInputBorder(),
               prefixIcon: Icon(Icons.email),
             ),
@@ -548,11 +548,11 @@ class _ProfilePageState extends State<ProfilePage> {
             child: Text(
               _isLogin ? 'Create new account' : 'I already have an account',
               style: TextStyle(
-                /*color: globals.isLight
+                  /*color: globals.isLight
                     ? const Color.fromARGB(255, 15, 48, 40)
                     : 
                     //Theme.of(context).primaryColor,*/
-              ),
+                  ),
             ),
           ),
         ],
@@ -580,9 +580,8 @@ class _ProfilePageState extends State<ProfilePage> {
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
-            color: globals.isLight
-                ? Color.fromARGB(255, 7, 77, 53)
-                : Colors.white,
+            color:
+                globals.isLight ? Color.fromARGB(255, 7, 77, 53) : Colors.white,
           ),
         ),
         const SizedBox(height: 10),
@@ -680,8 +679,8 @@ class _ProfilePageState extends State<ProfilePage> {
                       _isInitializing
                           ? const CircularProgressIndicator()
                           : (isLoggedIn
-                                ? _buildProfileView()
-                                : _buildLoginForm()),
+                              ? _buildProfileView()
+                              : _buildLoginForm()),
                       SizedBox(height: 20),
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
