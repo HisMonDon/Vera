@@ -69,74 +69,72 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               content: SingleChildScrollView(
-                child: AutofillGroup(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      if (_errorMessage != null) ...[
-                        Container(
-                          padding: const EdgeInsets.all(8),
-                          decoration: BoxDecoration(
-                            color: Colors.red.shade50,
-                            borderRadius: BorderRadius.circular(16),
-                          ),
-                          child: Text(
-                            _errorMessage!,
-                            style: TextStyle(color: Colors.red),
-                          ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    if (_errorMessage != null) ...[
+                      Container(
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          color: Colors.red.shade50,
+                          borderRadius: BorderRadius.circular(16),
                         ),
-                        SizedBox(height: 16),
-                      ],
-                      TextFormField(
-                        style: TextStyle(
-                          color: globals.isLight
-                              ? Color.fromARGB(255, 7, 77, 53)
-                              : Colors.white,
+                        child: Text(
+                          _errorMessage!,
+                          style: TextStyle(color: Colors.red),
                         ),
-                        controller: _currentPasswordController,
-                        decoration: InputDecoration(
-                          labelText: 'Current Password',
-                          border: OutlineInputBorder(),
-                          prefixIcon: Icon(Icons.lock_outline),
-                        ),
-                        obscureText: true,
                       ),
-                      //then have space
-                      SizedBox(height: 15),
-                      TextFormField(
-                        style: TextStyle(
-                          color: globals.isLight
-                              ? Color.fromARGB(255, 7, 77, 53)
-                              : Colors.white,
-                        ),
-                        controller: _newPasswordController,
-                        decoration: InputDecoration(
-                          labelText: 'New Password',
-                          border: OutlineInputBorder(),
-                          prefixIcon: Icon(Icons.lock),
-                          fillColor: globals.isLight
-                              ? Color.fromARGB(255, 7, 77, 53)
-                              : Colors.white,
-                        ),
-                        obscureText: true,
-                      ),
-                      SizedBox(height: 15),
-                      TextFormField(
-                        style: TextStyle(
-                          color: globals.isLight
-                              ? Color.fromARGB(255, 7, 77, 53)
-                              : Colors.white,
-                        ),
-                        controller: _confirmPasswordController,
-                        decoration: InputDecoration(
-                          labelText: 'Confirm New Password',
-                          border: OutlineInputBorder(),
-                          prefixIcon: Icon(Icons.lock_outline),
-                        ),
-                        obscureText: true,
-                      ),
+                      SizedBox(height: 16),
                     ],
-                  ),
+                    TextFormField(
+                      style: TextStyle(
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 7, 77, 53)
+                            : Colors.white,
+                      ),
+                      controller: _currentPasswordController,
+                      decoration: InputDecoration(
+                        labelText: 'Current Password',
+                        border: OutlineInputBorder(),
+                        prefixIcon: Icon(Icons.lock_outline),
+                      ),
+                      obscureText: true,
+                    ),
+                    //then have space
+                    SizedBox(height: 15),
+                    TextFormField(
+                      style: TextStyle(
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 7, 77, 53)
+                            : Colors.white,
+                      ),
+                      controller: _newPasswordController,
+                      decoration: InputDecoration(
+                        labelText: 'New Password',
+                        border: OutlineInputBorder(),
+                        prefixIcon: Icon(Icons.lock),
+                        fillColor: globals.isLight
+                            ? Color.fromARGB(255, 7, 77, 53)
+                            : Colors.white,
+                      ),
+                      obscureText: true,
+                    ),
+                    SizedBox(height: 15),
+                    TextFormField(
+                      style: TextStyle(
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 7, 77, 53)
+                            : Colors.white,
+                      ),
+                      controller: _confirmPasswordController,
+                      decoration: InputDecoration(
+                        labelText: 'Confirm New Password',
+                        border: OutlineInputBorder(),
+                        prefixIcon: Icon(Icons.lock_outline),
+                      ),
+                      obscureText: true,
+                    ),
+                  ],
                 ),
               ),
               actions: [
@@ -334,6 +332,7 @@ class _ProfilePageState extends State<ProfilePage> {
       }
 
       if (success) {
+        TextInput.finishAutofillContext(shouldSave: true);
         globals.isLoggedIn = true;
         _emailController.clear();
         _passwordController.clear();
@@ -407,155 +406,167 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget _buildLoginForm() {
     return Form(
       key: _formKey,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Text(
-            _isLogin ? 'Login' : 'Create Account',
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              color: globals.isLight
-                  ? Color.fromARGB(255, 15, 48, 40)
-                  : Colors.white,
+      child: AutofillGroup(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              _isLogin ? 'Login' : 'Create Account',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: globals.isLight
+                    ? Color.fromARGB(255, 15, 48, 40)
+                    : Colors.white,
+              ),
+              textAlign: TextAlign.center,
             ),
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: 20),
-          if (_errorMessage != null) ...[
-            Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: Colors.red.shade50,
-                border: Border.all(
-                  color: const Color.fromARGB(255, 245, 159, 159),
+            const SizedBox(height: 20),
+            if (_errorMessage != null) ...[
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.red.shade50,
+                  border: Border.all(
+                    color: const Color.fromARGB(255, 245, 159, 159),
+                  ),
+                  borderRadius: BorderRadius.circular(16),
                 ),
-                borderRadius: BorderRadius.circular(16),
-              ),
-              child: Text(
-                _errorMessage!,
-                style: TextStyle(
-                  color: const Color.fromARGB(255, 211, 42, 42),
-                  fontSize: 16,
+                child: Text(
+                  _errorMessage!,
+                  style: TextStyle(
+                    color: const Color.fromARGB(255, 211, 42, 42),
+                    fontSize: 16,
+                  ),
+                  textAlign: TextAlign.center,
                 ),
-                textAlign: TextAlign.center,
               ),
+              const SizedBox(height: 16),
+            ],
+            //email field
+            TextFormField(
+              style: TextStyle(
+                color: globals.isLight
+                    ? Color.fromARGB(255, 0, 0, 0)
+                    : Color.fromARGB(255, 255, 255, 255),
+              ),
+              controller: _emailController,
+              textInputAction: TextInputAction.next,
+              autofillHints: const [
+                AutofillHints.username,
+                AutofillHints.email
+              ],
+              decoration: const InputDecoration(
+                labelText: 'Email',
+                border: OutlineInputBorder(),
+                prefixIcon: Icon(Icons.email),
+              ),
+              keyboardType: TextInputType.emailAddress,
+              validator: (value) {
+                if (value == null || value.trim().isEmpty)
+                  return 'Please enter your email';
+                if (!_isValidEmail(value.trim()))
+                  return 'Please enter a valid email address';
+                return null;
+              },
             ),
             const SizedBox(height: 16),
-          ],
-          TextFormField(
-            style: TextStyle(
-              color: globals.isLight
-                  ? Color.fromARGB(255, 0, 0, 0)
-                  : Color.fromARGB(255, 255, 255, 255),
-            ),
-            controller: _emailController,
-            decoration: const InputDecoration(
-              labelText: 'Email',
-              border: OutlineInputBorder(),
-              prefixIcon: Icon(Icons.email),
-            ),
-            keyboardType: TextInputType.emailAddress,
-            validator: (value) {
-              if (value == null || value.trim().isEmpty)
-                return 'Please enter your email';
-              if (!_isValidEmail(value.trim()))
-                return 'Please enter a valid email address';
-              return null;
-            },
-          ),
-          const SizedBox(height: 16),
-          TextFormField(
-            style: TextStyle(
-              color: globals.isLight
-                  ? Color.fromARGB(255, 7, 77, 53)
-                  : Colors.white,
-            ),
-            controller: _passwordController,
-            decoration: const InputDecoration(
-              labelText: 'Password',
-              border: OutlineInputBorder(),
-              prefixIcon: Icon(Icons.lock),
-            ),
-            obscureText: true,
-            validator: (value) {
-              if (value == null || value.isEmpty)
-                return 'Please enter your password';
-              if (value.length < 6)
-                return 'Password must be at least 6 characters';
-              return null;
-            },
-          ),
-          const SizedBox(height: 16),
-          if (!_isLogin) ...[
+            //password field
             TextFormField(
               style: TextStyle(
                 color: globals.isLight
                     ? Color.fromARGB(255, 7, 77, 53)
                     : Colors.white,
               ),
-              controller: _userNameController,
+              controller: _passwordController,
+              autofillHints: const [AutofillHints.password],
               decoration: const InputDecoration(
-                labelText: 'Name',
+                labelText: 'Password',
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.person),
+                prefixIcon: Icon(Icons.lock),
               ),
+              obscureText: true,
+              textInputAction: TextInputAction.done,
+              onFieldSubmitted: (_) => _submit(),
               validator: (value) {
-                if (value == null || value.trim().isEmpty)
-                  return 'Please enter your name';
+                if (value == null || value.isEmpty)
+                  return 'Please enter your password';
+                if (value.length < 6)
+                  return 'Password must be at least 6 characters';
                 return null;
               },
             ),
             const SizedBox(height: 16),
-          ],
-          const SizedBox(height: 24),
-          if (_isLoading)
-            const Center(child: CircularProgressIndicator())
-          else
+            if (!_isLogin) ...[
+              TextFormField(
+                style: TextStyle(
+                  color: globals.isLight
+                      ? Color.fromARGB(255, 7, 77, 53)
+                      : Colors.white,
+                ),
+                controller: _userNameController,
+                decoration: const InputDecoration(
+                  labelText: 'Name',
+                  border: OutlineInputBorder(),
+                  prefixIcon: Icon(Icons.person),
+                ),
+                validator: (value) {
+                  if (value == null || value.trim().isEmpty)
+                    return 'Please enter your name';
+                  return null;
+                },
+              ),
+              const SizedBox(height: 16),
+            ],
+            const SizedBox(height: 24),
+            if (_isLoading)
+              const Center(child: CircularProgressIndicator())
+            else
+              ElevatedButton(
+                onPressed: _submit,
+                style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  backgroundColor: globals.isLight
+                      ? const Color.fromARGB(255, 15, 48, 40)
+                      : Theme.of(context).primaryColor,
+                ),
+                child: Text(
+                  _isLogin ? 'Login' : 'Register',
+                  style: const TextStyle(
+                    fontSize: 16,
+                    //color: const Color.fromARGB(255, 130, 213, 200),
+                  ),
+                ),
+              ),
+            const SizedBox(height: 16),
             ElevatedButton(
-              onPressed: _submit,
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 12),
                 backgroundColor: globals.isLight
                     ? const Color.fromARGB(255, 15, 48, 40)
                     : Theme.of(context).primaryColor,
               ),
+              onPressed: _isLoading
+                  ? null
+                  : () {
+                      setState(() {
+                        _isLogin = !_isLogin;
+                        _errorMessage = null;
+                      });
+                    },
               child: Text(
-                _isLogin ? 'Login' : 'Register',
-                style: const TextStyle(
-                  fontSize: 16,
-                  //color: const Color.fromARGB(255, 130, 213, 200),
-                ),
+                _isLogin ? 'Create new account' : 'I already have an account',
+                style: TextStyle(
+                    /*color: globals.isLight
+                      ? const Color.fromARGB(255, 15, 48, 40)
+                      : 
+                      //Theme.of(context).primaryColor,*/
+                    ),
               ),
             ),
-          const SizedBox(height: 16),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              padding: const EdgeInsets.symmetric(vertical: 12),
-              backgroundColor: globals.isLight
-                  ? const Color.fromARGB(255, 15, 48, 40)
-                  : Theme.of(context).primaryColor,
-            ),
-            onPressed: _isLoading
-                ? null
-                : () {
-                    setState(() {
-                      _isLogin = !_isLogin;
-                      _errorMessage = null;
-                    });
-                  },
-            child: Text(
-              _isLogin ? 'Create new account' : 'I already have an account',
-              style: TextStyle(
-                  /*color: globals.isLight
-                    ? const Color.fromARGB(255, 15, 48, 40)
-                    : 
-                    //Theme.of(context).primaryColor,*/
-                  ),
-            ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
