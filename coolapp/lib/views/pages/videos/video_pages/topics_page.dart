@@ -56,7 +56,6 @@ class _TopicsPageState extends State<TopicsPage> {
           _buildButtons(
             icon: Icons.arrow_forward_rounded,
             label: "Next",
-
             isEnabled: false,
           ),
         ],
@@ -80,9 +79,8 @@ class _TopicsPageState extends State<TopicsPage> {
         backgroundColor: isEnabled
             ? Color.fromARGB(255, 167, 198, 131)
             : const Color.fromARGB(255, 238, 238, 238),
-        foregroundColor: isEnabled
-            ? Colors.white
-            : const Color.fromARGB(255, 158, 158, 158),
+        foregroundColor:
+            isEnabled ? Colors.white : const Color.fromARGB(255, 158, 158, 158),
         disabledBackgroundColor: const Color.fromARGB(255, 238, 238, 238),
         disabledForegroundColor: const Color.fromARGB(255, 158, 158, 158),
         padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
@@ -90,7 +88,6 @@ class _TopicsPageState extends State<TopicsPage> {
           fontWeight: FontWeight.w600,
           color: const Color.fromARGB(255, 15, 48, 40),
         ),
-
         elevation: isEnabled ? 0 : 0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
@@ -105,13 +102,13 @@ class _TopicsPageState extends State<TopicsPage> {
                   const CoursePage(),
               transitionsBuilder:
                   (context, animation, secondaryAnimation, child) {
-                    return SlideTransition(
-                      position: animation.drive(
-                        Tween(begin: const Offset(-1, 0), end: Offset.zero),
-                      ),
-                      child: child,
-                    );
-                  },
+                return SlideTransition(
+                  position: animation.drive(
+                    Tween(begin: const Offset(-1, 0), end: Offset.zero),
+                  ),
+                  child: child,
+                );
+              },
             ),
           );
         }
@@ -185,7 +182,6 @@ class _TopicsPageState extends State<TopicsPage> {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),
-
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8.0),
                     child: Container(
@@ -197,7 +193,6 @@ class _TopicsPageState extends State<TopicsPage> {
                       ),
                     ),
                   ),
-
                   ClipRRect(
                     borderRadius: BorderRadius.circular(8),
                     child: Image(
@@ -208,7 +203,6 @@ class _TopicsPageState extends State<TopicsPage> {
                     ),
                   ),
                   SizedBox(height: 16),
-
                   Text(
                     description,
                     style: GoogleFonts.roboto(
@@ -219,9 +213,7 @@ class _TopicsPageState extends State<TopicsPage> {
                     maxLines: 3,
                     overflow: TextOverflow.ellipsis,
                   ),
-
                   Spacer(),
-
                   Container(
                     alignment: Alignment.centerRight,
                     child: ElevatedButton.icon(
@@ -273,7 +265,6 @@ class _TopicsPageState extends State<TopicsPage> {
           'Motion analysis, explore concepts such as displacement, velocity, acceleration, and time, and how to apply kinematic equations to describe motion in one and two dimensions.',
       'videoPage': Kinematics(),
     },
-
     {
       'title': 'Forces and Dynamics',
       'imagePath': 'images/dynamics.jpg',
@@ -281,7 +272,6 @@ class _TopicsPageState extends State<TopicsPage> {
           "Examine how forces influence motion through Newton's laws of motion. Concepts such as mass, weight, friction, tension, and normal force, learn how to analyze interactions between objects, use Free Body Diagrams",
       'videoPage': Dynamics(),
     },
-
     {
       'title': 'Work and Energy',
       'imagePath': 'images/work_and_energy.jpg',
@@ -296,7 +286,6 @@ class _TopicsPageState extends State<TopicsPage> {
           'Principles of electric and magnetic phenomena, right hand rule, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits. Extend this understanding to magnetic fields, electromagnetic induction, and the relationship between electricity and magnetism',
       'videoPage': ElectricityAndMagnetism(),
     },
-
     {
       'title': 'Momentum and Collisions',
       'imagePath': 'images/momentum.jpg',
@@ -405,7 +394,6 @@ class _TopicsPageState extends State<TopicsPage> {
                     'Motion analysis, explore concepts such as displacement, velocity, acceleration, and time, and how to apply kinematic equations to describe motion in one and two dimensions.',
                 'videoPage': Kinematics(),
               },
-
               {
                 'title': 'Forces and Dynamics',
                 'imagePath': 'images/dynamics.jpg',
@@ -413,7 +401,6 @@ class _TopicsPageState extends State<TopicsPage> {
                     "Examine how forces influence motion through Newton's laws of motion. Concepts such as mass, weight, friction, tension, and normal force, learn how to analyze interactions between objects, use Free Body Diagrams",
                 'videoPage': Dynamics(),
               },
-
               {
                 'title': 'Work and Energy',
                 'imagePath': 'images/work_and_energy.jpg',
@@ -422,13 +409,12 @@ class _TopicsPageState extends State<TopicsPage> {
                 'videoPage': WorkAndEnergy(),
               },
               {
-                'title': 'Electricity and Magnetism',
+                'title': 'Circuits and Magnetism',
                 'imagePath': 'images/electricity.jpg',
                 'description':
-                    'Principles of electric and magnetic phenomena, right hand rule, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits. Extend this understanding to magnetic fields, electromagnetic induction, and the relationship between electricity and magnetism',
+                    'Principles of electric and magnetic phenomena, right hand rule, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits. ',
                 'videoPage': ElectricityAndMagnetism(),
               },
-
               {
                 'title': 'Momentum and Collisions',
                 'imagePath': 'images/momentum.jpg',
@@ -655,22 +641,20 @@ class _TopicsPageState extends State<TopicsPage> {
                                           _sortCourseList(value);
                                         });
                                       },
-
-                                      items: sortBy
-                                          .map<DropdownMenuItem<String>>((
-                                            String value,
-                                          ) {
-                                            return DropdownMenuItem<String>(
-                                              value: value,
-                                              child: Padding(
-                                                padding: const EdgeInsets.all(
-                                                  8.0,
-                                                ),
-                                                child: Text(value),
-                                              ),
-                                            );
-                                          })
-                                          .toList(),
+                                      items:
+                                          sortBy.map<DropdownMenuItem<String>>((
+                                        String value,
+                                      ) {
+                                        return DropdownMenuItem<String>(
+                                          value: value,
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(
+                                              8.0,
+                                            ),
+                                            child: Text(value),
+                                          ),
+                                        );
+                                      }).toList(),
                                     ),
                                   ),
                                 ),
@@ -685,11 +669,11 @@ class _TopicsPageState extends State<TopicsPage> {
                         sliver: SliverGrid(
                           gridDelegate:
                               SliverGridDelegateWithMaxCrossAxisExtent(
-                                maxCrossAxisExtent: 500,
-                                crossAxisSpacing: 20,
-                                mainAxisSpacing: 20,
-                                childAspectRatio: 0.94,
-                              ),
+                            maxCrossAxisExtent: 500,
+                            crossAxisSpacing: 20,
+                            mainAxisSpacing: 20,
+                            childAspectRatio: 0.94,
+                          ),
                           delegate: SliverChildBuilderDelegate((
                             context,
                             index,
@@ -707,11 +691,9 @@ class _TopicsPageState extends State<TopicsPage> {
                       ),
                     ],
                   ),
-
                   Positioned(
                     bottom: 20,
-                    left:
-                        MediaQuery.of(context).size.width / 2 -
+                    left: MediaQuery.of(context).size.width / 2 -
                         125, //change this when dealing with button
                     child: _combineButtons(),
                   ),
