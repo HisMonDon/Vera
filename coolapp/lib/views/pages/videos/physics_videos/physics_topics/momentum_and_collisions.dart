@@ -38,10 +38,18 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
     {
       'title': 'Unit 3: Momentum in 2D',
       'description':
-          'Break momentum into x- and y-components and apply conservation in both directions to solve planar collision problems.',
+          'Break momentum into x and y components and apply conservation in both directions to solve planar collision problems.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/momentum_and_collisions/Momentum%20in%202D.mp4', //completed 2025/12/22
+    },
+    {
+      'title': '2D Momentum practice',
+      'description':
+          'Extra example on 2D momentum, breaking vectors into x and y components',
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/momentum_and_collisions/AP%20Physics%201%20While%20playing%20a%20game%20of%20billiards%2C%20your%200.17%20kg%20cue%20ball%2C%20travelling%20at%201.9%20m%20s%2C%20glan%20(1080p60)%20(1).mp4', //completed 2025/12/22
     },
     {
       'title': 'Unit 4: Impulse and Momentum change',

@@ -50,11 +50,18 @@ class _FluidsState extends State<Fluids> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/bernoullis%20equation.mp4', //done 2025/11/01, patched 2025/11/08
     },
     {
-      'title': 'Unit 5: Fluid Statics and Dynamics Examples',
-      'description': 'Examples on both fluid statics and dynamics',
+      'title': 'Fluid Statics and Dynamics Examples',
+      'description': 'Past AP Question on Fluid Statics and Buoyancy Force',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/2025%20AP%20Physics%201%20Solutions%20Free%20Response%20Q4%20(1080p).mp4', //done 2025/12/22
+    },
+    {
+      'title': 'Fluid Statics and Dynamics Examples 2',
+      'description': 'Another practice question on Fluid Dynamics',
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/AP%20Physics%201%20Fluids%20Example%20Question%201%20(1080p).mp4', //done 2025/12/22
     },
   ];
   @override
@@ -77,7 +84,6 @@ class _FluidsState extends State<Fluids> {
                 topIcon: Icons.water_drop,
               ),
               SizedBox(width: 2, height: 20),
-
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
