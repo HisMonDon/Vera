@@ -71,7 +71,6 @@ class _ApPhysics2State extends State<ApPhysics2> {
                 color: isHovered
                     ? Color.fromARGB(255, 8, 77, 63)
                     : Color.fromARGB(255, 8, 83, 68),
-
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
                   color: isHovered
@@ -87,9 +86,7 @@ class _ApPhysics2State extends State<ApPhysics2> {
                     height: 50,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: isCompleted
-                          ? Color.fromARGB(255, 34, 197, 94)
-                          : Color.fromARGB(255, 15, 118, 110).withOpacity(0.3),
+                      color: Color.fromARGB(255, 15, 118, 110).withOpacity(0.3),
                     ),
                     child: Center(
                       child: isCompleted
@@ -193,7 +190,6 @@ class _ApPhysics2State extends State<ApPhysics2> {
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
-
     {
       'title': 'Unit 4: Optics',
       'description': 'Lens equations and optical instruments',
@@ -288,7 +284,6 @@ class _ApPhysics2State extends State<ApPhysics2> {
                   ],
                 ),
               ),
-
               SizedBox(width: 2, height: 20),
               Column(
                 children: List.generate(videosList.length, (index) {
@@ -324,7 +319,6 @@ class _ApPhysics2State extends State<ApPhysics2> {
                   },
                 ),
               ),
-
               SizedBox(height: 10),
             ],
           ),
