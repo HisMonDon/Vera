@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -7,6 +8,7 @@ import 'package:coolapp/globals.dart' as globals;
 import 'package:url_launcher/url_launcher.dart';
 import 'package:media_kit/media_kit.dart';
 import 'package:media_kit_video/media_kit_video.dart';
+import 'package:video_player/video_player.dart';
 
 class AboutThisAppPage extends StatefulWidget {
   AboutThisAppPage({super.key});
@@ -374,29 +376,47 @@ class _IntroVideoPlayer extends StatefulWidget {
 }
 
 class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
-  late final Player player;
-  late final VideoController controller;
+  late VideoPlayerController _videoPlayerController;
+  late ChewieController _chewieController;
 
   @override
   void initState() {
     super.initState();
-    player = Player();
-
-    controller = VideoController(player);
-    player.open(Media(
+    _videoPlayerController = VideoPlayerController.networkUrl(Uri.parse(
         'https://pub-56767059a1844d06818006869a91df08.r2.dev/Vera%20Introduction.mp4'));
+
+    _chewieController = ChewieController(
+      videoPlayerController: _videoPlayerController,
+      autoPlay: false,
+      looping: false,
+      // aspectRatio: 16 / 9,
+      // allowedScreenSleep: false,
+      playbackSpeeds: [0.5, 1.0, 1.5, 2.0, 2.5],
+      materialProgressColors: ChewieProgressColors(
+        playedColor: const Color.fromARGB(255, 1, 122, 41),
+        handleColor: const Color.fromARGB(255, 5, 68, 24),
+        backgroundColor: const Color.fromARGB(255, 5, 85, 58),
+        bufferedColor: Colors.lightGreen,
+      ),
+      // placeholder: Container(
+      //   color: Colors.grey,
+      // ),
+      // autoInitialize: true,
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    return Video(
-      controller: controller,
+    // 3. Use the Chewie widget in your build method
+    return Chewie(
+      controller: _chewieController,
     );
   }
 
   @override
   void dispose() {
-    player.dispose();
+    _videoPlayerController.dispose();
+    _chewieController.dispose();
     super.dispose();
   }
 }
