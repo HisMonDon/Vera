@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -15,6 +17,8 @@ class AboutThisAppPage extends StatefulWidget {
 
 class _AboutThisAppPageState extends State<AboutThisAppPage> {
   @override
+  final ScrollController _sampleImagesController = ScrollController();
+  Timer? _timer;
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: TimedAppBar(),
@@ -195,6 +199,34 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
     );
   }
 
+  void _startAutoScroll() {
+    _timer = Timer.periodic(const Duration(seconds: 3), (timer) {
+      if (!mounted) {
+        timer.cancel();
+        return;
+      }
+      final double currentOffset = _sampleImagesController.offset;
+      final double maxScrollExtent =
+          _sampleImagesController.position.maxScrollExtent;
+      const double itemWidth = 600.0;
+      const double horizontalPadding = 8.0;
+      const double scrollAmount = itemWidth + (horizontalPadding * 2);
+      if (currentOffset >= maxScrollExtent) {
+        _sampleImagesController.animateTo(
+          0,
+          duration: const Duration(milliseconds: 500),
+          curve: Curves.easeInOut,
+        );
+      } else {
+        _sampleImagesController.animateTo(
+          currentOffset + scrollAmount,
+          duration: const Duration(milliseconds: 500),
+          curve: Curves.easeInOut,
+        );
+      }
+    });
+  }
+
   final List<String> displayPaths = [
     'images_tutorial/display1.png',
     'images_tutorial/display2.png',
@@ -204,7 +236,6 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
     'images_tutorial/display6.png',
     'images_tutorial/display7.png',
   ];
-  final ScrollController _sampleImagesController = ScrollController();
   Widget _buildSampleImagesRow() {
     return Scrollbar(
       controller: _sampleImagesController,
@@ -335,6 +366,12 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
       throw Exception('Could not launch $_url');
     }
   }
+
+  void dispose() {
+    super.dispose();
+    _timer?.cancel();
+    _sampleImagesController.dispose();
+  }
 }
 
 class _IntroVideoPlayer extends StatefulWidget {
@@ -350,6 +387,7 @@ class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
   void initState() {
     super.initState();
     player = Player();
+
     controller = VideoController(player);
     player.open(Media(
         'https://pub-56767059a1844d06818006869a91df08.r2.dev/Vera%20Introduction.mp4'));
