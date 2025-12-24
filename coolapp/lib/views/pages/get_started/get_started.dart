@@ -202,6 +202,7 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
     'images_tutorial/display4.png',
     'images_tutorial/display5.png',
     'images_tutorial/display6.png',
+    'images_tutorial/display7.png',
   ];
   Widget _buildSampleImagesRow() {
     return SingleChildScrollView(
