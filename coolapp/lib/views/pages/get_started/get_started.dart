@@ -213,22 +213,26 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
   }
 
   void _startAutoScroll() {
-    _timer = Timer.periodic(const Duration(milliseconds: 1), (timer) {
-      if (!mounted) {
-        timer.cancel();
-        return;
-      }
-      final double currentOffset = _sampleImagesController.offset;
-      final double maxScrollExtent =
-          _sampleImagesController.position.maxScrollExtent;
-      const double itemWidth = 600.0;
-      const double horizontalPadding = 8.0;
-      const double scrollAmount = itemWidth + (horizontalPadding * 7);
-      if (currentOffset >= maxScrollExtent) {
-        _sampleImagesController.jumpTo(0);
-      } else {
-        _sampleImagesController.jumpTo(currentOffset + scrollAmount);
-      }
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+
+      _timer = Timer.periodic(const Duration(milliseconds: 30), (timer) {
+        if (!mounted || !_sampleImagesController.hasClients) {
+          timer.cancel();
+          return;
+        }
+
+        final double maxScrollExtent =
+            _sampleImagesController.position.maxScrollExtent;
+        final double currentOffset = _sampleImagesController.offset;
+        const double scrollAmount = 1;
+
+        if (currentOffset >= maxScrollExtent) {
+          _sampleImagesController.jumpTo(0);
+        } else {
+          _sampleImagesController.jumpTo(currentOffset + scrollAmount);
+        }
+      });
     });
   }
 
