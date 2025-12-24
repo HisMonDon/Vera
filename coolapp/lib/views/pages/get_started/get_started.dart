@@ -389,7 +389,7 @@ class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
       videoPlayerController: _videoPlayerController,
       autoPlay: false,
       looping: false,
-      // aspectRatio: 16 / 9,
+      aspectRatio: _videoPlayerController.value.aspectRatio,
       // allowedScreenSleep: false,
       playbackSpeeds: [0.5, 1.0, 1.5, 2.0, 2.5],
       materialProgressColors: ChewieProgressColors(
