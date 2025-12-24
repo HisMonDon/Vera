@@ -1,12 +1,13 @@
+import 'dart:async';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:media_kit/media_kit.dart';
-import 'package:media_kit_video/media_kit_video.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/services/auth_service.dart';
+import 'package:video_player/video_player.dart';
+import 'package:chewie/chewie.dart';
 
 class VideoPlayerScreen extends StatefulWidget {
   const VideoPlayerScreen({super.key});
@@ -16,39 +17,30 @@ class VideoPlayerScreen extends StatefulWidget {
 }
 
 class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
-  late final Player player = Player();
-  late final VideoController controller = VideoController(player);
-  bool isPlaying = false;
-  bool isBuffering = true;
-  bool hasError = false;
-  String errorMessage = '';
-  Duration position = Duration.zero;
-  Duration duration = Duration.zero;
-  double volume = 1.0;
-  String stackedTitle =
-      ''; //github format where u use / to seperate folders or tabs
+  late VideoPlayerController _videoPlayerController;
+  ChewieController? _chewieController;
   bool _hasSavedPastVideos = false;
+  String stackedTitle = '';
+  bool _isLoading = true;
+  String? _errorMessage;
 
   @override
   void initState() {
     super.initState();
     _initializePlayer();
-    _updatePastVideos(); // Update videos list when screen loads
+    _updatePastVideos();
   }
 
-  //__________________________________________________________________
-  //update past videos logic - moved to separate method
   void _updatePastVideos() {
     int dupeIndex = -1;
     bool isDuped = false;
     if (globals.unitTitle == '') {
       print("Error?? Blank Unit Title");
-      return; //error handeling
+      return;
     }
     for (int x = 0; x < 5; x++) {
       if (globals.pastVideos[x] ==
-          globals.topicTitle + ', ' + globals.unitTitle) {
-        //we remove and put it at most recent.
+          '${globals.topicTitle}, ${globals.unitTitle}') {
         isDuped = true;
         dupeIndex = x;
         break;
@@ -58,32 +50,25 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       for (int x = dupeIndex; x > 0; x--) {
         globals.pastVideos[x] = globals.pastVideos[x - 1];
       }
-      globals.pastVideos[0] = globals.topicTitle + ", " + globals.unitTitle;
+      globals.pastVideos[0] = "${globals.topicTitle}, ${globals.unitTitle}";
       return;
     }
     for (int x = 0; x < 5; x++) {
       if (globals.pastVideos[x] == '') {
-        //if we still have empty space
-        globals.pastVideos[x] = globals.topicTitle + ', ' + globals.unitTitle;
+        globals.pastVideos[x] = '${globals.topicTitle}, ${globals.unitTitle}';
         return;
       }
     }
     for (int x = 4; x > 0; x--) {
-      //pushes last one out, and puts most recent one
       globals.pastVideos[x] = globals.pastVideos[x - 1];
     }
-    globals.pastVideos[0] = globals.topicTitle + ", " + globals.unitTitle;
+    globals.pastVideos[0] = "${globals.topicTitle}, ${globals.unitTitle}";
   }
-  //__________________________________________________________________
 
   Future<void> _savePastVideos() async {
     if (_hasSavedPastVideos) return;
-
-    // save to SharedPreferences
     final authService = AuthService();
     await authService.savePastVideos(globals.pastVideos);
-
-    // save to firestore if logged in
     if (globals.userId.isNotEmpty && globals.idToken.isNotEmpty) {
       try {
         await savePastVideosToFirestore(
@@ -95,95 +80,75 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
         print('Error saving to Firestore: $e');
       }
     }
-
     _hasSavedPastVideos = true;
   }
 
   Future<void> _initializePlayer() async {
-    // liisten to player state changes
-    player.stream.playing.listen((playing) {
-      setState(() {
-        isPlaying = playing;
-      });
+    setState(() {
+      _isLoading = true;
+      _errorMessage = null;
     });
 
-    player.stream.buffering.listen((buffering) {
-      setState(() {
-        isBuffering = buffering;
-      });
-    });
-
-    player.stream.position.listen((pos) {
-      setState(() {
-        position = pos;
-      });
-    });
-
-    player.stream.duration.listen((dur) {
-      setState(() {
-        duration = dur;
-      });
-    });
-
-    player.stream.volume.listen((vol) {
-      setState(() {
-        volume = vol;
-      });
-    });
-
-    player.stream.error.listen((error) {
-      setState(() {
-        hasError = true;
-        errorMessage = error;
-      });
-    });
+    _videoPlayerController =
+        VideoPlayerController.networkUrl(Uri.parse(globals.videoLink));
 
     try {
-      await player.open(Media(globals.videoLink));
-      // Save after player is initialized
+      await _videoPlayerController.initialize();
+      _chewieController = ChewieController(
+        videoPlayerController: _videoPlayerController,
+        autoPlay: true,
+        looping: false,
+        autoInitialize: true,
+        errorBuilder: (context, errorMessage) {
+          return Center(
+            child: Text(
+              errorMessage,
+              style: const TextStyle(color: Colors.white),
+            ),
+          );
+        },
+      );
+      setState(() {
+        _isLoading = false;
+      });
       WidgetsBinding.instance.addPostFrameCallback((_) => _savePastVideos());
     } catch (e) {
       setState(() {
-        hasError = true;
-        errorMessage = e.toString();
+        _isLoading = false;
+        _errorMessage = e.toString();
       });
     }
   }
 
   @override
   void dispose() {
-    player.dispose();
+    _videoPlayerController.dispose();
+    _chewieController?.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     if (globals.courseTitle != '') {
-      //that means that we have all
       stackedTitle =
-          globals.courseTitle +
-          ', ' +
-          globals.topicTitle +
-          ', ' +
-          globals.unitTitle;
+          '${globals.courseTitle}, ${globals.topicTitle}, ${globals.unitTitle}';
     } else if (globals.topicTitle != '') {
-      //put this because I might implement video of the day later on
-      stackedTitle = globals.topicTitle + ', ' + globals.unitTitle;
+      stackedTitle = '${globals.topicTitle}, ${globals.unitTitle}';
     } else {
       stackedTitle = globals.unitTitle;
     }
 
     return Scaffold(
       backgroundColor: globals.isLight
-          ? Color.fromARGB(255, 196, 221, 207)
-          : Color.fromARGB(255, 4, 34, 26),
-      appBar: TimedAppBar(), //add text here
+          ? const Color.fromARGB(255, 196, 221, 207)
+          : const Color.fromARGB(255, 4, 34, 26),
+      appBar: TimedAppBar(),
       body: SingleChildScrollView(
         child: Column(
           children: [
             if (kIsWeb)
               Container(
-                padding: EdgeInsets.all(15),
+                padding: const EdgeInsets.all(15),
                 width: double.infinity,
                 child: Stack(
                   alignment: Alignment.center,
@@ -191,8 +156,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                     Align(
                       alignment: Alignment.centerLeft,
                       child: ElevatedButton.icon(
-                        icon: Icon(Icons.arrow_back),
-                        label: Text('Back'),
+                        icon: const Icon(Icons.arrow_back),
+                        label: const Text('Back'),
                         onPressed: () {
                           Navigator.of(context).pop();
                         },
@@ -218,7 +183,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                             fontSize: 48.0,
                             fontWeight: FontWeight.bold,
                             color: globals.isLight
-                                ? Color.fromARGB(255, 15, 48, 40)
+                                ? const Color.fromARGB(255, 15, 48, 40)
                                 : Colors.white,
                           ),
                         ),
@@ -230,8 +195,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                           ),
                           decoration: BoxDecoration(
                             color: globals.isLight
-                                ? Color.fromARGB(255, 15, 48, 40)
-                                : Color.fromARGB(255, 167, 198, 131),
+                                ? const Color.fromARGB(255, 15, 48, 40)
+                                : const Color.fromARGB(255, 167, 198, 131),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Text(
@@ -241,7 +206,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                               fontWeight: FontWeight.w600,
                               color: globals.isLight
                                   ? Colors.white
-                                  : Color.fromARGB(255, 15, 48, 40),
+                                  : const Color.fromARGB(255, 15, 48, 40),
                             ),
                           ),
                         ),
@@ -250,43 +215,31 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                   ],
                 ),
               ),
-
-            SizedBox(height: 19),
+            const SizedBox(height: 19),
             AutoSizeText(
               stackedTitle,
               style: GoogleFonts.mPlus1(
                 fontSize: 20,
                 color: globals.isLight
-                    ? Color.fromARGB(255, 15, 48, 40)
-                    : const Color.fromARGB(255, 255, 255, 255),
+                    ? const Color.fromARGB(255, 15, 48, 40)
+                    : Colors.white,
                 decoration: TextDecoration.none,
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Center(
-              child: hasError
-                  ? _buildErrorDisplay()
-                  : Container(
-                      width: MediaQuery.of(context).size.width - 400,
-                      child: AspectRatio(
-                        aspectRatio: 16 / 9,
-                        child: Container(
-                          color: Colors.black,
-                          child: hasError
-                              ? _buildErrorDisplay()
-                              : Video(
-                                  controller: controller,
-                                  controls: MaterialVideoControls,
-                                ),
-                        ),
-                      ),
-                    ),
+              child: Container(
+                width: MediaQuery.of(context).size.width - 400,
+                child: AspectRatio(
+                  aspectRatio: 16 / 9,
+                  child: Container(color: Colors.black, child: _buildPlayer()),
+                ),
+              ),
             ),
-
             if (globals.nextVideoTitle != 'last_one')
               Column(
                 children: [
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -296,7 +249,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                         style: TextStyle(
                           fontSize: 20,
                           color: globals.isLight
-                              ? Color.fromARGB(255, 15, 48, 40)
+                              ? const Color.fromARGB(255, 15, 48, 40)
                               : Colors.white,
                         ),
                       ),
@@ -304,10 +257,31 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                   ),
                 ],
               ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
           ],
         ),
       ),
+    );
+  }
+
+  Widget _buildPlayer() {
+    if (_isLoading) {
+      return const Center(child: CircularProgressIndicator());
+    }
+    if (_errorMessage != null) {
+      return _buildErrorDisplay();
+    }
+    if (_chewieController != null &&
+        _chewieController!.videoPlayerController.value.isInitialized) {
+      return Chewie(controller: _chewieController!);
+    }
+    return const Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        CircularProgressIndicator(),
+        SizedBox(height: 20),
+        Text('Initializing Player...'),
+      ],
     );
   }
 
@@ -321,17 +295,11 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
           size: 48,
         ),
         const SizedBox(height: 16),
-        Text('Failed to load video: $errorMessage'),
-        Text('\nPlease check your internet connection'),
+        Text('Failed to load video: $_errorMessage'),
+        const Text('\nPlease check your internet connection'),
         const SizedBox(height: 16),
         ElevatedButton(
-          onPressed: () {
-            setState(() {
-              hasError = false;
-              errorMessage = '';
-            });
-            _initializePlayer();
-          },
+          onPressed: _initializePlayer,
           child: const Text('Retry'),
         ),
       ],
