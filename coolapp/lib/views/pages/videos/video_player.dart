@@ -96,16 +96,21 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       await _videoPlayerController.initialize();
       _chewieController = ChewieController(
         videoPlayerController: _videoPlayerController,
-        autoPlay: true,
+        autoPlay: false,
         looping: false,
-        errorBuilder: (context, errorMessage) {
-          return Center(
-            child: Text(
-              errorMessage,
-              style: const TextStyle(color: Colors.white),
-            ),
-          );
-        },
+        aspectRatio: _videoPlayerController.value.aspectRatio,
+        // allowedScreenSleep: false,
+        playbackSpeeds: [0.5, 1.0, 1.5, 2.0, 2.5],
+        materialProgressColors: ChewieProgressColors(
+          playedColor: const Color.fromARGB(255, 5, 85, 58),
+          handleColor: const Color.fromARGB(255, 5, 68, 24),
+          backgroundColor: const Color.fromARGB(255, 5, 85, 58),
+          bufferedColor: const Color.fromARGB(255, 5, 85, 58),
+        ),
+        // placeholder: Container(
+        //   color: Colors.grey,
+        // ),
+        autoInitialize: true,
       );
       setState(() {
         _isLoading = false;

@@ -51,9 +51,9 @@ List<dynamic> redirectExplore = [
 List<Map<String, dynamic>> videoOfTheDay = [
   {
     'videoLink':
-        'https://pub-56767059a1844d06818006869a91df08.r2.dev/vectors%20vs%20scalars.mp4',
-    'videoTitle': 'Vectors and Scalars',
-    'videoUnit': 'Intro To Physics',
+        'https://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/free_body_diagrams.mp4',
+    'videoTitle': 'Free Body Diagrams',
+    'videoUnit': 'Dynamics',
     'thumbnailColor': Color.fromARGB(
       255,
       0,
@@ -73,12 +73,47 @@ List<Map<String, dynamic>> videoOfTheDay = [
       0,
     ), //bc I will be generating thumbnail from my code
   },
-
   {
     'videoLink':
         'https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%202D%20Part%203.mp4',
     'videoTitle': 'Application of Kinematics',
     'videoUnit': 'Kinematics',
+    'thumbnailColor': Color.fromARGB(
+      255,
+      24,
+      78,
+      65,
+    ), //bc I will be generating thumbnail from my code
+  },
+  {
+    'videoLink':
+        'https://pub-56767059a1844d06818006869a91df08.r2.dev/momentum_and_collisions/Momentum%20in%202D.mp4',
+    'videoTitle': 'Momentum in 2D',
+    'videoUnit': 'Momentum and Collisions',
+    'thumbnailColor': Color.fromARGB(
+      255,
+      24,
+      78,
+      65,
+    ), //bc I will be generating thumbnail from my code
+  },
+  {
+    'videoLink':
+        'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%203%20Springs%20and%20Conservation%20of%20Energy.mp4',
+    'videoTitle': 'Springs and Conservation of Energy',
+    'videoUnit': 'Oscillations',
+    'thumbnailColor': Color.fromARGB(
+      255,
+      24,
+      78,
+      65,
+    ), //bc I will be generating thumbnail from my code
+  },
+  {
+    'videoLink':
+        'https://pub-56767059a1844d06818006869a91df08.r2.dev/2025%20AP%20Physics%201%20Solutions%20Free%20Response%20Q4%20(1080p).mp4',
+    'videoTitle': '2025 AP Physics 1 Solutions Free Response Q4',
+    'videoUnit': 'Fluids',
     'thumbnailColor': Color.fromARGB(
       255,
       24,
