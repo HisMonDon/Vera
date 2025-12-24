@@ -24,7 +24,7 @@ class _OtherState extends State<Other> {
           'Techniques for recording measurements, calculating uncertainties, and analyzing experimental data',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/intro_to_physics/Unit%202%20Lab%20Work%20and%20Uncertainties.mp4',
     },
   ];
   @override
@@ -46,7 +46,6 @@ class _OtherState extends State<Other> {
                 topIcon: Icons.lightbulb,
               ),
               SizedBox(width: 2, height: 20),
-
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];

@@ -19,44 +19,44 @@ class _HarmonicsState extends State<Harmonics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Introduction to Harmonic Motion',
+      'title': 'Unit 1: Pendulums',
       'description':
-          'Basic concepts of periodic motion, restoring forces, and oscillations',
+          'Introduction to pendulum motion, period, frequency, and the small-angle model.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%201%20Pendulums.mp4',
     },
     {
-      'title': 'Unit 2: Simple Harmonic Motion',
+      'title': 'Unit 2: Springs and Hookes law',
       'description':
-          'Mathematical analysis of SHM, period, frequency, and amplitude',
+          'Hooke’s law, spring force graphs, and how spring constant affects motion.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%202%20Springs%20and%20Hookes%20Law.mp4',
     },
     {
-      'title': 'Unit 3: Pendulums',
+      'title': 'Unit 3: Springs and Conservation of Energy',
       'description':
-          'Simple pendulums, physical pendulums, and the small-angle approximation',
+          'Energy methods for mass–spring systems: PE in springs, KE, and total energy.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%203%20Springs%20and%20Conservation%20of%20Energy.mp4',
     },
     {
-      'title': 'Unit 4: Springs and Oscillators',
+      'title': 'Unit 4: Springs and Momentum - Past AP Physics 1 Example',
       'description':
-          'Hooke\'s law, mass-spring systems, and energy in simple harmonic motion',
+          'AP-style problem: collisions with springs using momentum and energy ideas.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%204%20Springs%20and%20Momentum%20-%20Past%20AP%20Physics%201%20Example.mp4',
     },
     {
-      'title': 'Unit 5: Resonance and Damped Oscillations',
+      'title': 'Unit 5: Pendulums and Work - Past AP Physics 1 Example',
       'description':
-          'Forced oscillations, resonance phenomena, and damped harmonic motion',
+          'AP-style problem: using work/energy to analyze pendulum speed and height.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%205%20Pendulums%20and%20Work%20-%20Past%20AP%20Physics%201%20Examplar.mp4',
     },
   ];
   @override
@@ -79,7 +79,6 @@ class _HarmonicsState extends State<Harmonics> {
                 topIcon: Icons.waves,
               ),
               SizedBox(width: 2, height: 20),
-
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
