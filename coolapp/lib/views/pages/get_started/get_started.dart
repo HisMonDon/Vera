@@ -199,25 +199,31 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
     'images_tutorial/display1.png',
     'images_tutorial/display2.png',
     'images_tutorial/display3.png',
+    'images_tutorial/display4.png',
+    'images_tutorial/display5.png',
   ];
   Widget _buildSampleImagesRow() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: List.generate(displayPaths.length, (index) {
-        return Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8.0),
-          child: Container(
-            width: 600,
-            height: 300,
-            decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 18, 59, 49),
-                borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: Colors.grey),
-                image: DecorationImage(
-                    image: AssetImage(displayPaths[index]), fit: BoxFit.cover)),
-          ),
-        );
-      }),
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: List.generate(displayPaths.length, (index) {
+          return Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            child: Container(
+              width: 600,
+              height: 300,
+              decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 18, 59, 49),
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: Colors.grey),
+                  image: DecorationImage(
+                      image: AssetImage(displayPaths[index]),
+                      fit: BoxFit.cover)),
+            ),
+          );
+        }),
+      ),
     );
   }
 
