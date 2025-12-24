@@ -17,6 +17,19 @@ class AboutThisAppPage extends StatefulWidget {
 
 class _AboutThisAppPageState extends State<AboutThisAppPage> {
   @override
+  void initState() {
+    super.initState();
+    _startAutoScroll();
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    _sampleImagesController.dispose();
+    super.dispose();
+  }
+
+  @override
   final ScrollController _sampleImagesController = ScrollController();
   Timer? _timer;
   Widget build(BuildContext context) {
@@ -242,6 +255,7 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
       thumbVisibility: true,
       interactive: true,
       child: SingleChildScrollView(
+        controller: _sampleImagesController,
         scrollDirection: Axis.horizontal,
         child: Padding(
           padding: const EdgeInsets.fromLTRB(0, 0, 0, 20),
@@ -360,22 +374,10 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
       ],
     );
   }
-
-  Future<void> _launchUrl(Uri _url) async {
-    if (!await launchUrl(_url)) {
-      throw Exception('Could not launch $_url');
-    }
-  }
-
-  void dispose() {
-    super.dispose();
-    _timer?.cancel();
-    _sampleImagesController.dispose();
-  }
 }
 
 class _IntroVideoPlayer extends StatefulWidget {
-  @override
+  // @override
   _IntroVideoPlayerState createState() => _IntroVideoPlayerState();
 }
 
