@@ -179,7 +179,7 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
         ),
         const SizedBox(height: 8),
         Text(
-          "Vera is a video platform made with Flutter and Dart dedicated to making learning physics accessible and easy for everyone. From high school IB curricula to advanced AP topics, our stud[...]",
+          "Vera is a video platform made with Flutter and Dart dedicated to making learning physics accessible and easy for everyone. From high school IB curricula to advanced AP topics, our study paths break concepts into short, structured lessons with clear visuals, guided examples, and real past AP exam problems so that you understand physics completely.",
           textAlign: TextAlign.center,
           style: GoogleFonts.mPlus1(
             fontSize: 20,
