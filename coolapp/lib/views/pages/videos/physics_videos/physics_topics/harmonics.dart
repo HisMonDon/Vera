@@ -24,7 +24,7 @@ class _HarmonicsState extends State<Harmonics> {
           'Introduction to pendulum motion, period, frequency, and the small-angle model.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%201%20Pendulums.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%201%20Pendulums.mp4', //completed 2025/12/23
     },
     {
       'title': 'Unit 2: Springs and Hookes law',
@@ -32,7 +32,7 @@ class _HarmonicsState extends State<Harmonics> {
           'Hooke’s law, spring force graphs, and how spring constant affects motion.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%202%20Springs%20and%20Hookes%20Law.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%202%20Springs%20and%20Hookes%20Law.mp4', //completed 2025/12/23
     },
     {
       'title': 'Unit 3: Springs and Conservation of Energy',
@@ -40,7 +40,7 @@ class _HarmonicsState extends State<Harmonics> {
           'Energy methods for mass–spring systems: PE in springs, KE, and total energy.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%203%20Springs%20and%20Conservation%20of%20Energy.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%203%20Springs%20and%20Conservation%20of%20Energy.mp4', //completed 2025/12/23
     },
     {
       'title': 'Unit 4: Springs and Momentum - Past AP Physics 1 Example',
@@ -48,7 +48,7 @@ class _HarmonicsState extends State<Harmonics> {
           'AP-style problem: collisions with springs using momentum and energy ideas.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%204%20Springs%20and%20Momentum%20-%20Past%20AP%20Physics%201%20Example.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%204%20Springs%20and%20Momentum%20-%20Past%20AP%20Physics%201%20Example.mp4', //completed 2025/12/23
     },
     {
       'title': 'Unit 5: Pendulums and Work - Past AP Physics 1 Example',
@@ -56,7 +56,7 @@ class _HarmonicsState extends State<Harmonics> {
           'AP-style problem: using work/energy to analyze pendulum speed and height.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%205%20Pendulums%20and%20Work%20-%20Past%20AP%20Physics%201%20Examplar.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%205%20Pendulums%20and%20Work%20-%20Past%20AP%20Physics%201%20Examplar.mp4', //completed 2025/12/23
     },
   ];
   @override
