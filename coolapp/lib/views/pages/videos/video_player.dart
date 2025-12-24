@@ -99,17 +99,13 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
         autoPlay: false,
         looping: false,
         aspectRatio: _videoPlayerController.value.aspectRatio,
-        // allowedScreenSleep: false,
-        playbackSpeeds: [0.5, 1.0, 1.5, 2.0, 2.5],
+        playbackSpeeds: const [0.5, 1.0, 1.5, 2.0, 2.5],
         materialProgressColors: ChewieProgressColors(
-          playedColor: const Color.fromARGB(255, 5, 85, 58),
-          handleColor: const Color.fromARGB(255, 5, 68, 24),
+          playedColor: const Color.fromARGB(255, 167, 198, 131),
+          handleColor: const Color.fromARGB(255, 195, 226, 172),
           backgroundColor: const Color.fromARGB(255, 5, 85, 58),
           bufferedColor: const Color.fromARGB(255, 5, 85, 58),
         ),
-        // placeholder: Container(
-        //   color: Colors.grey,
-        // ),
         autoInitialize: true,
       );
       setState(() {
