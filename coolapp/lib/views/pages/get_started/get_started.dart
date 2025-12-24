@@ -393,15 +393,15 @@ class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
       // allowedScreenSleep: false,
       playbackSpeeds: [0.5, 1.0, 1.5, 2.0, 2.5],
       materialProgressColors: ChewieProgressColors(
-        playedColor: const Color.fromARGB(255, 1, 122, 41),
+        playedColor: const Color.fromARGB(255, 5, 85, 58),
         handleColor: const Color.fromARGB(255, 5, 68, 24),
         backgroundColor: const Color.fromARGB(255, 5, 85, 58),
-        bufferedColor: Colors.lightGreen,
+        bufferedColor: const Color.fromARGB(255, 5, 85, 58),
       ),
       // placeholder: Container(
       //   color: Colors.grey,
       // ),
-      // autoInitialize: true,
+      autoInitialize: true,
     );
   }
 

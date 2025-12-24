@@ -98,7 +98,6 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
         videoPlayerController: _videoPlayerController,
         autoPlay: true,
         looping: false,
-        autoInitialize: true,
         errorBuilder: (context, errorMessage) {
           return Center(
             child: Text(
@@ -230,10 +229,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
             Center(
               child: Container(
                 width: MediaQuery.of(context).size.width - 400,
-                child: AspectRatio(
-                  aspectRatio: 16 / 9,
-                  child: Container(color: Colors.black, child: _buildPlayer()),
-                ),
+                color: Colors.black,
+                child: _buildPlayer(),
               ),
             ),
             if (globals.nextVideoTitle != 'last_one')
@@ -266,23 +263,31 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
 
   Widget _buildPlayer() {
     if (_isLoading) {
-      return const Center(child: CircularProgressIndicator());
+      return AspectRatio(
+        aspectRatio: 16 / 9,
+        child: Container(
+          color: Colors.black,
+          child: const Center(child: CircularProgressIndicator()),
+        ),
+      );
     }
     if (_errorMessage != null) {
-      return _buildErrorDisplay();
+      return AspectRatio(
+        aspectRatio: 16 / 9,
+        child: Container(
+          color: Colors.black,
+          child: _buildErrorDisplay(),
+        ),
+      );
     }
     if (_chewieController != null &&
         _chewieController!.videoPlayerController.value.isInitialized) {
-      return Chewie(controller: _chewieController!);
+      return AspectRatio(
+        aspectRatio: _videoPlayerController.value.aspectRatio,
+        child: Chewie(controller: _chewieController!),
+      );
     }
-    return const Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        CircularProgressIndicator(),
-        SizedBox(height: 20),
-        Text('Initializing Player...'),
-      ],
-    );
+    return const Center(child: CircularProgressIndicator());
   }
 
   Widget _buildErrorDisplay() {
@@ -295,8 +300,14 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
           size: 48,
         ),
         const SizedBox(height: 16),
-        Text('Failed to load video: $_errorMessage'),
-        const Text('\nPlease check your internet connection'),
+        Text(
+          'Failed to load video: $_errorMessage',
+          style: const TextStyle(color: Colors.white),
+        ),
+        const Text(
+          '\nPlease check your internet connection',
+          style: TextStyle(color: Colors.white),
+        ),
         const SizedBox(height: 16),
         ElevatedButton(
           onPressed: _initializePlayer,
