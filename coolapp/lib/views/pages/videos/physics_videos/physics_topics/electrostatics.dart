@@ -24,7 +24,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
           'Fundamental properties of electric charge, conductors and insulators',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Electrostatics/Unit%201%20Introduction%20to%20Electrostatics%20and%20Charges.mp4', //completed 2025/12/25
     },
     {
       'title': 'Unit 2: Coulomb\'s Law',
@@ -32,23 +32,23 @@ class _ElectrostaticsState extends State<Electrostatics> {
           'Force between electric charges and vector addition of electric forces',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Electrostatics/Unit%202%20Coulombs%20Law.mp4', //completed 2025/12/25
+    },
+    {
+      'title': 'Unit 3: Example - Coulomb\'s Law and Energy',
+      'description':
+          'Example problem focusing on how to solve energy problems using Coulomb\'s Law.',
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Electrostatics/Unit%203%20Coulombs%20Law%20and%20Energy.mp4', //completed 2025/12/25
     },
     {
       'title': 'Unit 3: Electric Fields',
       'description':
-          'Field concept, field lines, and calculating electric fields from various charge distributions',
+          'Field concept, field lines, and calculating electric fields from various charge distributions, classifying strength through density of fields.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
-    },
-    {
-      'title': 'Unit 4: Electric Potential',
-      'description':
-          'Electric potential energy, voltage, and equipotential surfaces',
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Electrostatics/Unit%204%20Electric%20Field%20Lines.mp4', //completed 2025/12/25
     },
     {
       'title': 'Unit 5: Capacitance',
@@ -56,7 +56,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
           'Capacitors, dielectrics, and energy storage in electric fields',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/4%20Capacitance.mp4', //completed 2025/12/25
     },
   ];
   @override
@@ -79,7 +79,6 @@ class _ElectrostaticsState extends State<Electrostatics> {
                 topIcon: Icons.bolt,
               ),
               SizedBox(width: 2, height: 20),
-
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
