@@ -9,7 +9,6 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinemat
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/other.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/quantum_mechanics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/rotational_motion.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_and_energy.dart';
@@ -322,13 +321,6 @@ class _TopicsPageState extends State<TopicsPage> {
       'videoPage': Electrostatics(),
     },
     {
-      'title': 'Quantum Mechanics',
-      'imagePath': 'images/quantum_mechanics.jpg',
-      'description':
-          'Photoelectric effect, calculate de Broglie wavelengths, apply Heisenberg\'s uncertainty principle, analyze quantum tunneling scenarios, and explore probability distributions in atomic models and wave functions.',
-      'videoPage': QuantumMechanics(),
-    },
-    {
       'title': 'Rotational Motion',
       'imagePath': 'images/rotational_motion.jpg',
       'description':
@@ -449,13 +441,6 @@ class _TopicsPageState extends State<TopicsPage> {
                 'description':
                     'Electric fields and forces using Coulomb\'s law, analyze charge distributions, determine electric potential and energy, solve capacitor problems, and understand electric field mapping through equipotential surfaces.',
                 'videoPage': Electrostatics(),
-              },
-              {
-                'title': 'Quantum Mechanics',
-                'imagePath': 'images/quantum_mechanics.jpg',
-                'description':
-                    'Photoelectric effect, calculate de Broglie wavelengths, apply Heisenberg\'s uncertainty principle, analyze quantum tunneling scenarios, and explore probability distributions in atomic models and wave functions.',
-                'videoPage': QuantumMechanics(),
               },
               {
                 'title': 'Rotational Motion',

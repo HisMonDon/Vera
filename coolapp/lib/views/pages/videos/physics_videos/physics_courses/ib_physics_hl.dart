@@ -1,7 +1,6 @@
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/quantum_mechanics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/rotational_motion.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
@@ -72,7 +71,6 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
                 color: isHovered
                     ? Color.fromARGB(255, 8, 77, 63)
                     : Color.fromARGB(255, 8, 83, 68),
-
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
                   color: isHovered
@@ -211,14 +209,6 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
-    {
-      'title': 'Unit 6: Quantum Physics',
-      'description':
-          "Wave-particle duality, nuclear physics, and radioactive decay",
-      'videoPage': QuantumMechanics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
-    },
   ];
   @override
   Widget build(BuildContext context) {
@@ -300,7 +290,6 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
                   ],
                 ),
               ),
-
               SizedBox(width: 2, height: 20),
               Column(
                 children: List.generate(videosList.length, (index) {
@@ -336,7 +325,6 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
                   },
                 ),
               ),
-
               SizedBox(height: 10),
             ],
           ),

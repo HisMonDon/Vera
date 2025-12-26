@@ -1,7 +1,6 @@
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/quantum_mechanics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_and_energy.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
@@ -71,7 +70,6 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
                 color: isHovered
                     ? Color.fromARGB(255, 8, 77, 63)
                     : Color.fromARGB(255, 8, 83, 68),
-
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
                   color: isHovered
@@ -200,13 +198,6 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
-    {
-      'title': 'Unit 5: Quantum Mechanics',
-      'description': 'Introduction to wave functions and quantum phenomena',
-      'videoPage': QuantumMechanics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
-    },
   ];
   @override
   Widget build(BuildContext context) {
@@ -287,7 +278,6 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
                   ],
                 ),
               ),
-
               SizedBox(width: 2, height: 20),
               Column(
                 children: List.generate(videosList.length, (index) {
@@ -322,7 +312,6 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
                   },
                 ),
               ),
-
               SizedBox(height: 10),
             ],
           ),

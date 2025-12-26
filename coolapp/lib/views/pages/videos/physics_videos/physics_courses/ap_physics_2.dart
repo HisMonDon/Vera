@@ -1,7 +1,6 @@
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electrostatics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/quantum_mechanics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
@@ -194,13 +193,6 @@ class _ApPhysics2State extends State<ApPhysics2> {
       'title': 'Unit 4: Optics',
       'description': 'Lens equations and optical instruments',
       'videoPage': Optics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
-    },
-    {
-      'title': 'Unit 5: Modern Physics',
-      'description': 'Nuclear, Quantum, Atomic Physics, wave functions',
-      'videoPage': QuantumMechanics(),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
