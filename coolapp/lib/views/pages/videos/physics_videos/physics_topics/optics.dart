@@ -24,37 +24,39 @@ class _OpticsState extends State<Optics> {
           'Light as electromagnetic waves, properties of light, and the electromagnetic spectrum',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%201%20Introducution%20to%20Light.mp4', //completed 12/25/2025
     },
     {
-      'title': 'Unit 2: Reflection and Mirrors',
+      'title': 'Unit 2: Lenses Part 1',
       'description':
-          'Law of reflection, plane mirrors, curved mirrors, and image formation',
+          'Law of reflection, introduction to convex and concave lenses, real and virtual images.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%202%20Lenses%20Part%201.mp4', //completed 12/25/2025
     },
     {
-      'title': 'Unit 3: Refraction and Lenses',
-      'description': 'Snell\'s law, total internal reflection, and lens optics',
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
-    },
-    {
-      'title': 'Unit 4: Interference and Diffraction',
+      'title': 'Unit 3: Lenses Part 2',
       'description':
-          'Young\'s double-slit experiment, diffraction gratings, and the wave nature of light',
+          'Relationship between height, magnification, and distance in convex and concave lenses.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%203%20Lenses%20Part%202.mp4', //completed 12/25/2025
     },
     {
-      'title': 'Unit 5: Optical Instruments',
-      'description': 'Microscopes, telescopes, cameras, and the human eye',
+      'title': 'Unit 4: Total Internal Refraction',
+      'description':
+          "Snell's law, Critical angle, introduction to total internal refraction and it's applications.",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%204%20Total%20Internal%20Reflection.mp4', //completed 12/25/2025
+    },
+    {
+      'title': "Unit 5: Young's Double Slit Experiment",
+      'description':
+          'Formulae and causes for the interference of light through a double slit, introduction to wave-particle duality.',
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%205%20Double%20Slit%20Experiment.mp4', //completed 12/25/2025
     },
   ];
   @override
@@ -77,7 +79,6 @@ class _OpticsState extends State<Optics> {
                 topIcon: Icons.wb_sunny,
               ),
               SizedBox(width: 2, height: 20),
-
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
