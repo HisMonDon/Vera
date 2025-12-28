@@ -2,8 +2,10 @@ library globals;
 
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_and_energy.dart';
 //import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
 import 'package:flutter/widgets.dart';
 
@@ -36,15 +38,15 @@ var pastVideos = List<String>.filled(
 ); // <-- FIX: Initialize with 5 empty strings
 List<String> explore = [
   'Kinematics',
-  'Electricity',
-  'Magnetism',
+  'Work and Energy',
+  'Harmonics',
   'Momentum',
   'Forces and Dynamics',
 ];
 List<dynamic> redirectExplore = [
   Kinematics(),
-  ElectricityAndMagnetism(), // change this later
-  ElectricityAndMagnetism(),
+  WorkAndEnergy(), // change this later
+  Harmonics(),
   MomentumAndCollisions(),
   Dynamics(),
 ];

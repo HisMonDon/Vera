@@ -284,7 +284,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
                             ),
                             SizedBox(height: 8),
                             Text(
-                              "International Baccalaureate Higher Level physics course with rigorous mathematical analysis and experimental investigation",
+                              "International Baccalaureate Higher Level physics course with mathematical analysis and calculations.",
                               style: GoogleFonts.roboto(
                                 fontSize: 16,
                                 color: Color(0xFFCCF7E3),
