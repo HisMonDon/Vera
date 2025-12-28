@@ -48,7 +48,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
           'Past AP Exam FRQ question analyzing the calculations of torque in a real world example.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4', //completed 2025/12/27
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/rotational_motion/app.yt1z.net%20-%202024%20AP%20Physics%201%20Solutions%20Free%20Response%20Q3%20(1080p).mp4', //completed 2025/12/27
     },
     {
       'title': 'Unit 5: Moment of Inertia',
