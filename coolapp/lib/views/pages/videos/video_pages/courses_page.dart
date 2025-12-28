@@ -4,6 +4,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_courses/ap_phy
 import 'package:coolapp/views/pages/videos/physics_videos/physics_courses/grade_11_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_courses/grade_12_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_courses/ib_physics_hl.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_courses/ib_physics_sl.dart';
 import 'package:coolapp/views/pages/videos/video_pages/topics_page.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
@@ -47,7 +48,6 @@ class _CoursePageState extends State<CoursePage> {
           _buildButtons(
             icon: Icons.arrow_forward_rounded,
             label: "Topics",
-
             isEnabled: true,
           ),
         ],
@@ -70,9 +70,8 @@ class _CoursePageState extends State<CoursePage> {
         backgroundColor: isEnabled
             ? Color.fromARGB(255, 167, 198, 131)
             : const Color.fromARGB(255, 238, 238, 238),
-        foregroundColor: isEnabled
-            ? Colors.white
-            : const Color.fromARGB(255, 158, 158, 158),
+        foregroundColor:
+            isEnabled ? Colors.white : const Color.fromARGB(255, 158, 158, 158),
         disabledBackgroundColor: const Color.fromARGB(255, 238, 238, 238),
         disabledForegroundColor: const Color.fromARGB(255, 158, 158, 158),
         padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
@@ -80,7 +79,6 @@ class _CoursePageState extends State<CoursePage> {
           fontWeight: FontWeight.w600,
           color: const Color.fromARGB(255, 15, 48, 40),
         ),
-
         elevation: isEnabled ? 0 : 0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
@@ -95,13 +93,13 @@ class _CoursePageState extends State<CoursePage> {
                   const TopicsPage(),
               transitionsBuilder:
                   (context, animation, secondaryAnimation, child) {
-                    return SlideTransition(
-                      position: animation.drive(
-                        Tween(begin: const Offset(1, 0), end: Offset.zero),
-                      ),
-                      child: child,
-                    );
-                  },
+                return SlideTransition(
+                  position: animation.drive(
+                    Tween(begin: const Offset(1, 0), end: Offset.zero),
+                  ),
+                  child: child,
+                );
+              },
             ),
           );
         }
@@ -175,7 +173,6 @@ class _CoursePageState extends State<CoursePage> {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),
-
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8.0),
                     child: Container(
@@ -187,7 +184,6 @@ class _CoursePageState extends State<CoursePage> {
                       ),
                     ),
                   ),
-
                   ClipRRect(
                     borderRadius: BorderRadius.circular(8),
                     child: Image(
@@ -198,7 +194,6 @@ class _CoursePageState extends State<CoursePage> {
                     ),
                   ),
                   SizedBox(height: 16),
-
                   Text(
                     description,
                     style: GoogleFonts.roboto(
@@ -209,9 +204,7 @@ class _CoursePageState extends State<CoursePage> {
                     maxLines: 3,
                     overflow: TextOverflow.ellipsis,
                   ),
-
                   Spacer(),
-
                   Container(
                     alignment: Alignment.centerRight,
                     child: ElevatedButton.icon(
@@ -255,6 +248,13 @@ class _CoursePageState extends State<CoursePage> {
       'description':
           'Complete International Baccalaureate Higher Level physics curriculum with focus on experimental skills and data analysis.',
       'videoPage': IbPhysicsHl(),
+    },
+    {
+      'title': 'IB Physics SL',
+      'imagePath': 'images/physicssl.png',
+      'description':
+          'Core International Baccalaureate Standard Level physics curriculum, building a strong foundation in key physics principles.',
+      'videoPage': IbPhysicsSl(),
     },
     {
       'title': 'Grade 11 Physics',
@@ -385,11 +385,11 @@ class _CoursePageState extends State<CoursePage> {
                         sliver: SliverGrid(
                           gridDelegate:
                               SliverGridDelegateWithMaxCrossAxisExtent(
-                                maxCrossAxisExtent: 500,
-                                crossAxisSpacing: 20,
-                                mainAxisSpacing: 20,
-                                childAspectRatio: 0.94,
-                              ),
+                            maxCrossAxisExtent: 500,
+                            crossAxisSpacing: 20,
+                            mainAxisSpacing: 20,
+                            childAspectRatio: 0.94,
+                          ),
                           delegate: SliverChildBuilderDelegate((
                             context,
                             index,
@@ -407,11 +407,9 @@ class _CoursePageState extends State<CoursePage> {
                       ),
                     ],
                   ),
-
                   Positioned(
                     bottom: 20,
-                    left:
-                        MediaQuery.of(context).size.width / 2 -
+                    left: MediaQuery.of(context).size.width / 2 -
                         125, //change this when dealing with button
                     child: _combineButtons(),
                   ),
