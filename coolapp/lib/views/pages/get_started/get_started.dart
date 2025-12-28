@@ -14,10 +14,10 @@ class AboutThisAppPage extends StatefulWidget {
   AboutThisAppPage({super.key});
 
   @override
-  State<AboutThisAppPage> createState() => _AboutThisAppPageState();
+  State createState() => _AboutThisAppPageState();
 }
 
-class _AboutThisAppPageState extends State<AboutThisAppPage> {
+class _AboutThisAppPageState extends State {
   @override
   void initState() {
     super.initState();
@@ -48,7 +48,7 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
               const SizedBox(height: 48),
               _buildWhatIsVeraSection(context),
               const SizedBox(height: 48),
-              _buildIntroVideoSection(),
+              _buildIntroVideoSection(context),
               const SizedBox(height: 48),
               _buildSignUpButton(),
               const SizedBox(height: 48),
@@ -238,7 +238,7 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
     });
   }
 
-  final List<String> displayPaths = [
+  final List displayPaths = [
     'images_tutorial/display1.png',
     'images_tutorial/display2.png',
     'images_tutorial/display3.png',
@@ -277,7 +277,7 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
     );
   }
 
-  Widget _buildIntroVideoSection() {
+  Widget _buildIntroVideoSection(BuildContext context) {
     return Column(
       children: [
         Text(
@@ -291,22 +291,13 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
           ),
         ),
         const SizedBox(height: 20),
-        Container(
-          width: 800,
-          height: 450,
-          decoration: BoxDecoration(
+        Center(
+          child: Container(
+            width: MediaQuery.of(context).size.width - 400,
             color: Colors.black,
-            borderRadius: BorderRadius.circular(12),
-            boxShadow: const [
-              BoxShadow(
-                color: Color.fromARGB(73, 0, 0, 0),
-                blurRadius: 15,
-                offset: Offset(0, 8),
-              ),
-            ],
+            child: _IntroVideoPlayer(),
           ),
-          child: _IntroVideoPlayer(),
-        )
+        ),
       ],
     );
   }
@@ -377,46 +368,119 @@ class _IntroVideoPlayer extends StatefulWidget {
 
 class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
   late VideoPlayerController _videoPlayerController;
-  late ChewieController _chewieController;
-
+  ChewieController? _chewieController;
+  bool _isLoading = true;
+  String? _errorMessage;
   @override
   void initState() {
     super.initState();
+    _initializePlayer();
+  }
+
+  Future _initializePlayer() async {
+    setState(() {
+      _isLoading = true;
+      _errorMessage = null;
+    });
     _videoPlayerController = VideoPlayerController.networkUrl(Uri.parse(
         'https://pub-56767059a1844d06818006869a91df08.r2.dev/Vera%20Introduction.mp4'));
 
-    _chewieController = ChewieController(
-      videoPlayerController: _videoPlayerController,
-      autoPlay: false,
-      looping: false,
-      aspectRatio: _videoPlayerController.value.aspectRatio,
-      // allowedScreenSleep: false,
-      playbackSpeeds: [0.5, 1.0, 1.5, 2.0, 2.5],
-      materialProgressColors: ChewieProgressColors(
-        playedColor: const Color.fromARGB(255, 5, 85, 58),
-        handleColor: const Color.fromARGB(255, 5, 68, 24),
-        backgroundColor: const Color.fromARGB(255, 5, 85, 58),
-        bufferedColor: const Color.fromARGB(255, 5, 85, 58),
-      ),
-      // placeholder: Container(
-      //   color: Colors.grey,
-      // ),
-      autoInitialize: true,
-    );
+    try {
+      await _videoPlayerController.initialize();
+      _chewieController = ChewieController(
+        videoPlayerController: _videoPlayerController,
+        autoPlay: false,
+        looping: false,
+        aspectRatio: _videoPlayerController.value.aspectRatio,
+        // allowedScreenSleep: false,
+        playbackSpeeds: [0.5, 1.0, 1.5, 2.0, 2.5],
+        materialProgressColors: ChewieProgressColors(
+          playedColor: const Color.fromARGB(255, 167, 198, 131),
+          handleColor: const Color.fromARGB(255, 195, 226, 172),
+          backgroundColor: const Color.fromARGB(255, 5, 85, 58),
+          bufferedColor: const Color.fromARGB(255, 5, 85, 58),
+        ),
+        // placeholder: Container(
+        //   color: Colors.grey,
+        // ),
+        autoInitialize: true,
+      );
+      setState(() {
+        _isLoading = false;
+      });
+    } catch (e) {
+      setState(() {
+        _isLoading = false;
+        _errorMessage = e.toString();
+      });
+    }
   }
 
   @override
   Widget build(BuildContext context) {
-    // 3. Use the Chewie widget in your build method
-    return Chewie(
-      controller: _chewieController,
+    return _buildPlayer();
+  }
+
+  Widget _buildPlayer() {
+    if (_isLoading) {
+      return AspectRatio(
+        aspectRatio: 16 / 9,
+        child: Container(
+          color: Colors.black,
+          child: const Center(child: CircularProgressIndicator()),
+        ),
+      );
+    }
+    if (_errorMessage != null) {
+      return AspectRatio(
+        aspectRatio: 16 / 9,
+        child: Container(
+          color: Colors.black,
+          child: _buildErrorDisplay(),
+        ),
+      );
+    }
+    if (_chewieController != null &&
+        _chewieController!.videoPlayerController.value.isInitialized) {
+      return AspectRatio(
+        aspectRatio: _videoPlayerController.value.aspectRatio,
+        child: Chewie(controller: _chewieController!),
+      );
+    }
+    return const Center(child: CircularProgressIndicator());
+  }
+
+  Widget _buildErrorDisplay() {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        const Icon(
+          Icons.error_outline,
+          color: Color.fromARGB(255, 2, 110, 74),
+          size: 48,
+        ),
+        const SizedBox(height: 16),
+        Text(
+          'Failed to load video: $_errorMessage',
+          style: const TextStyle(color: Colors.white),
+        ),
+        const Text(
+          '\nPlease check your internet connection',
+          style: TextStyle(color: Colors.white),
+        ),
+        const SizedBox(height: 16),
+        ElevatedButton(
+          onPressed: _initializePlayer,
+          child: const Text('Retry'),
+        ),
+      ],
     );
   }
 
   @override
   void dispose() {
     _videoPlayerController.dispose();
-    _chewieController.dispose();
+    _chewieController?.dispose();
     super.dispose();
   }
 }
