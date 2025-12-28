@@ -1,3 +1,4 @@
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/fluids.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
@@ -73,7 +74,6 @@ class _ApPhysics1State extends State<ApPhysics1> {
                 color: isHovered
                     ? Color.fromARGB(255, 8, 77, 63)
                     : Color.fromARGB(255, 8, 83, 68),
-
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
                   color: isHovered
@@ -188,8 +188,15 @@ class _ApPhysics1State extends State<ApPhysics1> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
-      'title': 'Unit 4: Circular Motion',
-      'description': "Centripetal acceleration and Kepler's laws",
+      'title': 'Unit 3: Dynamics',
+      'description': "Forces and Newton's Laws",
+      'videoPage': Dynamics(),
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+    },
+    {
+      'title': 'Unit 4: Rotational Motion',
+      'description': "Rotational Motion, Torque, and Forces",
       'videoPage': RotationalMotion(),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
@@ -216,14 +223,7 @@ class _ApPhysics1State extends State<ApPhysics1> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
-      'title': 'Unit 8: Rotational Motion',
-      'description': 'Rotational kinematics and moment of inertia',
-      'videoPage': RotationalMotion(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
-    },
-    {
-      'title': 'Unit 9: Fluids',
+      'title': 'Unit 8: Fluids',
       'description': "Bernoulli's principle and Pascal's law applications",
       'videoPage': Fluids(),
       'videoLink':
@@ -309,7 +309,6 @@ class _ApPhysics1State extends State<ApPhysics1> {
                   ],
                 ),
               ),
-
               SizedBox(width: 2, height: 20),
               Column(
                 children: List.generate(videosList.length, (index) {
@@ -345,7 +344,6 @@ class _ApPhysics1State extends State<ApPhysics1> {
                   },
                 ),
               ),
-
               SizedBox(height: 10),
             ],
           ),
