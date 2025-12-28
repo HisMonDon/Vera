@@ -1,4 +1,3 @@
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
@@ -20,227 +19,330 @@ class IbPhysicsSl extends StatefulWidget {
 }
 
 class _IbPhysicsSlState extends State<IbPhysicsSl> {
+  Widget _buildVideoButton(
+    String title,
+    String description,
+    int index,
+    Widget videoPage,
+    String videoLink,
+    //String imagePath,
+  ) {
+    bool isCompleted = false; //later will implement completion tracking
+    bool isHovered = hoveredStates[index] ?? false;
+
+    return MouseRegion(
+      onEnter: (_) => setState(
+        () => hoveredStates[index] = true,
+      ), // changed this for no error
+      onExit: (_) => setState(() => hoveredStates[index] = false),
+      child: AnimatedContainer(
+        duration: Duration(milliseconds: 200),
+        margin: EdgeInsets.only(bottom: 16),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12),
+          boxShadow: [
+            BoxShadow(
+              color: isHovered
+                  ? Color.fromARGB(255, 9, 71, 55).withOpacity(0.25)
+                  : Colors.black.withOpacity(0.1),
+              blurRadius: isHovered ? 8 : 4,
+              offset: isHovered ? Offset(0, 4) : Offset(0, 2),
+            ),
+          ],
+        ),
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            borderRadius: BorderRadius.circular(12),
+            onTap: () {
+              if (index == videosList.length - 1) {
+                globals.nextVideoTitle = 'last_one';
+              } else {
+                globals.nextVideoTitle = videosList[index + 1]['title'];
+              }
+              globals.videoLink = videoLink;
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => videoPage),
+              );
+            },
+            child: Container(
+              width: double.infinity,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: isHovered
+                    ? Color.fromARGB(255, 8, 77, 63)
+                    : Color.fromARGB(255, 8, 83, 68),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(
+                  color: isHovered
+                      ? Color.fromARGB(255, 167, 198, 131)
+                      : const Color.fromARGB(0, 121, 27, 27), //transparent
+                  width: 1.5,
+                ),
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    width: 50,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: isCompleted
+                          ? Color.fromARGB(255, 34, 197, 94)
+                          : Color.fromARGB(255, 15, 118, 110).withOpacity(0.3),
+                    ),
+                    child: Center(
+                      child: isCompleted
+                          ? Icon(
+                              Icons.check,
+                              color: Colors.white,
+                            ) // implement isCompleted later
+                          : Text(
+                              '${index + 1}',
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                    ),
+                  ),
+                  SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          title,
+                          style: GoogleFonts.montserrat(
+                            fontSize: 22,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white,
+                          ),
+                        ),
+                        SizedBox(height: 4),
+                        Text(
+                          description,
+                          style: GoogleFonts.roboto(
+                            fontSize: 16,
+                            color: Color.fromARGB(255, 204, 247, 227),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(width: 8),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 167, 198, 131),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.play_arrow_rounded,
+                        size: 24,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {
+                        if (index == videosList.length - 1) {
+                          globals.nextVideoTitle = 'last_one';
+                        } else {
+                          globals.nextVideoTitle =
+                              videosList[index + 1]['title'];
+                        }
+                        globals.videoLink = videoLink;
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (_) => videoPage),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  double _width = 400;
+  double _height = 200;
+  Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
       'title': 'Unit 1: Intro to Physics',
       'description':
           'Core concepts, measurements, uncertainties, vectors, and scalars.',
       'videoPage': const IntroToPhysics(),
+      'videoLink': 'placeholder'
     },
     {
       'title': 'Unit 2: Kinematics',
       'description': 'The study of motion in one and two dimensions.',
       'videoPage': const Kinematics(),
+      'videoLink': 'placeholder'
     },
     {
       'title': 'Unit 3: Dynamics',
       'description': 'Forces, Newton\'s laws, and their application to motion.',
       'videoPage': const Dynamics(),
+      'videoLink': 'placeholder'
     },
     {
       'title': 'Unit 4: Work and Energy',
       'description':
           'Energy conservation, work, power, and efficiency in physical systems.',
       'videoPage': const WorkAndEnergy(),
+      'videoLink': 'placeholder'
     },
     {
       'title': 'Unit 5: Momentum and Collisions',
       'description':
           'Impulse, momentum conservation, and analyzing different types of collisions.',
       'videoPage': const MomentumAndCollisions(),
+      'videoLink': 'placeholder'
     },
     {
       'title': 'Unit 6: Harmonics and Waves',
       'description':
           'Oscillations, waves, and the principles of simple harmonic motion.',
       'videoPage': const Harmonics(),
+      'videoLink': 'placeholder'
     },
     {
       'title': 'Unit 7: Thermal Physics',
       'description':
           'Heat, temperature, thermodynamics, and the behavior of gases.',
       'videoPage': const ThermalPhysics(),
+      'videoLink': 'placeholder'
     },
     {
       'title': 'Unit 8: Electricity and Magnetism',
       'description':
           'Electric circuits, magnetic fields, and electromagnetic induction.',
       'videoPage': const ElectricityAndMagnetism(),
+      'videoLink': 'placeholder'
     },
   ];
-
-  Map<int, bool> hoveredStates = {};
-
   @override
   Widget build(BuildContext context) {
+    // add an immediate check in build method
     globals.courseTitle = 'IB Physics SL';
     return Scaffold(
-      appBar: const TimedAppBar(),
+      appBar: TimedAppBar(),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(20),
+          padding: EdgeInsets.all(20),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              _buildCourseHeader(),
-              const SizedBox(height: 20),
-              ListView.builder(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                itemCount: videosList.length,
-                itemBuilder: (context, index) {
-                  final video = videosList[index];
-                  return _buildTopicButton(
-                    title: video['title'] ?? '',
-                    description: video['description'] ?? '',
-                    index: index,
-                    videoPage: video['videoPage']!,
-                  );
-                },
-              ),
-              const SizedBox(height: 20),
-              Center(
-                child: ElevatedButton.icon(
-                  icon: const Icon(Icons.arrow_back),
-                  label: const Text("Return to Courses"),
-                  onPressed: () => Navigator.of(context).pop(),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 167, 198, 131),
-                    foregroundColor: const Color.fromARGB(255, 15, 48, 40),
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 24, vertical: 14),
-                    textStyle: const TextStyle(
-                        fontSize: 16, fontWeight: FontWeight.w600),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildCourseHeader() {
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [
-            Color.fromARGB(255, 18, 59, 49),
-            Color.fromARGB(214, 10, 97, 80),
-          ],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-        borderRadius: BorderRadius.circular(15),
-      ),
-      child: Row(
-        children: [
-          const Icon(Icons.school, color: Colors.white, size: 40),
-          const SizedBox(width: 20),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  globals.courseTitle,
-                  style: GoogleFonts.mPlus1(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-                const SizedBox(height: 5),
-                Text(
-                  'A comprehensive study of core physics for the International Baccalaureate SL program.',
-                  style: GoogleFonts.montserrat(
-                    fontSize: 16,
-                    color: Colors.white.withOpacity(0.9),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildTopicButton({
-    required String title,
-    required String description,
-    required int index,
-    required Widget videoPage,
-  }) {
-    bool isHovered = hoveredStates[index] ?? false;
-
-    return MouseRegion(
-      onEnter: (_) => setState(() => hoveredStates[index] = true),
-      onExit: (_) => setState(() => hoveredStates[index] = false),
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
-        margin: const EdgeInsets.only(bottom: 16),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(12),
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_) => videoPage),
-            );
-          },
-          child: Container(
-            padding: const EdgeInsets.all(20),
-            decoration: BoxDecoration(
-              color: isHovered
-                  ? const Color.fromARGB(255, 8, 77, 63)
-                  : const Color.fromARGB(255, 8, 83, 68),
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(
-                color: isHovered
-                    ? const Color.fromARGB(255, 167, 198, 131)
-                    : Colors.transparent,
-                width: 1.5,
-              ),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withOpacity(isHovered ? 0.2 : 0.1),
-                  blurRadius: isHovered ? 8 : 4,
-                  offset: isHovered ? const Offset(0, 4) : const Offset(0, 2),
-                ),
-              ],
-            ),
-            child: Row(
-              children: [
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      AutoSizeText(
-                        title,
-                        style: GoogleFonts.montserrat(
-                          fontSize: 22,
-                          fontWeight: FontWeight.w600,
-                          color: Colors.white,
-                        ),
-                        maxLines: 1,
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        description,
-                        style: GoogleFonts.roboto(
-                          fontSize: 16,
-                          color: const Color.fromARGB(255, 204, 247, 227),
-                        ),
-                      ),
+              SizedBox(width: 2, height: 10),
+              Container(
+                padding: EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      Color.fromARGB(255, 10, 97, 80),
+                      Color.fromARGB(255, 7, 61, 51),
                     ],
                   ),
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [
+                    //might look good?
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.2),
+                      blurRadius: 10,
+                      offset: Offset(0, 5),
+                    ),
+                  ],
                 ),
-                const SizedBox(width: 16),
-                const Icon(Icons.arrow_forward_ios,
-                    color: Colors.white, size: 18),
-              ],
-            ),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 80,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 167, 198, 131),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Icon(Icons.school, size: 40, color: Colors.white),
+                    ),
+                    SizedBox(width: 20),
+                    Expanded(
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            SizedBox(height: 10),
+                            Text(
+                              "IB Physics SL",
+                              style: GoogleFonts.montserrat(
+                                fontSize: 28,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                            SizedBox(height: 8),
+                            Text(
+                              "A course on studying core physics for the International Baccalaureate SL program.",
+                              style: GoogleFonts.roboto(
+                                fontSize: 16,
+                                color: Color(0xFFCCF7E3),
+                              ),
+                            ),
+                            SizedBox(height: 16),
+
+                            //course stats underneath
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(width: 2, height: 20),
+              Column(
+                children: List.generate(videosList.length, (index) {
+                  final video = videosList[index];
+                  return _buildVideoButton(
+                    video['title'] ?? '',
+                    video['description'] ?? '',
+                    index,
+                    video['videoPage']!,
+                    video['videoLink'],
+                  );
+                }),
+              ),
+              Center(
+                child: ElevatedButton.icon(
+                  icon: Icon(Icons.arrow_back),
+                  label: Text("Return to Courses"),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color.fromARGB(255, 167, 198, 131),
+                    foregroundColor: const Color.fromARGB(255, 15, 48, 40),
+                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+                    textStyle: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  onPressed: () {
+                    globals.topicTitle = '';
+                    Navigator.of(context).pop();
+                  },
+                ),
+              ),
+              SizedBox(height: 10),
+            ],
           ),
         ),
       ),
