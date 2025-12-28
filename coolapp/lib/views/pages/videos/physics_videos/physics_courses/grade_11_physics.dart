@@ -72,7 +72,6 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
                 color: isHovered
                     ? Color.fromARGB(255, 8, 77, 63)
                     : Color.fromARGB(255, 8, 83, 68),
-
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
                   color: isHovered
@@ -176,45 +175,33 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
       'title': 'Unit 1: Vectors and Scalars',
       'description': 'Addition and calculations with vectors and scalars.',
       'videoPage': IntroToPhysics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 2: Kinematics',
       'description': 'Motion graphs and kinematic equations',
       'videoPage': Kinematics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': "Unit 3: Dynamics",
       'description': "Forces and Newton's Laws",
       'videoPage': Dynamics(), //change to new physics topic
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 4: Energy and Work',
       'description':
           'Work-energy theorem and conservation of Energy (Very important unit)',
       'videoPage': WorkAndEnergy(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 5: Harmonics',
       'description': 'Pendulum dynamics, waves and sounds',
       'videoPage': Harmonics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 6: Electricity',
       'description': 'Series and parallel combinations and power calculations',
       'videoPage':
           ElectricityAndMagnetism(), //redirect this to the thing inside electricity unit
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
   ];
   @override
@@ -296,7 +283,6 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
                   ],
                 ),
               ),
-
               SizedBox(width: 2, height: 20),
               Column(
                 children: List.generate(videosList.length, (index) {
@@ -332,7 +318,6 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
                   },
                 ),
               ),
-
               SizedBox(height: 10),
             ],
           ),

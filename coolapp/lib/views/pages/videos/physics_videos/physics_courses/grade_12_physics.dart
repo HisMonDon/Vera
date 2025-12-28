@@ -173,30 +173,22 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
       'title': 'Unit 1: Kinematics & Dynamics Review',
       'description': 'In-depth review of motion and forces',
       'videoPage': IntroToPhysics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 2: Momentum',
       'description':
           'Momentum, elastic and non-elastic collisions, and impulse',
       'videoPage': MomentumAndCollisions(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 3: Energy',
       'description': 'Potential and Kinetic Energy',
       'videoPage': WorkAndEnergy(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
     {
       'title': 'Unit 4: Optics',
       'description': 'Interference, diffraction, and polarization',
       'videoPage': Optics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
     },
   ];
   @override
