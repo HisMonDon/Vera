@@ -24,7 +24,7 @@ class _OpticsState extends State<Optics> {
           'Light as electromagnetic waves, properties of light, and the electromagnetic spectrum',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%201%20Introducution%20to%20Light.mp4', //completed 12/25/2025
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%201%20Introducution%20to%20Light.mp4', //completed 12/25/2025 merry christmas!
     },
     {
       'title': 'Unit 2: Lenses Part 1',

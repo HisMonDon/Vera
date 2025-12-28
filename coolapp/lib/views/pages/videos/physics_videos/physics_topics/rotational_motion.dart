@@ -24,39 +24,39 @@ class _RotationalMotionState extends State<RotationalMotion> {
           'Basic concepts of circular motion, angular displacement, and angular velocity',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/rotational_motion/Unit%201%20Introduction%20to%20Rotational%20Motion.mp4', //completed 2025/12/27
     },
     {
-      'title': 'Unit 2: Angular Kinematics',
+      'title': 'Unit 2: Rotational Kinematics',
       'description':
           'Angular position, velocity, and acceleration relationships in rotational motion',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/rotational_motion/Unit%202%20Rotational%20Kinematics.mp4', //completed 2025/12/27
     },
     {
       'title': 'Unit 3: Torque and Rotational Equilibrium',
       'description':
-          'How torque causes rotational acceleration and balanced torque systems',
+          'Introduction and leeson on how torque causes rotational accceleration and balanced torque systems.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/rotational_motion/Unit%203%20Torque%20and%20Rotational%20Equilibrium.mp4', //completed 2025/12/27
     },
     {
-      'title': 'Unit 4: Moment of Inertia',
+      'title': 'Unit 4: Torque and Rotational Forces Example',
+      'description':
+          'Past AP Exam FRQ question analyzing the calculations of torque in a real world example.',
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4', //completed 2025/12/27
+    },
+    {
+      'title': 'Unit 5: Moment of Inertia',
       'description':
           'Understanding rotational mass, calculating moment of inertia for different objects',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
-    },
-    {
-      'title': 'Unit 5: Rotational Energy and Angular Momentum',
-      'description':
-          'Conservation principles in rotating systems and applications',
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/rotational_motion/Unit%205%20Moment%20of%20Inertia.mp4', //completed 2025/12/27
     },
   ];
   @override
@@ -79,7 +79,6 @@ class _RotationalMotionState extends State<RotationalMotion> {
                 topIcon: Icons.rotate_right,
               ),
               SizedBox(width: 2, height: 20),
-
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
