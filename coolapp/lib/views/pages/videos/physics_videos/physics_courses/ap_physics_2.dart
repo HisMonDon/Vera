@@ -1,5 +1,6 @@
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electrostatics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/fluids.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
@@ -168,33 +169,34 @@ class _ApPhysics2State extends State<ApPhysics2> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Thermodynamics',
-      'description': 'Kinetic Theory Of Gases, Laws of Thermodynamics',
-      'videoPage': ThermalPhysics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+      'title': 'Unit 1: Fluids',
+      'description':
+          'Fluid properties, pressure, buoyancy, and fluid dynamics including Bernoulli\'s principle.',
+      'videoPage': const Fluids(),
     },
     {
-      'title': 'Unit 2: Electrostatics',
-      'description': "Electric Charge, Coulomb's Law, Electric Field",
-      'videoPage': Electrostatics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+      'title': 'Unit 2: Thermal Physics',
+      'description':
+          'Thermodynamics, heat transfer, kinetic theory, and laws of thermodynamics.',
+      'videoPage': const ThermalPhysics(),
     },
     {
       'title': 'Unit 3: Electric Circuits and Magnetism',
       'description':
-          'RC Time Constants, Circuit Analysis, Magnetic fields, EMF, Moving Charges',
-      'videoPage': ElectricityAndMagnetism(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'Electric circuits, capcitor behaviour, Kirchhoff\'s laws, and magnetic flux.',
+      'videoPage': const ElectricityAndMagnetism(),
     },
     {
-      'title': 'Unit 4: Optics',
-      'description': 'Lens equations and optical instruments',
-      'videoPage': Optics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+      'title': 'Unit 4: Electrostatics',
+      'description':
+          'Electric charge, fields, Coulomb\'s Law, and electric potential.',
+      'videoPage': const Electrostatics(),
+    },
+    {
+      'title': 'Unit 5: Optics',
+      'description':
+          'Geometric and physical optics, including reflection, refraction, lenses, and diffraction.',
+      'videoPage': const Optics(),
     },
   ];
   @override

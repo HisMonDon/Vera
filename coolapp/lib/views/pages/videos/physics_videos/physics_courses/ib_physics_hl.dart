@@ -1,6 +1,9 @@
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electrostatics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/rotational_motion.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
@@ -171,43 +174,50 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Measurement and Uncertainties',
+      'title': 'Topic 1: Measurement and Uncertainty',
+      'description': 'Fundamental concepts, units, uncertainties, and vectors.',
+      'videoPage': const IntroToPhysics(),
+    },
+    {
+      'title': 'Topic 2: Mechanics (Kinematics & Dynamics)',
+      'description': 'Motion, forces, work, energy, power, and momentum.',
+      'videoPage': const Kinematics(),
+    },
+    {
+      'title': 'Topic 3: Thermal Physics',
       'description':
-          'Error propagation, uncertainty calculations, and graphical analysis techniques',
-      'videoPage': IntroToPhysics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'Temperature, heat, kinetic theory of gases, and thermodynamics.',
+      'videoPage': const ThermalPhysics(),
     },
     {
-      'title': 'Unit 2: Kinematics',
-      'description': 'Motion graphs and kinematic equations',
-      'videoPage': Kinematics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
-    },
-    {
-      'title': 'Unit 3: Rotational Motion',
-      'description': 'Rotational kinematics and moment of inertia',
-      'videoPage': RotationalMotion(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
-    },
-    {
-      'title':
-          'Unit 4:  Thermal Physics', //make a whole folder for this perchance?
+      'title': 'Topic 4: Waves (Harmonics)',
       'description':
-          'Kinetic theory, thermodynamics laws, and heat transfer mechanisms',
-      'videoPage': ThermalPhysics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'Oscillations, travelling waves, wave characteristics, and interference.',
+      'videoPage': const Harmonics(),
     },
     {
-      'title': 'Unit 5: Electricity and Magnetism',
+      'title': 'Topic 5: Electricity and Magnetism',
       'description':
-          "Maxwell's equations, electromagnetic induction, and AC circuits",
-      'videoPage': ElectricityAndMagnetism(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'Electric fields, heating effect, electric circuits, and magnetic effects of electric currents.',
+      'videoPage': const ElectricityAndMagnetism(),
+    },
+    {
+      'title': 'Topic 6: Circular Motion and Gravitation',
+      'description':
+          'Kinematics of uniform circular motion and gravitational fields.',
+      'videoPage': const RotationalMotion(),
+    },
+    {
+      'title': 'Topic 9: Wave Phenomena (Optics)',
+      'description':
+          'Simple harmonic motion, single-slit diffraction, interference, and resolution.',
+      'videoPage': const Optics(),
+    },
+    {
+      'title': 'Topic 10: Fields (Electrostatics)',
+      'description':
+          'Describing fields, gravitational fields, electric fields, and magnetic fields.',
+      'videoPage': const Electrostatics(),
     },
   ];
   @override

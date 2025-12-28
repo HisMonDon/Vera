@@ -174,60 +174,40 @@ class _ApPhysics1State extends State<ApPhysics1> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Vectors and Scalars',
-      'description': 'Addition and calculations with vectors and scalars.',
-      'videoPage': IntroToPhysics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+      'title': 'Unit 1: Kinematics',
+      'description':
+          'Motion in one and two dimensions, including displacement, velocity, and acceleration.',
+      'videoPage': const Kinematics(),
     },
     {
-      'title': 'Unit 2: Kinematics',
-      'description': 'Motion graphs and kinematic equations',
-      'videoPage': Kinematics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+      'title': 'Unit 2: Dynamics',
+      'description':
+          "Newton's laws of motion, forces, friction, and the dynamics of single and multiple-body systems.",
+      'videoPage': const Dynamics(),
     },
     {
-      'title': 'Unit 3: Dynamics',
-      'description': "Forces and Newton's Laws",
-      'videoPage': Dynamics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+      'title': 'Unit 3: Work and Energy',
+      'description':
+          'Work-energy theorem, kinetic and potential energy, conservation of energy, and power.',
+      'videoPage': const WorkAndEnergy(),
     },
     {
-      'title': 'Unit 4: Rotational Motion',
-      'description': "Rotational Motion, Torque, and Forces",
-      'videoPage': RotationalMotion(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+      'title': 'Unit 4: Momentum',
+      'description':
+          'Impulse, momentum, conservation of linear momentum, and elastic/inelastic collisions.',
+      'videoPage': const MomentumAndCollisions(),
     },
     {
-      'title': 'Unit 5: Energy and Work',
-      'description': 'Work-energy theorem and conservation of Energy',
-      'videoPage': WorkAndEnergy(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+      'title': 'Unit 5: Rotational Motion',
+      'description':
+          'Circular motion, torque, rotational kinematics, moment of inertia, and conservation of angular momentum.',
+      'videoPage': const RotationalMotion(),
     },
     {
-      'title': 'Unit 6: Momentum', //shared with grade 12 phy
-      'description': 'Collision analysis and center of mass',
-      'videoPage': MomentumAndCollisions(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
-    },
-    {
-      'title': 'Unit 7: Harmonics',
-      'description': 'Pendulum dynamics and spring systems',
-      'videoPage': Harmonics(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
-    },
-    {
-      'title': 'Unit 8: Fluids',
-      'description': "Bernoulli's principle and Pascal's law applications",
-      'videoPage': Fluids(),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+      'title': 'Unit 6: Oscillations (Simple Harmonic Motion)',
+      'description':
+          'Simple harmonic motion, pendulums, and mass-spring systems.',
+      'videoPage': const Harmonics(),
     },
   ];
   @override
