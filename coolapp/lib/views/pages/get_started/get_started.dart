@@ -6,8 +6,6 @@ import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:url_launcher/url_launcher.dart';
-import 'package:media_kit/media_kit.dart';
-import 'package:media_kit_video/media_kit_video.dart';
 import 'package:video_player/video_player.dart';
 
 class AboutThisAppPage extends StatefulWidget {
