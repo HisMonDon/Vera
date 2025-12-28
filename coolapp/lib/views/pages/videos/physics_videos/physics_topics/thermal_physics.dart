@@ -19,46 +19,55 @@ class _ThermalPhysicsState extends State<ThermalPhysics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Temperature and Heat Transfer',
+      'title': 'Unit 1: Temperature, Heat, and Thermal Energy',
       'description':
-          'Temperature scales, thermal equilibrium, and mechanisms of heat transfer including conduction, convection, and radiation',
+          'Temperature vs. heat, thermal equilibrium (zeroth law), specific heat and calorimetry basics, and an overview of conduction, convection, and radiation',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/thermal_physics/Unit%201%20Temperature%2C%20Heat%2C%20and%20Thermal%20Energy.mp4',
     },
     {
-      'title': 'Unit 2: Kinetic Theory of Gases',
+      'title': 'Unit 2: Heat and Latent Heat',
       'description':
-          'Molecular behavior of gases, ideal gas law derivations, and statistical mechanics fundamentals',
+          'Phase changes and latent heat, heating/cooling curves, calorimetry with phase transitions, and mixing problems using energy conservation',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/thermal_physics/Unit%202%20Heat%20and%20Latent%20Heat.mp4',
     },
     {
-      'title': 'Unit 3: First Law of Thermodynamics',
+      'title': 'Unit 3: Heat Transfer Examples',
       'description':
-          'Energy conservation in thermal systems, work done by expanding gases, and internal energy calculations',
+          'Worked examples using conduction, convection, and radiation; thermal resistance ideas; rate of heat flow; and common AP-style applications',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/thermal_physics/Unit%203%20Heat%20Transfer%20Examples.mp4',
     },
     {
-      'title': 'Unit 4: Second Law and Entropy',
+      'title': 'Unit 4: Gas Laws (Ideal, Combined, Avagadros)',
       'description':
-          'Irreversible processes, entropy changes, efficiency of heat engines, and Carnot cycles',
+          'Boyle’s, Charles’s, Gay-Lussac’s, Avogadro’s, and the combined gas law; ideal gas law PV = nRT; and conceptual/graph relationships',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/thermal_physics/Unit%204%20Gas%20Laws%20(Ideal%2C%20Combined%2C%20Avagadros).mp4',
     },
     {
-      'title': 'Unit 5: Thermodynamic Processes',
+      'title': 'Unit 5: The First Law of Thermodynamics',
       'description':
-          'Isothermal, adiabatic, isobaric, and isochoric processes in thermodynamic cycles',
+          'First law (ΔU = Q − W), sign conventions, PV work, and applying the law to isothermal, isobaric, isochoric, and adiabatic processes',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Holder%20Video%20(Video%20not%20Released%20Yet).mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/thermal_physics/Unit%205%20The%20First%20Law%20of%20Thermodynamics.mp4',
+    },
+    {
+      'title': 'AP Physics 2: Thermodynamics Example',
+      'description':
+          'Full AP Physics 2–style thermodynamics walkthrough: interpreting a process/path, tracking Q, W, and ΔU, and solving with PV diagrams and the first law',
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/thermal_physics/AP%20Physics%202%20Thermodynamics%20Example.mp4',
     },
   ];
+
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
@@ -79,7 +88,6 @@ class _ThermalPhysicsState extends State<ThermalPhysics> {
                 topIcon: Icons.thermostat,
               ),
               SizedBox(width: 2, height: 20),
-
               Column(
                 children: List.generate(videosList.length, (index) {
                   final video = videosList[index];
