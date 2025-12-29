@@ -382,7 +382,6 @@ class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
     });
     _videoPlayerController = VideoPlayerController.networkUrl(Uri.parse(
         'https://pub-56767059a1844d06818006869a91df08.r2.dev/Vera%20Introduction.mp4'));
-
     try {
       await _videoPlayerController.initialize();
       _chewieController = ChewieController(

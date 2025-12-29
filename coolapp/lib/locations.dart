@@ -25,17 +25,8 @@ class HomeLocation extends BeamLocation<BeamState> {
 
   String _titleForPage(String pageName) {
     switch (pageName) {
-      case 'get-started':
-        return 'Get Started';
-      case 'profile':
-        return 'Profile';
-      case 'videos':
-        return 'Videos';
-      case 'settings':
-        return 'Settings';
-      case 'home':
       default:
-        return 'Home';
+        return 'Vera';
     }
   }
 }
