@@ -12,6 +12,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 //import 'package:video_thumbnail/video_thumbnail.dart'; perchance use this for later purposes if current extractvideoimage still doesnt support ios or android in future?
 import 'package:media_kit/media_kit.dart';
 import 'dart:ui' as ui;
+import 'package:beamer/beamer.dart';
 //import 'package:media_kit_video/media_kit_video.dart';
 //import 'dart:io';
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -19,12 +20,12 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 class HomePage extends StatefulWidget {
   HomePage({super.key});
   @override
-  State<HomePage> createState() => _HomePageState();
+  State createState() => _HomePageState();
   final String videoUrl =
       globals.videoOfTheDay[globals.videoOfTheDayIndex]['videoLink'] ?? '';
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State {
   final _authService = AuthService();
   final TextEditingController _nameController = TextEditingController();
   String _displayName = ''; // stores name without comma prefix
@@ -44,7 +45,7 @@ class _HomePageState extends State<HomePage> {
     _initData();
   }
 
-  Future<void> _initData() async {
+  Future _initData() async {
     await _loadAuthData();
     await _loadUserName();
     await _loadPastVideos();
@@ -52,7 +53,7 @@ class _HomePageState extends State<HomePage> {
   }
   //**_________________________________________ */
 
-  Future<void> _loadAuthData() async {
+  Future _loadAuthData() async {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
       globals.userId = prefs.getString('userId') ?? '';
@@ -60,7 +61,7 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  Future<void> _loadPastVideos() async {
+  Future _loadPastVideos() async {
     try {
       if (globals.isLoggedIn &&
           globals.userId.isNotEmpty &&
@@ -92,7 +93,7 @@ class _HomePageState extends State<HomePage> {
   }
   //
 
-  Future<void> _loadUserName() async {
+  Future _loadUserName() async {
     try {
       final savedName = await _authService.getSavedUserName() ?? '';
 
@@ -715,15 +716,8 @@ class _HomePageState extends State<HomePage> {
                                           cursor: SystemMouseCursors.click,
                                           child: GestureDetector(
                                             onTap: () {
-                                              global.selectedIndex = 1;
-                                              Navigator.of(
-                                                context,
-                                                rootNavigator: true,
-                                              ).pushNamedAndRemoveUntil(
-                                                '/',
-                                                (route) => false,
-                                                arguments: 1,
-                                              );
+                                              Beamer.of(context)
+                                                  .beamToNamed('/profile');
                                             },
                                             child: Container(
                                               width: (MediaQuery.of(

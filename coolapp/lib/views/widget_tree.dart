@@ -1,7 +1,8 @@
+import 'package:beamer/beamer.dart';
 import 'package:coolapp/views/pages/get_started/get_started.dart';
-import 'package:coolapp/views/pages/settings_page/settings_page.dart';
 import 'package:coolapp/views/pages/home/home_page.dart';
 import 'package:coolapp/views/pages/profile_page/profile_page.dart';
+import 'package:coolapp/views/pages/settings_page/settings_page.dart';
 import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
@@ -10,8 +11,8 @@ import 'dart:async';
 
 //change main theme colors and navbar stuff here
 class WidgetTree extends StatefulWidget {
-  final int initialIndex;
-  const WidgetTree({super.key, this.initialIndex = 0});
+  final String pageName;
+  const WidgetTree({super.key, required this.pageName});
 
   @override
   State<WidgetTree> createState() => _WidgetTreeState();
@@ -19,70 +20,63 @@ class WidgetTree extends StatefulWidget {
 
 class _WidgetTreeState extends State<WidgetTree> {
   late PersistentTabController _controller;
-  late VoidCallback _tabListener;
   TimeOfDay _currentTime = TimeOfDay.now();
 
   Timer? _timer;
+
+  final List<String> _pageKeys = [
+    'get-started',
+    'profile',
+    'home',
+    'videos',
+    'settings'
+  ];
+
   @override
   void initState() {
     super.initState();
-    _controller = PersistentTabController(initialIndex: widget.initialIndex);
-    globals.selectedIndex = widget.initialIndex;
+    final initialIndex = _pageKeys.indexOf(widget.pageName);
+    _controller = PersistentTabController(
+        initialIndex: initialIndex < 0 ? 2 : initialIndex);
+    globals.selectedIndex = _controller.index;
 
-    _tabListener = () {
-      if (mounted && globals.selectedIndex != _controller.index) {
-        setState(() {
-          globals.selectedIndex = _controller.index;
-        });
-      }
-    };
-    _controller.addListener(_tabListener);
     _currentTime = TimeOfDay.now();
     _timer = Timer.periodic(const Duration(seconds: 1), (Timer t) {
-      setState(() {
-        _currentTime = TimeOfDay.now();
-      });
+      if (mounted) {
+        setState(() {
+          _currentTime = TimeOfDay.now();
+        });
+      }
     });
   }
 
   @override
+  void didUpdateWidget(covariant WidgetTree oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.pageName != widget.pageName) {
+      final newIndex = _pageKeys.indexOf(widget.pageName);
+      if (newIndex >= 0 && _controller.index != newIndex) {
+        _controller.index = newIndex;
+        globals.selectedIndex = newIndex;
+      }
+    }
+  }
+
+  @override
   void dispose() {
-    _controller.removeListener(_tabListener);
     _timer?.cancel();
+    _controller.dispose();
     super.dispose();
   }
 
-  // Wrap each screen with a Scaffold that has the AppBar
   List<Widget> _buildScreens() {
-    // Use appropriate video page based on login statusR
-    List<Widget> screens = [
+    return [
       AboutThisAppPage(),
       ProfilePage(),
       HomePage(),
-      CoursePage(),
-      HelpPage(),
+      const CoursePage(),
+      const HelpPage(),
     ];
-    if (_currentTime.hour < 12) {
-      globals.welcomeText = "Good Morning, " + globals.userName;
-    } else if (_currentTime.hour < 17) {
-      globals.welcomeText = "Good Afternoon, " + globals.userName;
-    } else {
-      globals.welcomeText = "Good Evening, " + globals.userName;
-    }
-    if (_currentTime.hour < 5) {
-      globals.welcomeText = "Midnight lesson?";
-    }
-    if (_currentTime.hour < 12) {
-      globals.motivationalMessage = "Start off your day with fresh knowledge.";
-    } else if (_currentTime.hour < 17) {
-      globals.motivationalMessage = "Let's make this afternoon productive.";
-    } else if (_currentTime.hour < 20) {
-      globals.motivationalMessage = "What will you learn today?";
-    } else {
-      globals.motivationalMessage = "One more video before you sleep?";
-    }
-    // Wrap each screen with a Scaffold and no AppBar
-    return screens.map((screen) => Scaffold(body: screen)).toList();
   }
 
   List<PersistentBottomNavBarItem> _navBarsItems() {
@@ -121,24 +115,52 @@ class _WidgetTreeState extends State<WidgetTree> {
     ];
   }
 
+  void _onItemSelected(int index) {
+    // Only beam if the page is different
+    if (_controller.index != index) {
+      final path =
+          _pageKeys[index] == 'home' ? '/home' : '/${_pageKeys[index]}';
+      Beamer.of(context).beamToNamed(path);
+    }
+    // Set the controller index regardless, to keep it in sync
+    _controller.index = index;
+    globals.selectedIndex = index;
+  }
+
   @override
   Widget build(BuildContext context) {
+    // Update welcome messages
+    if (_currentTime.hour < 12) {
+      globals.welcomeText = "Good Morning, ${globals.userName}";
+    } else if (_currentTime.hour < 17) {
+      globals.welcomeText = "Good Afternoon, ${globals.userName}";
+    } else {
+      globals.welcomeText = "Good Evening, ${globals.userName}";
+    }
+    if (_currentTime.hour < 5) {
+      globals.welcomeText = "Midnight lesson?";
+    }
+    if (_currentTime.hour < 12) {
+      globals.motivationalMessage = "Start off your day with fresh knowledge.";
+    } else if (_currentTime.hour < 17) {
+      globals.motivationalMessage = "Let's make this afternoon productive.";
+    } else if (_currentTime.hour < 20) {
+      globals.motivationalMessage = "What will you learn today?";
+    } else {
+      globals.motivationalMessage = "One more video before you sleep?";
+    }
+
     return PersistentTabView(
       context,
       controller: _controller,
       screens: _buildScreens(),
       items: _navBarsItems(),
       backgroundColor: const Color.fromARGB(255, 15, 48, 40),
+      handleAndroidBackButtonPress: true,
+      resizeToAvoidBottomInset: true,
+      stateManagement: true,
       navBarStyle: NavBarStyle.style1,
-      // Rebuild the screens when the login status changes
-      onItemSelected: (index) {
-        if (index == 3) {
-          // Videos tab
-          setState(() {
-            // This forces the screen to be rebuilt with the current login status
-          });
-        }
-      },
+      onItemSelected: _onItemSelected,
     );
   }
 }

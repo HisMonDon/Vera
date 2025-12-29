@@ -49,6 +49,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.0"
+  beamer:
+    dependency: "direct main"
+    description:
+      name: beamer
+      sha256: "4abb83a74f27c84fd0b59675eb0f6448f5e0c431f857bd2d0bc244c52b15893b"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.7.0"
   boolean_selector:
     dependency: transitive
     description:
@@ -200,6 +208,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  go_router:
+    dependency: transitive
+    description:
+      name: go_router
+      sha256: b453934c36e289cef06525734d1e676c1f91da9e22e2017d9dcab6ce0f999175
+      url: "https://pub.dev"
+    source: hosted
+    version: "15.1.3"
   google_fonts:
     dependency: "direct main"
     description:
@@ -280,6 +296,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.0.0"
+  logging:
+    dependency: transitive
+    description:
+      name: logging
+      sha256: c8245ada5f1717ed44271ed1c26b8ce85ca3228fd2ffdb75468ab01979309d61
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.3.0"
   matcher:
     dependency: transitive
     description:
@@ -464,6 +488,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.2.1"
+  persistent_bottom_nav_bar_v2:
+    dependency: "direct main"
+    description:
+      name: persistent_bottom_nav_bar_v2
+      sha256: "4c1f5b5c71010390746b35d2ffb4b55ec451f04286c133beabb93e16a66e0a5f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.2.0"
   petitparser:
     dependency: transitive
     description:
