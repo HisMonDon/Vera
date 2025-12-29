@@ -56,8 +56,10 @@ class _WidgetTreeState extends State<WidgetTree> {
     if (oldWidget.pageName != widget.pageName) {
       final newIndex = _pageKeys.indexOf(widget.pageName);
       if (newIndex >= 0 && _controller.index != newIndex) {
-        _controller.index = newIndex;
-        globals.selectedIndex = newIndex;
+        setState(() {
+          _controller.index = newIndex;
+          globals.selectedIndex = newIndex;
+        });
       }
     }
   }
@@ -116,15 +118,10 @@ class _WidgetTreeState extends State<WidgetTree> {
   }
 
   void _onItemSelected(int index) {
-    // Only beam if the page is different
-    if (_controller.index != index) {
-      final path =
-          _pageKeys[index] == 'home' ? '/home' : '/${_pageKeys[index]}';
-      Beamer.of(context).beamToNamed(path);
+    if (globals.selectedIndex != index) {
+      final path = _pageKeys[index] == 'home' ? '/' : '/${_pageKeys[index]}';
+      context.beamToNamed(path);
     }
-    // Set the controller index regardless, to keep it in sync
-    _controller.index = index;
-    globals.selectedIndex = index;
   }
 
   @override

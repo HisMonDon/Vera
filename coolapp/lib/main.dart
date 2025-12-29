@@ -48,8 +48,18 @@ class MyApp extends StatefulWidget {
     globals.isLight,
   );
 
+  static void updateTheme(bool isLight) {
+    globals.isLight = isLight;
+    themeNotifier.value = isLight;
+  }
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   final routerDelegate = BeamerDelegate(
-    initialPath: '/home',
+    initialPath: '/',
     locationBuilder: BeamerLocationBuilder(
       beamLocations: [
         HomeLocation(),
@@ -57,26 +67,16 @@ class MyApp extends StatefulWidget {
     ),
   );
 
-  static void updateTheme(bool isLight) {
-    globals.isLight = isLight;
-    themeNotifier.value = isLight;
-  }
-
-  @override
-  State createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder(
       valueListenable: MyApp.themeNotifier,
       builder: (context, isLight, child) {
         return MaterialApp.router(
-          routerDelegate: widget.routerDelegate,
+          routerDelegate: routerDelegate,
           routeInformationParser: BeamerParser(),
           backButtonDispatcher:
-              BeamerBackButtonDispatcher(delegate: widget.routerDelegate),
+              BeamerBackButtonDispatcher(delegate: routerDelegate),
           title: 'Vera',
           debugShowCheckedModeBanner: false,
           theme: globals.isLight

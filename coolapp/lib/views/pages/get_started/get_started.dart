@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:beamer/beamer.dart';
 import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
@@ -12,10 +13,10 @@ class AboutThisAppPage extends StatefulWidget {
   AboutThisAppPage({super.key});
 
   @override
-  State createState() => _AboutThisAppPageState();
+  State<AboutThisAppPage> createState() => _AboutThisAppPageState();
 }
 
-class _AboutThisAppPageState extends State {
+class _AboutThisAppPageState extends State<AboutThisAppPage> {
   @override
   void initState() {
     super.initState();
@@ -29,9 +30,9 @@ class _AboutThisAppPageState extends State {
     super.dispose();
   }
 
-  @override
   final ScrollController _sampleImagesController = ScrollController();
   Timer? _timer;
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: TimedAppBar(),
@@ -236,7 +237,7 @@ class _AboutThisAppPageState extends State {
     });
   }
 
-  final List displayPaths = [
+  final List<String> displayPaths = [
     'images_tutorial/display1.png',
     'images_tutorial/display2.png',
     'images_tutorial/display3.png',
@@ -303,16 +304,7 @@ class _AboutThisAppPageState extends State {
   Widget _buildSignUpButton() {
     return ElevatedButton(
       onPressed: () {
-        globals.selectedIndex = 1;
-        Navigator.of(
-          //basaiclly clears the stack very useful especially for home page
-          context,
-          rootNavigator: true,
-        ).pushNamedAndRemoveUntil(
-          '/',
-          (route) => false,
-          arguments: 1,
-        );
+        context.beamToNamed('/profile');
       },
       style: ElevatedButton.styleFrom(
         backgroundColor: const Color.fromARGB(255, 167, 198, 131),

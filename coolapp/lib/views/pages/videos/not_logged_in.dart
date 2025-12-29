@@ -1,9 +1,9 @@
+import 'package:beamer/beamer.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:coolapp/globals.dart' as global;
 import 'package:widget_mask/widget_mask.dart';
 
 class NotLoggedIn extends StatelessWidget {
@@ -76,23 +76,12 @@ class NotLoggedIn extends StatelessWidget {
                         maxLines: 1,
                       ),
                     ),
-
                     SizedBox(height: 20),
                     Icon(Icons.lock, size: 150, color: Colors.white),
                     SizedBox(height: 20),
                     ElevatedButton(
                       onPressed: () {
-                        global.selectedIndex = 1;
-
-                        Navigator.of(
-                          //basaiclly clears the stack very useful especially for home page
-                          context,
-                          rootNavigator: true,
-                        ).pushNamedAndRemoveUntil(
-                          '/',
-                          (route) => false,
-                          arguments: 1,
-                        );
+                        context.beamToNamed('/profile');
                       },
                       style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
