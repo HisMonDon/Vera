@@ -21,20 +21,20 @@ class _KinematicsState extends State<Kinematics> {
   final List<Map<String, dynamic>> videosList = [
     {
       'title':
-          'Unit 1: 1D Motion Analysis', //1D MOTION ANALYSIS DONE 2025/09/11 VERSION 1.0
+          'Unit 1: 1D Motion Analysis', //1D MOTION ANALYSIS DONE 2025/09/11 VERSION 1.0 // updated 2025/12/30
       'description':
           'Basic kinematics, introduction to acceleration and velocity',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/1D%20Kinematics.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Unit%201%201D%20Kinematics.mp4',
     },
     {
       'title':
-          'Unit 2: 2D Motion Analysis Part 1', //DONE 2025/09/14 VERSION 1.0
+          'Unit 2: 2D Motion Analysis Part 1', //DONE 2025/09/14 VERSION 1.0 // updated 2025/12/30
       'description': 'Introduction to 2D kinematics with velocity',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%202D%20Part%201.mp4',
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/Unit%202%202D%20Kinematics.mp4',
     },
     {
       'title': '2D Motion Analysis Part 2', //DONE 2025/09/14 VERSION 1.0
