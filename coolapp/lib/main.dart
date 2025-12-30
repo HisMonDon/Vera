@@ -8,6 +8,7 @@ import 'package:media_kit/media_kit.dart';
 import 'dart:convert';
 import 'package:crypto/crypto.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 int dailyRandom(int max) {
   final now = DateTime.now();
@@ -27,6 +28,7 @@ void main() async {
   globals.isLight = prefs.getBool('isLightTheme') ?? false;
 
   await _initializeAuthState();
+  setPathUrlStrategy();
   runApp(MyApp());
 }
 
