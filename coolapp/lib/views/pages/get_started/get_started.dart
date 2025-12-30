@@ -390,8 +390,9 @@ class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
           backgroundColor: const Color.fromARGB(255, 5, 85, 58),
           bufferedColor: const Color.fromARGB(255, 5, 85, 58),
         ),
-        placeholder:
-            Image.asset('images_tutorial/display1.png', fit: BoxFit.cover),
+        placeholder: Image.asset(
+          'images_tutorial/vera_intro_thumbnail.png',
+        ),
         // placeholder: Container(
         //   color: Colors.grey,
         // ),
