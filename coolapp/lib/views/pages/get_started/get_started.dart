@@ -361,6 +361,8 @@ class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
   ChewieController? _chewieController;
   bool _isLoading = true;
   String? _errorMessage;
+  bool _hasVideoController = false;
+
   @override
   void initState() {
     super.initState();
@@ -372,16 +374,30 @@ class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
       _isLoading = true;
       _errorMessage = null;
     });
+
+    _chewieController?.dispose();
+    _chewieController = null;
+
+    if (_hasVideoController) {
+      await _videoPlayerController.dispose();
+      _hasVideoController = false;
+    }
+
     _videoPlayerController = VideoPlayerController.networkUrl(Uri.parse(
         'https://pub-56767059a1844d06818006869a91df08.r2.dev/Vera%20Introduction.mp4'));
+    _hasVideoController = true;
+
+    _videoPlayerController.addListener(() {
+      if (mounted) setState(() {});
+    });
+
     try {
       //'images_tutorial/display1.png',
-      await _videoPlayerController.initialize();
       _chewieController = ChewieController(
         videoPlayerController: _videoPlayerController,
         autoPlay: false,
         looping: false,
-        aspectRatio: _videoPlayerController.value.aspectRatio,
+        aspectRatio: 16 / 9,
         // allowedScreenSleep: false,
         playbackSpeeds: [0.5, 1.0, 1.5, 2.0, 2.5],
         materialProgressColors: ChewieProgressColors(
@@ -416,31 +432,49 @@ class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
 
   Widget _buildPlayer() {
     if (_isLoading) {
-      return AspectRatio(
+      return const AspectRatio(
         aspectRatio: 16 / 9,
-        child: Container(
+        child: ColoredBox(
           color: Colors.black,
-          child: const Center(child: CircularProgressIndicator()),
+          child: Center(child: CircularProgressIndicator()),
         ),
       );
     }
+
     if (_errorMessage != null) {
       return AspectRatio(
         aspectRatio: 16 / 9,
-        child: Container(
+        child: Container(color: Colors.black, child: _buildErrorDisplay()),
+      );
+    }
+
+    if (_chewieController == null) {
+      return const AspectRatio(
+        aspectRatio: 16 / 9,
+        child: ColoredBox(
           color: Colors.black,
-          child: _buildErrorDisplay(),
+          child: Center(child: CircularProgressIndicator()),
         ),
       );
     }
-    if (_chewieController != null &&
-        _chewieController!.videoPlayerController.value.isInitialized) {
-      return AspectRatio(
-        aspectRatio: _videoPlayerController.value.aspectRatio,
-        child: Chewie(controller: _chewieController!),
-      );
-    }
-    return const Center(child: CircularProgressIndicator());
+
+    final isInit = _videoPlayerController.value.isInitialized;
+    final aspect = isInit ? _videoPlayerController.value.aspectRatio : (16 / 9);
+
+    return AspectRatio(
+      aspectRatio: aspect,
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          Chewie(controller: _chewieController!),
+          if (!isInit)
+            Image.asset(
+              'images_tutorial/vera_intro_thumbnail.png',
+              fit: BoxFit.cover,
+            ),
+        ],
+      ),
+    );
   }
 
   Widget _buildErrorDisplay() {
@@ -472,7 +506,9 @@ class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
 
   @override
   void dispose() {
-    _videoPlayerController.dispose();
+    if (_hasVideoController) {
+      _videoPlayerController.dispose();
+    }
     _chewieController?.dispose();
     super.dispose();
   }
