@@ -14,13 +14,19 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://www.gstatic.com static.cloudflareinsights.com 'wasm-unsafe-eval' 'sha256-7GZIOy5WpD/HAIQSp5PbvFL1Hw5GsG5GSx8PELoXax8=' 'sha256-Bj0yWkhAijq4Ta6ClelBM32mq5ssUkEUYx+1f/yTKWk=' 'sha256-EvQi/wYWDsru+Z7rUjN0wrZG96D7wz4zAtlgotU4jzY='; object-src 'none'">
+  <meta http-equiv="Content-Security-Policy"
+        content="script-src 'self' https://www.gstatic.com static.cloudflareinsights.com 'wasm-unsafe-eval'
+        'sha256-7GZIOy5WpD/HAIQSp5PbvFL1Hw5GsG5GSx8PELoXax8='
+        'sha256-Bj0yWkhAijq4Ta6ClelBM32mq5ssUkEUYx+1f/yTKWk='
+        'sha256-EvQi/wYWDsru+Z7rUjN0wrZG96D7wz4zAtlgotU4jzY=';
+        object-src 'none'">
 
   <!--
     CHENYU LU 2025 COPYRIGHT
     For any questions please contact eric.luchenyu@gmail.com
   -->
   <base href="$FLUTTER_BASE_HREF">
+  <script src="path_fallback.js"></script>
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -39,11 +45,7 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <script>
-    window.flutterConfiguration = {
-      canvasKitBaseUrl: "https://www.gstatic.com/flutter-canvaskit/e7f43b679639554f4b237b008d3f57e5e39665b1/"
-    };
-  </script>
+  <script src="flutter_config.js"></script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
