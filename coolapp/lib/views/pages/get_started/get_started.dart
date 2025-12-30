@@ -375,6 +375,7 @@ class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
     _videoPlayerController = VideoPlayerController.networkUrl(Uri.parse(
         'https://pub-56767059a1844d06818006869a91df08.r2.dev/Vera%20Introduction.mp4'));
     try {
+      //'images_tutorial/display1.png',
       await _videoPlayerController.initialize();
       _chewieController = ChewieController(
         videoPlayerController: _videoPlayerController,
@@ -389,6 +390,8 @@ class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
           backgroundColor: const Color.fromARGB(255, 5, 85, 58),
           bufferedColor: const Color.fromARGB(255, 5, 85, 58),
         ),
+        placeholder:
+            Image.asset('images_tutorial/display1.png', fit: BoxFit.cover),
         // placeholder: Container(
         //   color: Colors.grey,
         // ),
