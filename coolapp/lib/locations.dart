@@ -6,27 +6,19 @@ class HomeLocation extends BeamLocation<BeamState> {
   HomeLocation([super.routeInformation]);
 
   @override
-  List<String> get pathPatterns => ['/:pageName'];
+  List<String> get pathPatterns => ['/', '/:pageName'];
 
   @override
   List<BeamPage> buildPages(BuildContext context, BeamState state) {
     final pageName = state.pathParameters['pageName'];
-    final initialPath =
-        (pageName == null || pageName.isEmpty) ? 'home' : pageName;
+    final current = (pageName == null || pageName.isEmpty) ? 'home' : pageName;
 
     return [
       BeamPage(
-        key: ValueKey(initialPath),
-        title: _titleForPage(initialPath),
-        child: WidgetTree(pageName: initialPath),
+        key: ValueKey(current),
+        title: 'Vera',
+        child: WidgetTree(pageName: current),
       ),
     ];
-  }
-
-  String _titleForPage(String pageName) {
-    switch (pageName) {
-      default:
-        return 'Vera';
-    }
   }
 }
