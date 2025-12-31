@@ -164,17 +164,39 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
                   ),
                 ),
                 const SizedBox(height: 20),
-                ElevatedButton.icon(
-                  onPressed: () {
-                    launchUrl(Uri.parse("https://www.chenyulu.dev"));
-                  },
-                  icon: const Icon(Icons.web),
-                  label: const Text("Visit My Website"),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 167, 198, 131),
-                    foregroundColor: const Color.fromARGB(255, 15, 48, 40),
+                Row(children: [
+                  ElevatedButton.icon(
+                    onPressed: () {
+                      launchUrl(Uri.parse("https://www.chenyulu.dev"));
+                    },
+                    icon: const Icon(Icons.web),
+                    label: const Text("Visit My Website"),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 167, 198, 131),
+                      foregroundColor: const Color.fromARGB(255, 15, 48, 40),
+                    ),
                   ),
-                ),
+                  SizedBox(width: 20),
+                  ElevatedButton.icon(
+                    onPressed: () {
+                      final uri = Uri(
+                        scheme: 'mailto',
+                        path: 'eric.luchenyu@gmail.com',
+                        queryParameters: {
+                          'subject': 'Vera Support',
+                          'body': 'Hi Vera team,',
+                        },
+                      );
+                      launchUrl(uri, mode: LaunchMode.externalApplication);
+                    },
+                    icon: const Icon(Icons.email_outlined),
+                    label: const Text("Email me"),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 167, 198, 131),
+                      foregroundColor: const Color.fromARGB(255, 15, 48, 40),
+                    ),
+                  ),
+                ]),
               ],
             ),
           ),
@@ -206,7 +228,7 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
         ),
         const SizedBox(height: 8),
         Text(
-          "Vera is a video platform made with Flutter and Dart dedicated to making learning physics accessible and easy for everyone. From high school IB curricula to advanced AP topics, our study paths break concepts into short, structured lessons with clear visuals, guided examples, and real past AP exam problems so that you understand physics completely.",
+          "Vera is a video platform made with Flutter and Dart dedicated to making learning physics accessible and easy for everyone. From high school IB curricula to advanced AP topics, our study paths break concepts into short, structured lessons with clear visuals, guided examples, and real past AP exam problems so that you understand physics completely. \n\n Plus, it’s 100% FREE TO USE, with UNLIMITED courses available anytime.",
           textAlign: TextAlign.center,
           style: GoogleFonts.mPlus1(
             fontSize: 20,
