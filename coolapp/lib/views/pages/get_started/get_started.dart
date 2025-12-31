@@ -383,17 +383,20 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
             ]),
         SizedBox(height: 30),
         ElevatedButton(
-          onPressed: () {
+          onPressed: () async {
+            // Set all global variables first
             globals.videoLink =
                 'https://pub-56767059a1844d06818006869a91df08.r2.dev/Unit%201%201D%20Kinematics.mp4';
-            Navigator.push(
+            globals.topicTitle = 'Kinematics';
+            globals.unitTitle = 'Unit 1: 1D Motion Analysis';
+
+            // Then navigate. The 'await' ensures this completes before moving on.
+            await Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (_) => VideoPlayerScreen(key: UniqueKey()),
               ),
             );
-            globals.topicTitle = 'Kinematics';
-            globals.unitTitle = 'Unit 1: 1D Motion Analysis';
           },
           style: ElevatedButton.styleFrom(
             backgroundColor: const Color.fromARGB(255, 167, 198, 131),
