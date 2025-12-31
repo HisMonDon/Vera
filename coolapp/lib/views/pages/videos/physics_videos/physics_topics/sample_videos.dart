@@ -35,7 +35,7 @@ class _SampleVideosState extends State<SampleVideos> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    globals.topicTitle = 'Kinematics';
+    globals.topicTitle = 'Sample Videos';
     //print("topic title: Momentum and collisions, unit title reset");
     return Scaffold(
       appBar: TimedAppBar(),
@@ -49,7 +49,7 @@ class _SampleVideosState extends State<SampleVideos> {
                 title: globals.topicTitle,
                 context: context,
                 description:
-                    "Sample video showcasing a regular lesson structure. Introduces the basic concepts of vectors, position, velocity, and acceleration.",
+                    "Sample videos showcasing a regular lesson structure. Introduces the basic concepts of vectors, position, velocity, and acceleration.",
                 topIcon: Icons.lightbulb,
               ),
               SizedBox(width: 2, height: 20),
