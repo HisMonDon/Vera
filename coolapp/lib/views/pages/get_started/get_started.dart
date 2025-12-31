@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:beamer/beamer.dart';
 import 'package:chewie/chewie.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/sample_videos.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
@@ -384,21 +385,10 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
         SizedBox(height: 30),
         ElevatedButton(
           onPressed: () {
-            // Set all global variables first
-            globals.videoLink =
-                'https://pub-56767059a1844d06818006869a91df08.r2.dev/Unit%201%201D%20Kinematics.mp4';
-            globals.topicTitle = 'Kinematics';
-            globals.unitTitle = 'Unit 1: 1D Motion Analysis';
-            globals.courseTitle = ''; // Explicitly clear the course title
-            globals.nextVideoTitle =
-                'last_one'; // This is a standalone sample video
-
-            // Then navigate.
             Navigator.push(
               context,
               MaterialPageRoute(
-                // Using a UniqueKey here forces the VideoPlayerScreen to have a new state every time.
-                builder: (_) => VideoPlayerScreen(key: UniqueKey()),
+                builder: (_) => SampleVideos(),
               ),
             );
           },
