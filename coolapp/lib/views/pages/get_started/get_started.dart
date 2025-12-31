@@ -467,10 +467,15 @@ class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
         fit: StackFit.expand,
         children: [
           Chewie(controller: _chewieController!),
-          if (!isInit)
-            Image.asset(
-              'images_tutorial/vera_intro_thumbnail.png',
-              fit: BoxFit.cover,
+          if (!isInit ||
+              (!_videoPlayerController.value.isPlaying &&
+                  _videoPlayerController.value.position == Duration.zero))
+            IgnorePointer(
+              ignoring: true,
+              child: Image.asset(
+                'images_tutorial/vera_intro_thumbnail.png',
+                fit: BoxFit.cover,
+              ),
             ),
         ],
       ),
