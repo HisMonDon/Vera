@@ -267,7 +267,7 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
     });
   }
 
-  final List<String> displayPaths = [
+  final List displayPaths = [
     'images_tutorial/display1.png',
     'images_tutorial/display2.png',
     'images_tutorial/display3.png',
@@ -383,17 +383,21 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
             ]),
         SizedBox(height: 30),
         ElevatedButton(
-          onPressed: () async {
+          onPressed: () {
             // Set all global variables first
             globals.videoLink =
                 'https://pub-56767059a1844d06818006869a91df08.r2.dev/Unit%201%201D%20Kinematics.mp4';
             globals.topicTitle = 'Kinematics';
             globals.unitTitle = 'Unit 1: 1D Motion Analysis';
+            globals.courseTitle = ''; // Explicitly clear the course title
+            globals.nextVideoTitle =
+                'last_one'; // This is a standalone sample video
 
-            // Then navigate. The 'await' ensures this completes before moving on.
-            await Navigator.push(
+            // Then navigate.
+            Navigator.push(
               context,
               MaterialPageRoute(
+                // Using a UniqueKey here forces the VideoPlayerScreen to have a new state every time.
                 builder: (_) => VideoPlayerScreen(key: UniqueKey()),
               ),
             );
