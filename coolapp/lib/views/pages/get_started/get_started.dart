@@ -178,13 +178,15 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
                   ),
                   SizedBox(width: 20),
                   ElevatedButton.icon(
-                    onPressed: () {
+                    onPressed: () async {
                       final uri = Uri(
                         scheme: 'mailto',
                         path: 'eric.luchenyu@gmail.com',
-                        queryParameters: {},
                       );
-                      launchUrl(uri, mode: LaunchMode.externalApplication);
+                      final ok = await launchUrl(uri);
+                      if (!ok) {
+                        print("error launching email?");
+                      }
                     },
                     icon: const Icon(Icons.email_outlined),
                     label: const Text("Email me"),
