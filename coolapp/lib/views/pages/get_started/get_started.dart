@@ -458,8 +458,11 @@ class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
       );
     }
 
-    final isInit = _videoPlayerController.value.isInitialized;
-    final aspect = isInit ? _videoPlayerController.value.aspectRatio : (16 / 9);
+    final v = _videoPlayerController.value;
+    final aspect = v.isInitialized ? v.aspectRatio : (16 / 9);
+
+    final showThumb = !v.isInitialized ||
+        (!v.isPlaying && v.position <= const Duration(milliseconds: 200));
 
     return AspectRatio(
       aspectRatio: aspect,
@@ -467,16 +470,43 @@ class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
         fit: StackFit.expand,
         children: [
           Chewie(controller: _chewieController!),
-          if (!isInit ||
-              (!_videoPlayerController.value.isPlaying &&
-                  _videoPlayerController.value.position == Duration.zero))
-            IgnorePointer(
-              ignoring: true,
+          if (showThumb) ...[
+            Positioned.fill(
               child: Image.asset(
                 'images_tutorial/vera_intro_thumbnail.png',
                 fit: BoxFit.cover,
               ),
             ),
+            Positioned.fill(
+              child: Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  onTap: () async {
+                    if (!_videoPlayerController.value.isInitialized) {
+                      await _videoPlayerController.initialize();
+                      if (mounted) setState(() {});
+                    }
+                    await _videoPlayerController.play();
+                  },
+                  child: Center(
+                    child: Container(
+                      width: 72,
+                      height: 72,
+                      decoration: BoxDecoration(
+                        color: Colors.black.withOpacity(0.45),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(
+                        Icons.play_arrow_rounded,
+                        size: 48,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
         ],
       ),
     );
