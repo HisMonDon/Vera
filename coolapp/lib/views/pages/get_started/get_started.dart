@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:beamer/beamer.dart';
 import 'package:chewie/chewie.dart';
+import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -185,6 +186,14 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
   Widget _buildWhatIsVeraSection(BuildContext context) {
     return Column(
       children: [
+        Row(
+          children: [
+            const Expanded(
+              child: Divider(),
+            ),
+          ],
+        ),
+        SizedBox(height: 20),
         Text(
           "What is Vera?",
           style: GoogleFonts.mPlus1(
@@ -279,8 +288,16 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
   Widget _buildIntroVideoSection(BuildContext context) {
     return Column(
       children: [
+        Row(
+          children: [
+            const Expanded(
+              child: Divider(),
+            ),
+          ],
+        ),
+        SizedBox(height: 20),
         Text(
-          "Intro to Vera",
+          "Introduction Video",
           style: GoogleFonts.mPlus1(
             fontSize: 36,
             fontWeight: FontWeight.bold,
@@ -302,25 +319,78 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
   }
 
   Widget _buildSignUpButton() {
-    return ElevatedButton(
-      onPressed: () {
-        Beamer.of(context, root: true).beamToNamed('/profile');
-      },
-      style: ElevatedButton.styleFrom(
-        backgroundColor: const Color.fromARGB(255, 167, 198, 131),
-        foregroundColor: const Color.fromARGB(255, 15, 48, 40),
-        padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(30),
+    return Column(
+      children: [
+        ElevatedButton(
+          onPressed: () {
+            Beamer.of(context, root: true).beamToNamed('/profile');
+          },
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color.fromARGB(255, 167, 198, 131),
+            foregroundColor: const Color.fromARGB(255, 15, 48, 40),
+            padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(30),
+            ),
+          ),
+          child: Text(
+            "Click Here to Sign Up Now",
+            style: GoogleFonts.montserrat(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
-      ),
-      child: Text(
-        "Click Here to Sign Up Now",
-        style: GoogleFonts.montserrat(
-          fontSize: 18,
-          fontWeight: FontWeight.bold,
+        SizedBox(height: 30),
+        Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              const Expanded(
+                child: Divider(),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15),
+                child: Text(
+                  'OR',
+                  style: GoogleFonts.mPlus1(),
+                ),
+              ),
+              const Expanded(
+                child: Divider(),
+              ),
+            ]),
+        SizedBox(height: 30),
+        ElevatedButton(
+          onPressed: () {
+            globals.videoLink =
+                'https://pub-56767059a1844d06818006869a91df08.r2.dev/Unit%201%201D%20Kinematics.mp4';
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => VideoPlayerScreen(key: UniqueKey()),
+              ),
+            );
+            globals.topicTitle = 'Kinematics';
+            globals.unitTitle = 'Unit 1: 1D Motion Analysis';
+          },
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color.fromARGB(255, 167, 198, 131),
+            foregroundColor: const Color.fromARGB(255, 15, 48, 40),
+            padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(30),
+            ),
+          ),
+          child: Text(
+            "Watch a Sample Video",
+            style: GoogleFonts.montserrat(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
-      ),
+      ],
     );
   }
 
@@ -463,7 +533,6 @@ class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
 
     final showThumb = !v.isInitialized ||
         (!v.isPlaying && v.position <= const Duration(milliseconds: 200));
-
     return AspectRatio(
       aspectRatio: aspect,
       child: Stack(
