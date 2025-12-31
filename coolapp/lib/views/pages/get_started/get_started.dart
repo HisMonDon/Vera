@@ -182,10 +182,7 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
                       final uri = Uri(
                         scheme: 'mailto',
                         path: 'eric.luchenyu@gmail.com',
-                        queryParameters: {
-                          'subject': 'Vera Support',
-                          'body': 'Hi Vera team,',
-                        },
+                        queryParameters: {},
                       );
                       launchUrl(uri, mode: LaunchMode.externalApplication);
                     },

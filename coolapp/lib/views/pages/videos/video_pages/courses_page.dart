@@ -257,20 +257,6 @@ class _CoursePageState extends State<CoursePage> {
       'videoPage': IbPhysicsSl(),
     },
     {
-      'title': 'Grade 11 Physics',
-      'imagePath': 'images/physics_11.jpg',
-      'description':
-          'Videos and tutorials for the Grade 11 Physics Ontario curriculum.',
-      'videoPage': Grade11Physics(),
-    },
-    {
-      'title': 'Grade 12 Physics',
-      'imagePath': 'images/physics_12.jpg',
-      'description':
-          'Videos and tutorials for the Grade 12 Physics Ontario curriculum.',
-      'videoPage': Grade12Physics(),
-    },
-    {
       'title': 'AP Physics 1',
       'imagePath': 'images/ap_courses.jpg',
       'description':
@@ -283,6 +269,20 @@ class _CoursePageState extends State<CoursePage> {
       'description':
           'Algebra-based physics covering fluid mechanics, thermodynamics, electricity, magnetism, optics, and quantum phenomena',
       'videoPage': ApPhysics2(),
+    },
+    {
+      'title': 'Grade 11 Physics',
+      'imagePath': 'images/physics_11.jpg',
+      'description':
+          'Videos and tutorials for the Grade 11 Physics Ontario curriculum.',
+      'videoPage': Grade11Physics(),
+    },
+    {
+      'title': 'Grade 12 Physics',
+      'imagePath': 'images/physics_12.jpg',
+      'description':
+          'Videos and tutorials for the Grade 12 Physics Ontario curriculum.',
+      'videoPage': Grade12Physics(),
     },
   ];
   @override
