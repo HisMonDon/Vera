@@ -1,2 +1,1 @@
-In Development
-2025 Copyright Chenyu Lu
+2026 Copyright Chenyu Lu
