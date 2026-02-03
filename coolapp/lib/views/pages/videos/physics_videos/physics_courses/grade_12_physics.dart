@@ -186,8 +186,13 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
       'videoPage': WorkAndEnergy(),
     },
     {
-      'title': 'Unit 4: Optics',
-      'description': 'Interference, diffraction, and polarization',
+      'title': 'Unit 4: Gravitational, Electric, and Magnetic Fields',
+      'description': 'Recognize quantitatively and qualitatively gravitational, electric, and magnetic fields.',
+      'videoPage': WorkAndEnergy(),
+    },
+    {
+      'title': 'Unit 5: Light',
+      'description': 'Analyze the properties of light in relation to diffraction and polarization',
       'videoPage': Optics(),
     },
   ];
