@@ -204,7 +204,13 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
       'videoPage': Harmonics(),
     },
     {
-      'title': 'Unit 7: Circuits',
+      'title': 'Unit 7: Harmonics and Waves',
+      'description': 'Vibrations and waves, including interactions and applications',
+      'videoPage':
+          Harmonics(), 
+    },
+    {
+      'title': 'Unit 8: Circuits',
       'description': 'Series and parallel combinations and power calculations',
       'videoPage':
           ElectricityAndMagnetism(), //redirect this to the thing inside electricity unit

@@ -25,7 +25,7 @@ class _WidgetTreeState extends State<WidgetTree> {
   Timer? _timer;
 
   final List<String> _pageKeys = [
-    'get-started',
+    'about',
     'profile',
     'home',
     'videos',
