@@ -1,8 +1,9 @@
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electrostatics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/rotational_motion.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
@@ -196,13 +197,19 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
       'videoPage': const Harmonics(),
     },
     {
-      'title': 'Topic 5: Electricity and Magnetism',
+      'title': 'Topic 5: Electricity',
       'description':
-          'Electric fields, heating effect, electric circuits, and magnetic effects of electric currents.',
-      'videoPage': const ElectricityAndMagnetism(),
+          'Electric fields, heating effect, and electric circuits.',
+      'videoPage': const Electricity(),
     },
     {
-      'title': 'Topic 6: Circular Motion and Gravitation',
+      'title': 'Topic 6: Magnetism',
+      'description':
+          'Magnetic fields and magnetic effects of electric currents.',
+      'videoPage': const Magnetism(),
+    },
+    {
+      'title': 'Topic 7: Circular Motion and Gravitation',
       'description':
           'Kinematics of uniform circular motion and gravitational fields.',
       'videoPage': const RotationalMotion(),

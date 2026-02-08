@@ -1,7 +1,8 @@
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_and_energy.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
@@ -210,10 +211,16 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
           Harmonics(), 
     },
     {
-      'title': 'Unit 8: Circuits',
-      'description': 'Series and parallel combinations and power calculations',
+      'title': 'Unit 8: Electricity',
+      'description': 'Electric circuits, series and parallel combinations and power calculations',
       'videoPage':
-          ElectricityAndMagnetism(), //redirect this to the thing inside electricity unit
+          Electricity(),
+    },
+    {
+      'title': 'Unit 9: Magnetism',
+      'description': 'Magnetic fields, magnetic flux, and electromagnetic induction',
+      'videoPage':
+          Magnetism(),
     },
   ];
   @override

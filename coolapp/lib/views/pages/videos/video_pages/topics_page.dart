@@ -1,11 +1,12 @@
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electrostatics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/fluids.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/other.dart';
@@ -279,11 +280,18 @@ class _TopicsPageState extends State<TopicsPage> {
       'videoPage': WorkAndEnergy(),
     },
     {
-      'title': 'Electricity and Magnetism',
+      'title': 'Electricity and Circuits',
       'imagePath': 'images/electricity.jpg',
       'description':
-          'Principles of electric and magnetic phenomena, right hand rule, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits. Extend this understanding to magnetic fields, electromagnetic induction, and the relationship between electricity and magnetism',
-      'videoPage': ElectricityAndMagnetism(),
+          'Principles of electric phenomena, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits.',
+      'videoPage': Electricity(),
+    },
+    {
+      'title': 'Magnetism',
+      'imagePath': 'images/magnetism.jpg',
+      'description':
+          'Principles of magnetic phenomena, exploring concepts such as magnetic fields, forces on moving charges, electromagnetic induction, and applications of magnetism.',
+      'videoPage': Magnetism(),
     },
     {
       'title': 'Momentum and Collisions',
@@ -401,11 +409,11 @@ class _TopicsPageState extends State<TopicsPage> {
                 'videoPage': WorkAndEnergy(),
               },
               {
-                'title': 'Circuits and Magnetism',
+                'title': 'Circuits and Electricity',
                 'imagePath': 'images/electricity.jpg',
                 'description':
-                    'Principles of electric and magnetic phenomena, right hand rule, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits. ',
-                'videoPage': ElectricityAndMagnetism(),
+                    'Principles of electric phenomena, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits. ',
+                'videoPage': Electricity(),
               },
               {
                 'title': 'Momentum and Collisions',
@@ -413,6 +421,13 @@ class _TopicsPageState extends State<TopicsPage> {
                 'description':
                     'Momentum, elastic and non-elastic collisions, and impulse',
                 'videoPage': MomentumAndCollisions(),
+              },
+              {
+                'title': 'Magnetism',
+                'imagePath': 'images/magnetism.jpg',
+                'description':
+                    'Principles of magnetic phenomena, exploring concepts such as magnetic fields, forces on moving charges, electromagnetic induction, and applications of magnetism.',
+                'videoPage': Magnetism(),
               },
               {
                 'title': 'Optics',

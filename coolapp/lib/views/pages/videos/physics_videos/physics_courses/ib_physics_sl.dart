@@ -1,8 +1,9 @@
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_and_energy.dart';
@@ -219,12 +220,17 @@ class _IbPhysicsSlState extends State<IbPhysicsSl> {
       'videoPage': const ThermalPhysics(),
       'videoLink': 'placeholder'
     },
-    {
-      'title': 'Unit 8: Electricity and Magnetism',
+        {
+      'title': 'Topic 8: Electricity',
       'description':
-          'Electric circuits, magnetic fields, and electromagnetic induction.',
-      'videoPage': const ElectricityAndMagnetism(),
-      'videoLink': 'placeholder'
+          'Electric fields, heating effect, and electric circuits.',
+      'videoPage': const Electricity(),
+    },
+    {
+      'title': 'Topic 9: Magnetism',
+      'description':
+          'Magnetic fields and magnetic effects of electric currents.',
+      'videoPage': const Magnetism(),
     },
   ];
   @override

@@ -1,6 +1,7 @@
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electrostatics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/fluids.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
@@ -181,19 +182,25 @@ class _ApPhysics2State extends State<ApPhysics2> {
       'videoPage': const ThermalPhysics(),
     },
     {
-      'title': 'Unit 3: Electric Circuits and Magnetism',
+      'title': 'Unit 3: Electricity',
       'description':
-          'Electric circuits, capcitor behaviour, Kirchhoff\'s laws, and magnetic flux.',
-      'videoPage': const ElectricityAndMagnetism(),
+          'Electric circuits, capacitor behaviour, and Kirchhoff\'s laws.',
+      'videoPage': const Electricity(),
     },
     {
-      'title': 'Unit 4: Electrostatics',
+      'title': 'Unit 4: Magnetism',
+      'description':
+          'Magnetic fields, magnetic flux, and electromagnetic induction.',
+      'videoPage': const Magnetism(),
+    },
+    {
+      'title': 'Unit 5: Electrostatics',
       'description':
           'Electric charge, fields, Coulomb\'s Law, and electric potential.',
       'videoPage': const Electrostatics(),
     },
     {
-      'title': 'Unit 5: Optics',
+      'title': 'Unit 6: Optics',
       'description':
           'Geometric and physical optics, including reflection, refraction, lenses, and diffraction.',
       'videoPage': const Optics(),
