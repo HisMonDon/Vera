@@ -2,6 +2,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamic
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity_and_magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_and_energy.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
@@ -189,16 +190,21 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
     {
       'title': 'Unit 4: Energy and Work',
       'description':
-          'Work-energy theorem and conservation of Energy (Very important unit)',
+          'Work-energy theorem and conservation of Energy',
       'videoPage': WorkAndEnergy(),
     },
     {
-      'title': 'Unit 5: Harmonics',
-      'description': 'Pendulum dynamics, waves and sounds',
+      'title': 'Unit 5: Thermal Energy',
+      'description': 'States of matter, behavior of different types of matter.',
+      'videoPage': ThermalPhysics(),
+    },
+    {
+      'title': 'Unit 6: Nuclear Energy',
+      'description': 'Iotopse, decay, and properties of fission and fusion.',
       'videoPage': Harmonics(),
     },
     {
-      'title': 'Unit 6: Electricity',
+      'title': 'Unit 7: Circuits',
       'description': 'Series and parallel combinations and power calculations',
       'videoPage':
           ElectricityAndMagnetism(), //redirect this to the thing inside electricity unit
