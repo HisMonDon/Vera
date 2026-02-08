@@ -209,6 +209,12 @@ class _ApPhysics1State extends State<ApPhysics1> {
           'Simple harmonic motion, pendulums, and mass-spring systems.',
       'videoPage': const Harmonics(),
     },
+    {
+      'title': 'Unit 7: Fluids',
+      'description':
+          'Properties of fluids, buoyancy, pressure, and fluid dynamics.',
+      'videoPage': const Fluids(),
+    },
   ];
   @override
   Widget build(BuildContext context) {
