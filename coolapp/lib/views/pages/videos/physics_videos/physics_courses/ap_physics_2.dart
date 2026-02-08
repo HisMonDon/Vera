@@ -1,6 +1,7 @@
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electrostatics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/fluids.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/light.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
@@ -204,6 +205,12 @@ class _ApPhysics2State extends State<ApPhysics2> {
       'description':
           'Geometric and physical optics, including reflection, refraction, lenses, and diffraction.',
       'videoPage': const Optics(),
+    },
+    {
+      'title': 'Unit 7: Light',
+      'description':
+          'The study of light as electromagnetic radiation, its wave properties, diffraction, polarization, and interference patterns',
+      'videoPage': const Light(),
     },
   ];
   @override

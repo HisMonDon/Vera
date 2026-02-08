@@ -1,6 +1,8 @@
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electrostatics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/light.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_and_energy.dart';
@@ -200,13 +202,14 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
     {
       'title': 'Unit 6: Gravitational, Electric, and Magnetic Fields',
       'description': 'Recognize quantitatively and qualitatively gravitational, electric, and magnetic fields.',
-      'videoPage': WorkAndEnergy(),
+      'videoPage': Electrostatics(),
     },
     {
       'title': 'Unit 7: Light',
       'description': 'Analyze the properties of light in relation to diffraction and polarization',
-      'videoPage': Optics(),
+      'videoPage': Light(),
     },
+    //later add Modern Physics unit
   ];
   @override
   Widget build(BuildContext context) {
