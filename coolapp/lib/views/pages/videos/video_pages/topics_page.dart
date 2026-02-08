@@ -305,7 +305,7 @@ class _TopicsPageState extends State<TopicsPage> {
       'title': 'Optics',
       'imagePath': 'images/optics.png',
       'description':
-          'Mirror and lens equations, analyze optical instruments, understand diffraction patterns and interference phenomena. Calculate critical angles for total internal reflection and solve problems involving polarization.',
+          'Mirror and lens equations, analyze optical instruments, understand diffraction patterns and interference phenomena.',
       'videoPage': Optics(),
     },
     {
