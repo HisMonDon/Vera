@@ -6,20 +6,20 @@ import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/topic_widgets.dart';
 
-class Optics extends StatefulWidget {
-  const Optics({super.key});
+class Light extends StatefulWidget {
+  const Light({super.key});
 
   @override
-  State<Optics> createState() => _OpticsState();
+  State<Light> createState() => _LightState();
 }
 
-class _OpticsState extends State<Optics> {
+class _LightState extends State<Light> {
   double _width = 400;
   double _height = 200;
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Introduction to Optics',
+      'title': 'Unit 1: Introduction to Light',
       'description':
           'Light as electromagnetic waves, properties of light, and the electromagnetic spectrum',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -27,26 +27,26 @@ class _OpticsState extends State<Optics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%201%20Introducution%20to%20Light.mp4', //completed 12/25/2025 merry christmas!
     },
     {
-      'title': 'Unit 2: Lenses Part 1',
+      'title': 'Unit 2: Total Internal Refraction',
       'description':
-          'Law of reflection, introduction to convex and concave lenses, real and virtual images.',
+          "Snell's law, Critical angle, introduction to total internal refraction and it's applications.",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%202%20Lenses%20Part%201.mp4', //completed 12/25/2025
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%204%20Total%20Internal%20Reflection.mp4', //completed 12/25/2025
     },
     {
-      'title': 'Unit 3: Lenses Part 2',
+      'title': "Unit 3: Young's Double Slit Experiment",
       'description':
-          'Relationship between height, magnification, and distance in convex and concave lenses.',
+          'Formulae and causes for the interference of light through a double slit, introduction to wave-particle duality.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%203%20Lenses%20Part%202.mp4', //completed 12/25/2025
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%205%20Double%20Slit%20Experiment.mp4', //completed 12/25/2025
     },
   ];
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    globals.topicTitle = 'Optics';
+    globals.topicTitle = 'Light';
     return Scaffold(
       appBar: TimedAppBar(),
       body: SingleChildScrollView(
@@ -59,7 +59,7 @@ class _OpticsState extends State<Optics> {
                 title: globals.topicTitle,
                 context: context,
                 description:
-                    'The study of light behavior including reflection, refraction, diffraction, and the formation of images through various optical systems',
+                    'The study of light as electromagnetic radiation, its wave properties, diffraction, polarization, and interference patterns',
                 topIcon: Icons.wb_sunny,
               ),
               SizedBox(width: 2, height: 20),

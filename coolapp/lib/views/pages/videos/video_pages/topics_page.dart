@@ -6,6 +6,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/fluids.
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/light.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
@@ -308,6 +309,13 @@ class _TopicsPageState extends State<TopicsPage> {
       'videoPage': Optics(),
     },
     {
+      'title': 'Light',
+      'imagePath': 'images/light.png',
+      'description':
+          'The study of light as electromagnetic radiation, its wave properties, diffraction, polarization, and interference patterns',
+      'videoPage': Light(),
+    },
+    {
       'title': 'Fluids',
       'imagePath': 'images/fluids.png',
       'description':
@@ -422,6 +430,7 @@ class _TopicsPageState extends State<TopicsPage> {
                     'Momentum, elastic and non-elastic collisions, and impulse',
                 'videoPage': MomentumAndCollisions(),
               },
+              
               {
                 'title': 'Magnetism',
                 'imagePath': 'images/magnetism.jpg',
@@ -433,8 +442,15 @@ class _TopicsPageState extends State<TopicsPage> {
                 'title': 'Optics',
                 'imagePath': 'images/optics.png',
                 'description':
-                    'Mirror and lens equations, analyze optical instruments, understand diffraction patterns and interference phenomena. Calculate critical angles for total internal reflection and solve problems involving polarization.',
+                    'Mirror and lens equations, analyze optical instruments. Calculate critical angles for total internal reflection and solve problems involving polarization.',
                 'videoPage': Optics(),
+              },
+              {
+                'title': 'Light',
+                'imagePath': 'images/light.png',
+                'description':
+                    'The study of light as electromagnetic radiation, its wave properties, diffraction, polarization, and interference patterns',
+                'videoPage': Light(),
               },
               {
                 'title': 'Fluids',
