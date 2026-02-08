@@ -207,7 +207,7 @@ class _IbPhysicsSlState extends State<IbPhysicsSl> {
       'videoLink': 'placeholder'
     },
     {
-      'title': 'Unit 6: Harmonics and Waves',
+      'title': 'Unit 6: Waves and Oscillations',
       'description':
           'Oscillations, waves, and the principles of simple harmonic motion.',
       'videoPage': const Harmonics(),
