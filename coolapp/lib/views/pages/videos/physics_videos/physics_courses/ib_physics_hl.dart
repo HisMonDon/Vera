@@ -3,6 +3,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electro
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/light.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/magnetism.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/rotational_motion.dart';
@@ -215,10 +216,10 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
       'videoPage': const RotationalMotion(),
     },
     {
-      'title': 'Topic 9: Wave Phenomena (Optics)',
+      'title': 'Topic 9: Wave Phenomena and Light',
       'description':
           'Simple harmonic motion, single-slit diffraction, interference, and resolution.',
-      'videoPage': const Optics(),
+      'videoPage': const Light(),
     },
     {
       'title': 'Topic 10: Fields (Electrostatics)',
@@ -226,6 +227,8 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
           'Describing fields, gravitational fields, electric fields, and magnetic fields.',
       'videoPage': const Electrostatics(),
     },
+    //add nuclear and quantum physics later
+     
   ];
   @override
   Widget build(BuildContext context) {
