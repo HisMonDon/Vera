@@ -114,7 +114,7 @@ class _CoursePageState extends State<CoursePage> {
     int index,
     Widget videoPage,
   ) {
-    if (!globals.isLoggedIn) {
+    if (!globals.isLoggedIn && kIsWeb) {
       return NotLoggedIn(); //keep in mind that this js does the message in every single button
     }
     bool isHovered = hoveredStates[index] ?? false;
@@ -288,7 +288,7 @@ class _CoursePageState extends State<CoursePage> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    if (!globals.isLoggedIn) {
+    if (!globals.isLoggedIn && kIsWeb) {
       return NotLoggedIn();
     }
     return Scaffold(

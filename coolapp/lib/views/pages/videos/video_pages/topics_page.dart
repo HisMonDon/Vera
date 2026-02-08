@@ -123,7 +123,7 @@ class _TopicsPageState extends State<TopicsPage> {
     int index,
     Widget videoPage,
   ) {
-    if (!globals.isLoggedIn) {
+    if (!globals.isLoggedIn && kIsWeb) {
       return NotLoggedIn(); //keep in mind that this js does the message in every single button
     }
     bool isHovered = hoveredStates[index] ?? false;
@@ -362,7 +362,7 @@ class _TopicsPageState extends State<TopicsPage> {
     // add an immediate check in build method
     String _currentSortOption = sortBy[0];
     globals.courseTitle = '';
-    if (!globals.isLoggedIn) {
+    if (!globals.isLoggedIn && kIsWeb) {
       return NotLoggedIn();
     }
     void _sortCourseList(String sortOption) {
