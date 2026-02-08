@@ -1,4 +1,6 @@
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_and_energy.dart';
@@ -170,28 +172,38 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Kinematics & Dynamics Review',
-      'description': 'In-depth review of motion and forces',
+      'title': 'Unit 1: Review',
+      'description': 'Review of fundamental physics concepts',
       'videoPage': IntroToPhysics(),
     },
     {
-      'title': 'Unit 2: Momentum',
+      'title': 'Unit 2: Kinematics',
+      'description': 'Analysis of motion, velocity, and acceleration',
+      'videoPage': Kinematics(),
+    },
+    {
+      'title': 'Unit 3: Dynamics',
+      'description': 'Forces, Newton\'s Laws, and their applications',
+      'videoPage': Dynamics(),
+    },
+    {
+      'title': 'Unit 4: Momentum',
       'description':
           'Momentum, elastic and non-elastic collisions, and impulse',
       'videoPage': MomentumAndCollisions(),
     },
     {
-      'title': 'Unit 3: Energy',
+      'title': 'Unit 5: Energy',
       'description': 'Potential and Kinetic Energy',
       'videoPage': WorkAndEnergy(),
     },
     {
-      'title': 'Unit 4: Gravitational, Electric, and Magnetic Fields',
+      'title': 'Unit 6: Gravitational, Electric, and Magnetic Fields',
       'description': 'Recognize quantitatively and qualitatively gravitational, electric, and magnetic fields.',
       'videoPage': WorkAndEnergy(),
     },
     {
-      'title': 'Unit 5: Light',
+      'title': 'Unit 7: Light',
       'description': 'Analyze the properties of light in relation to diffraction and polarization',
       'videoPage': Optics(),
     },
