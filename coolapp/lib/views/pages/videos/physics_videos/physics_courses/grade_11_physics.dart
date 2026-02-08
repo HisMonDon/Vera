@@ -201,7 +201,7 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
     },
     {
       'title': 'Unit 6: Nuclear Energy', //later change to modern physics unit
-      'description': 'Iotopse, decay, and properties of fission and fusion.',
+      'description': 'Isotopes, decay, and properties of fission and fusion.',
       'videoPage': Harmonics(),
     },
     {

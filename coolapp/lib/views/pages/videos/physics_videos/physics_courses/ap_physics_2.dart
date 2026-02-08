@@ -212,6 +212,7 @@ class _ApPhysics2State extends State<ApPhysics2> {
           'The study of light as electromagnetic radiation, its wave properties, diffraction, polarization, and interference patterns',
       'videoPage': const Light(),
     },
+     // add nuclear and modern physics units later
   ];
   @override
   Widget build(BuildContext context) {
