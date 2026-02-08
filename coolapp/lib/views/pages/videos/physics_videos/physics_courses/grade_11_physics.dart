@@ -189,7 +189,7 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
       'videoPage': Dynamics(), //change to new physics topic
     },
     {
-      'title': 'Unit 4: Energy and Work',
+      'title': 'Unit 4: Energy and Society',
       'description':
           'Work-energy theorem and conservation of Energy',
       'videoPage': WorkAndEnergy(),
@@ -200,12 +200,12 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
       'videoPage': ThermalPhysics(),
     },
     {
-      'title': 'Unit 6: Nuclear Energy',
+      'title': 'Unit 6: Nuclear Energy', //later change to modern physics unit
       'description': 'Iotopse, decay, and properties of fission and fusion.',
       'videoPage': Harmonics(),
     },
     {
-      'title': 'Unit 7: Harmonics and Waves',
+      'title': 'Unit 7: Waves and Sound',
       'description': 'Vibrations and waves, including interactions and applications',
       'videoPage':
           Harmonics(), 
@@ -218,7 +218,7 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
     },
     {
       'title': 'Unit 9: Magnetism',
-      'description': 'Magnetic fields, magnetic flux, and electromagnetic induction',
+      'description': 'Magnetic fields, right hand rule, application of magnetism concepts to real world phenomena.',
       'videoPage':
           Magnetism(),
     },
