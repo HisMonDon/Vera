@@ -44,19 +44,26 @@ class _ModernState extends State<Modern> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/modern_physics/Unit%203%20The%20Photoelectric%20Effect.mp4', //Completed 2026/2/10
     },
     {
-        'title': 'Unit 4: Atomic Structure',
+        'title': 'Unit 4: Matter as Waves and Atomic Structure',
       'description':
-          "Bohr model, energy levels, and spectral lines",
+          "Introduction to how matter can also behave as waves, atomic models, and quantum numbers",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/modern/atomic_structure.mp4', //Completed 2026/2/10
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/modern_physics/Unit%204%20Wave-Particle%20Duality.mp4', //Completed 2026/2/10
     },
     {
-        'title': 'Unit 5: Nuclear Physics',
-        'description': "Radioactivity, half-life, and nuclear reactions",
+        'title': 'Unit 5: Nuclear Decay',
+        'description': "Radioactivity, half-life, and decay processes",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/modern/nuclear_physics.mp4', //Completed 2025/12/17
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/modern_physics/Unit%205%20Types%20of%20Decay.mp4', //Completed 2026/2/10
+    },
+    {
+        'title': 'Unit 6: Fission and Fusion',
+        'description': "Nuclear reactions, fission, fusion, and their applications",
+      'videoPage': VideoPlayerScreen(key: UniqueKey()),
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/modern_physics/Unit%206%20Fission%20and%20Fusion%20Reactions.mp4', //Completed 2026/2/10
     },
   ];
   @override
