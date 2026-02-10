@@ -1,5 +1,4 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
@@ -15,8 +14,6 @@ class Modern extends StatefulWidget {
 }
 
 class _ModernState extends State<Modern> {
-  double _width = 400;
-  double _height = 200;
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {

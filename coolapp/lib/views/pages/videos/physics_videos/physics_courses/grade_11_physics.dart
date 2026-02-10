@@ -200,24 +200,19 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
       'videoPage': ThermalPhysics(),
     },
     {
-      'title': 'Unit 6: Nuclear Energy', //later change to modern physics unit
-      'description': 'Isotopes, decay, and properties of fission and fusion.',
-      'videoPage': Harmonics(),
-    },
-    {
-      'title': 'Unit 7: Waves and Sound',
+      'title': 'Unit 6: Waves and Sound',
       'description': 'Vibrations and waves, including interactions and applications',
       'videoPage':
           Harmonics(), 
     },
     {
-      'title': 'Unit 8: Electricity',
+      'title': 'Unit 7: Electricity',
       'description': 'Electric circuits, series and parallel combinations and power calculations',
       'videoPage':
           Electricity(),
     },
     {
-      'title': 'Unit 9: Magnetism',
+      'title': 'Unit 8: Magnetism',
       'description': 'Magnetic fields, right hand rule, application of magnetism concepts to real world phenomena.',
       'videoPage':
           Magnetism(),

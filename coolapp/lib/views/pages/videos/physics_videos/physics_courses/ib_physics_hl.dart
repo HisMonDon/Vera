@@ -5,6 +5,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_t
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/light.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/modern.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/rotational_motion.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
@@ -226,6 +227,12 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
       'description':
           'Describing fields, gravitational fields, electric fields, and magnetic fields.',
       'videoPage': const Electrostatics(),
+    },
+    {
+      'title': 'Unit 11: Nuclear and Modern Physics',
+      'description':
+          'Introduction to modern physics concepts including special relativity, quantum mechanics, atomic structure, and nuclear physics.',
+      'videoPage': Modern(),
     },
     //add nuclear and quantum physics later
      /*A typical full IB Physics HL order (based on the IB themes plus HL add-ons) is closer to:

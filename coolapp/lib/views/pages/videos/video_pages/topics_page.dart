@@ -8,6 +8,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_t
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/light.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/modern.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/other.dart';
@@ -344,6 +345,13 @@ class _TopicsPageState extends State<TopicsPage> {
       'videoPage': RotationalMotion(),
     },
     {
+      'title': 'Modern Physics and Quantum Mechanics',
+      'imagePath': 'images/modern_physics.jpg',
+      'description':
+          'Principles of modern physics, including special relativity, quantum mechanics, atomic structure, and nuclear physics. Understand wave-particle duality, the uncertainty principle, and applications of quantum theory in technology and research.',
+      'videoPage': Modern(),
+    },
+    {
       'title': 'Thermal Physics',
       'imagePath': 'images/thermal_physics.jpg',
       'description':
@@ -486,6 +494,13 @@ class _TopicsPageState extends State<TopicsPage> {
                 'description':
                     'Study of heat, temperature, and thermodynamic laws. Calculate heat capacity, analyze phase changes, understand entropy, and solve problems involving thermodynamic cycles and efficiency.',
                 'videoPage': ThermalPhysics(),
+              },
+              {
+                'title': 'Modern Physics and Quantum Mechanics',
+                'imagePath': 'images/modern_physics.jpg',
+                'description':
+                    'Principles of modern physics, including special relativity, quantum mechanics, atomic structure, and nuclear physics. Understand wave-particle duality, the uncertainty principle, and applications of quantum theory in technology and research.',
+                'videoPage': Modern(),
               },
               {
                 'title': 'Other Physics Topics',

@@ -3,6 +3,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electro
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/light.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/modern.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_and_energy.dart';
@@ -209,7 +210,12 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
       'description': 'Analyze the properties of light in relation to diffraction and polarization',
       'videoPage': Light(),
     },
-    //later add Modern Physics unit
+    {
+      'title': 'Unit 8: Nuclear and Modern Physics',
+      'description':
+          'Introduction to modern physics concepts including special relativity, quantum mechanics, atomic structure, and nuclear physics.',
+      'videoPage': Modern(),
+    },
   ];
   @override
   Widget build(BuildContext context) {

@@ -3,6 +3,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electro
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/fluids.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/light.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/modern.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
@@ -212,7 +213,12 @@ class _ApPhysics2State extends State<ApPhysics2> {
           'The study of light as electromagnetic radiation, its wave properties, diffraction, polarization, and interference patterns',
       'videoPage': const Light(),
     },
-     // add nuclear and modern physics units later
+    {
+      'title': 'Unit 8: Nuclear and Modern Physics',
+      'description':
+          'Introduction to modern physics concepts including special relativity, quantum mechanics, atomic structure, and nuclear physics.',
+      'videoPage': const Modern(),
+    },
   ];
   @override
   Widget build(BuildContext context) {
