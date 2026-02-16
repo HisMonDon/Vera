@@ -4,6 +4,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmoni
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/magnetism.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/modern.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_and_energy.dart';
@@ -231,6 +232,12 @@ class _IbPhysicsSlState extends State<IbPhysicsSl> {
       'description':
           'Magnetic fields and magnetic effects of electric currents.',
       'videoPage': const Magnetism(),
+    },
+     {
+      'title': 'Topic 10: Modern Physics',
+      'description':
+          'Quantum mechanics, nuclear physics, and relativity.',
+      'videoPage': const Modern(),
     },
   ];
   @override
