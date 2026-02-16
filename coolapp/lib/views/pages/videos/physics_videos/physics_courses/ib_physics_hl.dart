@@ -217,23 +217,24 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
       'videoPage': const RotationalMotion(),
     },
     {
-      'title': 'Topic 9: Wave Phenomena and Light',
+      'title': 'Topic 8: Wave Phenomena and Light',
       'description':
           'Simple harmonic motion, single-slit diffraction, interference, and resolution.',
       'videoPage': const Light(),
     },
     {
-      'title': 'Topic 10: Fields (Electrostatics)',
+      'title': 'Topic 9: Fields (Electrostatics)',
       'description':
           'Describing fields, gravitational fields, electric fields, and magnetic fields.',
       'videoPage': const Electrostatics(),
     },
     {
-      'title': 'Unit 11: Nuclear and Modern Physics',
+      'title': 'Topic 10: Nuclear and Modern Physics',
       'description':
           'Introduction to modern physics concepts including special relativity, quantum mechanics, atomic structure, and nuclear physics.',
-      'videoPage': Modern(),
+      'videoPage': const Modern(),
     },
+  ];
     //add nuclear and quantum physics later
      /*A typical full IB Physics HL order (based on the IB themes plus HL add-ons) is closer to:
 

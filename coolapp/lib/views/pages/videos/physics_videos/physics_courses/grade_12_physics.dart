@@ -175,43 +175,43 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Review',
+      'title': 'Topic 1: Review',
       'description': 'Review of fundamental physics concepts',
       'videoPage': IntroToPhysics(),
     },
     {
-      'title': 'Unit 2: Kinematics',
+      'title': 'Topic 2: Kinematics',
       'description': 'Analysis of motion, velocity, and acceleration',
       'videoPage': Kinematics(),
     },
     {
-      'title': 'Unit 3: Dynamics',
+      'title': 'Topic 3: Dynamics',
       'description': 'Forces, Newton\'s Laws, and their applications',
       'videoPage': Dynamics(),
     },
     {
-      'title': 'Unit 4: Momentum',
+      'title': 'Topic 4: Momentum',
       'description':
           'Momentum, elastic and non-elastic collisions, and impulse',
       'videoPage': MomentumAndCollisions(),
     },
     {
-      'title': 'Unit 5: Energy',
+      'title': 'Topic 5: Energy',
       'description': 'Potential and Kinetic Energy',
       'videoPage': WorkAndEnergy(),
     },
     {
-      'title': 'Unit 6: Gravitational, Electric, and Magnetic Fields',
+      'title': 'Topic 6: Gravitational, Electric, and Magnetic Fields',
       'description': 'Recognize quantitatively and qualitatively gravitational, electric, and magnetic fields.',
       'videoPage': Electrostatics(),
     },
     {
-      'title': 'Unit 7: Light',
+      'title': 'Topic 7: Light',
       'description': 'Analyze the properties of light in relation to diffraction and polarization',
       'videoPage': Light(),
     },
     {
-      'title': 'Unit 8: Nuclear and Modern Physics',
+      'title': 'Topic 8: Nuclear and Modern Physics',
       'description':
           'Introduction to modern physics concepts including special relativity, quantum mechanics, atomic structure, and nuclear physics.',
       'videoPage': Modern(),

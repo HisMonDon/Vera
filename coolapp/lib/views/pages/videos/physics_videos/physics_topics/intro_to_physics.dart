@@ -23,7 +23,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
   final List<Map<String, dynamic>> videosList = [
     {
       'curriculumKey': 'vectors_scalars',
-      'title': 'Unit 1: Vectors and Scalars',
+      'title': 'Vectors and Scalars',
       'description': 'Definition and examples of vectors and scalars',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
@@ -31,7 +31,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
     },
     {
       'curriculumKey': 'error_analysis',
-      'title': 'Unit 2: Error Analysis and Measurement',
+      'title': 'Error Analysis and Measurement',
       'description':
           'Tools and techniques for measurement, error analysis and uncertainty in measurements',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),

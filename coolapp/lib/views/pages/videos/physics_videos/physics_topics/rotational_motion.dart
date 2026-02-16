@@ -21,7 +21,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
   final List<Map<String, dynamic>> videosList = [
     {
       'curriculumKey': 'rotation_intro',
-      'title': 'Unit 1: Introduction to Rotational Motion',
+      'title': 'Introduction to Rotational Motion',
       'description':
           'Basic concepts of circular motion, angular displacement, and angular velocity',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -30,7 +30,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
     },
     {
       'curriculumKey': 'rotation_kinematics',
-      'title': 'Unit 2: Rotational Kinematics',
+      'title': 'Rotational Kinematics',
       'description':
           'Angular position, velocity, and acceleration relationships in rotational motion',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -39,7 +39,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
     },
     {
       'curriculumKey': 'torque_equilibrium',
-      'title': 'Unit 3: Torque and Rotational Equilibrium',
+      'title': 'Torque and Rotational Equilibrium',
       'description':
           'Introduction and leeson on how torque causes rotational accceleration and balanced torque systems.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -48,7 +48,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
     },
     {
       'curriculumKey': 'torque_ap_example',
-      'title': 'Unit 4: Torque and Rotational Forces Example',
+      'title': 'Torque and Rotational Forces Example',
       'description':
           'Past AP Exam FRQ question analyzing the calculations of torque in a real world example.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -57,7 +57,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
     },
     {
       'curriculumKey': 'moment_inertia',
-      'title': 'Unit 5: Moment of Inertia',
+      'title': 'Moment of Inertia',
       'description':
           'Understanding rotational mass, calculating moment of inertia for different objects',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),

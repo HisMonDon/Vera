@@ -21,7 +21,7 @@ class _OpticsState extends State<Optics> {
   final List<Map<String, dynamic>> videosList = [
     {
       'curriculumKey': 'optics_intro',
-      'title': 'Unit 1: Introduction to Optics',
+      'title': 'Introduction to Optics',
       'description':
           'Light as electromagnetic waves, properties of light, and the electromagnetic spectrum',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -30,7 +30,7 @@ class _OpticsState extends State<Optics> {
     },
     {
       'curriculumKey': 'lenses_part1',
-      'title': 'Unit 2: Lenses Part 1',
+      'title': 'Lenses Part 1',
       'description':
           'Law of reflection, introduction to convex and concave lenses, real and virtual images.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -39,7 +39,7 @@ class _OpticsState extends State<Optics> {
     },
     {
       'curriculumKey': 'lenses_part2',
-      'title': 'Unit 3: Lenses Part 2',
+      'title': 'Lenses Part 2',
       'description':
           'Relationship between height, magnification, and distance in convex and concave lenses.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),

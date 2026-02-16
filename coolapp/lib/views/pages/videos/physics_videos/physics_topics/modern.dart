@@ -17,7 +17,7 @@ class _ModernState extends State<Modern> {
   final List<Map<String, dynamic>> videosList = [
     {
       'curriculumKey': 'modern_intro',
-      'title': "Unit 1: Foundations of Modern Physics",
+      'title': "Foundations of Modern Physics",
       'description':
           "Limits of classical physics, key ideas that launched modern physics",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -26,7 +26,7 @@ class _ModernState extends State<Modern> {
     },
     {
       'curriculumKey': 'quantized_energy',
-      'title': "Unit 2: Quantized Energy Levels and Formulae",
+      'title': "Quantized Energy Levels and Formulae",
       'description':
           "Energy quantization, Planck's constant, and quantum formulas",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -35,7 +35,7 @@ class _ModernState extends State<Modern> {
     },
     {
       'curriculumKey': 'photoelectric_effect',
-      'title': 'Unit 3: The Photoelectric Effect and Wave-Particle Duality',
+      'title': 'The Photoelectric Effect and Wave-Particle Duality',
       'description':
           'Photons, wave-particle duality, and the photoelectric effect',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -44,7 +44,7 @@ class _ModernState extends State<Modern> {
     },
     {
       'curriculumKey': 'matter_waves',
-      'title': 'Unit 4: Matter as Waves and Atomic Structure',
+      'title': 'Matter as Waves and Atomic Structure',
       'description':
           "Introduction to how matter can also behave as waves, atomic models, and quantum numbers",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -53,7 +53,7 @@ class _ModernState extends State<Modern> {
     },
     {
       'curriculumKey': 'nuclear_decay',
-      'title': 'Unit 5: Nuclear Decay',
+      'title': 'Nuclear Decay',
       'description': "Radioactivity, half-life, and decay processes",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
@@ -61,7 +61,7 @@ class _ModernState extends State<Modern> {
     },
     {
       'curriculumKey': 'fission_fusion',
-      'title': 'Unit 6: Fission and Fusion',
+      'title': 'Fission and Fusion',
       'description': "Nuclear reactions, fission, fusion, and their applications",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':

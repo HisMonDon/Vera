@@ -21,7 +21,7 @@ class _HarmonicsState extends State<Harmonics> {
   final List<Map<String, dynamic>> videosList = [
     {
       'curriculumKey': 'pendulum',
-      'title': 'Unit 1: Pendulums',
+      'title': 'Pendulums',
       'description':
           'Introduction to pendulum motion, period, frequency, and the small-angle model.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -30,7 +30,7 @@ class _HarmonicsState extends State<Harmonics> {
     },
     {
       'curriculumKey': 'springs_hookes',
-      'title': 'Unit 2: Springs and Hookes law',
+      'title': 'Springs and Hookes Law',
       'description':
           'Hooke’s law, spring force graphs, and how spring constant affects motion.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -39,7 +39,7 @@ class _HarmonicsState extends State<Harmonics> {
     },
     {
       'curriculumKey': 'springs_energy',
-      'title': 'Unit 3: Springs and Conservation of Energy',
+      'title': 'Springs and Conservation of Energy',
       'description':
           'Energy methods for mass–spring systems: PE in springs, KE, and total energy.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -48,7 +48,7 @@ class _HarmonicsState extends State<Harmonics> {
     },
     {
       'curriculumKey': 'harmonics_ap_momentum',
-      'title': 'Unit 4: Springs and Momentum - Past AP Physics 1 Example',
+      'title': 'Springs and Momentum - Past AP Physics 1 Example',
       'description':
           'AP-style problem: collisions with springs using momentum and energy ideas.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -57,7 +57,7 @@ class _HarmonicsState extends State<Harmonics> {
     },
     {
       'curriculumKey': 'harmonics_ap_work',
-      'title': 'Unit 5: Pendulums and Work - Past AP Physics 1 Example',
+      'title': 'Pendulums and Work - Past AP Physics 1 Example',
       'description':
           'AP-style problem: using work/energy to analyze pendulum speed and height.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),

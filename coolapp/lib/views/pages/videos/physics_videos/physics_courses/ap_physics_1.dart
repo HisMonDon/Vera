@@ -174,43 +174,43 @@ class _ApPhysics1State extends State<ApPhysics1> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Kinematics',
+      'title': 'Topic 1: Kinematics',
       'description':
           'Motion in one and two dimensions, including displacement, velocity, and acceleration.',
       'videoPage': const Kinematics(),
     },
     {
-      'title': 'Unit 2: Dynamics',
+      'title': 'Topic 2: Dynamics',
       'description':
           "Newton's laws of motion, forces, friction, and the dynamics of single and multiple-body systems.",
       'videoPage': const Dynamics(),
     },
     {
-      'title': 'Unit 3: Work and Energy',
+      'title': 'Topic 3: Work and Energy',
       'description':
           'Work-energy theorem, kinetic and potential energy, conservation of energy, and power.',
       'videoPage': const WorkAndEnergy(),
     },
     {
-      'title': 'Unit 4: Momentum',
+      'title': 'Topic 4: Momentum',
       'description':
           'Impulse, momentum, conservation of linear momentum, and elastic/inelastic collisions.',
       'videoPage': const MomentumAndCollisions(),
     },
     {
-      'title': 'Unit 5: Rotational Motion',
+      'title': 'Topic 5: Rotational Motion',
       'description':
           'Circular motion, torque, rotational kinematics, moment of inertia, and conservation of angular momentum.',
       'videoPage': const RotationalMotion(),
     },
     {
-      'title': 'Unit 6: Oscillations (Simple Harmonic Motion)',
+      'title': 'Topic 6: Oscillations (Simple Harmonic Motion)',
       'description':
           'Simple harmonic motion, pendulums, and mass-spring systems.',
       'videoPage': const Harmonics(),
     },
     {
-      'title': 'Unit 7: Fluids',
+      'title': 'Topic 7: Fluids',
       'description':
           'Properties of fluids, buoyancy, pressure, and fluid dynamics.',
       'videoPage': const Fluids(),

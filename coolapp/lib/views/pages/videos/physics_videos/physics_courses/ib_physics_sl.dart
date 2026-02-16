@@ -175,53 +175,53 @@ class _IbPhysicsSlState extends State<IbPhysicsSl> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Intro to Physics',
+      'title': 'Topic 1: Intro to Physics',
       'description':
           'Core concepts, measurements, uncertainties, vectors, and scalars.',
       'videoPage': const IntroToPhysics(),
       'videoLink': 'placeholder'
     },
     {
-      'title': 'Unit 2: Kinematics',
+      'title': 'Topic 2: Kinematics',
       'description': 'The study of motion in one and two dimensions.',
       'videoPage': const Kinematics(),
       'videoLink': 'placeholder'
     },
     {
-      'title': 'Unit 3: Dynamics',
+      'title': 'Topic 3: Dynamics',
       'description': 'Forces, Newton\'s laws, and their application to motion.',
       'videoPage': const Dynamics(),
       'videoLink': 'placeholder'
     },
     {
-      'title': 'Unit 4: Work and Energy',
+      'title': 'Topic 4: Work and Energy',
       'description':
           'Energy conservation, work, power, and efficiency in physical systems.',
       'videoPage': const WorkAndEnergy(),
       'videoLink': 'placeholder'
     },
     {
-      'title': 'Unit 5: Momentum and Collisions',
+      'title': 'Topic 5: Momentum and Collisions',
       'description':
           'Impulse, momentum conservation, and analyzing different types of collisions.',
       'videoPage': const MomentumAndCollisions(),
       'videoLink': 'placeholder'
     },
     {
-      'title': 'Unit 6: Waves and Oscillations',
+      'title': 'Topic 6: Waves and Oscillations',
       'description':
           'Oscillations, waves, and the principles of simple harmonic motion.',
       'videoPage': const Harmonics(),
       'videoLink': 'placeholder'
     },
     {
-      'title': 'Unit 7: Thermal Physics',
+      'title': 'Topic 7: Thermal Physics',
       'description':
           'Heat, temperature, thermodynamics, and the behavior of gases.',
       'videoPage': const ThermalPhysics(),
       'videoLink': 'placeholder'
     },
-        {
+    {
       'title': 'Topic 8: Electricity',
       'description':
           'Electric fields, heating effect, and electric circuits.',
@@ -233,7 +233,7 @@ class _IbPhysicsSlState extends State<IbPhysicsSl> {
           'Magnetic fields and magnetic effects of electric currents.',
       'videoPage': const Magnetism(),
     },
-     {
+    {
       'title': 'Topic 10: Modern Physics',
       'description':
           'Quantum mechanics, nuclear physics, and relativity.',

@@ -24,7 +24,7 @@ class _MagnetismState extends State<Magnetism> {
   final List<Map<String, dynamic>> videosList = [
     {
       'curriculumKey': 'rhr',
-      'title': 'Unit 1: Right hand rule',
+      'title': 'Right Hand Rule',
       'description':
           'Introduction on how to use the right hand rule, applications.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -33,7 +33,7 @@ class _MagnetismState extends State<Magnetism> {
     },
     {
       'curriculumKey': 'magnetic_flux',
-      'title': 'Unit 2: Magnetic Flux (IB/AP)',
+      'title': 'Magnetic Flux (IB/AP)',
       'description':
           "Introduction to magnetic flux, effect of angles, applications",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),

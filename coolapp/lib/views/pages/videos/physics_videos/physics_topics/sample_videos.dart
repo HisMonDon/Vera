@@ -17,14 +17,14 @@ class _SampleVideosState extends State<SampleVideos> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Vectors and Scalars',
+      'title': 'Vectors and Scalars',
       'description': 'Definition and examples of vectors and scalars',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/intro_to_physics/Unit%201%20Vectors%20and%20Scalars.mp4', //Completed 2025/12/31
     },
     {
-      'title': "Unit 2: Kinematics in 1D",
+      'title': "Kinematics in 1D",
       'description':
           "Basic kinematics, introduction to acceleration and velocity",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),

@@ -22,7 +22,7 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
   final List<Map<String, dynamic>> videosList = [
     {
       'curriculumKey': 'momentum_intro',
-      'title': 'Unit 1: Introduction to Momentum',
+      'title': 'Introduction to Momentum',
       'description':
           'Introduction to momentum, apply basic momentum formulae to moving objects',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -31,7 +31,7 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
     },
     {
       'curriculumKey': 'collisions_elastic',
-      'title': 'Unit 2: Inelastic and Elastic Momentum Questions',
+      'title': 'Inelastic and Elastic Momentum Questions',
       'description':
           'Questions on inelastic and elastic collisions, conservation of momentum and energy.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -40,7 +40,7 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
     },
     {
       'curriculumKey': 'momentum_2d',
-      'title': 'Unit 3: Momentum in 2D',
+      'title': 'Momentum in 2D',
       'description':
           'Break momentum into x and y components and apply conservation in both directions to solve planar collision problems.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -49,7 +49,7 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
     },
     {
       'curriculumKey': 'momentum_2d_practice',
-      'title': '2D Momentum practice',
+      'title': '2D Momentum Practice',
       'description':
           'Extra example on 2D momentum, breaking vectors into x and y components',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -58,7 +58,7 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
     },
     {
       'curriculumKey': 'impulse',
-      'title': 'Unit 4: Impulse and Momentum change',
+      'title': 'Impulse and Momentum Change',
       'description':
           'How forces change momentum over time, force-time graphs, real world applications',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),

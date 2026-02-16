@@ -23,7 +23,7 @@ class _KinematicsState extends State<Kinematics> {
     {
       'curriculumKey': 'motion_1d',
       'title':
-          'Unit 1: 1D Motion Analysis', //1D MOTION ANALYSIS DONE 2025/09/11 VERSION 1.0 // updated 2025/12/30
+          '1D Motion Analysis', //1D MOTION ANALYSIS DONE 2025/09/11 VERSION 1.0 // updated 2025/12/30
       'description':
           'Basic kinematics, introduction to acceleration and velocity',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -33,7 +33,7 @@ class _KinematicsState extends State<Kinematics> {
     {
       'curriculumKey': 'motion_2d_part1',
       'title':
-          'Unit 2: 2D Motion Analysis Part 1', //DONE 2025/09/14 VERSION 1.0 // updated 2025/12/30
+          '2D Motion Analysis Part 1', //DONE 2025/09/14 VERSION 1.0 // updated 2025/12/30
       'description': 'Introduction to 2D kinematics with velocity',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
@@ -60,7 +60,7 @@ class _KinematicsState extends State<Kinematics> {
     {
       'curriculumKey': 'motion_2d_examples',
       'title':
-          'Unit 3: More 2D Kinematics Example', //DONE 2025/09/28 VERSION 1.0
+          'More 2D Kinematics Example', //DONE 2025/09/28 VERSION 1.0
       'description': 'Extra practice on 2D Kinematics',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
@@ -69,7 +69,7 @@ class _KinematicsState extends State<Kinematics> {
     {
       'curriculumKey': 'motion_2d_harder',
       'title':
-          'Unit 4: Harder 2D Kinematics Examples', //DONE 2025/09/28 VERSION 1.0
+          'Harder 2D Kinematics Examples', //DONE 2025/09/28 VERSION 1.0
       'description': 'More practice on 2D Kinematics',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':

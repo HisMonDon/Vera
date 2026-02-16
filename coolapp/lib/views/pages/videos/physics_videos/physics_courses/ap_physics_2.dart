@@ -174,49 +174,49 @@ class _ApPhysics2State extends State<ApPhysics2> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Fluids',
+      'title': 'Topic 1: Fluids',
       'description':
           'Fluid properties, pressure, buoyancy, and fluid dynamics including Bernoulli\'s principle.',
       'videoPage': const Fluids(),
     },
     {
-      'title': 'Unit 2: Thermal Physics',
+      'title': 'Topic 2: Thermal Physics',
       'description':
           'Thermodynamics, heat transfer, kinetic theory, and laws of thermodynamics.',
       'videoPage': const ThermalPhysics(),
     },
     {
-      'title': 'Unit 3: Electricity',
+      'title': 'Topic 3: Electricity',
       'description':
           'Electric circuits, capacitor behaviour, and Kirchhoff\'s laws.',
       'videoPage': const Electricity(),
     },
     {
-      'title': 'Unit 4: Magnetism',
+      'title': 'Topic 4: Magnetism',
       'description':
           'Magnetic fields, magnetic flux, and electromagnetic induction.',
       'videoPage': const Magnetism(),
     },
     {
-      'title': 'Unit 5: Electrostatics',
+      'title': 'Topic 5: Electrostatics',
       'description':
           'Electric charge, fields, Coulomb\'s Law, and electric potential.',
       'videoPage': const Electrostatics(),
     },
     {
-      'title': 'Unit 6: Optics',
+      'title': 'Topic 6: Optics',
       'description':
           'Geometric and physical optics, including reflection, refraction, lenses, and diffraction.',
       'videoPage': const Optics(),
     },
     {
-      'title': 'Unit 7: Light',
+      'title': 'Topic 7: Light',
       'description':
           'The study of light as electromagnetic radiation, its wave properties, diffraction, polarization, and interference patterns',
       'videoPage': const Light(),
     },
     {
-      'title': 'Unit 8: Nuclear and Modern Physics',
+      'title': 'Topic 8: Nuclear and Modern Physics',
       'description':
           'Introduction to modern physics concepts including special relativity, quantum mechanics, atomic structure, and nuclear physics.',
       'videoPage': const Modern(),

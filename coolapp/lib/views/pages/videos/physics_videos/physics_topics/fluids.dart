@@ -21,7 +21,7 @@ class _FluidsState extends State<Fluids> {
   final List<Map<String, dynamic>> videosList = [
     {
       'curriculumKey': 'fluids_intro',
-      'title': 'Unit 1: Introduction to Fluid Mechanics',
+      'title': 'Introduction to Fluid Mechanics',
       'description':
           'Density, pressure, and the properties of fluids at rest and in motion',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -38,7 +38,7 @@ class _FluidsState extends State<Fluids> {
     },
     {
       'curriculumKey': 'fluids_statics',
-      'title': 'Unit 2: Fluid Statics',
+      'title': 'Fluid Statics',
       'description':
           'Pascal\'s principle, hydrostatic pressure, and buoyancy (Archimedes\' principle)',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -47,7 +47,7 @@ class _FluidsState extends State<Fluids> {
     },
     {
       'curriculumKey': 'fluids_dynamics',
-      'title': 'Unit 3: Fluid Dynamics',
+      'title': 'Fluid Dynamics',
       'description':
           'Continuity equation, Bernoulli\'s equation, and fluid flow analysis',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),

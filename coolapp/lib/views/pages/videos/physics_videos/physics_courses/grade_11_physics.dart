@@ -174,45 +174,45 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
-      'title': 'Unit 1: Vectors and Scalars',
+      'title': 'Topic 1: Vectors and Scalars',
       'description': 'Addition and calculations with vectors and scalars.',
       'videoPage': IntroToPhysics(),
     },
     {
-      'title': 'Unit 2: Kinematics',
+      'title': 'Topic 2: Kinematics',
       'description': 'Motion graphs and kinematic equations',
       'videoPage': Kinematics(),
     },
     {
-      'title': "Unit 3: Dynamics",
+      'title': "Topic 3: Dynamics",
       'description': "Forces and Newton's Laws",
       'videoPage': Dynamics(), //change to new physics topic
     },
     {
-      'title': 'Unit 4: Energy and Society',
+      'title': 'Topic 4: Energy and Society',
       'description':
           'Work-energy theorem and conservation of Energy',
       'videoPage': WorkAndEnergy(),
     },
     {
-      'title': 'Unit 5: Thermal Energy',
+      'title': 'Topic 5: Thermal Energy',
       'description': 'States of matter, behavior of different types of matter.',
       'videoPage': ThermalPhysics(),
     },
     {
-      'title': 'Unit 6: Waves and Sound',
+      'title': 'Topic 6: Waves and Sound',
       'description': 'Vibrations and waves, including interactions and applications',
       'videoPage':
           Harmonics(), 
     },
     {
-      'title': 'Unit 7: Electricity',
+      'title': 'Topic 7: Electricity',
       'description': 'Electric circuits, series and parallel combinations and power calculations',
       'videoPage':
           Electricity(),
     },
     {
-      'title': 'Unit 8: Magnetism',
+      'title': 'Topic 8: Magnetism',
       'description': 'Magnetic fields, right hand rule, application of magnetism concepts to real world phenomena.',
       'videoPage':
           Magnetism(),

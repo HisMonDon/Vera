@@ -24,7 +24,7 @@ class _ElectricityState extends State<Electricity> {
   final List<Map<String, dynamic>> videosList = [
     {
       'curriculumKey': 'circuits_intro',
-      'title': 'Unit 1: Introduction to Circuits',
+      'title': 'Introduction to Circuits',
       'description':
           "Ohm's law, behaviour of current, voltage, and resistance in different types of circuits.",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -33,7 +33,7 @@ class _ElectricityState extends State<Electricity> {
     },
     {
       'curriculumKey': 'kirchhoff_current',
-      'title': "Unit 2: Kirchhoff's Current Law",
+      'title': "Kirchhoff's Current Law",
       'description':
           "Introduction to Kirchhoff's Current Law, example problems on application.",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -42,7 +42,7 @@ class _ElectricityState extends State<Electricity> {
     },
     {
       'curriculumKey': 'circuits_example',
-      'title': "Unit 3: AP/IB style Circuit Problem",
+      'title': "AP/IB Style Circuit Problem",
       'description':
           "Example on a combination of ohm's law, circuit behaviour, and Kirchhoff's Current law.",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -51,7 +51,7 @@ class _ElectricityState extends State<Electricity> {
     },
     {
       'curriculumKey': 'capacitance',
-      'title': 'Unit 4: Capacitance',
+      'title': 'Capacitance',
       'description':
           'Parallel plate capacitors, energy storage, and behaviour of capaciters over time.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),

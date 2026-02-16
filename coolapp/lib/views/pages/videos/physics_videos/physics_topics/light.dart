@@ -21,7 +21,7 @@ class _LightState extends State<Light> {
   final List<Map<String, dynamic>> videosList = [
     {
       'curriculumKey': 'light_intro',
-      'title': 'Unit 1: Introduction to Light',
+      'title': 'Introduction to Light',
       'description':
           'Light as electromagnetic waves, properties of light, and the electromagnetic spectrum',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -30,7 +30,7 @@ class _LightState extends State<Light> {
     },
     {
       'curriculumKey': 'light_refraction',
-      'title': 'Unit 2: Total Internal Refraction',
+      'title': 'Total Internal Refraction',
       'description':
           "Snell's law, Critical angle, introduction to total internal refraction and it's applications.",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -39,7 +39,7 @@ class _LightState extends State<Light> {
     },
     {
       'curriculumKey': 'light_interference',
-      'title': "Unit 3: Young's Double Slit Experiment",
+      'title': "Young's Double Slit Experiment",
       'description':
           'Formulae and causes for the interference of light through a double slit, introduction to wave-particle duality.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),

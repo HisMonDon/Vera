@@ -23,7 +23,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
   final List<Map<String, dynamic>> videosList = [
     {
       'curriculumKey': 'charge',
-      'title': 'Unit 1: Electric Charge',
+      'title': 'Electric Charge',
       'description':
           'Fundamental properties of electric charge, conductors and insulators',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -32,7 +32,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
     },
     {
       'curriculumKey': 'coulomb_law',
-      'title': 'Unit 2: Coulomb\'s Law',
+      'title': 'Coulomb\'s Law',
       'description':
           'Force between electric charges and vector addition of electric forces',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -41,7 +41,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
     },
     {
       'curriculumKey': 'coulomb_energy',
-      'title': 'Unit 3: Example - Coulomb\'s Law and Energy',
+      'title': 'Example - Coulomb\'s Law and Energy',
       'description':
           'Example problem focusing on how to solve energy problems using Coulomb\'s Law.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -50,7 +50,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
     },
     {
       'curriculumKey': 'electric_field',
-      'title': 'Unit 3: Electric Fields',
+      'title': 'Electric Fields',
       'description':
           'Field concept, field lines, and calculating electric fields from various charge distributions, classifying strength through density of fields.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -59,7 +59,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
     },
     {
       'curriculumKey': 'capacitor',
-      'title': 'Unit 5: Capacitance',
+      'title': 'Capacitance',
       'description':
           'Capacitors, dielectrics, and energy storage in electric fields',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),

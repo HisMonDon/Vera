@@ -22,7 +22,7 @@ class _DynamicsState extends State<Dynamics> {
   final List<Map<String, dynamic>> videosList = [
     {
       'curriculumKey': 'forces_intro',
-      'title': "Unit 1: Introduction to Dynamics",
+      'title': "Introduction to Dynamics",
       'description':
           "Difference between dynamics and kinematics, Newton's three laws",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -31,7 +31,7 @@ class _DynamicsState extends State<Dynamics> {
     },
     {
       'curriculumKey': 'fbd',
-      'title': "Unit 2: Free Body Diagrams",
+      'title': "Free Body Diagrams",
       'description':
           "Short tutorial on a very important type of diagram in physics",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -40,7 +40,7 @@ class _DynamicsState extends State<Dynamics> {
     },
     {
       'curriculumKey': 'forces_gravity_normal',
-      'title': 'Unit 3: Gravity and Normal Force',
+      'title': 'Gravity and Normal Force',
       'description': 'Introduces the idea of gravity and normal force',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
@@ -48,7 +48,7 @@ class _DynamicsState extends State<Dynamics> {
     },
     {
       'curriculumKey': 'forces_friction',
-      'title': 'Unit 4: Friction',
+      'title': 'Friction',
       'description':
           "Friction calculations with coefficient of friction and normal force",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -57,7 +57,7 @@ class _DynamicsState extends State<Dynamics> {
     },
     {
       'curriculumKey': 'forces_examples',
-      'title': 'Unit 5: Extra Dynamics Examples',
+      'title': 'Extra Dynamics Examples',
       'description': "More problems on net force and normal force",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':

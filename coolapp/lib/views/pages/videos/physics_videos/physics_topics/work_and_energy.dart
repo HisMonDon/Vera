@@ -20,7 +20,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
   final List<Map<String, dynamic>> videosList = [
     {
       'curriculumKey': 'work_theorem',
-      'title': 'Unit 1: Work and Work-Energy Theorem',
+      'title': 'Work and Work-Energy Theorem',
       'description':
           'Definition of work, calculating work from forces and displacements, and applying the work-energy theorem',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -29,7 +29,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
     },
     {
       'curriculumKey': 'energy_forms',
-      'title': 'Unit 2: Kinetic and Potential Energy',
+      'title': 'Kinetic and Potential Energy',
       'description':
           'Energy of motion, gravitational potential energy, elastic potential energy, and energy conversions',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -38,7 +38,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
     },
     {
       'curriculumKey': 'energy_conservation',
-      'title': 'Unit 3: Conservation of Energy',
+      'title': 'Conservation of Energy',
       'description':
           'Energy conservation principles, isolated systems, and solving problems with conservation laws',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -47,7 +47,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
     },
     {
       'curriculumKey': 'energy_ap_example',
-      'title': 'Practice: AP Physics 1 2024 Energy Problem',
+      'title': 'AP Physics 1 2024 Energy Problem',
       'description':
           'Use gravitational potential energy and kinetic energy to solve a practical AP exam problem.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -56,7 +56,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
     },
     {
       'curriculumKey': 'power_efficiency',
-      'title': 'Unit 4: Power and Efficiency',
+      'title': 'Power and Efficiency',
       'description':
           'Real life application of energy, efficiency calculations.',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
