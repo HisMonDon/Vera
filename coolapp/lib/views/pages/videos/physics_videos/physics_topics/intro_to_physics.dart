@@ -2,6 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:coolapp/views/pages/videos/free_videos.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/curriculum_topic_filters.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
@@ -41,6 +42,11 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
     // add an immediate check in build method
     globals.topicTitle = 'Introduction to Physics';
     //print("topic title: Momentum and collisions, unit title reset");
+    final visibleVideos = CurriculumTopicFilters.filterUnits(
+      courseTitle: globals.courseTitle,
+      topicKey: CurriculumTopicFilters.introToPhysics,
+      units: videosList,
+    );
     return Scaffold(
       appBar: TimedAppBar(),
       body: SingleChildScrollView(
@@ -58,14 +64,14 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
               ),
               SizedBox(width: 2, height: 20),
               Column(
-                children: List.generate(videosList.length, (index) {
-                  final video = videosList[index];
+                children: List.generate(visibleVideos.length, (index) {
+                  final video = visibleVideos[index];
                   return TopicWidgets.buildVideoButton(
                     title: video['title'] ?? '',
                     description: video['description'] ?? '',
                     index: index,
                     videoPage: video['videoPage']!,
-                    videosList: videosList,
+                    videosList: visibleVideos,
                     videoLink: video['videoLink'],
                     context: context,
                     hoveredStates: hoveredStates,
