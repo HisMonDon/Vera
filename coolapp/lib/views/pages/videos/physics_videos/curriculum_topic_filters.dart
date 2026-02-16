@@ -1,7 +1,4 @@
-/// Central place for curriculum-specific topic filtering.
-///
-/// Shared topic pages can expose only the videos that belong to the active
-/// course curriculum.
+
 class CurriculumTopicFilters {
   static const String introToPhysics = 'intro_to_physics';
   static const String kinematics = 'kinematics';
@@ -21,8 +18,6 @@ class CurriculumTopicFilters {
   static const String other = 'other';
   static const String sampleVideos = 'sample_videos';
 
-  /// Topic availability by course.
-  /// If a topic key is not listed for a course, that topic is hidden.
   static final Map<String, Set<String>> _allowedTopicsByCourse = {
     'IB Physics SL': {
       introToPhysics,
@@ -91,12 +86,8 @@ class CurriculumTopicFilters {
       modernPhysics,
     },
   };
-
-  /// Optional per-topic video-unit filtering.
-  /// If a topic has no entry, all units in that topic are shown.
   static final Map<String, Map<String, Set<String>>> _allowedUnitsByCourse = {
     'IB Physics SL': {
-      // SL excludes HL-only quantum depth (photoelectric, matter waves, etc.).
       modernPhysics: {
         'modern_intro',
         'nuclear_decay',
@@ -104,7 +95,6 @@ class CurriculumTopicFilters {
       },
     },
     'IB Physics HL': {
-      // HL includes full modern/quantum coverage.
       modernPhysics: {
         'modern_intro',
         'quantized_energy',
@@ -115,11 +105,9 @@ class CurriculumTopicFilters {
       },
     },
     'AP Physics 1': {
-      // AP Physics 1 has no modern physics unit.
       modernPhysics: {},
     },
     'AP Physics 2': {
-      // AP Physics 2 includes modern physics.
       modernPhysics: {
         'modern_intro',
         'quantized_energy',
@@ -130,11 +118,9 @@ class CurriculumTopicFilters {
       },
     },
     'Grade 11 Physics': {
-      // Ontario SPH3U does not include modern physics.
       modernPhysics: {},
     },
     'Grade 12 Physics': {
-      // Ontario SPH4U includes modern + nuclear fundamentals.
       modernPhysics: {
         'modern_intro',
         'quantized_energy',
@@ -155,13 +141,9 @@ class CurriculumTopicFilters {
     }
 
     final allowedKeys = _allowedUnitsByCourse[courseTitle]?[topicKey];
-
-    // No course-specific per-unit config => show full topic list.
     if (allowedKeys == null) {
       return units;
     }
-
-    // Explicit empty set => no units for this topic.
     if (allowedKeys.isEmpty) {
       return const [];
     }
