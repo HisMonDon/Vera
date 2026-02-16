@@ -4,9 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
 class TimedAppBar extends StatefulWidget implements PreferredSizeWidget {
-  const TimedAppBar({Key? key})
-    : preferredSize = const Size.fromHeight(kToolbarHeight),
-      super(key: key);
+  const TimedAppBar({super.key})
+    : preferredSize = const Size.fromHeight(kToolbarHeight);
 
   @override
   final Size preferredSize;

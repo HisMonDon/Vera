@@ -12,8 +12,8 @@ class SampleVideos extends StatefulWidget {
 }
 
 class _SampleVideosState extends State<SampleVideos> {
-  double _width = 400;
-  double _height = 200;
+  final double _width = 400;
+  final double _height = 200;
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {

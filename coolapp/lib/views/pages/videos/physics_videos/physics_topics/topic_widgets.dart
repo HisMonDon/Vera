@@ -306,7 +306,7 @@ class TopicWidgets {
     if (globals.courseTitle == '') {
       backText = "Return to Topics";
     } else {
-      backText = "Return to " + globals.courseTitle;
+      backText = "Return to ${globals.courseTitle}";
     }
     return Center(
       child: ElevatedButton.icon(

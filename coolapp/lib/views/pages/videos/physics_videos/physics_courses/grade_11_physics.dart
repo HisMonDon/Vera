@@ -169,8 +169,8 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
     );
   }
 
-  double _width = 400;
-  double _height = 200;
+  final double _width = 400;
+  final double _height = 200;
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {

@@ -1,16 +1,14 @@
-library globals;
+library;
 
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_and_energy.dart';
-//import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
-import 'package:flutter/widgets.dart';
-
 //import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
+//import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
+import 'package:flutter/widgets.dart';
 bool isPremium = false;
 bool isLoggedIn = false;
 bool isAdmin = false;

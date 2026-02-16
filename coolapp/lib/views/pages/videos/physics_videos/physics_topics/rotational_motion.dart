@@ -14,8 +14,8 @@ class RotationalMotion extends StatefulWidget {
 }
 
 class _RotationalMotionState extends State<RotationalMotion> {
-  double _width = 400;
-  double _height = 200;
+  final double _width = 400;
+  final double _height = 200;
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {

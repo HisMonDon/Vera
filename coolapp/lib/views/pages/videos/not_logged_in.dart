@@ -1,5 +1,4 @@
 import 'package:beamer/beamer.dart';
-import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';

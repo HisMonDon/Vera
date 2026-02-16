@@ -1,3 +1,5 @@
+// ignore_for_file: dead_code
+
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electrostatics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/fluids.dart';
@@ -167,8 +169,8 @@ class _ApPhysics2State extends State<ApPhysics2> {
     );
   }
 
-  double _width = 400;
-  double _height = 200;
+  final double _width = 400;
+  final double _height = 200;
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {

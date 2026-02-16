@@ -376,12 +376,12 @@ class _TopicsPageState extends State<TopicsPage> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    String _currentSortOption = sortBy[0];
+    String currentSortOption = sortBy[0];
     globals.courseTitle = '';
     if (!globals.isLoggedIn && kIsWeb) {
       return NotLoggedIn();
     }
-    void _sortCourseList(String sortOption) {
+    void sortCourseList(String sortOption) {
       setState(() {
         switch (sortOption) {
           case 'Alphabetical (A-Z)':
@@ -668,8 +668,8 @@ class _TopicsPageState extends State<TopicsPage> {
                                         if (value == null) return;
                                         sortIndex = sortBy.indexOf(value);
                                         setState(() {
-                                          _currentSortOption = value;
-                                          _sortCourseList(value);
+                                          currentSortOption = value;
+                                          sortCourseList(value);
                                         });
                                       },
                                       items:

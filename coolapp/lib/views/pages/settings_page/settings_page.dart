@@ -204,7 +204,7 @@ class _HelpPageState extends State<HelpPage> {
           Switch(
             value: globals.isLight,
             onChanged: _toggleTheme,
-            activeColor: const Color.fromARGB(255, 167, 198, 131),
+            activeThumbColor: const Color.fromARGB(255, 167, 198, 131),
             activeTrackColor: const Color.fromARGB(255, 15, 48, 40),
           ),
         ],

@@ -15,8 +15,8 @@ class MomentumAndCollisions extends StatefulWidget {
 }
 
 class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
-  double _width = 400;
-  double _height = 200;
+  final double _width = 400;
+  final double _height = 200;
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {

@@ -13,8 +13,8 @@ class WorkAndEnergy extends StatefulWidget {
 }
 
 class _WorkAndEnergyState extends State<WorkAndEnergy> {
-  double _width = 400;
-  double _height = 200;
+  final double _width = 400;
+  final double _height = 200;
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {

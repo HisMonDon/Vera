@@ -12,7 +12,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:video_player/video_player.dart';
 
 class AboutThisAppPage extends StatefulWidget {
-  AboutThisAppPage({super.key});
+  const AboutThisAppPage({super.key});
 
   @override
   State<AboutThisAppPage> createState() => _AboutThisAppPageState();
@@ -441,6 +441,7 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
 
 class _IntroVideoPlayer extends StatefulWidget {
   // @override
+  @override
   _IntroVideoPlayerState createState() => _IntroVideoPlayerState();
 }
 

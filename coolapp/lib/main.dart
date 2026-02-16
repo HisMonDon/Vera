@@ -45,7 +45,7 @@ Future _initializeAuthState() async {
 }
 
 class MyApp extends StatefulWidget {
-  MyApp({super.key});
+  const MyApp({super.key});
   static final ValueNotifier themeNotifier = ValueNotifier(
     globals.isLight,
   );
@@ -66,7 +66,7 @@ class _MyAppState extends State<MyApp> {
       beamLocations: [
         HomeLocation(),
       ],
-    ),
+    ).call,
   );
 
   @override

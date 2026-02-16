@@ -8,6 +8,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
 class ProfilePage extends StatefulWidget {
+  const ProfilePage({super.key});
+
   @override
   _ProfilePageState createState() => _ProfilePageState();
 }
@@ -47,12 +49,12 @@ class _ProfilePageState extends State<ProfilePage> {
   }
 
   Future<void> _showChangePasswordDialog() async {
-    final _currentPasswordController = TextEditingController();
-    final _newPasswordController = TextEditingController();
-    final _confirmPasswordController = TextEditingController();
+    final currentPasswordController = TextEditingController();
+    final newPasswordController = TextEditingController();
+    final confirmPasswordController = TextEditingController();
 
-    String? _errorMessage;
-    bool _isLoading = false;
+    String? errorMessage;
+    bool isLoading = false;
 
     await showDialog(
       context: context,
@@ -72,7 +74,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    if (_errorMessage != null) ...[
+                    if (errorMessage != null) ...[
                       Container(
                         padding: const EdgeInsets.all(8),
                         decoration: BoxDecoration(
@@ -80,7 +82,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           borderRadius: BorderRadius.circular(16),
                         ),
                         child: Text(
-                          _errorMessage!,
+                          errorMessage!,
                           style: TextStyle(color: Colors.red),
                         ),
                       ),
@@ -92,7 +94,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             ? Color.fromARGB(255, 7, 77, 53)
                             : Colors.white,
                       ),
-                      controller: _currentPasswordController,
+                      controller: currentPasswordController,
                       decoration: InputDecoration(
                         labelText: 'Current Password',
                         border: OutlineInputBorder(),
@@ -108,7 +110,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             ? Color.fromARGB(255, 7, 77, 53)
                             : Colors.white,
                       ),
-                      controller: _newPasswordController,
+                      controller: newPasswordController,
                       decoration: InputDecoration(
                         labelText: 'New Password',
                         border: OutlineInputBorder(),
@@ -126,7 +128,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             ? Color.fromARGB(255, 7, 77, 53)
                             : Colors.white,
                       ),
-                      controller: _confirmPasswordController,
+                      controller: confirmPasswordController,
                       decoration: InputDecoration(
                         labelText: 'Confirm New Password',
                         border: OutlineInputBorder(),
@@ -139,46 +141,46 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               actions: [
                 TextButton(
-                  onPressed: _isLoading ? null : () => Navigator.pop(context),
+                  onPressed: isLoading ? null : () => Navigator.pop(context),
                   child: Text('Cancel'),
                 ),
-                _isLoading
+                isLoading
                     ? CircularProgressIndicator()
                     : TextButton(
                         onPressed: () async {
-                          if (_currentPasswordController.text.isEmpty) {
+                          if (currentPasswordController.text.isEmpty) {
                             setState(() {
-                              _errorMessage =
+                              errorMessage =
                                   'Please enter your current password';
                             });
                             return;
                           }
-                          if (_newPasswordController.text.isEmpty) {
+                          if (newPasswordController.text.isEmpty) {
                             setState(() {
-                              _errorMessage = 'Please enter a new password';
+                              errorMessage = 'Please enter a new password';
                             });
                             return;
                           }
 
-                          if (_newPasswordController.text.length < 6) {
+                          if (newPasswordController.text.length < 6) {
                             setState(() {
-                              _errorMessage =
+                              errorMessage =
                                   'Password must be at least 6 characters';
                             });
                             return;
                           }
 
-                          if (_newPasswordController.text !=
-                              _confirmPasswordController.text) {
+                          if (newPasswordController.text !=
+                              confirmPasswordController.text) {
                             setState(() {
-                              _errorMessage = 'Passwords do not match';
+                              errorMessage = 'Passwords do not match';
                             });
                             return;
                           }
 
                           setState(() {
-                            _isLoading = true;
-                            _errorMessage = null;
+                            isLoading = true;
+                            errorMessage = null;
                           });
 
                           try {
@@ -186,9 +188,9 @@ class _ProfilePageState extends State<ProfilePage> {
                                 await _authService.getCurrentUserEmail() ?? '';
                             if (email.isEmpty) {
                               setState(() {
-                                _errorMessage =
+                                errorMessage =
                                     'User session error. Please log in again.';
-                                _isLoading = false;
+                                isLoading = false;
                               });
                               return;
                             }
@@ -196,19 +198,19 @@ class _ProfilePageState extends State<ProfilePage> {
                             final isCurrentPasswordValid =
                                 await _authService.verifyCurrentPassword(
                               email,
-                              _currentPasswordController.text,
+                              currentPasswordController.text,
                             );
 
                             if (!isCurrentPasswordValid) {
                               setState(() {
-                                _errorMessage = 'Current password is incorrect';
-                                _isLoading = false;
+                                errorMessage = 'Current password is incorrect';
+                                isLoading = false;
                               });
                               return;
                             }
                             final success = await _authService.changePassword(
-                              _currentPasswordController.text,
-                              _newPasswordController.text,
+                              currentPasswordController.text,
+                              newPasswordController.text,
                             );
 
                             if (success) {
@@ -230,16 +232,15 @@ class _ProfilePageState extends State<ProfilePage> {
                               );
                             } else {
                               setState(() {
-                                _errorMessage = 'Failed to change password. ' +
-                                    globals.errorMessage;
-                                _isLoading = false;
+                                errorMessage = 'Failed to change password. ${globals.errorMessage}';
+                                isLoading = false;
                               });
                             }
                           } catch (e) {
                             setState(() {
-                              _errorMessage =
+                              errorMessage =
                                   'An error occurred. Please try again.';
-                              _isLoading = false;
+                              isLoading = false;
                             });
                           }
                         },
@@ -252,8 +253,8 @@ class _ProfilePageState extends State<ProfilePage> {
       },
     );
 
-    _newPasswordController.dispose();
-    _confirmPasswordController.dispose();
+    newPasswordController.dispose();
+    confirmPasswordController.dispose();
   }
 
   Future<void> _checkLoginStatus() async {
@@ -464,10 +465,12 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               keyboardType: TextInputType.emailAddress,
               validator: (value) {
-                if (value == null || value.trim().isEmpty)
+                if (value == null || value.trim().isEmpty) {
                   return 'Please enter your email';
-                if (!_isValidEmail(value.trim()))
+                }
+                if (!_isValidEmail(value.trim())) {
                   return 'Please enter a valid email address';
+                }
                 return null;
               },
             ),
@@ -490,10 +493,12 @@ class _ProfilePageState extends State<ProfilePage> {
               textInputAction: TextInputAction.done,
               onFieldSubmitted: (_) => _submit(),
               validator: (value) {
-                if (value == null || value.isEmpty)
+                if (value == null || value.isEmpty) {
                   return 'Please enter your password';
-                if (value.length < 6)
+                }
+                if (value.length < 6) {
                   return 'Password must be at least 6 characters';
+                }
                 return null;
               },
             ),
@@ -512,8 +517,9 @@ class _ProfilePageState extends State<ProfilePage> {
                   prefixIcon: Icon(Icons.person),
                 ),
                 validator: (value) {
-                  if (value == null || value.trim().isEmpty)
+                  if (value == null || value.trim().isEmpty) {
                     return 'Please enter your name';
+                  }
                   return null;
                 },
               ),

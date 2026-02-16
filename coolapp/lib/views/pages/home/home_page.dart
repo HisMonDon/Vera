@@ -178,7 +178,7 @@ class _HomePageState extends State {
                       );
                     }
                   }
-                  print("User Name: " + globals.userName);
+                  print("User Name: ${globals.userName}");
                   Navigator.of(dialogContext).pop();
                 },
               ),
@@ -187,6 +187,7 @@ class _HomePageState extends State {
         },
       );
 
+  @override
   Widget build(BuildContext context) {
     if (_isLoading) {
       return Scaffold(body: Center(child: CircularProgressIndicator()));
@@ -299,13 +300,13 @@ class _HomePageState extends State {
                                 SizedBox(height: 20),
                                 ElevatedButton(
                                   onPressed: openDialog,
-                                  child: Icon(Icons.edit),
                                   style: ElevatedButton.styleFrom(
                                     backgroundColor: Colors.transparent,
                                     shadowColor: Colors.transparent,
                                     elevation: 0,
                                     iconSize: 20,
                                   ),
+                                  child: Icon(Icons.edit),
                                 ),
                                 SizedBox(height: 10),
                               ],
@@ -917,9 +918,7 @@ class _HomePageState extends State {
                                                       130,
                                                   height: 80,
                                                   child: AutoSizeText(
-                                                    featuredUnit +
-                                                        ": " +
-                                                        featuredTitle,
+                                                    "$featuredUnit: $featuredTitle",
                                                     style:
                                                         GoogleFonts.bebasNeue(
                                                       fontSize: 60,
