@@ -3,6 +3,7 @@ import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
+import 'package:coolapp/views/pages/videos/physics_videos/curriculum_topic_filters.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/topic_widgets.dart';
 
@@ -63,6 +64,11 @@ class _ElectrostaticsState extends State<Electrostatics> {
   Widget build(BuildContext context) {
     // add an immediate check in build method
     globals.topicTitle = 'Electrostatics';
+    final visibleVideos = CurriculumTopicFilters.filterUnits(
+      courseTitle: globals.courseTitle,
+      topicKey: CurriculumTopicFilters.electrostatics,
+      units: videosList,
+    );
     return Scaffold(
       appBar: TimedAppBar(),
       body: SingleChildScrollView(
@@ -80,14 +86,14 @@ class _ElectrostaticsState extends State<Electrostatics> {
               ),
               SizedBox(width: 2, height: 20),
               Column(
-                children: List.generate(videosList.length, (index) {
-                  final video = videosList[index];
+                children: List.generate(visibleVideos.length, (index) {
+                  final video = visibleVideos[index];
                   return TopicWidgets.buildVideoButton(
                     title: video['title'] ?? '',
                     description: video['description'] ?? '',
                     index: index,
                     videoPage: video['videoPage']!,
-                    videosList: videosList,
+                    videosList: visibleVideos,
                     videoLink: video['videoLink'],
                     context: context,
                     hoveredStates: hoveredStates,
