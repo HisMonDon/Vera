@@ -23,6 +23,7 @@ class _ElectricityState extends State<Electricity> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
+      'curriculumKey': 'circuits_intro',
       'title': 'Unit 1: Introduction to Circuits',
       'description':
           "Ohm's law, behaviour of current, voltage, and resistance in different types of circuits.",
@@ -31,6 +32,7 @@ class _ElectricityState extends State<Electricity> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/1%20Introduction%20to%20Circuits.mp4', // added 2025/12/21
     },
     {
+      'curriculumKey': 'kirchhoff_current',
       'title': "Unit 2: Kirchhoff's Current Law",
       'description':
           "Introduction to Kirchhoff's Current Law, example problems on application.",
@@ -39,6 +41,7 @@ class _ElectricityState extends State<Electricity> {
           "https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/2%20Kirchhoff's%20Current%20Law.mp4", // added 2025/12/21
     },
     {
+      'curriculumKey': 'circuits_example',
       'title': "Unit 3: AP/IB style Circuit Problem",
       'description':
           "Example on a combination of ohm's law, circuit behaviour, and Kirchhoff's Current law.",
@@ -47,6 +50,7 @@ class _ElectricityState extends State<Electricity> {
           "https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/3%20Circuit%20Example.mp4", // added 2025/12/21
     },
     {
+      'curriculumKey': 'capacitance',
       'title': 'Unit 4: Capacitance',
       'description':
           'Parallel plate capacitors, energy storage, and behaviour of capaciters over time.',

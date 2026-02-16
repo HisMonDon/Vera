@@ -19,6 +19,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
+      'curriculumKey': 'work_theorem',
       'title': 'Unit 1: Work and Work-Energy Theorem',
       'description':
           'Definition of work, calculating work from forces and displacements, and applying the work-energy theorem',
@@ -27,6 +28,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/work_and_energy/Unit%201%20Work-Energy%20Theorem.mp4', //completed 2025/12/20
     },
     {
+      'curriculumKey': 'energy_forms',
       'title': 'Unit 2: Kinetic and Potential Energy',
       'description':
           'Energy of motion, gravitational potential energy, elastic potential energy, and energy conversions',
@@ -35,6 +37,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/work_and_energy/Unit%202%20Kinetic%20and%20Potential%20Energy.mp4', //completed 2025/12/20
     },
     {
+      'curriculumKey': 'energy_conservation',
       'title': 'Unit 3: Conservation of Energy',
       'description':
           'Energy conservation principles, isolated systems, and solving problems with conservation laws',
@@ -43,6 +46,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/work_and_energy/Unit%203%20Conservation%20of%20Energy.mp4', //completed 2025/12/20
     },
     {
+      'curriculumKey': 'energy_ap_example',
       'title': 'Practice: AP Physics 1 2024 Energy Problem',
       'description':
           'Use gravitational potential energy and kinetic energy to solve a practical AP exam problem.',
@@ -51,6 +55,7 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/work_and_energy/Unit%204%20Conservation%20of%20Energy%20Example%20AP%20Physics%201%202024%20Exam.mp4', //completed 2025/12/20
     },
     {
+      'curriculumKey': 'power_efficiency',
       'title': 'Unit 4: Power and Efficiency',
       'description':
           'Real life application of energy, efficiency calculations.',

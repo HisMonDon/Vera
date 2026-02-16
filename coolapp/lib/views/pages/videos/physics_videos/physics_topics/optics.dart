@@ -20,6 +20,7 @@ class _OpticsState extends State<Optics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
+      'curriculumKey': 'optics_intro',
       'title': 'Unit 1: Introduction to Optics',
       'description':
           'Light as electromagnetic waves, properties of light, and the electromagnetic spectrum',
@@ -28,6 +29,7 @@ class _OpticsState extends State<Optics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%201%20Introducution%20to%20Light.mp4', //completed 12/25/2025 merry christmas!
     },
     {
+      'curriculumKey': 'lenses_part1',
       'title': 'Unit 2: Lenses Part 1',
       'description':
           'Law of reflection, introduction to convex and concave lenses, real and virtual images.',
@@ -36,6 +38,7 @@ class _OpticsState extends State<Optics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%202%20Lenses%20Part%201.mp4', //completed 12/25/2025
     },
     {
+      'curriculumKey': 'lenses_part2',
       'title': 'Unit 3: Lenses Part 2',
       'description':
           'Relationship between height, magnification, and distance in convex and concave lenses.',

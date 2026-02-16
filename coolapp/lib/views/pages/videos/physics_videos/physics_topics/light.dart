@@ -20,6 +20,7 @@ class _LightState extends State<Light> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
+      'curriculumKey': 'light_intro',
       'title': 'Unit 1: Introduction to Light',
       'description':
           'Light as electromagnetic waves, properties of light, and the electromagnetic spectrum',
@@ -28,6 +29,7 @@ class _LightState extends State<Light> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%201%20Introducution%20to%20Light.mp4', //completed 12/25/2025 merry christmas!
     },
     {
+      'curriculumKey': 'light_refraction',
       'title': 'Unit 2: Total Internal Refraction',
       'description':
           "Snell's law, Critical angle, introduction to total internal refraction and it's applications.",
@@ -36,6 +38,7 @@ class _LightState extends State<Light> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%204%20Total%20Internal%20Reflection.mp4', //completed 12/25/2025
     },
     {
+      'curriculumKey': 'light_interference',
       'title': "Unit 3: Young's Double Slit Experiment",
       'description':
           'Formulae and causes for the interference of light through a double slit, introduction to wave-particle duality.',

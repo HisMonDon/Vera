@@ -20,6 +20,7 @@ class _HarmonicsState extends State<Harmonics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
+      'curriculumKey': 'pendulum',
       'title': 'Unit 1: Pendulums',
       'description':
           'Introduction to pendulum motion, period, frequency, and the small-angle model.',
@@ -28,6 +29,7 @@ class _HarmonicsState extends State<Harmonics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%201%20Pendulums.mp4', //completed 2025/12/23
     },
     {
+      'curriculumKey': 'springs_hookes',
       'title': 'Unit 2: Springs and Hookes law',
       'description':
           'Hooke’s law, spring force graphs, and how spring constant affects motion.',
@@ -36,6 +38,7 @@ class _HarmonicsState extends State<Harmonics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%202%20Springs%20and%20Hookes%20Law.mp4', //completed 2025/12/23
     },
     {
+      'curriculumKey': 'springs_energy',
       'title': 'Unit 3: Springs and Conservation of Energy',
       'description':
           'Energy methods for mass–spring systems: PE in springs, KE, and total energy.',
@@ -44,6 +47,7 @@ class _HarmonicsState extends State<Harmonics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%203%20Springs%20and%20Conservation%20of%20Energy.mp4', //completed 2025/12/23
     },
     {
+      'curriculumKey': 'harmonics_ap_momentum',
       'title': 'Unit 4: Springs and Momentum - Past AP Physics 1 Example',
       'description':
           'AP-style problem: collisions with springs using momentum and energy ideas.',
@@ -52,6 +56,7 @@ class _HarmonicsState extends State<Harmonics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%204%20Springs%20and%20Momentum%20-%20Past%20AP%20Physics%201%20Example.mp4', //completed 2025/12/23
     },
     {
+      'curriculumKey': 'harmonics_ap_work',
       'title': 'Unit 5: Pendulums and Work - Past AP Physics 1 Example',
       'description':
           'AP-style problem: using work/energy to analyze pendulum speed and height.',

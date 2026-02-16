@@ -20,6 +20,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
+      'curriculumKey': 'rotation_intro',
       'title': 'Unit 1: Introduction to Rotational Motion',
       'description':
           'Basic concepts of circular motion, angular displacement, and angular velocity',
@@ -28,6 +29,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/rotational_motion/Unit%201%20Introduction%20to%20Rotational%20Motion.mp4', //completed 2025/12/27
     },
     {
+      'curriculumKey': 'rotation_kinematics',
       'title': 'Unit 2: Rotational Kinematics',
       'description':
           'Angular position, velocity, and acceleration relationships in rotational motion',
@@ -36,6 +38,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/rotational_motion/Unit%202%20Rotational%20Kinematics.mp4', //completed 2025/12/27
     },
     {
+      'curriculumKey': 'torque_equilibrium',
       'title': 'Unit 3: Torque and Rotational Equilibrium',
       'description':
           'Introduction and leeson on how torque causes rotational accceleration and balanced torque systems.',
@@ -44,6 +47,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/rotational_motion/Unit%203%20Torque%20and%20Rotational%20Equilibrium.mp4', //completed 2025/12/27
     },
     {
+      'curriculumKey': 'torque_ap_example',
       'title': 'Unit 4: Torque and Rotational Forces Example',
       'description':
           'Past AP Exam FRQ question analyzing the calculations of torque in a real world example.',
@@ -52,6 +56,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/rotational_motion/app.yt1z.net%20-%202024%20AP%20Physics%201%20Solutions%20Free%20Response%20Q3%20(1080p).mp4', //completed 2025/12/27
     },
     {
+      'curriculumKey': 'moment_inertia',
       'title': 'Unit 5: Moment of Inertia',
       'description':
           'Understanding rotational mass, calculating moment of inertia for different objects',

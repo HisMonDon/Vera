@@ -20,6 +20,7 @@ class _ThermalPhysicsState extends State<ThermalPhysics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
+      'curriculumKey': 'thermal_temperature',
       'title': 'Unit 1: Temperature, Heat, and Thermal Energy',
       'description':
           'Temperature vs. heat, thermal equilibrium (zeroth law), specific heat and calorimetry basics, and an overview of conduction, convection, and radiation',
@@ -28,6 +29,7 @@ class _ThermalPhysicsState extends State<ThermalPhysics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/thermal_physics/Unit%201%20Temperature%2C%20Heat%2C%20and%20Thermal%20Energy.mp4',
     },
     {
+      'curriculumKey': 'thermal_latent_heat',
       'title': 'Unit 2: Heat and Latent Heat',
       'description':
           'Phase changes and latent heat, heating/cooling curves, calorimetry with phase transitions, and mixing problems using energy conservation',
@@ -36,6 +38,7 @@ class _ThermalPhysicsState extends State<ThermalPhysics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/thermal_physics/Unit%202%20Heat%20and%20Latent%20Heat.mp4',
     },
     {
+      'curriculumKey': 'thermal_transfer',
       'title': 'Unit 3: Heat Transfer Examples',
       'description':
           'Worked examples using conduction, convection, and radiation; thermal resistance ideas; rate of heat flow; and common AP-style applications',
@@ -44,6 +47,7 @@ class _ThermalPhysicsState extends State<ThermalPhysics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/thermal_physics/Unit%203%20Heat%20Transfer%20Examples.mp4',
     },
     {
+      'curriculumKey': 'thermal_gas_laws',
       'title': 'Unit 4: Gas Laws (Ideal, Combined, Avagadros)',
       'description':
           'Boyle’s, Charles’s, Gay-Lussac’s, Avogadro’s, and the combined gas law; ideal gas law PV = nRT; and conceptual/graph relationships',
@@ -52,6 +56,7 @@ class _ThermalPhysicsState extends State<ThermalPhysics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/thermal_physics/Unit%204%20Gas%20Laws%20(Ideal%2C%20Combined%2C%20Avagadros).mp4',
     },
     {
+      'curriculumKey': 'thermal_first_law',
       'title': 'Unit 5: The First Law of Thermodynamics',
       'description':
           'First law (ΔU = Q − W), sign conventions, PV work, and applying the law to isothermal, isobaric, isochoric, and adiabatic processes',
@@ -60,6 +65,7 @@ class _ThermalPhysicsState extends State<ThermalPhysics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/thermal_physics/Unit%205%20The%20First%20Law%20of%20Thermodynamics.mp4',
     },
     {
+      'curriculumKey': 'thermal_ap_example',
       'title': 'AP Physics 2: Thermodynamics Example',
       'description':
           'Full AP Physics 2–style thermodynamics walkthrough: interpreting a process/path, tracking Q, W, and ΔU, and solving with PV diagrams and the first law',

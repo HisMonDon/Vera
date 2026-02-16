@@ -21,6 +21,7 @@ class _KinematicsState extends State<Kinematics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
+      'curriculumKey': 'motion_1d',
       'title':
           'Unit 1: 1D Motion Analysis', //1D MOTION ANALYSIS DONE 2025/09/11 VERSION 1.0 // updated 2025/12/30
       'description':
@@ -30,6 +31,7 @@ class _KinematicsState extends State<Kinematics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Unit%201%201D%20Kinematics.mp4',
     },
     {
+      'curriculumKey': 'motion_2d_part1',
       'title':
           'Unit 2: 2D Motion Analysis Part 1', //DONE 2025/09/14 VERSION 1.0 // updated 2025/12/30
       'description': 'Introduction to 2D kinematics with velocity',
@@ -38,6 +40,7 @@ class _KinematicsState extends State<Kinematics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Unit%202%202D%20Kinematics.mp4',
     },
     {
+      'curriculumKey': 'motion_2d_part2',
       'title': '2D Motion Analysis Part 2', //DONE 2025/09/14 VERSION 1.0
       'description':
           'Introduces various kinematics formulae and constants used for solving problems',
@@ -46,6 +49,7 @@ class _KinematicsState extends State<Kinematics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%202D%20Part%202.mp4',
     },
     {
+      'curriculumKey': 'motion_2d_part3',
       'title': '2D Motion Analysis Part 3', //DONE 2025/09/14 VERSION 1.0
       'description':
           'Application of kinematics formulae and vectors on an example problem',
@@ -54,6 +58,7 @@ class _KinematicsState extends State<Kinematics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%202D%20Part%203.mp4',
     },
     {
+      'curriculumKey': 'motion_2d_examples',
       'title':
           'Unit 3: More 2D Kinematics Example', //DONE 2025/09/28 VERSION 1.0
       'description': 'Extra practice on 2D Kinematics',
@@ -62,6 +67,7 @@ class _KinematicsState extends State<Kinematics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/More%20Kinematics%20Examples%201.mp4',
     },
     {
+      'curriculumKey': 'motion_2d_harder',
       'title':
           'Unit 4: Harder 2D Kinematics Examples', //DONE 2025/09/28 VERSION 1.0
       'description': 'More practice on 2D Kinematics',
@@ -70,6 +76,7 @@ class _KinematicsState extends State<Kinematics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%20harder%20quesitons.mp4',
     },
     {
+      'curriculumKey': 'motion_graphical',
       'title': 'Graphical Kinematics',
       'description': 'Slope-area interpretations of motion graphs',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),

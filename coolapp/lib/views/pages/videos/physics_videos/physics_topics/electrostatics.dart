@@ -22,6 +22,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
+      'curriculumKey': 'charge',
       'title': 'Unit 1: Electric Charge',
       'description':
           'Fundamental properties of electric charge, conductors and insulators',
@@ -30,6 +31,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Electrostatics/Unit%201%20Introduction%20to%20Electrostatics%20and%20Charges.mp4', //completed 2025/12/25
     },
     {
+      'curriculumKey': 'coulomb_law',
       'title': 'Unit 2: Coulomb\'s Law',
       'description':
           'Force between electric charges and vector addition of electric forces',
@@ -38,6 +40,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Electrostatics/Unit%202%20Coulombs%20Law.mp4', //completed 2025/12/25
     },
     {
+      'curriculumKey': 'coulomb_energy',
       'title': 'Unit 3: Example - Coulomb\'s Law and Energy',
       'description':
           'Example problem focusing on how to solve energy problems using Coulomb\'s Law.',
@@ -46,6 +49,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Electrostatics/Unit%203%20Coulombs%20Law%20and%20Energy.mp4', //completed 2025/12/25
     },
     {
+      'curriculumKey': 'electric_field',
       'title': 'Unit 3: Electric Fields',
       'description':
           'Field concept, field lines, and calculating electric fields from various charge distributions, classifying strength through density of fields.',
@@ -54,6 +58,7 @@ class _ElectrostaticsState extends State<Electrostatics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/Electrostatics/Unit%204%20Electric%20Field%20Lines.mp4', //completed 2025/12/25
     },
     {
+      'curriculumKey': 'capacitor',
       'title': 'Unit 5: Capacitance',
       'description':
           'Capacitors, dielectrics, and energy storage in electric fields',

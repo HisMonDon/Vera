@@ -22,6 +22,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
+      'curriculumKey': 'vectors_scalars',
       'title': 'Unit 1: Vectors and Scalars',
       'description': 'Definition and examples of vectors and scalars',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -29,6 +30,7 @@ class _IntroToPhysicsState extends State<IntroToPhysics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/intro_to_physics/Unit%201%20Vectors%20and%20Scalars.mp4', //completed with cloudflare on 2025/10/18, updated 2025/12/21
     },
     {
+      'curriculumKey': 'error_analysis',
       'title': 'Unit 2: Error Analysis and Measurement',
       'description':
           'Tools and techniques for measurement, error analysis and uncertainty in measurements',

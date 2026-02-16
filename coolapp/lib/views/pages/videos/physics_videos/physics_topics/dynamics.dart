@@ -21,6 +21,7 @@ class _DynamicsState extends State<Dynamics> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
+      'curriculumKey': 'forces_intro',
       'title': "Unit 1: Introduction to Dynamics",
       'description':
           "Difference between dynamics and kinematics, Newton's three laws",
@@ -29,6 +30,7 @@ class _DynamicsState extends State<Dynamics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/introduction_to_dynamics.mp4', //Completed 2025/12/17
     },
     {
+      'curriculumKey': 'fbd',
       'title': "Unit 2: Free Body Diagrams",
       'description':
           "Short tutorial on a very important type of diagram in physics",
@@ -37,6 +39,7 @@ class _DynamicsState extends State<Dynamics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/free_body_diagrams.mp4', //Completed 2025/12/17
     },
     {
+      'curriculumKey': 'forces_gravity_normal',
       'title': 'Unit 3: Gravity and Normal Force',
       'description': 'Introduces the idea of gravity and normal force',
       'videoPage': VideoPlayerScreen(key: UniqueKey()),
@@ -44,6 +47,7 @@ class _DynamicsState extends State<Dynamics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/normal_force.mp4', //Completed 2025/12/17
     },
     {
+      'curriculumKey': 'forces_friction',
       'title': 'Unit 4: Friction',
       'description':
           "Friction calculations with coefficient of friction and normal force",
@@ -52,6 +56,7 @@ class _DynamicsState extends State<Dynamics> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/friction.mp4', //Completed 2025/12/17, fixed 2025/12/20
     },
     {
+      'curriculumKey': 'forces_examples',
       'title': 'Unit 5: Extra Dynamics Examples',
       'description': "More problems on net force and normal force",
       'videoPage': VideoPlayerScreen(key: UniqueKey()),

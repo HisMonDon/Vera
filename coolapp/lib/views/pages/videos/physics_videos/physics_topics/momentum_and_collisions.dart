@@ -21,6 +21,7 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
+      'curriculumKey': 'momentum_intro',
       'title': 'Unit 1: Introduction to Momentum',
       'description':
           'Introduction to momentum, apply basic momentum formulae to moving objects',
@@ -29,6 +30,7 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/momentum_and_collisions/Unit%201%20Introduction%20to%20Momentum.mp4', //completed 2025/12/21
     },
     {
+      'curriculumKey': 'collisions_elastic',
       'title': 'Unit 2: Inelastic and Elastic Momentum Questions',
       'description':
           'Questions on inelastic and elastic collisions, conservation of momentum and energy.',
@@ -37,6 +39,7 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/momentum_and_collisions/Inelastic%20and%20Elastic%20Momentum%20Questions%20(Conservation).mp4', //completed 2025/12/22
     },
     {
+      'curriculumKey': 'momentum_2d',
       'title': 'Unit 3: Momentum in 2D',
       'description':
           'Break momentum into x and y components and apply conservation in both directions to solve planar collision problems.',
@@ -45,6 +48,7 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/momentum_and_collisions/Momentum%20in%202D.mp4', //completed 2025/12/22
     },
     {
+      'curriculumKey': 'momentum_2d_practice',
       'title': '2D Momentum practice',
       'description':
           'Extra example on 2D momentum, breaking vectors into x and y components',
@@ -53,6 +57,7 @@ class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/momentum_and_collisions/AP%20Physics%201%20While%20playing%20a%20game%20of%20billiards%2C%20your%200.17%20kg%20cue%20ball%2C%20travelling%20at%201.9%20m%20s%2C%20glan%20(1080p60)%20(1).mp4', //completed 2025/12/22
     },
     {
+      'curriculumKey': 'impulse',
       'title': 'Unit 4: Impulse and Momentum change',
       'description':
           'How forces change momentum over time, force-time graphs, real world applications',

@@ -20,6 +20,7 @@ class _OtherState extends State<Other> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
+      'curriculumKey': 'uncertainty',
       'title': 'Measurement and Uncertainty',
       'description':
           'Techniques for recording measurements, calculating uncertainties, and analyzing experimental data',

@@ -23,6 +23,7 @@ class _MagnetismState extends State<Magnetism> {
   Map<int, bool> hoveredStates = {};
   final List<Map<String, dynamic>> videosList = [
     {
+      'curriculumKey': 'rhr',
       'title': 'Unit 1: Right hand rule',
       'description':
           'Introduction on how to use the right hand rule, applications.',
@@ -31,6 +32,7 @@ class _MagnetismState extends State<Magnetism> {
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/5%20Right%20hand%20rule.mp4', // added 2025/12/21
     },
     {
+      'curriculumKey': 'magnetic_flux',
       'title': 'Unit 2: Magnetic Flux (IB/AP)',
       'description':
           "Introduction to magnetic flux, effect of angles, applications",
