@@ -165,12 +165,6 @@ class CurriculumTopicFilters {
         'springs_hookes',
         'springs_energy',
       },
-      thermalPhysics: {
-        'thermal_temperature',
-        'thermal_latent_heat',
-        'thermal_transfer',
-        'thermal_gas_laws',
-      },
       electricity: _allUnits,
       magnetism: _allUnits,
       electrostatics: {},
