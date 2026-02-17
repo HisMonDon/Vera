@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:beamer/beamer.dart';
 import 'package:chewie/chewie.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/sample_videos.dart';
-import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
