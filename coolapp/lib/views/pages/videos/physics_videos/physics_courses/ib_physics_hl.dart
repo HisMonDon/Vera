@@ -235,29 +235,6 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
       'videoPage': const Modern(),
     },
   ];
-    //add nuclear and quantum physics later
-     /*A typical full IB Physics HL order (based on the IB themes plus HL add-ons) is closer to:
-
-Measurements & Uncertainty (Intro)
-
-Mechanics (Kinematics, Forces, Work/Energy, Momentum)
-
-Rigid Body Mechanics (HL) & Circular motion & Gravitation
-
-Thermal Physics & Thermodynamics (HL)
-
-Waves & Wave Phenomena (HL)
-
-Electricity & Magnetism (Fields + circuits + motion of charges)
-
-Electromagnetic Induction (HL)
-
-Nuclear & Atomic Physics
-
-Quantum Physics (HL)
-
-Relativity (HL) and advanced Fields content (potentials, equipotentials)*/
-  ];
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
