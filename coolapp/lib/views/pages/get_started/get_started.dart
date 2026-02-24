@@ -124,9 +124,21 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CircleAvatar(
-            radius: 60,
-            backgroundImage: AssetImage('images/chenyuluPFP.png'),
+          Column(
+            children: [
+              CircleAvatar(
+                radius: 60,
+                backgroundImage: AssetImage('images/chenyuluPFP.png'),
+              ),
+              const SizedBox(height: 12),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(35),
+                child: Image.asset(
+                  'images/str_logo.png',
+                  height: 80,
+                ),
+              ),
+            ],
           ),
           const SizedBox(width: 24),
           Expanded(
