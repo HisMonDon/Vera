@@ -249,10 +249,6 @@ class _HomePageState extends State {
                     ),
                   ],
                 ),
-                Image.asset(
-                  'images/str_logo.png',
-                  height: 40,
-                ),
               ],
             ),
           ),
