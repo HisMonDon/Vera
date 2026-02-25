@@ -1039,7 +1039,7 @@ class _HomePageState extends State {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          "2025 Chenyu Studios",
+                          "2026 Chenyu Studios",
                           style: TextStyle(
                             fontSize: 10,
                             color: globals.isLight

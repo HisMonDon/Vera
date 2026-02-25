@@ -232,7 +232,8 @@ class _ProfilePageState extends State<ProfilePage> {
                               );
                             } else {
                               setState(() {
-                                errorMessage = 'Failed to change password. ${globals.errorMessage}';
+                                errorMessage =
+                                    'Failed to change password. ${globals.errorMessage}';
                                 isLoading = false;
                               });
                             }
@@ -704,7 +705,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            "2025 Chenyu Studios",
+                            "2026 Chenyu Studios",
                             style: TextStyle(
                               fontSize: 10,
                               color: globals.isLight
