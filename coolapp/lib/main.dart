@@ -53,6 +53,9 @@ class MyApp extends StatefulWidget {
   static void updateTheme(bool isLight) {
     globals.isLight = isLight;
     themeNotifier.value = isLight;
+    SharedPreferences.getInstance().then((prefs) {
+      prefs.setBool('isLightTheme', isLight);
+    });
   }
 
   @override

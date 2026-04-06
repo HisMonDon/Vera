@@ -180,7 +180,7 @@ class AuthService {
         await saveUserNameToFirestore(data['localId'], name, data['idToken']);
         await saveThemePreferenceToFirestore(
           data['localId'],
-          true,
+          globals.isLight,
           data['idToken'],
         );
         return true;
