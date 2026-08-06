@@ -2,12 +2,30 @@ import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/views/pages/videos/physics_videos/curriculum_topic_filters.dart';
-import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/topic_widgets.dart';
 
 //not done
 class Magnetism extends StatefulWidget {
   const Magnetism({super.key});
+
+  static const List<Map<String, dynamic>> videos = [
+    {
+      'curriculumKey': 'rhr',
+      'title': 'Right Hand Rule',
+      'description':
+          'Introduction on how to use the right hand rule, applications.',
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/5%20Right%20hand%20rule.mp4', // added 2025/12/21
+    },
+    {
+      'curriculumKey': 'magnetic_flux',
+      'title': 'Magnetic Flux (IB/AP)',
+      'description':
+          "Introduction to magnetic flux, effect of angles, applications",
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/IBAP%20Introduction%20to%20Magnetic%20Flux.mp4', // added 2025/12/21
+    },
+  ];
 
   @override
   State<Magnetism> createState() =>
@@ -18,26 +36,6 @@ class _MagnetismState extends State<Magnetism> {
   final double _width = 400;
   final double _height = 200;
   Map<int, bool> hoveredStates = {};
-  final List<Map<String, dynamic>> videosList = [
-    {
-      'curriculumKey': 'rhr',
-      'title': 'Right Hand Rule',
-      'description':
-          'Introduction on how to use the right hand rule, applications.',
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/5%20Right%20hand%20rule.mp4', // added 2025/12/21
-    },
-    {
-      'curriculumKey': 'magnetic_flux',
-      'title': 'Magnetic Flux (IB/AP)',
-      'description':
-          "Introduction to magnetic flux, effect of angles, applications",
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
-      'videoLink':
-          'https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/IBAP%20Introduction%20to%20Magnetic%20Flux.mp4', // added 2025/12/21
-    },
-  ];
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
@@ -46,7 +44,7 @@ class _MagnetismState extends State<Magnetism> {
     final visibleVideos = CurriculumTopicFilters.filterUnits(
       courseTitle: globals.courseTitle,
       topicKey: CurriculumTopicFilters.magnetism,
-      units: videosList,
+      units: Magnetism.videos,
     );
     return Scaffold(
       appBar: TimedAppBar(),
@@ -71,9 +69,8 @@ class _MagnetismState extends State<Magnetism> {
                     title: video['title'] ?? '',
                     description: video['description'] ?? '',
                     index: index,
-                    videoPage: video['videoPage']!,
+                    topicKey: CurriculumTopicFilters.magnetism,
                     videosList: visibleVideos,
-                    videoLink: video['videoLink'],
                     context: context,
                     hoveredStates: hoveredStates,
                     onHoverChanged: (index, isHovered) {

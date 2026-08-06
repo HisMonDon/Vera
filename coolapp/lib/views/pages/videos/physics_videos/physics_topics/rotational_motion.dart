@@ -1,4 +1,3 @@
-import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
@@ -8,21 +7,12 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/topic_w
 class RotationalMotion extends StatefulWidget {
   const RotationalMotion({super.key});
 
-  @override
-  State<RotationalMotion> createState() => _RotationalMotionState();
-}
-
-class _RotationalMotionState extends State<RotationalMotion> {
-  final double _width = 400;
-  final double _height = 200;
-  Map<int, bool> hoveredStates = {};
-  final List<Map<String, dynamic>> videosList = [
+  static const List<Map<String, dynamic>> videos = [
     {
       'curriculumKey': 'rotation_intro',
       'title': 'Introduction to Rotational Motion',
       'description':
           'Basic concepts of circular motion, angular displacement, and angular velocity',
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/rotational_motion/Unit%201%20Introduction%20to%20Rotational%20Motion.mp4', //completed 2025/12/27
     },
@@ -31,7 +21,6 @@ class _RotationalMotionState extends State<RotationalMotion> {
       'title': 'Rotational Kinematics',
       'description':
           'Angular position, velocity, and acceleration relationships in rotational motion',
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/rotational_motion/Unit%202%20Rotational%20Kinematics.mp4', //completed 2025/12/27
     },
@@ -40,7 +29,6 @@ class _RotationalMotionState extends State<RotationalMotion> {
       'title': 'Torque and Rotational Equilibrium',
       'description':
           'Introduction and leeson on how torque causes rotational accceleration and balanced torque systems.',
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/rotational_motion/Unit%203%20Torque%20and%20Rotational%20Equilibrium.mp4', //completed 2025/12/27
     },
@@ -49,7 +37,6 @@ class _RotationalMotionState extends State<RotationalMotion> {
       'title': 'Torque and Rotational Forces Example',
       'description':
           'Past AP Exam FRQ question analyzing the calculations of torque in a real world example.',
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/rotational_motion/app.yt1z.net%20-%202024%20AP%20Physics%201%20Solutions%20Free%20Response%20Q3%20(1080p).mp4', //completed 2025/12/27
     },
@@ -58,11 +45,19 @@ class _RotationalMotionState extends State<RotationalMotion> {
       'title': 'Moment of Inertia',
       'description':
           'Understanding rotational mass, calculating moment of inertia for different objects',
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/rotational_motion/Unit%205%20Moment%20of%20Inertia.mp4', //completed 2025/12/27
     },
   ];
+
+  @override
+  State<RotationalMotion> createState() => _RotationalMotionState();
+}
+
+class _RotationalMotionState extends State<RotationalMotion> {
+  final double _width = 400;
+  final double _height = 200;
+  Map<int, bool> hoveredStates = {};
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
@@ -70,7 +65,7 @@ class _RotationalMotionState extends State<RotationalMotion> {
     final visibleVideos = CurriculumTopicFilters.filterUnits(
       courseTitle: globals.courseTitle,
       topicKey: CurriculumTopicFilters.rotationalMotion,
-      units: videosList,
+      units: RotationalMotion.videos,
     );
     return Scaffold(
       appBar: TimedAppBar(),
@@ -95,9 +90,8 @@ class _RotationalMotionState extends State<RotationalMotion> {
                     title: video['title'] ?? '',
                     description: video['description'] ?? '',
                     index: index,
-                    videoPage: video['videoPage']!,
+                    topicKey: CurriculumTopicFilters.rotationalMotion,
                     videosList: visibleVideos,
-                    videoLink: video['videoLink'],
                     context: context,
                     hoveredStates: hoveredStates,
                     onHoverChanged: (index, isHovered) {

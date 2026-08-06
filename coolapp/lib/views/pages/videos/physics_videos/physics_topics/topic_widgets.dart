@@ -1,3 +1,4 @@
+import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
@@ -150,9 +151,8 @@ class TopicWidgets {
     required String title,
     required String description,
     required int index,
-    required Widget videoPage,
+    required String topicKey,
     required List<Map<String, dynamic>> videosList,
-    required String videoLink,
     required BuildContext context,
     required Map<int, bool> hoveredStates,
     required Function(int index, bool isHovered) onHoverChanged, //setState
@@ -184,17 +184,8 @@ class TopicWidgets {
           child: InkWell(
             borderRadius: BorderRadius.circular(12),
             onTap: () {
-              if (index == videosList.length - 1) {
-                globals.nextVideoTitle = 'last_one';
-              } else {
-                globals.nextVideoTitle = videosList[index + 1]['title'];
-              }
-              globals.unitTitle = videosList[index]['title'];
-              globals.videoLink = videoLink;
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => videoPage),
-              );
+              final curriculumKey = videosList[index]['curriculumKey'] as String;
+              context.beamToNamed('/videos/watch/$topicKey/$curriculumKey');
             },
             child: Container(
               width: double.infinity,
@@ -276,16 +267,10 @@ class TopicWidgets {
                         color: Colors.white,
                       ),
                       onPressed: () {
-                        if (index == videosList.length - 1) {
-                          globals.nextVideoTitle = 'last_one';
-                        } else {
-                          globals.nextVideoTitle =
-                              videosList[index + 1]['title'];
-                        }
-                        globals.videoLink = videoLink;
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (_) => videoPage),
+                        final curriculumKey =
+                            videosList[index]['curriculumKey'] as String;
+                        context.beamToNamed(
+                          '/videos/watch/$topicKey/$curriculumKey',
                         );
                       },
                     ),

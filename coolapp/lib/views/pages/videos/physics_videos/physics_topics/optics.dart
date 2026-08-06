@@ -1,4 +1,3 @@
-import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
@@ -8,21 +7,12 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/topic_w
 class Optics extends StatefulWidget {
   const Optics({super.key});
 
-  @override
-  State<Optics> createState() => _OpticsState();
-}
-
-class _OpticsState extends State<Optics> {
-  final double _width = 400;
-  final double _height = 200;
-  Map<int, bool> hoveredStates = {};
-  final List<Map<String, dynamic>> videosList = [
+  static const List<Map<String, dynamic>> videos = [
     {
       'curriculumKey': 'optics_intro',
       'title': 'Introduction to Optics',
       'description':
           'Light as electromagnetic waves, properties of light, and the electromagnetic spectrum',
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%201%20Introducution%20to%20Light.mp4', //completed 12/25/2025 merry christmas!
     },
@@ -31,7 +21,6 @@ class _OpticsState extends State<Optics> {
       'title': 'Lenses Part 1',
       'description':
           'Law of reflection, introduction to convex and concave lenses, real and virtual images.',
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%202%20Lenses%20Part%201.mp4', //completed 12/25/2025
     },
@@ -40,11 +29,19 @@ class _OpticsState extends State<Optics> {
       'title': 'Lenses Part 2',
       'description':
           'Relationship between height, magnification, and distance in convex and concave lenses.',
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%203%20Lenses%20Part%202.mp4', //completed 12/25/2025
     },
   ];
+
+  @override
+  State<Optics> createState() => _OpticsState();
+}
+
+class _OpticsState extends State<Optics> {
+  final double _width = 400;
+  final double _height = 200;
+  Map<int, bool> hoveredStates = {};
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
@@ -52,7 +49,7 @@ class _OpticsState extends State<Optics> {
     final visibleVideos = CurriculumTopicFilters.filterUnits(
       courseTitle: globals.courseTitle,
       topicKey: CurriculumTopicFilters.optics,
-      units: videosList,
+      units: Optics.videos,
     );
     return Scaffold(
       appBar: TimedAppBar(),
@@ -77,9 +74,8 @@ class _OpticsState extends State<Optics> {
                     title: video['title'] ?? '',
                     description: video['description'] ?? '',
                     index: index,
-                    videoPage: video['videoPage']!,
+                    topicKey: CurriculumTopicFilters.optics,
                     videosList: visibleVideos,
-                    videoLink: video['videoLink'],
                     context: context,
                     hoveredStates: hoveredStates,
                     onHoverChanged: (index, isHovered) {

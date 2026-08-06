@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:beamer/beamer.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -146,32 +147,32 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            if (kIsWeb)
-              Container(
-                padding: const EdgeInsets.all(15),
-                width: double.infinity,
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: ElevatedButton.icon(
-                        icon: const Icon(Icons.arrow_back),
-                        label: const Text('Back'),
-                        onPressed: () {
-                          Navigator.of(context).pop();
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color.fromARGB(
-                            255,
-                            15,
-                            48,
-                            40,
-                          ),
-                          foregroundColor: Colors.white,
+            Container(
+              padding: const EdgeInsets.all(15),
+              width: double.infinity,
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: ElevatedButton.icon(
+                      icon: const Icon(Icons.arrow_back),
+                      label: const Text('Back'),
+                      onPressed: () {
+                        context.beamBack();
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color.fromARGB(
+                          255,
+                          15,
+                          48,
+                          40,
                         ),
+                        foregroundColor: Colors.white,
                       ),
                     ),
+                  ),
+                  if (kIsWeb)
                     Row(
                       mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.baseline,

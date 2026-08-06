@@ -49,6 +49,7 @@ List<dynamic> redirectExplore = [
 ];
 List<Map<String, dynamic>> videoOfTheDay = [
   {
+    'curriculumKey': 'free_body_diagrams',
     'videoLink':
         'https://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/free_body_diagrams.mp4',
     'videoTitle': 'Free Body Diagrams',
@@ -61,6 +62,7 @@ List<Map<String, dynamic>> videoOfTheDay = [
     ), //bc I will be generating thumbnail from my code
   },
   {
+    'curriculumKey': 'kinematics_formulae',
     'videoLink':
         'https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%202D%20Part%202.mp4',
     'videoTitle': 'Kinematics Formulae',
@@ -73,6 +75,7 @@ List<Map<String, dynamic>> videoOfTheDay = [
     ), //bc I will be generating thumbnail from my code
   },
   {
+    'curriculumKey': 'application_of_kinematics',
     'videoLink':
         'https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%202D%20Part%203.mp4',
     'videoTitle': 'Application of Kinematics',
@@ -85,6 +88,7 @@ List<Map<String, dynamic>> videoOfTheDay = [
     ), //bc I will be generating thumbnail from my code
   },
   {
+    'curriculumKey': 'momentum_in_2d',
     'videoLink':
         'https://pub-56767059a1844d06818006869a91df08.r2.dev/momentum_and_collisions/Momentum%20in%202D.mp4',
     'videoTitle': 'Momentum in 2D',
@@ -97,6 +101,7 @@ List<Map<String, dynamic>> videoOfTheDay = [
     ), //bc I will be generating thumbnail from my code
   },
   {
+    'curriculumKey': 'springs_and_conservation_of_energy',
     'videoLink':
         'https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%203%20Springs%20and%20Conservation%20of%20Energy.mp4',
     'videoTitle': 'Springs and Conservation of Energy',
@@ -109,6 +114,7 @@ List<Map<String, dynamic>> videoOfTheDay = [
     ), //bc I will be generating thumbnail from my code
   },
   {
+    'curriculumKey': 'ap_physics_1_frq_2025_q4',
     'videoLink':
         'https://pub-56767059a1844d06818006869a91df08.r2.dev/2025%20AP%20Physics%201%20Solutions%20Free%20Response%20Q4%20(1080p).mp4',
     'videoTitle': '2025 AP Physics 1 Solutions Free Response Q4',

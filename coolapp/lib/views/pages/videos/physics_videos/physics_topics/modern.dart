@@ -2,25 +2,17 @@ import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/views/pages/videos/physics_videos/curriculum_topic_filters.dart';
-import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/topic_widgets.dart';
 
 class Modern extends StatefulWidget {
   const Modern({super.key});
 
-  @override
-  State<Modern> createState() => _ModernState();
-}
-
-class _ModernState extends State<Modern> {
-  Map<int, bool> hoveredStates = {};
-  final List<Map<String, dynamic>> videosList = [
+  static const List<Map<String, dynamic>> videos = [
     {
       'curriculumKey': 'modern_intro',
       'title': "Foundations of Modern Physics",
       'description':
           "Limits of classical physics, key ideas that launched modern physics",
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/modern_physics/Unit%201%20Introduction%20To%20Modern%20Physics.mp4', //Completed 2026/2/10
     },
@@ -29,7 +21,6 @@ class _ModernState extends State<Modern> {
       'title': "Quantized Energy Levels and Formulae",
       'description':
           "Energy quantization, Planck's constant, and quantum formulas",
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/modern_physics/Unit%202%20Quantized%20Energy%20Levels%20and%20Formulae.mp4', //Completed 2026/2/10
     },
@@ -38,7 +29,6 @@ class _ModernState extends State<Modern> {
       'title': 'The Photoelectric Effect and Wave-Particle Duality',
       'description':
           'Photons, wave-particle duality, and the photoelectric effect',
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/modern_physics/Unit%203%20The%20Photoelectric%20Effect.mp4', //Completed 2026/2/10
     },
@@ -47,7 +37,6 @@ class _ModernState extends State<Modern> {
       'title': 'Matter as Waves and Atomic Structure',
       'description':
           "Introduction to how matter can also behave as waves, atomic models, and quantum numbers",
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/modern_physics/Unit%204%20Wave-Particle%20Duality.mp4', //Completed 2026/2/10
     },
@@ -55,7 +44,6 @@ class _ModernState extends State<Modern> {
       'curriculumKey': 'nuclear_decay',
       'title': 'Nuclear Decay',
       'description': "Radioactivity, half-life, and decay processes",
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/modern_physics/Unit%205%20Types%20of%20Decay.mp4', //Completed 2026/2/10
     },
@@ -63,11 +51,17 @@ class _ModernState extends State<Modern> {
       'curriculumKey': 'fission_fusion',
       'title': 'Fission and Fusion',
       'description': "Nuclear reactions, fission, fusion, and their applications",
-      'videoPage': VideoPlayerScreen(key: UniqueKey()),
       'videoLink':
           'https://pub-56767059a1844d06818006869a91df08.r2.dev/modern_physics/Unit%206%20Fission%20and%20Fusion%20Reactions.mp4', //Completed 2026/2/10
     },
   ];
+
+  @override
+  State<Modern> createState() => _ModernState();
+}
+
+class _ModernState extends State<Modern> {
+  Map<int, bool> hoveredStates = {};
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
@@ -76,7 +70,7 @@ class _ModernState extends State<Modern> {
     final visibleVideos = CurriculumTopicFilters.filterUnits(
       courseTitle: globals.courseTitle,
       topicKey: CurriculumTopicFilters.modernPhysics,
-      units: videosList,
+      units: Modern.videos,
     );
 
     return Scaffold(
@@ -116,9 +110,8 @@ class _ModernState extends State<Modern> {
                       title: video['title'] ?? '',
                       description: video['description'] ?? '',
                       index: index,
-                      videoPage: video['videoPage']!,
+                      topicKey: CurriculumTopicFilters.modernPhysics,
                       videosList: visibleVideos,
-                      videoLink: video['videoLink'],
                       context: context,
                       hoveredStates: hoveredStates,
                       onHoverChanged: (index, isHovered) {

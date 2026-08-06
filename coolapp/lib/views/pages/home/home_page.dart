@@ -1,6 +1,5 @@
 import 'package:coolapp/globals.dart' as global;
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
-import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:widget_mask/widget_mask.dart';
@@ -31,8 +30,6 @@ class _HomePageState extends State {
   String _displayName = ''; // stores name without comma prefix
   bool _isLoading = true; // handles initial loading state
   final player = Player();
-  final String videoUrl =
-      globals.videoOfTheDay[globals.videoOfTheDayIndex]['videoLink'] ?? '';
   final String featuredTitle =
       globals.videoOfTheDay[globals.videoOfTheDayIndex]['videoTitle'] ?? '';
   final Color thumbnailColor =
@@ -840,16 +837,12 @@ class _HomePageState extends State {
                                       shape: RoundedRectangleBorder(),
                                     ),
                                     onPressed: () {
-                                      globals.videoLink = videoUrl;
-                                      globals.unitTitle = featuredTitle;
-                                      globals.topicTitle = featuredUnit;
-                                      globals.courseTitle = '';
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              const VideoPlayerScreen(),
-                                        ),
+                                      final curriculumKey = globals
+                                              .videoOfTheDay[globals
+                                                  .videoOfTheDayIndex]
+                                          ['curriculumKey'] as String;
+                                      context.beamToNamed(
+                                        '/videos/watch/video_of_the_day/$curriculumKey',
                                       );
                                     },
                                     child: Stack(
