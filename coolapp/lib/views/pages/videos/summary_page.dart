@@ -1,3 +1,4 @@
+import 'package:beamer/beamer.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -38,6 +39,7 @@ class SummaryPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: pageBackground,
       appBar: TimedAppBar(),
+      bottomNavigationBar: _buildBottomNavBar(context),
       body: SafeArea(
         top: false,
         child: SingleChildScrollView(
@@ -188,6 +190,46 @@ class SummaryPage extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+
+  static const _navPageKeys = ['about', 'profile', 'home', 'videos', 'settings'];
+
+  Widget _buildBottomNavBar(BuildContext context) {
+    return BottomNavigationBar(
+      type: BottomNavigationBarType.fixed,
+      backgroundColor: const Color.fromARGB(255, 15, 48, 40),
+      selectedItemColor: Colors.white,
+      unselectedItemColor: Colors.white,
+      currentIndex: _navPageKeys.indexOf('videos'),
+      onTap: (index) {
+        final key = _navPageKeys[index];
+        if (key == 'videos') return;
+        final path = key == 'home' ? '/' : '/$key';
+        context.beamToNamed(path);
+      },
+      items: const [
+        BottomNavigationBarItem(
+          icon: Icon(Icons.question_mark),
+          label: 'Get Started',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.person_rounded),
+          label: 'Profile',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.home_rounded),
+          label: 'Home',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.ondemand_video_rounded),
+          label: 'Videos',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.settings),
+          label: 'Settings',
+        ),
+      ],
     );
   }
 }
