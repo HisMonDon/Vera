@@ -19,8 +19,13 @@ class HomeLocation extends BeamLocation<BeamState> {
   List<BeamPage> buildPages(BuildContext context, BeamState state) {
     final topicKey = state.pathParameters['topicKey'];
     final curriculumKey = state.pathParameters['curriculumKey'];
+    final videosRootPage = BeamPage(
+      key: const ValueKey('videos'),
+      title: 'Vera',
+      child: const WidgetTree(pageName: 'videos'),
+    );
     if (topicKey != null && curriculumKey != null) {
-      return [_buildVideoPage(topicKey, curriculumKey)];
+      return [videosRootPage, _buildVideoPage(topicKey, curriculumKey)];
     }
 
     final pageName = state.pathParameters['pageName'];
@@ -67,8 +72,7 @@ class HomeLocation extends BeamLocation<BeamState> {
         (entry['title'] as String?) ?? (entry['videoTitle'] as String?) ?? '';
     globals.topicTitle = topicTitle;
     globals.courseTitle = '';
-    globals.nextVideoTitle =
-        (nextEntry?['title'] as String?) ?? 'last_one';
+    globals.nextVideoTitle = (nextEntry?['title'] as String?) ?? 'last_one';
 
     return BeamPage(
       key: ValueKey('video-$topicKey-$curriculumKey'),
