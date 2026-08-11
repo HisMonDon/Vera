@@ -1,30 +1,42 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
+import 'package:coolapp/views/pages/videos/summary_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:coolapp/main.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
+  setUpAll(() {
+    GoogleFonts.config.allowRuntimeFetching = false;
+  });
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+  testWidgets('summary page displays lesson input and starts the lesson', (
+    WidgetTester tester,
+  ) async {
+    var lessonStarted = false;
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
+    await tester.pumpWidget(
+      MaterialApp(
+        home: SummaryPage(
+          lessonTitle: 'Motion in one dimension',
+          topicTitle: 'Kinematics',
+          covered: 'Displacement, velocity, and acceleration.',
+          prerequisites: 'Basic algebra and graph reading.',
+          onStartLesson: () => lessonStarted = true,
+        ),
+      ),
+    );
+
+    expect(find.text('Motion in one dimension'), findsOneWidget);
+    expect(
+      find.text('Displacement, velocity, and acceleration.'),
+      findsOneWidget,
+    );
+    expect(find.text('Basic algebra and graph reading.'), findsOneWidget);
+
+    await tester.ensureVisible(find.text('Start lesson'));
+    await tester.tap(find.text('Start lesson'));
     await tester.pump();
+    expect(lessonStarted, isTrue);
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    await tester.pumpWidget(const SizedBox.shrink());
   });
 }

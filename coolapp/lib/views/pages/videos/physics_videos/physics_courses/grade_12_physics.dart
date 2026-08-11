@@ -304,7 +304,7 @@ class _Grade12PhysicsState extends State<Grade12Physics> {
                     video['description'] ?? '',
                     index,
                     video['videoPage']!,
-                    video['videoLink'],
+                    video['videoLink'] ?? '',
                   );
                 }),
               ),

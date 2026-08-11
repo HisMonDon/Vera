@@ -213,9 +213,9 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                         ),
                       ],
                     ),
-                  ],
-                ),
+                ],
               ),
+            ),
             const SizedBox(height: 19),
             AutoSizeText(
               stackedTitle,

@@ -323,7 +323,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
                     video['description'] ?? '',
                     index,
                     video['videoPage']!,
-                    video['videoLink'],
+                    video['videoLink'] ?? '',
                   );
                 }),
               ),

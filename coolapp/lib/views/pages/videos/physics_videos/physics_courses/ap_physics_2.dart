@@ -310,7 +310,7 @@ class _ApPhysics2State extends State<ApPhysics2> {
                     video['description'] ?? '',
                     index,
                     video['videoPage']!,
-                    video['videoLink'],
+                    video['videoLink'] ?? '',
                   );
                 }),
               ),

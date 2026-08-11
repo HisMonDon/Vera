@@ -1,6 +1,8 @@
 import 'package:beamer/beamer.dart';
 import 'package:coolapp/globals.dart' as globals;
+import 'package:coolapp/views/pages/videos/lesson_summary_content.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/video_catalog.dart';
+import 'package:coolapp/views/pages/videos/summary_page.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:coolapp/views/widget_tree.dart';
 import 'package:flutter/material.dart';
@@ -13,19 +15,28 @@ class HomeLocation extends BeamLocation<BeamState> {
         '/',
         '/:pageName',
         '/videos/watch/:topicKey/:curriculumKey',
+        '/videos/play/:topicKey/:curriculumKey',
       ];
 
   @override
   List<BeamPage> buildPages(BuildContext context, BeamState state) {
     final topicKey = state.pathParameters['topicKey'];
     final curriculumKey = state.pathParameters['curriculumKey'];
+    final isPlayerRoute = state.uri.pathSegments.contains('play');
     final videosRootPage = BeamPage(
       key: const ValueKey('videos'),
       title: 'Vera',
       child: const WidgetTree(pageName: 'videos'),
     );
     if (topicKey != null && curriculumKey != null) {
-      return [videosRootPage, _buildVideoPage(topicKey, curriculumKey)];
+      return [
+        videosRootPage,
+        _buildVideoPage(
+          topicKey,
+          curriculumKey,
+          showPlayer: isPlayerRoute,
+        ),
+      ];
     }
 
     final pageName = state.pathParameters['pageName'];
@@ -40,7 +51,11 @@ class HomeLocation extends BeamLocation<BeamState> {
     ];
   }
 
-  BeamPage _buildVideoPage(String topicKey, String curriculumKey) {
+  BeamPage _buildVideoPage(
+    String topicKey,
+    String curriculumKey, {
+    required bool showPlayer,
+  }) {
     Map<String, dynamic>? entry;
     String topicTitle;
     Map<String, dynamic>? nextEntry;
@@ -52,7 +67,7 @@ class HomeLocation extends BeamLocation<BeamState> {
           break;
         }
       }
-      topicTitle = '';
+      topicTitle = (entry?['videoUnit'] as String?) ?? '';
     } else {
       entry = VideoCatalog.resolve(topicKey, curriculumKey);
       topicTitle = VideoCatalog.topicTitle(topicKey);
@@ -66,18 +81,40 @@ class HomeLocation extends BeamLocation<BeamState> {
         child: _VideoNotFoundPage(),
       );
     }
+    final videoEntry = entry;
 
-    globals.videoLink = (entry['videoLink'] as String?) ?? '';
-    globals.unitTitle =
-        (entry['title'] as String?) ?? (entry['videoTitle'] as String?) ?? '';
+    globals.videoLink = (videoEntry['videoLink'] as String?) ?? '';
+    globals.unitTitle = (videoEntry['title'] as String?) ??
+        (videoEntry['videoTitle'] as String?) ??
+        '';
     globals.topicTitle = topicTitle;
     globals.courseTitle = '';
     globals.nextVideoTitle = (nextEntry?['title'] as String?) ?? 'last_one';
+    final summary = LessonSummaryContent.fromVideo(
+      topicKey: topicKey,
+      video: videoEntry,
+    );
 
     return BeamPage(
-      key: ValueKey('video-$topicKey-$curriculumKey'),
+      key: ValueKey(
+        '${showPlayer ? 'video-player' : 'video-summary'}-$topicKey-$curriculumKey',
+      ),
       title: globals.unitTitle,
-      child: const VideoPlayerScreen(),
+      child: showPlayer
+          ? const VideoPlayerScreen()
+          : Builder(
+              builder: (context) => SummaryPage(
+                lessonTitle: globals.unitTitle,
+                topicTitle: topicTitle,
+                covered: summary.covered,
+                prerequisites: summary.prerequisites,
+                onStartLesson: () {
+                  context.beamToNamed(
+                    '/videos/play/$topicKey/$curriculumKey',
+                  );
+                },
+              ),
+            ),
     );
   }
 }
