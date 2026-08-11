@@ -30,6 +30,10 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     super.initState();
     _initializePlayer();
     _updatePastVideos();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      Beamer.of(context).removeLastHistoryElement();
+    });
   }
 
   void _updatePastVideos() {
@@ -138,7 +142,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     } else {
       stackedTitle = globals.unitTitle;
     }
-
+    final beamerDelegate = Beamer.of(context);
     return Scaffold(
       backgroundColor: globals.isLight
           ? const Color.fromARGB(255, 196, 221, 207)
@@ -159,7 +163,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                       icon: const Icon(Icons.arrow_back),
                       label: const Text('Back'),
                       onPressed: () {
-                        context.beamBack();
+                        beamerDelegate.beamBack();
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color.fromARGB(

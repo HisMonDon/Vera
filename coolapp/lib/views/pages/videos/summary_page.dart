@@ -1,3 +1,4 @@
+import 'package:beamer/beamer.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -50,7 +51,7 @@ class SummaryPage extends StatelessWidget {
                 children: [
                   Row(children: [
                     TextButton.icon(
-                      onPressed: () => Navigator.of(context).maybePop(),
+                      onPressed: () => context.beamBack(),
                       icon: const Icon(Icons.arrow_back_rounded, size: 20),
                       label: const Text('Back to lessons'),
                       style: TextButton.styleFrom(
