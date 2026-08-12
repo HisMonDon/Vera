@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:beamer/beamer.dart';
 import 'package:chewie/chewie.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/sample_videos.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:coolapp/widgets/pet.dart';
@@ -695,6 +696,7 @@ class _RunningPetState extends State<_RunningPet>
   late Animation<double> _position;
   bool _goingRight = true;
   bool _isRunning = false;
+  bool _isHovering = false;
   Timer? _idleTimer;
 
   double get _trackRange =>
@@ -735,6 +737,27 @@ class _RunningPetState extends State<_RunningPet>
     });
   }
 
+  void _onHoverEnter(PointerEnterEvent _) {
+    _idleTimer?.cancel();
+    if (_isRunning) {
+      _controller.stop();
+    }
+    setState(() => _isHovering = true);
+  }
+
+  void _onHoverExit(PointerExitEvent _) {
+    setState(() => _isHovering = false);
+    if (_isRunning) {
+      if (_goingRight) {
+        _controller.forward();
+      } else {
+        _controller.reverse();
+      }
+    } else {
+      _scheduleNextRun();
+    }
+  }
+
   @override
   void didUpdateWidget(covariant _RunningPet oldWidget) {
     super.didUpdateWidget(oldWidget);
@@ -766,17 +789,24 @@ class _RunningPetState extends State<_RunningPet>
               bottom: 0,
               child: Transform(
                 alignment: Alignment.center,
-                transform: (_isRunning && !_goingRight)
+                transform: (_isRunning && !_goingRight && !_isHovering)
                     ? Matrix4.diagonal3Values(-1.0, 1.0, 1.0)
                     : Matrix4.identity(),
                 child: child,
               ),
             );
           },
-          child: VeraPet(
-            animation:
-                _isRunning ? VeraAnimation.runningRight : VeraAnimation.idle,
-            width: widget.petWidth,
+          child: MouseRegion(
+            onEnter: _onHoverEnter,
+            onExit: _onHoverExit,
+            child: VeraPet(
+              animation: _isHovering
+                  ? VeraAnimation.waving
+                  : (_isRunning
+                      ? VeraAnimation.runningRight
+                      : VeraAnimation.idle),
+              width: widget.petWidth,
+            ),
           ),
         ),
       ],
