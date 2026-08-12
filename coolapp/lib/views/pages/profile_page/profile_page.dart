@@ -1,3 +1,6 @@
+import 'dart:async';
+import 'dart:math';
+
 import 'package:coolapp/main.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
@@ -6,6 +9,12 @@ import 'package:coolapp/services/auth_service.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:coolapp/widgets/pet.dart';
+
+const _petQuirkAnimations = [
+  VeraAnimation.waving,
+  VeraAnimation.jumping,
+];
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -30,15 +39,37 @@ class _ProfilePageState extends State<ProfilePage> {
   bool isLoggedIn = false;
   String _userEmail = '';
   String? _errorMessage;
+  VeraAnimation _petAnimation = VeraAnimation.idle;
+  Timer? _petQuirkTimer;
 
   @override
   void initState() {
     super.initState();
     _checkLoginStatus();
+    _scheduleNextPetQuirk();
+  }
+
+  void _scheduleNextPetQuirk() {
+    final wait = Duration(seconds: 8 + Random().nextInt(10));
+    _petQuirkTimer = Timer(wait, () {
+      if (!mounted) return;
+      setState(() {
+        _petAnimation =
+            _petQuirkAnimations[Random().nextInt(_petQuirkAnimations.length)];
+      });
+      _petQuirkTimer = Timer(const Duration(seconds: 2), () {
+        if (!mounted) return;
+        setState(() {
+          _petAnimation = VeraAnimation.idle;
+        });
+        _scheduleNextPetQuirk();
+      });
+    });
   }
 
   @override
   void dispose() {
+    _petQuirkTimer?.cancel();
     _emailController.dispose();
     _passwordController.dispose();
     _userNameController.dispose();
@@ -413,6 +444,14 @@ class _ProfilePageState extends State<ProfilePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Center(
+              child: VeraPet(
+                animation: VeraAnimation.idle,
+                width: 140,
+                framesPerSecond: 4,
+              ),
+            ),
+            const SizedBox(height: 12),
             Text(
               _isLogin ? 'Login' : 'Create Account',
               style: TextStyle(
