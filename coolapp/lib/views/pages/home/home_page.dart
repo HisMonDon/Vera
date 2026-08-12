@@ -1,3 +1,6 @@
+import 'dart:async';
+import 'dart:math';
+
 import 'package:coolapp/globals.dart' as global;
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
@@ -17,6 +20,11 @@ import 'package:beamer/beamer.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:coolapp/widgets/pet.dart';
 
+const _petQuirkAnimations = [
+  VeraAnimation.waving,
+  VeraAnimation.jumping,
+];
+
 class HomePage extends StatefulWidget {
   HomePage({super.key});
   @override
@@ -27,6 +35,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State {
   VeraAnimation veraAnimation = VeraAnimation.idle;
+  Timer? _petQuirkTimer;
   final _authService = AuthService();
   final TextEditingController _nameController = TextEditingController();
   String _displayName = ''; // stores name without comma prefix
@@ -42,6 +51,35 @@ class _HomePageState extends State {
   void initState() {
     super.initState();
     _initData();
+    _scheduleNextPetQuirk();
+  }
+
+  void _scheduleNextPetQuirk() {
+    final wait = Duration(seconds: 4 + Random().nextInt(5));
+    _petQuirkTimer = Timer(wait, () {
+      if (!mounted) return;
+      if (veraAnimation != VeraAnimation.idle) {
+        _scheduleNextPetQuirk();
+        return;
+      }
+      setState(() {
+        veraAnimation =
+            _petQuirkAnimations[Random().nextInt(_petQuirkAnimations.length)];
+      });
+      _petQuirkTimer = Timer(const Duration(seconds: 2), () {
+        if (!mounted) return;
+        setState(() {
+          veraAnimation = VeraAnimation.idle;
+        });
+        _scheduleNextPetQuirk();
+      });
+    });
+  }
+
+  @override
+  void dispose() {
+    _petQuirkTimer?.cancel();
+    super.dispose();
   }
 
   Future _initData() async {
