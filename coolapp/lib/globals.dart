@@ -154,4 +154,5 @@ List<Map<String, dynamic>> videoOfTheDay = [
 ];
 int videoOfTheDayIndex = 0;
 bool isLight = false;
+bool petEnabled = true;
 String errorMessage = '';

@@ -444,12 +444,18 @@ class _ProfilePageState extends State<ProfilePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Center(
-              child: VeraPet(
-                animation: _petAnimation,
-                width: 140,
-                framesPerSecond: 4,
-              ),
+            ValueListenableBuilder<bool>(
+              valueListenable: MyApp.petEnabledNotifier,
+              builder: (context, petEnabled, _) {
+                if (!petEnabled) return const SizedBox.shrink();
+                return Center(
+                  child: VeraPet(
+                    animation: _petAnimation,
+                    width: 140,
+                    framesPerSecond: 4,
+                  ),
+                );
+              },
             ),
             const SizedBox(height: 12),
             Text(

@@ -27,7 +27,13 @@ class _HelpPageState extends State<HelpPage> {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
       globals.isLight = prefs.getBool('isLightTheme') ?? false;
+      globals.petEnabled = prefs.getBool('petEnabled') ?? true;
     });
+  }
+
+  Future<void> _togglePet(bool enabled) async {
+    MyApp.updatePetEnabled(enabled);
+    setState(() {});
   }
 
   Future<void> _toggleTheme(bool isLight) async {
@@ -125,6 +131,11 @@ class _HelpPageState extends State<HelpPage> {
                     children: [_buildThemeToggle()],
                   ),
                   const SizedBox(height: 30),
+                  _buildSettingsCard(
+                    title: 'Companion',
+                    children: [_buildPetToggle()],
+                  ),
+                  const SizedBox(height: 30),
                 ],
               ),
             ),
@@ -204,6 +215,43 @@ class _HelpPageState extends State<HelpPage> {
           Switch(
             value: globals.isLight,
             onChanged: _toggleTheme,
+            activeThumbColor: const Color.fromARGB(255, 167, 198, 131),
+            activeTrackColor: const Color.fromARGB(255, 15, 48, 40),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildPetToggle() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Row(
+            children: [
+              Icon(
+                Icons.pets,
+                color: globals.isLight
+                    ? const Color.fromARGB(255, 15, 48, 40)
+                    : Colors.white,
+              ),
+              const SizedBox(width: 12),
+              Text(
+                'Show Vera Pet',
+                style: GoogleFonts.roboto(
+                  fontSize: 16,
+                  color: globals.isLight
+                      ? const Color.fromARGB(255, 15, 48, 40)
+                      : Colors.white,
+                ),
+              ),
+            ],
+          ),
+          Switch(
+            value: globals.petEnabled,
+            onChanged: _togglePet,
             activeThumbColor: const Color.fromARGB(255, 167, 198, 131),
             activeTrackColor: const Color.fromARGB(255, 15, 48, 40),
           ),

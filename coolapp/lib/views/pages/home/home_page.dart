@@ -19,6 +19,7 @@ import 'package:beamer/beamer.dart';
 //import 'dart:io';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:coolapp/widgets/pet.dart';
+import 'package:coolapp/main.dart';
 
 const _petQuirkAnimations = [
   VeraAnimation.waving,
@@ -865,21 +866,27 @@ class _HomePageState extends State {
                             ),
                           ],
                         ),
-                        Positioned(
-                          top: -10,
-                          right: 120,
-                          child: MouseRegion(
-                            onEnter: (_) => setState(() {
-                              veraAnimation = VeraAnimation.waving;
-                            }),
-                            onExit: (_) => setState(() {
-                              veraAnimation = VeraAnimation.idle;
-                            }),
-                            child: VeraPet(
-                              animation: veraAnimation,
-                              width: 220,
-                            ),
-                          ),
+                        ValueListenableBuilder<bool>(
+                          valueListenable: MyApp.petEnabledNotifier,
+                          builder: (context, petEnabled, _) {
+                            if (!petEnabled) return const SizedBox.shrink();
+                            return Positioned(
+                              top: -10,
+                              right: 120,
+                              child: MouseRegion(
+                                onEnter: (_) => setState(() {
+                                  veraAnimation = VeraAnimation.waving;
+                                }),
+                                onExit: (_) => setState(() {
+                                  veraAnimation = VeraAnimation.idle;
+                                }),
+                                child: VeraPet(
+                                  animation: veraAnimation,
+                                  width: 220,
+                                ),
+                              ),
+                            );
+                          },
                         ),
                       ],
                     ),

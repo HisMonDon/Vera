@@ -26,6 +26,7 @@ void main() async {
   MediaKit.ensureInitialized();
   final prefs = await SharedPreferences.getInstance();
   globals.isLight = prefs.getBool('isLightTheme') ?? false;
+  globals.petEnabled = prefs.getBool('petEnabled') ?? true;
 
   await _initializeAuthState();
   setPathUrlStrategy();
@@ -55,6 +56,18 @@ class MyApp extends StatefulWidget {
     themeNotifier.value = isLight;
     SharedPreferences.getInstance().then((prefs) {
       prefs.setBool('isLightTheme', isLight);
+    });
+  }
+
+  static final ValueNotifier<bool> petEnabledNotifier = ValueNotifier(
+    globals.petEnabled,
+  );
+
+  static void updatePetEnabled(bool enabled) {
+    globals.petEnabled = enabled;
+    petEnabledNotifier.value = enabled;
+    SharedPreferences.getInstance().then((prefs) {
+      prefs.setBool('petEnabled', enabled);
     });
   }
 

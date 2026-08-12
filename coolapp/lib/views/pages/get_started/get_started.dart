@@ -8,6 +8,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:coolapp/widgets/pet.dart';
+import 'package:coolapp/main.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:url_launcher/url_launcher.dart';
@@ -233,11 +234,17 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
             flex: 2,
             child: SizedBox(
               height: _cardHeight ?? 230,
-              child: LayoutBuilder(
-                builder: (context, constraints) {
-                  return _RunningPet(
-                    trackWidth: constraints.maxWidth,
-                    petWidth: 100,
+              child: ValueListenableBuilder<bool>(
+                valueListenable: MyApp.petEnabledNotifier,
+                builder: (context, petEnabled, _) {
+                  if (!petEnabled) return const SizedBox.shrink();
+                  return LayoutBuilder(
+                    builder: (context, constraints) {
+                      return _RunningPet(
+                        trackWidth: constraints.maxWidth,
+                        petWidth: 100,
+                      );
+                    },
                   );
                 },
               ),
