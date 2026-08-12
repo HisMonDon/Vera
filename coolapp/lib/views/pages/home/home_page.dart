@@ -351,7 +351,7 @@ class _HomePageState extends State {
                                 maxLines: 1,
                               ),
                             ),
-                            SizedBox(height: 30),
+                            SizedBox(height: 70),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
