@@ -199,67 +199,66 @@ class _HomePageState extends State {
 
     return Scaffold(
       appBar: TimedAppBar(),
-      body: Stack(
-        clipBehavior: Clip.none,
+      body: Column(
         children: [
-          Column(
-            children: [
-              Container(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
-                width: double.infinity,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.center,
+          Container(
+            padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
+            width: double.infinity,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.baseline,
+                  textBaseline: TextBaseline.alphabetic,
                   children: [
-                    Row(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.baseline,
-                      textBaseline: TextBaseline.alphabetic,
-                      children: [
-                        Text(
-                          'Vera',
-                          style: GoogleFonts.mPlus1(
-                            fontSize: 48.0,
-                            fontWeight: FontWeight.bold,
-                            color: globals.isLight
-                                ? Color.fromARGB(255, 15, 48, 40)
-                                : Colors.white,
-                          ),
+                    Text(
+                      'Vera',
+                      style: GoogleFonts.mPlus1(
+                        fontSize: 48.0,
+                        fontWeight: FontWeight.bold,
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 15, 48, 40)
+                            : Colors.white,
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 4,
+                      ),
+                      decoration: BoxDecoration(
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 15, 48, 40)
+                            : Color.fromARGB(255, 167, 198, 131),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text(
+                        'Web',
+                        style: GoogleFonts.montserrat(
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w600,
+                          color: globals.isLight
+                              ? Colors.white
+                              : Color.fromARGB(255, 15, 48, 40),
                         ),
-                        const SizedBox(width: 10),
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 10,
-                            vertical: 4,
-                          ),
-                          decoration: BoxDecoration(
-                            color: globals.isLight
-                                ? Color.fromARGB(255, 15, 48, 40)
-                                : Color.fromARGB(255, 167, 198, 131),
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: Text(
-                            'Web',
-                            style: GoogleFonts.montserrat(
-                              fontSize: 16.0,
-                              fontWeight: FontWeight.w600,
-                              color: globals.isLight
-                                  ? Colors.white
-                                  : Color.fromARGB(255, 15, 48, 40),
-                            ),
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
                   ],
                 ),
-              ),
-              Expanded(
-                child: SingleChildScrollView(
-                  child: Padding(
-                    padding: EdgeInsets.all(20),
-                    child: Column(
+              ],
+            ),
+          ),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Padding(
+                padding: EdgeInsets.all(20),
+                child: Column(
+                  children: [
+                    Stack(
+                      clipBehavior: Clip.none,
                       children: [
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -828,285 +827,284 @@ class _HomePageState extends State {
                             ),
                           ],
                         ),
-                        SizedBox(height: 20),
-                        //====================================================================//
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Text(
-                              'Featured Video of the Day',
-                              style: GoogleFonts.mPlus1(
-                                fontSize:
-                                    ((MediaQuery.of(context).size.width) / 3 +
-                                            100) /
-                                        30,
-                                color: globals.isLight
-                                    ? Color.fromARGB(255, 7, 77, 53)
-                                    : Color.fromARGB(255, 167, 198, 131),
-                              ),
+                        Positioned(
+                          top: -10,
+                          right: 120,
+                          child: MouseRegion(
+                            onEnter: (_) => setState(() {
+                              veraAnimation = VeraAnimation.waving;
+                            }),
+                            onExit: (_) => setState(() {
+                              veraAnimation = VeraAnimation.idle;
+                            }),
+                            child: VeraPet(
+                              animation: veraAnimation,
+                              width: 220,
                             ),
-                            SizedBox(height: 10),
-                            SizedBox(
-                              height: 600,
-                              child: Stack(
-                                alignment: Alignment.topCenter,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 20),
+                    //====================================================================//
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Featured Video of the Day',
+                          style: GoogleFonts.mPlus1(
+                            fontSize: ((MediaQuery.of(context).size.width) / 3 +
+                                    100) /
+                                30,
+                            color: globals.isLight
+                                ? Color.fromARGB(255, 7, 77, 53)
+                                : Color.fromARGB(255, 167, 198, 131),
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                        SizedBox(
+                          height: 600,
+                          child: Stack(
+                            alignment: Alignment.topCenter,
+                            children: [
+                              Container(
+                                width: (MediaQuery.of(context).size.width) - 80,
+                                height: 600,
+                                decoration: BoxDecoration(
+                                  color: Color.fromARGB(255, 15, 48, 40),
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
-                                  Container(
-                                    width: (MediaQuery.of(context).size.width) -
-                                        80,
-                                    height: 600,
-                                    decoration: BoxDecoration(
-                                      color: Color.fromARGB(255, 15, 48, 40),
-                                      borderRadius: BorderRadius.circular(15),
+                                  SizedBox(height: 20),
+                                  ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      backgroundColor: Colors.transparent,
+                                      shadowColor: Colors.transparent,
+                                      foregroundColor: Colors.transparent,
+                                      shape: RoundedRectangleBorder(),
                                     ),
-                                  ),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    children: [
-                                      SizedBox(height: 20),
-                                      ElevatedButton(
-                                        style: ElevatedButton.styleFrom(
-                                          backgroundColor: Colors.transparent,
-                                          shadowColor: Colors.transparent,
-                                          foregroundColor: Colors.transparent,
-                                          shape: RoundedRectangleBorder(),
-                                        ),
-                                        onPressed: () {
-                                          final curriculumKey = globals
-                                                      .videoOfTheDay[
+                                    onPressed: () {
+                                      final curriculumKey =
+                                          globals.videoOfTheDay[
                                                   globals.videoOfTheDayIndex]
                                               ['curriculumKey'] as String;
-                                          context.beamToNamed(
-                                            '/videos/watch/video_of_the_day/$curriculumKey',
-                                          );
-                                        },
-                                        child: Stack(
+                                      context.beamToNamed(
+                                        '/videos/watch/video_of_the_day/$curriculumKey',
+                                      );
+                                    },
+                                    child: Stack(
+                                      alignment: Alignment.topCenter,
+                                      children: [
+                                        Container(
+                                          height: 560,
+                                          width: (MediaQuery.of(
+                                                context,
+                                              ).size.width) -
+                                              120,
                                           alignment: Alignment.topCenter,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(
+                                              15,
+                                            ),
+                                            color: thumbnailColor,
+                                          ),
+                                          child: SizedBox(
+                                            height: 560,
+                                            width: (MediaQuery.of(
+                                                  context,
+                                                ).size.width) -
+                                                120,
+                                            child: Image(
+                                              fit: BoxFit.cover,
+                                              image: AssetImage(
+                                                'images/featured_video_background.png',
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Column(
                                           children: [
+                                            SizedBox(height: 60),
                                             Container(
-                                              height: 560,
                                               width: (MediaQuery.of(
                                                     context,
                                                   ).size.width) -
                                                   120,
-                                              alignment: Alignment.topCenter,
+                                              height: 80,
                                               decoration: BoxDecoration(
-                                                borderRadius:
-                                                    BorderRadius.circular(
+                                                shape: BoxShape.rectangle,
+                                                color: Color.fromARGB(
+                                                  255,
                                                   15,
-                                                ),
-                                                color: thumbnailColor,
-                                              ),
-                                              child: SizedBox(
-                                                height: 560,
-                                                width: (MediaQuery.of(
-                                                      context,
-                                                    ).size.width) -
-                                                    120,
-                                                child: Image(
-                                                  fit: BoxFit.cover,
-                                                  image: AssetImage(
-                                                    'images/featured_video_background.png',
-                                                  ),
+                                                  48,
+                                                  40,
                                                 ),
                                               ),
                                             ),
-                                            Column(
+                                          ],
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.only(
+                                            top: 60,
+                                          ),
+                                          child: Align(
+                                            alignment: Alignment.topCenter,
+                                            child: Row(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                              mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                SizedBox(height: 60),
-                                                Container(
-                                                  width: (MediaQuery.of(
+                                                SizedBox(
+                                                  width: MediaQuery.of(
                                                         context,
-                                                      ).size.width) -
-                                                      120,
+                                                      ).size.width -
+                                                      130,
                                                   height: 80,
-                                                  decoration: BoxDecoration(
-                                                    shape: BoxShape.rectangle,
-                                                    color: Color.fromARGB(
-                                                      255,
-                                                      15,
-                                                      48,
-                                                      40,
+                                                  child: AutoSizeText(
+                                                    "$featuredUnit: $featuredTitle",
+                                                    style:
+                                                        GoogleFonts.bebasNeue(
+                                                      fontSize: 60,
+                                                      color:
+                                                          const Color.fromARGB(
+                                                        255,
+                                                        217,
+                                                        225,
+                                                        199,
+                                                      ),
                                                     ),
+                                                    textAlign: TextAlign.center,
+                                                    maxFontSize: 80,
+                                                    maxLines: 2,
                                                   ),
                                                 ),
                                               ],
                                             ),
-                                            Padding(
-                                              padding: const EdgeInsets.only(
-                                                top: 60,
-                                              ),
-                                              child: Align(
-                                                alignment: Alignment.topCenter,
-                                                child: Row(
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  children: [
-                                                    SizedBox(
-                                                      width: MediaQuery.of(
-                                                            context,
-                                                          ).size.width -
-                                                          130,
-                                                      height: 80,
-                                                      child: AutoSizeText(
-                                                        "$featuredUnit: $featuredTitle",
-                                                        style: GoogleFonts
-                                                            .bebasNeue(
-                                                          fontSize: 60,
-                                                          color: const Color
-                                                              .fromARGB(
-                                                            255,
-                                                            217,
-                                                            225,
-                                                            199,
-                                                          ),
-                                                        ),
-                                                        textAlign:
-                                                            TextAlign.center,
-                                                        maxFontSize: 80,
-                                                        maxLines: 2,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
+                                          ),
+                                        ),
+                                        Positioned.fill(
+                                          child: Align(
+                                            alignment: Alignment.center,
+                                            child: Icon(
+                                              Icons.play_circle_fill_rounded,
+                                              size: 80,
+                                              color: Color.fromARGB(
+                                                255,
+                                                217,
+                                                225,
+                                                199,
                                               ),
                                             ),
-                                            Positioned.fill(
-                                              child: Align(
-                                                alignment: Alignment.center,
-                                                child: Icon(
-                                                  Icons
-                                                      .play_circle_fill_rounded,
-                                                  size: 80,
-                                                  color: Color.fromARGB(
-                                                    255,
-                                                    217,
-                                                    225,
-                                                    199,
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ],
+                                          ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                  if (!globals.isLoggedIn)
-                                    ClipRRect(
-                                      borderRadius: BorderRadius.circular(15),
-                                      child: BackdropFilter(
-                                        filter: ui.ImageFilter.blur(
-                                          sigmaX: 5.0,
-                                          sigmaY: 5.0,
-                                        ),
-                                        child: Container(
-                                          width: (MediaQuery.of(context)
-                                                  .size
-                                                  .width) -
-                                              80,
-                                          height: 600,
-                                          color: Colors.black.withAlpha(50),
-                                        ),
-                                      ),
+                                      ],
                                     ),
-                                  if (!globals.isLoggedIn)
-                                    Container(
+                                  ),
+                                ],
+                              ),
+                              if (!globals.isLoggedIn)
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: BackdropFilter(
+                                    filter: ui.ImageFilter.blur(
+                                      sigmaX: 5.0,
+                                      sigmaY: 5.0,
+                                    ),
+                                    child: Container(
                                       width:
                                           (MediaQuery.of(context).size.width) -
                                               80,
                                       height: 600,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(15),
-                                        color: const Color.fromARGB(
-                                          200,
-                                          60,
-                                          90,
-                                          70,
-                                        ),
-                                      ),
-                                      child: Center(
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Icon(
-                                              Icons.lock,
-                                              size: 80,
-                                              color: const Color.fromARGB(
-                                                255,
-                                                217,
-                                                225,
-                                                207,
-                                              ),
-                                            ),
-                                            AutoSizeText(
-                                              'Please log in or create a FREE account to access UNLIMITED free videos!',
-                                              style: TextStyle(
-                                                color: const Color.fromARGB(
-                                                  255,
-                                                  217,
-                                                  225,
-                                                  207,
-                                                ),
-                                                fontSize: 18,
-                                              ),
-                                              maxLines: 2,
-                                            ),
-                                          ],
-                                        ),
-                                      ),
+                                      color: Colors.black.withAlpha(50),
                                     ),
-                                ],
-                              ),
-                            ),
-                            //end of featured vid
-                          ],
+                                  ),
+                                ),
+                              if (!globals.isLoggedIn)
+                                Container(
+                                  width:
+                                      (MediaQuery.of(context).size.width) - 80,
+                                  height: 600,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(15),
+                                    color: const Color.fromARGB(
+                                      200,
+                                      60,
+                                      90,
+                                      70,
+                                    ),
+                                  ),
+                                  child: Center(
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Icon(
+                                          Icons.lock,
+                                          size: 80,
+                                          color: const Color.fromARGB(
+                                            255,
+                                            217,
+                                            225,
+                                            207,
+                                          ),
+                                        ),
+                                        AutoSizeText(
+                                          'Please log in or create a FREE account to access UNLIMITED free videos!',
+                                          style: TextStyle(
+                                            color: const Color.fromARGB(
+                                              255,
+                                              217,
+                                              225,
+                                              207,
+                                            ),
+                                            fontSize: 18,
+                                          ),
+                                          maxLines: 2,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                            ],
+                          ),
                         ),
-                        SizedBox(height: 20),
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "2026 Chenyu Studios",
-                              style: TextStyle(
-                                fontSize: 10,
-                                color: globals.isLight
-                                    ? Color.fromARGB(255, 0, 0, 0)
-                                    : Color.fromARGB(255, 255, 255, 255),
-                              ),
-                            ),
-                            SizedBox(width: 3),
-                            Icon(
-                              Icons.copyright_sharp,
-                              size: 15,
-                              color: globals.isLight
-                                  ? Color.fromARGB(255, 0, 0, 0)
-                                  : Color.fromARGB(255, 255, 255, 255),
-                            ),
-                          ],
+                        //end of featured vid
+                      ],
+                    ),
+                    SizedBox(height: 20),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "2026 Chenyu Studios",
+                          style: TextStyle(
+                            fontSize: 10,
+                            color: globals.isLight
+                                ? Color.fromARGB(255, 0, 0, 0)
+                                : Color.fromARGB(255, 255, 255, 255),
+                          ),
+                        ),
+                        SizedBox(width: 3),
+                        Icon(
+                          Icons.copyright_sharp,
+                          size: 15,
+                          color: globals.isLight
+                              ? Color.fromARGB(255, 0, 0, 0)
+                              : Color.fromARGB(255, 255, 255, 255),
                         ),
                       ],
                     ),
-                  ),
+                  ],
                 ),
               ),
-            ],
-          ),
-          Positioned(
-            top: 67,
-            right: 120,
-            child: VeraPet(
-              animation: veraAnimation,
-              width: 220,
             ),
           ),
         ],
