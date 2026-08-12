@@ -50,7 +50,7 @@ class _ProfilePageState extends State<ProfilePage> {
   }
 
   void _scheduleNextPetQuirk() {
-    final wait = Duration(seconds: 8 + Random().nextInt(10));
+    final wait = Duration(seconds: 4 + Random().nextInt(5));
     _petQuirkTimer = Timer(wait, () {
       if (!mounted) return;
       setState(() {
@@ -446,7 +446,7 @@ class _ProfilePageState extends State<ProfilePage> {
           children: [
             Center(
               child: VeraPet(
-                animation: VeraAnimation.idle,
+                animation: _petAnimation,
                 width: 140,
                 framesPerSecond: 4,
               ),
