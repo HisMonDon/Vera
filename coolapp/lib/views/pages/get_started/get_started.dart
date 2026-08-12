@@ -1,10 +1,12 @@
 import 'dart:async';
+import 'dart:math';
 
 import 'package:beamer/beamer.dart';
 import 'package:chewie/chewie.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/sample_videos.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
+import 'package:coolapp/widgets/pet.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:url_launcher/url_launcher.dart';
@@ -32,9 +34,22 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
   }
 
   final ScrollController _sampleImagesController = ScrollController();
+  final GlobalKey _cardTextKey = GlobalKey();
+  double? _cardHeight;
   Timer? _timer;
+
+  void _measureCardHeight([Duration? _]) {
+    final renderBox =
+        _cardTextKey.currentContext?.findRenderObject() as RenderBox?;
+    final height = renderBox?.size.height;
+    if (height != null && height != _cardHeight && mounted) {
+      setState(() => _cardHeight = height);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    WidgetsBinding.instance.addPostFrameCallback(_measureCardHeight);
     return Scaffold(
       appBar: TimedAppBar(),
       body: SingleChildScrollView(
@@ -142,7 +157,9 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
           ),
           const SizedBox(width: 24),
           Expanded(
+            flex: 3,
             child: Column(
+              key: _cardTextKey,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
@@ -209,6 +226,20 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
                   ),
                 ]),
               ],
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: SizedBox(
+              height: _cardHeight ?? 230,
+              child: LayoutBuilder(
+                builder: (context, constraints) {
+                  return _RunningPet(
+                    trackWidth: constraints.maxWidth,
+                    petWidth: 100,
+                  );
+                },
+              ),
             ),
           ),
         ],
@@ -645,5 +676,110 @@ class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
     }
     _chewieController?.dispose();
     super.dispose();
+  }
+}
+
+class _RunningPet extends StatefulWidget {
+  const _RunningPet({required this.trackWidth, required this.petWidth});
+
+  final double trackWidth;
+  final double petWidth;
+
+  @override
+  State<_RunningPet> createState() => _RunningPetState();
+}
+
+class _RunningPetState extends State<_RunningPet>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _controller;
+  late Animation<double> _position;
+  bool _goingRight = true;
+  bool _isRunning = false;
+  Timer? _idleTimer;
+
+  double get _trackRange =>
+      (widget.trackWidth - widget.petWidth).clamp(0, double.infinity);
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 4),
+    )..addStatusListener(_onStatusChanged);
+    _position = Tween<double>(begin: 0, end: _trackRange).animate(_controller);
+    _scheduleNextRun();
+  }
+
+  void _onStatusChanged(AnimationStatus status) {
+    if (status == AnimationStatus.completed) {
+      _goingRight = false;
+      _scheduleNextRun();
+    } else if (status == AnimationStatus.dismissed) {
+      _goingRight = true;
+      _scheduleNextRun();
+    }
+  }
+
+  // Idle roughly 60% of the time, running the other 40%.
+  void _scheduleNextRun() {
+    setState(() => _isRunning = false);
+    _idleTimer = Timer(Duration(seconds: 5 + Random().nextInt(5)), () {
+      if (!mounted) return;
+      setState(() => _isRunning = true);
+      if (_goingRight) {
+        _controller.forward();
+      } else {
+        _controller.reverse();
+      }
+    });
+  }
+
+  @override
+  void didUpdateWidget(covariant _RunningPet oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.trackWidth != widget.trackWidth ||
+        oldWidget.petWidth != widget.petWidth) {
+      _position =
+          Tween<double>(begin: 0, end: _trackRange).animate(_controller);
+    }
+  }
+
+  @override
+  void dispose() {
+    _idleTimer?.cancel();
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      clipBehavior: Clip.none,
+      children: [
+        const SizedBox.expand(),
+        AnimatedBuilder(
+          animation: _controller,
+          builder: (context, child) {
+            return Positioned(
+              left: _position.value,
+              bottom: 0,
+              child: Transform(
+                alignment: Alignment.center,
+                transform: (_isRunning && !_goingRight)
+                    ? Matrix4.diagonal3Values(-1.0, 1.0, 1.0)
+                    : Matrix4.identity(),
+                child: child,
+              ),
+            );
+          },
+          child: VeraPet(
+            animation:
+                _isRunning ? VeraAnimation.runningRight : VeraAnimation.idle,
+            width: widget.petWidth,
+          ),
+        ),
+      ],
+    );
   }
 }
