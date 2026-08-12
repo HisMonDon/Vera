@@ -15,6 +15,7 @@ import 'package:beamer/beamer.dart';
 //import 'package:media_kit_video/media_kit_video.dart';
 //import 'dart:io';
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:coolapp/widgets/pet.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({super.key});
@@ -25,6 +26,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State {
+  VeraAnimation veraAnimation = VeraAnimation.idle;
   final _authService = AuthService();
   final TextEditingController _nameController = TextEditingController();
   String _displayName = ''; // stores name without comma prefix
@@ -255,14 +257,19 @@ class _HomePageState extends State {
                 padding: EdgeInsets.all(20),
                 child: Column(
                   children: [
-                    Column(
+                    Stack(
+                      clipBehavior: Clip.none,
+                      children: [
+                        Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Expanded(
+                              flex: 4,
                               child: WidgetMask(
                                 blendMode: BlendMode.srcATop,
                                 childSaveLayer: true,
@@ -793,6 +800,16 @@ class _HomePageState extends State {
                         ),
                       ],
                     ),
+                        Positioned(
+                          top: -60,
+                          right: 120,
+                          child: VeraPet(
+                            animation: veraAnimation,
+                            width: 220,
+                          ),
+                        ),
+                      ],
+                    ),
                     SizedBox(height: 20),
                     //====================================================================//
                     Column(
@@ -837,10 +854,10 @@ class _HomePageState extends State {
                                       shape: RoundedRectangleBorder(),
                                     ),
                                     onPressed: () {
-                                      final curriculumKey = globals
-                                              .videoOfTheDay[globals
-                                                  .videoOfTheDayIndex]
-                                          ['curriculumKey'] as String;
+                                      final curriculumKey =
+                                          globals.videoOfTheDay[
+                                                  globals.videoOfTheDayIndex]
+                                              ['curriculumKey'] as String;
                                       context.beamToNamed(
                                         '/videos/watch/video_of_the_day/$curriculumKey',
                                       );
