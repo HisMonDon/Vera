@@ -182,7 +182,7 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
                 ),
                 const SizedBox(height: 10),
                 Text(
-                  "• St. Robert Physics Club Executive Trainer\n• 3rd Place in the Canadian Young Physics Tournament\n• 5 On AP Physics 1, AP Calculus BC, AP Chemistry, and AP Computer Science A\n• 17th in OAPT 2026",
+                  "• St. Robert Physics Club Executive Trainer\n• 3rd Place in the Canadian Young Physics Tournament\n• 5 On AP Physics 1, AP Calculus BC, AP Chemistry, and AP Computer Science A\n• 17th Place in OAPT 2026",
                   style: GoogleFonts.roboto(
                     fontSize: 16,
                     color: const Color.fromARGB(
