@@ -19,7 +19,7 @@ import 'dart:ui' as ui;
 import 'package:beamer/beamer.dart';
 //import 'package:media_kit_video/media_kit_video.dart';
 //import 'dart:io';
-import 'package:flutter/foundation.dart' show kIsWeb;
+//import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:coolapp/widgets/pet.dart';
 import 'package:coolapp/main.dart';
 
@@ -690,8 +690,9 @@ class _HomePageState extends State {
                                                   entry,
                                                 ) {
                                                   final index = entry.key;
-                                                  final topic = TopicRegistry
-                                                      .byKey(entry.value)!;
+                                                  final topic =
+                                                      TopicRegistry.byKey(
+                                                          entry.value)!;
                                                   final video = topic.name;
 
                                                   final backgroundColor =
@@ -741,8 +742,9 @@ class _HomePageState extends State {
                                                             context,
                                                             MaterialPageRoute(
                                                               builder: (context) =>
-                                                                  VideoCatalog.pageFor(
-                                                                      topic.key)!(),
+                                                                  VideoCatalog
+                                                                      .pageFor(topic
+                                                                          .key)!(),
                                                             ),
                                                           );
                                                         }
