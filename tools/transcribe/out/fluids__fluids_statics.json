@@ -1,0 +1,848 @@
+{
+ "lesson": {
+  "topicKey": "fluids",
+  "curriculumKey": "fluids_statics",
+  "title": "Fluid Statics",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/buoyancy%20intro.mp4",
+  "source": "fluids.dart"
+ },
+ "segments": [
+  {
+   "start": 1.1,
+   "end": 30.76,
+   "text": "Now previously, we have talked about the difference between fluid statics and fluid dynamics. And in this video, we will be going more in depth of fluid statics. For fluid statics, it's mostly about just buoyant forces and buoyancy. So let's introduce you to buoyant forces. Obviously, you have heard of what buoyancy is. If you haven't, then",
+   "avg_logprob": -0.1021829574368894
+  },
+  {
+   "start": 31.42,
+   "end": 60.3,
+   "text": "that might be an issue. But you have heard the general term of what buoyancy is. For example, if you hold a ball underwater, a beach ball underwater, let's say, it's going to rise up to the top. If you swim, if you hold a pole buoy or a paddleboard underwater, it's also going to rise to the top. And that is",
+   "avg_logprob": -0.0791649056386344
+  },
+  {
+   "start": 60.3,
+   "end": 92.37,
+   "text": "buoyancy. So buoyancy is the force acting on an object as a result from displacing a fluid, displacing a fluid's volume. Because when you're putting it in the water, it's going to displace some of the volume. And we will get into that later.",
+   "avg_logprob": -0.07132886076966921
+  },
+  {
+   "start": 92.37,
+   "end": 131.06,
+   "text": "Force acting on an object, salt. Okay, so what is volume displacement? Well, it's basically like, for example, if you're in a bathtub, and the water is filled to the brim at the bathtub. If you go in the bathtub, the water is not going to stay filled in the brim. Some of the water is going to leak and overflow out of the hot tub.",
+   "avg_logprob": -0.08472993198563071
+  },
+  {
+   "start": 131.06,
+   "end": 161.04,
+   "text": "Once you get in. And that is the water displaced. The volume of the water displaced, however, is the exact same amount of the volume that your body goes in the water. That's pretty straightforward. If you put, if you place a block of, let's say, five, with a volume of five liters inside a tube, the volume of the water going out",
+   "avg_logprob": -0.10853066983856732
+  },
+  {
+   "start": 161.04,
+   "end": 194.73,
+   "text": "would also be five liters. And now let's get into the formula of buoyant force. So the buoyant forces formula is, oh, before that, why do some objects sink while some objects don't? Well, you guys have hopefully learned of dynamics. And so you know that dynamics, there's obviously free body diagrams. And in this case, there are two forces acting on an object.",
+   "avg_logprob": -0.1313022201259931
+  },
+  {
+   "start": 194.73,
+   "end": 227.01,
+   "text": "There will be two forces acting on this. For example, if you have a rock, there will be the buoyant force and the force of gravity. And if the force of gravity is higher than the buoyant force, then the net force will be acting down, which will ultimately be making it go down. Or if you want it formula-wise, it would be F net equals, let's say, positive would be up. It would be the buoyant force subtracted by the gravity force.",
+   "avg_logprob": -0.15301778069082297
+  },
+  {
+   "start": 227.81,
+   "end": 265.74,
+   "text": "And if F net is negative, well, it's going to sink. The formula for the buoyant force depends on two things, the density of the fluid and also the volume displaced. And the reason I say volume displaced, not the volume of the object, is, for example, if you have an object here,",
+   "avg_logprob": -0.09376890115115953
+  },
+  {
+   "start": 265.74,
+   "end": 293.96,
+   "text": "the volume of this object is not the same as the volume displaced. The volume displaced is only the volume of the object that is below the water level. And the buoyant force uses these by, let's say, it's the same thing as the density of the fluid, rho fluid,",
+   "avg_logprob": -0.09592667198739946
+  },
+  {
+   "start": 293.96,
+   "end": 319.84,
+   "text": "times the acceleration of gravity, on Earth it's 9.81, as you know, and the volume displaced. The volume displaced, we'll just call it V displaced. And that would be the buoyant force.",
+   "avg_logprob": -0.12033951204891007
+  },
+  {
+   "start": 321.52,
+   "end": 341.1,
+   "text": "Let's have an example question over here, where we see whether an object sinks or floats. Let's say we have a ball over here, or a sphere in this case, whose radius is 5 meters.",
+   "avg_logprob": -0.10392280052537503
+  },
+  {
+   "start": 342.8,
+   "end": 361.8,
+   "text": "And it has a mass of, let's say, 10 kilograms. So radius is 5 meters, and mass is 10 kilograms. And let's pretend the liquid is water.",
+   "avg_logprob": -0.11367535934998439
+  },
+  {
+   "start": 368.94,
+   "end": 393.18,
+   "text": "And from this information, we actually can just directly calculate whether it sinks or not. And yeah, a pole buoyant doesn't float because it's made of that material. It depends entirely on only the mass of whatever your object is, and the density, not the material.",
+   "avg_logprob": -0.12181935446957746
+  },
+  {
+   "start": 393.86,
+   "end": 412.76,
+   "text": "I mean, the material could affect the mass, but it's mostly on the mass. And the volume displaced. That's why ships don't sink, because it displaces a large amount of volume. So even if it's really, really heavy, and it's made of metal, it still does not sink.",
+   "avg_logprob": -0.09186235639978857
+  },
+  {
+   "start": 414.12,
+   "end": 422.36,
+   "text": "Yeah, so we have to calculate the net force. Let's draw a free-body diagram. Oops, what happened there?",
+   "avg_logprob": -0.11816206863567011
+  },
+  {
+   "start": 423.32,
+   "end": 434.96,
+   "text": "Let's draw a free-body diagram. You have the buoyant force and the gravity. We do not know the magnitude, so I'll keep them about equal lengths.",
+   "avg_logprob": -0.11816206863567011
+  },
+  {
+   "start": 435.88,
+   "end": 456.52,
+   "text": "So f net is given by the, like I said, the buoyant force minus the gravity, so fb minus fg. And what is the buoyant force? Well, the buoyant force, as we found over here, is the density of the fluid times whatever.",
+   "avg_logprob": -0.12283924417417558
+  },
+  {
+   "start": 457.52,
+   "end": 476.6,
+   "text": "So the density of water. The density of water is a constant, and it's 1000 kilograms per meters cubed. And this you should know.",
+   "avg_logprob": -0.13446864924010107
+  },
+  {
+   "start": 480.24,
+   "end": 502.46,
+   "text": "So buoyant force is density of water times acceleration of gravity times volume displaced, which is, for a sphere, it's 4 over 3 pi r cubed minus force of gravity is just mass times gravity.",
+   "avg_logprob": -0.1116656018016131
+  },
+  {
+   "start": 503.74,
+   "end": 534.08,
+   "text": "So density of water, we can plug that in. 1000. For simplicity, I'll just not write the units. Times 9.81 times 4 over 3 pi r cubed. Sorry, 4 over 3 pi times 5 cubed, which is 125, minus 10 times 9.81.",
+   "avg_logprob": -0.1398020744804413
+  },
+  {
+   "start": 536.91,
+   "end": 553.78,
+   "text": "Once you calculate it, let me just get my calculator out. Give me a sec. All right, so the value I got for this one is a really big number.",
+   "avg_logprob": -0.12608290788454887
+  },
+  {
+   "start": 556.28,
+   "end": 575.22,
+   "text": "And I'm just going to ignore sig figs for simplicity sake. Minus about 98.1 newtons. And obviously, this is very theoretical. I just made these unit values on the spot.",
+   "avg_logprob": -0.15357507864634196
+  },
+  {
+   "start": 575.74,
+   "end": 593.98,
+   "text": "But as you can see, in this case, the buoyant force way exceeds the gravitational force, which means if you submerge this, this thing is going to have a net force of a lot, a really, really big net force, and it's just going to start accelerating.",
+   "avg_logprob": -0.09479664145938811
+  },
+  {
+   "start": 593.98,
+   "end": 623.26,
+   "text": "But this is, like I said, probably not possible. I just made these numbers on the spot. It's 89. And yeah, that's a basic calculation of buoyancy and the introduction of buoyancy. Thank you for listening.",
+   "avg_logprob": -0.07174015045166016
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.1,
+   "end": 5.28,
+   "text": "Now previously, we have talked about the difference"
+  },
+  {
+   "start": 5.28,
+   "end": 8.18,
+   "text": "between fluid statics and fluid dynamics."
+  },
+  {
+   "start": 8.4,
+   "end": 11.26,
+   "text": "And in this video, we will be going more in"
+  },
+  {
+   "start": 11.26,
+   "end": 13.34,
+   "text": "depth of fluid statics."
+  },
+  {
+   "start": 14.42,
+   "end": 18.26,
+   "text": "For fluid statics, it's mostly about just buoyant"
+  },
+  {
+   "start": 18.26,
+   "end": 21.44,
+   "text": "forces and buoyancy. So let's introduce you"
+  },
+  {
+   "start": 21.44,
+   "end": 25.38,
+   "text": "to buoyant forces. Obviously, you have heard"
+  },
+  {
+   "start": 25.38,
+   "end": 28.32,
+   "text": "of what buoyancy is."
+  },
+  {
+   "start": 28.5,
+   "end": 33.4,
+   "text": "If you haven't, then that might be an issue."
+  },
+  {
+   "start": 33.94,
+   "end": 36.72,
+   "text": "But you have heard the general term of what"
+  },
+  {
+   "start": 36.72,
+   "end": 41.78,
+   "text": "buoyancy is. For example, if you hold a ball"
+  },
+  {
+   "start": 41.78,
+   "end": 44.68,
+   "text": "underwater, a beach ball underwater, let's say,"
+  },
+  {
+   "start": 44.88,
+   "end": 47.26,
+   "text": "it's going to rise up to the top."
+  },
+  {
+   "start": 48.12,
+   "end": 53.48,
+   "text": "If you swim, if you hold a pole buoy or a paddleboard"
+  },
+  {
+   "start": 53.48,
+   "end": 57.8,
+   "text": "underwater, it's also going to rise to the top."
+  },
+  {
+   "start": 58.44,
+   "end": 61.16,
+   "text": "And that is buoyancy."
+  },
+  {
+   "start": 61.4,
+   "end": 68.22,
+   "text": "So buoyancy is the force acting on an object"
+  },
+  {
+   "start": 74.49,
+   "end": 81.51,
+   "text": "as a result from displacing"
+  },
+  {
+   "start": 81.51,
+   "end": 84.27,
+   "text": "a fluid, displacing a fluid's volume."
+  },
+  {
+   "start": 84.47,
+   "end": 87.89,
+   "text": "Because when you're putting it in the water,"
+  },
+  {
+   "start": 88.03,
+   "end": 90.43,
+   "text": "it's going to displace some of the volume."
+  },
+  {
+   "start": 90.51,
+   "end": 93.99,
+   "text": "And we will get into that later. Force acting"
+  },
+  {
+   "start": 93.99,
+   "end": 99.86,
+   "text": "on an object, salt."
+  },
+  {
+   "start": 106.98,
+   "end": 109.7,
+   "text": "Okay, so what is volume displacement?"
+  },
+  {
+   "start": 109.98,
+   "end": 115.14,
+   "text": "Well, it's basically like, for example, if you're"
+  },
+  {
+   "start": 115.14,
+   "end": 119.44,
+   "text": "in a bathtub, and the water is filled to the"
+  },
+  {
+   "start": 119.44,
+   "end": 122.66,
+   "text": "brim at the bathtub. If you go in the bathtub,"
+  },
+  {
+   "start": 123.34,
+   "end": 125.24,
+   "text": "the water is not going to stay filled in the"
+  },
+  {
+   "start": 125.24,
+   "end": 129.04,
+   "text": "brim. Some of the water is going to leak and"
+  },
+  {
+   "start": 129.04,
+   "end": 131.06,
+   "text": "overflow out of the hot tub."
+  },
+  {
+   "start": 131.06,
+   "end": 137.38,
+   "text": "Once you get in. And that is the water displaced."
+  },
+  {
+   "start": 137.96,
+   "end": 140.22,
+   "text": "The volume of the water displaced, however,"
+  },
+  {
+   "start": 140.22,
+   "end": 143.56,
+   "text": "is the exact same amount of the volume that"
+  },
+  {
+   "start": 143.56,
+   "end": 145.58,
+   "text": "your body goes in the water."
+  },
+  {
+   "start": 146.18,
+   "end": 149.72,
+   "text": "That's pretty straightforward. If you put, if"
+  },
+  {
+   "start": 149.72,
+   "end": 153.74,
+   "text": "you place a block of, let's say, five, with"
+  },
+  {
+   "start": 153.74,
+   "end": 158.82,
+   "text": "a volume of five liters inside a tube, the volume"
+  },
+  {
+   "start": 158.82,
+   "end": 162.96,
+   "text": "of the water going out would also be five liters."
+  },
+  {
+   "start": 166.11,
+   "end": 168.79,
+   "text": "And now let's get into the formula of buoyant"
+  },
+  {
+   "start": 168.79,
+   "end": 174.79,
+   "text": "force. So the buoyant forces formula is, oh,"
+  },
+  {
+   "start": 174.95,
+   "end": 179.23,
+   "text": "before that, why do some objects sink while"
+  },
+  {
+   "start": 179.23,
+   "end": 182.99,
+   "text": "some objects don't? Well, you guys have hopefully"
+  },
+  {
+   "start": 182.99,
+   "end": 187.15,
+   "text": "learned of dynamics. And so you know that dynamics,"
+  },
+  {
+   "start": 187.75,
+   "end": 191.07,
+   "text": "there's obviously free body diagrams."
+  },
+  {
+   "start": 191.11,
+   "end": 194.73,
+   "text": "And in this case, there are two forces acting"
+  },
+  {
+   "start": 194.73,
+   "end": 195.11,
+   "text": "on an object. There will be two forces acting"
+  },
+  {
+   "start": 195.11,
+   "end": 199.09,
+   "text": "on this. For example, if you have a rock, there"
+  },
+  {
+   "start": 199.09,
+   "end": 202.85,
+   "text": "will be the buoyant force and the force of gravity."
+  },
+  {
+   "start": 203.37,
+   "end": 206.55,
+   "text": "And if the force of gravity is higher than the"
+  },
+  {
+   "start": 206.55,
+   "end": 208.55,
+   "text": "buoyant force, then the net force will be acting"
+  },
+  {
+   "start": 208.55,
+   "end": 212.41,
+   "text": "down, which will ultimately be making it go"
+  },
+  {
+   "start": 212.41,
+   "end": 215.35,
+   "text": "down. Or if you want it formula-wise, it would"
+  },
+  {
+   "start": 215.35,
+   "end": 219.91,
+   "text": "be F net equals, let's say, positive would be"
+  },
+  {
+   "start": 219.91,
+   "end": 226.29,
+   "text": "up. It would be the buoyant force subtracted"
+  },
+  {
+   "start": 226.29,
+   "end": 229.21,
+   "text": "by the gravity force. And if F net is negative,"
+  },
+  {
+   "start": 229.43,
+   "end": 234.09,
+   "text": "well, it's going to sink. The formula for the"
+  },
+  {
+   "start": 234.09,
+   "end": 240.59,
+   "text": "buoyant force depends on two things, the density"
+  },
+  {
+   "start": 240.59,
+   "end": 248.04,
+   "text": "of the fluid and also the"
+  },
+  {
+   "start": 248.04,
+   "end": 251.14,
+   "text": "volume displaced."
+  },
+  {
+   "start": 256.5,
+   "end": 259.88,
+   "text": "And the reason I say volume displaced, not the"
+  },
+  {
+   "start": 259.88,
+   "end": 263.44,
+   "text": "volume of the object, is, for example, if you"
+  },
+  {
+   "start": 263.44,
+   "end": 269.72,
+   "text": "have an object here, the volume of this object"
+  },
+  {
+   "start": 269.72,
+   "end": 273.0,
+   "text": "is not the same as the volume displaced."
+  },
+  {
+   "start": 273.44,
+   "end": 276.76,
+   "text": "The volume displaced is only the volume of the"
+  },
+  {
+   "start": 276.76,
+   "end": 282.08,
+   "text": "object that is below the water level."
+  },
+  {
+   "start": 284.78,
+   "end": 288.82,
+   "text": "And the buoyant force uses these by, let's say,"
+  },
+  {
+   "start": 289.46,
+   "end": 291.84,
+   "text": "it's the same thing as the density of the fluid,"
+  },
+  {
+   "start": 293.22,
+   "end": 296.52,
+   "text": "rho fluid, times the acceleration of gravity,"
+  },
+  {
+   "start": 298.33,
+   "end": 302.07,
+   "text": "on Earth it's 9.81, as you know, and the volume"
+  },
+  {
+   "start": 302.07,
+   "end": 305.31,
+   "text": "displaced. The volume displaced, we'll just"
+  },
+  {
+   "start": 305.31,
+   "end": 317.36,
+   "text": "call it V displaced. And"
+  },
+  {
+   "start": 317.36,
+   "end": 319.84,
+   "text": "that would be the buoyant force."
+  },
+  {
+   "start": 321.52,
+   "end": 325.36,
+   "text": "Let's have an example question over here, where"
+  },
+  {
+   "start": 325.36,
+   "end": 329.76,
+   "text": "we see whether an object sinks or floats."
+  },
+  {
+   "start": 330.36,
+   "end": 335.92,
+   "text": "Let's say we have a ball over here, or a sphere"
+  },
+  {
+   "start": 335.92,
+   "end": 341.1,
+   "text": "in this case, whose radius is 5 metres."
+  },
+  {
+   "start": 342.8,
+   "end": 351.22,
+   "text": "And it has a mass of, let's say, 10"
+  },
+  {
+   "start": 351.22,
+   "end": 356.28,
+   "text": "kilograms. So radius is 5 metres, and mass is"
+  },
+  {
+   "start": 356.28,
+   "end": 361.38,
+   "text": "10 kilograms. And let's pretend the liquid is"
+  },
+  {
+   "start": 361.38,
+   "end": 370.02,
+   "text": "water. And"
+  },
+  {
+   "start": 370.02,
+   "end": 373.58,
+   "text": "from this information, we actually can just"
+  },
+  {
+   "start": 373.58,
+   "end": 376.64,
+   "text": "directly calculate whether it sinks or not."
+  },
+  {
+   "start": 377.22,
+   "end": 382.4,
+   "text": "And yeah, a pole buoyant doesn't float because"
+  },
+  {
+   "start": 382.4,
+   "end": 385.64,
+   "text": "it's made of that material. It depends entirely"
+  },
+  {
+   "start": 385.64,
+   "end": 390.02,
+   "text": "on only the mass of whatever your object is,"
+  },
+  {
+   "start": 390.02,
+   "end": 393.18,
+   "text": "and the density, not the material."
+  },
+  {
+   "start": 393.86,
+   "end": 396.0,
+   "text": "I mean, the material could affect the mass,"
+  },
+  {
+   "start": 396.02,
+   "end": 399.36,
+   "text": "but it's mostly on the mass. And the volume"
+  },
+  {
+   "start": 399.36,
+   "end": 405.16,
+   "text": "displaced. That's why ships don't sink, because"
+  },
+  {
+   "start": 405.16,
+   "end": 407.58,
+   "text": "it displaces a large amount of volume."
+  },
+  {
+   "start": 407.66,
+   "end": 410.84,
+   "text": "So even if it's really, really heavy, and it's"
+  },
+  {
+   "start": 410.84,
+   "end": 414.74,
+   "text": "made of metal, it still does not sink. Yeah,"
+  },
+  {
+   "start": 415.22,
+   "end": 417.98,
+   "text": "so we have to calculate the net force."
+  },
+  {
+   "start": 418.52,
+   "end": 422.04,
+   "text": "Let's draw a free-body diagram. Oops, what happened"
+  },
+  {
+   "start": 422.04,
+   "end": 425.28,
+   "text": "there? Let's draw a free-body diagram."
+  },
+  {
+   "start": 425.4,
+   "end": 431.38,
+   "text": "You have the buoyant force and the gravity."
+  },
+  {
+   "start": 431.54,
+   "end": 433.96,
+   "text": "We do not know the magnitude, so I'll keep them"
+  },
+  {
+   "start": 433.96,
+   "end": 441.84,
+   "text": "about equal lengths. So f net is given by the,"
+  },
+  {
+   "start": 442.16,
+   "end": 444.58,
+   "text": "like I said, the buoyant force minus the gravity,"
+  },
+  {
+   "start": 445.1,
+   "end": 447.52,
+   "text": "so fb minus fg."
+  },
+  {
+   "start": 448.64,
+   "end": 450.98,
+   "text": "And what is the buoyant force? Well, the buoyant"
+  },
+  {
+   "start": 450.98,
+   "end": 454.14,
+   "text": "force, as we found over here, is the density"
+  },
+  {
+   "start": 454.14,
+   "end": 456.52,
+   "text": "of the fluid times whatever."
+  },
+  {
+   "start": 457.52,
+   "end": 461.28,
+   "text": "So the density of water. The density of water"
+  },
+  {
+   "start": 463.24,
+   "end": 470.82,
+   "text": "is a constant, and it's 1000 kilograms per"
+  },
+  {
+   "start": 470.82,
+   "end": 473.3,
+   "text": "metres cubed."
+  },
+  {
+   "start": 473.92,
+   "end": 476.6,
+   "text": "And this you should know."
+  },
+  {
+   "start": 480.24,
+   "end": 487.46,
+   "text": "So buoyant force is density of water times acceleration"
+  },
+  {
+   "start": 487.46,
+   "end": 491.58,
+   "text": "of gravity times volume displaced, which is,"
+  },
+  {
+   "start": 491.58,
+   "end": 498.5,
+   "text": "for a sphere, it's 4 over 3 pi r cubed minus"
+  },
+  {
+   "start": 498.5,
+   "end": 502.46,
+   "text": "force of gravity is just mass times gravity."
+  },
+  {
+   "start": 503.74,
+   "end": 506.6,
+   "text": "So density of water, we can plug that in."
+  },
+  {
+   "start": 506.6,
+   "end": 510.72,
+   "text": "1000. For simplicity, I'll just not write the"
+  },
+  {
+   "start": 510.72,
+   "end": 517.94,
+   "text": "units. Times 9.81 times 4"
+  },
+  {
+   "start": 517.94,
+   "end": 521.7,
+   "text": "over 3 pi r cubed."
+  },
+  {
+   "start": 521.94,
+   "end": 529.04,
+   "text": "Sorry, 4 over 3 pi times 5 cubed, which is"
+  },
+  {
+   "start": 529.04,
+   "end": 534.08,
+   "text": "125, minus 10 times 9.81."
+  },
+  {
+   "start": 536.91,
+   "end": 539.91,
+   "text": "Once you calculate it, let me just get my calculator"
+  },
+  {
+   "start": 539.91,
+   "end": 543.21,
+   "text": "out. Give me a sec."
+  },
+  {
+   "start": 546.38,
+   "end": 551.08,
+   "text": "All right, so the value I got for this one is"
+  },
+  {
+   "start": 551.08,
+   "end": 553.78,
+   "text": "a really big number."
+  },
+  {
+   "start": 556.28,
+   "end": 560.86,
+   "text": "And I'm just going to ignore sig figs for simplicity"
+  },
+  {
+   "start": 560.86,
+   "end": 568.06,
+   "text": "sake. Minus about 98.1 newtons."
+  },
+  {
+   "start": 568.24,
+   "end": 571.76,
+   "text": "And obviously, this is very theoretical."
+  },
+  {
+   "start": 571.76,
+   "end": 575.22,
+   "text": "I just made these unit values on the spot."
+  },
+  {
+   "start": 575.74,
+   "end": 580.08,
+   "text": "But as you can see, in this case, the buoyant"
+  },
+  {
+   "start": 580.08,
+   "end": 583.88,
+   "text": "force way exceeds the gravitational force, which"
+  },
+  {
+   "start": 583.88,
+   "end": 587.66,
+   "text": "means if you submerge this, this thing is going"
+  },
+  {
+   "start": 587.66,
+   "end": 591.74,
+   "text": "to have a net force of a lot, a really, really"
+  },
+  {
+   "start": 591.74,
+   "end": 593.4,
+   "text": "big net force, and it's just going to start"
+  },
+  {
+   "start": 593.4,
+   "end": 598.56,
+   "text": "accelerating. But this is, like I said, probably"
+  },
+  {
+   "start": 598.56,
+   "end": 603.18,
+   "text": "not possible. I just made these numbers on the"
+  },
+  {
+   "start": 603.18,
+   "end": 606.91,
+   "text": "spot. It's 89."
+  },
+  {
+   "start": 611.44,
+   "end": 617.62,
+   "text": "And yeah, that's a basic calculation of buoyancy"
+  },
+  {
+   "start": 617.62,
+   "end": 621.42,
+   "text": "and the introduction of buoyancy."
+  },
+  {
+   "start": 622.12,
+   "end": 623.26,
+   "text": "Thank you for listening."
+  }
+ ],
+ "report": {
+  "key": "fluids__fluids_statics",
+  "title": "Fluid Statics",
+  "topicKey": "fluids",
+  "duration": 623.872,
+  "cues": 136,
+  "corrections": 3,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.15357507864634196,
+  "flagged": []
+ }
+}

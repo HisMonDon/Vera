@@ -1,0 +1,580 @@
+WEBVTT
+NOTE 2D Motion Analysis Part 1
+
+1
+00:00:02.130 --> 00:00:05.630
+After we learn 1D kinematics, the next
+step
+
+2
+00:00:05.630 --> 00:00:09.830
+will obviously be to learn two-dimension
+kinematics.
+
+3
+00:00:11.090 --> 00:00:13.430
+The difference is self-explanatory.
+
+4
+00:00:14.190 --> 00:00:17.090
+You move from one dimension to two
+dimensions.
+
+5
+00:00:17.730 --> 00:00:21.330
+But this time, we're actually going to be
+using
+
+6
+00:00:21.330 --> 00:00:24.170
+a cool little trick to help us split the
+vectors
+
+7
+00:00:24.170 --> 00:00:29.530
+into x and y components. Before, if the
+velocity
+
+8
+00:00:29.530 --> 00:00:32.270
+was this way, it would be something like 5
+metres
+
+9
+00:00:32.270 --> 00:00:38.120
+per second to the right. But now that we
+have
+
+10
+00:00:38.120 --> 00:00:43.020
+two dimensions, it can go either up or
+vertically
+
+11
+00:00:43.020 --> 00:00:47.100
+or horizontally. So now a vector might
+look
+
+12
+00:00:47.100 --> 00:00:54.080
+like this. And a question might say that a
+ball
+
+13
+00:00:54.080 --> 00:00:58.840
+is launched with a velocity of, what, 5
+metres
+
+14
+00:00:58.840 --> 00:01:02.760
+per second with an angle of 30 degrees to
+the
+
+15
+00:01:02.760 --> 00:01:09.320
+horizontal. And it has your magnitude and
+it
+
+16
+00:01:09.320 --> 00:01:11.940
+has a direction. We know the direction is
+30
+
+17
+00:01:11.940 --> 00:01:14.120
+degrees to the horizontal, which means
+it's
+
+18
+00:01:14.120 --> 00:01:18.100
+going this way. And now what if the
+question
+
+19
+00:01:18.100 --> 00:01:25.760
+asks, if the ball maintains its
+
+20
+00:01:25.760 --> 00:01:33.960
+speed, its velocity, how far
+
+21
+00:01:33.960 --> 00:01:40.280
+will it land? How far will it travel
+horizontally
+
+22
+00:01:42.290 --> 00:01:48.110
+after 10 seconds?
+
+23
+00:01:48.970 --> 00:01:51.390
+Now, what does this mean by how far will
+it
+
+24
+00:01:51.390 --> 00:01:54.130
+travel horizontally? Well, let's say this
+is
+
+25
+00:01:54.130 --> 00:01:57.570
+the path of the ball. Since there's no
+gravity
+
+26
+00:01:57.570 --> 00:01:59.590
+or nothing else, it maintains its
+velocity.
+
+27
+00:01:59.590 --> 00:02:01.950
+It's just going to keep going up. Let's
+just
+
+28
+00:02:01.950 --> 00:02:03.710
+imagine that for the sake of this
+question.
+
+29
+00:02:05.590 --> 00:02:10.770
+Now, we know that after 10 seconds, the
+distance
+
+30
+00:02:10.770 --> 00:02:14.550
+it's going to travel is, let's say, x
+after
+
+31
+00:02:14.550 --> 00:02:18.010
+10 seconds. But the question wants us to
+ask,
+
+32
+00:02:18.490 --> 00:02:22.270
+wants us to solve its distance in terms of
+the
+
+33
+00:02:22.270 --> 00:02:24.690
+horizontal. So we're not actually trying
+to
+
+34
+00:02:24.690 --> 00:02:27.490
+solve for x. If we were, it would just be
+5
+
+35
+00:02:27.490 --> 00:02:31.250
+times 10. But we're trying to solve for,
+let's
+
+36
+00:02:31.250 --> 00:02:36.630
+call this y. We want to solve for the
+horizontal
+
+37
+00:02:36.630 --> 00:02:41.490
+distance, not the total distance. So how
+do
+
+38
+00:02:41.490 --> 00:02:45.390
+we do that? Well, we need to get the
+horizontal
+
+39
+00:02:45.390 --> 00:02:48.610
+velocity. So let me give you this.
+
+40
+00:02:49.910 --> 00:02:54.910
+If the ball is going this way, do you
+agree
+
+41
+00:02:54.910 --> 00:02:57.990
+that there is going to be a motion of the
+ball
+
+42
+00:02:57.990 --> 00:03:00.110
+that's going to the right? There will be.
+
+43
+00:03:00.250 --> 00:03:02.850
+It's going here, which means it's going
+right.
+
+44
+00:03:03.470 --> 00:03:05.670
+And do you also agree that there will be
+another
+
+45
+00:03:05.670 --> 00:03:09.470
+component of the ball that is going up?
+
+46
+00:03:09.690 --> 00:03:12.210
+Is the ball also going up as well as
+right?
+
+47
+00:03:12.330 --> 00:03:14.350
+It is. It's both going up and right.
+
+48
+00:03:15.150 --> 00:03:18.670
+So if we have the angle, we can actually
+calculate
+
+49
+00:03:18.670 --> 00:03:23.250
+the speed at which it's going up and the
+speed
+
+50
+00:03:23.250 --> 00:03:26.010
+at which it's going right.
+
+51
+00:03:26.510 --> 00:03:29.850
+And we call that the x component and the y
+component.
+
+52
+00:03:30.990 --> 00:03:34.890
+Let's first try to solve it. So if this is
+30
+
+53
+00:03:34.890 --> 00:03:38.230
+degrees, and we know this is 5 metres per
+second,
+
+54
+00:03:39.050 --> 00:03:41.550
+we want to calculate the distance it
+travels
+
+55
+00:03:41.550 --> 00:03:44.730
+horizontally, which means we want to
+calculate
+
+56
+00:03:44.730 --> 00:03:51.290
+the x component. Now, the x component is
+just
+
+57
+00:03:51.290 --> 00:03:53.590
+5 times cosine of 30.
+
+58
+00:03:54.050 --> 00:03:56.750
+You can treat velocities as a triangle.
+
+59
+00:03:57.650 --> 00:04:01.250
+If it makes it easier to visualize, I'll
+draw
+
+60
+00:04:01.250 --> 00:04:04.690
+this out. So there's going to be this
+component,
+
+61
+00:04:04.690 --> 00:04:08.390
+v of x, and this would be v of y.
+
+62
+00:04:09.830 --> 00:04:12.190
+And v of x, you can treat it as a
+triangle,
+
+63
+00:04:12.310 --> 00:04:19.610
+would just be equal to 5 cos 30 degrees,
+
+64
+00:04:19.930 --> 00:04:23.910
+since cosine is adjacent over hypotenuse.
+
+65
+00:04:24.830 --> 00:04:27.850
+So the adjacent would just be 5 cos 30,
+which
+
+66
+00:04:27.850 --> 00:04:29.970
+is v of x. Now, we don't need v of y.
+
+67
+00:04:30.430 --> 00:04:35.970
+We only need v of x. And that means that
+that
+
+68
+00:04:35.970 --> 00:04:39.970
+means that it's going to travel 5 cos 30
+degrees
+
+69
+00:04:39.970 --> 00:04:43.290
+horizontally every second, horizontally
+only.
+
+70
+00:04:44.150 --> 00:04:47.190
+So now we basically have the question
+down.
+
+71
+00:04:48.210 --> 00:04:52.010
+The answer would be distance equals
+velocity
+
+72
+00:04:52.010 --> 00:04:58.270
+times time. And we know velocity is 5 cos
+30
+
+73
+00:04:58.270 --> 00:05:02.870
+degrees times time, which is 10.
+
+74
+00:05:03.740 --> 00:05:08.570
+So it would be 50 times root 3 over 3, I
+believe.
+
+75
+00:05:09.470 --> 00:05:13.990
+So that, we know, would be equal to 50
+root
+
+76
+00:05:13.990 --> 00:05:19.630
+3 over 3 metres horizontally.
+
+77
+00:05:19.810 --> 00:05:24.170
+So now we know that y is 50 root 3 over 3
+metres.
+
+78
+00:05:25.810 --> 00:05:29.210
+Now, let's say we wanted to calculate the
+distance
+
+79
+00:05:29.210 --> 00:05:32.510
+traveled vertically.
+
+80
+00:05:32.870 --> 00:05:35.950
+Let's call this not y, but let's call it
+z.
+
+81
+00:05:37.390 --> 00:05:42.610
+Now, if we know x is 50, because 10 times
+5
+
+82
+00:05:42.610 --> 00:05:47.190
+is 50, we can actually use the Pythagorean
+theorem
+
+83
+00:05:47.190 --> 00:05:49.530
+to calculate z. That would be no problem.
+But
+
+84
+00:05:49.530 --> 00:05:52.050
+let's try solving for v of y and
+confirming
+
+85
+00:05:52.050 --> 00:05:54.170
+that it does work.
+
+86
+00:05:55.490 --> 00:05:58.950
+So v of y is this one. So pause the video
+and
+
+87
+00:05:58.950 --> 00:06:01.770
+think, what would be the formula for v of
+y?
+
+88
+00:06:03.740 --> 00:06:07.740
+Well, we know v of y is the opposite of 30
+degrees.
+
+89
+00:06:08.080 --> 00:06:12.480
+So it would be 5 sine 30 degrees.
+
+90
+00:06:14.100 --> 00:06:17.520
+And we can do that and you would get 2.5.
+
+91
+00:06:17.840 --> 00:06:23.960
+Sine 30 is 1 over 2. Now, the distance
+would
+
+92
+00:06:23.960 --> 00:06:28.660
+be v of y times t, which would be equal to
+2.5
+
+93
+00:06:28.660 --> 00:06:33.880
+times 10, which would be equal to 25
+metres.
+
+94
+00:06:34.600 --> 00:06:38.440
+So we know that it travels horizontally 25
+metres.
+
+95
+00:06:40.300 --> 00:06:45.500
+And this actually makes sense because, let
+me
+
+96
+00:06:45.500 --> 00:06:51.820
+pull up my calculator real quick, because
+it
+
+97
+00:06:51.820 --> 00:06:57.660
+is, ooh, sorry. This should be over 2
+because
+
+98
+00:06:57.660 --> 00:07:00.800
+cosine of 30 is over 2, not over 3.
+
+99
+00:07:01.460 --> 00:07:06.680
+Sorry, that's my bad. Okay.
+
+100
+00:07:08.200 --> 00:07:13.240
+Now, let's use the Pythagorean theorem to
+confirm
+
+101
+00:07:13.240 --> 00:07:17.540
+that this works. Well, we actually don't
+need
+
+102
+00:07:17.540 --> 00:07:21.120
+it. We have a 30, 60, 90 triangle over
+here.
+
+103
+00:07:21.400 --> 00:07:24.520
+If you didn't notice, it's 30 metres, 30
+degrees
+
+104
+00:07:24.520 --> 00:07:28.340
+directly to the horizontal. So it's a 1,
+2,
+
+105
+00:07:28.360 --> 00:07:31.200
+root 3 triangle. Is it? Well, here's our
+1,
+
+106
+00:07:31.760 --> 00:07:33.800
+here's our root 3, and here's our 2.
+
+107
+00:07:34.080 --> 00:07:36.520
+So it does follow it. If you use the
+Pythagorean
+
+108
+00:07:36.520 --> 00:07:38.360
+theorem, you'll find this exact same
+thing.
+
+109
+00:07:39.160 --> 00:07:42.480
+So that basically confirms that we can
+split
+
+110
+00:07:42.480 --> 00:07:46.240
+our velocity and calculate the distance
+and
+
+111
+00:07:46.240 --> 00:07:50.720
+get the right answer. And that's basically
+all
+
+112
+00:07:50.720 --> 00:07:52.980
+for using two-dimensional vectors.
+
+113
+00:07:54.680 --> 00:07:56.660
+You can use the same thing for
+displacement,
+
+114
+00:07:56.960 --> 00:07:59.880
+for acceleration. Just make sure that
+these
+
+115
+00:07:59.880 --> 00:08:02.180
+are not separate velocities, but they're
+just
+
+116
+00:08:02.180 --> 00:08:05.900
+part of the main velocity itself.
+
+117
+00:08:06.320 --> 00:08:09.680
+And we use these to calculate horizontally
+or
+
+118
+00:08:09.680 --> 00:08:12.160
+vertically, which can be useful in a lot
+of
+
+119
+00:08:12.160 --> 00:08:15.540
+situations as you will see in the future.
+That's
+
+120
+00:08:15.540 --> 00:08:18.180
+it for today's video, and we'll see you in
+the
+
+121
+00:08:18.180 --> 00:08:19.160
+next one. Bye.

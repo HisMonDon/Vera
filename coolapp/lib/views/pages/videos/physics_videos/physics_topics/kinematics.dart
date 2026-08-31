@@ -2,6 +2,7 @@ import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/views/pages/videos/physics_videos/curriculum_topic_filters.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/topic_registry.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/topic_widgets.dart';
 
 //not done
@@ -72,6 +73,10 @@ class Kinematics extends StatefulWidget {
 }
 
 class _KinematicsState extends State<Kinematics> {
+  /// This page's topic. All display copy is looked up from it, so the
+  /// name here cannot disagree with Explore, the lesson page or the player.
+  static const String _topicKey = CurriculumTopicFilters.kinematics;
+
   final double _width = 400;
   final double _height = 200;
   Map<int, bool> hoveredStates = {};
@@ -79,10 +84,10 @@ class _KinematicsState extends State<Kinematics> {
   Widget build(BuildContext context) {
     // add an immediate check in build method
     // add an immediate check in build method
-    globals.topicTitle = 'Kinematics';
+    globals.topicTitle = TopicRegistry.nameOf(_topicKey);
     //print("topic title: Momentum and collisions, unit title reset");
     final visibleVideos = CurriculumTopicFilters.filterUnits(
-      courseTitle: globals.courseTitle,
+      courseKey: globals.courseKey,
       topicKey: CurriculumTopicFilters.kinematics,
       units: Kinematics.videos,
     );
@@ -95,11 +100,10 @@ class _KinematicsState extends State<Kinematics> {
             children: [
               SizedBox(width: 2, height: 10),
               TopicWidgets.buildTopLayout(
-                title: globals.topicTitle,
+                title: TopicRegistry.nameOf(_topicKey),
                 context: context,
-                description:
-                    'Motion analysis, explore concepts such as displacement, velocity, acceleration, and time, and how to apply kinematic equations to describe motion in one and two dimensions.',
-                topIcon: Icons.my_location,
+                description: TopicRegistry.descriptionOf(_topicKey),
+                topIcon: TopicRegistry.byKey(_topicKey)!.icon,
               ),
               SizedBox(width: 2, height: 20),
               Column(

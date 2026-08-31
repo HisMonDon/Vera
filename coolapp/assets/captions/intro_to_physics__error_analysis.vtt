@@ -1,0 +1,662 @@
+WEBVTT
+NOTE Error Analysis and Measurement
+
+1
+00:00:00.460 --> 00:00:03.500
+In this video, we will be talking about
+types
+
+2
+00:00:03.500 --> 00:00:07.600
+of uncertainties, significant figures, and
+how
+
+3
+00:00:07.600 --> 00:00:12.300
+to calculate with uncertainties. Why do
+uncertainties
+
+4
+00:00:12.300 --> 00:00:15.700
+matter, first of all? Well, uncertainties
+matter
+
+5
+00:00:15.700 --> 00:00:19.700
+because no physical measurement in real
+life
+
+6
+00:00:19.700 --> 00:00:22.940
+is exact. Every single measurement is
+limited
+
+7
+00:00:22.940 --> 00:00:26.360
+by something. For example, instrument
+precision,
+
+8
+00:00:30.580 --> 00:00:41.940
+or experimental technique, or
+
+9
+00:00:41.940 --> 00:00:45.020
+environmental errors.
+
+10
+00:00:46.970 --> 00:00:54.600
+So, environment. And because physics
+relies
+
+11
+00:00:54.600 --> 00:00:58.920
+on a lot of measured data, each value has
+to
+
+12
+00:00:58.920 --> 00:01:03.220
+include an uncertainty. And without it,
+you
+
+13
+00:01:03.220 --> 00:01:05.380
+can't really do it effectively.
+
+14
+00:01:06.160 --> 00:01:11.960
+A measurement is written as x equals x
+measured
+
+15
+00:01:11.960 --> 00:01:15.280
+plus minus the uncertainty.
+
+16
+00:01:18.780 --> 00:01:21.700
+For example, let's say you want to measure
+the
+
+17
+00:01:21.700 --> 00:01:25.560
+length of a book. You could say the length
+would
+
+18
+00:01:25.560 --> 00:01:31.160
+be equal to 12.4 plus minus 0.1
+centimetres.
+
+19
+00:01:31.820 --> 00:01:34.400
+And this is the uncertainty.
+
+20
+00:01:35.280 --> 00:01:39.320
+This basically tells the readers, or the
+examiner,
+
+21
+00:01:39.920 --> 00:01:43.900
+that your book has a length between 12.3
+and
+
+22
+00:01:43.900 --> 00:01:51.160
+12.5. There are two types
+
+23
+00:01:51.160 --> 00:01:54.720
+of uncertainties. There's random
+uncertainty
+
+24
+00:01:54.720 --> 00:02:01.120
+and systematic uncertainty.
+
+25
+00:02:04.960 --> 00:02:09.300
+Both of these are really stressed in IB.
+
+26
+00:02:09.300 --> 00:02:13.200
+If you're doing AP, this is probably not
+going
+
+27
+00:02:13.200 --> 00:02:15.460
+to be that important. But if you're doing
+IB
+
+28
+00:02:15.460 --> 00:02:18.760
+and you're going to be doing labs, this is
+very,
+
+29
+00:02:18.940 --> 00:02:22.420
+very important to know. Random uncertainty
+is
+
+30
+00:02:22.420 --> 00:02:26.240
+caused by unpredictable fluctuations.
+
+31
+00:02:31.020 --> 00:02:34.200
+And it varies from trial to trial.
+
+32
+00:02:34.200 --> 00:02:40.210
+For example, when you're doing a
+stopwatch,
+
+33
+00:02:40.670 --> 00:02:43.670
+there could be a difference in reaction
+time.
+
+34
+00:02:46.850 --> 00:02:50.370
+However, systematic uncertainty is a
+consistent
+
+35
+00:02:50.370 --> 00:02:55.050
+error, or a consistent bias, in one
+direction.
+
+36
+00:02:58.570 --> 00:03:01.550
+And it can't be reduced by repetition,
+while
+
+37
+00:03:01.550 --> 00:03:03.750
+random can be reduced by repetition.
+
+38
+00:03:03.750 --> 00:03:10.730
+Can't be reduced by repetition.
+
+39
+00:03:12.090 --> 00:03:17.990
+An example of this could be a ruler that
+has
+
+40
+00:03:17.990 --> 00:03:22.750
+a missed painting, or the etch marks on
+the
+
+41
+00:03:22.750 --> 00:03:31.470
+ruler are not even. Etch marks on ruler
+are
+
+42
+00:03:31.470 --> 00:03:35.490
+not even. So basically, systematic
+uncertainty
+
+43
+00:03:35.490 --> 00:03:37.870
+skews all your data in one direction,
+while
+
+44
+00:03:37.870 --> 00:03:41.910
+a random uncertainty is basically the more
+you
+
+45
+00:03:41.910 --> 00:03:44.570
+do the experiment, the less random
+uncertainty
+
+46
+00:03:44.570 --> 00:03:49.320
+there will be. How do you estimate
+uncertainty
+
+47
+00:03:49.320 --> 00:03:51.260
+from instruments? How do you actually get
+the
+
+48
+00:03:51.260 --> 00:03:59.040
+instruments? Well, for analog instruments,
+which
+
+49
+00:03:59.040 --> 00:04:02.160
+means things that you can read, for
+example,
+
+50
+00:04:02.380 --> 00:04:06.720
+a ruler. Or, a good thing in chemistry
+would
+
+51
+00:04:06.720 --> 00:04:10.800
+be a graduated cylinder. You could read
+the
+
+52
+00:04:10.800 --> 00:04:16.380
+etch markings. It would be plus-minus-half
+the
+
+53
+00:04:16.380 --> 00:04:22.620
+smallest division. So what do I mean by
+this?
+
+54
+00:04:23.420 --> 00:04:28.620
+Well, let's say this ruler goes up by one
+centimetre,
+
+55
+00:04:29.080 --> 00:04:31.420
+as most rulers do.
+
+56
+00:04:31.420 --> 00:04:33.940
+So when you're measuring it, the
+uncertainty
+
+57
+00:04:33.940 --> 00:04:36.840
+of whatever you're measuring with this
+ruler
+
+58
+00:04:36.840 --> 00:04:40.780
+would be plus-minus-0.5 centimetres.
+
+59
+00:04:41.740 --> 00:04:45.040
+And this would be your uncertainty.
+However,
+
+60
+00:04:45.580 --> 00:04:49.180
+let's say you're measuring with a digital
+instrument.
+
+61
+00:04:50.060 --> 00:04:52.580
+Digital instrument.
+
+62
+00:04:53.600 --> 00:04:56.520
+And the uncertainty would be plus-minus
+the
+
+63
+00:04:56.520 --> 00:04:58.880
+least significant figure.
+
+64
+00:05:00.260 --> 00:05:03.760
+Least sig dig.
+
+65
+00:05:04.900 --> 00:05:09.900
+So basically, in this case, it means that
+you
+
+66
+00:05:09.900 --> 00:05:15.560
+want to plus-minus one of the furthest
+decimal
+
+67
+00:05:15.560 --> 00:05:18.520
+places. So let's say you have a stopwatch,
+and
+
+68
+00:05:18.520 --> 00:05:22.680
+your stopwatch measures, let's say, 2.36.
+
+69
+00:05:23.320 --> 00:05:26.820
+Well, the least decimal place here would
+be
+
+70
+00:05:26.820 --> 00:05:29.820
+two after the one.
+
+71
+00:05:30.200 --> 00:05:35.740
+So the uncertainty here would be 0.01
+seconds.
+
+72
+00:05:36.840 --> 00:05:40.620
+And that's basically how to get the
+uncertainty
+
+73
+00:05:40.620 --> 00:05:43.040
+in an experiment. You're going to probably
+learn
+
+74
+00:05:43.040 --> 00:05:45.540
+this in class for IB, but it's good to
+know
+
+75
+00:05:45.540 --> 00:05:51.750
+earlier. Now, how do you calculate with
+uncertainties?
+
+76
+00:05:52.470 --> 00:05:57.010
+Let's say you want to calculate the
+velocity
+
+77
+00:05:57.010 --> 00:06:03.130
+or speed of an object. Velocity is
+distance
+
+78
+00:06:04.640 --> 00:06:11.740
+over time. And let's say your distance is
+
+79
+00:06:11.740 --> 00:06:18.760
+measured as 5.0 plus-minus one metres.
+
+80
+00:06:19.880 --> 00:06:22.640
+And your time using your stopwatch could
+be,
+
+81
+00:06:22.640 --> 00:06:28.640
+let's use this, 2.36 seconds plus-minus
+0.01
+
+82
+00:06:28.640 --> 00:06:34.680
+seconds. So when you're multiplying or
+dividing
+
+83
+00:06:34.680 --> 00:06:37.740
+uncertainties, and this is really, really
+important
+
+84
+00:06:37.740 --> 00:06:42.120
+in labs for both physics and chemistry,
+you
+
+85
+00:06:42.120 --> 00:06:45.280
+want to first take the percentage
+uncertainty.
+
+86
+00:06:45.700 --> 00:06:50.280
+If you're not doing IB or high school and
+you're
+
+87
+00:06:50.280 --> 00:06:52.260
+focusing on AP, you don't really need to
+worry
+
+88
+00:06:52.260 --> 00:06:57.260
+about this. This is for lab work. So let's
+first
+
+89
+00:06:57.260 --> 00:07:00.320
+focus on the distance. The percent
+uncertainty
+
+90
+00:07:00.320 --> 00:07:05.920
+for distance would be one, let's say, or
+0.1
+
+91
+00:07:05.920 --> 00:07:08.100
+metres would be a more reasonable
+uncertainty.
+
+92
+00:07:10.860 --> 00:07:13.600
+So 0.1.
+
+93
+00:07:13.800 --> 00:07:16.880
+So the percent uncertainty here would be
+0.1
+
+94
+00:07:16.880 --> 00:07:20.700
+over 5.0 times 100%.
+
+95
+00:07:22.140 --> 00:07:28.650
+And when you do that, you would get a
+percent
+
+96
+00:07:28.650 --> 00:07:30.950
+uncertainty of 2.0%.
+
+97
+00:07:31.990 --> 00:07:39.760
+Same thing for the time, and you get 0.01
+over
+
+98
+00:07:39.760 --> 00:07:43.760
+2.36 times 100%.
+
+99
+00:07:43.760 --> 00:07:47.840
+And that would be equal to 0.01 divided by
+2.36
+
+100
+00:07:47.840 --> 00:07:51.820
+times 100. The total uncertainty would be
+0.4,
+
+101
+00:07:51.920 --> 00:07:55.120
+0.42.
+
+102
+00:07:57.280 --> 00:08:00.360
+Sorry, 0.4, yeah, 0.4%.
+
+103
+00:08:01.520 --> 00:08:06.240
+And how do you get the total uncertainty?
+
+104
+00:08:06.840 --> 00:08:09.160
+Well, this is what you have to do.
+
+105
+00:08:09.220 --> 00:08:12.800
+You just add them. Once you have all the
+uncertainties
+
+106
+00:08:12.800 --> 00:08:15.300
+required for division or multiplication,
+you
+
+107
+00:08:15.300 --> 00:08:18.960
+could just add the uncertainties. And the
+total
+
+108
+00:08:18.960 --> 00:08:20.980
+uncertainty would be 2.4%.
+
+109
+00:08:20.980 --> 00:08:24.320
+So once you calculate what your final
+velocity
+
+110
+00:08:24.320 --> 00:08:31.160
+is, you would get 2.1 metres per second.
+
+111
+00:08:31.600 --> 00:08:35.420
+You would take this 2.4 uncertainty and
+you
+
+112
+00:08:35.420 --> 00:08:42.060
+would put it into here. So if you do this,
+divided
+
+113
+00:08:42.060 --> 00:08:46.460
+by 100 times 2.1, you get an uncertainty
+of
+
+114
+00:08:46.460 --> 00:08:50.920
+plus minus 0.04 metres per second.
+
+115
+00:08:51.960 --> 00:08:55.540
+And that would be your final answer.
+
+116
+00:08:56.060 --> 00:09:00.240
+Make sure that your final digit also
+matches
+
+117
+00:09:00.240 --> 00:09:03.600
+the uncertainty here. So you would have to
+add
+
+118
+00:09:03.600 --> 00:09:07.640
+an extra figure here. But basically that's
+how
+
+119
+00:09:07.640 --> 00:09:10.160
+you calculate uncertainties when you're
+dividing
+
+120
+00:09:10.160 --> 00:09:12.740
+and multiplying. What if you're adding two
+values?
+
+121
+00:09:12.960 --> 00:09:16.060
+Let's say you want to add two distances,
+5.0
+
+122
+00:09:16.060 --> 00:09:22.080
+plus minus 0.1 metres, 0.1 metres.
+
+123
+00:09:22.900 --> 00:09:24.900
+And then you add that with another
+distance
+
+124
+00:09:24.900 --> 00:09:29.040
+calculation, let's say 6.0 plus minus 0.2
+metres.
+
+125
+00:09:30.320 --> 00:09:33.260
+Well, when you're adding or subtracting,
+it's
+
+126
+00:09:33.260 --> 00:09:35.160
+way easier than when you have to multiply
+and
+
+127
+00:09:35.160 --> 00:09:36.860
+you have to get all the percent
+uncertainties
+
+128
+00:09:36.860 --> 00:09:39.640
+and adding them. You could just add the
+uncertainties
+
+129
+00:09:39.640 --> 00:09:42.860
+directly. Because if you think about it,
+these
+
+130
+00:09:42.860 --> 00:09:47.460
+uncertainties cover the ranges of what you
+have
+
+131
+00:09:47.460 --> 00:09:50.560
+to measure. So by adding them, you are
+accounting
+
+132
+00:09:50.560 --> 00:09:55.040
+for both the ranges. And that's how you
+calculate
+
+133
+00:09:55.040 --> 00:09:58.660
+uncertainty. Remember, for multiplying and
+dividing,
+
+134
+00:09:59.180 --> 00:10:01.260
+you have to convert it to percent
+uncertainties,
+
+135
+00:10:01.580 --> 00:10:04.280
+add it, and then apply it to your final
+answer.
+
+136
+00:10:04.700 --> 00:10:06.520
+However, for adding, you could just
+directly
+
+137
+00:10:06.520 --> 00:10:09.940
+add the uncertainties. I hope this will
+give
+
+138
+00:10:09.940 --> 00:10:13.180
+you a head start on lab work, and I hope
+this
+
+139
+00:10:13.180 --> 00:10:14.640
+helped you. Thank you.

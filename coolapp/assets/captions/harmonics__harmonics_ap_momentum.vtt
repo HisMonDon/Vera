@@ -1,0 +1,519 @@
+WEBVTT
+NOTE Springs and Momentum - Past AP Physics 1 Example
+
+1
+00:00:01.420 --> 00:00:06.320
+The 2024 AP Physics 1 exam has a couple of
+questions
+
+2
+00:00:06.320 --> 00:00:10.140
+that relate to oscillations, pendulums,
+and
+
+3
+00:00:10.140 --> 00:00:15.080
+springs, so I will be going over these in
+a
+
+4
+00:00:15.080 --> 00:00:17.600
+few videos. And even if you're not doing
+AP
+
+5
+00:00:17.600 --> 00:00:19.760
+Physics 1, if you're doing high school
+physics,
+
+6
+00:00:20.240 --> 00:00:22.460
+this is still really, really good
+practice,
+
+7
+00:00:22.900 --> 00:00:24.960
+and maybe even goes beyond what you're
+learning,
+
+8
+00:00:25.080 --> 00:00:27.360
+but it's still really, really good to
+know.
+
+9
+00:00:29.500 --> 00:00:33.900
+So, in an experiment, the student attaches
+one
+
+10
+00:00:33.900 --> 00:00:37.960
+end of a spring to a force sensor that is
+attached
+
+11
+00:00:37.960 --> 00:00:42.880
+to a wall. The other end of the spring is
+attached
+
+12
+00:00:42.880 --> 00:00:46.340
+to a cart with a mass m equals 0.25
+kilograms.
+
+13
+00:00:47.380 --> 00:00:53.980
+So, we know the mass, 0.25 kilograms.
+
+14
+00:00:54.720 --> 00:00:57.360
+The student places a motion detector to
+the
+
+15
+00:00:57.360 --> 00:01:00.380
+right of the cart, as shown in Figure 2,
+and
+
+16
+00:01:00.380 --> 00:01:02.960
+pulls the cart to the right a small
+distance
+
+17
+00:01:02.960 --> 00:01:06.340
+so that the spring is stretched. And then
+the
+
+18
+00:01:06.340 --> 00:01:08.840
+cart is released from rest, and the cart's
+spring
+
+19
+00:01:08.840 --> 00:01:12.420
+system oscillates. And the following graph
+shows
+
+20
+00:01:12.420 --> 00:01:15.580
+the velocity of the cart and the force
+exerted
+
+21
+00:01:15.580 --> 00:01:20.040
+on the cart by the spring as functions of
+time
+
+22
+00:01:20.040 --> 00:01:24.160
+t. So, before we even get started, this is
+relating
+
+23
+00:01:24.160 --> 00:01:27.340
+to what we learned in the previous video
+about
+
+24
+00:01:27.340 --> 00:01:29.520
+kinetic and potential energy.
+
+25
+00:01:30.480 --> 00:01:35.040
+These are the maximums for kinetic energy.
+
+26
+00:01:35.300 --> 00:01:41.060
+So, at here, kinetic energy is at max, and
+all
+
+27
+00:01:41.060 --> 00:01:46.440
+of these points are when the cart is
+either
+
+28
+00:01:46.440 --> 00:01:50.240
+at the farthest or at the closest to the
+wall.
+
+29
+00:01:50.260 --> 00:01:55.040
+Or the force center. So, that's good to
+know.
+
+30
+00:01:55.820 --> 00:01:59.380
+And this is the force. And using your data
+in
+
+31
+00:01:59.380 --> 00:02:01.280
+the velocity-time graph, calculate the
+change
+
+32
+00:02:01.280 --> 00:02:03.980
+in kinetic energy of the cart from t
+equals
+
+33
+00:02:03.980 --> 00:02:06.840
+0.5 seconds to t equals 2.0 seconds.
+
+34
+00:02:07.140 --> 00:02:09.860
+Show your steps and calculations. This
+part
+
+35
+00:02:09.860 --> 00:02:12.500
+a is really, really, really easy.
+
+36
+00:02:12.500 --> 00:02:16.120
+All you gotta do is do simple math.
+
+37
+00:02:17.760 --> 00:02:20.620
+Don't know how to explain that further.
+It's
+
+38
+00:02:20.620 --> 00:02:26.640
+really self-explanatory. Delta Ke equals
+Ke
+
+39
+00:02:26.640 --> 00:02:29.820
+final minus Ke initial.
+
+40
+00:02:31.360 --> 00:02:38.900
+So, one over two mv final squared
+
+41
+00:02:38.900 --> 00:02:42.680
+minus one over two mv initial squared.
+
+42
+00:02:43.300 --> 00:02:45.520
+And then you can factor this out if you
+want.
+
+43
+00:02:46.320 --> 00:02:52.140
+One over two mvf squared minus vi squared.
+
+44
+00:02:53.220 --> 00:02:56.260
+And now it's just a matter of plugging in
+our
+
+45
+00:02:56.260 --> 00:03:00.780
+values. What do we have for m? We have
+0.25
+
+46
+00:03:00.780 --> 00:03:04.480
+kilograms times 0.25.
+
+47
+00:03:05.400 --> 00:03:10.580
+The final velocity, well, would be at two
+seconds.
+
+48
+00:03:11.220 --> 00:03:13.220
+So, we just read our graph. At two
+seconds,
+
+49
+00:03:13.280 --> 00:03:17.080
+the velocity is zero. So, it's just zero
+squared.
+
+50
+00:03:17.680 --> 00:03:20.140
+I'm not gonna write that down. Initial
+velocity
+
+51
+00:03:20.140 --> 00:03:25.920
+is 0.5 seconds, which is 0.3.
+
+52
+00:03:26.860 --> 00:03:29.700
+0.3 squared.
+
+53
+00:03:31.950 --> 00:03:34.490
+And when you type this into your
+calculator,
+
+54
+00:03:35.790 --> 00:03:39.210
+you would get one over two times 0.25
+times
+
+55
+00:03:39.210 --> 00:03:51.110
+0.3 squared. You would get 0.011
+
+56
+00:03:51.110 --> 00:03:56.610
+joules because it's force.
+
+57
+00:03:57.730 --> 00:04:01.610
+And it's negative because it's minus vi.
+
+58
+00:04:01.610 --> 00:04:04.350
+Now, using the data in the force-time
+graph,
+
+59
+00:04:04.450 --> 00:04:06.470
+estimate the change in momentum of the
+cart
+
+60
+00:04:06.470 --> 00:04:10.070
+from t equals 0.5 seconds to t equals 2.5
+seconds
+
+61
+00:04:10.070 --> 00:04:13.210
+and briefly explain how you arrived at
+your
+
+62
+00:04:13.210 --> 00:04:21.390
+estimation. So, if you didn't look at my
+
+63
+00:04:21.390 --> 00:04:24.210
+momentum video, check it out because it's
+really
+
+64
+00:04:24.210 --> 00:04:26.550
+helpful and it relates directly to this
+question.
+
+65
+00:04:26.750 --> 00:04:29.350
+This is a classic impulse question.
+
+66
+00:04:29.350 --> 00:04:32.590
+Change in momentum. The first thing when
+you
+
+67
+00:04:32.590 --> 00:04:36.030
+see this is you want to think delta-p,
+change
+
+68
+00:04:36.030 --> 00:04:41.250
+in momentum, is equal to impulse. So,
+impulse
+
+69
+00:04:41.250 --> 00:04:45.910
+from time t equals 0.5 to t equals 2.5.
+
+70
+00:04:46.430 --> 00:04:53.530
+0.5 to 2.5. Impulse is just the measure of
+
+71
+00:04:53.530 --> 00:04:57.070
+the area beneath the force-time curve.
+
+72
+00:04:57.070 --> 00:04:59.770
+I've mentioned that in my momentum video.
+
+73
+00:05:00.510 --> 00:05:03.470
+So, the area here, let's call this, we
+don't
+
+74
+00:05:03.470 --> 00:05:06.550
+actually have to calculate it, let's call
+this
+
+75
+00:05:06.550 --> 00:05:09.450
+negative x, doesn't matter.
+
+76
+00:05:09.890 --> 00:05:12.730
+The area here, however, is positive x.
+
+77
+00:05:12.830 --> 00:05:18.330
+It's the same magnitude, but it's in a
+different
+
+78
+00:05:18.330 --> 00:05:22.430
+direction. So, the total net impulse or
+the
+
+79
+00:05:22.430 --> 00:05:26.070
+total net area under this part will be
+zero.
+
+80
+00:05:27.230 --> 00:05:29.930
+So, that means the change in momentum is
+zero.
+
+81
+00:05:31.490 --> 00:05:34.870
+And you can also use logic.
+
+82
+00:05:35.970 --> 00:05:39.310
+Here, here, the velocity is the same.
+
+83
+00:05:39.490 --> 00:05:41.130
+When you look at the graph, the velocity
+is
+
+84
+00:05:41.130 --> 00:05:43.710
+the same, so change in momentum is zero.
+
+85
+00:05:43.710 --> 00:05:46.550
+So, you're obviously not going to write
+that
+
+86
+00:05:46.550 --> 00:05:48.490
+because it asks you to use a force-time
+graph,
+
+87
+00:05:48.610 --> 00:05:50.650
+not the velocity-time graph, but it's
+still
+
+88
+00:05:50.650 --> 00:05:52.930
+a good thing to affirm your answer.
+
+89
+00:05:52.930 --> 00:05:58.170
+And what you would say is the area, the
+net
+
+90
+00:05:58.170 --> 00:06:05.460
+area, under the force-time
+
+91
+00:06:05.460 --> 00:06:13.360
+graph from t equals 0.5
+
+92
+00:06:13.360 --> 00:06:19.780
+seconds to t equals 2.5 seconds is zero.
+
+93
+00:06:21.090 --> 00:06:29.000
+This means that the impulse or
+
+94
+00:06:30.250 --> 00:06:38.510
+the change in momentum is
+
+95
+00:06:38.510 --> 00:06:41.790
+also zero.
+
+96
+00:06:42.370 --> 00:06:47.850
+And that's basically it for this question.
+
+97
+00:06:50.230 --> 00:06:53.950
+Okay, three, I explained it in part two.
+
+98
+00:06:54.190 --> 00:06:57.830
+Basically, you say that the velocity here
+is
+
+99
+00:06:57.830 --> 00:07:00.750
+the same as the velocity here. Momentum
+depends
+
+100
+00:07:00.750 --> 00:07:02.810
+on mass times velocity. Mass is constant.
+
+101
+00:07:03.490 --> 00:07:08.410
+So, from 0.5 to 2.5, if velocity is also
+the
+
+102
+00:07:08.410 --> 00:07:11.610
+same at 0.3, then momentum will be the
+same.
+
+103
+00:07:11.730 --> 00:07:13.210
+So, I'm not going to write that down
+because
+
+104
+00:07:13.210 --> 00:07:16.930
+that's going to take time, but that's
+basically
+
+105
+00:07:16.930 --> 00:07:20.870
+it. So, these are pretty straightforward
+questions,
+
+106
+00:07:21.890 --> 00:07:27.690
+and they basically connect momentum with
+springs.
+
+107
+00:07:29.470 --> 00:07:32.470
+This is rotational motion. I'll get to
+that
+
+108
+00:07:32.470 --> 00:07:37.350
+in another video. But, we have this
+question.
+
+109
+00:07:37.950 --> 00:07:41.050
+I think that's the next one. Yep, we have
+this
+
+110
+00:07:41.050 --> 00:07:44.730
+question, and I'm going to be going over
+that
+
+111
+00:07:44.730 --> 00:07:47.290
+in the next video. Bye!

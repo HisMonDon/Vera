@@ -1,0 +1,1150 @@
+{
+ "lesson": {
+  "topicKey": "kinematics",
+  "curriculumKey": "motion_2d_examples",
+  "title": "More 2D Kinematics Example",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/More%20Kinematics%20Examples%201.mp4",
+  "source": "kinematics.dart"
+ },
+ "segments": [
+  {
+   "start": 0.05,
+   "end": 29.85,
+   "text": "In this video, we will be going over more kinematics examples. In all of my classes before, I have learned the kinematics, but I was really struggling and confused on how to understand these questions and I think what I needed was more examples on how to do it. So, I will be going over a couple of more kinematics examples to help you better understand and to solve kinematics equations.",
+   "avg_logprob": -0.0714324845678427
+  },
+  {
+   "start": 30.91,
+   "end": 55.87,
+   "text": "First of all, before we start, I'd like to say that having a formula sheet on hand every time you do one of these questions is really, really handy. This is a snippet from the AP Physics 1 formula sheet and these are the main three equations that we use to solve kinematics questions. I have explained this in a previous video.",
+   "avg_logprob": -0.08891512393951416
+  },
+  {
+   "start": 57.95,
+   "end": 76.73,
+   "text": "So, our first question is, a ball is thrown horizontally from the top of a 20m high cliff with a speed of 10m per second. How far from the base of the cliff does it land? Keep in mind that it's thrown horizontally, so the speed is horizontal.",
+   "avg_logprob": -0.10841710889925722
+  },
+  {
+   "start": 76.73,
+   "end": 110.56,
+   "text": "So, let's imagine this. We have a cliff and we have a ball and this ball is thrown with a speed of 10m per second. The cliff is 20m high and we want to solve how far from the base of the cliff.",
+   "avg_logprob": -0.10851160533450267
+  },
+  {
+   "start": 110.56,
+   "end": 120.96,
+   "text": "This is the base of the cliff, so it's thrown here and we want to solve this distance. Let's call this distance d.",
+   "avg_logprob": -0.1616248949430883
+  },
+  {
+   "start": 122.37,
+   "end": 148.49,
+   "text": "Now, first of all, let's see what we have here. Well, we can first use our initial equation, distance equals speed times time, and since distance and the initial speed are both horizontal, you can do that.",
+   "avg_logprob": -0.13550738006830215
+  },
+  {
+   "start": 149.39,
+   "end": 162.13,
+   "text": "So, distance equals speed times time. You want to solve for distance and you have the speed. The speed is 10m per second, so 10 times t.",
+   "avg_logprob": -0.13991576594275398
+  },
+  {
+   "start": 162.97,
+   "end": 181.81,
+   "text": "And now, we can see that the only thing we need to solve left is t. So, we need to find the time it takes for the ball to drop from up here to down here, and that depends entirely on the vertical.",
+   "avg_logprob": -0.08736185027429691
+  },
+  {
+   "start": 182.75,
+   "end": 202.49,
+   "text": "How do we do this? Well, we know that the acceleration of gravity is, let's just call it 10m per second. Sometimes you gotta use 9.81, sometimes you use 10. It really depends on what physics course or exam you're taking. But for simplicity, let's do 10.",
+   "avg_logprob": -0.12290034104477275
+  },
+  {
+   "start": 203.49,
+   "end": 227.98,
+   "text": "So, you know the acceleration downwards is 10, so negative 10m per second squared, and then the height is 20m, and the initial velocity going downwards is 0m per second, because the ball is thrown horizontally, so it's not going anywhere downwards.",
+   "avg_logprob": -0.12167682250340779
+  },
+  {
+   "start": 229.24,
+   "end": 243.68,
+   "text": "Now, if you know the acceleration, the distance, and the initial velocity, if you look at all of these options, you can see that this one fits the most.",
+   "avg_logprob": -0.053424897293249764
+  },
+  {
+   "start": 247.83,
+   "end": 276.48,
+   "text": "Let's first write this equation down. x equals x0 plus vx0t plus 1 over 2 at squared. So, x is usually representing distance, but when you use these formulas, it doesn't have to be x, it could be x, y, or z, or whatever.",
+   "avg_logprob": -0.1423105001449585
+  },
+  {
+   "start": 277.28,
+   "end": 294.02,
+   "text": "So, let's replace it with y, because that's what we're dealing with. We're dealing with y. y equals y0 plus vy0 times t plus 1 over 2 at squared.",
+   "avg_logprob": -0.09495396282937792
+  },
+  {
+   "start": 295.32,
+   "end": 311.2,
+   "text": "y means the final y position. Well, finally, when the ball lands over here, y equals 0. And y0, this means naught, which means the original one.",
+   "avg_logprob": -0.162546372995144
+  },
+  {
+   "start": 311.2,
+   "end": 330.36,
+   "text": "y0, originally, it's at 20m, so originally it's 20m, so y, which is final, is 0, equals 20. The original velocity of y is 0m per second, like I said, so 0 times t.",
+   "avg_logprob": -0.1904421557079662
+  },
+  {
+   "start": 332.22,
+   "end": 348.09,
+   "text": "And 1 over 2a. What is a? Well, a is just gravity. That's the only acceleration it has, which is negative 10m per second squared, t squared.",
+   "avg_logprob": -0.1361784725936491
+  },
+  {
+   "start": 350.21,
+   "end": 359.35,
+   "text": "And now, you can solve the equation. You get negative 20 equals 1 over 2, negative 10, t squared.",
+   "avg_logprob": -0.1361784725936491
+  },
+  {
+   "start": 360.13,
+   "end": 374.99,
+   "text": "So, what you would get is t squared equals 4. And you cannot have negative time, so this is inadmissible.",
+   "avg_logprob": -0.11644614825490862
+  },
+  {
+   "start": 380.08,
+   "end": 390.26,
+   "text": "So, the final answer, it would take 2 seconds for the ball to go from up here to all the way here. So, time equals 2 seconds.",
+   "avg_logprob": -0.11644614825490862
+  },
+  {
+   "start": 390.26,
+   "end": 401.48,
+   "text": "Now, you have the time. You can easily solve for the distance. d equals 10 times 2, which is 20m.",
+   "avg_logprob": -0.07848692154794028
+  },
+  {
+   "start": 402.2,
+   "end": 416.18,
+   "text": "And that would be the answer for your first question. So, as you can see, what it really is, is finding the correct formula to use for a question.",
+   "avg_logprob": -0.07848692154794028
+  },
+  {
+   "start": 417.06,
+   "end": 430.18,
+   "text": "Now, let's go to a bit more different question. A ball is thrown at a speed of 20m per second at an angle of 30 degrees above the horizontal.",
+   "avg_logprob": -0.06983262829874691
+  },
+  {
+   "start": 431.12,
+   "end": 453.76,
+   "text": "Find the total time it stays in the air. So, it's thrown like this. This is 30 degrees. And its projectile will be like a parabola, and it lands all the way here.",
+   "avg_logprob": -0.09965854008560596
+  },
+  {
+   "start": 465.76,
+   "end": 483.08,
+   "text": "And you want to solve for time. So, what do we do, first of all? What defines time, first of all? Does the x-velocity matter?",
+   "avg_logprob": -0.13818631798793107
+  },
+  {
+   "start": 483.08,
+   "end": 502.24,
+   "text": "No, because time depends solely on y in this case. Because y is what defines the ball when it's dropped.",
+   "avg_logprob": -0.08361281676306612
+  },
+  {
+   "start": 502.84,
+   "end": 512.38,
+   "text": "When the y equals 0, the ball does not stay in the time. So, anything before y equals 0, the ball is staying in the air.",
+   "avg_logprob": -0.08361281676306612
+  },
+  {
+   "start": 512.46,
+   "end": 520.34,
+   "text": "X does not matter. And that's one of the most important things you need to know for this question.",
+   "avg_logprob": -0.08361281676306612
+  },
+  {
+   "start": 523.1,
+   "end": 536.74,
+   "text": "So, now, like we usually do with angle questions, we want to split this velocity vector into two components, the x and y.",
+   "avg_logprob": -0.12013973966240883
+  },
+  {
+   "start": 537.62,
+   "end": 543.88,
+   "text": "So, 30. But we don't need the x one, we only need the y one. The y-velocity.",
+   "avg_logprob": -0.12013973966240883
+  },
+  {
+   "start": 545.44,
+   "end": 553.12,
+   "text": "Y, v of y. And we know this is 20 meters per second. So, what would the y-velocity be?",
+   "avg_logprob": -0.11993272460120566
+  },
+  {
+   "start": 554.2,
+   "end": 562.9,
+   "text": "Well, if you have the hypotenuse, which is 20, and you have the angle, which is 30, y would just be the opposite, so sine.",
+   "avg_logprob": -0.11993272460120566
+  },
+  {
+   "start": 562.9,
+   "end": 574.62,
+   "text": "So, v of y equals 20 sine times 30 degrees, which is 10 meters per second.",
+   "avg_logprob": -0.10412973666993472
+  },
+  {
+   "start": 575.08,
+   "end": 585.56,
+   "text": "So, originally, the ball is going 10 meters per second up. So, v y naught equals 10 meters per second.",
+   "avg_logprob": -0.10412973666993472
+  },
+  {
+   "start": 587.44,
+   "end": 594.4,
+   "text": "And we know that the acceleration is, again, negative 10 meters per second because of gravity.",
+   "avg_logprob": -0.09391654789447784
+  },
+  {
+   "start": 595.86,
+   "end": 605.66,
+   "text": "And one more thing, we have the final and initial y-value. They both start and end at y equals 0.",
+   "avg_logprob": -0.09391654789447784
+  },
+  {
+   "start": 606.78,
+   "end": 614.8,
+   "text": "So, y naught equals 0, and y final equals 0.",
+   "avg_logprob": -0.1461884944866865
+  },
+  {
+   "start": 617.38,
+   "end": 627.49,
+   "text": "So, looking at the formula sheet, the one that we could use would be this one.",
+   "avg_logprob": -0.1461884944866865
+  },
+  {
+   "start": 627.49,
+   "end": 639.07,
+   "text": "Because you have x, or y final, x naught, y naught, v x naught, or the initial y-velocity, and the acceleration.",
+   "avg_logprob": -0.10089357138464325
+  },
+  {
+   "start": 639.25,
+   "end": 641.23,
+   "text": "So, you can just solve for t.",
+   "avg_logprob": -0.10089357138464325
+  },
+  {
+   "start": 642.31,
+   "end": 654.23,
+   "text": "So, x equals x naught plus v naught x naught t plus, I'm just copying this formula down.",
+   "avg_logprob": -0.10089357138464325
+  },
+  {
+   "start": 654.23,
+   "end": 658.69,
+   "text": "And now, we can replace our variables with it.",
+   "avg_logprob": -0.09368056495984395
+  },
+  {
+   "start": 659.29,
+   "end": 664.79,
+   "text": "So, x would just be the initial position, which is 0.",
+   "avg_logprob": -0.09368056495984395
+  },
+  {
+   "start": 666.27,
+   "end": 668.29,
+   "text": "x naught would be 0 as well.",
+   "avg_logprob": -0.09368056495984395
+  },
+  {
+   "start": 669.51,
+   "end": 683.47,
+   "text": "The initial velocity, as we calculated, is 10 meters per second, times t, plus 1 over 2, the acceleration is negative 10, times t squared.",
+   "avg_logprob": -0.09368056495984395
+  },
+  {
+   "start": 686.34,
+   "end": 693.5,
+   "text": "And, now we get 0 equals 10 t minus 5 t squared.",
+   "avg_logprob": -0.13002458913826648
+  },
+  {
+   "start": 695.4,
+   "end": 698.26,
+   "text": "0 equals 2 t minus t squared.",
+   "avg_logprob": -0.13002458913826648
+  },
+  {
+   "start": 699.9,
+   "end": 712.86,
+   "text": "So, t can either be 0, because if you factor out t, or it could be positive 2, because 2 minus t, so that equals 0, you get 2.",
+   "avg_logprob": -0.13002458913826648
+  },
+  {
+   "start": 715.02,
+   "end": 717.22,
+   "text": "Let me just expand it, if you guys don't get it.",
+   "avg_logprob": -0.13002458913826648
+  },
+  {
+   "start": 718.32,
+   "end": 719.6,
+   "text": "2 minus t.",
+   "avg_logprob": -0.07131349774870542
+  },
+  {
+   "start": 720.76,
+   "end": 720.92,
+   "text": "Alright.",
+   "avg_logprob": -0.07131349774870542
+  },
+  {
+   "start": 723.0,
+   "end": 726.16,
+   "text": "Now, which one do we know is the correct one?",
+   "avg_logprob": -0.07131349774870542
+  },
+  {
+   "start": 726.44,
+   "end": 729.06,
+   "text": "Well, what is it at 0 seconds?",
+   "avg_logprob": -0.07131349774870542
+  },
+  {
+   "start": 729.76,
+   "end": 733.56,
+   "text": "At 0 seconds, the ball is still here, at y equals 0.",
+   "avg_logprob": -0.07131349774870542
+  },
+  {
+   "start": 734.08,
+   "end": 740.98,
+   "text": "And that's correct, because we were solving for the times in which the ball was at y equals 0.",
+   "avg_logprob": -0.07131349774870542
+  },
+  {
+   "start": 741.56,
+   "end": 746.22,
+   "text": "But, at 2 seconds, that's when time already passed, and it hit y equals 0 again.",
+   "avg_logprob": -0.07131349774870542
+  },
+  {
+   "start": 746.22,
+   "end": 750.12,
+   "text": "So, that would be here. So, this would be your answer. 2 seconds.",
+   "avg_logprob": -0.10527876161393665
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.05,
+   "end": 3.79,
+   "text": "In this video, we will be going over more kinematics"
+  },
+  {
+   "start": 3.79,
+   "end": 8.19,
+   "text": "examples. In all of my classes before, I have"
+  },
+  {
+   "start": 8.19,
+   "end": 11.75,
+   "text": "learned the kinematics, but I was really struggling"
+  },
+  {
+   "start": 11.75,
+   "end": 14.59,
+   "text": "and confused on how to understand these questions"
+  },
+  {
+   "start": 14.59,
+   "end": 18.33,
+   "text": "and I think what I needed was more examples"
+  },
+  {
+   "start": 18.33,
+   "end": 22.59,
+   "text": "on how to do it. So, I will be going over a"
+  },
+  {
+   "start": 22.59,
+   "end": 25.95,
+   "text": "couple of more kinematics examples to help you"
+  },
+  {
+   "start": 25.95,
+   "end": 29.85,
+   "text": "better understand and to solve kinematics equations."
+  },
+  {
+   "start": 30.91,
+   "end": 33.47,
+   "text": "First of all, before we start, I'd like to say"
+  },
+  {
+   "start": 33.47,
+   "end": 37.75,
+   "text": "that having a formula sheet on hand every time"
+  },
+  {
+   "start": 37.75,
+   "end": 40.25,
+   "text": "you do one of these questions is really, really"
+  },
+  {
+   "start": 40.25,
+   "end": 44.13,
+   "text": "handy. This is a snippet from the AP Physics"
+  },
+  {
+   "start": 44.13,
+   "end": 48.97,
+   "text": "1 formula sheet and these are the main three"
+  },
+  {
+   "start": 48.97,
+   "end": 53.47,
+   "text": "equations that we use to solve kinematics questions."
+  },
+  {
+   "start": 53.83,
+   "end": 55.87,
+   "text": "I have explained this in a previous video."
+  },
+  {
+   "start": 57.95,
+   "end": 61.33,
+   "text": "So, our first question is, a ball is thrown"
+  },
+  {
+   "start": 61.33,
+   "end": 64.73,
+   "text": "horizontally from the top of a 20m high cliff"
+  },
+  {
+   "start": 64.73,
+   "end": 67.61,
+   "text": "with a speed of 10m per second."
+  },
+  {
+   "start": 68.53,
+   "end": 71.73,
+   "text": "How far from the base of the cliff does it land?"
+  },
+  {
+   "start": 72.33,
+   "end": 74.21,
+   "text": "Keep in mind that it's thrown horizontally,"
+  },
+  {
+   "start": 74.49,
+   "end": 76.73,
+   "text": "so the speed is horizontal."
+  },
+  {
+   "start": 76.73,
+   "end": 79.39,
+   "text": "So, let's imagine this."
+  },
+  {
+   "start": 79.55,
+   "end": 86.23,
+   "text": "We have a cliff and we have a ball and this"
+  },
+  {
+   "start": 86.23,
+   "end": 95.18,
+   "text": "ball is thrown with a"
+  },
+  {
+   "start": 95.18,
+   "end": 99.18,
+   "text": "speed of 10m per second."
+  },
+  {
+   "start": 100.08,
+   "end": 107.28,
+   "text": "The cliff is 20m high and"
+  },
+  {
+   "start": 107.28,
+   "end": 110.34,
+   "text": "we want to solve how far from the base of the"
+  },
+  {
+   "start": 110.34,
+   "end": 113.12,
+   "text": "cliff. This is the base of the cliff, so it's"
+  },
+  {
+   "start": 113.12,
+   "end": 119.08,
+   "text": "thrown here and we want to solve this distance."
+  },
+  {
+   "start": 119.26,
+   "end": 125.31,
+   "text": "Let's call this distance d. Now, first of all,"
+  },
+  {
+   "start": 125.67,
+   "end": 128.79,
+   "text": "let's see what we have here."
+  },
+  {
+   "start": 131.84,
+   "end": 135.34,
+   "text": "Well, we can first use our initial equation,"
+  },
+  {
+   "start": 138.67,
+   "end": 144.75,
+   "text": "distance equals speed times time, and since"
+  },
+  {
+   "start": 144.75,
+   "end": 147.63,
+   "text": "distance and the initial speed are both horizontal,"
+  },
+  {
+   "start": 147.77,
+   "end": 151.21,
+   "text": "you can do that. So, distance equals speed times"
+  },
+  {
+   "start": 151.21,
+   "end": 155.01,
+   "text": "time. You want to solve for distance and you"
+  },
+  {
+   "start": 155.01,
+   "end": 158.35,
+   "text": "have the speed. The speed is 10m per second,"
+  },
+  {
+   "start": 160.65,
+   "end": 165.25,
+   "text": "so 10 times t. And now, we can see that the"
+  },
+  {
+   "start": 165.25,
+   "end": 168.31,
+   "text": "only thing we need to solve left is t."
+  },
+  {
+   "start": 172.35,
+   "end": 175.93,
+   "text": "So, we need to find the time it takes for the"
+  },
+  {
+   "start": 175.93,
+   "end": 179.53,
+   "text": "ball to drop from up here to down here, and"
+  },
+  {
+   "start": 179.53,
+   "end": 181.81,
+   "text": "that depends entirely on the vertical."
+  },
+  {
+   "start": 182.75,
+   "end": 186.01,
+   "text": "How do we do this? Well, we know that the acceleration"
+  },
+  {
+   "start": 186.01,
+   "end": 190.95,
+   "text": "of gravity is, let's just call it 10m per second."
+  },
+  {
+   "start": 191.61,
+   "end": 194.53,
+   "text": "Sometimes you gotta use 9.81, sometimes you"
+  },
+  {
+   "start": 194.53,
+   "end": 197.97,
+   "text": "use 10. It really depends on what physics course"
+  },
+  {
+   "start": 197.97,
+   "end": 201.97,
+   "text": "or exam you're taking. But for simplicity, let's"
+  },
+  {
+   "start": 201.97,
+   "end": 206.27,
+   "text": "do 10. So, you know the acceleration downwards"
+  },
+  {
+   "start": 206.27,
+   "end": 212.84,
+   "text": "is 10, so negative 10m per second squared, and"
+  },
+  {
+   "start": 212.84,
+   "end": 219.08,
+   "text": "then the height is 20m, and the initial velocity"
+  },
+  {
+   "start": 219.08,
+   "end": 224.48,
+   "text": "going downwards is 0m per second, because the"
+  },
+  {
+   "start": 224.48,
+   "end": 226.76,
+   "text": "ball is thrown horizontally, so it's not going"
+  },
+  {
+   "start": 226.76,
+   "end": 231.44,
+   "text": "anywhere downwards. Now, if you know the acceleration,"
+  },
+  {
+   "start": 231.72,
+   "end": 235.54,
+   "text": "the distance, and the initial velocity, if you"
+  },
+  {
+   "start": 235.54,
+   "end": 241.56,
+   "text": "look at all of these options, you can see that"
+  },
+  {
+   "start": 241.56,
+   "end": 243.68,
+   "text": "this one fits the most."
+  },
+  {
+   "start": 247.83,
+   "end": 253.66,
+   "text": "Let's first write this equation down. x equals"
+  },
+  {
+   "start": 253.66,
+   "end": 261.46,
+   "text": "x0 plus vx0t plus 1 over 2 at"
+  },
+  {
+   "start": 261.46,
+   "end": 269.1,
+   "text": "squared. So, x is"
+  },
+  {
+   "start": 269.1,
+   "end": 271.5,
+   "text": "usually representing distance, but when you"
+  },
+  {
+   "start": 271.5,
+   "end": 274.0,
+   "text": "use these formulas, it doesn't have to be x,"
+  },
+  {
+   "start": 274.1,
+   "end": 276.48,
+   "text": "it could be x, y, or z, or whatever."
+  },
+  {
+   "start": 277.28,
+   "end": 282.74,
+   "text": "So, let's replace it with y, because that's"
+  },
+  {
+   "start": 282.74,
+   "end": 284.86,
+   "text": "what we're dealing with. We're dealing with"
+  },
+  {
+   "start": 284.86,
+   "end": 291.02,
+   "text": "y. y equals y0 plus vy0 times t plus 1 over"
+  },
+  {
+   "start": 291.02,
+   "end": 294.02,
+   "text": "2 at squared."
+  },
+  {
+   "start": 295.32,
+   "end": 298.22,
+   "text": "y means the final y position."
+  },
+  {
+   "start": 299.02,
+   "end": 302.04,
+   "text": "Well, finally, when the ball lands over here,"
+  },
+  {
+   "start": 302.58,
+   "end": 309.16,
+   "text": "y equals 0. And y0, this means naught, which"
+  },
+  {
+   "start": 309.16,
+   "end": 311.2,
+   "text": "means the original one."
+  },
+  {
+   "start": 311.2,
+   "end": 317.18,
+   "text": "y0, originally, it's at 20m, so originally it's"
+  },
+  {
+   "start": 317.18,
+   "end": 321.42,
+   "text": "20m, so y, which is final, is 0, equals 20."
+  },
+  {
+   "start": 322.36,
+   "end": 326.6,
+   "text": "The original velocity of y is 0m per second,"
+  },
+  {
+   "start": 326.74,
+   "end": 330.36,
+   "text": "like I said, so 0 times t."
+  },
+  {
+   "start": 332.22,
+   "end": 337.33,
+   "text": "And 1 over 2a."
+  },
+  {
+   "start": 337.63,
+   "end": 339.79,
+   "text": "What is a? Well, a is just gravity."
+  },
+  {
+   "start": 339.89,
+   "end": 342.67,
+   "text": "That's the only acceleration it has, which is"
+  },
+  {
+   "start": 342.67,
+   "end": 348.09,
+   "text": "negative 10m per second squared, t squared."
+  },
+  {
+   "start": 350.21,
+   "end": 353.11,
+   "text": "And now, you can solve the equation."
+  },
+  {
+   "start": 353.71,
+   "end": 357.41,
+   "text": "You get negative 20 equals 1 over 2, negative"
+  },
+  {
+   "start": 357.41,
+   "end": 364.45,
+   "text": "10, t squared. So, what you would get is t squared"
+  },
+  {
+   "start": 364.45,
+   "end": 372.21,
+   "text": "equals 4. And"
+  },
+  {
+   "start": 372.21,
+   "end": 374.99,
+   "text": "you cannot have negative time, so this is inadmissible."
+  },
+  {
+   "start": 380.08,
+   "end": 382.7,
+   "text": "So, the final answer, it would take 2 seconds"
+  },
+  {
+   "start": 382.7,
+   "end": 387.18,
+   "text": "for the ball to go from up here to all the way"
+  },
+  {
+   "start": 387.18,
+   "end": 390.26,
+   "text": "here. So, time equals 2 seconds."
+  },
+  {
+   "start": 390.26,
+   "end": 393.62,
+   "text": "Now, you have the time. You can easily solve"
+  },
+  {
+   "start": 393.62,
+   "end": 400.02,
+   "text": "for the distance. d equals 10 times 2, which"
+  },
+  {
+   "start": 400.02,
+   "end": 403.96,
+   "text": "is 20m. And that would be the answer for your"
+  },
+  {
+   "start": 403.96,
+   "end": 409.96,
+   "text": "first question. So, as you can see, what it"
+  },
+  {
+   "start": 409.96,
+   "end": 414.6,
+   "text": "really is, is finding the correct formula to"
+  },
+  {
+   "start": 414.6,
+   "end": 420.66,
+   "text": "use for a question. Now, let's go to a bit more"
+  },
+  {
+   "start": 420.66,
+   "end": 425.96,
+   "text": "different question. A ball is thrown at a speed"
+  },
+  {
+   "start": 425.96,
+   "end": 429.2,
+   "text": "of 20m per second at an angle of 30 degrees"
+  },
+  {
+   "start": 429.2,
+   "end": 432.62,
+   "text": "above the horizontal. Find the total time it"
+  },
+  {
+   "start": 432.62,
+   "end": 440.14,
+   "text": "stays in the air. So, it's thrown like"
+  },
+  {
+   "start": 440.14,
+   "end": 442.3,
+   "text": "this. This is 30 degrees."
+  },
+  {
+   "start": 444.97,
+   "end": 449.91,
+   "text": "And its projectile will be like a parabola,"
+  },
+  {
+   "start": 451.58,
+   "end": 453.76,
+   "text": "and it lands all the way here."
+  },
+  {
+   "start": 465.76,
+   "end": 467.96,
+   "text": "And you want to solve for time."
+  },
+  {
+   "start": 470.18,
+   "end": 476.48,
+   "text": "So, what do we do, first of all? What defines"
+  },
+  {
+   "start": 476.48,
+   "end": 483.08,
+   "text": "time, first of all? Does the x-velocity matter?"
+  },
+  {
+   "start": 483.08,
+   "end": 487.72,
+   "text": "No, because time depends solely on y in this"
+  },
+  {
+   "start": 487.72,
+   "end": 495.96,
+   "text": "case. Because"
+  },
+  {
+   "start": 495.96,
+   "end": 502.24,
+   "text": "y is what defines the ball when it's dropped."
+  },
+  {
+   "start": 502.84,
+   "end": 508.0,
+   "text": "When the y equals 0, the ball does not stay"
+  },
+  {
+   "start": 508.0,
+   "end": 510.68,
+   "text": "in the time. So, anything before y equals 0,"
+  },
+  {
+   "start": 510.86,
+   "end": 513.56,
+   "text": "the ball is staying in the air. X does not matter."
+  },
+  {
+   "start": 515.8,
+   "end": 518.88,
+   "text": "And that's one of the most important things"
+  },
+  {
+   "start": 518.88,
+   "end": 524.64,
+   "text": "you need to know for this question. So, now,"
+  },
+  {
+   "start": 525.9,
+   "end": 529.12,
+   "text": "like we usually do with angle questions, we"
+  },
+  {
+   "start": 529.12,
+   "end": 535.24,
+   "text": "want to split this velocity vector into two"
+  },
+  {
+   "start": 535.24,
+   "end": 538.36,
+   "text": "components, the x and y. So, 30."
+  },
+  {
+   "start": 539.22,
+   "end": 541.36,
+   "text": "But we don't need the x one, we only need the"
+  },
+  {
+   "start": 541.36,
+   "end": 543.88,
+   "text": "y one. The y-velocity."
+  },
+  {
+   "start": 545.44,
+   "end": 549.64,
+   "text": "Y, v of y. And we know this is 20 metres per"
+  },
+  {
+   "start": 549.64,
+   "end": 553.12,
+   "text": "second. So, what would the y-velocity be?"
+  },
+  {
+   "start": 554.2,
+   "end": 557.7,
+   "text": "Well, if you have the hypotenuse, which is 20,"
+  },
+  {
+   "start": 557.82,
+   "end": 560.94,
+   "text": "and you have the angle, which is 30, y would"
+  },
+  {
+   "start": 560.94,
+   "end": 565.86,
+   "text": "just be the opposite, so sine. So, v of y equals"
+  },
+  {
+   "start": 565.86,
+   "end": 573.0,
+   "text": "20 sine times 30 degrees, which is 10"
+  },
+  {
+   "start": 573.0,
+   "end": 577.1,
+   "text": "metres per second. So, originally, the ball"
+  },
+  {
+   "start": 577.1,
+   "end": 579.12,
+   "text": "is going 10 metres per second up."
+  },
+  {
+   "start": 581.04,
+   "end": 585.56,
+   "text": "So, v y naught equals 10 metres per second."
+  },
+  {
+   "start": 587.44,
+   "end": 591.52,
+   "text": "And we know that the acceleration is, again,"
+  },
+  {
+   "start": 591.72,
+   "end": 594.4,
+   "text": "negative 10 metres per second because of gravity."
+  },
+  {
+   "start": 595.86,
+   "end": 600.54,
+   "text": "And one more thing, we have the final and initial"
+  },
+  {
+   "start": 600.54,
+   "end": 605.2,
+   "text": "y-value. They both start and end at y equals"
+  },
+  {
+   "start": 605.2,
+   "end": 613.7,
+   "text": "0. So, y naught equals 0, and y final"
+  },
+  {
+   "start": 613.7,
+   "end": 619.84,
+   "text": "equals 0. So, looking at the formula sheet,"
+  },
+  {
+   "start": 620.7,
+   "end": 627.49,
+   "text": "the one that we could use would be this one."
+  },
+  {
+   "start": 627.49,
+   "end": 633.23,
+   "text": "Because you have x, or y final, x-initial, y"
+  },
+  {
+   "start": 633.23,
+   "end": 637.99,
+   "text": "naught, v x-initial, or the initial y-velocity,"
+  },
+  {
+   "start": 638.01,
+   "end": 640.77,
+   "text": "and the acceleration. So, you can just solve"
+  },
+  {
+   "start": 640.77,
+   "end": 647.85,
+   "text": "for t. So, x equals x-initial plus v"
+  },
+  {
+   "start": 647.85,
+   "end": 653.45,
+   "text": "naught x-initial t plus, I'm just copying this"
+  },
+  {
+   "start": 653.45,
+   "end": 657.83,
+   "text": "formula down. And now, we can replace our variables"
+  },
+  {
+   "start": 657.83,
+   "end": 663.61,
+   "text": "with it. So, x would just be the initial position,"
+  },
+  {
+   "start": 663.95,
+   "end": 668.29,
+   "text": "which is 0. x-initial would be 0 as well."
+  },
+  {
+   "start": 669.51,
+   "end": 673.83,
+   "text": "The initial velocity, as we calculated, is 10"
+  },
+  {
+   "start": 673.83,
+   "end": 679.29,
+   "text": "metres per second, times t, plus 1 over 2, the"
+  },
+  {
+   "start": 679.29,
+   "end": 683.47,
+   "text": "acceleration is negative 10, times t squared."
+  },
+  {
+   "start": 686.34,
+   "end": 693.5,
+   "text": "And, now we get 0 equals 10 t minus 5 t squared."
+  },
+  {
+   "start": 695.4,
+   "end": 698.26,
+   "text": "0 equals 2 t minus t squared."
+  },
+  {
+   "start": 699.9,
+   "end": 703.78,
+   "text": "So, t can either be 0, because if you factor"
+  },
+  {
+   "start": 703.78,
+   "end": 709.94,
+   "text": "out t, or it could be positive 2, because 2"
+  },
+  {
+   "start": 709.94,
+   "end": 712.86,
+   "text": "minus t, so that equals 0, you get 2."
+  },
+  {
+   "start": 715.02,
+   "end": 716.9,
+   "text": "Let me just expand it, if you guys don't get"
+  },
+  {
+   "start": 716.9,
+   "end": 719.6,
+   "text": "it. 2 minus t."
+  },
+  {
+   "start": 720.76,
+   "end": 725.88,
+   "text": "Alright. Now, which one do we know is the correct"
+  },
+  {
+   "start": 725.88,
+   "end": 729.06,
+   "text": "one? Well, what is it at 0 seconds?"
+  },
+  {
+   "start": 729.76,
+   "end": 733.2,
+   "text": "At 0 seconds, the ball is still here, at y equals"
+  },
+  {
+   "start": 733.2,
+   "end": 735.8,
+   "text": "0. And that's correct, because we were solving"
+  },
+  {
+   "start": 735.8,
+   "end": 740.66,
+   "text": "for the times in which the ball was at y equals"
+  },
+  {
+   "start": 740.66,
+   "end": 744.04,
+   "text": "0. But, at 2 seconds, that's when time already"
+  },
+  {
+   "start": 744.04,
+   "end": 746.22,
+   "text": "passed, and it hit y equals 0 again."
+  },
+  {
+   "start": 746.22,
+   "end": 749.08,
+   "text": "So, that would be here. So, this would be your"
+  },
+  {
+   "start": 749.08,
+   "end": 750.12,
+   "text": "answer. 2 seconds."
+  }
+ ],
+ "report": {
+  "key": "kinematics__motion_2d_examples",
+  "title": "More 2D Kinematics Example",
+  "topicKey": "kinematics",
+  "duration": 753.152,
+  "cues": 158,
+  "corrections": 11,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.1904421557079662,
+  "flagged": []
+ }
+}

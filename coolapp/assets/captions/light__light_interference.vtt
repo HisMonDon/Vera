@@ -1,0 +1,373 @@
+WEBVTT
+NOTE Young's Double Slit Experiment
+
+1
+00:00:01.230 --> 00:00:03.850
+In this video, we will be covering the
+double
+
+2
+00:00:03.850 --> 00:00:06.670
+slit experiment. And this is one of the
+key
+
+3
+00:00:06.670 --> 00:00:09.870
+pieces of evidence that confirms that
+light
+
+4
+00:00:09.870 --> 00:00:13.510
+is a wave.
+
+5
+00:00:13.990 --> 00:00:16.330
+It's a photon and it behaves like a wave.
+
+6
+00:00:18.670 --> 00:00:23.610
+And basically, what this does is you shine
+a
+
+7
+00:00:23.610 --> 00:00:25.750
+beam of light into the double split.
+
+8
+00:00:26.530 --> 00:00:29.850
+And it's going to create a pattern on the
+wall.
+
+9
+00:00:30.830 --> 00:00:32.870
+And the pattern looks something like this.
+It's
+
+10
+00:00:32.870 --> 00:00:36.590
+going to be bright lights and it fades
+away
+
+11
+00:00:36.590 --> 00:00:40.790
+eventually. But this is basically proving
+that
+
+12
+00:00:40.790 --> 00:00:44.210
+light behaves like a wave. Because in
+order
+
+13
+00:00:44.210 --> 00:00:46.790
+for these bright lights to happen, the
+waves
+
+14
+00:00:46.790 --> 00:00:50.310
+need to have constructive and destructive
+interference.
+
+15
+00:00:50.310 --> 00:00:55.810
+At constructive points, the waves form the
+bands
+
+16
+00:00:55.810 --> 00:00:59.030
+of light and at destructive interference
+points,
+
+17
+00:00:59.610 --> 00:01:04.090
+it's dark. And we will be going over a
+couple
+
+18
+00:01:04.090 --> 00:01:06.850
+of formulas that you will need to know in
+order
+
+19
+00:01:06.850 --> 00:01:10.530
+to do these types of problems. So first of
+all,
+
+20
+00:01:10.570 --> 00:01:14.670
+what is this experiment? Well, in this
+experiment,
+
+21
+00:01:15.050 --> 00:01:18.490
+a screen is placed behind the slit and a
+beam
+
+22
+00:01:18.490 --> 00:01:22.930
+of light is over here. And it's at a
+distance
+
+23
+00:01:22.930 --> 00:01:28.010
+of usually depicted by L from the double
+slit.
+
+24
+00:01:28.770 --> 00:01:32.510
+And each slit basically acts as a source
+of
+
+25
+00:01:32.510 --> 00:01:35.130
+waves because light is going through them.
+
+26
+00:01:37.600 --> 00:01:42.280
+And what you observe is based off of
+constructive
+
+27
+00:01:42.280 --> 00:01:44.180
+and destructive interference, like I've
+said
+
+28
+00:01:44.180 --> 00:01:50.740
+before. And the key idea is that the path
+difference
+
+29
+00:01:50.740 --> 00:01:54.640
+is delta r.
+
+30
+00:01:57.340 --> 00:02:03.220
+And the path difference is basically the
+distance
+
+31
+00:02:03.220 --> 00:02:10.400
+between each slit, the length travelled
+
+32
+00:02:10.400 --> 00:02:15.080
+by each slit. And whether point P is
+bright
+
+33
+00:02:15.080 --> 00:02:18.040
+or dark really depends on delta r.
+
+34
+00:02:19.980 --> 00:02:23.280
+This is given by the formula delta r
+equals
+
+35
+00:02:23.280 --> 00:02:27.660
+m lambda. And m is basically like the
+order
+
+36
+00:02:27.660 --> 00:02:31.240
+or the number of the fringe.
+
+37
+00:02:31.700 --> 00:02:34.980
+So this, it would start at zero, and it
+would
+
+38
+00:02:34.980 --> 00:02:38.620
+go to one, two, three, four, and so on.
+
+39
+00:02:39.060 --> 00:02:41.780
+Same side for this, one, two, three, four,
+and
+
+40
+00:02:41.780 --> 00:02:44.520
+that would be equal to m. Lambda is just a
+wavelength.
+
+41
+00:02:46.060 --> 00:02:51.480
+Now, for spacing on a screen, we need to
+use
+
+42
+00:02:51.480 --> 00:02:56.380
+the spot angle approximation. So in these
+setups,
+
+43
+00:02:56.900 --> 00:02:59.800
+in a double slit experiment, the angles
+are
+
+44
+00:02:59.800 --> 00:03:02.380
+really, really small. So we can use small
+angle
+
+45
+00:03:02.380 --> 00:03:06.220
+approximations, which basically says that
+sine
+
+46
+00:03:06.220 --> 00:03:11.780
+theta equals tan theta, which is equal to
+y
+
+47
+00:03:11.780 --> 00:03:17.140
+over L. So if we know that d sine of
+theta,
+
+48
+00:03:17.140 --> 00:03:22.140
+let's call this theta, equals m times
+lambda,
+
+49
+00:03:22.140 --> 00:03:29.300
+which is r. So d sine theta equals m times
+lambda,
+
+50
+00:03:29.700 --> 00:03:34.220
+we would get y equals m lambda L over d.
+
+51
+00:03:35.080 --> 00:03:38.840
+And that is basically one of the main
+formulas
+
+52
+00:03:38.840 --> 00:03:43.480
+that we would have to know for double slit
+experiments.
+
+53
+00:03:45.740 --> 00:03:50.920
+Now, this basically shows that the larger
+the
+
+54
+00:03:50.920 --> 00:03:54.360
+wavelength is, the fringes are further
+apart,
+
+55
+00:03:54.600 --> 00:03:57.480
+because y is the distance between the
+fringes.
+
+56
+00:03:58.280 --> 00:04:00.260
+So the larger the wavelength, the fringes
+are
+
+57
+00:04:00.260 --> 00:04:04.000
+further apart. The larger the length away
+from
+
+58
+00:04:04.000 --> 00:04:08.560
+the slit, the more wider the fringes are
+apart.
+
+59
+00:04:08.560 --> 00:04:14.120
+And for the fringes to be closer together,
+you
+
+60
+00:04:14.120 --> 00:04:20.260
+would need a greater distance of your
+slit.
+
+61
+00:04:21.730 --> 00:04:28.750
+Now, another formula you can use is
+delta-y.
+
+62
+00:04:29.030 --> 00:04:33.150
+The change, the distance between two of
+the
+
+63
+00:04:33.150 --> 00:04:37.610
+bands is equal to theta L over d.
+
+64
+00:04:38.350 --> 00:04:42.870
+Because m basically depicts the order, and
+y
+
+65
+00:04:42.870 --> 00:04:45.770
+depends purely on the order. So instead of
+using
+
+66
+00:04:45.770 --> 00:04:49.590
+m, you could use delta-y. And that's
+another
+
+67
+00:04:49.590 --> 00:04:52.630
+formula you would be using for this double
+slit
+
+68
+00:04:52.630 --> 00:04:55.510
+experiment. And that's basically all you
+need
+
+69
+00:04:55.510 --> 00:04:58.150
+to know about double slit experiments.
+
+70
+00:04:59.170 --> 00:05:06.910
+It proves that light acts as
+
+71
+00:05:08.420 --> 00:05:14.700
+a wave, because it uses constructive and
+destructive
+
+72
+00:05:14.700 --> 00:05:17.940
+interference to prove that. And it also
+can
+
+73
+00:05:17.940 --> 00:05:21.580
+be calculated, a lot of the values can be
+calculated
+
+74
+00:05:21.580 --> 00:05:24.920
+from the formulae we learned over here,
+and
+
+75
+00:05:24.920 --> 00:05:31.570
+the small angle approximation. And that's
+all
+
+76
+00:05:31.570 --> 00:05:34.210
+for what you need to know about the double
+slit.
+
+77
+00:05:34.970 --> 00:05:35.330
+Thank you!

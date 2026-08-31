@@ -1,0 +1,1126 @@
+{
+ "lesson": {
+  "topicKey": "kinematics",
+  "curriculumKey": "motion_2d_part3",
+  "title": "2D Motion Analysis Part 3",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%202D%20Part%203.mp4",
+  "source": "kinematics.dart"
+ },
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 9.06,
+   "text": "A ball is kicked with an initial speed of 20 metres per second and an angle of 40 degrees above the horizontal.",
+   "avg_logprob": -0.12089092480508905
+  },
+  {
+   "start": 10.44,
+   "end": 20.32,
+   "text": "So, first of all, let me note that its initial speed is 20 metres per second and an angle of 40 degrees to the horizontal.",
+   "avg_logprob": -0.12089092480508905
+  },
+  {
+   "start": 22.04,
+   "end": 30.12,
+   "text": "And we want to know what the total distance or displacement it has when it finally lands.",
+   "avg_logprob": -0.11580846178067195
+  },
+  {
+   "start": 31.74,
+   "end": 36.24,
+   "text": "And we can assume a lot of things, which is very common in kinematics questions.",
+   "avg_logprob": -0.11580846178067195
+  },
+  {
+   "start": 36.78,
+   "end": 42.62,
+   "text": "So, assume no air resistance and we are on a flat plane.",
+   "avg_logprob": -0.11580846178067195
+  },
+  {
+   "start": 43.48,
+   "end": 46.96,
+   "text": "So, to help you out with this, let me first draw a diagram.",
+   "avg_logprob": -0.11580846178067195
+  },
+  {
+   "start": 48.75,
+   "end": 54.53,
+   "text": "So, here it is and here's the ball on the ground.",
+   "avg_logprob": -0.08252652237812678
+  },
+  {
+   "start": 56.79,
+   "end": 69.27,
+   "text": "It is kicked with an initial speed of 20 metres per second and an angle of 40 degrees.",
+   "avg_logprob": -0.08252652237812678
+  },
+  {
+   "start": 71.68,
+   "end": 79.13,
+   "text": "So, now what we want to do is we want to split this question into two parts.",
+   "avg_logprob": -0.08252652237812678
+  },
+  {
+   "start": 80.45,
+   "end": 88.35,
+   "text": "The first part is, well, we first know that the ball's trajectory is going to go something like this.",
+   "avg_logprob": -0.0983685933626615
+  },
+  {
+   "start": 89.17,
+   "end": 103.45,
+   "text": "The first part is to see and break down our 20 metres per second vector into components, like we have learned in the previous part.",
+   "avg_logprob": -0.0983685933626615
+  },
+  {
+   "start": 103.83,
+   "end": 105.57,
+   "text": "We break it down into components.",
+   "avg_logprob": -0.0983685933626615
+  },
+  {
+   "start": 106.61,
+   "end": 115.79,
+   "text": "So, right here, let me just do that, 20 metres per second, 40 degrees.",
+   "avg_logprob": -0.07479943701478302
+  },
+  {
+   "start": 116.87,
+   "end": 125.99,
+   "text": "So, I want you guys to tell me what the x component and what the y component is of this vector.",
+   "avg_logprob": -0.07479943701478302
+  },
+  {
+   "start": 126.67,
+   "end": 128.87,
+   "text": "Pause the video and resume when you're done.",
+   "avg_logprob": -0.07479943701478302
+  },
+  {
+   "start": 129.73,
+   "end": 140.19,
+   "text": "So, for the x component, if we imagine it like a triangle like we always do, we get 20 times cose of 40 degrees.",
+   "avg_logprob": -0.11034952533064467
+  },
+  {
+   "start": 142.45,
+   "end": 158.09,
+   "text": "20 times cose of 40 is around 15.32, but I would store the full number somewhere on your calculator because this is not your final answer.",
+   "avg_logprob": -0.11034952533064467
+  },
+  {
+   "start": 158.09,
+   "end": 161.41,
+   "text": "So, you want your numbers to be exact as possible.",
+   "avg_logprob": -0.11505046499700382
+  },
+  {
+   "start": 162.85,
+   "end": 166.47,
+   "text": "Next up is the v of y. So, v of x is this.",
+   "avg_logprob": -0.11505046499700382
+  },
+  {
+   "start": 166.91,
+   "end": 183.23,
+   "text": "v of y is 20 times sine of 40 degrees, which is around 12.86 metres per second.",
+   "avg_logprob": -0.11505046499700382
+  },
+  {
+   "start": 183.23,
+   "end": 188.55,
+   "text": "Oops, did not mean to do that.",
+   "avg_logprob": -0.12361165080219508
+  },
+  {
+   "start": 189.33,
+   "end": 193.67,
+   "text": "Meters per second and 12.86 metres per second.",
+   "avg_logprob": -0.12361165080219508
+  },
+  {
+   "start": 194.25,
+   "end": 205.85,
+   "text": "So, what this means is that the ball is going 12.86 metres per second to the right and 15.32 metres per second to vertically, initially.",
+   "avg_logprob": -0.12361165080219508
+  },
+  {
+   "start": 206.91,
+   "end": 213.33,
+   "text": "Now, you're going to be thinking, well, how will we calculate it?",
+   "avg_logprob": -0.12361165080219508
+  },
+  {
+   "start": 213.33,
+   "end": 221.07,
+   "text": "Well, think to yourself, when does the ball actually stop? When does it land?",
+   "avg_logprob": -0.06673949310446486
+  },
+  {
+   "start": 223.57,
+   "end": 228.23,
+   "text": "Well, it lands when the y becomes zero again.",
+   "avg_logprob": -0.06673949310446486
+  },
+  {
+   "start": 228.77,
+   "end": 234.73,
+   "text": "When you look at these three equations, what do you have?",
+   "avg_logprob": -0.06673949310446486
+  },
+  {
+   "start": 235.89,
+   "end": 241.81,
+   "text": "And we can use what we have to see which equation we want to use.",
+   "avg_logprob": -0.06673949310446486
+  },
+  {
+   "start": 241.81,
+   "end": 252.55,
+   "text": "First of all, we got to find the time, and the time depends on the y component because the ball lands when the y component is zero.",
+   "avg_logprob": -0.09826743331822482
+  },
+  {
+   "start": 253.19,
+   "end": 261.61,
+   "text": "It doesn't matter if the x component, it travelled 10 metres or 100 metres, the ball always lands when the y is at zero.",
+   "avg_logprob": -0.09826743331822482
+  },
+  {
+   "start": 262.95,
+   "end": 264.85,
+   "text": "It does not matter about x.",
+   "avg_logprob": -0.09826743331822482
+  },
+  {
+   "start": 265.51,
+   "end": 269.71,
+   "text": "So, let's see, what do we know about y?",
+   "avg_logprob": -0.09826743331822482
+  },
+  {
+   "start": 269.71,
+   "end": 276.19,
+   "text": "Well, we know that the ball starts at y equals zero, so y0 is zero.",
+   "avg_logprob": -0.07783565537570274
+  },
+  {
+   "start": 276.51,
+   "end": 281.95,
+   "text": "The ball also ends at y final is zero.",
+   "avg_logprob": -0.07783565537570274
+  },
+  {
+   "start": 283.07,
+   "end": 294.01,
+   "text": "The ball's acceleration in terms of y is negative 9.81 because it's gravity.",
+   "avg_logprob": -0.07783565537570274
+  },
+  {
+   "start": 294.57,
+   "end": 299.09,
+   "text": "The only thing that's pulling the ball down or accelerating the ball is gravity.",
+   "avg_logprob": -0.07783565537570274
+  },
+  {
+   "start": 299.09,
+   "end": 303.35,
+   "text": "And don't forget the negative sign because we're assuming that upwards is positive.",
+   "avg_logprob": -0.07971096411347389
+  },
+  {
+   "start": 303.77,
+   "end": 306.73,
+   "text": "So, since acceleration is a vector, you have to include the negative.",
+   "avg_logprob": -0.07971096411347389
+  },
+  {
+   "start": 310.2,
+   "end": 314.02,
+   "text": "And we need to find the time.",
+   "avg_logprob": -0.07971096411347389
+  },
+  {
+   "start": 318.21,
+   "end": 325.79,
+   "text": "So, if we have all these values, if we look in our formula sheet, we could easily spot out this formula.",
+   "avg_logprob": -0.07971096411347389
+  },
+  {
+   "start": 327.49,
+   "end": 342.59,
+   "text": "And let me just quickly copy paste this and move it here.",
+   "avg_logprob": -0.1183937567554108
+  },
+  {
+   "start": 348.68,
+   "end": 353.38,
+   "text": "Alright, now when we use this formula, we can just plug in our values.",
+   "avg_logprob": -0.1183937567554108
+  },
+  {
+   "start": 353.56,
+   "end": 359.04,
+   "text": "It doesn't matter if it's x, y can be used as well, or in 3D cases, z.",
+   "avg_logprob": -0.1183937567554108
+  },
+  {
+   "start": 362.06,
+   "end": 365.3,
+   "text": "So, we know y final is zero.",
+   "avg_logprob": -0.1183937567554108
+  },
+  {
+   "start": 366.28,
+   "end": 368.9,
+   "text": "The initial y is also zero.",
+   "avg_logprob": -0.12692162058045786
+  },
+  {
+   "start": 369.46,
+   "end": 372.5,
+   "text": "And now this is just a matter of plugging in numbers.",
+   "avg_logprob": -0.12692162058045786
+  },
+  {
+   "start": 372.8,
+   "end": 381.44,
+   "text": "Oh, by the way, vx0, which is the initial y velocity, is over here we have this.",
+   "avg_logprob": -0.12692162058045786
+  },
+  {
+   "start": 381.52,
+   "end": 383.98,
+   "text": "We calculated this by splitting the vector.",
+   "avg_logprob": -0.12692162058045786
+  },
+  {
+   "start": 383.98,
+   "end": 407.11,
+   "text": "And we have 12.86 plus 12.86t plus 1 over 2 times negative 9.81t squared.",
+   "avg_logprob": -0.13172485872551246
+  },
+  {
+   "start": 408.11,
+   "end": 421.87,
+   "text": "And when you actually simplify it, 1 over 2 times negative 9.81 is about negative 4.905t squared.",
+   "avg_logprob": -0.0770851925237855
+  },
+  {
+   "start": 422.47,
+   "end": 425.91,
+   "text": "You figure out that you get a quadratic.",
+   "avg_logprob": -0.0770851925237855
+  },
+  {
+   "start": 430.68,
+   "end": 435.26,
+   "text": "Well, you might be thinking, well, a quadratic has two solutions.",
+   "avg_logprob": -0.0770851925237855
+  },
+  {
+   "start": 435.44,
+   "end": 436.44,
+   "text": "How can this be?",
+   "avg_logprob": -0.0770851925237855
+  },
+  {
+   "start": 437.36,
+   "end": 452.18,
+   "text": "Well, this formula is calculating when the ball is at rest, or is at y equals zero.",
+   "avg_logprob": -0.06975333748468712
+  },
+  {
+   "start": 452.76,
+   "end": 456.56,
+   "text": "And do you know when the ball is at y equals zero?",
+   "avg_logprob": -0.06975333748468712
+  },
+  {
+   "start": 456.74,
+   "end": 457.9,
+   "text": "Yeah, there's two cases.",
+   "avg_logprob": -0.06975333748468712
+  },
+  {
+   "start": 458.74,
+   "end": 463.22,
+   "text": "At the initial, when the ball has just been kicked, or time equals zero,",
+   "avg_logprob": -0.06975333748468712
+  },
+  {
+   "start": 463.22,
+   "end": 467.08,
+   "text": "and at the final, which is the time we want to calculate.",
+   "avg_logprob": -0.07357449376064798
+  },
+  {
+   "start": 469.5,
+   "end": 473.96,
+   "text": "And we see that t equals zero is one of our solutions.",
+   "avg_logprob": -0.07357449376064798
+  },
+  {
+   "start": 474.34,
+   "end": 484.27,
+   "text": "When you factor out t, you get t equals zero for one of the solutions.",
+   "avg_logprob": -0.07357449376064798
+  },
+  {
+   "start": 485.03,
+   "end": 491.31,
+   "text": "The other solution is negative 12.86 equals negative 4.905t.",
+   "avg_logprob": -0.07357449376064798
+  },
+  {
+   "start": 497.41,
+   "end": 507.19,
+   "text": "And when you do the math, you will get around 2.62 seconds.",
+   "avg_logprob": -0.09055773010019397
+  },
+  {
+   "start": 507.45,
+   "end": 514.15,
+   "text": "So it takes the ball 2.62 seconds to complete its curve, or path,",
+   "avg_logprob": -0.09055773010019397
+  },
+  {
+   "start": 514.23,
+   "end": 518.87,
+   "text": "because in 2.62 seconds, it will be landed.",
+   "avg_logprob": -0.09055773010019397
+  },
+  {
+   "start": 519.03,
+   "end": 520.33,
+   "text": "It will land over here.",
+   "avg_logprob": -0.09055773010019397
+  },
+  {
+   "start": 521.86,
+   "end": 535.22,
+   "text": "So now we know that all we do is just calculate how far the x component will go in 2.62 seconds,",
+   "avg_logprob": -0.06755696871179215
+  },
+  {
+   "start": 535.22,
+   "end": 542.94,
+   "text": "because ultimately, we're just finding out how far this went in terms of x.",
+   "avg_logprob": -0.06755696871179215
+  },
+  {
+   "start": 545.36,
+   "end": 555.48,
+   "text": "And x here is just equal to time times speed, so v times t.",
+   "avg_logprob": -0.10752941895339449
+  },
+  {
+   "start": 558.92,
+   "end": 567.68,
+   "text": "And when you do v times t, you know t, 2.62, and velocity would be equal to 12.86.",
+   "avg_logprob": -0.10752941895339449
+  },
+  {
+   "start": 570.07,
+   "end": 575.93,
+   "text": "Sorry, 15.32 meters per second.",
+   "avg_logprob": -0.10752941895339449
+  },
+  {
+   "start": 575.93,
+   "end": 591.62,
+   "text": "And seconds cross out, so we get 2.62 times 15.32, and you get around 40.17 meters.",
+   "avg_logprob": -0.08017909628423778
+  },
+  {
+   "start": 594.78,
+   "end": 601.42,
+   "text": "And keep in mind, I used the horizontal velocity because we want to calculate the horizontal distance.",
+   "avg_logprob": -0.08017909628423778
+  },
+  {
+   "start": 602.62,
+   "end": 608.22,
+   "text": "The vertical velocity is independent, and I can't stress that enough.",
+   "avg_logprob": -0.08017909628423778
+  },
+  {
+   "start": 608.22,
+   "end": 612.82,
+   "text": "So that's an example of using 2D kinematics.",
+   "avg_logprob": -0.07955195009708405
+  },
+  {
+   "start": 615.08,
+   "end": 619.02,
+   "text": "And if you have any questions, you can always email me,",
+   "avg_logprob": -0.07955195009708405
+  },
+  {
+   "start": 619.78,
+   "end": 625.72,
+   "text": "or meet me after school in Physics Club every week, every two weeks.",
+   "avg_logprob": -0.07955195009708405
+  },
+  {
+   "start": 626.74,
+   "end": 632.98,
+   "text": "So thank you, and I hope you learned something from this kinematics intro.",
+   "avg_logprob": -0.07955195009708405
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.0,
+   "end": 3.44,
+   "text": "A ball is kicked with an initial speed of 20"
+  },
+  {
+   "start": 3.44,
+   "end": 7.84,
+   "text": "metres per second and an angle of 40 degrees"
+  },
+  {
+   "start": 7.84,
+   "end": 12.42,
+   "text": "above the horizontal. So, first of all, let"
+  },
+  {
+   "start": 12.42,
+   "end": 15.78,
+   "text": "me note that its initial speed is 20 metres"
+  },
+  {
+   "start": 15.78,
+   "end": 19.78,
+   "text": "per second and an angle of 40 degrees to the"
+  },
+  {
+   "start": 19.78,
+   "end": 25.74,
+   "text": "horizontal. And we want to know what the total"
+  },
+  {
+   "start": 25.74,
+   "end": 29.66,
+   "text": "distance or displacement it has when it finally"
+  },
+  {
+   "start": 29.66,
+   "end": 34.14,
+   "text": "lands. And we can assume a lot of things, which"
+  },
+  {
+   "start": 34.14,
+   "end": 36.24,
+   "text": "is very common in kinematics questions."
+  },
+  {
+   "start": 36.78,
+   "end": 42.22,
+   "text": "So, assume no air resistance and we are on a"
+  },
+  {
+   "start": 42.22,
+   "end": 45.64,
+   "text": "flat plane. So, to help you out with this, let"
+  },
+  {
+   "start": 45.64,
+   "end": 52.91,
+   "text": "me first draw a diagram. So, here it is and"
+  },
+  {
+   "start": 52.91,
+   "end": 57.45,
+   "text": "here's the ball on the ground. It is kicked"
+  },
+  {
+   "start": 57.45,
+   "end": 66.03,
+   "text": "with an initial speed of 20 metres"
+  },
+  {
+   "start": 66.03,
+   "end": 69.27,
+   "text": "per second and an angle of 40 degrees."
+  },
+  {
+   "start": 71.68,
+   "end": 76.85,
+   "text": "So, now what we want to do is we want to split"
+  },
+  {
+   "start": 76.85,
+   "end": 79.13,
+   "text": "this question into two parts."
+  },
+  {
+   "start": 80.45,
+   "end": 84.83,
+   "text": "The first part is, well, we first know that"
+  },
+  {
+   "start": 84.83,
+   "end": 87.73,
+   "text": "the ball's trajectory is going to go something"
+  },
+  {
+   "start": 87.73,
+   "end": 94.27,
+   "text": "like this. The first part is to see and break"
+  },
+  {
+   "start": 94.27,
+   "end": 100.29,
+   "text": "down our 20 metres per second vector into components,"
+  },
+  {
+   "start": 100.29,
+   "end": 103.45,
+   "text": "like we have learned in the previous part."
+  },
+  {
+   "start": 103.83,
+   "end": 108.09,
+   "text": "We break it down into components. So, right"
+  },
+  {
+   "start": 108.09,
+   "end": 112.61,
+   "text": "here, let me just do that, 20 metres per second,"
+  },
+  {
+   "start": 114.95,
+   "end": 119.53,
+   "text": "40 degrees. So, I want you guys to tell me what"
+  },
+  {
+   "start": 119.53,
+   "end": 124.73,
+   "text": "the x component and what the y component is"
+  },
+  {
+   "start": 124.73,
+   "end": 128.53,
+   "text": "of this vector. Pause the video and resume when"
+  },
+  {
+   "start": 128.53,
+   "end": 131.63,
+   "text": "you're done. So, for the x component, if we"
+  },
+  {
+   "start": 131.63,
+   "end": 134.31,
+   "text": "imagine it like a triangle like we always do,"
+  },
+  {
+   "start": 134.65,
+   "end": 140.19,
+   "text": "we get 20 times cose of 40 degrees."
+  },
+  {
+   "start": 142.45,
+   "end": 149.87,
+   "text": "20 times cose of 40 is around 15.32,"
+  },
+  {
+   "start": 150.59,
+   "end": 153.77,
+   "text": "but I would store the full number somewhere"
+  },
+  {
+   "start": 153.77,
+   "end": 157.49,
+   "text": "on your calculator because this is not your"
+  },
+  {
+   "start": 157.49,
+   "end": 160.05,
+   "text": "final answer. So, you want your numbers to be"
+  },
+  {
+   "start": 160.05,
+   "end": 165.07,
+   "text": "exact as possible. Next up is the v of y."
+  },
+  {
+   "start": 165.33,
+   "end": 170.47,
+   "text": "So, v of x is this. v of y is 20 times sine"
+  },
+  {
+   "start": 170.47,
+   "end": 179.43,
+   "text": "of 40 degrees, which is around 12.86"
+  },
+  {
+   "start": 181.19,
+   "end": 183.23,
+   "text": "metres per second."
+  },
+  {
+   "start": 183.23,
+   "end": 188.55,
+   "text": "Oops, did not mean to do that."
+  },
+  {
+   "start": 189.33,
+   "end": 193.67,
+   "text": "metres per second and 12.86 metres per second."
+  },
+  {
+   "start": 194.25,
+   "end": 196.49,
+   "text": "So, what this means is that the ball is going"
+  },
+  {
+   "start": 196.49,
+   "end": 202.33,
+   "text": "12.86 metres per second to the right and 15.32"
+  },
+  {
+   "start": 202.33,
+   "end": 205.85,
+   "text": "metres per second to vertically, initially."
+  },
+  {
+   "start": 206.91,
+   "end": 211.87,
+   "text": "Now, you're going to be thinking, well, how"
+  },
+  {
+   "start": 211.87,
+   "end": 216.51,
+   "text": "will we calculate it? Well, think to yourself,"
+  },
+  {
+   "start": 216.65,
+   "end": 219.87,
+   "text": "when does the ball actually stop?"
+  },
+  {
+   "start": 220.25,
+   "end": 226.55,
+   "text": "When does it land? Well, it lands when the y"
+  },
+  {
+   "start": 226.55,
+   "end": 231.13,
+   "text": "becomes zero again. When you look at these three"
+  },
+  {
+   "start": 231.13,
+   "end": 234.73,
+   "text": "equations, what do you have?"
+  },
+  {
+   "start": 235.89,
+   "end": 240.73,
+   "text": "And we can use what we have to see which equation"
+  },
+  {
+   "start": 240.73,
+   "end": 244.05,
+   "text": "we want to use. First of all, we got to find"
+  },
+  {
+   "start": 244.05,
+   "end": 248.35,
+   "text": "the time, and the time depends on the y component"
+  },
+  {
+   "start": 248.35,
+   "end": 251.91,
+   "text": "because the ball lands when the y component"
+  },
+  {
+   "start": 251.91,
+   "end": 255.09,
+   "text": "is zero. It doesn't matter if the x component,"
+  },
+  {
+   "start": 255.15,
+   "end": 258.37,
+   "text": "it travelled 10 metres or 100 metres, the ball"
+  },
+  {
+   "start": 258.37,
+   "end": 261.61,
+   "text": "always lands when the y is at zero."
+  },
+  {
+   "start": 262.95,
+   "end": 268.33,
+   "text": "It does not matter about x. So, let's see, what"
+  },
+  {
+   "start": 268.33,
+   "end": 272.35,
+   "text": "do we know about y? Well, we know that the ball"
+  },
+  {
+   "start": 272.35,
+   "end": 276.19,
+   "text": "starts at y equals zero, so y0 is zero."
+  },
+  {
+   "start": 276.51,
+   "end": 281.95,
+   "text": "The ball also ends at y final is zero."
+  },
+  {
+   "start": 283.07,
+   "end": 290.09,
+   "text": "The ball's acceleration in terms of y"
+  },
+  {
+   "start": 290.09,
+   "end": 294.01,
+   "text": "is negative 9.81 because it's gravity."
+  },
+  {
+   "start": 294.57,
+   "end": 296.87,
+   "text": "The only thing that's pulling the ball down"
+  },
+  {
+   "start": 296.87,
+   "end": 299.09,
+   "text": "or accelerating the ball is gravity."
+  },
+  {
+   "start": 299.09,
+   "end": 301.75,
+   "text": "And don't forget the negative sign because we're"
+  },
+  {
+   "start": 301.75,
+   "end": 304.23,
+   "text": "assuming that upwards is positive. So, since"
+  },
+  {
+   "start": 304.23,
+   "end": 306.23,
+   "text": "acceleration is a vector, you have to include"
+  },
+  {
+   "start": 306.23,
+   "end": 313.72,
+   "text": "the negative. And we need to find the"
+  },
+  {
+   "start": 313.72,
+   "end": 320.75,
+   "text": "time. So, if we have all these values,"
+  },
+  {
+   "start": 321.29,
+   "end": 324.27,
+   "text": "if we look in our formula sheet, we could easily"
+  },
+  {
+   "start": 324.27,
+   "end": 331.52,
+   "text": "spot out this formula. And let me"
+  },
+  {
+   "start": 331.52,
+   "end": 341.59,
+   "text": "just quickly copy paste this and"
+  },
+  {
+   "start": 341.59,
+   "end": 348.8,
+   "text": "move it here. Alright,"
+  },
+  {
+   "start": 349.62,
+   "end": 352.74,
+   "text": "now when we use this formula, we can just plug"
+  },
+  {
+   "start": 352.74,
+   "end": 354.72,
+   "text": "in our values. It doesn't matter if it's x,"
+  },
+  {
+   "start": 355.18,
+   "end": 359.04,
+   "text": "y can be used as well, or in 3D cases, z."
+  },
+  {
+   "start": 362.06,
+   "end": 365.3,
+   "text": "So, we know y final is zero."
+  },
+  {
+   "start": 366.28,
+   "end": 368.9,
+   "text": "The initial y is also zero."
+  },
+  {
+   "start": 369.46,
+   "end": 372.24,
+   "text": "And now this is just a matter of plugging in"
+  },
+  {
+   "start": 372.24,
+   "end": 376.26,
+   "text": "numbers. Oh, by the way, vx0, which is the initial"
+  },
+  {
+   "start": 376.26,
+   "end": 381.44,
+   "text": "y velocity, is over here we have this."
+  },
+  {
+   "start": 381.52,
+   "end": 383.98,
+   "text": "We calculated this by splitting the vector."
+  },
+  {
+   "start": 383.98,
+   "end": 399.13,
+   "text": "And we have 12.86 plus 12.86t"
+  },
+  {
+   "start": 399.13,
+   "end": 406.65,
+   "text": "plus 1 over 2 times negative 9.81t"
+  },
+  {
+   "start": 406.65,
+   "end": 412.45,
+   "text": "squared. And when you actually simplify it,"
+  },
+  {
+   "start": 412.99,
+   "end": 418.35,
+   "text": "1 over 2 times negative 9.81 is about negative"
+  },
+  {
+   "start": 418.35,
+   "end": 421.87,
+   "text": "4.905t squared."
+  },
+  {
+   "start": 422.47,
+   "end": 425.91,
+   "text": "You figure out that you get a quadratic."
+  },
+  {
+   "start": 430.68,
+   "end": 433.46,
+   "text": "Well, you might be thinking, well, a quadratic"
+  },
+  {
+   "start": 433.46,
+   "end": 436.44,
+   "text": "has two solutions. How can this be?"
+  },
+  {
+   "start": 437.36,
+   "end": 445.36,
+   "text": "Well, this formula is calculating when the"
+  },
+  {
+   "start": 445.36,
+   "end": 452.18,
+   "text": "ball is at rest, or is at y equals zero."
+  },
+  {
+   "start": 452.76,
+   "end": 456.24,
+   "text": "And do you know when the ball is at y equals"
+  },
+  {
+   "start": 456.24,
+   "end": 459.64,
+   "text": "zero? Yeah, there's two cases. At the initial,"
+  },
+  {
+   "start": 460.14,
+   "end": 462.5,
+   "text": "when the ball has just been kicked, or time"
+  },
+  {
+   "start": 462.5,
+   "end": 466.04,
+   "text": "equals zero, and at the final, which is the"
+  },
+  {
+   "start": 466.04,
+   "end": 471.96,
+   "text": "time we want to calculate. And we see that t"
+  },
+  {
+   "start": 471.96,
+   "end": 474.6,
+   "text": "equals zero is one of our solutions. When you"
+  },
+  {
+   "start": 474.6,
+   "end": 481.91,
+   "text": "factor out t, you"
+  },
+  {
+   "start": 481.91,
+   "end": 484.27,
+   "text": "get t equals zero for one of the solutions."
+  },
+  {
+   "start": 485.03,
+   "end": 488.65,
+   "text": "The other solution is negative 12.86 equals"
+  },
+  {
+   "start": 488.65,
+   "end": 491.31,
+   "text": "negative 4.905t."
+  },
+  {
+   "start": 497.41,
+   "end": 502.37,
+   "text": "And when you do the math, you will get around"
+  },
+  {
+   "start": 502.37,
+   "end": 507.19,
+   "text": "2.62 seconds."
+  },
+  {
+   "start": 507.45,
+   "end": 511.79,
+   "text": "So it takes the ball 2.62 seconds to complete"
+  },
+  {
+   "start": 511.79,
+   "end": 516.65,
+   "text": "its curve, or path, because in 2.62 seconds,"
+  },
+  {
+   "start": 517.25,
+   "end": 520.33,
+   "text": "it will be landed. It will land over here."
+  },
+  {
+   "start": 521.86,
+   "end": 530.42,
+   "text": "So now we know that all we do is just calculate"
+  },
+  {
+   "start": 530.42,
+   "end": 535.22,
+   "text": "how far the x component will go in 2.62 seconds,"
+  },
+  {
+   "start": 535.22,
+   "end": 539.44,
+   "text": "because ultimately, we're just finding out how"
+  },
+  {
+   "start": 539.44,
+   "end": 542.94,
+   "text": "far this went in terms of x."
+  },
+  {
+   "start": 545.36,
+   "end": 553.36,
+   "text": "And x here is just equal to time times"
+  },
+  {
+   "start": 553.36,
+   "end": 555.48,
+   "text": "speed, so v times t."
+  },
+  {
+   "start": 558.92,
+   "end": 562.68,
+   "text": "And when you do v times t, you know t, 2.62,"
+  },
+  {
+   "start": 564.64,
+   "end": 567.68,
+   "text": "and velocity would be equal to 12.86."
+  },
+  {
+   "start": 570.07,
+   "end": 575.93,
+   "text": "Sorry, 15.32 metres per second."
+  },
+  {
+   "start": 575.93,
+   "end": 580.71,
+   "text": "And seconds cross out, so we get 2.62 times"
+  },
+  {
+   "start": 580.71,
+   "end": 589.98,
+   "text": "15.32, and you get around 40.17"
+  },
+  {
+   "start": 589.98,
+   "end": 597.6,
+   "text": "metres. And keep in mind, I used the horizontal"
+  },
+  {
+   "start": 597.6,
+   "end": 600.96,
+   "text": "velocity because we want to calculate the horizontal"
+  },
+  {
+   "start": 600.96,
+   "end": 604.86,
+   "text": "distance. The vertical velocity is independent,"
+  },
+  {
+   "start": 605.84,
+   "end": 608.22,
+   "text": "and I can't stress that enough."
+  },
+  {
+   "start": 608.22,
+   "end": 612.82,
+   "text": "So that's an example of using 2D kinematics."
+  },
+  {
+   "start": 615.08,
+   "end": 618.08,
+   "text": "And if you have any questions, you can always"
+  },
+  {
+   "start": 618.08,
+   "end": 622.88,
+   "text": "email me, or meet me after school in Physics"
+  },
+  {
+   "start": 622.88,
+   "end": 625.72,
+   "text": "Club every week, every two weeks."
+  },
+  {
+   "start": 626.74,
+   "end": 630.42,
+   "text": "So thank you, and I hope you learned something"
+  },
+  {
+   "start": 630.42,
+   "end": 632.98,
+   "text": "from this kinematics intro."
+  }
+ ],
+ "report": {
+  "key": "kinematics__motion_2d_part3",
+  "title": "2D Motion Analysis Part 3",
+  "topicKey": "kinematics",
+  "duration": 634.24,
+  "cues": 128,
+  "corrections": 3,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.13172485872551246,
+  "flagged": []
+ }
+}

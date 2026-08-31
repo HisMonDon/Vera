@@ -1,0 +1,905 @@
+{
+ "lesson": {
+  "topicKey": "modern_physics",
+  "curriculumKey": "fission_fusion",
+  "title": "Fission and Fusion",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/modern_physics/Unit%206%20Fission%20and%20Fusion%20Reactions.mp4",
+  "source": "modern.dart"
+ },
+ "segments": [
+  {
+   "start": 0.69,
+   "end": 28.05,
+   "text": "Okay, so in this video we'll be talking about nuclear fission and nuclear fusion. So let's start with nuclear fission. And basically nuclear fission, I'll write this down. Nuclear fission is the splitting of a heavy nucleus into two smaller nuclei.",
+   "avg_logprob": -0.145334147570426
+  },
+  {
+   "start": 28.05,
+   "end": 57.95,
+   "text": "So, splitting of nucleus into two smaller nuclei. And this results in a huge release of energy. So for example, if you have uranium, the atomic number would be 235, or the mass number, plus a neutron.",
+   "avg_logprob": -0.1003106040880084
+  },
+  {
+   "start": 58.87,
+   "end": 75.43,
+   "text": "This is achieved when you fire a neutron at one of those elements. So nuclear fission only occurs when you first start the reaction by firing a neutron at whatever your element is.",
+   "avg_logprob": -0.09086443268154797
+  },
+  {
+   "start": 75.43,
+   "end": 98.97,
+   "text": "And it results in other fragments, so we call these fission fragments, plus a couple of more neutrons, plus let's say X neutrons, and plus energy.",
+   "avg_logprob": -0.1468532796089466
+  },
+  {
+   "start": 100.09,
+   "end": 113.81,
+   "text": "And the reason why nuclear fission is so slow, it has such a big release of energy, is that there is obviously going to be more than one atom of whatever you're undergoing fission to.",
+   "avg_logprob": -0.09803117679644234
+  },
+  {
+   "start": 114.39,
+   "end": 122.51,
+   "text": "And each of these, after you fire the first neutron, it's going to release energy first of all, and it's going to release more neutrons.",
+   "avg_logprob": -0.09803117679644234
+  },
+  {
+   "start": 122.51,
+   "end": 132.49,
+   "text": "And these extra neutrons are going to hit more atoms of, in this case, uranium, and it's going to keep on going, so a chain reaction.",
+   "avg_logprob": -0.11856110862050301
+  },
+  {
+   "start": 133.43,
+   "end": 139.39,
+   "text": "And that can be used to produce a lot of dangerous things, such as atomic bombs.",
+   "avg_logprob": -0.11856110862050301
+  },
+  {
+   "start": 141.09,
+   "end": 148.79,
+   "text": "Yeah, atomic bombs rely on nuclear fission, and this is a good diagram illustrating it.",
+   "avg_logprob": -0.11856110862050301
+  },
+  {
+   "start": 149.47,
+   "end": 152.05,
+   "text": "Oops, don't know what happened there.",
+   "avg_logprob": -0.10200932769006804
+  },
+  {
+   "start": 154.53,
+   "end": 168.89,
+   "text": "As you can see, you first fire a neutron at it, and it's going to split, release more neutrons, and you're going to keep on going until all of your reactants is used up.",
+   "avg_logprob": -0.10200932769006804
+  },
+  {
+   "start": 169.87,
+   "end": 172.07,
+   "text": "And this releases a lot of energy.",
+   "avg_logprob": -0.10200932769006804
+  },
+  {
+   "start": 173.55,
+   "end": 178.16,
+   "text": "So, what happens here?",
+   "avg_logprob": -0.10200932769006804
+  },
+  {
+   "start": 179.16,
+   "end": 193.02,
+   "text": "Well, when you split this, products are more tightly bound, because heavy nuclei have lower binding energy.",
+   "avg_logprob": -0.08022537252359223
+  },
+  {
+   "start": 194.4,
+   "end": 198.62,
+   "text": "Because, like we talked about, greater distance, less nuclear force.",
+   "avg_logprob": -0.08022537252359223
+  },
+  {
+   "start": 199.72,
+   "end": 203.78,
+   "text": "And since products are more tightly bound, the mass also decreases.",
+   "avg_logprob": -0.08022537252359223
+  },
+  {
+   "start": 204.74,
+   "end": 211.9,
+   "text": "And if the mass decreases, then it must go somewhere, and that mass is converted into energy.",
+   "avg_logprob": -0.11724458483682162
+  },
+  {
+   "start": 213.06,
+   "end": 213.98,
+   "text": "E equals mc squared.",
+   "avg_logprob": -0.11724458483682162
+  },
+  {
+   "start": 214.54,
+   "end": 222.46,
+   "text": "Conservation of mass, it can't be created or destroyed, so the decrease of mass here is converted into energy.",
+   "avg_logprob": -0.11724458483682162
+  },
+  {
+   "start": 224.9,
+   "end": 229.22,
+   "text": "And in the chain reaction, there are three processes.",
+   "avg_logprob": -0.11724458483682162
+  },
+  {
+   "start": 229.96,
+   "end": 232.52,
+   "text": "The first one is sub-critical.",
+   "avg_logprob": -0.17268610252460964
+  },
+  {
+   "start": 235.02,
+   "end": 239.94,
+   "text": "You don't really have to know this that much, it really depends on your course and your teacher.",
+   "avg_logprob": -0.17268610252460964
+  },
+  {
+   "start": 241.04,
+   "end": 243.08,
+   "text": "It's when the reaction dies.",
+   "avg_logprob": -0.17268610252460964
+  },
+  {
+   "start": 246.7,
+   "end": 248.12,
+   "text": "The second one is critical.",
+   "avg_logprob": -0.17268610252460964
+  },
+  {
+   "start": 250.04,
+   "end": 252.5,
+   "text": "When there is a steady reaction.",
+   "avg_logprob": -0.17268610252460964
+  },
+  {
+   "start": 256.53,
+   "end": 260.07,
+   "text": "And the third one is super critical.",
+   "avg_logprob": -0.17268610252460964
+  },
+  {
+   "start": 260.07,
+   "end": 264.47,
+   "text": "When there is an exponential increase.",
+   "avg_logprob": -0.12343894823321275
+  },
+  {
+   "start": 269.53,
+   "end": 276.47,
+   "text": "So, critical is at the exact middle of the reaction.",
+   "avg_logprob": -0.12343894823321275
+  },
+  {
+   "start": 277.13,
+   "end": 282.59,
+   "text": "Because it's not increasing exponentially, but it's also not decreasing.",
+   "avg_logprob": -0.12343894823321275
+  },
+  {
+   "start": 283.45,
+   "end": 288.21,
+   "text": "And super critical, it's basically for most of the reaction.",
+   "avg_logprob": -0.12343894823321275
+  },
+  {
+   "start": 288.21,
+   "end": 291.75,
+   "text": "Because it's going to be chained to ours.",
+   "avg_logprob": -0.1223838712487902
+  },
+  {
+   "start": 293.27,
+   "end": 296.57,
+   "text": "Next one, we have nuclear fusion.",
+   "avg_logprob": -0.1223838712487902
+  },
+  {
+   "start": 298.63,
+   "end": 300.03,
+   "text": "Let's talk about that.",
+   "avg_logprob": -0.1223838712487902
+  },
+  {
+   "start": 304.15,
+   "end": 308.01,
+   "text": "It's when you combine light nuclei into heavy nuclei.",
+   "avg_logprob": -0.1223838712487902
+  },
+  {
+   "start": 308.19,
+   "end": 312.23,
+   "text": "For example, in the sun, hydrogen fuses to form helium.",
+   "avg_logprob": -0.1223838712487902
+  },
+  {
+   "start": 314.21,
+   "end": 317.85,
+   "text": "You have four protons, or hydrogen.",
+   "avg_logprob": -0.14217518291611603
+  },
+  {
+   "start": 318.97,
+   "end": 323.03,
+   "text": "And these form helium and energy.",
+   "avg_logprob": -0.14217518291611603
+  },
+  {
+   "start": 324.85,
+   "end": 327.69,
+   "text": "Well, why does fusion release energy?",
+   "avg_logprob": -0.14217518291611603
+  },
+  {
+   "start": 327.99,
+   "end": 333.91,
+   "text": "Well, from the binding energy curve, light nuclei have low binding energy per nucleon.",
+   "avg_logprob": -0.14217518291611603
+  },
+  {
+   "start": 334.09,
+   "end": 337.91,
+   "text": "So that means that the medium nucleons over here are more stable.",
+   "avg_logprob": -0.14217518291611603
+  },
+  {
+   "start": 337.91,
+   "end": 344.73,
+   "text": "And that means that the binding energy per product increases.",
+   "avg_logprob": -0.15235553989334713
+  },
+  {
+   "start": 345.49,
+   "end": 348.97,
+   "text": "Same thing for fission as well.",
+   "avg_logprob": -0.15235553989334713
+  },
+  {
+   "start": 350.03,
+   "end": 352.87,
+   "text": "So this one is more stable, so mass decreases.",
+   "avg_logprob": -0.15235553989334713
+  },
+  {
+   "start": 353.91,
+   "end": 359.15,
+   "text": "And since mass decreases, energy increases because of conservation of mass.",
+   "avg_logprob": -0.15235553989334713
+  },
+  {
+   "start": 360.67,
+   "end": 366.09,
+   "text": "And fusion requires a lot of energy.",
+   "avg_logprob": -0.15235553989334713
+  },
+  {
+   "start": 366.09,
+   "end": 371.19,
+   "text": "You must have high temperatures, extremely high temperatures.",
+   "avg_logprob": -0.10946022490820577
+  },
+  {
+   "start": 378.79,
+   "end": 381.23,
+   "text": "And you must have high pressure.",
+   "avg_logprob": -0.10946022490820577
+  },
+  {
+   "start": 385.39,
+   "end": 388.35,
+   "text": "And this is because protons repel each other.",
+   "avg_logprob": -0.10946022490820577
+  },
+  {
+   "start": 388.65,
+   "end": 398.09,
+   "text": "So they must overcome that electrostatic repulsion in order to fuse.",
+   "avg_logprob": -0.10946022490820577
+  },
+  {
+   "start": 398.39,
+   "end": 400.01,
+   "text": "And that's why you need high pressure.",
+   "avg_logprob": -0.10946022490820577
+  },
+  {
+   "start": 401.57,
+   "end": 410.33,
+   "text": "And yeah, basically overall, these are the three main things you have to know for atomic reactions.",
+   "avg_logprob": -0.12202354406730996
+  },
+  {
+   "start": 411.25,
+   "end": 413.47,
+   "text": "Decay happens in unstable nuclei.",
+   "avg_logprob": -0.12202354406730996
+  },
+  {
+   "start": 414.11,
+   "end": 417.61,
+   "text": "They're heavy and they move towards stability.",
+   "avg_logprob": -0.12202354406730996
+  },
+  {
+   "start": 418.67,
+   "end": 424.55,
+   "text": "Fission, on the other hand, happens in bombs and reactors.",
+   "avg_logprob": -0.12202354406730996
+  },
+  {
+   "start": 426.15,
+   "end": 428.79,
+   "text": "The nuclei are typically very, very heavy.",
+   "avg_logprob": -0.12202354406730996
+  },
+  {
+   "start": 428.79,
+   "end": 432.95,
+   "text": "Otherwise, you won't be able to achieve fission.",
+   "avg_logprob": -0.08802198426107342
+  },
+  {
+   "start": 433.61,
+   "end": 438.25,
+   "text": "And they split into medium mass and release energy as well.",
+   "avg_logprob": -0.08802198426107342
+  },
+  {
+   "start": 438.79,
+   "end": 443.51,
+   "text": "And fusion happens only in stars, naturally.",
+   "avg_logprob": -0.08802198426107342
+  },
+  {
+   "start": 444.35,
+   "end": 451.01,
+   "text": "And it's made up of light nuclei which combine to form medium nuclei.",
+   "avg_logprob": -0.08802198426107342
+  },
+  {
+   "start": 451.61,
+   "end": 454.13,
+   "text": "And that's all for this unit.",
+   "avg_logprob": -0.08802198426107342
+  },
+  {
+   "start": 454.63,
+   "end": 458.13,
+   "text": "So thank you guys for watching and we'll see you in the next one. Bye!",
+   "avg_logprob": -0.08802198426107342
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.69,
+   "end": 3.71,
+   "text": "Okay, so in this video we'll be talking about"
+  },
+  {
+   "start": 3.71,
+   "end": 7.19,
+   "text": "nuclear fission and nuclear fusion. So let's"
+  },
+  {
+   "start": 7.19,
+   "end": 9.21,
+   "text": "start with nuclear fission."
+  },
+  {
+   "start": 10.77,
+   "end": 15.19,
+   "text": "And basically nuclear fission, I'll write this"
+  },
+  {
+   "start": 15.19,
+   "end": 22.29,
+   "text": "down. Nuclear fission is"
+  },
+  {
+   "start": 22.29,
+   "end": 26.61,
+   "text": "the splitting of a heavy nucleus into two smaller"
+  },
+  {
+   "start": 26.61,
+   "end": 35.19,
+   "text": "nuclei. So, splitting of nucleus"
+  },
+  {
+   "start": 35.19,
+   "end": 42.87,
+   "text": "into two smaller nuclei."
+  },
+  {
+   "start": 43.83,
+   "end": 47.67,
+   "text": "And this results in a huge release of energy."
+  },
+  {
+   "start": 48.99,
+   "end": 53.31,
+   "text": "So for example, if you have uranium, the atomic"
+  },
+  {
+   "start": 53.31,
+   "end": 57.09,
+   "text": "number would be 235, or the mass number, plus"
+  },
+  {
+   "start": 57.09,
+   "end": 61.51,
+   "text": "a neutron. This is achieved when you fire a"
+  },
+  {
+   "start": 61.51,
+   "end": 64.37,
+   "text": "neutron at one of those elements."
+  },
+  {
+   "start": 64.81,
+   "end": 69.45,
+   "text": "So nuclear fission only occurs when you first"
+  },
+  {
+   "start": 69.45,
+   "end": 73.59,
+   "text": "start the reaction by firing a neutron at whatever"
+  },
+  {
+   "start": 73.59,
+   "end": 81.57,
+   "text": "your element is. And it results in other"
+  },
+  {
+   "start": 81.57,
+   "end": 85.07,
+   "text": "fragments, so we call these fission fragments,"
+  },
+  {
+   "start": 90.11,
+   "end": 94.87,
+   "text": "plus a couple of more neutrons, plus let's say"
+  },
+  {
+   "start": 94.87,
+   "end": 98.97,
+   "text": "X neutrons, and plus energy."
+  },
+  {
+   "start": 100.09,
+   "end": 104.57,
+   "text": "And the reason why nuclear fission is so slow,"
+  },
+  {
+   "start": 105.01,
+   "end": 108.15,
+   "text": "it has such a big release of energy, is that"
+  },
+  {
+   "start": 108.15,
+   "end": 110.91,
+   "text": "there is obviously going to be more than one"
+  },
+  {
+   "start": 110.91,
+   "end": 113.81,
+   "text": "atom of whatever you're undergoing fission to."
+  },
+  {
+   "start": 114.39,
+   "end": 116.35,
+   "text": "And each of these, after you fire the first"
+  },
+  {
+   "start": 116.35,
+   "end": 119.63,
+   "text": "neutron, it's going to release energy first"
+  },
+  {
+   "start": 119.63,
+   "end": 122.51,
+   "text": "of all, and it's going to release more neutrons."
+  },
+  {
+   "start": 122.51,
+   "end": 126.19,
+   "text": "And these extra neutrons are going to hit more"
+  },
+  {
+   "start": 126.19,
+   "end": 129.99,
+   "text": "atoms of, in this case, uranium, and it's going"
+  },
+  {
+   "start": 129.99,
+   "end": 132.49,
+   "text": "to keep on going, so a chain reaction."
+  },
+  {
+   "start": 133.43,
+   "end": 137.29,
+   "text": "And that can be used to produce a lot of dangerous"
+  },
+  {
+   "start": 137.29,
+   "end": 139.39,
+   "text": "things, such as atomic bombs."
+  },
+  {
+   "start": 141.09,
+   "end": 143.61,
+   "text": "Yeah, atomic bombs rely on nuclear fission,"
+  },
+  {
+   "start": 144.85,
+   "end": 148.79,
+   "text": "and this is a good diagram illustrating it."
+  },
+  {
+   "start": 149.47,
+   "end": 152.05,
+   "text": "Oops, don't know what happened there."
+  },
+  {
+   "start": 154.53,
+   "end": 157.93,
+   "text": "As you can see, you first fire a neutron at"
+  },
+  {
+   "start": 157.93,
+   "end": 162.35,
+   "text": "it, and it's going to split, release more neutrons,"
+  },
+  {
+   "start": 163.31,
+   "end": 165.85,
+   "text": "and you're going to keep on going until all"
+  },
+  {
+   "start": 165.85,
+   "end": 168.89,
+   "text": "of your reactants is used up."
+  },
+  {
+   "start": 169.87,
+   "end": 172.07,
+   "text": "And this releases a lot of energy."
+  },
+  {
+   "start": 173.55,
+   "end": 178.16,
+   "text": "So, what happens here?"
+  },
+  {
+   "start": 179.16,
+   "end": 186.02,
+   "text": "Well, when you split this, products are more"
+  },
+  {
+   "start": 186.02,
+   "end": 192.1,
+   "text": "tightly bound, because heavy nuclei have lower"
+  },
+  {
+   "start": 192.1,
+   "end": 195.62,
+   "text": "binding energy. Because, like we talked about,"
+  },
+  {
+   "start": 196.06,
+   "end": 198.62,
+   "text": "greater distance, less nuclear force."
+  },
+  {
+   "start": 199.72,
+   "end": 202.62,
+   "text": "And since products are more tightly bound, the"
+  },
+  {
+   "start": 202.62,
+   "end": 206.28,
+   "text": "mass also decreases. And if the mass decreases,"
+  },
+  {
+   "start": 206.68,
+   "end": 210.56,
+   "text": "then it must go somewhere, and that mass is"
+  },
+  {
+   "start": 210.56,
+   "end": 213.98,
+   "text": "converted into energy. E equals mc squared."
+  },
+  {
+   "start": 214.54,
+   "end": 216.98,
+   "text": "Conservation of mass, it can't be created or"
+  },
+  {
+   "start": 216.98,
+   "end": 221.76,
+   "text": "destroyed, so the decrease of mass here is converted"
+  },
+  {
+   "start": 221.76,
+   "end": 227.54,
+   "text": "into energy. And in the chain reaction, there"
+  },
+  {
+   "start": 227.54,
+   "end": 232.52,
+   "text": "are three processes. The first one is sub-critical."
+  },
+  {
+   "start": 235.02,
+   "end": 237.4,
+   "text": "You don't really have to know this that much,"
+  },
+  {
+   "start": 237.66,
+   "end": 239.94,
+   "text": "it really depends on your course and your teacher."
+  },
+  {
+   "start": 241.04,
+   "end": 243.08,
+   "text": "It's when the reaction dies."
+  },
+  {
+   "start": 246.7,
+   "end": 251.68,
+   "text": "The second one is critical. When there is a"
+  },
+  {
+   "start": 251.68,
+   "end": 258.89,
+   "text": "steady reaction. And the third one is"
+  },
+  {
+   "start": 258.89,
+   "end": 263.69,
+   "text": "super critical. When there is an exponential"
+  },
+  {
+   "start": 263.69,
+   "end": 273.07,
+   "text": "increase. So, critical"
+  },
+  {
+   "start": 273.07,
+   "end": 276.47,
+   "text": "is at the exact middle of the reaction."
+  },
+  {
+   "start": 277.13,
+   "end": 281.09,
+   "text": "Because it's not increasing exponentially, but"
+  },
+  {
+   "start": 281.09,
+   "end": 284.25,
+   "text": "it's also not decreasing. And super critical,"
+  },
+  {
+   "start": 285.19,
+   "end": 288.21,
+   "text": "it's basically for most of the reaction."
+  },
+  {
+   "start": 288.21,
+   "end": 291.75,
+   "text": "Because it's going to be chained to ours."
+  },
+  {
+   "start": 293.27,
+   "end": 296.57,
+   "text": "Next one, we have nuclear fusion."
+  },
+  {
+   "start": 298.63,
+   "end": 305.81,
+   "text": "Let's talk about that. It's when you combine"
+  },
+  {
+   "start": 305.81,
+   "end": 308.01,
+   "text": "light nuclei into heavy nuclei."
+  },
+  {
+   "start": 308.19,
+   "end": 311.79,
+   "text": "For example, in the sun, hydrogen fuses to form"
+  },
+  {
+   "start": 311.79,
+   "end": 317.85,
+   "text": "helium. You have four protons, or hydrogen."
+  },
+  {
+   "start": 318.97,
+   "end": 323.03,
+   "text": "And these form helium and energy."
+  },
+  {
+   "start": 324.85,
+   "end": 327.69,
+   "text": "Well, why does fusion release energy?"
+  },
+  {
+   "start": 327.99,
+   "end": 331.47,
+   "text": "Well, from the binding energy curve, light nuclei"
+  },
+  {
+   "start": 331.47,
+   "end": 333.91,
+   "text": "have low binding energy per nucleon."
+  },
+  {
+   "start": 334.09,
+   "end": 336.71,
+   "text": "So that means that the medium nucleons over"
+  },
+  {
+   "start": 336.71,
+   "end": 340.55,
+   "text": "here are more stable. And that means that the"
+  },
+  {
+   "start": 340.55,
+   "end": 344.73,
+   "text": "binding energy per product increases."
+  },
+  {
+   "start": 345.49,
+   "end": 348.97,
+   "text": "Same thing for fission as well."
+  },
+  {
+   "start": 350.03,
+   "end": 352.87,
+   "text": "So this one is more stable, so mass decreases."
+  },
+  {
+   "start": 353.91,
+   "end": 358.11,
+   "text": "And since mass decreases, energy increases because"
+  },
+  {
+   "start": 358.11,
+   "end": 363.83,
+   "text": "of conservation of mass. And fusion requires"
+  },
+  {
+   "start": 363.83,
+   "end": 366.09,
+   "text": "a lot of energy."
+  },
+  {
+   "start": 366.09,
+   "end": 370.13,
+   "text": "You must have high temperatures, extremely high"
+  },
+  {
+   "start": 370.13,
+   "end": 379.47,
+   "text": "temperatures. And"
+  },
+  {
+   "start": 379.47,
+   "end": 386.33,
+   "text": "you must have high pressure. And this is because"
+  },
+  {
+   "start": 386.33,
+   "end": 388.35,
+   "text": "protons repel each other."
+  },
+  {
+   "start": 388.65,
+   "end": 393.89,
+   "text": "So they must overcome that electrostatic repulsion"
+  },
+  {
+   "start": 393.89,
+   "end": 398.09,
+   "text": "in order to fuse."
+  },
+  {
+   "start": 398.39,
+   "end": 403.09,
+   "text": "And that's why you need high pressure. And yeah,"
+  },
+  {
+   "start": 404.07,
+   "end": 406.65,
+   "text": "basically overall, these are the three main"
+  },
+  {
+   "start": 406.65,
+   "end": 410.33,
+   "text": "things you have to know for atomic reactions."
+  },
+  {
+   "start": 411.25,
+   "end": 413.47,
+   "text": "Decay happens in unstable nuclei."
+  },
+  {
+   "start": 414.11,
+   "end": 417.61,
+   "text": "They're heavy and they move towards stability."
+  },
+  {
+   "start": 418.67,
+   "end": 423.23,
+   "text": "Fission, on the other hand, happens in bombs"
+  },
+  {
+   "start": 423.23,
+   "end": 428.13,
+   "text": "and reactors. The nuclei are typically very,"
+  },
+  {
+   "start": 428.17,
+   "end": 431.97,
+   "text": "very heavy. Otherwise, you won't be able to"
+  },
+  {
+   "start": 431.97,
+   "end": 435.49,
+   "text": "achieve fission. And they split into medium"
+  },
+  {
+   "start": 435.49,
+   "end": 438.25,
+   "text": "mass and release energy as well."
+  },
+  {
+   "start": 438.79,
+   "end": 443.51,
+   "text": "And fusion happens only in stars, naturally."
+  },
+  {
+   "start": 444.35,
+   "end": 448.97,
+   "text": "And it's made up of light nuclei which combine"
+  },
+  {
+   "start": 448.97,
+   "end": 451.01,
+   "text": "to form medium nuclei."
+  },
+  {
+   "start": 451.61,
+   "end": 454.13,
+   "text": "And that's all for this unit."
+  },
+  {
+   "start": 454.63,
+   "end": 456.95,
+   "text": "So thank you guys for watching and we'll see"
+  },
+  {
+   "start": 456.95,
+   "end": 458.13,
+   "text": "you in the next one. Bye!"
+  }
+ ],
+ "report": {
+  "key": "modern_physics__fission_fusion",
+  "title": "Fission and Fusion",
+  "topicKey": "modern_physics",
+  "duration": 459.1786875,
+  "cues": 103,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.17268610252460964,
+  "flagged": []
+ }
+}

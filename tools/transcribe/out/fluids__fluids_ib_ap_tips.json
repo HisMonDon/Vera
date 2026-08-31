@@ -1,0 +1,335 @@
+{
+ "lesson": {
+  "topicKey": "fluids",
+  "curriculumKey": "fluids_ib_ap_tips",
+  "title": "Extra: IB and AP Tips and Tricks",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/fluid%20IB%20tip%20and%20tricks.mp4",
+  "source": "fluids.dart"
+ },
+ "segments": [
+  {
+   "start": 1.87,
+   "end": 16.31,
+   "text": "In the previous lesson, we were introduced to fluids and we learned about fluid mechanics and how it was separated into both fluid statics and fluid dynamics.",
+   "avg_logprob": -0.17987011124690375
+  },
+  {
+   "start": 18.87,
+   "end": 29.21,
+   "text": "One thing I want to mention about last video that I forgot to mention is that the units for density are in kilograms.",
+   "avg_logprob": -0.17987011124690375
+  },
+  {
+   "start": 30.49,
+   "end": 47.89,
+   "text": "Oops. They are in kilograms per metres cubed. Or kilograms per metres cubed.",
+   "avg_logprob": -0.20085623082907303
+  },
+  {
+   "start": 48.07,
+   "end": 59.55,
+   "text": "Or if you're doing chemistry, which some of you might also be taking, it would be in kilograms because",
+   "avg_logprob": -0.20085623082907303
+  },
+  {
+   "start": 59.55,
+   "end": 70.67,
+   "text": "chemistry, usually you would use grams per decimetres cubed or grams per litre would also work because a decimetre cubed is also a litre.",
+   "avg_logprob": -0.14235997628985028
+  },
+  {
+   "start": 72.69,
+   "end": 89.21,
+   "text": "But we will be using kilograms per metre cubed. And pressure, they are measured in either kilopascals or atoms.",
+   "avg_logprob": -0.14235997628985028
+  },
+  {
+   "start": 91.15,
+   "end": 104.89,
+   "text": "PA or, and this is just basically what this is, is it's the atmospheric pressure at sea level is one atom.",
+   "avg_logprob": -0.23463623262941838
+  },
+  {
+   "start": 105.59,
+   "end": 109.33,
+   "text": "And kilopascals are another unit.",
+   "avg_logprob": -0.23463623262941838
+  },
+  {
+   "start": 111.33,
+   "end": 118.81,
+   "text": "101, I believe, kilopascals is equal to one atmospheric pressure.",
+   "avg_logprob": -0.13764076957515642
+  },
+  {
+   "start": 120.89,
+   "end": 135.48,
+   "text": "Yeah. And for IB, another good thing to know, especially for chemistry, is there are certain conditions where you will be doing your calculations.",
+   "avg_logprob": -0.13764076957515642
+  },
+  {
+   "start": 136.54,
+   "end": 145.78,
+   "text": "This is standard temperature pressure conditions. And I'm telling you this because it's pretty useful to know ahead of time.",
+   "avg_logprob": -0.08722311444580555
+  },
+  {
+   "start": 146.82,
+   "end": 151.12,
+   "text": "Especially if you're like grade 9 or 10 and you haven't been introduced to the chemistry.",
+   "avg_logprob": -0.08722311444580555
+  },
+  {
+   "start": 151.68,
+   "end": 159.66,
+   "text": "So standard temperature pressure conditions are basically a set unit of conditions that you often use to make your calculations.",
+   "avg_logprob": -0.08722311444580555
+  },
+  {
+   "start": 159.66,
+   "end": 174.16,
+   "text": "And what this is, is pressure is equal to 100 kilopascals, or if you're doing AP, it would be one atmospheric pressure.",
+   "avg_logprob": -0.13887699950825083
+  },
+  {
+   "start": 175.4,
+   "end": 185.76,
+   "text": "And temperature is zero degrees Celsius, or you could say 273.15 Kelvin if you like.",
+   "avg_logprob": -0.13887699950825083
+  },
+  {
+   "start": 185.76,
+   "end": 206.1,
+   "text": "And yeah, basically these are a set of conditions that are really useful to know ahead of time because you're gonna have to use it anyways if you're going into IB, whether it's physics or chem, or maybe even mainstream as well.",
+   "avg_logprob": -0.1199870969240482
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.87,
+   "end": 5.63,
+   "text": "In the previous lesson, we were introduced to"
+  },
+  {
+   "start": 5.63,
+   "end": 9.87,
+   "text": "fluids and we learned about fluid mechanics"
+  },
+  {
+   "start": 9.87,
+   "end": 14.43,
+   "text": "and how it was separated into both fluid statics"
+  },
+  {
+   "start": 14.43,
+   "end": 20.43,
+   "text": "and fluid dynamics. One thing I want to mention"
+  },
+  {
+   "start": 20.43,
+   "end": 23.39,
+   "text": "about last video that I forgot to mention is"
+  },
+  {
+   "start": 23.39,
+   "end": 29.21,
+   "text": "that the units for density are in kilograms."
+  },
+  {
+   "start": 30.49,
+   "end": 39.23,
+   "text": "Oops. They are in kilograms per"
+  },
+  {
+   "start": 39.23,
+   "end": 42.99,
+   "text": "metres cubed."
+  },
+  {
+   "start": 43.15,
+   "end": 47.89,
+   "text": "Or kilograms per metres cubed."
+  },
+  {
+   "start": 48.07,
+   "end": 51.91,
+   "text": "Or if you're doing chemistry, which some of"
+  },
+  {
+   "start": 51.91,
+   "end": 57.95,
+   "text": "you might also be taking, it would be in kilograms"
+  },
+  {
+   "start": 57.95,
+   "end": 62.15,
+   "text": "because chemistry, usually you would use grams"
+  },
+  {
+   "start": 62.15,
+   "end": 67.05,
+   "text": "per decimetres cubed or grams per litre would"
+  },
+  {
+   "start": 67.05,
+   "end": 70.05,
+   "text": "also work because a decimetre cubed is also"
+  },
+  {
+   "start": 70.05,
+   "end": 75.45,
+   "text": "a litre. But we will be using kilograms per"
+  },
+  {
+   "start": 75.45,
+   "end": 82.69,
+   "text": "metre cubed. And pressure, they"
+  },
+  {
+   "start": 82.69,
+   "end": 89.21,
+   "text": "are measured in either kilopascals or atoms."
+  },
+  {
+   "start": 91.15,
+   "end": 97.59,
+   "text": "PA or, and this is just basically what this"
+  },
+  {
+   "start": 97.59,
+   "end": 102.03,
+   "text": "is, is it's the atmospheric pressure at sea"
+  },
+  {
+   "start": 102.03,
+   "end": 104.89,
+   "text": "level is one atom."
+  },
+  {
+   "start": 105.59,
+   "end": 109.33,
+   "text": "And kilopascals are another unit."
+  },
+  {
+   "start": 111.33,
+   "end": 116.81,
+   "text": "101, I believe, kilopascals is equal to one"
+  },
+  {
+   "start": 116.81,
+   "end": 121.69,
+   "text": "atmospheric pressure. Yeah."
+  },
+  {
+   "start": 124.92,
+   "end": 128.4,
+   "text": "And for IB, another good thing to know, especially"
+  },
+  {
+   "start": 128.4,
+   "end": 131.86,
+   "text": "for chemistry, is there are certain conditions"
+  },
+  {
+   "start": 131.86,
+   "end": 135.48,
+   "text": "where you will be doing your calculations."
+  },
+  {
+   "start": 136.54,
+   "end": 139.44,
+   "text": "This is standard temperature pressure conditions."
+  },
+  {
+   "start": 141.28,
+   "end": 144.12,
+   "text": "And I'm telling you this because it's pretty"
+  },
+  {
+   "start": 144.12,
+   "end": 147.7,
+   "text": "useful to know ahead of time. Especially if"
+  },
+  {
+   "start": 147.7,
+   "end": 149.98,
+   "text": "you're like grade 9 or 10 and you haven't been"
+  },
+  {
+   "start": 149.98,
+   "end": 152.64,
+   "text": "introduced to the chemistry. So standard temperature"
+  },
+  {
+   "start": 152.64,
+   "end": 155.42,
+   "text": "pressure conditions are basically a set unit"
+  },
+  {
+   "start": 155.42,
+   "end": 159.16,
+   "text": "of conditions that you often use to make your"
+  },
+  {
+   "start": 159.16,
+   "end": 162.5,
+   "text": "calculations. And what this is, is pressure"
+  },
+  {
+   "start": 162.5,
+   "end": 168.12,
+   "text": "is equal to 100 kilopascals, or if you're doing"
+  },
+  {
+   "start": 168.12,
+   "end": 174.16,
+   "text": "AP, it would be one atmospheric pressure."
+  },
+  {
+   "start": 175.4,
+   "end": 181.68,
+   "text": "And temperature is zero degrees Celsius, or"
+  },
+  {
+   "start": 181.68,
+   "end": 185.76,
+   "text": "you could say 273.15 Kelvin if you like."
+  },
+  {
+   "start": 185.76,
+   "end": 192.48,
+   "text": "And yeah, basically these are a set of conditions"
+  },
+  {
+   "start": 192.48,
+   "end": 195.18,
+   "text": "that are really useful to know ahead of time"
+  },
+  {
+   "start": 195.18,
+   "end": 200.18,
+   "text": "because you're gonna have to use it anyways"
+  },
+  {
+   "start": 200.18,
+   "end": 202.28,
+   "text": "if you're going into IB, whether it's physics"
+  },
+  {
+   "start": 202.28,
+   "end": 206.1,
+   "text": "or chem, or maybe even mainstream as well."
+  }
+ ],
+ "report": {
+  "key": "fluids__fluids_ib_ap_tips",
+  "title": "Extra: IB and AP Tips and Tricks",
+  "topicKey": "fluids",
+  "duration": 206.3786875,
+  "cues": 43,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.23463623262941838,
+  "flagged": []
+ }
+}

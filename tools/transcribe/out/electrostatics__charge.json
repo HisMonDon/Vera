@@ -1,0 +1,936 @@
+{
+ "lesson": {
+  "topicKey": "electrostatics",
+  "curriculumKey": "charge",
+  "title": "Electric Charge",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/Electrostatics/Unit%201%20Introduction%20to%20Electrostatics%20and%20Charges.mp4",
+  "source": "electrostatics.dart"
+ },
+ "segments": [
+  {
+   "start": 0.91,
+   "end": 30.89,
+   "text": "In this video, we will be looking at the basics of electrostatics. First of all, what is electrostatics? Electrostatics is the study of physics which deals with forces based off charge. Now, what is charge? Electric charge is a property of matter that causes electrical forces.",
+   "avg_logprob": -0.07792388503589938
+  },
+  {
+   "start": 30.89,
+   "end": 63.05,
+   "text": "and electrical interactions. And there are two types of charges. The first type is positive charge, the second type is negative. And there's a good chance that you've already learned this, but like charges repel, and opposite charges attract. So like charges repel, while opposite charges repel.",
+   "avg_logprob": -0.16041399136422171
+  },
+  {
+   "start": 63.05,
+   "end": 89.97,
+   "text": "Attract. If you don't know what this means, well, if you have a positively charged object, let's say a positively charged particle, going close to another positively charged object, there is going to be a force that makes them go away from each other. We'll learn more about that in the upcoming videos about Coulomb's law.",
+   "avg_logprob": -0.08765294684751614
+  },
+  {
+   "start": 91.59,
+   "end": 109.97,
+   "text": "And same thing goes with a negative charge, close with a negative charge, they repel. However, if you have a positive charge with a negative charge, there is going to be a force that brings them together, because opposite charges attract.",
+   "avg_logprob": -0.11508889411980251
+  },
+  {
+   "start": 110.97,
+   "end": 123.1,
+   "text": "The unit for charge is a coulomb, c. And this is how we basically measure the magnitude of charge.",
+   "avg_logprob": -0.1452051583797701
+  },
+  {
+   "start": 125.06,
+   "end": 138.86,
+   "text": "Now, how do charges work? Well, we're going to go into a bit of the atomic view. And this sort of relates to chemistry as well.",
+   "avg_logprob": -0.1452051583797701
+  },
+  {
+   "start": 138.86,
+   "end": 173.49,
+   "text": "Atoms contain protons, which are positively charged particles, and electrons. And in most situations, electrons are the only charges that move easily, because they're in orbit, or they're found around the electron.",
+   "avg_logprob": -0.10123251572899196
+  },
+  {
+   "start": 175.01,
+   "end": 197.32,
+   "text": "And we have a key principle that we can use. And this is called the conservation of charge. And this basically states that the total charge in a system can't be destroyed or created. It's just transferred from an object to another.",
+   "avg_logprob": -0.06419718981935428
+  },
+  {
+   "start": 197.32,
+   "end": 220.42,
+   "text": "This means that neutral charges, which are charges with a net charge of zero, will be accepting or releasing electrons. Depends on what the charged object is.",
+   "avg_logprob": -0.08976906020608214
+  },
+  {
+   "start": 222.34,
+   "end": 246.28,
+   "text": "And there are three types of ways where an object can get charged. First of all, there is charging, charging by friction. So that's when you rub two objects together.",
+   "avg_logprob": -0.09390627164393664
+  },
+  {
+   "start": 247.1,
+   "end": 268.46,
+   "text": "And when two different materials are rubbed, electrons can transfer due to different attractions of electrons. So for example, if you have rubber and fabric, one object gains electrons and becomes negatively charged, while the other loses electrons and becomes positively charged.",
+   "avg_logprob": -0.06335058793998681
+  },
+  {
+   "start": 268.46,
+   "end": 290.46,
+   "text": "And there is going to be a chart that says which material is more likely to gain or lose electrons. But this is mostly grade 9 and grade 10 science. So it might come up, but all you have to do is really know the types of charges.",
+   "avg_logprob": -0.10386919004044362
+  },
+  {
+   "start": 290.46,
+   "end": 318.76,
+   "text": "The second one is charging by contact. Charging by conduction. That's what it's called. And that's when a charged object, so plus or minus, it has to be charged, touches a neutral object, and the charge basically redistributes until both charges are the same.",
+   "avg_logprob": -0.12645218112776357
+  },
+  {
+   "start": 320.24,
+   "end": 337.8,
+   "text": "It's kind of like the same concept as heat. If you've done thermal physics or thermal chemistry before, they're going to end up, for example, when a hot object touches a cold object, they're going to end up at the same temperature in the middle. And it's the same thing for charge.",
+   "avg_logprob": -0.10512072549146764
+  },
+  {
+   "start": 337.8,
+   "end": 351.14,
+   "text": "So if we have a net positive charge here and a neutral charge here, let's say this one has a charge of like 10 coulombs, then at the end, both objects are going to end up with 5 coulombs of charge.",
+   "avg_logprob": -0.08340367454069632
+  },
+  {
+   "start": 352.1,
+   "end": 368.84,
+   "text": "Charging by induction is more, it's more, there are more steps to it. And you have probably learned this before, induction.",
+   "avg_logprob": -0.15721907932311296
+  },
+  {
+   "start": 370.46,
+   "end": 391.7,
+   "text": "It's when a charged object is brought near a non-charged object. So let's say we have a non-charged object over here, and then we bring a charged object, let's say a positive rod, towards and really close to the charged object.",
+   "avg_logprob": -0.08810980069009881
+  },
+  {
+   "start": 391.7,
+   "end": 399.84,
+   "text": "So basically, all the electrons or all the negative charges are going to be attracted to the positive charges.",
+   "avg_logprob": -0.07791350366639309
+  },
+  {
+   "start": 401.8,
+   "end": 416.4,
+   "text": "And since all the negative charges are attracted to the positive charges, basically this object behaves as a temporary positive charge. Think of it as sort of a temporary dipole.",
+   "avg_logprob": -0.07791350366639309
+  },
+  {
+   "start": 416.4,
+   "end": 434.32,
+   "text": "And the ground only sees this positive charge. So when you ground this object, for example, when you touch it, there is going to be more electrons going in because it's going to see that it's a positive charge, or the thing it sees is a positive charge.",
+   "avg_logprob": -0.07486077436074919
+  },
+  {
+   "start": 434.42,
+   "end": 444.39,
+   "text": "So when you ground it, for example, you touch it, there are going to be more electrons that come in and balance this out, but there are still these electrons here.",
+   "avg_logprob": -0.07486077436074919
+  },
+  {
+   "start": 444.39,
+   "end": 455.21,
+   "text": "So now, overall, when you remove these two, there is going to be an overall negative charge. And these are the types of chargeings.",
+   "avg_logprob": -0.10580424892325554
+  },
+  {
+   "start": 456.39,
+   "end": 466.45,
+   "text": "Now, let's talk about conductors and insulators now. So conductors are materials where electrons can move easily or freely.",
+   "avg_logprob": -0.10580424892325554
+  },
+  {
+   "start": 467.47,
+   "end": 477.95,
+   "text": "So things like metals. Metals are really good conductors. If you do chemistry, you know that it's because there's a lattice of electrons.",
+   "avg_logprob": -0.11904880304176074
+  },
+  {
+   "start": 480.99,
+   "end": 488.83,
+   "text": "And basically, extra charge spreads out over the surface that is mobile.",
+   "avg_logprob": -0.11904880304176074
+  },
+  {
+   "start": 490.55,
+   "end": 499.75,
+   "text": "Also, ionic substances that are dissolved into ions, those are also good conductors. For example, if you put salt in water.",
+   "avg_logprob": -0.09018960847692975
+  },
+  {
+   "start": 500.33,
+   "end": 511.23,
+   "text": "That's why you should never put electronics in water because although pure water is not conductive, it's almost never pure.",
+   "avg_logprob": -0.09018960847692975
+  },
+  {
+   "start": 511.23,
+   "end": 524.19,
+   "text": "There's some sort of metal or ion, for example, there are bits of zinc in water or other metals, so that's why water should not be near electronics.",
+   "avg_logprob": -0.11884637021306735
+  },
+  {
+   "start": 525.45,
+   "end": 529.25,
+   "text": "Insulators are basically the polar opposite of conductors.",
+   "avg_logprob": -0.11884637021306735
+  },
+  {
+   "start": 532.51,
+   "end": 537.17,
+   "text": "And these are materials where the electrons are really, really tightly bound.",
+   "avg_logprob": -0.11884637021306735
+  },
+  {
+   "start": 537.17,
+   "end": 542.37,
+   "text": "For example, rubber is a really, really good insulator. It's a very common one as well.",
+   "avg_logprob": -0.09370140716433525
+  },
+  {
+   "start": 542.97,
+   "end": 560.78,
+   "text": "Glass and dry wood. And these are basically two types of different materials that either conduct or not conduct electricity.",
+   "avg_logprob": -0.09370140716433525
+  },
+  {
+   "start": 560.78,
+   "end": 569.51,
+   "text": "And that's basically it for the introduction of electrostatics.",
+   "avg_logprob": -0.10355056338496023
+  },
+  {
+   "start": 571.21,
+   "end": 579.63,
+   "text": "Basically, I feel like the most important thing you need to know is this part where our charges repel and opposite charges attract.",
+   "avg_logprob": -0.10355056338496023
+  },
+  {
+   "start": 579.97,
+   "end": 590.85,
+   "text": "These are all mostly review. You should be able to be familiarized with these, but it's not gonna come up in your test that much.",
+   "avg_logprob": -0.10355056338496023
+  },
+  {
+   "start": 591.67,
+   "end": 593.01,
+   "text": "But it's still good to know.",
+   "avg_logprob": -0.1367626099994308
+  },
+  {
+   "start": 593.75,
+   "end": 599.05,
+   "text": "Thank you guys for watching, and next video we'll be exploring forces of charges in Coulomb's Law. Thank you!",
+   "avg_logprob": -0.1367626099994308
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.91,
+   "end": 4.29,
+   "text": "In this video, we will be looking at the basics"
+  },
+  {
+   "start": 4.29,
+   "end": 10.97,
+   "text": "of electrostatics. First of all, what is electrostatics?"
+  },
+  {
+   "start": 12.51,
+   "end": 16.71,
+   "text": "Electrostatics is the study of physics which"
+  },
+  {
+   "start": 16.71,
+   "end": 19.31,
+   "text": "deals with forces based off charge."
+  },
+  {
+   "start": 20.69,
+   "end": 27.83,
+   "text": "Now, what is charge? Electric charge is a property"
+  },
+  {
+   "start": 27.83,
+   "end": 30.89,
+   "text": "of matter that causes electrical forces."
+  },
+  {
+   "start": 30.89,
+   "end": 33.83,
+   "text": "and electrical interactions. And there are two"
+  },
+  {
+   "start": 33.83,
+   "end": 37.97,
+   "text": "types of charges. The first type is positive"
+  },
+  {
+   "start": 37.97,
+   "end": 42.53,
+   "text": "charge, the second type is negative."
+  },
+  {
+   "start": 43.99,
+   "end": 46.53,
+   "text": "And there's a good chance that you've already"
+  },
+  {
+   "start": 46.53,
+   "end": 50.29,
+   "text": "learned this, but like charges repel, and opposite"
+  },
+  {
+   "start": 50.29,
+   "end": 53.21,
+   "text": "charges attract."
+  },
+  {
+   "start": 54.41,
+   "end": 61.79,
+   "text": "So like charges repel, while opposite"
+  },
+  {
+   "start": 61.79,
+   "end": 64.05,
+   "text": "charges repel. Attract."
+  },
+  {
+   "start": 66.49,
+   "end": 68.97,
+   "text": "If you don't know what this means, well, if"
+  },
+  {
+   "start": 68.97,
+   "end": 72.39,
+   "text": "you have a positively charged object, let's"
+  },
+  {
+   "start": 72.39,
+   "end": 76.41,
+   "text": "say a positively charged particle, going close"
+  },
+  {
+   "start": 76.41,
+   "end": 82.11,
+   "text": "to another positively charged object, there"
+  },
+  {
+   "start": 82.11,
+   "end": 85.05,
+   "text": "is going to be a force that makes them go away"
+  },
+  {
+   "start": 85.05,
+   "end": 87.33,
+   "text": "from each other. We'll learn more about that"
+  },
+  {
+   "start": 87.33,
+   "end": 89.97,
+   "text": "in the upcoming videos about Coulomb's law."
+  },
+  {
+   "start": 91.59,
+   "end": 94.49,
+   "text": "And same thing goes with a negative charge,"
+  },
+  {
+   "start": 94.71,
+   "end": 99.19,
+   "text": "close with a negative charge, they repel."
+  },
+  {
+   "start": 100.37,
+   "end": 103.63,
+   "text": "However, if you have a positive charge with"
+  },
+  {
+   "start": 103.63,
+   "end": 105.87,
+   "text": "a negative charge, there is going to be a force"
+  },
+  {
+   "start": 105.87,
+   "end": 109.21,
+   "text": "that brings them together, because opposite"
+  },
+  {
+   "start": 109.21,
+   "end": 114.91,
+   "text": "charges attract. The unit for charge is a coulomb,"
+  },
+  {
+   "start": 115.39,
+   "end": 121.72,
+   "text": "c. And this is how we basically measure the"
+  },
+  {
+   "start": 121.72,
+   "end": 128.72,
+   "text": "magnitude of charge. Now, how do charges work?"
+  },
+  {
+   "start": 129.7,
+   "end": 134.62,
+   "text": "Well, we're going to go into a bit of the atomic"
+  },
+  {
+   "start": 134.62,
+   "end": 138.38,
+   "text": "view. And this sort of relates to chemistry"
+  },
+  {
+   "start": 138.38,
+   "end": 144.64,
+   "text": "as well. Atoms contain protons, which are positively"
+  },
+  {
+   "start": 144.64,
+   "end": 151.98,
+   "text": "charged particles, and"
+  },
+  {
+   "start": 153.32,
+   "end": 161.11,
+   "text": "electrons. And"
+  },
+  {
+   "start": 161.11,
+   "end": 165.83,
+   "text": "in most situations, electrons are the only charges"
+  },
+  {
+   "start": 165.83,
+   "end": 168.87,
+   "text": "that move easily, because they're in orbit,"
+  },
+  {
+   "start": 169.15,
+   "end": 173.49,
+   "text": "or they're found around the electron."
+  },
+  {
+   "start": 175.01,
+   "end": 180.13,
+   "text": "And we have a key principle that we can use."
+  },
+  {
+   "start": 180.89,
+   "end": 184.37,
+   "text": "And this is called the conservation of charge."
+  },
+  {
+   "start": 186.96,
+   "end": 190.48,
+   "text": "And this basically states that the total charge"
+  },
+  {
+   "start": 190.48,
+   "end": 194.04,
+   "text": "in a system can't be destroyed or created."
+  },
+  {
+   "start": 194.2,
+   "end": 197.32,
+   "text": "It's just transferred from an object to another."
+  },
+  {
+   "start": 197.32,
+   "end": 204.51,
+   "text": "This means that neutral charges, which"
+  },
+  {
+   "start": 204.51,
+   "end": 212.66,
+   "text": "are charges with a net charge of zero, will"
+  },
+  {
+   "start": 212.66,
+   "end": 217.24,
+   "text": "be accepting or releasing electrons."
+  },
+  {
+   "start": 217.78,
+   "end": 220.42,
+   "text": "Depends on what the charged object is."
+  },
+  {
+   "start": 222.34,
+   "end": 228.78,
+   "text": "And there are three types of ways where an object"
+  },
+  {
+   "start": 228.78,
+   "end": 233.48,
+   "text": "can get charged. First of all, there is charging,"
+  },
+  {
+   "start": 236.14,
+   "end": 241.6,
+   "text": "charging by friction."
+  },
+  {
+   "start": 242.66,
+   "end": 246.28,
+   "text": "So that's when you rub two objects together."
+  },
+  {
+   "start": 247.1,
+   "end": 249.52,
+   "text": "And when two different materials are rubbed,"
+  },
+  {
+   "start": 249.9,
+   "end": 253.12,
+   "text": "electrons can transfer due to different attractions"
+  },
+  {
+   "start": 253.12,
+   "end": 255.54,
+   "text": "of electrons. So for example, if you have rubber"
+  },
+  {
+   "start": 255.54,
+   "end": 262.82,
+   "text": "and fabric, one object gains electrons and becomes"
+  },
+  {
+   "start": 262.82,
+   "end": 266.9,
+   "text": "negatively charged, while the other loses electrons"
+  },
+  {
+   "start": 266.9,
+   "end": 270.54,
+   "text": "and becomes positively charged. And there is"
+  },
+  {
+   "start": 270.54,
+   "end": 275.76,
+   "text": "going to be a chart that says which material"
+  },
+  {
+   "start": 275.76,
+   "end": 278.26,
+   "text": "is more likely to gain or lose electrons."
+  },
+  {
+   "start": 279.32,
+   "end": 283.9,
+   "text": "But this is mostly grade 9 and grade 10 science."
+  },
+  {
+   "start": 284.46,
+   "end": 288.1,
+   "text": "So it might come up, but all you have to do"
+  },
+  {
+   "start": 288.1,
+   "end": 290.46,
+   "text": "is really know the types of charges."
+  },
+  {
+   "start": 290.46,
+   "end": 292.84,
+   "text": "The second one is charging by contact."
+  },
+  {
+   "start": 294.22,
+   "end": 297.06,
+   "text": "Charging by conduction."
+  },
+  {
+   "start": 297.44,
+   "end": 303.9,
+   "text": "That's what it's called. And that's when a charged"
+  },
+  {
+   "start": 303.9,
+   "end": 307.08,
+   "text": "object, so plus or minus, it has to be charged,"
+  },
+  {
+   "start": 307.8,
+   "end": 315.02,
+   "text": "touches a neutral object, and the charge basically"
+  },
+  {
+   "start": 315.02,
+   "end": 318.76,
+   "text": "redistributes until both charges are the same."
+  },
+  {
+   "start": 320.24,
+   "end": 323.28,
+   "text": "It's kind of like the same concept as heat."
+  },
+  {
+   "start": 324.08,
+   "end": 326.8,
+   "text": "If you've done thermal physics or thermal chemistry"
+  },
+  {
+   "start": 326.8,
+   "end": 329.88,
+   "text": "before, they're going to end up, for example,"
+  },
+  {
+   "start": 329.94,
+   "end": 333.1,
+   "text": "when a hot object touches a cold object, they're"
+  },
+  {
+   "start": 333.1,
+   "end": 335.62,
+   "text": "going to end up at the same temperature in the"
+  },
+  {
+   "start": 335.62,
+   "end": 337.8,
+   "text": "middle. And it's the same thing for charge."
+  },
+  {
+   "start": 337.8,
+   "end": 341.5,
+   "text": "So if we have a net positive charge here and"
+  },
+  {
+   "start": 341.5,
+   "end": 343.38,
+   "text": "a neutral charge here, let's say this one has"
+  },
+  {
+   "start": 343.38,
+   "end": 346.44,
+   "text": "a charge of like 10 coulombs, then at the end,"
+  },
+  {
+   "start": 346.7,
+   "end": 350.3,
+   "text": "both objects are going to end up with 5 coulombs"
+  },
+  {
+   "start": 350.3,
+   "end": 358.5,
+   "text": "of charge. Charging by induction is more,"
+  },
+  {
+   "start": 359.9,
+   "end": 363.68,
+   "text": "it's more, there are more steps to it."
+  },
+  {
+   "start": 364.54,
+   "end": 368.84,
+   "text": "And you have probably learned this before, induction."
+  },
+  {
+   "start": 370.46,
+   "end": 374.46,
+   "text": "It's when a charged object is brought near a"
+  },
+  {
+   "start": 374.46,
+   "end": 378.78,
+   "text": "non-charged object. So let's say we have a non-charged"
+  },
+  {
+   "start": 378.78,
+   "end": 384.84,
+   "text": "object over here, and then we bring a charged"
+  },
+  {
+   "start": 384.84,
+   "end": 390.4,
+   "text": "object, let's say a positive rod, towards and"
+  },
+  {
+   "start": 390.4,
+   "end": 392.96,
+   "text": "really close to the charged object. So basically,"
+  },
+  {
+   "start": 393.94,
+   "end": 396.1,
+   "text": "all the electrons or all the negative charges"
+  },
+  {
+   "start": 396.1,
+   "end": 399.84,
+   "text": "are going to be attracted to the positive charges."
+  },
+  {
+   "start": 401.8,
+   "end": 406.22,
+   "text": "And since all the negative charges are attracted"
+  },
+  {
+   "start": 406.22,
+   "end": 410.54,
+   "text": "to the positive charges, basically this object"
+  },
+  {
+   "start": 410.54,
+   "end": 413.18,
+   "text": "behaves as a temporary positive charge."
+  },
+  {
+   "start": 413.34,
+   "end": 416.4,
+   "text": "Think of it as sort of a temporary dipole."
+  },
+  {
+   "start": 416.4,
+   "end": 419.2,
+   "text": "And the ground only sees this positive charge."
+  },
+  {
+   "start": 419.48,
+   "end": 422.26,
+   "text": "So when you ground this object, for example,"
+  },
+  {
+   "start": 422.42,
+   "end": 426.22,
+   "text": "when you touch it, there is going to be more"
+  },
+  {
+   "start": 426.22,
+   "end": 428.6,
+   "text": "electrons going in because it's going to see"
+  },
+  {
+   "start": 428.6,
+   "end": 433.0,
+   "text": "that it's a positive charge, or the thing it"
+  },
+  {
+   "start": 433.0,
+   "end": 435.0,
+   "text": "sees is a positive charge. So when you ground"
+  },
+  {
+   "start": 435.0,
+   "end": 439.29,
+   "text": "it, for example, you touch it, there are going"
+  },
+  {
+   "start": 439.29,
+   "end": 442.23,
+   "text": "to be more electrons that come in and balance"
+  },
+  {
+   "start": 442.23,
+   "end": 444.13,
+   "text": "this out, but there are still these electrons"
+  },
+  {
+   "start": 444.13,
+   "end": 447.55,
+   "text": "here. So now, overall, when you remove these"
+  },
+  {
+   "start": 447.55,
+   "end": 451.53,
+   "text": "two, there is going to be an overall negative"
+  },
+  {
+   "start": 451.53,
+   "end": 455.21,
+   "text": "charge. And these are the types of chargeings."
+  },
+  {
+   "start": 456.39,
+   "end": 459.97,
+   "text": "Now, let's talk about conductors and insulators"
+  },
+  {
+   "start": 459.97,
+   "end": 464.51,
+   "text": "now. So conductors are materials where electrons"
+  },
+  {
+   "start": 464.51,
+   "end": 469.93,
+   "text": "can move easily or freely. So things like metals."
+  },
+  {
+   "start": 470.95,
+   "end": 473.91,
+   "text": "Metals are really good conductors. If you do"
+  },
+  {
+   "start": 473.91,
+   "end": 476.31,
+   "text": "chemistry, you know that it's because there's"
+  },
+  {
+   "start": 476.31,
+   "end": 483.51,
+   "text": "a lattice of electrons. And basically,"
+  },
+  {
+   "start": 484.73,
+   "end": 488.09,
+   "text": "extra charge spreads out over the surface that"
+  },
+  {
+   "start": 488.09,
+   "end": 494.35,
+   "text": "is mobile. Also, ionic substances that are dissolved"
+  },
+  {
+   "start": 494.35,
+   "end": 497.93,
+   "text": "into ions, those are also good conductors."
+  },
+  {
+   "start": 497.93,
+   "end": 500.57,
+   "text": "For example, if you put salt in water. That's"
+  },
+  {
+   "start": 500.57,
+   "end": 505.19,
+   "text": "why you should never put electronics in water"
+  },
+  {
+   "start": 505.19,
+   "end": 509.65,
+   "text": "because although pure water is not conductive,"
+  },
+  {
+   "start": 509.93,
+   "end": 512.73,
+   "text": "it's almost never pure. There's some sort of"
+  },
+  {
+   "start": 512.73,
+   "end": 517.11,
+   "text": "metal or ion, for example, there are bits of"
+  },
+  {
+   "start": 517.11,
+   "end": 520.93,
+   "text": "zinc in water or other metals, so that's why"
+  },
+  {
+   "start": 520.93,
+   "end": 524.19,
+   "text": "water should not be near electronics."
+  },
+  {
+   "start": 525.45,
+   "end": 528.57,
+   "text": "Insulators are basically the polar opposite"
+  },
+  {
+   "start": 528.57,
+   "end": 534.91,
+   "text": "of conductors. And these are materials where"
+  },
+  {
+   "start": 534.91,
+   "end": 537.17,
+   "text": "the electrons are really, really tightly bound."
+  },
+  {
+   "start": 537.17,
+   "end": 539.87,
+   "text": "For example, rubber is a really, really good"
+  },
+  {
+   "start": 539.87,
+   "end": 542.37,
+   "text": "insulator. It's a very common one as well."
+  },
+  {
+   "start": 542.97,
+   "end": 547.77,
+   "text": "Glass and dry wood."
+  },
+  {
+   "start": 552.01,
+   "end": 554.75,
+   "text": "And these are basically two types of different"
+  },
+  {
+   "start": 554.75,
+   "end": 560.43,
+   "text": "materials that either conduct or not conduct"
+  },
+  {
+   "start": 560.43,
+   "end": 566.11,
+   "text": "electricity. And that's basically it for the"
+  },
+  {
+   "start": 566.11,
+   "end": 569.51,
+   "text": "introduction of electrostatics."
+  },
+  {
+   "start": 571.21,
+   "end": 574.09,
+   "text": "Basically, I feel like the most important thing"
+  },
+  {
+   "start": 574.09,
+   "end": 577.89,
+   "text": "you need to know is this part where our charges"
+  },
+  {
+   "start": 577.89,
+   "end": 580.47,
+   "text": "repel and opposite charges attract. These are"
+  },
+  {
+   "start": 580.47,
+   "end": 584.11,
+   "text": "all mostly review. You should be able to be"
+  },
+  {
+   "start": 584.11,
+   "end": 587.49,
+   "text": "familiarized with these, but it's not gonna"
+  },
+  {
+   "start": 587.49,
+   "end": 590.85,
+   "text": "come up in your test that much."
+  },
+  {
+   "start": 591.67,
+   "end": 594.13,
+   "text": "But it's still good to know. Thank you guys"
+  },
+  {
+   "start": 594.13,
+   "end": 596.35,
+   "text": "for watching, and next video we'll be exploring"
+  },
+  {
+   "start": 596.35,
+   "end": 599.05,
+   "text": "forces of charges in Coulomb's Law. Thank you!"
+  }
+ ],
+ "report": {
+  "key": "electrostatics__charge",
+  "title": "Electric Charge",
+  "topicKey": "electrostatics",
+  "duration": 599.616,
+  "cues": 138,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.16041399136422171,
+  "flagged": []
+ }
+}

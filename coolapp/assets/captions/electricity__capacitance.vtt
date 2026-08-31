@@ -1,0 +1,427 @@
+WEBVTT
+NOTE Capacitance
+
+1
+00:00:00.910 --> 00:00:04.450
+In this video, we will be talking about
+capacitors.
+
+2
+00:00:05.350 --> 00:00:09.750
+A capacitor is a device that is used to
+store
+
+3
+00:00:09.750 --> 00:00:12.290
+electrical charge. In real life, it might
+look
+
+4
+00:00:12.290 --> 00:00:15.390
+like this. It's a small thing with two
+rods
+
+5
+00:00:15.390 --> 00:00:19.650
+or two plates covered by an insulator that
+looks
+
+6
+00:00:19.650 --> 00:00:22.270
+like this, but in reality it is actually
+two
+
+7
+00:00:22.270 --> 00:00:28.430
+plates. Now, unlike a battery which
+produces
+
+8
+00:00:28.430 --> 00:00:31.430
+energy through chemical reactions, a
+capacitor
+
+9
+00:00:31.430 --> 00:00:33.830
+stores energy instead.
+
+10
+00:00:35.030 --> 00:00:38.490
+And the plates are also not touching, and
+between
+
+11
+00:00:38.490 --> 00:00:42.830
+these plates is an insulating material
+called
+
+12
+00:00:42.830 --> 00:00:47.150
+a dielectric. It could be air, sometimes
+it's
+
+13
+00:00:47.150 --> 00:00:50.910
+other things such as paper is used as a
+good
+
+14
+00:00:50.910 --> 00:00:56.950
+dielectric, but basically that insulates
+between
+
+15
+00:00:56.950 --> 00:01:00.630
+the plates, and since the plates are
+separated
+
+16
+00:01:00.630 --> 00:01:03.690
+by an insulator, charges can't cross
+directly
+
+17
+00:01:03.690 --> 00:01:06.750
+from one plate to the other.
+
+18
+00:01:06.990 --> 00:01:10.470
+But for now, we don't need to know that
+much
+
+19
+00:01:10.470 --> 00:01:13.570
+about dielectrics, just know that it's
+used
+
+20
+00:01:13.570 --> 00:01:16.110
+to preserve the charge stored on each
+plate.
+
+21
+00:01:17.470 --> 00:01:22.450
+When one of these capacitors acts and
+connects
+
+22
+00:01:22.450 --> 00:01:25.930
+on a battery, initially electrons are
+pushed
+
+23
+00:01:25.930 --> 00:01:28.570
+from one plate and pulled off the other
+plate.
+
+24
+00:01:28.750 --> 00:01:33.610
+So this plate would have a net positive
+charge,
+
+25
+00:01:33.770 --> 00:01:36.750
+while this plate will pull electrons from
+it.
+
+26
+00:01:36.770 --> 00:01:38.790
+And this creates a charge.
+
+27
+00:01:39.650 --> 00:01:44.490
+And even though electrons don't cross the
+dielectric,
+
+28
+00:01:45.130 --> 00:01:47.770
+there's an electric field formed between
+the
+
+29
+00:01:47.770 --> 00:01:50.010
+plates, and that electric field is where
+the
+
+30
+00:01:50.010 --> 00:01:53.510
+energy is actually stored. The energy
+stored
+
+31
+00:01:53.510 --> 00:02:00.610
+in a capacitor is equal to E equals Cv, or
+
+32
+00:02:00.610 --> 00:02:05.870
+Q equals Cv, where Q is the charge stored,
+C
+
+33
+00:02:05.870 --> 00:02:09.890
+is the capacitance, and V is the voltage
+across
+
+34
+00:02:09.890 --> 00:02:13.790
+the capacitor. The capacitance depends
+mostly
+
+35
+00:02:13.790 --> 00:02:21.570
+on the dielectric. Basically, C equals
+epsilon
+
+36
+00:02:21.570 --> 00:02:26.210
+naught times A over D, where A is the area
+of
+
+37
+00:02:26.210 --> 00:02:29.590
+the plates, D is the distance between
+them,
+
+38
+00:02:29.930 --> 00:02:33.790
+and E is the permittivity of free space,
+so
+
+39
+00:02:33.790 --> 00:02:39.500
+it's a constant. Increasing the plate area
+basically
+
+40
+00:02:39.500 --> 00:02:42.780
+increases the capacitance, so that's why
+bigger
+
+41
+00:02:42.780 --> 00:02:46.520
+capacitors can store more charges.
+
+42
+00:02:48.830 --> 00:02:52.190
+However, how does a capacitor actually act
+in
+
+43
+00:02:52.190 --> 00:02:55.210
+a circuit? Well, when first connected to
+the
+
+44
+00:02:55.210 --> 00:02:57.550
+battery, there's obviously going to be no
+net
+
+45
+00:02:57.550 --> 00:03:00.890
+charge, so current flows and charge starts
+building
+
+46
+00:03:00.890 --> 00:03:05.010
+up. However, as a capacitor charges, the
+voltage
+
+47
+00:03:05.010 --> 00:03:10.830
+across the capacitor increases until it
+has
+
+48
+00:03:10.830 --> 00:03:14.350
+a maximum charge. And since it has a
+maximum
+
+49
+00:03:14.350 --> 00:03:19.110
+charge now, there's no voltage left in the
+series
+
+50
+00:03:19.110 --> 00:03:22.370
+circuit to actually push the electrons
+away
+
+51
+00:03:22.370 --> 00:03:25.310
+from the first capacitor. So, after a
+while,
+
+52
+00:03:25.630 --> 00:03:29.730
+there is not going to be a current.
+
+53
+00:03:30.990 --> 00:03:33.910
+So, what you'd have to know is, initially,
+after
+
+54
+00:03:33.910 --> 00:03:40.210
+the circuit starts, the capacitor acts as
+a
+
+55
+00:03:40.210 --> 00:03:43.550
+normal wire, or as a short circuit. So, a
+capacitor
+
+56
+00:03:45.310 --> 00:03:51.370
+acts like a short circuit.
+
+57
+00:03:52.790 --> 00:03:55.630
+So, basically you could ignore the
+capacitor
+
+58
+00:03:55.630 --> 00:03:59.130
+initially, it just acts like a wire.
+
+59
+00:03:59.430 --> 00:04:01.710
+However, as charge builds up, and the
+voltage
+
+60
+00:04:01.710 --> 00:04:07.450
+increases between the capacitor, so after
+a
+
+61
+00:04:07.450 --> 00:04:13.850
+while, or a period of time, there is not
+going
+
+62
+00:04:13.850 --> 00:04:18.870
+to be a current passing through the
+capacitor.
+
+63
+00:04:20.590 --> 00:04:25.530
+So, basically it acts like an open circuit
+to
+
+64
+00:04:25.530 --> 00:04:27.630
+be a current.
+
+65
+00:04:29.910 --> 00:04:34.470
+So, initially, basically you can imagine
+it
+
+66
+00:04:34.470 --> 00:04:36.810
+would just look something like this. But
+after
+
+67
+00:04:36.810 --> 00:04:41.290
+a while, you can imagine that the circuit
+looks
+
+68
+00:04:41.290 --> 00:04:47.340
+like this. And that's basically it.
+
+69
+00:04:48.400 --> 00:04:52.620
+The energy stored in an electric field is
+given
+
+70
+00:04:52.620 --> 00:04:56.260
+by a different formula, but the two main
+formulas
+
+71
+00:04:56.260 --> 00:04:58.440
+you have to know are these.
+
+72
+00:05:00.320 --> 00:05:04.580
+But the energy stored between the electric
+field
+
+73
+00:05:04.580 --> 00:05:08.340
+is E equals one over two C V squared.
+
+74
+00:05:08.920 --> 00:05:12.680
+And this is the energy that is released by
+the
+
+75
+00:05:12.680 --> 00:05:14.700
+capacitor when you discharge it.
+
+76
+00:05:17.590 --> 00:05:20.910
+Energy released through discharge.
+
+77
+00:05:25.750 --> 00:05:28.710
+So, ultimately, capacitors are things that
+store
+
+78
+00:05:28.710 --> 00:05:31.710
+charges. At first, initially, in a
+circuit,
+
+79
+00:05:32.150 --> 00:05:34.750
+it acts like a short circuit, or basically
+just
+
+80
+00:05:34.750 --> 00:05:37.350
+a wire connecting. But over time, as
+charges
+
+81
+00:05:37.350 --> 00:05:40.870
+build up, the current is going to decrease
+until
+
+82
+00:05:40.870 --> 00:05:43.530
+ultimately there is no current going
+through
+
+83
+00:05:43.530 --> 00:05:48.230
+it at all. The capacitance, or the energy
+stored,
+
+84
+00:05:48.610 --> 00:05:52.150
+depends on the area and the distance.
+
+85
+00:05:52.570 --> 00:05:54.570
+It's inversely proportional to the
+distance,
+
+86
+00:05:54.610 --> 00:05:56.750
+and it's directly proportional to the
+area.
+
+87
+00:05:58.130 --> 00:06:00.630
+And, yeah, that's basically all you need
+to
+
+88
+00:06:00.630 --> 00:06:03.030
+know about capacitors. Thank you for
+watching!

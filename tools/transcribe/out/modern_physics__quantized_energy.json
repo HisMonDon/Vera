@@ -1,0 +1,397 @@
+{
+ "lesson": {
+  "topicKey": "modern_physics",
+  "curriculumKey": "quantized_energy",
+  "title": "Quantized Energy Levels and Formulae",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/modern_physics/Unit%202%20Quantized%20Energy%20Levels%20and%20Formulae.mp4",
+  "source": "modern.dart"
+ },
+ "segments": [
+  {
+   "start": 1.94,
+   "end": 12.74,
+   "text": "Okay, we are going to continue and learn how these different energy jumps can have different effects.",
+   "avg_logprob": -0.15385539571826273
+  },
+  {
+   "start": 13.82,
+   "end": 20.36,
+   "text": "Let's say we have an atom over here. I'm not going to draw the bottom half, this would just be the nucleus.",
+   "avg_logprob": -0.15385539571826273
+  },
+  {
+   "start": 22.47,
+   "end": 33.71,
+   "text": "Over time, the charge or the pull from the protons will decrease because the distance is getting further,",
+   "avg_logprob": -0.14247714457186786
+  },
+  {
+   "start": 34.27,
+   "end": 39.37,
+   "text": "and also because of other regions such as shielding and effective nuclear charge, but that's mostly chemistry.",
+   "avg_logprob": -0.14247714457186786
+  },
+  {
+   "start": 40.23,
+   "end": 46.37,
+   "text": "So, we're just going to treat it as higher distance results in less attraction.",
+   "avg_logprob": -0.14247714457186786
+  },
+  {
+   "start": 46.37,
+   "end": 60.27,
+   "text": "So, that means that as you go out, n equals 1, 2, 3, the distance between these gets smaller and smaller until you get to infinity.",
+   "avg_logprob": -0.1351901742201003
+  },
+  {
+   "start": 61.29,
+   "end": 72.67,
+   "text": "And there isn't really an infinity shell, it just means that the electron has left the atom, or ionization energy,",
+   "avg_logprob": -0.1351901742201003
+  },
+  {
+   "start": 72.67,
+   "end": 78.09,
+   "text": "and we're not going to go too much into that, because that's chemistry.",
+   "avg_logprob": -0.11214659037724348
+  },
+  {
+   "start": 79.31,
+   "end": 95.81,
+   "text": "So, that means that when an electron jumps from energy level 1 to 2 versus when an electron jumps from energy level 2 to 3,",
+   "avg_logprob": -0.11214659037724348
+  },
+  {
+   "start": 95.91,
+   "end": 101.37,
+   "text": "the energy required for it to jump from 1 to 2 is greater because the distance is greater.",
+   "avg_logprob": -0.11214659037724348
+  },
+  {
+   "start": 102.9,
+   "end": 112.2,
+   "text": "And same thing when you're going the opposite way, when energy or a photon is emitted here,",
+   "avg_logprob": -0.11695572833220164
+  },
+  {
+   "start": 113.06,
+   "end": 121.54,
+   "text": "it's going to emit a photon with a higher wavelength, or less energy, than if an electron jumps from 2 to 1.",
+   "avg_logprob": -0.11695572833220164
+  },
+  {
+   "start": 122.38,
+   "end": 125.44,
+   "text": "And that's basically convergence.",
+   "avg_logprob": -0.11695572833220164
+  },
+  {
+   "start": 129.59,
+   "end": 138.31,
+   "text": "Another formula you need to know is f equals c over lambda, the speed of light over the wavelength.",
+   "avg_logprob": -0.10637570407292614
+  },
+  {
+   "start": 140.01,
+   "end": 146.23,
+   "text": "And these two formulas are the main things you need to know for this unit.",
+   "avg_logprob": -0.10637570407292614
+  },
+  {
+   "start": 147.29,
+   "end": 156.97,
+   "text": "And when you combine them and derive them, you also get e equals h times f, which you could use, it's also useful.",
+   "avg_logprob": -0.10637570407292614
+  },
+  {
+   "start": 156.97,
+   "end": 160.03,
+   "text": "But just know these two and you'll be all set.",
+   "avg_logprob": -0.10141596773214508
+  },
+  {
+   "start": 162.23,
+   "end": 172.91,
+   "text": "Yeah, that's basically all for blackbody radiation and how atoms or materials can absorb and emit energy.",
+   "avg_logprob": -0.10141596773214508
+  },
+  {
+   "start": 173.71,
+   "end": 183.05,
+   "text": "Furthermore, the wavelength of the energy characterizes what type of radiation it is.",
+   "avg_logprob": -0.10141596773214508
+  },
+  {
+   "start": 183.05,
+   "end": 193.19,
+   "text": "For example, infrared radiation typically has a lower wavelength.",
+   "avg_logprob": -0.13064364569131717
+  },
+  {
+   "start": 195.39,
+   "end": 209.66,
+   "text": "And UV radiation typically has a higher wavelength and visible is in the middle, with red being the lowest and violet being the highest.",
+   "avg_logprob": -0.13064364569131717
+  },
+  {
+   "start": 210.9,
+   "end": 219.62,
+   "text": "And yeah, that's a bit about the electromagnetic spectrum and how materials can emit and absorb radiation.",
+   "avg_logprob": -0.08625091663722334
+  },
+  {
+   "start": 220.3,
+   "end": 220.8,
+   "text": "Thanks for watching!",
+   "avg_logprob": -0.08625091663722334
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.94,
+   "end": 7.34,
+   "text": "Okay, we are going to continue and learn how"
+  },
+  {
+   "start": 7.34,
+   "end": 12.28,
+   "text": "these different energy jumps can have different"
+  },
+  {
+   "start": 12.28,
+   "end": 16.68,
+   "text": "effects. Let's say we have an atom over here."
+  },
+  {
+   "start": 17.0,
+   "end": 18.48,
+   "text": "I'm not going to draw the bottom half, this"
+  },
+  {
+   "start": 18.48,
+   "end": 24.71,
+   "text": "would just be the nucleus. Over time, the charge"
+  },
+  {
+   "start": 24.71,
+   "end": 30.61,
+   "text": "or the pull from the protons will decrease because"
+  },
+  {
+   "start": 30.61,
+   "end": 35.23,
+   "text": "the distance is getting further, and also because"
+  },
+  {
+   "start": 35.23,
+   "end": 37.53,
+   "text": "of other regions such as shielding and effective"
+  },
+  {
+   "start": 37.53,
+   "end": 39.37,
+   "text": "nuclear charge, but that's mostly chemistry."
+  },
+  {
+   "start": 40.23,
+   "end": 43.45,
+   "text": "So, we're just going to treat it as higher distance"
+  },
+  {
+   "start": 43.45,
+   "end": 46.37,
+   "text": "results in less attraction."
+  },
+  {
+   "start": 46.37,
+   "end": 51.03,
+   "text": "So, that means that as you go out, n equals"
+  },
+  {
+   "start": 51.03,
+   "end": 55.69,
+   "text": "1, 2, 3, the distance between these gets smaller"
+  },
+  {
+   "start": 55.69,
+   "end": 60.27,
+   "text": "and smaller until you get to infinity."
+  },
+  {
+   "start": 61.29,
+   "end": 65.97,
+   "text": "And there isn't really an infinity shell, it"
+  },
+  {
+   "start": 65.97,
+   "end": 71.49,
+   "text": "just means that the electron has left the atom,"
+  },
+  {
+   "start": 71.67,
+   "end": 73.53,
+   "text": "or ionization energy, and we're not going to"
+  },
+  {
+   "start": 73.53,
+   "end": 78.09,
+   "text": "go too much into that, because that's chemistry."
+  },
+  {
+   "start": 79.31,
+   "end": 88.81,
+   "text": "So, that means that when an electron jumps from"
+  },
+  {
+   "start": 88.81,
+   "end": 92.77,
+   "text": "energy level 1 to 2 versus when an electron"
+  },
+  {
+   "start": 92.77,
+   "end": 97.69,
+   "text": "jumps from energy level 2 to 3, the energy required"
+  },
+  {
+   "start": 97.69,
+   "end": 100.23,
+   "text": "for it to jump from 1 to 2 is greater because"
+  },
+  {
+   "start": 100.23,
+   "end": 106.06,
+   "text": "the distance is greater. And same thing when"
+  },
+  {
+   "start": 106.06,
+   "end": 109.34,
+   "text": "you're going the opposite way, when energy or"
+  },
+  {
+   "start": 109.34,
+   "end": 113.78,
+   "text": "a photon is emitted here, it's going to emit"
+  },
+  {
+   "start": 113.78,
+   "end": 117.22,
+   "text": "a photon with a higher wavelength, or less energy,"
+  },
+  {
+   "start": 117.62,
+   "end": 121.54,
+   "text": "than if an electron jumps from 2 to 1."
+  },
+  {
+   "start": 122.38,
+   "end": 125.44,
+   "text": "And that's basically convergence."
+  },
+  {
+   "start": 129.59,
+   "end": 133.85,
+   "text": "Another formula you need to know is f equals"
+  },
+  {
+   "start": 133.85,
+   "end": 138.31,
+   "text": "c over lambda, the speed of light over the wavelength."
+  },
+  {
+   "start": 140.01,
+   "end": 144.99,
+   "text": "And these two formulas are the main things you"
+  },
+  {
+   "start": 144.99,
+   "end": 148.37,
+   "text": "need to know for this unit. And when you combine"
+  },
+  {
+   "start": 148.37,
+   "end": 151.73,
+   "text": "them and derive them, you also get e equals"
+  },
+  {
+   "start": 151.73,
+   "end": 156.97,
+   "text": "h times f, which you could use, it's also useful."
+  },
+  {
+   "start": 156.97,
+   "end": 160.03,
+   "text": "But just know these two and you'll be all set."
+  },
+  {
+   "start": 162.23,
+   "end": 166.29,
+   "text": "Yeah, that's basically all for blackbody radiation"
+  },
+  {
+   "start": 166.29,
+   "end": 172.19,
+   "text": "and how atoms or materials can absorb and emit"
+  },
+  {
+   "start": 172.19,
+   "end": 178.11,
+   "text": "energy. Furthermore, the wavelength of the energy"
+  },
+  {
+   "start": 178.11,
+   "end": 183.05,
+   "text": "characterizes what type of radiation it is."
+  },
+  {
+   "start": 183.05,
+   "end": 187.03,
+   "text": "For example, infrared radiation typically has"
+  },
+  {
+   "start": 187.03,
+   "end": 193.19,
+   "text": "a lower wavelength."
+  },
+  {
+   "start": 195.39,
+   "end": 199.65,
+   "text": "And UV radiation typically has a higher wavelength"
+  },
+  {
+   "start": 201.6,
+   "end": 205.64,
+   "text": "and visible is in the middle, with red being"
+  },
+  {
+   "start": 205.64,
+   "end": 209.66,
+   "text": "the lowest and violet being the highest."
+  },
+  {
+   "start": 210.9,
+   "end": 214.48,
+   "text": "And yeah, that's a bit about the electromagnetic"
+  },
+  {
+   "start": 214.48,
+   "end": 219.28,
+   "text": "spectrum and how materials can emit and absorb"
+  },
+  {
+   "start": 219.28,
+   "end": 220.8,
+   "text": "radiation. Thanks for watching!"
+  }
+ ],
+ "report": {
+  "key": "modern_physics__quantized_energy",
+  "title": "Quantized Energy Levels and Formulae",
+  "topicKey": "modern_physics",
+  "duration": 221.184,
+  "cues": 47,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.15385539571826273,
+  "flagged": []
+ }
+}

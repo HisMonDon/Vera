@@ -305,7 +305,7 @@ class TopicWidgets {
           ),
         ),
         onPressed: () {
-          globals.courseTitle = '';
+          globals.exitCourse();
           Navigator.of(context).pop();
         },
       ),

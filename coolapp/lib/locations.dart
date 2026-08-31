@@ -1,6 +1,7 @@
 import 'package:beamer/beamer.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/views/pages/videos/lesson_summary_content.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/topic_registry.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/video_catalog.dart';
 import 'package:coolapp/views/pages/videos/summary_page.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
@@ -67,7 +68,11 @@ class HomeLocation extends BeamLocation<BeamState> {
           break;
         }
       }
-      topicTitle = (entry?['videoUnit'] as String?) ?? '';
+      // Was `entry['videoUnit']`, a free-text field that drifted from every
+      // other surface (it read 'Oscillations', a name used nowhere else).
+      topicTitle = TopicRegistry.nameOf(
+        (entry?['topicKey'] as String?) ?? '',
+      );
     } else {
       entry = VideoCatalog.resolve(topicKey, curriculumKey);
       topicTitle = VideoCatalog.topicTitle(topicKey);
@@ -83,12 +88,23 @@ class HomeLocation extends BeamLocation<BeamState> {
     }
     final videoEntry = entry;
 
+    // The featured-video list uses its own curriculum keys, so resolve the real
+    // lesson through the shared video URL to find that lesson's captions.
+    String captionTopicKey = topicKey;
+    String captionCurriculumKey = curriculumKey;
+    if (topicKey == 'video_of_the_day') {
+      final located =
+          VideoCatalog.locate((videoEntry['videoLink'] as String?) ?? '');
+      captionTopicKey = located?.topicKey ?? '';
+      captionCurriculumKey = located?.curriculumKey ?? '';
+    }
+
     globals.videoLink = (videoEntry['videoLink'] as String?) ?? '';
     globals.unitTitle = (videoEntry['title'] as String?) ??
         (videoEntry['videoTitle'] as String?) ??
         '';
     globals.topicTitle = topicTitle;
-    globals.courseTitle = '';
+    globals.exitCourse();
     globals.nextVideoTitle = (nextEntry?['title'] as String?) ?? 'last_one';
     final summary = LessonSummaryContent.fromVideo(
       topicKey: topicKey,
@@ -101,7 +117,10 @@ class HomeLocation extends BeamLocation<BeamState> {
       ),
       title: globals.unitTitle,
       child: showPlayer
-          ? const VideoPlayerScreen()
+          ? VideoPlayerScreen(
+              topicKey: captionTopicKey,
+              curriculumKey: captionCurriculumKey,
+            )
           : Builder(
               builder: (context) => SummaryPage(
                 lessonTitle: globals.unitTitle,

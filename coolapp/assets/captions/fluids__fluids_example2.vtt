@@ -1,0 +1,311 @@
+WEBVTT
+NOTE Fluid Statics and Dynamics Examples 2
+
+1
+00:00:00.500 --> 00:00:03.520
+Over here we have the question, a venturi
+tube
+
+2
+00:00:03.520 --> 00:00:06.220
+has a pressure difference of 15,000
+pascals.
+
+3
+00:00:06.700 --> 00:00:09.400
+The entrance radius is 3 cm, while the
+exit
+
+4
+00:00:09.400 --> 00:00:12.920
+radius is 1 cm. What are the entrance
+velocity,
+
+5
+00:00:13.140 --> 00:00:15.500
+exit velocity, and flow rate if the fluid
+is
+
+6
+00:00:15.500 --> 00:00:19.060
+gasoline, which has a density of 700 kg
+per
+
+7
+00:00:19.060 --> 00:00:23.280
+m3? So, first of all we know that this is
+a
+
+8
+00:00:23.280 --> 00:00:26.180
+fluid question, so we would start off by
+writing
+
+9
+00:00:26.180 --> 00:00:40.940
+the Bernoulli's equation. Now after
+
+10
+00:00:40.940 --> 00:00:44.680
+we do this, we realize that our question
+involves
+
+11
+00:00:44.680 --> 00:00:48.780
+a venturi tube, which basically means that
+the
+
+12
+00:00:48.780 --> 00:00:52.040
+y value doesn't change. Since the y value
+doesn't
+
+13
+00:00:52.040 --> 00:00:54.200
+change, we can cancel out the terms that
+involve
+
+14
+00:00:54.200 --> 00:00:57.120
+y. So we can cancel out these two terms,
+and
+
+15
+00:00:57.120 --> 00:01:03.540
+what we're left with is p1 plus 1 over 2
+pv1
+
+16
+00:01:03.540 --> 00:01:08.880
+squared equals p2 plus 1 over 2 pv2
+squared.
+
+17
+00:01:10.180 --> 00:01:13.440
+Now, the question also states that the
+pressure
+
+18
+00:01:13.440 --> 00:01:17.980
+difference is 15,000, so p1 minus p2 is
+15,000.
+
+19
+00:01:18.060 --> 00:01:21.040
+So we want to isolate p1 minus p2.
+
+20
+00:01:21.900 --> 00:01:25.240
+We move p2 to the other side, and we move
+this
+
+21
+00:01:25.240 --> 00:01:31.160
+thing to this side. So, 1 over 2 rho v2
+squared
+
+22
+00:01:31.160 --> 00:01:34.200
+minus 1 over 2 rho v1 squared.
+
+23
+00:01:34.820 --> 00:01:40.190
+This would be 15,000 equals, you can
+factor
+
+24
+00:01:40.190 --> 00:01:45.610
+out of 1 over 2 rho, 1 over 2 rho v2
+squared
+
+25
+00:01:45.610 --> 00:01:47.630
+minus v1 squared.
+
+26
+00:01:47.630 --> 00:01:52.550
+We know rho is 700, so 1 over 2 rho would
+be
+
+27
+00:01:52.550 --> 00:02:05.850
+350. Dividing that by this, we get 300
+
+28
+00:02:05.850 --> 00:02:09.970
+over 7 equals v2 squared minus v1 squared.
+
+29
+00:02:11.410 --> 00:02:15.490
+Now, what we have to do from here is,
+since
+
+30
+00:02:15.490 --> 00:02:20.390
+we don't know v1 or v2, but we do know the
+entrance
+
+31
+00:02:20.390 --> 00:02:23.050
+radius and the exit radius, that means
+that
+
+32
+00:02:23.050 --> 00:02:25.850
+we should use the continuity equation,
+which
+
+33
+00:02:25.850 --> 00:02:30.190
+basically states that the rate is
+constant.
+
+34
+00:02:31.270 --> 00:02:36.530
+The rate would be v1 times a1 equals v2
+times
+
+35
+00:02:36.530 --> 00:02:43.520
+a2. So, we know a1 and a2 because we know
+the
+
+36
+00:02:43.520 --> 00:02:48.220
+radius. a1 would be pi times 3 squared,
+which
+
+37
+00:02:48.220 --> 00:02:55.390
+would be equal to 9 pi, equals v2 times a2
+would
+
+38
+00:02:55.390 --> 00:02:58.810
+be pi times 1 squared, which would be just
+pi
+
+39
+00:02:58.810 --> 00:03:03.250
+times pi. So, cancelling out the pis, we
+get
+
+40
+00:03:03.250 --> 00:03:06.250
+9 times v1 equals v2.
+
+41
+00:03:07.090 --> 00:03:11.130
+Now, since we have two equations, we can
+easily
+
+42
+00:03:11.130 --> 00:03:14.450
+solve for a variable.
+
+43
+00:03:15.150 --> 00:03:19.270
+We can plug in v2 equals 9 v1.
+
+44
+00:03:19.330 --> 00:03:23.490
+We can substitute that into here. So, 300
+over
+
+45
+00:03:23.490 --> 00:03:26.130
+7 equals 2.
+
+46
+00:03:29.760 --> 00:03:35.200
+v2 would be equal to 9 v1 squared minus v1
+squared.
+
+47
+00:03:35.200 --> 00:03:42.500
+300 over 7 equals 81 v1 squared minus v1
+
+48
+00:03:42.500 --> 00:03:48.810
+squared. 300 over 7 equals 80 v1 squared.
+
+49
+00:03:50.040 --> 00:03:56.920
+And, when we solve for v1, we would get v1
+equals
+
+50
+00:03:56.920 --> 00:04:01.800
+0.73 metres per second.
+
+51
+00:04:03.320 --> 00:04:05.840
+Now that we have v1, everything else
+clicks
+
+52
+00:04:05.840 --> 00:04:09.600
+into place. We know that 9 times v1 equals
+v2,
+
+53
+00:04:09.600 --> 00:04:13.660
+so that means v2 equals 9 v1, which is
+equal
+
+54
+00:04:13.660 --> 00:04:18.460
+to 9 times 0.73. And, we get v2 would be
+equal
+
+55
+00:04:18.460 --> 00:04:25.510
+to 6.59 metres
+
+56
+00:04:25.510 --> 00:04:29.630
+per second. Now, all that's left for us to
+calculate
+
+57
+00:04:29.630 --> 00:04:32.310
+from the question is it asks for the flow
+rate.
+
+58
+00:04:32.310 --> 00:04:35.070
+The flow rate can be calculated using any
+one.
+
+59
+00:04:35.310 --> 00:04:40.350
+Let's just use v2. So, rate would be equal
+to
+
+60
+00:04:40.350 --> 00:04:44.030
+v2 times a2, which is the area.
+
+61
+00:04:45.150 --> 00:04:49.350
+We know v2 is 6.59, and a2 would be equal
+to
+
+62
+00:04:49.350 --> 00:04:52.270
+pi times radius squared. And, since radius
+is
+
+63
+00:04:52.270 --> 00:04:54.910
+just 1, that would just be equal to pi.
+So,
+
+64
+00:04:55.230 --> 00:05:01.990
+the rate would ultimately be 20.69 metres
+cubed
+
+65
+00:05:01.990 --> 00:05:02.670
+per second.

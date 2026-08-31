@@ -1,0 +1,723 @@
+{
+ "lesson": {
+  "topicKey": "harmonics",
+  "curriculumKey": "springs_hookes",
+  "title": "Springs and Hookes Law",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%202%20Springs%20and%20Hookes%20Law.mp4",
+  "source": "harmonics.dart"
+ },
+ "segments": [
+  {
+   "start": 0.72,
+   "end": 19.9,
+   "text": "In this video, we will be introduced to Hooke's law and how oscillations can happen in springs. Next video, we'll be further analyzing this through energy diagrams and how potential energy can alternate with kinetic energy. But let's focus on this lesson first.",
+   "avg_logprob": -0.09242172214117918
+  },
+  {
+   "start": 20.78,
+   "end": 42.35,
+   "text": "First of all, let's say we have a spring and it is stretched by a distance of x metres. So if the spring was at rest, let's say it would look like this. Let's do it like that.",
+   "avg_logprob": -0.12994885623455046
+  },
+  {
+   "start": 43.23,
+   "end": 71.81,
+   "text": "Now, when the spring is stretched by a distance of x, it's going to apply a force on the object that is attached to the string. And this force is called the restoring force. And it's the force applied on an object that tries to make the spring go back to equilibrium or its resting position.",
+   "avg_logprob": -0.08954651258660085
+  },
+  {
+   "start": 72.35,
+   "end": 100.1,
+   "text": "And equilibrium refers to that. This force is given as force is negative kx, where x is the distance travelled or the distance stretched by the spring, and k is the spring constant.",
+   "avg_logprob": -0.15687512677340282
+  },
+  {
+   "start": 101.82,
+   "end": 112.56,
+   "text": "Since the force is a vector, we know it's negative because x, if it stretches in the positive direction over here, the force is going to be applied the other way.",
+   "avg_logprob": -0.08266620989888906
+  },
+  {
+   "start": 112.56,
+   "end": 135.54,
+   "text": "Now, k is the spring constant, and basically it's a numerical value of how stiff the spring is. And usually k is given to you in these types of questions. If k is not given to you, if it doesn't ask you to solve k, you probably won't be needing this formula.",
+   "avg_logprob": -0.13749134359937726
+  },
+  {
+   "start": 137.7,
+   "end": 144.64,
+   "text": "Negative kx, I kind of rewrote that, but that's basically this equation.",
+   "avg_logprob": -0.12364859856776338
+  },
+  {
+   "start": 146.06,
+   "end": 165.63,
+   "text": "Now, the same thing can also happen when the spring is compressed. Let's say it's compressed by a distance of y now. So we're going to put this down, and let's call this y.",
+   "avg_logprob": -0.12364859856776338
+  },
+  {
+   "start": 168.35,
+   "end": 191.67,
+   "text": "Now, let's try to draw a free body diagram on this box. There is going to be gravity and normal force, fN, fG, where normal force is perpendicular to the surface, and also there is going to be the restoring force, fr.",
+   "avg_logprob": -0.14639296657160708
+  },
+  {
+   "start": 194.29,
+   "end": 209.87,
+   "text": "Now, in a lot of these questions, when it's oscillating, there will not be friction. But if we say something like the box is going to be launched, then friction might be in this problem.",
+   "avg_logprob": -0.09126013739311949
+  },
+  {
+   "start": 209.87,
+   "end": 219.73,
+   "text": "So, if it's not moving, let's say it's released from rest, the initial type of friction will be static friction because it's not moving, so fstatic.",
+   "avg_logprob": -0.08134543142564919
+  },
+  {
+   "start": 220.39,
+   "end": 235.73,
+   "text": "However, if we're drawing the free body diagram while it's in motion, which a lot of the times we have to do because we have to calculate kinematics, then we would be using the kinetic friction and using the kinetic friction coefficient.",
+   "avg_logprob": -0.08134543142564919
+  },
+  {
+   "start": 236.66,
+   "end": 242.77,
+   "text": "And that's basically the forces exerted on this box, or this object.",
+   "avg_logprob": -0.10977470520883799
+  },
+  {
+   "start": 245.37,
+   "end": 253.23,
+   "text": "Now, energy continuously changes form, and we're going to learn that in the next video.",
+   "avg_logprob": -0.10977470520883799
+  },
+  {
+   "start": 254.09,
+   "end": 264.81,
+   "text": "For a mass-spring system, though, we know that for a pendulum, the period is 2 pi root L over G.",
+   "avg_logprob": -0.108858497813344
+  },
+  {
+   "start": 265.81,
+   "end": 280.17,
+   "text": "In this case, it's quite the same thing, but with a bit of variable changes. So the period of a spring is equal to 2 pi root M over k.",
+   "avg_logprob": -0.108858497813344
+  },
+  {
+   "start": 281.19,
+   "end": 287.17,
+   "text": "So, as you notice, there are some differences between this new period and the previous period.",
+   "avg_logprob": -0.09161737051945698
+  },
+  {
+   "start": 287.91,
+   "end": 300.09,
+   "text": "Now, this period depends on the mass of the object. A heavier object would have a larger time for it to oscillate because the period would be larger.",
+   "avg_logprob": -0.09161737051945698
+  },
+  {
+   "start": 300.93,
+   "end": 309.27,
+   "text": "And the stiffness, or the spring constant, is also a factor that comes into play for a period.",
+   "avg_logprob": -0.09161737051945698
+  },
+  {
+   "start": 312.51,
+   "end": 317.91,
+   "text": "And you could also notice that period doesn't depend on amplitude.",
+   "avg_logprob": -0.10290659651640922
+  },
+  {
+   "start": 320.23,
+   "end": 334.77,
+   "text": "So, in real systems, friction and air resistance are present. Otherwise, when you pull a spring, it's just going to keep on going until a net external force is applied to it, Newton's law.",
+   "avg_logprob": -0.10290659651640922
+  },
+  {
+   "start": 334.77,
+   "end": 347.12,
+   "text": "So, this basically causes oscillations that have an amplitude that decreases over time, and that's called damped oscillations.",
+   "avg_logprob": -0.0899699618076456
+  },
+  {
+   "start": 347.12,
+   "end": 368.46,
+   "text": "And this is present in every experimental or every real-life case, where basically amplitude decreases over time due to friction and air resistance.",
+   "avg_logprob": -0.18885009711788547
+  },
+  {
+   "start": 377.4,
+   "end": 395.92,
+   "text": "And it's present in real life. And over time, if damping is large enough, this will stop oscillations completely.",
+   "avg_logprob": -0.11554877062638601
+  },
+  {
+   "start": 396.76,
+   "end": 404.92,
+   "text": "So, the two formulas we learned today that will probably be given on your formula sheet if you're doing IB or AP are",
+   "avg_logprob": -0.1127154066644866
+  },
+  {
+   "start": 404.92,
+   "end": 426.42,
+   "text": "T of a spring is 2 pi root m over k, and the restoring force, or the force of a spring, is equal to negative spring constant and x, where k is the spring constant or the stiffness, and x is the distance displaced.",
+   "avg_logprob": -0.13619202347817244
+  },
+  {
+   "start": 426.42,
+   "end": 456.4,
+   "text": "Next video, we will be looking at some examples of this, and we are going to be introducing how we can relate energy to equilibrium, because if you think about it, when you oscillate it, at this point, there is going to be potential energy at max, but at the middle, when it's at equilibrium and it's still going this way, kinetic energy is at max, which means it's the fastest at equilibrium when you oscillate it.",
+   "avg_logprob": -0.08638700004667044
+  },
+  {
+   "start": 456.42,
+   "end": 463.8,
+   "text": "And we will be looking into that, and I'll be explaining that more in depth in the next video.",
+   "avg_logprob": -0.09241220253435048
+  },
+  {
+   "start": 464.5,
+   "end": 470.02,
+   "text": "So, thank you for listening, and I hope you enjoyed this video. Bye!",
+   "avg_logprob": -0.09241220253435048
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.72,
+   "end": 3.58,
+   "text": "In this video, we will be introduced to Hooke's"
+  },
+  {
+   "start": 3.58,
+   "end": 6.88,
+   "text": "law and how oscillations can happen in springs."
+  },
+  {
+   "start": 8.02,
+   "end": 10.4,
+   "text": "Next video, we'll be further analyzing this"
+  },
+  {
+   "start": 10.4,
+   "end": 14.42,
+   "text": "through energy diagrams and how potential energy"
+  },
+  {
+   "start": 14.42,
+   "end": 17.42,
+   "text": "can alternate with kinetic energy."
+  },
+  {
+   "start": 17.98,
+   "end": 21.34,
+   "text": "But let's focus on this lesson first. First"
+  },
+  {
+   "start": 21.34,
+   "end": 28.34,
+   "text": "of all, let's say we have a spring and it"
+  },
+  {
+   "start": 28.34,
+   "end": 34.0,
+   "text": "is stretched by a distance of x metres."
+  },
+  {
+   "start": 34.88,
+   "end": 37.4,
+   "text": "So if the spring was at rest, let's say it would"
+  },
+  {
+   "start": 37.4,
+   "end": 42.35,
+   "text": "look like this. Let's do it like that."
+  },
+  {
+   "start": 43.23,
+   "end": 47.35,
+   "text": "Now, when the spring is stretched by a distance"
+  },
+  {
+   "start": 47.35,
+   "end": 53.81,
+   "text": "of x, it's going to apply a force on the object"
+  },
+  {
+   "start": 53.81,
+   "end": 57.69,
+   "text": "that is attached to the string. And this force"
+  },
+  {
+   "start": 57.69,
+   "end": 61.31,
+   "text": "is called the restoring force. And it's the"
+  },
+  {
+   "start": 61.31,
+   "end": 66.73,
+   "text": "force applied on an object that tries to make"
+  },
+  {
+   "start": 66.73,
+   "end": 71.31,
+   "text": "the spring go back to equilibrium or its resting"
+  },
+  {
+   "start": 71.31,
+   "end": 76.43,
+   "text": "position. And equilibrium refers to that."
+  },
+  {
+   "start": 77.45,
+   "end": 85.2,
+   "text": "This force is given as"
+  },
+  {
+   "start": 85.2,
+   "end": 91.76,
+   "text": "force is negative kx, where x is the distance"
+  },
+  {
+   "start": 91.76,
+   "end": 96.4,
+   "text": "travelled or the distance stretched by the spring,"
+  },
+  {
+   "start": 96.8,
+   "end": 100.1,
+   "text": "and k is the spring constant."
+  },
+  {
+   "start": 101.82,
+   "end": 105.68,
+   "text": "Since the force is a vector, we know it's negative"
+  },
+  {
+   "start": 105.68,
+   "end": 109.02,
+   "text": "because x, if it stretches in the positive direction"
+  },
+  {
+   "start": 109.02,
+   "end": 111.56,
+   "text": "over here, the force is going to be applied"
+  },
+  {
+   "start": 111.56,
+   "end": 115.86,
+   "text": "the other way. Now, k is the spring constant,"
+  },
+  {
+   "start": 116.18,
+   "end": 119.1,
+   "text": "and basically it's a numerical value of how"
+  },
+  {
+   "start": 119.1,
+   "end": 124.68,
+   "text": "stiff the spring is."
+  },
+  {
+   "start": 125.02,
+   "end": 127.96,
+   "text": "And usually k is given to you in these types"
+  },
+  {
+   "start": 127.96,
+   "end": 131.72,
+   "text": "of questions. If k is not given to you, if it"
+  },
+  {
+   "start": 131.72,
+   "end": 134.24,
+   "text": "doesn't ask you to solve k, you probably won't"
+  },
+  {
+   "start": 134.24,
+   "end": 139.96,
+   "text": "be needing this formula. Negative kx, I kind"
+  },
+  {
+   "start": 139.96,
+   "end": 144.64,
+   "text": "of rewrote that, but that's basically this equation."
+  },
+  {
+   "start": 146.06,
+   "end": 153.47,
+   "text": "Now, the same thing can also happen when the"
+  },
+  {
+   "start": 153.47,
+   "end": 157.97,
+   "text": "spring is compressed. Let's say it's compressed"
+  },
+  {
+   "start": 157.97,
+   "end": 161.39,
+   "text": "by a distance of y now."
+  },
+  {
+   "start": 162.91,
+   "end": 165.19,
+   "text": "So we're going to put this down, and let's call"
+  },
+  {
+   "start": 165.19,
+   "end": 171.53,
+   "text": "this y. Now, let's try to draw a free-body diagram"
+  },
+  {
+   "start": 171.53,
+   "end": 175.83,
+   "text": "on this box. There is going to be gravity and"
+  },
+  {
+   "start": 175.83,
+   "end": 180.71,
+   "text": "normal force, fN, fG, where normal force is"
+  },
+  {
+   "start": 180.71,
+   "end": 184.55,
+   "text": "perpendicular to the surface, and also there"
+  },
+  {
+   "start": 184.55,
+   "end": 191.67,
+   "text": "is going to be the restoring force, fr."
+  },
+  {
+   "start": 194.29,
+   "end": 198.59,
+   "text": "Now, in a lot of these questions, when it's"
+  },
+  {
+   "start": 198.59,
+   "end": 201.11,
+   "text": "oscillating, there will not be friction. But"
+  },
+  {
+   "start": 201.11,
+   "end": 206.01,
+   "text": "if we say something like the box is going to"
+  },
+  {
+   "start": 206.01,
+   "end": 209.53,
+   "text": "be launched, then friction might be in this"
+  },
+  {
+   "start": 209.53,
+   "end": 212.73,
+   "text": "problem. So, if it's not moving, let's say it's"
+  },
+  {
+   "start": 212.73,
+   "end": 215.61,
+   "text": "released from rest, the initial type of friction"
+  },
+  {
+   "start": 215.61,
+   "end": 218.43,
+   "text": "will be static friction because it's not moving,"
+  },
+  {
+   "start": 218.75,
+   "end": 222.39,
+   "text": "so fstatic. However, if we're drawing the free"
+  },
+  {
+   "start": 222.39,
+   "end": 226.47,
+   "text": "body diagram while it's in motion, which a lot"
+  },
+  {
+   "start": 226.47,
+   "end": 228.41,
+   "text": "of the times we have to do because we have to"
+  },
+  {
+   "start": 228.41,
+   "end": 231.77,
+   "text": "calculate kinematics, then we would be using"
+  },
+  {
+   "start": 231.77,
+   "end": 235.23,
+   "text": "the kinetic friction and using the kinetic friction"
+  },
+  {
+   "start": 235.23,
+   "end": 238.79,
+   "text": "coefficient. And that's basically the forces"
+  },
+  {
+   "start": 238.79,
+   "end": 242.77,
+   "text": "exerted on this box, or this object."
+  },
+  {
+   "start": 245.37,
+   "end": 250.71,
+   "text": "Now, energy continuously changes form, and we're"
+  },
+  {
+   "start": 250.71,
+   "end": 253.23,
+   "text": "going to learn that in the next video."
+  },
+  {
+   "start": 254.09,
+   "end": 259.09,
+   "text": "For a mass-spring system, though, we know that"
+  },
+  {
+   "start": 259.09,
+   "end": 264.59,
+   "text": "for a pendulum, the period is 2 pi root L over"
+  },
+  {
+   "start": 264.59,
+   "end": 269.11,
+   "text": "G. In this case, it's quite the same thing,"
+  },
+  {
+   "start": 269.11,
+   "end": 272.31,
+   "text": "but with a bit of variable changes. So the period"
+  },
+  {
+   "start": 272.31,
+   "end": 279.65,
+   "text": "of a spring is equal to 2 pi root M over"
+  },
+  {
+   "start": 279.65,
+   "end": 284.25,
+   "text": "k. So, as you notice, there are some differences"
+  },
+  {
+   "start": 284.25,
+   "end": 287.17,
+   "text": "between this new period and the previous period."
+  },
+  {
+   "start": 287.91,
+   "end": 291.13,
+   "text": "Now, this period depends on the mass of the"
+  },
+  {
+   "start": 291.13,
+   "end": 295.15,
+   "text": "object. A heavier object would have a larger"
+  },
+  {
+   "start": 295.15,
+   "end": 299.35,
+   "text": "time for it to oscillate because the period"
+  },
+  {
+   "start": 299.35,
+   "end": 303.35,
+   "text": "would be larger. And the stiffness, or the spring"
+  },
+  {
+   "start": 303.35,
+   "end": 308.75,
+   "text": "constant, is also a factor that comes into play"
+  },
+  {
+   "start": 308.75,
+   "end": 315.59,
+   "text": "for a period. And you could also notice that"
+  },
+  {
+   "start": 315.59,
+   "end": 317.91,
+   "text": "period doesn't depend on amplitude."
+  },
+  {
+   "start": 320.23,
+   "end": 324.33,
+   "text": "So, in real systems, friction and air resistance"
+  },
+  {
+   "start": 324.33,
+   "end": 328.63,
+   "text": "are present. Otherwise, when you pull a spring,"
+  },
+  {
+   "start": 328.89,
+   "end": 332.59,
+   "text": "it's just going to keep on going until a net"
+  },
+  {
+   "start": 332.59,
+   "end": 334.77,
+   "text": "external force is applied to it, Newton's law."
+  },
+  {
+   "start": 334.77,
+   "end": 340.66,
+   "text": "So, this basically causes oscillations that"
+  },
+  {
+   "start": 340.66,
+   "end": 343.64,
+   "text": "have an amplitude that decreases over time,"
+  },
+  {
+   "start": 344.14,
+   "end": 347.12,
+   "text": "and that's called damped oscillations."
+  },
+  {
+   "start": 347.12,
+   "end": 354.64,
+   "text": "And this is present in every experimental"
+  },
+  {
+   "start": 354.64,
+   "end": 359.8,
+   "text": "or every real-life case, where basically amplitude"
+  },
+  {
+   "start": 359.8,
+   "end": 367.5,
+   "text": "decreases over time due to friction"
+  },
+  {
+   "start": 367.5,
+   "end": 378.28,
+   "text": "and air resistance. And"
+  },
+  {
+   "start": 378.28,
+   "end": 384.96,
+   "text": "it's present in real life."
+  },
+  {
+   "start": 390.18,
+   "end": 393.98,
+   "text": "And over time, if damping is large enough, this"
+  },
+  {
+   "start": 393.98,
+   "end": 398.64,
+   "text": "will stop oscillations completely. So, the two"
+  },
+  {
+   "start": 398.64,
+   "end": 401.12,
+   "text": "formulas we learned today that will probably"
+  },
+  {
+   "start": 401.12,
+   "end": 403.36,
+   "text": "be given on your formula sheet if you're doing"
+  },
+  {
+   "start": 403.36,
+   "end": 410.32,
+   "text": "IB or AP are T of a spring is 2 pi root m over"
+  },
+  {
+   "start": 410.32,
+   "end": 414.32,
+   "text": "k, and the restoring force, or the force of"
+  },
+  {
+   "start": 414.32,
+   "end": 418.16,
+   "text": "a spring, is equal to negative spring constant"
+  },
+  {
+   "start": 418.16,
+   "end": 421.64,
+   "text": "and x, where k is the spring constant or the"
+  },
+  {
+   "start": 421.64,
+   "end": 426.42,
+   "text": "stiffness, and x is the distance displaced."
+  },
+  {
+   "start": 426.42,
+   "end": 429.18,
+   "text": "Next video, we will be looking at some examples"
+  },
+  {
+   "start": 429.18,
+   "end": 433.0,
+   "text": "of this, and we are going to be introducing"
+  },
+  {
+   "start": 433.0,
+   "end": 437.22,
+   "text": "how we can relate energy to equilibrium, because"
+  },
+  {
+   "start": 437.22,
+   "end": 441.32,
+   "text": "if you think about it, when you oscillate it,"
+  },
+  {
+   "start": 441.94,
+   "end": 445.56,
+   "text": "at this point, there is going to be potential"
+  },
+  {
+   "start": 445.56,
+   "end": 448.96,
+   "text": "energy at max, but at the middle, when it's"
+  },
+  {
+   "start": 448.96,
+   "end": 450.9,
+   "text": "at equilibrium and it's still going this way,"
+  },
+  {
+   "start": 451.06,
+   "end": 453.62,
+   "text": "kinetic energy is at max, which means it's the"
+  },
+  {
+   "start": 453.62,
+   "end": 456.4,
+   "text": "fastest at equilibrium when you oscillate it."
+  },
+  {
+   "start": 456.42,
+   "end": 461.06,
+   "text": "And we will be looking into that, and I'll be"
+  },
+  {
+   "start": 461.06,
+   "end": 463.8,
+   "text": "explaining that more in depth in the next video."
+  },
+  {
+   "start": 464.5,
+   "end": 468.32,
+   "text": "So, thank you for listening, and I hope you"
+  },
+  {
+   "start": 468.32,
+   "end": 470.02,
+   "text": "enjoyed this video. Bye!"
+  }
+ ],
+ "report": {
+  "key": "harmonics__springs_hookes",
+  "title": "Springs and Hookes Law",
+  "topicKey": "harmonics",
+  "duration": 470.5706875,
+  "cues": 105,
+  "corrections": 1,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.18885009711788547,
+  "flagged": []
+ }
+}

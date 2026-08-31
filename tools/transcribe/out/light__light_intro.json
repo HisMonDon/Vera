@@ -1,0 +1,1011 @@
+{
+ "lesson": {
+  "topicKey": "light",
+  "curriculumKey": "light_intro",
+  "title": "Introduction to Light",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%201%20Introducution%20to%20Light.mp4",
+  "source": "light.dart"
+ },
+ "segments": [
+  {
+   "start": 0.66,
+   "end": 28.68,
+   "text": "In this video, we will be starting optics by analyzing light and its formulae. So, first of all, what is light? Light is a type of electromagnetic wave, and that means that it is coupled with electric and magnetic fields that travel through space. And it doesn't need a medium to travel in, so it can travel through a vacuum and it can travel in anything.",
+   "avg_logprob": -0.0855646594427526
+  },
+  {
+   "start": 28.68,
+   "end": 57.08,
+   "text": "That's why when you see in space, the sun can radiate light through space through a vacuum onto our earth. Now, an electromagnetic wave consists of an oscillating electric field and an oscillating magnetic field. So, E and B, where E is an electric field, and B is a magnetic field.",
+   "avg_logprob": -0.13203477726053836
+  },
+  {
+   "start": 60.34,
+   "end": 80.78,
+   "text": "Now, these are perpendicular to each other. So, that means that if we have a ray of light going to, let's say, the right, then if our electric field is looking like this, then our magnetic field will be perpendicular, and it will look something like this.",
+   "avg_logprob": -0.08382135483085132
+  },
+  {
+   "start": 83.26,
+   "end": 97.45,
+   "text": "You can imagine it as a 3D diagram, where this is a right angle, the electric field is vertical, and the magnetic field is lying flat perpendicular to it.",
+   "avg_logprob": -0.11792192961040296
+  },
+  {
+   "start": 99.35,
+   "end": 116.95,
+   "text": "And a good fact to know is that light travels at 3.00 times 10 to the power of 8 meters per second in a vacuum. And this is really good to know. You probably have learned this.",
+   "avg_logprob": -0.14256507968125137
+  },
+  {
+   "start": 116.95,
+   "end": 134.67,
+   "text": "But what you probably have not learned, that we will cover in this video, is that when light enters a material, such as glass and water, it slows down, because the interaction with the materials actually delays the light.",
+   "avg_logprob": -0.08410458625799203
+  },
+  {
+   "start": 135.23,
+   "end": 145.59,
+   "text": "So, the formula is given as the speed of light is equal to the speed of light in a vacuum over n, which is the index of refraction.",
+   "avg_logprob": -0.08410458625799203
+  },
+  {
+   "start": 146.43,
+   "end": 166.55,
+   "text": "Now, the index of refraction is basically governing how fast light can move in a constant. The bigger the index of refraction means, the slower the light can be, and it is always at least one.",
+   "avg_logprob": -0.05711092183796259
+  },
+  {
+   "start": 167.67,
+   "end": 173.99,
+   "text": "This is because if it's less than one, then the speed of light will be bigger than that in a vacuum, which is not possible.",
+   "avg_logprob": -0.05711092183796259
+  },
+  {
+   "start": 175.53,
+   "end": 190.53,
+   "text": "Light has a wavelength as well, because it also behaves as a wave. Light is actually made up of photons, and it goes like a wave, so it behaves as something we call a wave-particle duality.",
+   "avg_logprob": -0.1006232500076294
+  },
+  {
+   "start": 193.83,
+   "end": 211.11,
+   "text": "So it can behave both as a wave and as a particle. And light, like any other wave, it has a wavelength, lambda, it has a frequency, it has a period, and it has an amplitude.",
+   "avg_logprob": -0.11490455626820524
+  },
+  {
+   "start": 213.53,
+   "end": 224.05,
+   "text": "So, this connects to the wave equation, where v is equal to f times lambda. Frequency times wavelength would be the speed of the light.",
+   "avg_logprob": -0.09260304097551852
+  },
+  {
+   "start": 224.83,
+   "end": 234.55,
+   "text": "And in a vacuum, v equals c, because the index of refraction is one. So, c equals frequency times lambda in a vacuum.",
+   "avg_logprob": -0.09260304097551852
+  },
+  {
+   "start": 234.55,
+   "end": 247.87,
+   "text": "And this is really, really important, because this basically tells us that in a given medium, frequency stays the same, but wavelength changes when speed changes.",
+   "avg_logprob": -0.09011293339232604
+  },
+  {
+   "start": 249.19,
+   "end": 257.09,
+   "text": "So frequency always stays the same as long as it's the same particle, but wavelength can change when speed changes.",
+   "avg_logprob": -0.09011293339232604
+  },
+  {
+   "start": 258.09,
+   "end": 268.81,
+   "text": "Now, let's list the main behavior of light and explain what they mean. First of all, the first behavior we'll be analyzing is reflection.",
+   "avg_logprob": -0.07908248540126916
+  },
+  {
+   "start": 270.57,
+   "end": 284.75,
+   "text": "And this basically says that light bounces off a surface. And for a smooth surface, the angle of incidence is equal to the angle of refraction.",
+   "avg_logprob": -0.07908248540126916
+  },
+  {
+   "start": 284.75,
+   "end": 294.87,
+   "text": "You might have heard this in grade 10 science or in your extracurricular, but basically when we bounce off a smooth surface, let's say glass,",
+   "avg_logprob": -0.08465677089228922
+  },
+  {
+   "start": 296.05,
+   "end": 304.07,
+   "text": "this angle theta, let's call this theta i for angle of incidence, is equal to theta r, which is angle of refraction.",
+   "avg_logprob": -0.08465677089228922
+  },
+  {
+   "start": 305.67,
+   "end": 314.15,
+   "text": "And these are measured from the normal. This is the normal. The normal is basically an imaginary line that is perpendicular to the surface.",
+   "avg_logprob": -0.08465677089228922
+  },
+  {
+   "start": 315.01,
+   "end": 328.51,
+   "text": "Now, refraction. Light changes direction when it enters a new medium, and this is what we will probably be focusing on in most of our high school physics.",
+   "avg_logprob": -0.12101269292179495
+  },
+  {
+   "start": 329.39,
+   "end": 339.41,
+   "text": "And it's basically governed by one equation, and that is called Lenz's law. Sorry, Snell's law.",
+   "avg_logprob": -0.12101269292179495
+  },
+  {
+   "start": 340.53,
+   "end": 357.18,
+   "text": "Snell's law. And basically for refraction, the tools you will need is the normal. The normal, always try to identify the normal when doing these types of questions.",
+   "avg_logprob": -0.10350581554193346
+  },
+  {
+   "start": 358.06,
+   "end": 365.68,
+   "text": "And it is given by n1 sine theta 1 equals n2 sine theta 2.",
+   "avg_logprob": -0.10350581554193346
+  },
+  {
+   "start": 366.34,
+   "end": 381.96,
+   "text": "Basically, this says that, let's say we go from air into water, like a glass, a glass of water, and you shoot a beam of light, like for example a flashlight, and let's analyze one beam of light.",
+   "avg_logprob": -0.09379725989907287
+  },
+  {
+   "start": 384.04,
+   "end": 395.34,
+   "text": "If the light enters such that it looks like this, then we need to first identify the normal. The normal will be this. This will be the normal.",
+   "avg_logprob": -0.09379725989907287
+  },
+  {
+   "start": 395.34,
+   "end": 404.54,
+   "text": "And since water has a higher index of refraction than air, then that means that n2 will be higher.",
+   "avg_logprob": -0.09865383144284857
+  },
+  {
+   "start": 405.38,
+   "end": 415.42,
+   "text": "And so then theta 2 will be lower. So that means it's going to go towards the normal. So it's going to look something like this.",
+   "avg_logprob": -0.09865383144284857
+  },
+  {
+   "start": 415.42,
+   "end": 426.56,
+   "text": "And then you do the same thing again. You draw this. Now it's going to bend away from the normal. So it's going to go like that.",
+   "avg_logprob": -0.07932496729951638
+  },
+  {
+   "start": 427.9,
+   "end": 432.42,
+   "text": "And that's basically how light behaves in a glass of water.",
+   "avg_logprob": -0.07932496729951638
+  },
+  {
+   "start": 432.42,
+   "end": 450.73,
+   "text": "So what this can tell us is, as a rough estimate without calculations, is that a higher index of refraction, higher n, means that the light bends towards the normal.",
+   "avg_logprob": -0.07992735207080841
+  },
+  {
+   "start": 453.57,
+   "end": 468.38,
+   "text": "Normal, oops, normal, and vice versa. So when we have a higher index of refraction and we draw the normal, it's going to bend towards the normal and vice versa.",
+   "avg_logprob": -0.15440386325814004
+  },
+  {
+   "start": 470.76,
+   "end": 485.96,
+   "text": "Now, the last property of light that we'll be analyzing in this unit is refraction. Sorry, diffraction. Those are two different things.",
+   "avg_logprob": -0.1800420889083077
+  },
+  {
+   "start": 486.78,
+   "end": 497.48,
+   "text": "Diffraction. And this is how light behaves when it's passing through a narrow slit or edge.",
+   "avg_logprob": -0.08133073460380986
+  },
+  {
+   "start": 498.5,
+   "end": 508.96,
+   "text": "And this is probably the most experimental unit of light we will go through. And I'll be talking more about that in another video.",
+   "avg_logprob": -0.08133073460380986
+  },
+  {
+   "start": 509.96,
+   "end": 527.68,
+   "text": "Now, one last thing before we end off this video is I want to talk about the energy of light. Light also has energy because light is photons and photons carry energy.",
+   "avg_logprob": -0.10224218628345391
+  },
+  {
+   "start": 530.14,
+   "end": 545.44,
+   "text": "Energy, oops, energy of a light, of a photon, is given by H times frequency, where H is a constant, otherwise known as Planck's constant.",
+   "avg_logprob": -0.12444504158150765
+  },
+  {
+   "start": 545.7,
+   "end": 551.48,
+   "text": "It's probably given in your IB booklet if you're doing IB or AP. F is the frequency.",
+   "avg_logprob": -0.12444504158150765
+  },
+  {
+   "start": 551.48,
+   "end": 558.12,
+   "text": "Since frequency stays the same in any medium, the energy of a photon stays the same in any medium as well.",
+   "avg_logprob": -0.06723726663126875
+  },
+  {
+   "start": 559.32,
+   "end": 576.4,
+   "text": "And this basically tells us that higher frequency light carries more energy. That's why gamma rays are way, way, way stronger than infrared, because the frequency is really way higher than infrared.",
+   "avg_logprob": -0.06723726663126875
+  },
+  {
+   "start": 576.4,
+   "end": 598.14,
+   "text": "So, ultimately, this unit will be analyzing everything about light. We'll be analyzing refraction, optics, refraction, diffraction, and also even properties of its waves, such as interference and more diffraction.",
+   "avg_logprob": -0.13048856177677712
+  },
+  {
+   "start": 599.32,
+   "end": 606.14,
+   "text": "And, yeah, this is a really fun unit, and I hope you will enjoy this as much as I do. Thank you!",
+   "avg_logprob": -0.12617774655421574
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.66,
+   "end": 3.9,
+   "text": "In this video, we will be starting optics by"
+  },
+  {
+   "start": 3.9,
+   "end": 6.4,
+   "text": "analyzing light and its formulae."
+  },
+  {
+   "start": 7.16,
+   "end": 10.88,
+   "text": "So, first of all, what is light? Light is a"
+  },
+  {
+   "start": 10.88,
+   "end": 15.82,
+   "text": "type of electromagnetic wave, and that means"
+  },
+  {
+   "start": 15.82,
+   "end": 20.2,
+   "text": "that it is coupled with electric and magnetic"
+  },
+  {
+   "start": 20.2,
+   "end": 23.58,
+   "text": "fields that travel through space. And it doesn't"
+  },
+  {
+   "start": 23.58,
+   "end": 25.96,
+   "text": "need a medium to travel in, so it can travel"
+  },
+  {
+   "start": 25.96,
+   "end": 28.68,
+   "text": "through a vacuum and it can travel in anything."
+  },
+  {
+   "start": 28.68,
+   "end": 32.4,
+   "text": "That's why when you see in space, the sun can"
+  },
+  {
+   "start": 32.4,
+   "end": 34.94,
+   "text": "radiate light through space through a vacuum"
+  },
+  {
+   "start": 34.94,
+   "end": 40.02,
+   "text": "onto our earth. Now, an electromagnetic wave"
+  },
+  {
+   "start": 40.02,
+   "end": 42.96,
+   "text": "consists of an oscillating electric field and"
+  },
+  {
+   "start": 42.96,
+   "end": 47.18,
+   "text": "an oscillating magnetic field. So, E and B,"
+  },
+  {
+   "start": 48.36,
+   "end": 55.76,
+   "text": "where E is an electric field, and B"
+  },
+  {
+   "start": 55.76,
+   "end": 62.98,
+   "text": "is a magnetic field. Now, these are perpendicular"
+  },
+  {
+   "start": 62.98,
+   "end": 66.78,
+   "text": "to each other. So, that means that if we have"
+  },
+  {
+   "start": 66.78,
+   "end": 70.0,
+   "text": "a ray of light going to, let's say, the right,"
+  },
+  {
+   "start": 71.12,
+   "end": 75.0,
+   "text": "then if our electric field is looking like this,"
+  },
+  {
+   "start": 75.54,
+   "end": 78.82,
+   "text": "then our magnetic field will be perpendicular,"
+  },
+  {
+   "start": 79.38,
+   "end": 84.79,
+   "text": "and it will look something like this. You can"
+  },
+  {
+   "start": 84.79,
+   "end": 87.97,
+   "text": "imagine it as a 3D diagram, where this is a"
+  },
+  {
+   "start": 87.97,
+   "end": 90.99,
+   "text": "right angle, the electric field is vertical,"
+  },
+  {
+   "start": 91.39,
+   "end": 96.51,
+   "text": "and the magnetic field is lying flat perpendicular"
+  },
+  {
+   "start": 96.51,
+   "end": 104.09,
+   "text": "to it. And a good fact to know is that light"
+  },
+  {
+   "start": 104.09,
+   "end": 108.93,
+   "text": "travels at 3.00 times 10 to the power of 8 metres"
+  },
+  {
+   "start": 108.93,
+   "end": 111.91,
+   "text": "per second in a vacuum."
+  },
+  {
+   "start": 112.73,
+   "end": 115.65,
+   "text": "And this is really good to know."
+  },
+  {
+   "start": 115.77,
+   "end": 119.53,
+   "text": "You probably have learned this. But what you"
+  },
+  {
+   "start": 119.53,
+   "end": 121.41,
+   "text": "probably have not learned, that we will cover"
+  },
+  {
+   "start": 121.41,
+   "end": 124.85,
+   "text": "in this video, is that when light enters a material,"
+  },
+  {
+   "start": 124.93,
+   "end": 129.59,
+   "text": "such as glass and water, it slows down, because"
+  },
+  {
+   "start": 129.59,
+   "end": 132.43,
+   "text": "the interaction with the materials actually"
+  },
+  {
+   "start": 132.43,
+   "end": 134.67,
+   "text": "delays the light."
+  },
+  {
+   "start": 135.23,
+   "end": 138.57,
+   "text": "So, the formula is given as the speed of light"
+  },
+  {
+   "start": 138.57,
+   "end": 142.39,
+   "text": "is equal to the speed of light in a vacuum over"
+  },
+  {
+   "start": 142.39,
+   "end": 145.59,
+   "text": "n, which is the index of refraction."
+  },
+  {
+   "start": 146.43,
+   "end": 152.03,
+   "text": "Now, the index of refraction is basically governing"
+  },
+  {
+   "start": 153.37,
+   "end": 156.83,
+   "text": "how fast light can move in a constant."
+  },
+  {
+   "start": 157.49,
+   "end": 159.71,
+   "text": "The bigger the index of refraction means, the"
+  },
+  {
+   "start": 159.71,
+   "end": 165.63,
+   "text": "slower the light can be, and it is always at"
+  },
+  {
+   "start": 165.63,
+   "end": 169.07,
+   "text": "least one. This is because if it's less than"
+  },
+  {
+   "start": 169.07,
+   "end": 171.81,
+   "text": "one, then the speed of light will be bigger"
+  },
+  {
+   "start": 171.81,
+   "end": 173.99,
+   "text": "than that in a vacuum, which is not possible."
+  },
+  {
+   "start": 175.53,
+   "end": 179.31,
+   "text": "Light has a wavelength as well, because it also"
+  },
+  {
+   "start": 179.31,
+   "end": 181.49,
+   "text": "behaves as a wave. Light is actually made up"
+  },
+  {
+   "start": 181.49,
+   "end": 186.13,
+   "text": "of photons, and it goes like a wave, so it behaves"
+  },
+  {
+   "start": 186.13,
+   "end": 190.53,
+   "text": "as something we call a wave-particle duality."
+  },
+  {
+   "start": 193.83,
+   "end": 198.61,
+   "text": "So it can behave both as a wave and as a particle."
+  },
+  {
+   "start": 200.53,
+   "end": 204.93,
+   "text": "And light, like any other wave, it has a wavelength,"
+  },
+  {
+   "start": 206.13,
+   "end": 209.01,
+   "text": "lambda, it has a frequency, it has a period,"
+  },
+  {
+   "start": 209.07,
+   "end": 211.11,
+   "text": "and it has an amplitude."
+  },
+  {
+   "start": 213.53,
+   "end": 217.61,
+   "text": "So, this connects to the wave equation, where"
+  },
+  {
+   "start": 217.61,
+   "end": 220.91,
+   "text": "v is equal to f times lambda."
+  },
+  {
+   "start": 221.13,
+   "end": 223.43,
+   "text": "Frequency times wavelength would be the speed"
+  },
+  {
+   "start": 223.43,
+   "end": 228.99,
+   "text": "of the light. And in a vacuum, v equals c, because"
+  },
+  {
+   "start": 228.99,
+   "end": 232.15,
+   "text": "the index of refraction is one. So, c equals"
+  },
+  {
+   "start": 232.15,
+   "end": 234.55,
+   "text": "frequency times lambda in a vacuum."
+  },
+  {
+   "start": 234.55,
+   "end": 237.75,
+   "text": "And this is really, really important, because"
+  },
+  {
+   "start": 237.75,
+   "end": 241.57,
+   "text": "this basically tells us that in a given medium,"
+  },
+  {
+   "start": 242.35,
+   "end": 245.95,
+   "text": "frequency stays the same, but wavelength changes"
+  },
+  {
+   "start": 245.95,
+   "end": 250.65,
+   "text": "when speed changes. So frequency always stays"
+  },
+  {
+   "start": 250.65,
+   "end": 254.11,
+   "text": "the same as long as it's the same particle,"
+  },
+  {
+   "start": 254.49,
+   "end": 257.09,
+   "text": "but wavelength can change when speed changes."
+  },
+  {
+   "start": 258.09,
+   "end": 262.17,
+   "text": "Now, let's list the main behavior of light and"
+  },
+  {
+   "start": 262.17,
+   "end": 264.57,
+   "text": "explain what they mean."
+  },
+  {
+   "start": 265.19,
+   "end": 267.39,
+   "text": "First of all, the first behavior we'll be analyzing"
+  },
+  {
+   "start": 267.39,
+   "end": 272.77,
+   "text": "is reflection. And this basically says that"
+  },
+  {
+   "start": 272.77,
+   "end": 275.97,
+   "text": "light bounces off a surface. And for a smooth"
+  },
+  {
+   "start": 275.97,
+   "end": 283.05,
+   "text": "surface, the angle of incidence is"
+  },
+  {
+   "start": 283.05,
+   "end": 285.41,
+   "text": "equal to the angle of refraction. You might"
+  },
+  {
+   "start": 285.41,
+   "end": 289.33,
+   "text": "have heard this in grade 10 science or in your"
+  },
+  {
+   "start": 289.33,
+   "end": 292.21,
+   "text": "extracurricular, but basically when we bounce"
+  },
+  {
+   "start": 292.21,
+   "end": 296.55,
+   "text": "off a smooth surface, let's say glass, this"
+  },
+  {
+   "start": 296.55,
+   "end": 300.05,
+   "text": "angle theta, let's call this theta i for angle"
+  },
+  {
+   "start": 300.05,
+   "end": 303.07,
+   "text": "of incidence, is equal to theta r, which is"
+  },
+  {
+   "start": 303.07,
+   "end": 307.39,
+   "text": "angle of refraction. And these are measured"
+  },
+  {
+   "start": 307.39,
+   "end": 310.09,
+   "text": "from the normal. This is the normal. The normal"
+  },
+  {
+   "start": 310.09,
+   "end": 313.23,
+   "text": "is basically an imaginary line that is perpendicular"
+  },
+  {
+   "start": 313.23,
+   "end": 316.93,
+   "text": "to the surface. Now, refraction."
+  },
+  {
+   "start": 317.65,
+   "end": 321.35,
+   "text": "Light changes direction when it enters a new"
+  },
+  {
+   "start": 321.35,
+   "end": 325.39,
+   "text": "medium, and this is what we will probably be"
+  },
+  {
+   "start": 325.39,
+   "end": 328.51,
+   "text": "focusing on in most of our high school physics."
+  },
+  {
+   "start": 329.39,
+   "end": 332.43,
+   "text": "And it's basically governed by one equation,"
+  },
+  {
+   "start": 333.15,
+   "end": 339.27,
+   "text": "and that is called Lenz's law. Sorry, Snell's"
+  },
+  {
+   "start": 339.27,
+   "end": 347.34,
+   "text": "law. Snell's law. And basically"
+  },
+  {
+   "start": 347.34,
+   "end": 351.86,
+   "text": "for refraction, the tools you will need is the"
+  },
+  {
+   "start": 351.86,
+   "end": 354.5,
+   "text": "normal. The normal, always try to identify the"
+  },
+  {
+   "start": 354.5,
+   "end": 357.18,
+   "text": "normal when doing these types of questions."
+  },
+  {
+   "start": 358.06,
+   "end": 363.46,
+   "text": "And it is given by n1 sine theta 1 equals n2"
+  },
+  {
+   "start": 363.46,
+   "end": 365.68,
+   "text": "sine theta 2."
+  },
+  {
+   "start": 366.34,
+   "end": 370.18,
+   "text": "Basically, this says that, let's say we go from"
+  },
+  {
+   "start": 370.18,
+   "end": 375.34,
+   "text": "air into water, like a glass, a glass of water,"
+  },
+  {
+   "start": 375.6,
+   "end": 378.48,
+   "text": "and you shoot a beam of light, like for example"
+  },
+  {
+   "start": 378.48,
+   "end": 381.72,
+   "text": "a flashlight, and let's analyze one beam of"
+  },
+  {
+   "start": 381.72,
+   "end": 386.94,
+   "text": "light. If the light enters such that it looks"
+  },
+  {
+   "start": 386.94,
+   "end": 390.8,
+   "text": "like this, then we need to first identify the"
+  },
+  {
+   "start": 390.8,
+   "end": 394.34,
+   "text": "normal. The normal will be this."
+  },
+  {
+   "start": 394.52,
+   "end": 397.48,
+   "text": "This will be the normal. And since water has"
+  },
+  {
+   "start": 397.48,
+   "end": 400.62,
+   "text": "a higher index of refraction than air, then"
+  },
+  {
+   "start": 400.62,
+   "end": 404.54,
+   "text": "that means that n2 will be higher."
+  },
+  {
+   "start": 405.38,
+   "end": 410.0,
+   "text": "And so then theta 2 will be lower."
+  },
+  {
+   "start": 410.14,
+   "end": 413.12,
+   "text": "So that means it's going to go towards the normal."
+  },
+  {
+   "start": 413.6,
+   "end": 416.54,
+   "text": "So it's going to look something like this. And"
+  },
+  {
+   "start": 416.54,
+   "end": 421.22,
+   "text": "then you do the same thing again. You draw this."
+  },
+  {
+   "start": 421.94,
+   "end": 423.82,
+   "text": "Now it's going to bend away from the normal."
+  },
+  {
+   "start": 424.36,
+   "end": 426.56,
+   "text": "So it's going to go like that."
+  },
+  {
+   "start": 427.9,
+   "end": 431.84,
+   "text": "And that's basically how light behaves in a"
+  },
+  {
+   "start": 431.84,
+   "end": 435.08,
+   "text": "glass of water. So what this can tell us is,"
+  },
+  {
+   "start": 435.44,
+   "end": 439.08,
+   "text": "as a rough estimate without calculations, is"
+  },
+  {
+   "start": 439.08,
+   "end": 442.72,
+   "text": "that a higher index of refraction, higher n,"
+  },
+  {
+   "start": 443.42,
+   "end": 450.43,
+   "text": "means that the light bends towards the"
+  },
+  {
+   "start": 450.43,
+   "end": 458.2,
+   "text": "normal. Normal, oops, normal,"
+  },
+  {
+   "start": 459.12,
+   "end": 462.68,
+   "text": "and vice versa. So when we have a higher index"
+  },
+  {
+   "start": 462.68,
+   "end": 465.22,
+   "text": "of refraction and we draw the normal, it's going"
+  },
+  {
+   "start": 465.22,
+   "end": 468.38,
+   "text": "to bend towards the normal and vice versa."
+  },
+  {
+   "start": 470.76,
+   "end": 475.26,
+   "text": "Now, the last property of light that we'll be"
+  },
+  {
+   "start": 475.26,
+   "end": 481.08,
+   "text": "analyzing in this unit is refraction."
+  },
+  {
+   "start": 482.42,
+   "end": 485.58,
+   "text": "Sorry, diffraction. Those are two different"
+  },
+  {
+   "start": 485.58,
+   "end": 493.12,
+   "text": "things. Diffraction. And this is how"
+  },
+  {
+   "start": 493.12,
+   "end": 496.54,
+   "text": "light behaves when it's passing through a narrow"
+  },
+  {
+   "start": 496.54,
+   "end": 500.64,
+   "text": "slit or edge. And this is probably the most"
+  },
+  {
+   "start": 500.64,
+   "end": 504.7,
+   "text": "experimental unit of light we will go through."
+  },
+  {
+   "start": 505.12,
+   "end": 508.6,
+   "text": "And I'll be talking more about that in another"
+  },
+  {
+   "start": 508.6,
+   "end": 514.7,
+   "text": "video. Now, one last thing before we end off"
+  },
+  {
+   "start": 514.7,
+   "end": 519.36,
+   "text": "this video is I want to talk about the energy"
+  },
+  {
+   "start": 519.36,
+   "end": 524.28,
+   "text": "of light. Light also has energy because light"
+  },
+  {
+   "start": 524.28,
+   "end": 527.68,
+   "text": "is photons and photons carry energy."
+  },
+  {
+   "start": 530.14,
+   "end": 535.42,
+   "text": "Energy, oops, energy of a light, of a photon,"
+  },
+  {
+   "start": 535.94,
+   "end": 540.84,
+   "text": "is given by H times frequency, where H is a"
+  },
+  {
+   "start": 540.84,
+   "end": 545.44,
+   "text": "constant, otherwise known as Planck's constant."
+  },
+  {
+   "start": 545.7,
+   "end": 548.82,
+   "text": "It's probably given in your IB booklet if you're"
+  },
+  {
+   "start": 548.82,
+   "end": 551.48,
+   "text": "doing IB or AP. F is the frequency."
+  },
+  {
+   "start": 551.48,
+   "end": 554.34,
+   "text": "Since frequency stays the same in any medium,"
+  },
+  {
+   "start": 554.6,
+   "end": 557.06,
+   "text": "the energy of a photon stays the same in any"
+  },
+  {
+   "start": 557.06,
+   "end": 561.28,
+   "text": "medium as well. And this basically tells us"
+  },
+  {
+   "start": 561.28,
+   "end": 564.44,
+   "text": "that higher frequency light carries more energy."
+  },
+  {
+   "start": 564.9,
+   "end": 568.84,
+   "text": "That's why gamma rays are way, way, way stronger"
+  },
+  {
+   "start": 568.84,
+   "end": 573.76,
+   "text": "than infrared, because the frequency is really"
+  },
+  {
+   "start": 573.76,
+   "end": 576.4,
+   "text": "way higher than infrared."
+  },
+  {
+   "start": 576.4,
+   "end": 581.4,
+   "text": "So, ultimately, this unit will be analyzing"
+  },
+  {
+   "start": 581.4,
+   "end": 584.84,
+   "text": "everything about light. We'll be analyzing refraction,"
+  },
+  {
+   "start": 585.34,
+   "end": 589.3,
+   "text": "optics, refraction, diffraction, and also even"
+  },
+  {
+   "start": 589.3,
+   "end": 592.62,
+   "text": "properties of its waves, such as interference"
+  },
+  {
+   "start": 592.62,
+   "end": 598.14,
+   "text": "and more diffraction."
+  },
+  {
+   "start": 599.32,
+   "end": 603.28,
+   "text": "And, yeah, this is a really fun unit, and I"
+  },
+  {
+   "start": 603.28,
+   "end": 605.32,
+   "text": "hope you will enjoy this as much as I do."
+  },
+  {
+   "start": 605.82,
+   "end": 606.14,
+   "text": "Thank you!"
+  }
+ ],
+ "report": {
+  "key": "light__light_intro",
+  "title": "Introduction to Light",
+  "topicKey": "light",
+  "duration": 606.5706875,
+  "cues": 147,
+  "corrections": 1,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.1800420889083077,
+  "flagged": []
+ }
+}

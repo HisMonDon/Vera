@@ -1,0 +1,1034 @@
+{
+ "lesson": {
+  "topicKey": "fluids",
+  "curriculumKey": "fluids_dynamics",
+  "title": "Fluid Dynamics",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/bernoullis%20equation.mp4",
+  "source": "fluids.dart"
+ },
+ "segments": [
+  {
+   "start": 2.22,
+   "end": 11.58,
+   "text": "Okay, so in the previous lesson, we have been learning about fluid statics. And today, we",
+   "avg_logprob": -0.13144780410809465
+  },
+  {
+   "start": 11.58,
+   "end": 16.32,
+   "text": "are going to be learning about fluid dynamics, just a quick overview, and the introduction",
+   "avg_logprob": -0.13144780410809465
+  },
+  {
+   "start": 16.32,
+   "end": 22.46,
+   "text": "to a new formula, Bernoulli's equation. And this formula basically governs all of",
+   "avg_logprob": -0.13144780410809465
+  },
+  {
+   "start": 22.46,
+   "end": 30.86,
+   "text": "what you need for Bernoulli's equation. So, what is Bernoulli's equation? I'll just",
+   "avg_logprob": -0.13144780410809465
+  },
+  {
+   "start": 30.86,
+   "end": 52.26,
+   "text": "start off the lesson by introducing this. It is p plus one over two rho v squared plus",
+   "avg_logprob": -0.23296350848918057
+  },
+  {
+   "start": 52.26,
+   "end": 71.02,
+   "text": "rho gh equals constant. Or, yeah. So basically, p is the static pressure, and this is just",
+   "avg_logprob": -0.23296350848918057
+  },
+  {
+   "start": 71.02,
+   "end": 77.16,
+   "text": "like the pressure of the molecular motion inside the fluid. I'll just go over what",
+   "avg_logprob": -0.08833990972943423
+  },
+  {
+   "start": 77.16,
+   "end": 83.04,
+   "text": "each of these mean really quickly. You don't really have to know them. This is one",
+   "avg_logprob": -0.08833990972943423
+  },
+  {
+   "start": 83.04,
+   "end": 90.56,
+   "text": "over two density v squared is dynamic pressure, which is due to the fluid's motion.",
+   "avg_logprob": -0.08833990972943423
+  },
+  {
+   "start": 91.54,
+   "end": 100.84,
+   "text": "And basically, it states that if you have a faster flowing liquid, the faster this pressure",
+   "avg_logprob": -0.08833990972943423
+  },
+  {
+   "start": 100.84,
+   "end": 120.3,
+   "text": "will be. So this is static. This is dynamic, or flowing. And this is a hydrostatic pressure.",
+   "avg_logprob": -0.1425496322864836
+  },
+  {
+   "start": 121.66,
+   "end": 130.98,
+   "text": "And basically, if you recognize this, it's somewhat like the gravitational potential",
+   "avg_logprob": -0.1425496322864836
+  },
+  {
+   "start": 130.98,
+   "end": 145.4,
+   "text": "energy. So basically, it's pressure dependent on height. And this also, basically, the higher",
+   "avg_logprob": -0.1053011133942915
+  },
+  {
+   "start": 145.4,
+   "end": 156.05,
+   "text": "the fluid is, the greater this term. And since this is equal to a constant, we can",
+   "avg_logprob": -0.1053011133942915
+  },
+  {
+   "start": 156.05,
+   "end": 168.68,
+   "text": "modify this equation, actually, to make it very, very useful for our calculations. p",
+   "avg_logprob": -0.1427883613616862
+  },
+  {
+   "start": 168.68,
+   "end": 185.1,
+   "text": "one plus one over two rho v squared plus rho gh. The initial, just add one to everything,",
+   "avg_logprob": -0.1427883613616862
+  },
+  {
+   "start": 185.1,
+   "end": 195.84,
+   "text": "equals p two plus one over two rho two v two squared plus rho two gh two. And you might",
+   "avg_logprob": -0.11823296966687055
+  },
+  {
+   "start": 195.84,
+   "end": 201.3,
+   "text": "be wondering, wow, this is such a big equation. This is gonna probably be very complicated.",
+   "avg_logprob": -0.11823296966687055
+  },
+  {
+   "start": 201.56,
+   "end": 208.54,
+   "text": "But not really. In most questions, a lot of these stay the same. For example, usually",
+   "avg_logprob": -0.11823296966687055
+  },
+  {
+   "start": 208.54,
+   "end": 218.36,
+   "text": "sometimes the height will stay the same. So these will cancel out. And usually the liquid",
+   "avg_logprob": -0.09595678813421904
+  },
+  {
+   "start": 218.36,
+   "end": 224.14,
+   "text": "stays the same as well. So a lot of these will not matter. And you will only need parts",
+   "avg_logprob": -0.09595678813421904
+  },
+  {
+   "start": 224.14,
+   "end": 234.26,
+   "text": "of these for parts of your question. But this is a good formula to know, or to know",
+   "avg_logprob": -0.09595678813421904
+  },
+  {
+   "start": 234.26,
+   "end": 253.81,
+   "text": "how to use. And now we are going to use another example. Let's say we have water",
+   "avg_logprob": -0.11493544690850852
+  },
+  {
+   "start": 253.81,
+   "end": 263.41,
+   "text": "flowing through, let's say, a pipe. So I'm going to draw a pipe over here. And all",
+   "avg_logprob": -0.11493544690850852
+  },
+  {
+   "start": 263.41,
+   "end": 274.71,
+   "text": "of a sudden, this water now starts flowing through a smaller pipe. And you need to",
+   "avg_logprob": -0.11493544690850852
+  },
+  {
+   "start": 274.71,
+   "end": 294.77,
+   "text": "calculate the change in velocity of the pipe. So let's fill this with water. First of all,",
+   "avg_logprob": -0.1555440794262621
+  },
+  {
+   "start": 295.77,
+   "end": 304.0,
+   "text": "we know, what do we know? Well, we know that the fluid density is the same everywhere.",
+   "avg_logprob": -0.1555440794262621
+  },
+  {
+   "start": 304.86,
+   "end": 311.56,
+   "text": "It's 1,000 kilograms per meter squared, like I've said before, sorry, meters cubed.",
+   "avg_logprob": -0.1555440794262621
+  },
+  {
+   "start": 312.44,
+   "end": 326.94,
+   "text": "And let's say our pipe diameter is 0.1 meters. And this is half, so we would be 0.05 meters.",
+   "avg_logprob": -0.16440119309858842
+  },
+  {
+   "start": 329.16,
+   "end": 340.3,
+   "text": "And let's say the water is moving, oops, the water is moving at a speed of 2 meters",
+   "avg_logprob": -0.16440119309858842
+  },
+  {
+   "start": 340.3,
+   "end": 361.94,
+   "text": "per second, right? And the pressure in this section is 100,000, sure. And let's say you don't",
+   "avg_logprob": -0.11848401467005412
+  },
+  {
+   "start": 361.94,
+   "end": 367.48,
+   "text": "want to find the velocity. Let's say you want to find the new pressure in the narrow section,",
+   "avg_logprob": -0.11848401467005412
+  },
+  {
+   "start": 367.48,
+   "end": 373.1,
+   "text": "because if you use common sense, it's going to move faster. So let's find the pressure,",
+   "avg_logprob": -0.11848401467005412
+  },
+  {
+   "start": 373.94,
+   "end": 387.4,
+   "text": "P2. Well, first of all, we need to find the velocity in the narrow section first. And",
+   "avg_logprob": -0.14670799849998384
+  },
+  {
+   "start": 389.16,
+   "end": 395.7,
+   "text": "we can use something called the continuity equation. And that basically states that",
+   "avg_logprob": -0.14670799849998384
+  },
+  {
+   "start": 396.26,
+   "end": 408.44,
+   "text": "the area times the velocity is constant. So sorry, this is also another formula you need to know.",
+   "avg_logprob": -0.14000132236074894
+  },
+  {
+   "start": 411.27,
+   "end": 425.29,
+   "text": "And so the first area is 0.05 r squared times pi. So pi times r1 squared",
+   "avg_logprob": -0.14000132236074894
+  },
+  {
+   "start": 426.87,
+   "end": 439.17,
+   "text": "times v1, which is, I'll just write v1 for now, equals, well, this is pi times r2 squared times",
+   "avg_logprob": -0.13089597319799756
+  },
+  {
+   "start": 439.17,
+   "end": 449.15,
+   "text": "v2. So what is r1? Well, r1 is 0.05 squared times v1 is 2 meters per second. Again,",
+   "avg_logprob": -0.13089597319799756
+  },
+  {
+   "start": 449.15,
+   "end": 464.53,
+   "text": "I'll just not use units for simplicity's sake. r2 is 0.025 squared times v2. And if you plug in",
+   "avg_logprob": -0.14259568475327403
+  },
+  {
+   "start": 464.53,
+   "end": 476.39,
+   "text": "all your numbers, you should get about pi times 0.05 squared times 2 divided by pi,",
+   "avg_logprob": -0.14259568475327403
+  },
+  {
+   "start": 476.39,
+   "end": 485.21,
+   "text": "so pi is cancelled out, 0.025 squared, you should get exactly 8 meters per second.",
+   "avg_logprob": -0.13345099829915744
+  },
+  {
+   "start": 486.41,
+   "end": 492.65,
+   "text": "And this will be the speed it's flowing through here. So notice that it's exponential.",
+   "avg_logprob": -0.13345099829915744
+  },
+  {
+   "start": 493.29,
+   "end": 500.95,
+   "text": "If the diameter decreases by a half, the velocity increases by four times. So it's exponential.",
+   "avg_logprob": -0.13345099829915744
+  },
+  {
+   "start": 500.95,
+   "end": 508.41,
+   "text": "Now we have the new velocity. So we're going to use our Bernoulli's equation over here.",
+   "avg_logprob": -0.14278724312018126
+  },
+  {
+   "start": 508.51,
+   "end": 522.12,
+   "text": "I'm just going to real quick copy and paste it. Okay. Now we have the new Bernoulli's",
+   "avg_logprob": -0.14278724312018126
+  },
+  {
+   "start": 522.12,
+   "end": 533.56,
+   "text": "equation. We could just, oops, lag. We can use it. So if you plug everything into the equation,",
+   "avg_logprob": -0.14278724312018126
+  },
+  {
+   "start": 535.68,
+   "end": 544.22,
+   "text": "we have, um, this stays constant because in this case, the height of the",
+   "avg_logprob": -0.13797909915447235
+  },
+  {
+   "start": 544.99,
+   "end": 551.19,
+   "text": "fluid is always the same. So this stays constant. So our simplified equation will be p1 plus",
+   "avg_logprob": -0.13797909915447235
+  },
+  {
+   "start": 551.19,
+   "end": 563.38,
+   "text": "one over two rho one times v1 squared equals p2 plus one over two rho two v2 squared. And",
+   "avg_logprob": -0.13797909915447235
+  },
+  {
+   "start": 563.94,
+   "end": 574.62,
+   "text": "now p1 is, as we know, 100,000 plus one over two, the density of the fluid. We know it's",
+   "avg_logprob": -0.10655495981375376
+  },
+  {
+   "start": 574.62,
+   "end": 582.36,
+   "text": "just a density of water, which is 1000 times v1 is two squared is equal to p2,",
+   "avg_logprob": -0.10655495981375376
+  },
+  {
+   "start": 582.58,
+   "end": 589.84,
+   "text": "which we want to solve plus one over two times 1000, because it's still the same liquid",
+   "avg_logprob": -0.10655495981375376
+  },
+  {
+   "start": 589.84,
+   "end": 601.3,
+   "text": "doesn't change. And v2 is as we calculated eight squared. And when you plug this in your",
+   "avg_logprob": -0.14571804395863708
+  },
+  {
+   "start": 601.3,
+   "end": 632.98,
+   "text": "calculator, you will get a one sec, you'll get 70,000 pascals. So notice that 70,000",
+   "avg_logprob": -0.14571804395863708
+  },
+  {
+   "start": 632.98,
+   "end": 637.68,
+   "text": "is less than the initial pressure and the higher container. So you might think that since",
+   "avg_logprob": -0.14571804395863708
+  },
+  {
+   "start": 637.68,
+   "end": 646.8,
+   "text": "it's being squeezed into such a tight spot, the pressure is not going to be as great. But",
+   "avg_logprob": -0.11231198196765035
+  },
+  {
+   "start": 648.38,
+   "end": 653.08,
+   "text": "it's actually the opposite. If you go inside, even though the velocity is going to increase,",
+   "avg_logprob": -0.11231198196765035
+  },
+  {
+   "start": 653.18,
+   "end": 660.84,
+   "text": "the pressure actually decrease. And in conclusion, basically, this is the formula",
+   "avg_logprob": -0.11231198196765035
+  },
+  {
+   "start": 660.84,
+   "end": 666.48,
+   "text": "that governs all fluid mechanics. Thank you for watching.",
+   "avg_logprob": -0.300080235515322
+  }
+ ],
+ "cues": [
+  {
+   "start": 2.22,
+   "end": 6.02,
+   "text": "Okay, so in the previous lesson, we have been"
+  },
+  {
+   "start": 6.02,
+   "end": 10.08,
+   "text": "learning about fluid statics."
+  },
+  {
+   "start": 10.64,
+   "end": 13.18,
+   "text": "And today, we are going to be learning about"
+  },
+  {
+   "start": 13.18,
+   "end": 15.88,
+   "text": "fluid dynamics, just a quick overview, and the"
+  },
+  {
+   "start": 15.88,
+   "end": 19.42,
+   "text": "introduction to a new formula, Bernoulli's equation."
+  },
+  {
+   "start": 19.76,
+   "end": 22.68,
+   "text": "And this formula basically governs all of what"
+  },
+  {
+   "start": 22.68,
+   "end": 24.8,
+   "text": "you need for Bernoulli's equation."
+  },
+  {
+   "start": 26.98,
+   "end": 30.44,
+   "text": "So, what is Bernoulli's equation?"
+  },
+  {
+   "start": 30.46,
+   "end": 33.68,
+   "text": "I'll just start off the lesson by introducing"
+  },
+  {
+   "start": 33.68,
+   "end": 41.27,
+   "text": "this. It is"
+  },
+  {
+   "start": 44.02,
+   "end": 51.14,
+   "text": "p plus one over two rho v"
+  },
+  {
+   "start": 51.14,
+   "end": 57.06,
+   "text": "squared plus rho gh equals constant."
+  },
+  {
+   "start": 60.68,
+   "end": 66.94,
+   "text": "Or, yeah. So basically, p is the static pressure,"
+  },
+  {
+   "start": 68.0,
+   "end": 74.32,
+   "text": "and this is just like the pressure of the molecular"
+  },
+  {
+   "start": 74.32,
+   "end": 77.16,
+   "text": "motion inside the fluid. I'll just go over what"
+  },
+  {
+   "start": 77.16,
+   "end": 80.18,
+   "text": "each of these mean really quickly. You don't"
+  },
+  {
+   "start": 80.18,
+   "end": 83.64,
+   "text": "really have to know them. This is one over two"
+  },
+  {
+   "start": 83.64,
+   "end": 87.84,
+   "text": "density v squared is dynamic pressure, which"
+  },
+  {
+   "start": 87.84,
+   "end": 90.56,
+   "text": "is due to the fluid's motion."
+  },
+  {
+   "start": 91.54,
+   "end": 94.8,
+   "text": "And basically, it states that if you have a"
+  },
+  {
+   "start": 94.8,
+   "end": 100.84,
+   "text": "faster flowing liquid, the faster this pressure"
+  },
+  {
+   "start": 100.84,
+   "end": 103.66,
+   "text": "will be. So this is static."
+  },
+  {
+   "start": 106.15,
+   "end": 108.35,
+   "text": "This is dynamic, or flowing."
+  },
+  {
+   "start": 116.04,
+   "end": 120.3,
+   "text": "And this is a hydrostatic pressure."
+  },
+  {
+   "start": 121.66,
+   "end": 127.86,
+   "text": "And basically, if you recognize this, it's somewhat"
+  },
+  {
+   "start": 127.86,
+   "end": 131.46,
+   "text": "like the gravitational potential energy."
+  },
+  {
+   "start": 132.12,
+   "end": 136.4,
+   "text": "So basically, it's pressure dependent on height."
+  },
+  {
+   "start": 139.83,
+   "end": 145.82,
+   "text": "And this also, basically, the higher the fluid"
+  },
+  {
+   "start": 145.82,
+   "end": 147.86,
+   "text": "is, the greater this term."
+  },
+  {
+   "start": 151.89,
+   "end": 156.05,
+   "text": "And since this is equal to a constant, we can"
+  },
+  {
+   "start": 156.05,
+   "end": 159.53,
+   "text": "modify this equation, actually, to make it very,"
+  },
+  {
+   "start": 159.69,
+   "end": 163.63,
+   "text": "very useful for our calculations."
+  },
+  {
+   "start": 168.42,
+   "end": 175.5,
+   "text": "p one plus one over two rho v"
+  },
+  {
+   "start": 175.5,
+   "end": 178.6,
+   "text": "squared plus rho gh."
+  },
+  {
+   "start": 180.58,
+   "end": 186.24,
+   "text": "The initial, just add one to everything, equals"
+  },
+  {
+   "start": 186.24,
+   "end": 191.56,
+   "text": "p two plus one over two rho two v two squared"
+  },
+  {
+   "start": 191.56,
+   "end": 194.88,
+   "text": "plus rho two gh two."
+  },
+  {
+   "start": 195.4,
+   "end": 197.52,
+   "text": "And you might be wondering, wow, this is such"
+  },
+  {
+   "start": 197.52,
+   "end": 200.74,
+   "text": "a big equation. This is gonna probably be very"
+  },
+  {
+   "start": 200.74,
+   "end": 203.7,
+   "text": "complicated. But not really. In most questions,"
+  },
+  {
+   "start": 204.64,
+   "end": 206.66,
+   "text": "a lot of these stay the same."
+  },
+  {
+   "start": 206.86,
+   "end": 211.54,
+   "text": "For example, usually sometimes the height will"
+  },
+  {
+   "start": 211.54,
+   "end": 215.52,
+   "text": "stay the same. So these will cancel out."
+  },
+  {
+   "start": 216.26,
+   "end": 219.48,
+   "text": "And usually the liquid stays the same as well."
+  },
+  {
+   "start": 219.5,
+   "end": 223.32,
+   "text": "So a lot of these will not matter. And you will"
+  },
+  {
+   "start": 223.32,
+   "end": 227.5,
+   "text": "only need parts of these for parts of your question."
+  },
+  {
+   "start": 228.58,
+   "end": 234.26,
+   "text": "But this is a good formula to know, or to know"
+  },
+  {
+   "start": 234.26,
+   "end": 241.48,
+   "text": "how to use. And now we are going"
+  },
+  {
+   "start": 241.48,
+   "end": 246.96,
+   "text": "to use another example."
+  },
+  {
+   "start": 249.46,
+   "end": 255.41,
+   "text": "Let's say we have water flowing through, let's"
+  },
+  {
+   "start": 255.41,
+   "end": 259.27,
+   "text": "say, a pipe. So I'm going to draw a pipe over"
+  },
+  {
+   "start": 259.27,
+   "end": 267.89,
+   "text": "here. And all of a sudden, this water now"
+  },
+  {
+   "start": 267.89,
+   "end": 270.61,
+   "text": "starts flowing through a smaller pipe."
+  },
+  {
+   "start": 273.77,
+   "end": 277.81,
+   "text": "And you need to calculate the change in velocity"
+  },
+  {
+   "start": 277.81,
+   "end": 281.37,
+   "text": "of the pipe."
+  },
+  {
+   "start": 282.83,
+   "end": 287.28,
+   "text": "So let's fill this with water."
+  },
+  {
+   "start": 294.07,
+   "end": 297.61,
+   "text": "First of all, we know, what do we know?"
+  },
+  {
+   "start": 298.17,
+   "end": 303.06,
+   "text": "Well, we know that the fluid density is the"
+  },
+  {
+   "start": 303.06,
+   "end": 307.8,
+   "text": "same everywhere. It's 1,000 kilograms per metre"
+  },
+  {
+   "start": 307.8,
+   "end": 310.82,
+   "text": "squared, like I've said before, sorry, metres"
+  },
+  {
+   "start": 310.82,
+   "end": 318.86,
+   "text": "cubed. And let's say our pipe diameter is"
+  },
+  {
+   "start": 318.86,
+   "end": 321.08,
+   "text": "0.1 metres."
+  },
+  {
+   "start": 322.14,
+   "end": 326.94,
+   "text": "And this is half, so we would be 0.05 metres."
+  },
+  {
+   "start": 329.16,
+   "end": 336.02,
+   "text": "And let's say the water is moving, oops, the"
+  },
+  {
+   "start": 336.02,
+   "end": 340.98,
+   "text": "water is moving at a speed of 2 metres per second,"
+  },
+  {
+   "start": 341.24,
+   "end": 348.35,
+   "text": "right? And the pressure in this"
+  },
+  {
+   "start": 348.35,
+   "end": 353.62,
+   "text": "section is 100,000, sure."
+  },
+  {
+   "start": 359.8,
+   "end": 363.44,
+   "text": "And let's say you don't want to find the velocity."
+  },
+  {
+   "start": 363.54,
+   "end": 365.96,
+   "text": "Let's say you want to find the new pressure"
+  },
+  {
+   "start": 365.96,
+   "end": 369.9,
+   "text": "in the narrow section, because if you use common"
+  },
+  {
+   "start": 369.9,
+   "end": 372.4,
+   "text": "sense, it's going to move faster. So let's find"
+  },
+  {
+   "start": 372.4,
+   "end": 374.64,
+   "text": "the pressure, P2."
+  },
+  {
+   "start": 378.7,
+   "end": 383.44,
+   "text": "Well, first of all, we need to find the velocity"
+  },
+  {
+   "start": 383.44,
+   "end": 386.02,
+   "text": "in the narrow section first."
+  },
+  {
+   "start": 387.1,
+   "end": 392.3,
+   "text": "And we can use something called the continuity"
+  },
+  {
+   "start": 392.3,
+   "end": 396.82,
+   "text": "equation. And that basically states that the"
+  },
+  {
+   "start": 396.82,
+   "end": 402.44,
+   "text": "area times the velocity is constant."
+  },
+  {
+   "start": 404.82,
+   "end": 407.82,
+   "text": "So sorry, this is also another formula you need"
+  },
+  {
+   "start": 407.82,
+   "end": 414.83,
+   "text": "to know. And so the first area is"
+  },
+  {
+   "start": 414.83,
+   "end": 419.49,
+   "text": "0.05 r squared times pi."
+  },
+  {
+   "start": 420.63,
+   "end": 427.65,
+   "text": "So pi times r1 squared times"
+  },
+  {
+   "start": 427.65,
+   "end": 433.69,
+   "text": "v1, which is, I'll just write v1 for now, equals,"
+  },
+  {
+   "start": 434.05,
+   "end": 439.89,
+   "text": "well, this is pi times r2 squared times v2."
+  },
+  {
+   "start": 440.67,
+   "end": 446.37,
+   "text": "So what is r1? Well, r1 is 0.05 squared times"
+  },
+  {
+   "start": 446.37,
+   "end": 449.65,
+   "text": "v1 is 2 metres per second. Again, I'll just"
+  },
+  {
+   "start": 449.65,
+   "end": 452.99,
+   "text": "not use units for simplicity's sake."
+  },
+  {
+   "start": 454.01,
+   "end": 461.25,
+   "text": "r2 is 0.025 squared times"
+  },
+  {
+   "start": 461.25,
+   "end": 466.71,
+   "text": "v2. And if you plug in all your numbers, you"
+  },
+  {
+   "start": 466.71,
+   "end": 474.17,
+   "text": "should get about pi times 0.05 squared"
+  },
+  {
+   "start": 474.17,
+   "end": 477.71,
+   "text": "times 2 divided by pi, so pi is cancelled out,"
+  },
+  {
+   "start": 477.91,
+   "end": 484.07,
+   "text": "0.025 squared, you should get exactly 8 metres"
+  },
+  {
+   "start": 484.07,
+   "end": 488.93,
+   "text": "per second. And this will be the speed it's"
+  },
+  {
+   "start": 488.93,
+   "end": 492.65,
+   "text": "flowing through here. So notice that it's exponential."
+  },
+  {
+   "start": 493.29,
+   "end": 497.85,
+   "text": "If the diameter decreases by a half, the velocity"
+  },
+  {
+   "start": 497.85,
+   "end": 499.91,
+   "text": "increases by four times."
+  },
+  {
+   "start": 499.97,
+   "end": 503.93,
+   "text": "So it's exponential. Now we have the new velocity."
+  },
+  {
+   "start": 504.69,
+   "end": 507.71,
+   "text": "So we're going to use our Bernoulli's equation"
+  },
+  {
+   "start": 507.71,
+   "end": 510.51,
+   "text": "over here. I'm just going to real quick copy"
+  },
+  {
+   "start": 510.51,
+   "end": 519.66,
+   "text": "and paste it. Okay."
+  },
+  {
+   "start": 520.02,
+   "end": 522.52,
+   "text": "Now we have the new Bernoulli's equation."
+  },
+  {
+   "start": 523.46,
+   "end": 525.5,
+   "text": "We could just, oops, lag."
+  },
+  {
+   "start": 526.3,
+   "end": 532.92,
+   "text": "We can use it. So if you plug everything into"
+  },
+  {
+   "start": 532.92,
+   "end": 540.13,
+   "text": "the equation, we have, um, this stays"
+  },
+  {
+   "start": 540.13,
+   "end": 543.81,
+   "text": "constant because in this case, the height of"
+  },
+  {
+   "start": 543.81,
+   "end": 546.75,
+   "text": "the fluid is always the same."
+  },
+  {
+   "start": 546.91,
+   "end": 549.97,
+   "text": "So this stays constant. So our simplified equation"
+  },
+  {
+   "start": 549.97,
+   "end": 554.55,
+   "text": "will be p1 plus one over two rho one times v1"
+  },
+  {
+   "start": 554.55,
+   "end": 559.39,
+   "text": "squared equals p2 plus one over two rho two"
+  },
+  {
+   "start": 559.39,
+   "end": 566.68,
+   "text": "v2 squared. And now p1 is, as"
+  },
+  {
+   "start": 566.68,
+   "end": 573.3,
+   "text": "we know, 100,000 plus one over two, the density"
+  },
+  {
+   "start": 573.3,
+   "end": 575.52,
+   "text": "of the fluid. We know it's just a density of"
+  },
+  {
+   "start": 575.52,
+   "end": 580.46,
+   "text": "water, which is 1000 times v1 is two squared"
+  },
+  {
+   "start": 580.46,
+   "end": 584.18,
+   "text": "is equal to p2, which we want to solve plus"
+  },
+  {
+   "start": 584.18,
+   "end": 589.22,
+   "text": "one over two times 1000, because it's still"
+  },
+  {
+   "start": 589.22,
+   "end": 594.12,
+   "text": "the same liquid doesn't change. And v2 is as"
+  },
+  {
+   "start": 594.12,
+   "end": 597.64,
+   "text": "we calculated eight squared."
+  },
+  {
+   "start": 599.7,
+   "end": 604.48,
+   "text": "And when you plug this in your calculator, you"
+  },
+  {
+   "start": 604.48,
+   "end": 613.43,
+   "text": "will get a"
+  },
+  {
+   "start": 613.43,
+   "end": 621.33,
+   "text": "one sec, you'll"
+  },
+  {
+   "start": 621.33,
+   "end": 629.92,
+   "text": "get 70,000 pascals. So"
+  },
+  {
+   "start": 629.92,
+   "end": 634.48,
+   "text": "notice that 70,000 is less than the initial"
+  },
+  {
+   "start": 634.48,
+   "end": 636.88,
+   "text": "pressure and the higher container. So you might"
+  },
+  {
+   "start": 636.88,
+   "end": 639.18,
+   "text": "think that since it's being squeezed into such"
+  },
+  {
+   "start": 639.18,
+   "end": 645.76,
+   "text": "a tight spot, the pressure is not going to be"
+  },
+  {
+   "start": 645.76,
+   "end": 649.84,
+   "text": "as great. But it's actually the opposite."
+  },
+  {
+   "start": 649.86,
+   "end": 652.54,
+   "text": "If you go inside, even though the velocity is"
+  },
+  {
+   "start": 652.54,
+   "end": 654.5,
+   "text": "going to increase, the pressure actually decrease."
+  },
+  {
+   "start": 656.88,
+   "end": 660.84,
+   "text": "And in conclusion, basically, this is the formula"
+  },
+  {
+   "start": 660.84,
+   "end": 664.52,
+   "text": "that governs all fluid mechanics."
+  },
+  {
+   "start": 665.76,
+   "end": 666.48,
+   "text": "Thank you for watching."
+  }
+ ],
+ "report": {
+  "key": "fluids__fluids_dynamics",
+  "title": "Fluid Dynamics",
+  "topicKey": "fluids",
+  "duration": 666.7733125,
+  "cues": 130,
+  "corrections": 7,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.300080235515322,
+  "flagged": []
+ }
+}

@@ -1,0 +1,769 @@
+{
+ "lesson": {
+  "topicKey": "modern_physics",
+  "curriculumKey": "nuclear_decay",
+  "title": "Nuclear Decay",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/modern_physics/Unit%205%20Types%20of%20Decay.mp4",
+  "source": "modern.dart"
+ },
+ "segments": [
+  {
+   "start": 0.69,
+   "end": 30.15,
+   "text": "In this video, we will be talking about radioactive decay. So, first of all, let's take a look at a nucleus of an atom. Now, this nucleus contains protons, and these protons are positively charged particles and they repel each other.",
+   "avg_logprob": -0.11610847576098009
+  },
+  {
+   "start": 31.97,
+   "end": 56.63,
+   "text": "electrostatic attraction, like charges repel, so these protons repel each other. But, since the nucleus doesn't break apart, that's because of neutrons, and we have neutrons, which are neutral subatomic particles in the nucleus as well.",
+   "avg_logprob": -0.18801476453479968
+  },
+  {
+   "start": 57.39,
+   "end": 74.01,
+   "text": "And this adds stronger nuclear attraction, and this strong nuclear force is the force that binds nucleons together, and it's short range, and it must overcome the repulsion between these protons.",
+   "avg_logprob": -0.15945219231206317
+  },
+  {
+   "start": 74.01,
+   "end": 84.15,
+   "text": "So, the attraction the neutrons make must be greater than or equal to the repulsion of the protons.",
+   "avg_logprob": -0.16120375419149593
+  },
+  {
+   "start": 84.63,
+   "end": 100.97,
+   "text": "So, we can say attraction of neutrons is greater or equal to repulsion of protons.",
+   "avg_logprob": -0.16120375419149593
+  },
+  {
+   "start": 104.56,
+   "end": 128.3,
+   "text": "But, however, if the nucleus is too big, or has too many neutrons, or too many protons as well, it becomes unstable, and this basically transforms and splits the neutron apart into more stable configurations, and that's called radioactive decay.",
+   "avg_logprob": -0.09586117240515622
+  },
+  {
+   "start": 129.65,
+   "end": 149.43,
+   "text": "Because these forces are in such close range, the nuclear force and the nuclear attraction that binds this together is in short range, then if the nucleus gets big, the range gets bigger, and that's ultimately the reason why atoms decay.",
+   "avg_logprob": -0.09345812540428311
+  },
+  {
+   "start": 150.49,
+   "end": 159.59,
+   "text": "Now, there are three types of decay, two of which are the most frequent and the most important.",
+   "avg_logprob": -0.11380091574456956
+  },
+  {
+   "start": 159.97,
+   "end": 174.04,
+   "text": "The first one is called alpha decay, and this is when the helium nucleus is emitted.",
+   "avg_logprob": -0.11380091574456956
+  },
+  {
+   "start": 174.04,
+   "end": 178.46,
+   "text": "So first of all, let's review some chemistry.",
+   "avg_logprob": -0.1383406986151972
+  },
+  {
+   "start": 180.2,
+   "end": 182.3,
+   "text": "A, B, C.",
+   "avg_logprob": -0.1383406986151972
+  },
+  {
+   "start": 182.68,
+   "end": 200.16,
+   "text": "If we have an element, and you have this notation, well, B represents the number of protons, A represents the total relative atomic mass, and C is just the element.",
+   "avg_logprob": -0.1383406986151972
+  },
+  {
+   "start": 200.16,
+   "end": 204.5,
+   "text": "For example, in this case it would be carbon, it could be any other element.",
+   "avg_logprob": -0.16009890702035692
+  },
+  {
+   "start": 205.08,
+   "end": 219.48,
+   "text": "So, A is relative atomic mass, so it's the mass of the element relative to one twelfth of a carbon atom, but just for simplicity's sake, it's just the mass.",
+   "avg_logprob": -0.16009890702035692
+  },
+  {
+   "start": 219.48,
+   "end": 240.68,
+   "text": "B is the number of protons, and the number of neutrons would be equal to A minus B, because the mass number is just the sum of all the weights of the subatomic particles, and electrons are way much.",
+   "avg_logprob": -0.10496321573853493
+  },
+  {
+   "start": 242.32,
+   "end": 252.78,
+   "text": "So, in alpha decay what happens is, let's say you have an atom, AZX.",
+   "avg_logprob": -0.19500766559080643
+  },
+  {
+   "start": 253.96,
+   "end": 265.46,
+   "text": "Now, what happens is this atom, when it's too unstable, it's going to split into, first of all, a helium nucleus,",
+   "avg_logprob": -0.19500766559080643
+  },
+  {
+   "start": 266.5,
+   "end": 289.48,
+   "text": "which has two protons and two neutrons, and it also produces another atom with an atomic number 4 less than X, so A minus 4, let's call this Y, and it would be C minus 2.",
+   "avg_logprob": -0.15657609856377044
+  },
+  {
+   "start": 290.4,
+   "end": 300.74,
+   "text": "So, basically you subtract what the helium atom has taken from X, and this is your alpha decay equation.",
+   "avg_logprob": -0.17702388614416123
+  },
+  {
+   "start": 302.04,
+   "end": 305.0,
+   "text": "Same thing for your next one, you have beta decay.",
+   "avg_logprob": -0.17702388614416123
+  },
+  {
+   "start": 305.0,
+   "end": 315.7,
+   "text": "Beta decay. So what beta decay is, is a neutron converts to a proton, or vice versa.",
+   "avg_logprob": -0.1593304282426834
+  },
+  {
+   "start": 316.16,
+   "end": 330.08,
+   "text": "So, this neutron converts to a proton plus an electron, and the atomic number basically increases by one.",
+   "avg_logprob": -0.1593304282426834
+  },
+  {
+   "start": 330.08,
+   "end": 336.82,
+   "text": "So, atomic number increases by one.",
+   "avg_logprob": -0.13312919658643227
+  },
+  {
+   "start": 341.94,
+   "end": 344.82,
+   "text": "And the last one is gamma decay.",
+   "avg_logprob": -0.13312919658643227
+  },
+  {
+   "start": 345.92,
+   "end": 355.6,
+   "text": "So, it's basically emitting a photon, so like we've talked about in the past, when this jumps back down, that's gamma decay.",
+   "avg_logprob": -0.13312919658643227
+  },
+  {
+   "start": 355.6,
+   "end": 365.52,
+   "text": "So, there's no change in mass number, no change in atomic number, but only the energy decreases.",
+   "avg_logprob": -0.12006067648166563
+  },
+  {
+   "start": 366.76,
+   "end": 370.94,
+   "text": "And we are not going to focus that much on gamma decay.",
+   "avg_logprob": -0.12006067648166563
+  },
+  {
+   "start": 370.94,
+   "end": 390.26,
+   "text": "But just know, no change in mass number or atomic number, it's only energy decreases.",
+   "avg_logprob": -0.20267768787301105
+  },
+  {
+   "start": 392.12,
+   "end": 405.64,
+   "text": "Okay, so we have a half-life formula, and half-life is basically a measure, what we use to measure the rate of our decay.",
+   "avg_logprob": -0.11227908965062212
+  },
+  {
+   "start": 406.84,
+   "end": 412.3,
+   "text": "It's the time it takes for half the sample to decay, hence the name.",
+   "avg_logprob": -0.11227908965062212
+  },
+  {
+   "start": 412.3,
+   "end": 424.42,
+   "text": "And instead of using another unit, such as, let's say, moles per second, half-life would be better.",
+   "avg_logprob": -0.1115842172077724
+  },
+  {
+   "start": 425.06,
+   "end": 434.8,
+   "text": "Because it's exponential, the decay, and it really depends on how many initial atoms or moles you have in the beginning.",
+   "avg_logprob": -0.1115842172077724
+  },
+  {
+   "start": 434.94,
+   "end": 436.38,
+   "text": "So that's why we use half-life.",
+   "avg_logprob": -0.1115842172077724
+  },
+  {
+   "start": 436.94,
+   "end": 452.52,
+   "text": "So half-life is given by the notation of Tn1 over 2 equals ln 2 over delta.",
+   "avg_logprob": -0.13204441219568253
+  },
+  {
+   "start": 454.56,
+   "end": 461.6,
+   "text": "And delta is the decay constant of whatever element you're dealing with.",
+   "avg_logprob": -0.13204441219568253
+  },
+  {
+   "start": 464.78,
+   "end": 471.66,
+   "text": "Yeah, this is also equal to log base of E2 of delta, that just means ln.",
+   "avg_logprob": -0.14274199224180645
+  },
+  {
+   "start": 473.06,
+   "end": 475.72,
+   "text": "And yeah, that's all for today's video.",
+   "avg_logprob": -0.14274199224180645
+  },
+  {
+   "start": 476.44,
+   "end": 480.36,
+   "text": "I hope you have learned some things about decay.",
+   "avg_logprob": -0.14274199224180645
+  },
+  {
+   "start": 481.42,
+   "end": 486.38,
+   "text": "And next video, we will be talking about nuclear fission and nuclear fusion.",
+   "avg_logprob": -0.14274199224180645
+  },
+  {
+   "start": 487.92,
+   "end": 492.5,
+   "text": "So yeah, I hope you learned something, and we'll see you in the next video. Bye!",
+   "avg_logprob": -0.14274199224180645
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.69,
+   "end": 4.23,
+   "text": "In this video, we will be talking about radioactive"
+  },
+  {
+   "start": 4.23,
+   "end": 10.33,
+   "text": "decay. So, first of all, let's take a look at"
+  },
+  {
+   "start": 10.33,
+   "end": 12.39,
+   "text": "a nucleus of an atom."
+  },
+  {
+   "start": 13.81,
+   "end": 21.85,
+   "text": "Now, this nucleus contains protons, and these"
+  },
+  {
+   "start": 21.85,
+   "end": 27.43,
+   "text": "protons are positively charged particles and"
+  },
+  {
+   "start": 27.43,
+   "end": 30.15,
+   "text": "they repel each other."
+  },
+  {
+   "start": 31.97,
+   "end": 36.41,
+   "text": "electrostatic attraction, like charges repel,"
+  },
+  {
+   "start": 36.97,
+   "end": 40.11,
+   "text": "so these protons repel each other."
+  },
+  {
+   "start": 41.13,
+   "end": 44.43,
+   "text": "But, since the nucleus doesn't break apart,"
+  },
+  {
+   "start": 44.85,
+   "end": 50.61,
+   "text": "that's because of neutrons, and we have neutrons,"
+  },
+  {
+   "start": 51.05,
+   "end": 55.61,
+   "text": "which are neutral subatomic particles in the"
+  },
+  {
+   "start": 55.61,
+   "end": 60.39,
+   "text": "nucleus as well. And this adds stronger nuclear"
+  },
+  {
+   "start": 60.39,
+   "end": 64.35,
+   "text": "attraction, and this strong nuclear force is"
+  },
+  {
+   "start": 64.35,
+   "end": 68.45,
+   "text": "the force that binds nucleons together, and"
+  },
+  {
+   "start": 68.45,
+   "end": 72.61,
+   "text": "it's short range, and it must overcome the repulsion"
+  },
+  {
+   "start": 72.61,
+   "end": 75.85,
+   "text": "between these protons. So, the attraction the"
+  },
+  {
+   "start": 75.85,
+   "end": 80.89,
+   "text": "neutrons make must be greater than or equal"
+  },
+  {
+   "start": 80.89,
+   "end": 84.15,
+   "text": "to the repulsion of the protons."
+  },
+  {
+   "start": 84.63,
+   "end": 92.61,
+   "text": "So, we can say attraction of neutrons"
+  },
+  {
+   "start": 92.61,
+   "end": 100.97,
+   "text": "is greater or equal to repulsion of protons."
+  },
+  {
+   "start": 104.56,
+   "end": 111.84,
+   "text": "But, however, if the nucleus is too big, or"
+  },
+  {
+   "start": 111.84,
+   "end": 115.16,
+   "text": "has too many neutrons, or too many protons as"
+  },
+  {
+   "start": 115.16,
+   "end": 119.62,
+   "text": "well, it becomes unstable, and this basically"
+  },
+  {
+   "start": 119.62,
+   "end": 124.62,
+   "text": "transforms and splits the neutron apart into"
+  },
+  {
+   "start": 124.62,
+   "end": 127.42,
+   "text": "more stable configurations, and that's called"
+  },
+  {
+   "start": 127.42,
+   "end": 133.35,
+   "text": "radioactive decay. Because these forces are"
+  },
+  {
+   "start": 133.35,
+   "end": 136.67,
+   "text": "in such close range, the nuclear force and the"
+  },
+  {
+   "start": 136.67,
+   "end": 138.79,
+   "text": "nuclear attraction that binds this together"
+  },
+  {
+   "start": 138.79,
+   "end": 142.85,
+   "text": "is in short range, then if the nucleus gets"
+  },
+  {
+   "start": 142.85,
+   "end": 146.61,
+   "text": "big, the range gets bigger, and that's ultimately"
+  },
+  {
+   "start": 146.61,
+   "end": 149.43,
+   "text": "the reason why atoms decay."
+  },
+  {
+   "start": 150.49,
+   "end": 155.23,
+   "text": "Now, there are three types of decay, two of"
+  },
+  {
+   "start": 155.23,
+   "end": 159.59,
+   "text": "which are the most frequent and the most important."
+  },
+  {
+   "start": 159.97,
+   "end": 168.98,
+   "text": "The first one is called alpha decay, and"
+  },
+  {
+   "start": 168.98,
+   "end": 174.04,
+   "text": "this is when the helium nucleus is emitted."
+  },
+  {
+   "start": 174.04,
+   "end": 178.46,
+   "text": "So first of all, let's review some chemistry."
+  },
+  {
+   "start": 180.2,
+   "end": 182.3,
+   "text": "A, B, C."
+  },
+  {
+   "start": 182.68,
+   "end": 187.48,
+   "text": "If we have an element, and you have this notation,"
+  },
+  {
+   "start": 189.06,
+   "end": 194.2,
+   "text": "well, B represents the number of protons, A"
+  },
+  {
+   "start": 194.2,
+   "end": 199.08,
+   "text": "represents the total relative atomic mass, and"
+  },
+  {
+   "start": 199.08,
+   "end": 201.66,
+   "text": "C is just the element. For example, in this"
+  },
+  {
+   "start": 201.66,
+   "end": 204.22,
+   "text": "case it would be carbon, it could be any other"
+  },
+  {
+   "start": 204.22,
+   "end": 210.74,
+   "text": "element. So, A is relative atomic mass, so it's"
+  },
+  {
+   "start": 210.74,
+   "end": 214.98,
+   "text": "the mass of the element relative to one twelfth"
+  },
+  {
+   "start": 214.98,
+   "end": 218.22,
+   "text": "of a carbon atom, but just for simplicity's"
+  },
+  {
+   "start": 218.22,
+   "end": 221.94,
+   "text": "sake, it's just the mass. B is the number of"
+  },
+  {
+   "start": 221.94,
+   "end": 229.36,
+   "text": "protons, and the number of neutrons would"
+  },
+  {
+   "start": 229.36,
+   "end": 236.04,
+   "text": "be equal to A minus B, because the mass number"
+  },
+  {
+   "start": 236.04,
+   "end": 238.8,
+   "text": "is just the sum of all the weights of the subatomic"
+  },
+  {
+   "start": 238.8,
+   "end": 244.66,
+   "text": "particles, and electrons are way much. So, in"
+  },
+  {
+   "start": 244.66,
+   "end": 247.54,
+   "text": "alpha decay what happens is, let's say you have"
+  },
+  {
+   "start": 247.54,
+   "end": 252.78,
+   "text": "an atom, AZX."
+  },
+  {
+   "start": 253.96,
+   "end": 259.36,
+   "text": "Now, what happens is this atom, when it's too"
+  },
+  {
+   "start": 259.36,
+   "end": 263.36,
+   "text": "unstable, it's going to split into, first of"
+  },
+  {
+   "start": 263.36,
+   "end": 270.26,
+   "text": "all, a helium nucleus, which has two protons"
+  },
+  {
+   "start": 270.26,
+   "end": 276.62,
+   "text": "and two neutrons, and it also produces another"
+  },
+  {
+   "start": 276.62,
+   "end": 280.26,
+   "text": "atom with an atomic number 4 less than X, so"
+  },
+  {
+   "start": 280.26,
+   "end": 287.22,
+   "text": "A minus 4, let's call this Y, and it would be"
+  },
+  {
+   "start": 287.22,
+   "end": 289.48,
+   "text": "C minus 2."
+  },
+  {
+   "start": 290.4,
+   "end": 296.78,
+   "text": "So, basically you subtract what the helium atom"
+  },
+  {
+   "start": 296.78,
+   "end": 300.18,
+   "text": "has taken from X, and this is your alpha decay"
+  },
+  {
+   "start": 300.18,
+   "end": 303.82,
+   "text": "equation. Same thing for your next one, you"
+  },
+  {
+   "start": 303.82,
+   "end": 308.42,
+   "text": "have beta decay. Beta decay."
+  },
+  {
+   "start": 309.5,
+   "end": 313.62,
+   "text": "So what beta decay is, is a neutron converts"
+  },
+  {
+   "start": 313.62,
+   "end": 315.7,
+   "text": "to a proton, or vice versa."
+  },
+  {
+   "start": 316.16,
+   "end": 323.32,
+   "text": "So, this neutron converts to a proton plus"
+  },
+  {
+   "start": 323.32,
+   "end": 329.06,
+   "text": "an electron, and the atomic number basically"
+  },
+  {
+   "start": 329.06,
+   "end": 336.22,
+   "text": "increases by one. So, atomic number increases"
+  },
+  {
+   "start": 336.22,
+   "end": 343.64,
+   "text": "by one. And the last one is"
+  },
+  {
+   "start": 343.64,
+   "end": 349.92,
+   "text": "gamma decay. So, it's basically emitting a photon,"
+  },
+  {
+   "start": 350.4,
+   "end": 352.7,
+   "text": "so like we've talked about in the past, when"
+  },
+  {
+   "start": 352.7,
+   "end": 355.6,
+   "text": "this jumps back down, that's gamma decay."
+  },
+  {
+   "start": 355.6,
+   "end": 359.28,
+   "text": "So, there's no change in mass number, no change"
+  },
+  {
+   "start": 359.28,
+   "end": 365.52,
+   "text": "in atomic number, but only the energy decreases."
+  },
+  {
+   "start": 366.76,
+   "end": 370.54,
+   "text": "And we are not going to focus that much on gamma"
+  },
+  {
+   "start": 370.54,
+   "end": 378.5,
+   "text": "decay. But just know, no change in mass number"
+  },
+  {
+   "start": 378.5,
+   "end": 385.8,
+   "text": "or atomic number, it's"
+  },
+  {
+   "start": 385.8,
+   "end": 390.26,
+   "text": "only energy decreases."
+  },
+  {
+   "start": 392.12,
+   "end": 399.0,
+   "text": "Okay, so we have a half-life formula, and half-life"
+  },
+  {
+   "start": 399.0,
+   "end": 403.6,
+   "text": "is basically a measure, what we use to measure"
+  },
+  {
+   "start": 403.6,
+   "end": 405.64,
+   "text": "the rate of our decay."
+  },
+  {
+   "start": 406.84,
+   "end": 410.42,
+   "text": "It's the time it takes for half the sample to"
+  },
+  {
+   "start": 410.42,
+   "end": 415.74,
+   "text": "decay, hence the name. And instead of using"
+  },
+  {
+   "start": 415.74,
+   "end": 420.28,
+   "text": "another unit, such as, let's say, moles per"
+  },
+  {
+   "start": 420.28,
+   "end": 424.42,
+   "text": "second, half-life would be better."
+  },
+  {
+   "start": 425.06,
+   "end": 429.9,
+   "text": "Because it's exponential, the decay, and it"
+  },
+  {
+   "start": 429.9,
+   "end": 433.6,
+   "text": "really depends on how many initial atoms or"
+  },
+  {
+   "start": 433.6,
+   "end": 435.42,
+   "text": "moles you have in the beginning. So that's why"
+  },
+  {
+   "start": 435.42,
+   "end": 441.16,
+   "text": "we use half-life. So half-life is given by the"
+  },
+  {
+   "start": 441.16,
+   "end": 448.78,
+   "text": "notation of Tn1 over 2 equals ln"
+  },
+  {
+   "start": 448.78,
+   "end": 452.52,
+   "text": "2 over delta."
+  },
+  {
+   "start": 454.56,
+   "end": 459.52,
+   "text": "And delta is the decay constant of whatever"
+  },
+  {
+   "start": 459.52,
+   "end": 461.6,
+   "text": "element you're dealing with."
+  },
+  {
+   "start": 464.78,
+   "end": 470.26,
+   "text": "Yeah, this is also equal to log base of E2 of"
+  },
+  {
+   "start": 470.26,
+   "end": 474.38,
+   "text": "delta, that just means ln. And yeah, that's"
+  },
+  {
+   "start": 474.38,
+   "end": 477.54,
+   "text": "all for today's video. I hope you have learned"
+  },
+  {
+   "start": 477.54,
+   "end": 480.36,
+   "text": "some things about decay."
+  },
+  {
+   "start": 481.42,
+   "end": 484.42,
+   "text": "And next video, we will be talking about nuclear"
+  },
+  {
+   "start": 484.42,
+   "end": 489.4,
+   "text": "fission and nuclear fusion. So yeah, I hope"
+  },
+  {
+   "start": 489.4,
+   "end": 491.34,
+   "text": "you learned something, and we'll see you in"
+  },
+  {
+   "start": 491.34,
+   "end": 492.5,
+   "text": "the next video. Bye!"
+  }
+ ],
+ "report": {
+  "key": "modern_physics__nuclear_decay",
+  "title": "Nuclear Decay",
+  "topicKey": "modern_physics",
+  "duration": 493.504,
+  "cues": 101,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.20267768787301105,
+  "flagged": []
+ }
+}

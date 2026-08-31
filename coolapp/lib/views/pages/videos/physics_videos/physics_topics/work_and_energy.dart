@@ -2,6 +2,7 @@ import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/views/pages/videos/physics_videos/curriculum_topic_filters.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/topic_registry.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/topic_widgets.dart';
 
 class WorkAndEnergy extends StatefulWidget {
@@ -55,15 +56,19 @@ class WorkAndEnergy extends StatefulWidget {
 }
 
 class _WorkAndEnergyState extends State<WorkAndEnergy> {
+  /// This page's topic. All display copy is looked up from it, so the
+  /// name here cannot disagree with Explore, the lesson page or the player.
+  static const String _topicKey = CurriculumTopicFilters.workAndEnergy;
+
   final double _width = 400;
   final double _height = 200;
   Map<int, bool> hoveredStates = {};
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    globals.topicTitle = 'Work and Energy';
+    globals.topicTitle = TopicRegistry.nameOf(_topicKey);
     final visibleVideos = CurriculumTopicFilters.filterUnits(
-      courseTitle: globals.courseTitle,
+      courseKey: globals.courseKey,
       topicKey: CurriculumTopicFilters.workAndEnergy,
       units: WorkAndEnergy.videos,
     );
@@ -76,11 +81,10 @@ class _WorkAndEnergyState extends State<WorkAndEnergy> {
             children: [
               SizedBox(width: 2, height: 10),
               TopicWidgets.buildTopLayout(
-                title: globals.topicTitle,
+                title: TopicRegistry.nameOf(_topicKey),
                 context: context,
-                description:
-                    'Calculate work done by forces, analyze kinetic and potential energy transformations, and apply conservation of energy to solve complex physics problems',
-                topIcon: Icons.bolt_outlined,
+                description: TopicRegistry.descriptionOf(_topicKey),
+                topIcon: TopicRegistry.byKey(_topicKey)!.icon,
               ),
               SizedBox(width: 2, height: 20),
               Column(

@@ -1,0 +1,887 @@
+{
+ "lesson": {
+  "topicKey": "harmonics",
+  "curriculumKey": "harmonics_ap_work",
+  "title": "Pendulums and Work - Past AP Physics 1 Example",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%205%20Pendulums%20and%20Work%20-%20Past%20AP%20Physics%201%20Examplar.mp4",
+  "source": "harmonics.dart"
+ },
+ "segments": [
+  {
+   "start": 2.29,
+   "end": 23.03,
+   "text": "In this video, we'll be going over the next question about oscillations, and this is a question that I really like because it demonstrates a lot of what we have learned, not only oscillations but also work, and it's a really good application of oscillations as well in part b.",
+   "avg_logprob": -0.12371213062778934
+  },
+  {
+   "start": 24.07,
+   "end": 31.05,
+   "text": "So, what we have here is a simple pendulum consists of a small sphere that hangs from a string with negligible mass.",
+   "avg_logprob": -0.12371213062778934
+  },
+  {
+   "start": 31.05,
+   "end": 42.81,
+   "text": "The top end of the string is fixed. The sphere is pulled to point A so that the string makes an angle theta, and the sphere is released from rest and it oscillates back and forth.",
+   "avg_logprob": -0.09429297182295057
+  },
+  {
+   "start": 43.41,
+   "end": 50.73,
+   "text": "The work done on the sphere by Earth between points A and B is W.",
+   "avg_logprob": -0.1039235848805
+  },
+  {
+   "start": 51.33,
+   "end": 65.61,
+   "text": "The pendulum is then taken to planet X, and the mass of planet X is the same as the mass of Earth, but the radius is greater than the radius of Earth.",
+   "avg_logprob": -0.1039235848805
+  },
+  {
+   "start": 65.61,
+   "end": 88.27,
+   "text": "So, first of all, when we see that the mass of planet X is the same as the mass of Earth but the radius is greater, then that means that G on planet X will be smaller than the acceleration of Earth, because the gravitational field strength would be smaller for a greater radius.",
+   "avg_logprob": -0.07927227919063871
+  },
+  {
+   "start": 90.09,
+   "end": 102.01,
+   "text": "And the sphere is then brought back to point A and swung again on planet X, and you have to justify why the work done on planet X is less than the work done on planet E.",
+   "avg_logprob": -0.09956028111852132
+  },
+  {
+   "start": 102.83,
+   "end": 111.51,
+   "text": "Well, as I've said in another video, I don't remember which one, but I've said this before, the work is equal to force times distance.",
+   "avg_logprob": -0.09956028111852132
+  },
+  {
+   "start": 112.19,
+   "end": 133.93,
+   "text": "And also another thing is force times distance cosine theta, but also AP Physics 1 has a formula booklet, and it basically has everything you need to know to solve these questions, other than one or two formulae.",
+   "avg_logprob": -0.1409191905635677
+  },
+  {
+   "start": 134.67,
+   "end": 140.25,
+   "text": "So what you have here is work is equal to force times distance, or force times distance in the direction.",
+   "avg_logprob": -0.1409191905635677
+  },
+  {
+   "start": 141.51,
+   "end": 146.93,
+   "text": "And so it's just mainly about applying these and understanding what you're doing.",
+   "avg_logprob": -0.14185026021940367
+  },
+  {
+   "start": 148.63,
+   "end": 164.35,
+   "text": "So force, well, force, Newton's law, is mass times acceleration. In this case, it's mass times gravity, because that's the acceleration times distance.",
+   "avg_logprob": -0.14185026021940367
+  },
+  {
+   "start": 166.07,
+   "end": 184.76,
+   "text": "And the same thing for X equals force times distance, and it's equal to mass times gravity on X times D, while this is gravity times E on D.",
+   "avg_logprob": -0.15578194566675135
+  },
+  {
+   "start": 184.76,
+   "end": 199.2,
+   "text": "But like I've explained before, since the acceleration on X is lower, so this is lower than that, and M and D are constants in both cases, because the distance and the mass of the ball are the same,",
+   "avg_logprob": -0.06446929763410693
+  },
+  {
+   "start": 199.76,
+   "end": 206.86,
+   "text": "then we can conclude that the work done on X is less than the work done on E, and that's basically what you need to explain.",
+   "avg_logprob": -0.06446929763410693
+  },
+  {
+   "start": 207.32,
+   "end": 212.66,
+   "text": "I'm not going to write it down, but the question is solved. You just need to state what I've said.",
+   "avg_logprob": -0.06446929763410693
+  },
+  {
+   "start": 214.04,
+   "end": 221.22,
+   "text": "Okay, a new pendulum is made by hanging the same small sphere on a different string with negligible mass.",
+   "avg_logprob": -0.08706351793729342
+  },
+  {
+   "start": 221.48,
+   "end": 226.02,
+   "text": "Different string means that the length of the string is different.",
+   "avg_logprob": -0.08706351793729342
+  },
+  {
+   "start": 227.42,
+   "end": 235.22,
+   "text": "The new string is slightly elastic, and the length of the string may increase or decrease depending on the tension applied.",
+   "avg_logprob": -0.08706351793729342
+  },
+  {
+   "start": 238.22,
+   "end": 245.7,
+   "text": "I haven't read this question in a while, but from what I see here, you don't really need to mind this.",
+   "avg_logprob": -0.09441338027968552
+  },
+  {
+   "start": 245.88,
+   "end": 248.62,
+   "text": "All you need to know is that the length of the string can vary.",
+   "avg_logprob": -0.09441338027968552
+  },
+  {
+   "start": 249.42,
+   "end": 256.52,
+   "text": "On Earth, when the sphere is displaced from the vertical and released from rest, the new pendulum oscillates with this period.",
+   "avg_logprob": -0.09441338027968552
+  },
+  {
+   "start": 257.14,
+   "end": 263.12,
+   "text": "And then the new pendulum is taken to a different planet with the same radius, but a larger mass.",
+   "avg_logprob": -0.09441338027968552
+  },
+  {
+   "start": 263.12,
+   "end": 271.48,
+   "text": "So basically, that means a larger G. So G of Y is bigger than G of E.",
+   "avg_logprob": -0.12454592270009658
+  },
+  {
+   "start": 273.7,
+   "end": 277.72,
+   "text": "And on planet Y, it oscillates with period T Y.",
+   "avg_logprob": -0.12454592270009658
+  },
+  {
+   "start": 278.46,
+   "end": 285.96,
+   "text": "And you have to explain how T Y could be larger than T, or it could also be smaller than T.",
+   "avg_logprob": -0.12454592270009658
+  },
+  {
+   "start": 286.54,
+   "end": 290.74,
+   "text": "Now, I'm not going to write a paragraph, but I'm going to explain why.",
+   "avg_logprob": -0.12454592270009658
+  },
+  {
+   "start": 293.7,
+   "end": 299.52,
+   "text": "So basically, first of all, when we do this, we want to know our variables in play.",
+   "avg_logprob": -0.10335487957242169
+  },
+  {
+   "start": 300.38,
+   "end": 305.92,
+   "text": "And I would be pulling up the formula sheet if I was doing the exam right now.",
+   "avg_logprob": -0.10335487957242169
+  },
+  {
+   "start": 305.92,
+   "end": 310.68,
+   "text": "And you would know that T P equals 2 pi root L over G, as we've learned.",
+   "avg_logprob": -0.10335487957242169
+  },
+  {
+   "start": 312.88,
+   "end": 320.88,
+   "text": "So T equals 2 pi root L over G.",
+   "avg_logprob": -0.10335487957242169
+  },
+  {
+   "start": 320.88,
+   "end": 330.52,
+   "text": "Now, it's kind of obvious now why it could be either larger or smaller.",
+   "avg_logprob": -0.07588764824974004
+  },
+  {
+   "start": 331.46,
+   "end": 346.28,
+   "text": "If the length of the string is way, way larger, then the period on Earth would be greater.",
+   "avg_logprob": -0.07588764824974004
+  },
+  {
+   "start": 347.12,
+   "end": 351.9,
+   "text": "So if it's elastic, if it's more elastic, then the period on Earth could be greater.",
+   "avg_logprob": -0.07588764824974004
+  },
+  {
+   "start": 352.56,
+   "end": 356.16,
+   "text": "But, sorry, the period on planet Y could be greater.",
+   "avg_logprob": -0.08316325251158181
+  },
+  {
+   "start": 356.96,
+   "end": 364.76,
+   "text": "Because if it's more elastic, then the length on planet Y would be larger, because there would be a greater tension force.",
+   "avg_logprob": -0.08316325251158181
+  },
+  {
+   "start": 365.8,
+   "end": 376.58,
+   "text": "But if it's not so elastic, that means that gravity on planet Y would be way, way larger than the gravity on planet E or Earth.",
+   "avg_logprob": -0.08316325251158181
+  },
+  {
+   "start": 376.58,
+   "end": 388.82,
+   "text": "So if it's not so elastic, then the period on planet Y would be less.",
+   "avg_logprob": -0.060678402038469706
+  },
+  {
+   "start": 389.26,
+   "end": 391.46,
+   "text": "And the period on planet E would be greater.",
+   "avg_logprob": -0.060678402038469706
+  },
+  {
+   "start": 391.84,
+   "end": 395.46,
+   "text": "So it really depends on the elasticity of the string.",
+   "avg_logprob": -0.060678402038469706
+  },
+  {
+   "start": 396.02,
+   "end": 397.9,
+   "text": "And that's basically how you answer the question.",
+   "avg_logprob": -0.060678402038469706
+  },
+  {
+   "start": 398.7,
+   "end": 402.56,
+   "text": "So say that gravity is inversely related to period.",
+   "avg_logprob": -0.060678402038469706
+  },
+  {
+   "start": 402.56,
+   "end": 407.28,
+   "text": "So if gravity is greater, then the period will be smaller.",
+   "avg_logprob": -0.07230314477864239
+  },
+  {
+   "start": 408.3,
+   "end": 414.56,
+   "text": "And also say that length is related, or the root of length is related to period.",
+   "avg_logprob": -0.07230314477864239
+  },
+  {
+   "start": 414.92,
+   "end": 425.7,
+   "text": "So if it's really elastic, which means the length will be greater, then the period on planet Y would be greater, because it would have a larger length.",
+   "avg_logprob": -0.07230314477864239
+  },
+  {
+   "start": 425.7,
+   "end": 436.04,
+   "text": "Since it's elastic, and planet Y's greater gravitational field would pull it down more, and result in more elasticity and more length.",
+   "avg_logprob": -0.12120035954285413
+  },
+  {
+   "start": 436.64,
+   "end": 438.84,
+   "text": "And that's basically how you answer this question.",
+   "avg_logprob": -0.12120035954285413
+  },
+  {
+   "start": 440.32,
+   "end": 445.94,
+   "text": "Okay, that's all for today's video, and I hope you enjoyed. Thank you!",
+   "avg_logprob": -0.12120035954285413
+  }
+ ],
+ "cues": [
+  {
+   "start": 2.29,
+   "end": 4.47,
+   "text": "In this video, we'll be going over the next"
+  },
+  {
+   "start": 4.47,
+   "end": 8.21,
+   "text": "question about oscillations, and this is a question"
+  },
+  {
+   "start": 8.21,
+   "end": 12.93,
+   "text": "that I really like because it demonstrates a"
+  },
+  {
+   "start": 12.93,
+   "end": 16.27,
+   "text": "lot of what we have learned, not only oscillations"
+  },
+  {
+   "start": 16.27,
+   "end": 21.27,
+   "text": "but also work, and it's a really good application"
+  },
+  {
+   "start": 21.27,
+   "end": 24.99,
+   "text": "of oscillations as well in part b. So, what"
+  },
+  {
+   "start": 24.99,
+   "end": 27.93,
+   "text": "we have here is a simple pendulum consists of"
+  },
+  {
+   "start": 27.93,
+   "end": 30.13,
+   "text": "a small sphere that hangs from a string with"
+  },
+  {
+   "start": 30.13,
+   "end": 33.03,
+   "text": "negligible mass. The top end of the string is"
+  },
+  {
+   "start": 33.03,
+   "end": 35.69,
+   "text": "fixed. The sphere is pulled to point A so that"
+  },
+  {
+   "start": 35.69,
+   "end": 39.47,
+   "text": "the string makes an angle theta, and the sphere"
+  },
+  {
+   "start": 39.47,
+   "end": 42.37,
+   "text": "is released from rest and it oscillates back"
+  },
+  {
+   "start": 42.37,
+   "end": 47.67,
+   "text": "and forth. The work done on the sphere by Earth"
+  },
+  {
+   "start": 47.67,
+   "end": 50.73,
+   "text": "between points A and B is W."
+  },
+  {
+   "start": 51.33,
+   "end": 54.39,
+   "text": "The pendulum is then taken to planet X, and"
+  },
+  {
+   "start": 54.39,
+   "end": 57.67,
+   "text": "the mass of planet X is the same as the mass"
+  },
+  {
+   "start": 57.67,
+   "end": 64.15,
+   "text": "of Earth, but the radius is greater than the"
+  },
+  {
+   "start": 64.15,
+   "end": 68.75,
+   "text": "radius of Earth. So, first of all, when we see"
+  },
+  {
+   "start": 68.75,
+   "end": 71.81,
+   "text": "that the mass of planet X is the same as the"
+  },
+  {
+   "start": 71.81,
+   "end": 74.91,
+   "text": "mass of Earth but the radius is greater, then"
+  },
+  {
+   "start": 74.91,
+   "end": 80.43,
+   "text": "that means that G on planet X will be smaller"
+  },
+  {
+   "start": 80.43,
+   "end": 84.17,
+   "text": "than the acceleration of Earth, because the"
+  },
+  {
+   "start": 84.17,
+   "end": 87.01,
+   "text": "gravitational field strength would be smaller"
+  },
+  {
+   "start": 87.01,
+   "end": 91.81,
+   "text": "for a greater radius. And the sphere is then"
+  },
+  {
+   "start": 91.81,
+   "end": 94.97,
+   "text": "brought back to point A and swung again on planet"
+  },
+  {
+   "start": 94.97,
+   "end": 97.61,
+   "text": "X, and you have to justify why the work done"
+  },
+  {
+   "start": 97.61,
+   "end": 101.81,
+   "text": "on planet X is less than the work done on planet"
+  },
+  {
+   "start": 101.81,
+   "end": 105.59,
+   "text": "E. Well, as I've said in another video, I don't"
+  },
+  {
+   "start": 105.59,
+   "end": 108.09,
+   "text": "remember which one, but I've said this before,"
+  },
+  {
+   "start": 108.63,
+   "end": 111.51,
+   "text": "the work is equal to force times distance."
+  },
+  {
+   "start": 112.19,
+   "end": 115.61,
+   "text": "And also another thing is force times distance"
+  },
+  {
+   "start": 115.61,
+   "end": 120.95,
+   "text": "cosine theta, but also AP Physics 1 has a formula"
+  },
+  {
+   "start": 120.95,
+   "end": 124.93,
+   "text": "booklet, and it basically has everything you"
+  },
+  {
+   "start": 124.93,
+   "end": 132.17,
+   "text": "need to know to solve these questions, other"
+  },
+  {
+   "start": 132.17,
+   "end": 135.91,
+   "text": "than one or two formulae. So what you have here"
+  },
+  {
+   "start": 135.91,
+   "end": 138.89,
+   "text": "is work is equal to force times distance, or"
+  },
+  {
+   "start": 138.89,
+   "end": 143.05,
+   "text": "force times distance in the direction. And so"
+  },
+  {
+   "start": 143.05,
+   "end": 146.27,
+   "text": "it's just mainly about applying these and understanding"
+  },
+  {
+   "start": 146.27,
+   "end": 153.95,
+   "text": "what you're doing. So force, well, force, Newton's"
+  },
+  {
+   "start": 153.95,
+   "end": 156.81,
+   "text": "law, is mass times acceleration."
+  },
+  {
+   "start": 157.11,
+   "end": 160.87,
+   "text": "In this case, it's mass times gravity, because"
+  },
+  {
+   "start": 160.87,
+   "end": 164.35,
+   "text": "that's the acceleration times distance."
+  },
+  {
+   "start": 166.07,
+   "end": 173.8,
+   "text": "And the same thing for X equals"
+  },
+  {
+   "start": 173.8,
+   "end": 178.34,
+   "text": "force times distance, and it's equal to mass"
+  },
+  {
+   "start": 178.34,
+   "end": 183.4,
+   "text": "times gravity on X times D, while this is gravity"
+  },
+  {
+   "start": 183.4,
+   "end": 186.74,
+   "text": "times E on D. But like I've explained before,"
+  },
+  {
+   "start": 187.36,
+   "end": 191.8,
+   "text": "since the acceleration on X is lower, so this"
+  },
+  {
+   "start": 191.8,
+   "end": 195.4,
+   "text": "is lower than that, and M and D are constants"
+  },
+  {
+   "start": 195.4,
+   "end": 197.88,
+   "text": "in both cases, because the distance and the"
+  },
+  {
+   "start": 197.88,
+   "end": 201.06,
+   "text": "mass of the ball are the same, then we can conclude"
+  },
+  {
+   "start": 201.06,
+   "end": 204.02,
+   "text": "that the work done on X is less than the work"
+  },
+  {
+   "start": 204.02,
+   "end": 206.36,
+   "text": "done on E, and that's basically what you need"
+  },
+  {
+   "start": 206.36,
+   "end": 208.32,
+   "text": "to explain. I'm not going to write it down,"
+  },
+  {
+   "start": 208.52,
+   "end": 210.66,
+   "text": "but the question is solved."
+  },
+  {
+   "start": 210.74,
+   "end": 215.04,
+   "text": "You just need to state what I've said. Okay,"
+  },
+  {
+   "start": 215.12,
+   "end": 217.92,
+   "text": "a new pendulum is made by hanging the same small"
+  },
+  {
+   "start": 217.92,
+   "end": 220.72,
+   "text": "sphere on a different string with negligible"
+  },
+  {
+   "start": 220.72,
+   "end": 224.82,
+   "text": "mass. Different string means that the length"
+  },
+  {
+   "start": 224.82,
+   "end": 228.34,
+   "text": "of the string is different. The new string is"
+  },
+  {
+   "start": 228.34,
+   "end": 231.38,
+   "text": "slightly elastic, and the length of the string"
+  },
+  {
+   "start": 231.38,
+   "end": 234.78,
+   "text": "may increase or decrease depending on the tension"
+  },
+  {
+   "start": 234.78,
+   "end": 240.82,
+   "text": "applied. I haven't read this question in a while,"
+  },
+  {
+   "start": 240.84,
+   "end": 244.98,
+   "text": "but from what I see here, you don't really need"
+  },
+  {
+   "start": 244.98,
+   "end": 247.36,
+   "text": "to mind this. All you need to know is that the"
+  },
+  {
+   "start": 247.36,
+   "end": 250.02,
+   "text": "length of the string can vary. On Earth, when"
+  },
+  {
+   "start": 250.02,
+   "end": 253.38,
+   "text": "the sphere is displaced from the vertical and"
+  },
+  {
+   "start": 253.38,
+   "end": 255.84,
+   "text": "released from rest, the new pendulum oscillates"
+  },
+  {
+   "start": 255.84,
+   "end": 258.08,
+   "text": "with this period. And then the new pendulum"
+  },
+  {
+   "start": 258.08,
+   "end": 260.72,
+   "text": "is taken to a different planet with the same"
+  },
+  {
+   "start": 260.72,
+   "end": 263.12,
+   "text": "radius, but a larger mass."
+  },
+  {
+   "start": 263.12,
+   "end": 267.24,
+   "text": "So basically, that means a larger G."
+  },
+  {
+   "start": 267.52,
+   "end": 271.48,
+   "text": "So G of Y is bigger than G of E."
+  },
+  {
+   "start": 273.7,
+   "end": 277.56,
+   "text": "And on planet Y, it oscillates with period T"
+  },
+  {
+   "start": 277.56,
+   "end": 282.3,
+   "text": "Y. And you have to explain how T Y could be"
+  },
+  {
+   "start": 282.3,
+   "end": 285.78,
+   "text": "larger than T, or it could also be smaller than"
+  },
+  {
+   "start": 285.78,
+   "end": 288.58,
+   "text": "T. Now, I'm not going to write a paragraph,"
+  },
+  {
+   "start": 288.9,
+   "end": 294.74,
+   "text": "but I'm going to explain why. So basically,"
+  },
+  {
+   "start": 295.26,
+   "end": 297.92,
+   "text": "first of all, when we do this, we want to know"
+  },
+  {
+   "start": 297.92,
+   "end": 303.22,
+   "text": "our variables in play. And I would be pulling"
+  },
+  {
+   "start": 303.22,
+   "end": 305.44,
+   "text": "up the formula sheet if I was doing the exam"
+  },
+  {
+   "start": 305.44,
+   "end": 308.2,
+   "text": "right now. And you would know that T P equals"
+  },
+  {
+   "start": 308.2,
+   "end": 310.68,
+   "text": "2 pi root L over G, as we've learned."
+  },
+  {
+   "start": 312.88,
+   "end": 320.16,
+   "text": "So T equals 2 pi root L"
+  },
+  {
+   "start": 320.16,
+   "end": 327.64,
+   "text": "over G. Now, it's kind of obvious now"
+  },
+  {
+   "start": 327.64,
+   "end": 330.52,
+   "text": "why it could be either larger or smaller."
+  },
+  {
+   "start": 331.46,
+   "end": 339.36,
+   "text": "If the length of the string is"
+  },
+  {
+   "start": 339.36,
+   "end": 345.52,
+   "text": "way, way larger, then the period on Earth would"
+  },
+  {
+   "start": 345.52,
+   "end": 349.42,
+   "text": "be greater. So if it's elastic, if it's more"
+  },
+  {
+   "start": 349.42,
+   "end": 351.9,
+   "text": "elastic, then the period on Earth could be greater."
+  },
+  {
+   "start": 352.56,
+   "end": 355.86,
+   "text": "But, sorry, the period on planet Y could be"
+  },
+  {
+   "start": 355.86,
+   "end": 359.3,
+   "text": "greater. Because if it's more elastic, then"
+  },
+  {
+   "start": 359.3,
+   "end": 362.6,
+   "text": "the length on planet Y would be larger, because"
+  },
+  {
+   "start": 362.6,
+   "end": 364.76,
+   "text": "there would be a greater tension force."
+  },
+  {
+   "start": 365.8,
+   "end": 370.34,
+   "text": "But if it's not so elastic, that means that"
+  },
+  {
+   "start": 370.34,
+   "end": 373.38,
+   "text": "gravity on planet Y would be way, way larger"
+  },
+  {
+   "start": 373.38,
+   "end": 376.58,
+   "text": "than the gravity on planet E or Earth."
+  },
+  {
+   "start": 376.58,
+   "end": 383.72,
+   "text": "So if it's not so elastic, then the"
+  },
+  {
+   "start": 383.72,
+   "end": 388.82,
+   "text": "period on planet Y would be less."
+  },
+  {
+   "start": 389.26,
+   "end": 391.46,
+   "text": "And the period on planet E would be greater."
+  },
+  {
+   "start": 391.84,
+   "end": 395.22,
+   "text": "So it really depends on the elasticity of the"
+  },
+  {
+   "start": 395.22,
+   "end": 397.4,
+   "text": "string. And that's basically how you answer"
+  },
+  {
+   "start": 397.4,
+   "end": 401.34,
+   "text": "the question. So say that gravity is inversely"
+  },
+  {
+   "start": 401.34,
+   "end": 405.26,
+   "text": "related to period. So if gravity is greater,"
+  },
+  {
+   "start": 405.48,
+   "end": 408.86,
+   "text": "then the period will be smaller. And also say"
+  },
+  {
+   "start": 408.86,
+   "end": 413.12,
+   "text": "that length is related, or the root of length"
+  },
+  {
+   "start": 413.12,
+   "end": 416.38,
+   "text": "is related to period. So if it's really elastic,"
+  },
+  {
+   "start": 416.4,
+   "end": 419.26,
+   "text": "which means the length will be greater, then"
+  },
+  {
+   "start": 419.26,
+   "end": 424.46,
+   "text": "the period on planet Y would be greater, because"
+  },
+  {
+   "start": 424.46,
+   "end": 426.92,
+   "text": "it would have a larger length. Since it's elastic,"
+  },
+  {
+   "start": 428.02,
+   "end": 431.78,
+   "text": "and planet Y's greater gravitational field would"
+  },
+  {
+   "start": 431.78,
+   "end": 435.46,
+   "text": "pull it down more, and result in more elasticity"
+  },
+  {
+   "start": 435.46,
+   "end": 437.76,
+   "text": "and more length. And that's basically how you"
+  },
+  {
+   "start": 437.76,
+   "end": 442.94,
+   "text": "answer this question. Okay, that's all for today's"
+  },
+  {
+   "start": 442.94,
+   "end": 445.12,
+   "text": "video, and I hope you enjoyed."
+  },
+  {
+   "start": 445.56,
+   "end": 445.94,
+   "text": "Thank you!"
+  }
+ ],
+ "report": {
+  "key": "harmonics__harmonics_ap_work",
+  "title": "Pendulums and Work - Past AP Physics 1 Example",
+  "topicKey": "harmonics",
+  "duration": 448.2346875,
+  "cues": 115,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.15578194566675135,
+  "flagged": []
+ }
+}

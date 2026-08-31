@@ -1,0 +1,895 @@
+{
+ "lesson": {
+  "topicKey": "dynamics",
+  "curriculumKey": "forces_gravity_normal",
+  "title": "Gravity and Normal Force",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/normal_force.mp4",
+  "source": "dynamics.dart"
+ },
+ "segments": [
+  {
+   "start": 0.75,
+   "end": 8.73,
+   "text": "In this video, we will be going slightly more advanced and we will be talking about normal forces and gravity.",
+   "avg_logprob": -0.20032002623119052
+  },
+  {
+   "start": 10.49,
+   "end": 20.69,
+   "text": "So, first of all, I'll explain as we go. A 6kg box rests on a smooth, inclined plane that makes an angle of 35 degrees with a horizontal.",
+   "avg_logprob": -0.20032002623119052
+  },
+  {
+   "start": 20.69,
+   "end": 32.61,
+   "text": "Normally, as we've learned before, the normal force is usually directly opposite to the gravity force.",
+   "avg_logprob": -0.058029397833542745
+  },
+  {
+   "start": 32.77,
+   "end": 45.41,
+   "text": "For example, if we have a box on a surface, there will be a gravity force here and there will be a normal force pointing exactly in the opposite direction over here.",
+   "avg_logprob": -0.058029397833542745
+  },
+  {
+   "start": 45.41,
+   "end": 56.78,
+   "text": "However, on an inclined plane, things get a little different. Let's say we have an inclined plane of 35 degrees here.",
+   "avg_logprob": -0.09290238573581358
+  },
+  {
+   "start": 57.72,
+   "end": 63.38,
+   "text": "And we have a box, let's draw it a bit down, over here.",
+   "avg_logprob": -0.09290238573581358
+  },
+  {
+   "start": 66.2,
+   "end": 76.02,
+   "text": "Force of gravity is always pointed straight down. It's pointed towards the centre of the Earth, so it would be pointed somewhere towards here.",
+   "avg_logprob": -0.09290238573581358
+  },
+  {
+   "start": 77.42,
+   "end": 83.02,
+   "text": "However, the normal force is the force that the surface exerts on the box.",
+   "avg_logprob": -0.07286959970501107
+  },
+  {
+   "start": 83.96,
+   "end": 89.26,
+   "text": "So, the surface, if it's going here, the normal force should be perpendicular to the surface.",
+   "avg_logprob": -0.07286959970501107
+  },
+  {
+   "start": 89.42,
+   "end": 96.28,
+   "text": "In fact, the normal force is always perpendicular to the surface because the surface is the one that's exerting the force.",
+   "avg_logprob": -0.07286959970501107
+  },
+  {
+   "start": 96.28,
+   "end": 99.88,
+   "text": "So, the normal force would look something like this.",
+   "avg_logprob": -0.11320866940495296
+  },
+  {
+   "start": 100.32,
+   "end": 110.18,
+   "text": "F-N and F-G. That are all the forces that there are on this box.",
+   "avg_logprob": -0.11320866940495296
+  },
+  {
+   "start": 110.54,
+   "end": 120.4,
+   "text": "You might be thinking that there will be a force that makes the box go, and you might call it F-A,",
+   "avg_logprob": -0.11320866940495296
+  },
+  {
+   "start": 120.68,
+   "end": 125.58,
+   "text": "but that force is actually a component of the gravity force.",
+   "avg_logprob": -0.11320866940495296
+  },
+  {
+   "start": 125.58,
+   "end": 133.16,
+   "text": "Gravity is the thing that makes the component slide, so don't draw something like this. That's just a component of gravity.",
+   "avg_logprob": -0.11058235289528966
+  },
+  {
+   "start": 135.4,
+   "end": 141.52,
+   "text": "And basically, these are the only two forces, if we don't take into account for the friction.",
+   "avg_logprob": -0.11058235289528966
+  },
+  {
+   "start": 144.36,
+   "end": 148.28,
+   "text": "Yeah, the direction is perpendicular to the surface.",
+   "avg_logprob": -0.11058235289528966
+  },
+  {
+   "start": 149.56,
+   "end": 153.42,
+   "text": "Determine the angle of the normal force makes with the vertical.",
+   "avg_logprob": -0.11058235289528966
+  },
+  {
+   "start": 153.42,
+   "end": 165.55,
+   "text": "Well, the vertical is like this, and if the vertical is perpendicular to the horizontal,",
+   "avg_logprob": -0.06984896933840166
+  },
+  {
+   "start": 166.65,
+   "end": 175.41,
+   "text": "and the incline is 35 degrees to the horizontal, and the normal force is perpendicular to the incline,",
+   "avg_logprob": -0.06984896933840166
+  },
+  {
+   "start": 175.79,
+   "end": 180.79,
+   "text": "then do you agree that this will be 35 degrees? It will.",
+   "avg_logprob": -0.06984896933840166
+  },
+  {
+   "start": 180.79,
+   "end": 186.41,
+   "text": "So, that will be the angle the normal force makes with the vertical, 35 degrees.",
+   "avg_logprob": -0.08041663656109257
+  },
+  {
+   "start": 187.49,
+   "end": 191.33,
+   "text": "Now calculate the magnitude of normal force acting on the box.",
+   "avg_logprob": -0.08041663656109257
+  },
+  {
+   "start": 192.41,
+   "end": 196.67,
+   "text": "And now what we do is we can bring this to a more zoomed in view.",
+   "avg_logprob": -0.08041663656109257
+  },
+  {
+   "start": 197.31,
+   "end": 200.57,
+   "text": "We have the normal force over here, let's call this F-N,",
+   "avg_logprob": -0.08041663656109257
+  },
+  {
+   "start": 201.37,
+   "end": 209.97,
+   "text": "and we have the gravity pointing straight down over here, let's call this F-G.",
+   "avg_logprob": -0.08041663656109257
+  },
+  {
+   "start": 210.73,
+   "end": 219.59,
+   "text": "So now, what we can do is we can actually translate this force, this normal force, down over here.",
+   "avg_logprob": -0.09043753310425641
+  },
+  {
+   "start": 220.75,
+   "end": 224.09,
+   "text": "So we actually bring it down over here. Since it's a vector, we can do that.",
+   "avg_logprob": -0.09043753310425641
+  },
+  {
+   "start": 224.73,
+   "end": 231.47,
+   "text": "And the reason why we do that is since F-G is perfectly in the same direction as the vertical,",
+   "avg_logprob": -0.09043753310425641
+  },
+  {
+   "start": 231.47,
+   "end": 240.75,
+   "text": "it is literally the vertical, and we know that F-N makes an angle of 35 degrees to the vertical,",
+   "avg_logprob": -0.07062212535829256
+  },
+  {
+   "start": 240.93,
+   "end": 244.95,
+   "text": "we know that this is 35 degrees, and this is F-N.",
+   "avg_logprob": -0.07062212535829256
+  },
+  {
+   "start": 245.97,
+   "end": 251.95,
+   "text": "And now we can calculate a lot of things, because we know that this is a right angle,",
+   "avg_logprob": -0.07062212535829256
+  },
+  {
+   "start": 251.95,
+   "end": 253.89,
+   "text": "because we can make it a right angle.",
+   "avg_logprob": -0.10347132276939719
+  },
+  {
+   "start": 255.51,
+   "end": 270.53,
+   "text": "And yeah, now F-N is just force of gravity, which is a hypotenuse, times cosine of 35 degrees,",
+   "avg_logprob": -0.10347132276939719
+  },
+  {
+   "start": 271.53,
+   "end": 273.71,
+   "text": "because cosine is adjacent over hypotenuse.",
+   "avg_logprob": -0.10347132276939719
+  },
+  {
+   "start": 275.09,
+   "end": 276.71,
+   "text": "What is F-G?",
+   "avg_logprob": -0.10347132276939719
+  },
+  {
+   "start": 277.49,
+   "end": 282.17,
+   "text": "Well, F-G is equal to mass times acceleration.",
+   "avg_logprob": -0.10347132276939719
+  },
+  {
+   "start": 282.17,
+   "end": 286.41,
+   "text": "We learned that in a previous lesson, all the way up here.",
+   "avg_logprob": -0.08428071828988883
+  },
+  {
+   "start": 286.63,
+   "end": 289.81,
+   "text": "F equals M-A, cosine 35.",
+   "avg_logprob": -0.08428071828988883
+  },
+  {
+   "start": 294.96,
+   "end": 298.54,
+   "text": "Well, what is our mass? We have that given, 6.0.",
+   "avg_logprob": -0.08428071828988883
+  },
+  {
+   "start": 299.54,
+   "end": 303.68,
+   "text": "Acceleration is just the acceleration of gravity, which is 9.81.",
+   "avg_logprob": -0.08428071828988883
+  },
+  {
+   "start": 304.52,
+   "end": 316.99,
+   "text": "Cosine of 35 would be around 0.819.",
+   "avg_logprob": -0.13778574764728546
+  },
+  {
+   "start": 320.19,
+   "end": 327.47,
+   "text": "And when you multiply that all together, you get around 48 newtons to sig figs, because of this.",
+   "avg_logprob": -0.13778574764728546
+  },
+  {
+   "start": 328.69,
+   "end": 334.99,
+   "text": "And that would be your magnitude for the normal force.",
+   "avg_logprob": -0.13778574764728546
+  },
+  {
+   "start": 336.11,
+   "end": 342.43,
+   "text": "And basically, as a rule of thumb for the future, if you have a problem with a smooth incline plane,",
+   "avg_logprob": -0.057308465821071734
+  },
+  {
+   "start": 342.87,
+   "end": 346.37,
+   "text": "you don't need to draw this out unless you need to show your work.",
+   "avg_logprob": -0.057308465821071734
+  },
+  {
+   "start": 346.55,
+   "end": 354.65,
+   "text": "If it's multiple choice, just remember that the normal force is the force of gravity times cosine of that incline angle.",
+   "avg_logprob": -0.057308465821071734
+  },
+  {
+   "start": 355.07,
+   "end": 356.81,
+   "text": "And this is how we derive that.",
+   "avg_logprob": -0.057308465821071734
+  },
+  {
+   "start": 357.63,
+   "end": 362.73,
+   "text": "It's easy to derive as well if you want to know how to do it.",
+   "avg_logprob": -0.057308465821071734
+  },
+  {
+   "start": 362.73,
+   "end": 365.21,
+   "text": "48 newtons.",
+   "avg_logprob": -0.10293756816081884
+  },
+  {
+   "start": 366.99,
+   "end": 373.49,
+   "text": "Okay, does the normal force depend on the mass of the box, the angle of incline, or both?",
+   "avg_logprob": -0.10293756816081884
+  },
+  {
+   "start": 374.33,
+   "end": 377.23,
+   "text": "Well, that's really, really easy.",
+   "avg_logprob": -0.10293756816081884
+  },
+  {
+   "start": 377.79,
+   "end": 379.19,
+   "text": "We can see our formula.",
+   "avg_logprob": -0.10293756816081884
+  },
+  {
+   "start": 380.21,
+   "end": 387.43,
+   "text": "The normal force is mass times acceleration times cosine of the angle of incline.",
+   "avg_logprob": -0.10293756816081884
+  },
+  {
+   "start": 387.65,
+   "end": 390.17,
+   "text": "So, normal force actually depends on both.",
+   "avg_logprob": -0.10293756816081884
+  },
+  {
+   "start": 390.17,
+   "end": 393.21,
+   "text": "If one of these variable changes, the normal force changes.",
+   "avg_logprob": -0.048256811201572415
+  },
+  {
+   "start": 394.27,
+   "end": 396.39,
+   "text": "So, this would be both.",
+   "avg_logprob": -0.048256811201572415
+  },
+  {
+   "start": 399.84,
+   "end": 402.74,
+   "text": "And that's it for a video of normal force.",
+   "avg_logprob": -0.048256811201572415
+  },
+  {
+   "start": 402.92,
+   "end": 406.46,
+   "text": "Remember, normal force is the force that counteracts gravity,",
+   "avg_logprob": -0.048256811201572415
+  },
+  {
+   "start": 406.76,
+   "end": 411.1,
+   "text": "but it is always perpendicular to the surface on which the object is on.",
+   "avg_logprob": -0.048256811201572415
+  },
+  {
+   "start": 411.62,
+   "end": 412.32,
+   "text": "Thank you for listening.",
+   "avg_logprob": -0.048256811201572415
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.75,
+   "end": 3.39,
+   "text": "In this video, we will be going slightly more"
+  },
+  {
+   "start": 3.39,
+   "end": 5.97,
+   "text": "advanced and we will be talking about normal"
+  },
+  {
+   "start": 5.97,
+   "end": 8.73,
+   "text": "forces and gravity."
+  },
+  {
+   "start": 10.49,
+   "end": 14.41,
+   "text": "So, first of all, I'll explain as we go."
+  },
+  {
+   "start": 14.63,
+   "end": 17.53,
+   "text": "A 6kg box rests on a smooth, inclined plane"
+  },
+  {
+   "start": 17.53,
+   "end": 20.69,
+   "text": "that makes an angle of 35 degrees with a horizontal."
+  },
+  {
+   "start": 20.69,
+   "end": 25.13,
+   "text": "Normally, as we've learned before, the normal"
+  },
+  {
+   "start": 25.13,
+   "end": 32.25,
+   "text": "force is usually directly opposite to the gravity"
+  },
+  {
+   "start": 32.25,
+   "end": 36.53,
+   "text": "force. For example, if we have a box on a surface,"
+  },
+  {
+   "start": 36.99,
+   "end": 39.69,
+   "text": "there will be a gravity force here and there"
+  },
+  {
+   "start": 39.69,
+   "end": 43.33,
+   "text": "will be a normal force pointing exactly in the"
+  },
+  {
+   "start": 43.33,
+   "end": 45.41,
+   "text": "opposite direction over here."
+  },
+  {
+   "start": 45.41,
+   "end": 49.63,
+   "text": "However, on an inclined plane, things get a"
+  },
+  {
+   "start": 49.63,
+   "end": 54.9,
+   "text": "little different. Let's say we have an inclined"
+  },
+  {
+   "start": 54.9,
+   "end": 59.6,
+   "text": "plane of 35 degrees here. And we have a box,"
+  },
+  {
+   "start": 60.58,
+   "end": 63.38,
+   "text": "let's draw it a bit down, over here."
+  },
+  {
+   "start": 66.2,
+   "end": 69.08,
+   "text": "Force of gravity is always pointed straight"
+  },
+  {
+   "start": 69.08,
+   "end": 72.06,
+   "text": "down. It's pointed towards the centre of the"
+  },
+  {
+   "start": 72.06,
+   "end": 75.56,
+   "text": "Earth, so it would be pointed somewhere towards"
+  },
+  {
+   "start": 75.56,
+   "end": 79.66,
+   "text": "here. However, the normal force is the force"
+  },
+  {
+   "start": 79.66,
+   "end": 83.02,
+   "text": "that the surface exerts on the box."
+  },
+  {
+   "start": 83.96,
+   "end": 87.26,
+   "text": "So, the surface, if it's going here, the normal"
+  },
+  {
+   "start": 87.26,
+   "end": 89.26,
+   "text": "force should be perpendicular to the surface."
+  },
+  {
+   "start": 89.42,
+   "end": 91.4,
+   "text": "In fact, the normal force is always perpendicular"
+  },
+  {
+   "start": 91.4,
+   "end": 95.02,
+   "text": "to the surface because the surface is the one"
+  },
+  {
+   "start": 95.02,
+   "end": 98.4,
+   "text": "that's exerting the force. So, the normal force"
+  },
+  {
+   "start": 98.4,
+   "end": 103.14,
+   "text": "would look something like this. F-N and F-G."
+  },
+  {
+   "start": 105.1,
+   "end": 109.9,
+   "text": "That are all the forces that there are on this"
+  },
+  {
+   "start": 109.9,
+   "end": 115.72,
+   "text": "box. You might be thinking that there will be"
+  },
+  {
+   "start": 115.72,
+   "end": 119.4,
+   "text": "a force that makes the box go, and you might"
+  },
+  {
+   "start": 119.4,
+   "end": 123.9,
+   "text": "call it F-A, but that force is actually a component"
+  },
+  {
+   "start": 123.9,
+   "end": 126.96,
+   "text": "of the gravity force. Gravity is the thing that"
+  },
+  {
+   "start": 126.96,
+   "end": 130.7,
+   "text": "makes the component slide, so don't draw something"
+  },
+  {
+   "start": 130.7,
+   "end": 133.16,
+   "text": "like this. That's just a component of gravity."
+  },
+  {
+   "start": 135.4,
+   "end": 138.3,
+   "text": "And basically, these are the only two forces,"
+  },
+  {
+   "start": 138.76,
+   "end": 141.52,
+   "text": "if we don't take into account for the friction."
+  },
+  {
+   "start": 144.36,
+   "end": 147.84,
+   "text": "Yeah, the direction is perpendicular to the"
+  },
+  {
+   "start": 147.84,
+   "end": 151.58,
+   "text": "surface. Determine the angle of the normal force"
+  },
+  {
+   "start": 151.58,
+   "end": 155.46,
+   "text": "makes with the vertical. Well, the vertical"
+  },
+  {
+   "start": 155.46,
+   "end": 163.75,
+   "text": "is like this, and if the vertical is"
+  },
+  {
+   "start": 163.75,
+   "end": 168.75,
+   "text": "perpendicular to the horizontal, and the incline"
+  },
+  {
+   "start": 168.75,
+   "end": 173.33,
+   "text": "is 35 degrees to the horizontal, and the normal"
+  },
+  {
+   "start": 173.33,
+   "end": 175.99,
+   "text": "force is perpendicular to the incline, then"
+  },
+  {
+   "start": 175.99,
+   "end": 179.63,
+   "text": "do you agree that this will be 35 degrees?"
+  },
+  {
+   "start": 180.05,
+   "end": 184.13,
+   "text": "It will. So, that will be the angle the normal"
+  },
+  {
+   "start": 184.13,
+   "end": 186.41,
+   "text": "force makes with the vertical, 35 degrees."
+  },
+  {
+   "start": 187.49,
+   "end": 189.65,
+   "text": "Now calculate the magnitude of normal force"
+  },
+  {
+   "start": 189.65,
+   "end": 193.71,
+   "text": "acting on the box. And now what we do is we"
+  },
+  {
+   "start": 193.71,
+   "end": 196.67,
+   "text": "can bring this to a more zoomed in view."
+  },
+  {
+   "start": 197.31,
+   "end": 199.87,
+   "text": "We have the normal force over here, let's call"
+  },
+  {
+   "start": 199.87,
+   "end": 205.87,
+   "text": "this F-N, and we have the gravity pointing straight"
+  },
+  {
+   "start": 205.87,
+   "end": 209.97,
+   "text": "down over here, let's call this F-G."
+  },
+  {
+   "start": 210.73,
+   "end": 215.25,
+   "text": "So now, what we can do is we can actually translate"
+  },
+  {
+   "start": 215.25,
+   "end": 219.59,
+   "text": "this force, this normal force, down over here."
+  },
+  {
+   "start": 220.75,
+   "end": 222.85,
+   "text": "So we actually bring it down over here. Since"
+  },
+  {
+   "start": 222.85,
+   "end": 225.25,
+   "text": "it's a vector, we can do that. And the reason"
+  },
+  {
+   "start": 225.25,
+   "end": 230.01,
+   "text": "why we do that is since F-G is perfectly in"
+  },
+  {
+   "start": 230.01,
+   "end": 232.63,
+   "text": "the same direction as the vertical, it is literally"
+  },
+  {
+   "start": 232.63,
+   "end": 238.81,
+   "text": "the vertical, and we know that F-N makes an"
+  },
+  {
+   "start": 238.81,
+   "end": 241.39,
+   "text": "angle of 35 degrees to the vertical, we know"
+  },
+  {
+   "start": 241.39,
+   "end": 244.95,
+   "text": "that this is 35 degrees, and this is F-N."
+  },
+  {
+   "start": 245.97,
+   "end": 248.69,
+   "text": "And now we can calculate a lot of things, because"
+  },
+  {
+   "start": 248.69,
+   "end": 252.53,
+   "text": "we know that this is a right angle, because"
+  },
+  {
+   "start": 252.53,
+   "end": 258.79,
+   "text": "we can make it a right angle. And yeah, now"
+  },
+  {
+   "start": 258.79,
+   "end": 265.09,
+   "text": "F-N is just force of gravity, which is a hypotenuse,"
+  },
+  {
+   "start": 265.79,
+   "end": 272.47,
+   "text": "times cosine of 35 degrees, because cosine is"
+  },
+  {
+   "start": 272.47,
+   "end": 276.71,
+   "text": "adjacent over hypotenuse. What is F-G?"
+  },
+  {
+   "start": 277.49,
+   "end": 282.17,
+   "text": "Well, F-G is equal to mass times acceleration."
+  },
+  {
+   "start": 282.17,
+   "end": 285.81,
+   "text": "We learned that in a previous lesson, all the"
+  },
+  {
+   "start": 285.81,
+   "end": 289.81,
+   "text": "way up here. F equals M-A, cosine 35."
+  },
+  {
+   "start": 294.96,
+   "end": 297.44,
+   "text": "Well, what is our mass? We have that given,"
+  },
+  {
+   "start": 297.66,
+   "end": 301.64,
+   "text": "6.0. Acceleration is just the acceleration of"
+  },
+  {
+   "start": 301.64,
+   "end": 303.68,
+   "text": "gravity, which is 9.81."
+  },
+  {
+   "start": 304.52,
+   "end": 311.83,
+   "text": "Cosine of 35 would be"
+  },
+  {
+   "start": 311.83,
+   "end": 316.99,
+   "text": "around 0.819."
+  },
+  {
+   "start": 320.19,
+   "end": 322.63,
+   "text": "And when you multiply that all together, you"
+  },
+  {
+   "start": 322.63,
+   "end": 327.21,
+   "text": "get around 48 newtons to sig figs, because of"
+  },
+  {
+   "start": 327.21,
+   "end": 334.39,
+   "text": "this. And that would be your magnitude for the"
+  },
+  {
+   "start": 334.39,
+   "end": 338.81,
+   "text": "normal force. And basically, as a rule of thumb"
+  },
+  {
+   "start": 338.81,
+   "end": 341.49,
+   "text": "for the future, if you have a problem with a"
+  },
+  {
+   "start": 341.49,
+   "end": 344.69,
+   "text": "smooth incline plane, you don't need to draw"
+  },
+  {
+   "start": 344.69,
+   "end": 346.37,
+   "text": "this out unless you need to show your work."
+  },
+  {
+   "start": 346.55,
+   "end": 348.91,
+   "text": "If it's multiple choice, just remember that"
+  },
+  {
+   "start": 348.91,
+   "end": 352.39,
+   "text": "the normal force is the force of gravity times"
+  },
+  {
+   "start": 352.39,
+   "end": 354.65,
+   "text": "cosine of that incline angle."
+  },
+  {
+   "start": 355.07,
+   "end": 358.79,
+   "text": "And this is how we derive that. It's easy to"
+  },
+  {
+   "start": 358.79,
+   "end": 362.13,
+   "text": "derive as well if you want to know how to do"
+  },
+  {
+   "start": 362.13,
+   "end": 365.21,
+   "text": "it. 48 newtons."
+  },
+  {
+   "start": 366.99,
+   "end": 369.55,
+   "text": "Okay, does the normal force depend on the mass"
+  },
+  {
+   "start": 369.55,
+   "end": 373.49,
+   "text": "of the box, the angle of incline, or both?"
+  },
+  {
+   "start": 374.33,
+   "end": 377.23,
+   "text": "Well, that's really, really easy."
+  },
+  {
+   "start": 377.79,
+   "end": 383.01,
+   "text": "We can see our formula. The normal force is"
+  },
+  {
+   "start": 383.01,
+   "end": 386.67,
+   "text": "mass times acceleration times cosine of the"
+  },
+  {
+   "start": 386.67,
+   "end": 389.17,
+   "text": "angle of incline. So, normal force actually"
+  },
+  {
+   "start": 389.17,
+   "end": 391.61,
+   "text": "depends on both. If one of these variable changes,"
+  },
+  {
+   "start": 392.03,
+   "end": 395.81,
+   "text": "the normal force changes. So, this would be"
+  },
+  {
+   "start": 395.81,
+   "end": 402.74,
+   "text": "both. And that's it for a video of normal force."
+  },
+  {
+   "start": 402.92,
+   "end": 406.06,
+   "text": "Remember, normal force is the force that counteracts"
+  },
+  {
+   "start": 406.06,
+   "end": 409.44,
+   "text": "gravity, but it is always perpendicular to the"
+  },
+  {
+   "start": 409.44,
+   "end": 411.9,
+   "text": "surface on which the object is on. Thank you"
+  },
+  {
+   "start": 411.9,
+   "end": 412.32,
+   "text": "for listening."
+  }
+ ],
+ "report": {
+  "key": "dynamics__forces_gravity_normal",
+  "title": "Gravity and Normal Force",
+  "topicKey": "dynamics",
+  "duration": 412.672,
+  "cues": 101,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.20032002623119052,
+  "flagged": []
+ }
+}

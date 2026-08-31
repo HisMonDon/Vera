@@ -9,6 +9,8 @@ import 'package:widget_mask/widget_mask.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/globals.dart' as globals;
+import 'package:coolapp/views/pages/videos/physics_videos/topic_registry.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/video_catalog.dart';
 import 'package:coolapp/services/auth_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 //import 'package:video_thumbnail/video_thumbnail.dart'; perchance use this for later purposes if current extractvideoimage still doesnt support ios or android in future?
@@ -46,8 +48,11 @@ class _HomePageState extends State {
       globals.videoOfTheDay[globals.videoOfTheDayIndex]['videoTitle'] ?? '';
   final Color thumbnailColor =
       globals.videoOfTheDay[globals.videoOfTheDayIndex]['thumbnailColor']!;
-  final String featuredUnit =
-      globals.videoOfTheDay[globals.videoOfTheDayIndex]['videoUnit'] ?? '';
+  // Resolved from the topic key so the featured card names the unit the same
+  // way Explore and the player do.
+  final String featuredUnit = TopicRegistry.nameOf(
+    globals.videoOfTheDay[globals.videoOfTheDayIndex]['topicKey'] ?? '',
+  );
   @override
   void initState() {
     super.initState();
@@ -672,14 +677,22 @@ class _HomePageState extends State {
                                                         .spaceEvenly,
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.center,
-                                                children: globals.explore
+                                                // Driven by topic keys, not
+                                                // two index-aligned lists. The
+                                                // name and the destination now
+                                                // come from the same key, so
+                                                // they cannot disagree.
+                                                children: TopicRegistry
+                                                    .exploreStripKeys
                                                     .asMap()
                                                     .entries
                                                     .map((
                                                   entry,
                                                 ) {
                                                   final index = entry.key;
-                                                  final video = entry.value;
+                                                  final topic = TopicRegistry
+                                                      .byKey(entry.value)!;
+                                                  final video = topic.name;
 
                                                   final backgroundColor =
                                                       (index % 2 != 0)
@@ -728,8 +741,8 @@ class _HomePageState extends State {
                                                             context,
                                                             MaterialPageRoute(
                                                               builder: (context) =>
-                                                                  globals.redirectExplore[
-                                                                      index],
+                                                                  VideoCatalog.pageFor(
+                                                                      topic.key)!(),
                                                             ),
                                                           );
                                                         }

@@ -1,0 +1,707 @@
+WEBVTT
+NOTE Introduction to Light
+
+1
+00:00:00.660 --> 00:00:03.900
+In this video, we will be starting optics
+by
+
+2
+00:00:03.900 --> 00:00:06.400
+analyzing light and its formulae.
+
+3
+00:00:07.160 --> 00:00:10.880
+So, first of all, what is light? Light is
+a
+
+4
+00:00:10.880 --> 00:00:15.820
+type of electromagnetic wave, and that
+means
+
+5
+00:00:15.820 --> 00:00:20.200
+that it is coupled with electric and
+magnetic
+
+6
+00:00:20.200 --> 00:00:23.580
+fields that travel through space. And it
+doesn't
+
+7
+00:00:23.580 --> 00:00:25.960
+need a medium to travel in, so it can
+travel
+
+8
+00:00:25.960 --> 00:00:28.680
+through a vacuum and it can travel in
+anything.
+
+9
+00:00:28.680 --> 00:00:32.400
+That's why when you see in space, the sun
+can
+
+10
+00:00:32.400 --> 00:00:34.940
+radiate light through space through a
+vacuum
+
+11
+00:00:34.940 --> 00:00:40.020
+onto our earth. Now, an electromagnetic
+wave
+
+12
+00:00:40.020 --> 00:00:42.960
+consists of an oscillating electric field
+and
+
+13
+00:00:42.960 --> 00:00:47.180
+an oscillating magnetic field. So, E and
+B,
+
+14
+00:00:48.360 --> 00:00:55.760
+where E is an electric field, and B
+
+15
+00:00:55.760 --> 00:01:02.980
+is a magnetic field. Now, these are
+perpendicular
+
+16
+00:01:02.980 --> 00:01:06.780
+to each other. So, that means that if we
+have
+
+17
+00:01:06.780 --> 00:01:10.000
+a ray of light going to, let's say, the
+right,
+
+18
+00:01:11.120 --> 00:01:15.000
+then if our electric field is looking like
+this,
+
+19
+00:01:15.540 --> 00:01:18.820
+then our magnetic field will be
+perpendicular,
+
+20
+00:01:19.380 --> 00:01:24.790
+and it will look something like this. You
+can
+
+21
+00:01:24.790 --> 00:01:27.970
+imagine it as a 3D diagram, where this is
+a
+
+22
+00:01:27.970 --> 00:01:30.990
+right angle, the electric field is
+vertical,
+
+23
+00:01:31.390 --> 00:01:36.510
+and the magnetic field is lying flat
+perpendicular
+
+24
+00:01:36.510 --> 00:01:44.090
+to it. And a good fact to know is that
+light
+
+25
+00:01:44.090 --> 00:01:48.930
+travels at 3.00 times 10 to the power of 8
+metres
+
+26
+00:01:48.930 --> 00:01:51.910
+per second in a vacuum.
+
+27
+00:01:52.730 --> 00:01:55.650
+And this is really good to know.
+
+28
+00:01:55.770 --> 00:01:59.530
+You probably have learned this. But what
+you
+
+29
+00:01:59.530 --> 00:02:01.410
+probably have not learned, that we will
+cover
+
+30
+00:02:01.410 --> 00:02:04.850
+in this video, is that when light enters a
+material,
+
+31
+00:02:04.930 --> 00:02:09.590
+such as glass and water, it slows down,
+because
+
+32
+00:02:09.590 --> 00:02:12.430
+the interaction with the materials
+actually
+
+33
+00:02:12.430 --> 00:02:14.670
+delays the light.
+
+34
+00:02:15.230 --> 00:02:18.570
+So, the formula is given as the speed of
+light
+
+35
+00:02:18.570 --> 00:02:22.390
+is equal to the speed of light in a vacuum
+over
+
+36
+00:02:22.390 --> 00:02:25.590
+n, which is the index of refraction.
+
+37
+00:02:26.430 --> 00:02:32.030
+Now, the index of refraction is basically
+governing
+
+38
+00:02:33.370 --> 00:02:36.830
+how fast light can move in a constant.
+
+39
+00:02:37.490 --> 00:02:39.710
+The bigger the index of refraction means,
+the
+
+40
+00:02:39.710 --> 00:02:45.630
+slower the light can be, and it is always
+at
+
+41
+00:02:45.630 --> 00:02:49.070
+least one. This is because if it's less
+than
+
+42
+00:02:49.070 --> 00:02:51.810
+one, then the speed of light will be
+bigger
+
+43
+00:02:51.810 --> 00:02:53.990
+than that in a vacuum, which is not
+possible.
+
+44
+00:02:55.530 --> 00:02:59.310
+Light has a wavelength as well, because it
+also
+
+45
+00:02:59.310 --> 00:03:01.490
+behaves as a wave. Light is actually made
+up
+
+46
+00:03:01.490 --> 00:03:06.130
+of photons, and it goes like a wave, so it
+behaves
+
+47
+00:03:06.130 --> 00:03:10.530
+as something we call a wave-particle
+duality.
+
+48
+00:03:13.830 --> 00:03:18.610
+So it can behave both as a wave and as a
+particle.
+
+49
+00:03:20.530 --> 00:03:24.930
+And light, like any other wave, it has a
+wavelength,
+
+50
+00:03:26.130 --> 00:03:29.010
+lambda, it has a frequency, it has a
+period,
+
+51
+00:03:29.070 --> 00:03:31.110
+and it has an amplitude.
+
+52
+00:03:33.530 --> 00:03:37.610
+So, this connects to the wave equation,
+where
+
+53
+00:03:37.610 --> 00:03:40.910
+v is equal to f times lambda.
+
+54
+00:03:41.130 --> 00:03:43.430
+Frequency times wavelength would be the
+speed
+
+55
+00:03:43.430 --> 00:03:48.990
+of the light. And in a vacuum, v equals c,
+because
+
+56
+00:03:48.990 --> 00:03:52.150
+the index of refraction is one. So, c
+equals
+
+57
+00:03:52.150 --> 00:03:54.550
+frequency times lambda in a vacuum.
+
+58
+00:03:54.550 --> 00:03:57.750
+And this is really, really important,
+because
+
+59
+00:03:57.750 --> 00:04:01.570
+this basically tells us that in a given
+medium,
+
+60
+00:04:02.350 --> 00:04:05.950
+frequency stays the same, but wavelength
+changes
+
+61
+00:04:05.950 --> 00:04:10.650
+when speed changes. So frequency always
+stays
+
+62
+00:04:10.650 --> 00:04:14.110
+the same as long as it's the same
+particle,
+
+63
+00:04:14.490 --> 00:04:17.090
+but wavelength can change when speed
+changes.
+
+64
+00:04:18.090 --> 00:04:22.170
+Now, let's list the main behavior of light
+and
+
+65
+00:04:22.170 --> 00:04:24.570
+explain what they mean.
+
+66
+00:04:25.190 --> 00:04:27.390
+First of all, the first behavior we'll be
+analyzing
+
+67
+00:04:27.390 --> 00:04:32.770
+is reflection. And this basically says
+that
+
+68
+00:04:32.770 --> 00:04:35.970
+light bounces off a surface. And for a
+smooth
+
+69
+00:04:35.970 --> 00:04:43.050
+surface, the angle of incidence is
+
+70
+00:04:43.050 --> 00:04:45.410
+equal to the angle of refraction. You
+might
+
+71
+00:04:45.410 --> 00:04:49.330
+have heard this in grade 10 science or in
+your
+
+72
+00:04:49.330 --> 00:04:52.210
+extracurricular, but basically when we
+bounce
+
+73
+00:04:52.210 --> 00:04:56.550
+off a smooth surface, let's say glass,
+this
+
+74
+00:04:56.550 --> 00:05:00.050
+angle theta, let's call this theta i for
+angle
+
+75
+00:05:00.050 --> 00:05:03.070
+of incidence, is equal to theta r, which
+is
+
+76
+00:05:03.070 --> 00:05:07.390
+angle of refraction. And these are
+measured
+
+77
+00:05:07.390 --> 00:05:10.090
+from the normal. This is the normal. The
+normal
+
+78
+00:05:10.090 --> 00:05:13.230
+is basically an imaginary line that is
+perpendicular
+
+79
+00:05:13.230 --> 00:05:16.930
+to the surface. Now, refraction.
+
+80
+00:05:17.650 --> 00:05:21.350
+Light changes direction when it enters a
+new
+
+81
+00:05:21.350 --> 00:05:25.390
+medium, and this is what we will probably
+be
+
+82
+00:05:25.390 --> 00:05:28.510
+focusing on in most of our high school
+physics.
+
+83
+00:05:29.390 --> 00:05:32.430
+And it's basically governed by one
+equation,
+
+84
+00:05:33.150 --> 00:05:39.270
+and that is called Lenz's law. Sorry,
+Snell's
+
+85
+00:05:39.270 --> 00:05:47.340
+law. Snell's law. And basically
+
+86
+00:05:47.340 --> 00:05:51.860
+for refraction, the tools you will need is
+the
+
+87
+00:05:51.860 --> 00:05:54.500
+normal. The normal, always try to identify
+the
+
+88
+00:05:54.500 --> 00:05:57.180
+normal when doing these types of
+questions.
+
+89
+00:05:58.060 --> 00:06:03.460
+And it is given by n1 sine theta 1 equals
+n2
+
+90
+00:06:03.460 --> 00:06:05.680
+sine theta 2.
+
+91
+00:06:06.340 --> 00:06:10.180
+Basically, this says that, let's say we go
+from
+
+92
+00:06:10.180 --> 00:06:15.340
+air into water, like a glass, a glass of
+water,
+
+93
+00:06:15.600 --> 00:06:18.480
+and you shoot a beam of light, like for
+example
+
+94
+00:06:18.480 --> 00:06:21.720
+a flashlight, and let's analyze one beam
+of
+
+95
+00:06:21.720 --> 00:06:26.940
+light. If the light enters such that it
+looks
+
+96
+00:06:26.940 --> 00:06:30.800
+like this, then we need to first identify
+the
+
+97
+00:06:30.800 --> 00:06:34.340
+normal. The normal will be this.
+
+98
+00:06:34.520 --> 00:06:37.480
+This will be the normal. And since water
+has
+
+99
+00:06:37.480 --> 00:06:40.620
+a higher index of refraction than air,
+then
+
+100
+00:06:40.620 --> 00:06:44.540
+that means that n2 will be higher.
+
+101
+00:06:45.380 --> 00:06:50.000
+And so then theta 2 will be lower.
+
+102
+00:06:50.140 --> 00:06:53.120
+So that means it's going to go towards the
+normal.
+
+103
+00:06:53.600 --> 00:06:56.540
+So it's going to look something like this.
+And
+
+104
+00:06:56.540 --> 00:07:01.220
+then you do the same thing again. You draw
+this.
+
+105
+00:07:01.940 --> 00:07:03.820
+Now it's going to bend away from the
+normal.
+
+106
+00:07:04.360 --> 00:07:06.560
+So it's going to go like that.
+
+107
+00:07:07.900 --> 00:07:11.840
+And that's basically how light behaves in
+a
+
+108
+00:07:11.840 --> 00:07:15.080
+glass of water. So what this can tell us
+is,
+
+109
+00:07:15.440 --> 00:07:19.080
+as a rough estimate without calculations,
+is
+
+110
+00:07:19.080 --> 00:07:22.720
+that a higher index of refraction, higher
+n,
+
+111
+00:07:23.420 --> 00:07:30.430
+means that the light bends towards the
+
+112
+00:07:30.430 --> 00:07:38.200
+normal. Normal, oops, normal,
+
+113
+00:07:39.120 --> 00:07:42.680
+and vice versa. So when we have a higher
+index
+
+114
+00:07:42.680 --> 00:07:45.220
+of refraction and we draw the normal, it's
+going
+
+115
+00:07:45.220 --> 00:07:48.380
+to bend towards the normal and vice versa.
+
+116
+00:07:50.760 --> 00:07:55.260
+Now, the last property of light that we'll
+be
+
+117
+00:07:55.260 --> 00:08:01.080
+analyzing in this unit is refraction.
+
+118
+00:08:02.420 --> 00:08:05.580
+Sorry, diffraction. Those are two
+different
+
+119
+00:08:05.580 --> 00:08:13.120
+things. Diffraction. And this is how
+
+120
+00:08:13.120 --> 00:08:16.540
+light behaves when it's passing through a
+narrow
+
+121
+00:08:16.540 --> 00:08:20.640
+slit or edge. And this is probably the
+most
+
+122
+00:08:20.640 --> 00:08:24.700
+experimental unit of light we will go
+through.
+
+123
+00:08:25.120 --> 00:08:28.600
+And I'll be talking more about that in
+another
+
+124
+00:08:28.600 --> 00:08:34.700
+video. Now, one last thing before we end
+off
+
+125
+00:08:34.700 --> 00:08:39.360
+this video is I want to talk about the
+energy
+
+126
+00:08:39.360 --> 00:08:44.280
+of light. Light also has energy because
+light
+
+127
+00:08:44.280 --> 00:08:47.680
+is photons and photons carry energy.
+
+128
+00:08:50.140 --> 00:08:55.420
+Energy, oops, energy of a light, of a
+photon,
+
+129
+00:08:55.940 --> 00:09:00.840
+is given by H times frequency, where H is
+a
+
+130
+00:09:00.840 --> 00:09:05.440
+constant, otherwise known as Planck's
+constant.
+
+131
+00:09:05.700 --> 00:09:08.820
+It's probably given in your IB booklet if
+you're
+
+132
+00:09:08.820 --> 00:09:11.480
+doing IB or AP. F is the frequency.
+
+133
+00:09:11.480 --> 00:09:14.340
+Since frequency stays the same in any
+medium,
+
+134
+00:09:14.600 --> 00:09:17.060
+the energy of a photon stays the same in
+any
+
+135
+00:09:17.060 --> 00:09:21.280
+medium as well. And this basically tells
+us
+
+136
+00:09:21.280 --> 00:09:24.440
+that higher frequency light carries more
+energy.
+
+137
+00:09:24.900 --> 00:09:28.840
+That's why gamma rays are way, way, way
+stronger
+
+138
+00:09:28.840 --> 00:09:33.760
+than infrared, because the frequency is
+really
+
+139
+00:09:33.760 --> 00:09:36.400
+way higher than infrared.
+
+140
+00:09:36.400 --> 00:09:41.400
+So, ultimately, this unit will be
+analyzing
+
+141
+00:09:41.400 --> 00:09:44.840
+everything about light. We'll be analyzing
+refraction,
+
+142
+00:09:45.340 --> 00:09:49.300
+optics, refraction, diffraction, and also
+even
+
+143
+00:09:49.300 --> 00:09:52.620
+properties of its waves, such as
+interference
+
+144
+00:09:52.620 --> 00:09:58.140
+and more diffraction.
+
+145
+00:09:59.320 --> 00:10:03.280
+And, yeah, this is a really fun unit, and
+I
+
+146
+00:10:03.280 --> 00:10:05.320
+hope you will enjoy this as much as I do.
+
+147
+00:10:05.820 --> 00:10:06.140
+Thank you!

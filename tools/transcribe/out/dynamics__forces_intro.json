@@ -1,0 +1,520 @@
+{
+ "lesson": {
+  "topicKey": "dynamics",
+  "curriculumKey": "forces_intro",
+  "title": "Introduction to Dynamics",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/introduction_to_dynamics.mp4",
+  "source": "dynamics.dart"
+ },
+ "segments": [
+  {
+   "start": 1.1,
+   "end": 7.9,
+   "text": "In today's video, we are going to be introduced to dynamics. First of all, what are dynamics?",
+   "avg_logprob": -0.11288006514755648
+  },
+  {
+   "start": 8.76,
+   "end": 17.5,
+   "text": "In physics, dynamics are the study of motion and, more particularly, forces. The difference",
+   "avg_logprob": -0.11288006514755648
+  },
+  {
+   "start": 17.5,
+   "end": 25.22,
+   "text": "between dynamics and kinematics is that in kinematics, we study about motion itself,",
+   "avg_logprob": -0.11288006514755648
+  },
+  {
+   "start": 25.22,
+   "end": 34.74,
+   "text": "while in dynamics, we study how and what causes the motion. For example, if someone pushes a box,",
+   "avg_logprob": -0.13574051723551395
+  },
+  {
+   "start": 34.96,
+   "end": 41.06,
+   "text": "we would be studying the force that the person exerts onto this box that makes the box move.",
+   "avg_logprob": -0.13574051723551395
+  },
+  {
+   "start": 44.07,
+   "end": 54.55,
+   "text": "And this directly correlates into my next subject about Newton's laws. So I'll be",
+   "avg_logprob": -0.13574051723551395
+  },
+  {
+   "start": 54.55,
+   "end": 60.29,
+   "text": "introducing Newton's three laws right now, and these basically govern what we know about",
+   "avg_logprob": -0.11242822130642287
+  },
+  {
+   "start": 61.51,
+   "end": 68.83,
+   "text": "movement, motion, and dynamics itself. First of all, an object that is at rest stays at",
+   "avg_logprob": -0.11242822130642287
+  },
+  {
+   "start": 68.83,
+   "end": 75.15,
+   "text": "rest and a moving object stays in motion until a net external force is acted on it.",
+   "avg_logprob": -0.11242822130642287
+  },
+  {
+   "start": 75.63,
+   "end": 82.49,
+   "text": "So what does that mean? Well, basically, anything that has a velocity or is moving",
+   "avg_logprob": -0.11242822130642287
+  },
+  {
+   "start": 83.31,
+   "end": 93.11,
+   "text": "will keep that velocity until a force is acted upon it. What does this mean? This means that",
+   "avg_logprob": -0.04871250570027365
+  },
+  {
+   "start": 93.11,
+   "end": 101.63,
+   "text": "forces are the only thing that can move an object. Nothing else can cause an object to move.",
+   "avg_logprob": -0.04871250570027365
+  },
+  {
+   "start": 103.21,
+   "end": 107.97,
+   "text": "And you might be wondering, well, if I roll a ball, why does it slow down? Well, that's",
+   "avg_logprob": -0.04871250570027365
+  },
+  {
+   "start": 107.97,
+   "end": 114.49,
+   "text": "because there's actually a friction force acting upon it. There always is a force that",
+   "avg_logprob": -0.07489688754562408
+  },
+  {
+   "start": 117.13,
+   "end": 124.29,
+   "text": "makes an object do what it does in motion, and this friction force has two components. We'll",
+   "avg_logprob": -0.07489688754562408
+  },
+  {
+   "start": 124.29,
+   "end": 137.21,
+   "text": "talk about that later. Next, the acceleration of an object is directly proportional to the",
+   "avg_logprob": -0.07489688754562408
+  },
+  {
+   "start": 137.69,
+   "end": 147.35,
+   "text": "what this is saying is acceleration is the net force over mass, inversely proportional to mass",
+   "avg_logprob": -0.15428141921253527
+  },
+  {
+   "start": 147.35,
+   "end": 154.95,
+   "text": "and directly proportional to net force. And with this, we can get our first formula,",
+   "avg_logprob": -0.15428141921253527
+  },
+  {
+   "start": 155.15,
+   "end": 163.13,
+   "text": "probably arguably the most important formula in high school physics. F net equals acceleration",
+   "avg_logprob": -0.15428141921253527
+  },
+  {
+   "start": 163.13,
+   "end": 171.93,
+   "text": "times mass or MA, and this is a really important formula. So this basically describes and",
+   "avg_logprob": -0.08688369393348694
+  },
+  {
+   "start": 171.93,
+   "end": 181.11,
+   "text": "demonstrates how a force can induce movement and acceleration, and it's purely based off of",
+   "avg_logprob": -0.08688369393348694
+  },
+  {
+   "start": 181.11,
+   "end": 189.94,
+   "text": "its mass and the force given. And for every action, there is an equal and opposite reaction.",
+   "avg_logprob": -0.08688369393348694
+  },
+  {
+   "start": 189.94,
+   "end": 196.66,
+   "text": "This is also a really, really important law, and it's quizzed a lot of times.",
+   "avg_logprob": -0.08161882668325346
+  },
+  {
+   "start": 197.44,
+   "end": 204.78,
+   "text": "And of course, you might be very, very familiar with this law, but it is also good to remember.",
+   "avg_logprob": -0.08161882668325346
+  },
+  {
+   "start": 205.12,
+   "end": 213.14,
+   "text": "If you, let's say, punch a block of wood, that wood is going to exert the same force",
+   "avg_logprob": -0.08161882668325346
+  },
+  {
+   "start": 213.78,
+   "end": 220.62,
+   "text": "as your fist does on your hand. If you catch a baseball, let's say, if you catch a baseball",
+   "avg_logprob": -0.06214728114310275
+  },
+  {
+   "start": 220.62,
+   "end": 226.76,
+   "text": "with your hand, that baseball is going to exert the same amount of force as it does,",
+   "avg_logprob": -0.06214728114310275
+  },
+  {
+   "start": 227.5,
+   "end": 234.62,
+   "text": "as your hand does on the baseball. And that's basically the third law, and it's really useful",
+   "avg_logprob": -0.06214728114310275
+  },
+  {
+   "start": 234.62,
+   "end": 240.96,
+   "text": "for a lot of thinking questions. And these are very, very important laws.",
+   "avg_logprob": -0.06214728114310275
+  },
+  {
+   "start": 241.7,
+   "end": 247.24,
+   "text": "They basically make up what we know about dynamics, and they're the foundation for",
+   "avg_logprob": -0.11552330514504797
+  },
+  {
+   "start": 247.24,
+   "end": 254.42,
+   "text": "the introduction. We derive most of our formulas from these laws, and I'll get into that later.",
+   "avg_logprob": -0.11552330514504797
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.1,
+   "end": 4.4,
+   "text": "In today's video, we are going to be introduced"
+  },
+  {
+   "start": 4.4,
+   "end": 7.9,
+   "text": "to dynamics. First of all, what are dynamics?"
+  },
+  {
+   "start": 8.76,
+   "end": 11.8,
+   "text": "In physics, dynamics are the study of motion"
+  },
+  {
+   "start": 11.8,
+   "end": 15.12,
+   "text": "and, more particularly, forces."
+  },
+  {
+   "start": 16.82,
+   "end": 20.24,
+   "text": "The difference between dynamics and kinematics"
+  },
+  {
+   "start": 20.24,
+   "end": 24.56,
+   "text": "is that in kinematics, we study about motion"
+  },
+  {
+   "start": 24.56,
+   "end": 29.24,
+   "text": "itself, while in dynamics, we study how and"
+  },
+  {
+   "start": 29.24,
+   "end": 33.72,
+   "text": "what causes the motion. For example, if someone"
+  },
+  {
+   "start": 33.72,
+   "end": 36.64,
+   "text": "pushes a box, we would be studying the force"
+  },
+  {
+   "start": 36.64,
+   "end": 40.18,
+   "text": "that the person exerts onto this box that makes"
+  },
+  {
+   "start": 40.18,
+   "end": 47.37,
+   "text": "the box move. And this directly correlates"
+  },
+  {
+   "start": 47.37,
+   "end": 53.43,
+   "text": "into my next subject about Newton's laws."
+  },
+  {
+   "start": 53.75,
+   "end": 56.53,
+   "text": "So I'll be introducing Newton's three laws right"
+  },
+  {
+   "start": 56.53,
+   "end": 59.95,
+   "text": "now, and these basically govern what we know"
+  },
+  {
+   "start": 59.95,
+   "end": 64.75,
+   "text": "about movement, motion, and dynamics itself."
+  },
+  {
+   "start": 65.43,
+   "end": 68.57,
+   "text": "First of all, an object that is at rest stays"
+  },
+  {
+   "start": 68.57,
+   "end": 71.41,
+   "text": "at rest and a moving object stays in motion"
+  },
+  {
+   "start": 71.41,
+   "end": 75.15,
+   "text": "until a net external force is acted on it."
+  },
+  {
+   "start": 75.63,
+   "end": 79.55,
+   "text": "So what does that mean? Well, basically, anything"
+  },
+  {
+   "start": 79.55,
+   "end": 85.13,
+   "text": "that has a velocity or is moving will keep that"
+  },
+  {
+   "start": 85.13,
+   "end": 90.77,
+   "text": "velocity until a force is acted upon it."
+  },
+  {
+   "start": 91.49,
+   "end": 93.55,
+   "text": "What does this mean? This means that forces"
+  },
+  {
+   "start": 93.55,
+   "end": 98.37,
+   "text": "are the only thing that can move an object."
+  },
+  {
+   "start": 98.55,
+   "end": 101.63,
+   "text": "Nothing else can cause an object to move."
+  },
+  {
+   "start": 103.21,
+   "end": 105.41,
+   "text": "And you might be wondering, well, if I roll"
+  },
+  {
+   "start": 105.41,
+   "end": 107.97,
+   "text": "a ball, why does it slow down? Well, that's"
+  },
+  {
+   "start": 107.97,
+   "end": 110.41,
+   "text": "because there's actually a friction force acting"
+  },
+  {
+   "start": 110.41,
+   "end": 117.77,
+   "text": "upon it. There always is a force that makes"
+  },
+  {
+   "start": 117.77,
+   "end": 122.21,
+   "text": "an object do what it does in motion, and this"
+  },
+  {
+   "start": 122.21,
+   "end": 124.49,
+   "text": "friction force has two components. We'll talk"
+  },
+  {
+   "start": 124.49,
+   "end": 127.93,
+   "text": "about that later. Next, the acceleration of"
+  },
+  {
+   "start": 127.93,
+   "end": 137.21,
+   "text": "an object is directly proportional to the"
+  },
+  {
+   "start": 137.69,
+   "end": 143.11,
+   "text": "what this is saying is acceleration is the net"
+  },
+  {
+   "start": 143.11,
+   "end": 147.35,
+   "text": "force over mass, inversely proportional to mass"
+  },
+  {
+   "start": 147.35,
+   "end": 149.97,
+   "text": "and directly proportional to net force."
+  },
+  {
+   "start": 150.75,
+   "end": 154.95,
+   "text": "And with this, we can get our first formula,"
+  },
+  {
+   "start": 155.15,
+   "end": 157.69,
+   "text": "probably arguably the most important formula"
+  },
+  {
+   "start": 157.69,
+   "end": 160.17,
+   "text": "in high school physics."
+  },
+  {
+   "start": 161.15,
+   "end": 165.19,
+   "text": "F net equals acceleration times mass or MA,"
+  },
+  {
+   "start": 165.73,
+   "end": 168.61,
+   "text": "and this is a really important formula."
+  },
+  {
+   "start": 169.45,
+   "end": 172.77,
+   "text": "So this basically describes and demonstrates"
+  },
+  {
+   "start": 172.77,
+   "end": 178.99,
+   "text": "how a force can induce movement and acceleration,"
+  },
+  {
+   "start": 178.99,
+   "end": 183.85,
+   "text": "and it's purely based off of its mass and the"
+  },
+  {
+   "start": 183.85,
+   "end": 188.42,
+   "text": "force given. And for every action, there is"
+  },
+  {
+   "start": 188.42,
+   "end": 191.54,
+   "text": "an equal and opposite reaction. This is also"
+  },
+  {
+   "start": 191.54,
+   "end": 195.34,
+   "text": "a really, really important law, and it's quizzed"
+  },
+  {
+   "start": 195.34,
+   "end": 199.92,
+   "text": "a lot of times. And of course, you might be"
+  },
+  {
+   "start": 199.92,
+   "end": 203.52,
+   "text": "very, very familiar with this law, but it is"
+  },
+  {
+   "start": 203.52,
+   "end": 207.0,
+   "text": "also good to remember. If you, let's say, punch"
+  },
+  {
+   "start": 207.0,
+   "end": 210.78,
+   "text": "a block of wood, that wood is going to exert"
+  },
+  {
+   "start": 210.78,
+   "end": 215.68,
+   "text": "the same force as your fist does on your hand."
+  },
+  {
+   "start": 215.82,
+   "end": 219.9,
+   "text": "If you catch a baseball, let's say, if you catch"
+  },
+  {
+   "start": 219.9,
+   "end": 223.38,
+   "text": "a baseball with your hand, that baseball is"
+  },
+  {
+   "start": 223.38,
+   "end": 226.38,
+   "text": "going to exert the same amount of force as it"
+  },
+  {
+   "start": 226.38,
+   "end": 229.98,
+   "text": "does, as your hand does on the baseball."
+  },
+  {
+   "start": 230.68,
+   "end": 233.96,
+   "text": "And that's basically the third law, and it's"
+  },
+  {
+   "start": 233.96,
+   "end": 236.34,
+   "text": "really useful for a lot of thinking questions."
+  },
+  {
+   "start": 237.68,
+   "end": 240.96,
+   "text": "And these are very, very important laws."
+  },
+  {
+   "start": 241.7,
+   "end": 245.38,
+   "text": "They basically make up what we know about dynamics,"
+  },
+  {
+   "start": 245.4,
+   "end": 248.0,
+   "text": "and they're the foundation for the introduction."
+  },
+  {
+   "start": 249.08,
+   "end": 252.4,
+   "text": "We derive most of our formulas from these laws,"
+  },
+  {
+   "start": 252.88,
+   "end": 254.42,
+   "text": "and I'll get into that later."
+  }
+ ],
+ "report": {
+  "key": "dynamics__forces_intro",
+  "title": "Introduction to Dynamics",
+  "topicKey": "dynamics",
+  "duration": 256.832,
+  "cues": 62,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.15428141921253527,
+  "flagged": []
+ }
+}

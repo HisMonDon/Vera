@@ -1,0 +1,493 @@
+{
+ "lesson": {
+  "topicKey": "fluids",
+  "curriculumKey": "fluids_example2",
+  "title": "Fluid Statics and Dynamics Examples 2",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/AP%20Physics%201%20Fluids%20Example%20Question%201%20(1080p).mp4",
+  "source": "fluids.dart"
+ },
+ "segments": [
+  {
+   "start": 0.5,
+   "end": 27.36,
+   "text": "Over here we have the question, a venturi tube has a pressure difference of 15,000 pascals. The entrance radius is 3 cm, while the exit radius is 1 cm. What are the entrance velocity, exit velocity, and flow rate if the fluid is gasoline, which has a density of 700 kg per m3? So, first of all we know that this is a fluid question, so we would start off by writing the Bernoulli equation.",
+   "avg_logprob": -0.14853260247036815
+  },
+  {
+   "start": 27.36,
+   "end": 68.88,
+   "text": "Now after we do this, we realize that our question involves a venturi tube, which basically means that the y value doesn't change. Since the y value doesn't change, we can cancel out the terms that involve y. So we can cancel out these two terms, and what we're left with is p1 plus 1 over 2 pv1 squared equals p2 plus 1 over 2 pv2 squared.",
+   "avg_logprob": -0.10253789318704057
+  },
+  {
+   "start": 70.18,
+   "end": 86.78,
+   "text": "Now, the question also states that the pressure difference is 15,000, so p1 minus p2 is 15,000. So we want to isolate p1 minus p2. We move p2 to the other side, and we move this thing to this side.",
+   "avg_logprob": -0.09705723796860646
+  },
+  {
+   "start": 86.78,
+   "end": 107.63,
+   "text": "So, 1 over 2 rho v2 squared minus 1 over 2 rho v1 squared. This would be 15,000 equals, you can factor out of 1 over 2 rho, 1 over 2 rho v2 squared minus v1 squared.",
+   "avg_logprob": -0.09436137109462704
+  },
+  {
+   "start": 107.63,
+   "end": 129.97,
+   "text": "We know rho is 700, so 1 over 2 rho would be 350. Dividing that by this, we get 300 over 7 equals v2 squared minus v1 squared.",
+   "avg_logprob": -0.06091118932125114
+  },
+  {
+   "start": 131.41,
+   "end": 150.19,
+   "text": "Now, what we have to do from here is, since we don't know v1 or v2, but we do know the entrance radius and the exit radius, that means that we should use the continuity equation, which basically states that the rate is constant.",
+   "avg_logprob": -0.06521424703430712
+  },
+  {
+   "start": 151.27,
+   "end": 163.94,
+   "text": "The rate would be v1 times a1 equals v2 times a2. So, we know a1 and a2 because we know the radius.",
+   "avg_logprob": -0.09258237799008687
+  },
+  {
+   "start": 164.96,
+   "end": 179.93,
+   "text": "a1 would be pi times 3 squared, which would be equal to 9 pi, equals v2 times a2 would be pi times 1 squared, which would be just pi times pi.",
+   "avg_logprob": -0.09258237799008687
+  },
+  {
+   "start": 179.93,
+   "end": 186.25,
+   "text": "So, cancelling out the pis, we get 9 times v1 equals v2.",
+   "avg_logprob": -0.10270565021328809
+  },
+  {
+   "start": 187.09,
+   "end": 194.45,
+   "text": "Now, since we have two equations, we can easily solve for a variable.",
+   "avg_logprob": -0.10270565021328809
+  },
+  {
+   "start": 195.15,
+   "end": 201.23,
+   "text": "We can plug in v2 equals 9 v1. We can substitute that into here.",
+   "avg_logprob": -0.12069866251438222
+  },
+  {
+   "start": 201.73,
+   "end": 215.2,
+   "text": "So, 300 over 7 equals 2. v2 would be equal to 9 v1 squared minus v1 squared.",
+   "avg_logprob": -0.12069866251438222
+  },
+  {
+   "start": 215.2,
+   "end": 222.96,
+   "text": "300 over 7 equals 81 v1 squared minus v1 squared.",
+   "avg_logprob": -0.1054788835060138
+  },
+  {
+   "start": 223.0,
+   "end": 228.81,
+   "text": "300 over 7 equals 80 v1 squared.",
+   "avg_logprob": -0.1054788835060138
+  },
+  {
+   "start": 230.04,
+   "end": 241.8,
+   "text": "And, when we solve for v1, we would get v1 equals 0.73 meters per second.",
+   "avg_logprob": -0.1054788835060138
+  },
+  {
+   "start": 243.32,
+   "end": 246.44,
+   "text": "Now that we have v1, everything else clicks into place.",
+   "avg_logprob": -0.06755702043681042
+  },
+  {
+   "start": 247.08,
+   "end": 254.86,
+   "text": "We know that 9 times v1 equals v2, so that means v2 equals 9 v1, which is equal to 9 times 0.73.",
+   "avg_logprob": -0.06755702043681042
+  },
+  {
+   "start": 255.92,
+   "end": 266.33,
+   "text": "And, we get v2 would be equal to 6.59 meters per second.",
+   "avg_logprob": -0.06755702043681042
+  },
+  {
+   "start": 267.47,
+   "end": 272.31,
+   "text": "Now, all that's left for us to calculate from the question is it asks for the flow rate.",
+   "avg_logprob": -0.06755702043681042
+  },
+  {
+   "start": 272.31,
+   "end": 277.23,
+   "text": "The flow rate can be calculated using any one. Let's just use v2.",
+   "avg_logprob": -0.08371977935113557
+  },
+  {
+   "start": 278.51,
+   "end": 284.03,
+   "text": "So, rate would be equal to v2 times a2, which is the area.",
+   "avg_logprob": -0.08371977935113557
+  },
+  {
+   "start": 285.15,
+   "end": 290.57,
+   "text": "We know v2 is 6.59, and a2 would be equal to pi times radius squared.",
+   "avg_logprob": -0.08371977935113557
+  },
+  {
+   "start": 291.37,
+   "end": 294.25,
+   "text": "And, since radius is just 1, that would just be equal to pi.",
+   "avg_logprob": -0.08371977935113557
+  },
+  {
+   "start": 294.25,
+   "end": 302.67,
+   "text": "So, the rate would ultimately be 20.69 meters cubed per second.",
+   "avg_logprob": -0.07484034409648493
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.5,
+   "end": 3.52,
+   "text": "Over here we have the question, a venturi tube"
+  },
+  {
+   "start": 3.52,
+   "end": 6.22,
+   "text": "has a pressure difference of 15,000 pascals."
+  },
+  {
+   "start": 6.7,
+   "end": 9.4,
+   "text": "The entrance radius is 3 cm, while the exit"
+  },
+  {
+   "start": 9.4,
+   "end": 12.92,
+   "text": "radius is 1 cm. What are the entrance velocity,"
+  },
+  {
+   "start": 13.14,
+   "end": 15.5,
+   "text": "exit velocity, and flow rate if the fluid is"
+  },
+  {
+   "start": 15.5,
+   "end": 19.06,
+   "text": "gasoline, which has a density of 700 kg per"
+  },
+  {
+   "start": 19.06,
+   "end": 23.28,
+   "text": "m3? So, first of all we know that this is a"
+  },
+  {
+   "start": 23.28,
+   "end": 26.18,
+   "text": "fluid question, so we would start off by writing"
+  },
+  {
+   "start": 26.18,
+   "end": 40.94,
+   "text": "the Bernoulli's equation. Now after"
+  },
+  {
+   "start": 40.94,
+   "end": 44.68,
+   "text": "we do this, we realize that our question involves"
+  },
+  {
+   "start": 44.68,
+   "end": 48.78,
+   "text": "a venturi tube, which basically means that the"
+  },
+  {
+   "start": 48.78,
+   "end": 52.04,
+   "text": "y value doesn't change. Since the y value doesn't"
+  },
+  {
+   "start": 52.04,
+   "end": 54.2,
+   "text": "change, we can cancel out the terms that involve"
+  },
+  {
+   "start": 54.2,
+   "end": 57.12,
+   "text": "y. So we can cancel out these two terms, and"
+  },
+  {
+   "start": 57.12,
+   "end": 63.54,
+   "text": "what we're left with is p1 plus 1 over 2 pv1"
+  },
+  {
+   "start": 63.54,
+   "end": 68.88,
+   "text": "squared equals p2 plus 1 over 2 pv2 squared."
+  },
+  {
+   "start": 70.18,
+   "end": 73.44,
+   "text": "Now, the question also states that the pressure"
+  },
+  {
+   "start": 73.44,
+   "end": 77.98,
+   "text": "difference is 15,000, so p1 minus p2 is 15,000."
+  },
+  {
+   "start": 78.06,
+   "end": 81.04,
+   "text": "So we want to isolate p1 minus p2."
+  },
+  {
+   "start": 81.9,
+   "end": 85.24,
+   "text": "We move p2 to the other side, and we move this"
+  },
+  {
+   "start": 85.24,
+   "end": 91.16,
+   "text": "thing to this side. So, 1 over 2 rho v2 squared"
+  },
+  {
+   "start": 91.16,
+   "end": 94.2,
+   "text": "minus 1 over 2 rho v1 squared."
+  },
+  {
+   "start": 94.82,
+   "end": 100.19,
+   "text": "This would be 15,000 equals, you can factor"
+  },
+  {
+   "start": 100.19,
+   "end": 105.61,
+   "text": "out of 1 over 2 rho, 1 over 2 rho v2 squared"
+  },
+  {
+   "start": 105.61,
+   "end": 107.63,
+   "text": "minus v1 squared."
+  },
+  {
+   "start": 107.63,
+   "end": 112.55,
+   "text": "We know rho is 700, so 1 over 2 rho would be"
+  },
+  {
+   "start": 112.55,
+   "end": 125.85,
+   "text": "350. Dividing that by this, we get 300"
+  },
+  {
+   "start": 125.85,
+   "end": 129.97,
+   "text": "over 7 equals v2 squared minus v1 squared."
+  },
+  {
+   "start": 131.41,
+   "end": 135.49,
+   "text": "Now, what we have to do from here is, since"
+  },
+  {
+   "start": 135.49,
+   "end": 140.39,
+   "text": "we don't know v1 or v2, but we do know the entrance"
+  },
+  {
+   "start": 140.39,
+   "end": 143.05,
+   "text": "radius and the exit radius, that means that"
+  },
+  {
+   "start": 143.05,
+   "end": 145.85,
+   "text": "we should use the continuity equation, which"
+  },
+  {
+   "start": 145.85,
+   "end": 150.19,
+   "text": "basically states that the rate is constant."
+  },
+  {
+   "start": 151.27,
+   "end": 156.53,
+   "text": "The rate would be v1 times a1 equals v2 times"
+  },
+  {
+   "start": 156.53,
+   "end": 163.52,
+   "text": "a2. So, we know a1 and a2 because we know the"
+  },
+  {
+   "start": 163.52,
+   "end": 168.22,
+   "text": "radius. a1 would be pi times 3 squared, which"
+  },
+  {
+   "start": 168.22,
+   "end": 175.39,
+   "text": "would be equal to 9 pi, equals v2 times a2 would"
+  },
+  {
+   "start": 175.39,
+   "end": 178.81,
+   "text": "be pi times 1 squared, which would be just pi"
+  },
+  {
+   "start": 178.81,
+   "end": 183.25,
+   "text": "times pi. So, cancelling out the pis, we get"
+  },
+  {
+   "start": 183.25,
+   "end": 186.25,
+   "text": "9 times v1 equals v2."
+  },
+  {
+   "start": 187.09,
+   "end": 191.13,
+   "text": "Now, since we have two equations, we can easily"
+  },
+  {
+   "start": 191.13,
+   "end": 194.45,
+   "text": "solve for a variable."
+  },
+  {
+   "start": 195.15,
+   "end": 199.27,
+   "text": "We can plug in v2 equals 9 v1."
+  },
+  {
+   "start": 199.33,
+   "end": 203.49,
+   "text": "We can substitute that into here. So, 300 over"
+  },
+  {
+   "start": 203.49,
+   "end": 206.13,
+   "text": "7 equals 2."
+  },
+  {
+   "start": 209.76,
+   "end": 215.2,
+   "text": "v2 would be equal to 9 v1 squared minus v1 squared."
+  },
+  {
+   "start": 215.2,
+   "end": 222.5,
+   "text": "300 over 7 equals 81 v1 squared minus v1"
+  },
+  {
+   "start": 222.5,
+   "end": 228.81,
+   "text": "squared. 300 over 7 equals 80 v1 squared."
+  },
+  {
+   "start": 230.04,
+   "end": 236.92,
+   "text": "And, when we solve for v1, we would get v1 equals"
+  },
+  {
+   "start": 236.92,
+   "end": 241.8,
+   "text": "0.73 metres per second."
+  },
+  {
+   "start": 243.32,
+   "end": 245.84,
+   "text": "Now that we have v1, everything else clicks"
+  },
+  {
+   "start": 245.84,
+   "end": 249.6,
+   "text": "into place. We know that 9 times v1 equals v2,"
+  },
+  {
+   "start": 249.6,
+   "end": 253.66,
+   "text": "so that means v2 equals 9 v1, which is equal"
+  },
+  {
+   "start": 253.66,
+   "end": 258.46,
+   "text": "to 9 times 0.73. And, we get v2 would be equal"
+  },
+  {
+   "start": 258.46,
+   "end": 265.51,
+   "text": "to 6.59 metres"
+  },
+  {
+   "start": 265.51,
+   "end": 269.63,
+   "text": "per second. Now, all that's left for us to calculate"
+  },
+  {
+   "start": 269.63,
+   "end": 272.31,
+   "text": "from the question is it asks for the flow rate."
+  },
+  {
+   "start": 272.31,
+   "end": 275.07,
+   "text": "The flow rate can be calculated using any one."
+  },
+  {
+   "start": 275.31,
+   "end": 280.35,
+   "text": "Let's just use v2. So, rate would be equal to"
+  },
+  {
+   "start": 280.35,
+   "end": 284.03,
+   "text": "v2 times a2, which is the area."
+  },
+  {
+   "start": 285.15,
+   "end": 289.35,
+   "text": "We know v2 is 6.59, and a2 would be equal to"
+  },
+  {
+   "start": 289.35,
+   "end": 292.27,
+   "text": "pi times radius squared. And, since radius is"
+  },
+  {
+   "start": 292.27,
+   "end": 294.91,
+   "text": "just 1, that would just be equal to pi. So,"
+  },
+  {
+   "start": 295.23,
+   "end": 301.99,
+   "text": "the rate would ultimately be 20.69 metres cubed"
+  },
+  {
+   "start": 301.99,
+   "end": 302.67,
+   "text": "per second."
+  }
+ ],
+ "report": {
+  "key": "fluids__fluids_example2",
+  "title": "Fluid Statics and Dynamics Examples 2",
+  "topicKey": "fluids",
+  "duration": 314.6768125,
+  "cues": 65,
+  "corrections": 4,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.14853260247036815,
+  "flagged": []
+ }
+}

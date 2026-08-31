@@ -8,6 +8,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_an
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
+import 'package:coolapp/views/pages/videos/physics_videos/course_registry.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 //not done
@@ -19,6 +20,9 @@ class ApPhysics1 extends StatefulWidget {
 }
 
 class _ApPhysics1State extends State<ApPhysics1> {
+  /// This page's course. Heading and filtering both derive from it.
+  static const String _courseKey = CourseRegistry.apPhysics1;
+
   Widget _buildVideoButton(
     String title,
     String description,
@@ -218,7 +222,7 @@ class _ApPhysics1State extends State<ApPhysics1> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    globals.courseTitle = 'AP Physics 1';
+    globals.enterCourse(_courseKey);
     return Scaffold(
       appBar: TimedAppBar(),
       body: SingleChildScrollView(
@@ -269,7 +273,7 @@ class _ApPhysics1State extends State<ApPhysics1> {
                           children: [
                             SizedBox(height: 10),
                             Text(
-                              "AP Physics 1",
+                              CourseRegistry.nameOf(_courseKey),
                               style: GoogleFonts.montserrat(
                                 fontSize: 28,
                                 fontWeight: FontWeight.bold,

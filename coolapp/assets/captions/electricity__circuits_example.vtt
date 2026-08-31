@@ -1,0 +1,761 @@
+WEBVTT
+NOTE AP/IB Style Circuit Problem
+
+1
+00:00:01.300 --> 00:00:04.100
+In this video, we will be looking at an
+example
+
+2
+00:00:04.100 --> 00:00:06.940
+where we can apply Ohm's law and what
+we've
+
+3
+00:00:06.940 --> 00:00:09.460
+learned over here with Kirchhoff's current
+law
+
+4
+00:00:09.460 --> 00:00:11.880
+to solve a circuit problem.
+
+5
+00:00:12.940 --> 00:00:16.380
+This problem asks us to find the current
+of
+
+6
+00:00:16.380 --> 00:00:19.780
+all the resistance points, so we need to
+find
+
+7
+00:00:19.780 --> 00:00:28.340
+the current over here, I1, I2, I3, I4,
+
+8
+00:00:28.660 --> 00:00:34.640
+and I5. So how do we start?
+
+9
+00:00:35.920 --> 00:00:41.620
+Well, first of all, we have all the
+resistors,
+
+10
+00:00:42.140 --> 00:00:46.540
+we have the total voltage of the thing, so
+a
+
+11
+00:00:46.540 --> 00:00:49.620
+first optimal step would be to calculate
+the
+
+12
+00:00:49.620 --> 00:00:53.140
+total current, because that way we can use
+Kirchhoff's
+
+13
+00:00:53.140 --> 00:00:57.080
+law. So in order to find the total
+current,
+
+14
+00:00:57.640 --> 00:01:03.860
+I current, we would have to have the total
+voltage
+
+15
+00:01:03.860 --> 00:01:06.500
+over the total resistance.
+
+16
+00:01:07.420 --> 00:01:11.420
+We have the total voltage, it's 132 volts,
+so
+
+17
+00:01:11.420 --> 00:01:13.480
+how do we find the total resistance?
+
+18
+00:01:14.420 --> 00:01:17.640
+Well, the total resistance could be given
+by
+
+19
+00:01:17.640 --> 00:01:21.360
+our other formula, R total. It's the sum
+of
+
+20
+00:01:21.360 --> 00:01:24.640
+the resistors of this section and this
+section,
+
+21
+00:01:24.640 --> 00:01:28.240
+because if we treat these as a series, we
+can
+
+22
+00:01:28.240 --> 00:01:31.200
+just add them up. But these are in
+parallel,
+
+23
+00:01:31.400 --> 00:01:34.200
+so before we treat it, we kind of have to
+combine
+
+24
+00:01:34.200 --> 00:01:40.360
+it, so it's 1 over 2.4 plus 1 over 1.7,
+and
+
+25
+00:01:40.360 --> 00:01:42.740
+this is the formula that I explained
+earlier
+
+26
+00:01:42.740 --> 00:01:46.180
+about here. This is the total resistance
+of
+
+27
+00:01:46.180 --> 00:01:49.000
+this parallel circuit, and we will do the
+same
+
+28
+00:01:49.000 --> 00:01:51.120
+thing to get the total resistance of this
+parallel
+
+29
+00:01:51.120 --> 00:01:55.040
+circuit, so we can treat them as single
+resistors
+
+30
+00:01:55.040 --> 00:01:57.660
+in a whole series circuit.
+
+31
+00:01:58.920 --> 00:02:04.700
+1 over 60 plus 1 over 20 plus 1 over 30.
+
+32
+00:02:06.890 --> 00:02:09.090
+And the reason why we're adding them is
+we're
+
+33
+00:02:09.090 --> 00:02:11.030
+treating this as a single resistor and
+this
+
+34
+00:02:11.030 --> 00:02:14.090
+as another single resistor, so it would be
+the
+
+35
+00:02:14.090 --> 00:02:18.650
+resistance for the whole series. So the
+resistance
+
+36
+00:02:18.650 --> 00:02:21.590
+of the first section when we type this in
+our
+
+37
+00:02:21.590 --> 00:02:29.100
+calculator would be about 1
+
+38
+00:02:29.100 --> 00:02:35.660
+ohm. 1 ohm plus the resistor in the other
+section
+
+39
+00:02:35.660 --> 00:02:39.700
+when you type it in the calculator would
+be
+
+40
+00:02:39.700 --> 00:02:45.040
+about 10 ohms.
+
+41
+00:02:46.420 --> 00:02:51.520
+So the total resistance of this circuit, R
+total,
+
+42
+00:02:52.460 --> 00:02:56.800
+would be 11 ohms, equals 11 ohms.
+
+43
+00:02:59.070 --> 00:03:02.790
+I'll actually write this in yellow to make
+sure
+
+44
+00:03:02.790 --> 00:03:07.440
+that everything I write in yellow will be
+calculations.
+
+45
+00:03:07.440 --> 00:03:14.560
+So R total equals 11 ohms.
+
+46
+00:03:14.920 --> 00:03:17.180
+So using this formula, since we have R
+total
+
+47
+00:03:17.180 --> 00:03:24.640
+now, I total would be equal to V total 132
+
+48
+00:03:24.640 --> 00:03:30.380
+over 11, which is 12.
+
+49
+00:03:31.840 --> 00:03:38.380
+12 amps. So I total equals 12 amps.
+
+50
+00:03:39.540 --> 00:03:43.000
+Now we need to calculate the individual
+currents
+
+51
+00:03:43.000 --> 00:03:47.000
+here. In order to do that, we can use
+Ohm's
+
+52
+00:03:47.000 --> 00:03:49.460
+law and the chart we've done here. It's
+really
+
+53
+00:03:49.460 --> 00:03:52.240
+handy to know this, and you guys have
+probably
+
+54
+00:03:52.240 --> 00:03:54.280
+learned it before. It was grade 9
+curriculum.
+
+55
+00:03:54.660 --> 00:03:57.700
+So we can use this in order to solve for
+each
+
+56
+00:03:57.700 --> 00:04:01.500
+individual circuit. So I'll go over this
+pretty
+
+57
+00:04:01.500 --> 00:04:05.500
+quickly. We know that the current
+everywhere
+
+58
+00:04:05.500 --> 00:04:07.660
+is the same in a series circuit.
+
+59
+00:04:08.260 --> 00:04:12.880
+So the current over here will be equal to
+12
+
+60
+00:04:12.880 --> 00:04:16.020
+amps. The current over here is equal to 12
+amps.
+
+61
+00:04:19.510 --> 00:04:22.610
+So looking at the parallel circuit, the
+total
+
+62
+00:04:22.610 --> 00:04:24.830
+current of the parallel circuit would be
+equal
+
+63
+00:04:24.830 --> 00:04:27.150
+to 12 amps. Not in each branch, the total
+current
+
+64
+00:04:27.150 --> 00:04:32.110
+will be 12 amps. So let's call this branch
+X,
+
+65
+00:04:32.550 --> 00:04:36.850
+and let's call this branch Y. The total
+current
+
+66
+00:04:36.850 --> 00:04:39.190
+of branch X is 12 amps.
+
+67
+00:04:40.050 --> 00:04:44.010
+The total resistance of branch X, we
+calculated
+
+68
+00:04:44.010 --> 00:04:46.830
+over here, is 1 ohm.
+
+69
+00:04:49.700 --> 00:04:52.400
+So by doing that, we can calculate the
+total
+
+70
+00:04:52.400 --> 00:04:58.000
+voltage. The total voltage in branch X
+would
+
+71
+00:04:58.000 --> 00:05:00.900
+be equal to the total current times the
+total
+
+72
+00:05:00.900 --> 00:05:03.560
+resistance, which is equal to 12 volts.
+
+73
+00:05:04.480 --> 00:05:07.660
+So since it's a parallel circuit, over
+here
+
+74
+00:05:07.660 --> 00:05:10.540
+would be 12 volts, over here would be 12
+volts.
+
+75
+00:05:11.620 --> 00:05:14.120
+Now let's do the same thing over here.
+
+76
+00:05:17.430 --> 00:05:20.390
+We know that we don't actually have to
+calculate
+
+77
+00:05:20.390 --> 00:05:23.630
+it. We could if we want. But we know that
+the
+
+78
+00:05:23.630 --> 00:05:27.230
+total voltage in a series is the sum of
+all
+
+79
+00:05:27.230 --> 00:05:30.510
+the individual voltages. If we know that
+the
+
+80
+00:05:30.510 --> 00:05:35.790
+voltage here at X is 12 ohms, then we know
+132
+
+81
+00:05:35.790 --> 00:05:38.130
+equals Vx plus Vy.
+
+82
+00:05:39.130 --> 00:05:43.690
+And if X is 12 ohms, then the voltage at Y
+would
+
+83
+00:05:43.690 --> 00:05:47.430
+be 120 when we calculate it.
+
+84
+00:05:48.330 --> 00:05:52.110
+120 volts. So since it's parallel, this
+would
+
+85
+00:05:52.110 --> 00:05:57.210
+be 120 volts, 120 volts, and 120 volts.
+
+86
+00:05:58.030 --> 00:06:01.590
+And now we know that we can easily
+calculate
+
+87
+00:06:01.590 --> 00:06:06.810
+for the resistance, sorry, the current.
+
+88
+00:06:07.650 --> 00:06:09.730
+So let's start with I1.
+
+89
+00:06:10.730 --> 00:06:18.030
+I1 is V1, or Vx in this case, because it's
+
+90
+00:06:18.030 --> 00:06:25.470
+parallel, over R1. So it's 12 over 2.4,
+and
+
+91
+00:06:25.470 --> 00:06:32.890
+you'll get 5 amps. I2 is Vx over R2,
+
+92
+00:06:32.890 --> 00:06:39.630
+which is 12 over 1.7 ohms, which you'll
+get
+
+93
+00:06:39.630 --> 00:06:43.600
+7 amps about. 7A.
+
+94
+00:06:46.220 --> 00:06:51.860
+I3 is over here, so now the new voltage is
+120
+
+95
+00:06:51.860 --> 00:06:58.440
+in all three branches. So Vy over R3, 120
+over
+
+96
+00:06:58.440 --> 00:07:00.720
+60, that would be 2 amps.
+
+97
+00:07:01.960 --> 00:07:04.280
+Same thing for I4 and I5.
+
+98
+00:07:04.580 --> 00:07:12.860
+I4 equals Vy over R4, equals 120 over 20,
+
+99
+00:07:13.260 --> 00:07:16.380
+that would be equal to 6 amps.
+
+100
+00:07:16.380 --> 00:07:23.380
+And finally, I5 is Vy over R5, which is
+120
+
+101
+00:07:23.380 --> 00:07:25.620
+over 30, which is 4 amps.
+
+102
+00:07:26.580 --> 00:07:29.520
+And these would be your currents in all of
+the
+
+103
+00:07:29.520 --> 00:07:38.930
+sections. Now,
+
+104
+00:07:38.970 --> 00:07:41.330
+you might be wondering how we can use
+Kirchhoff's
+
+105
+00:07:41.330 --> 00:07:44.430
+Law to actually help us in this question.
+
+106
+00:07:45.050 --> 00:07:47.930
+Well, we've done all of these
+calculations,
+
+107
+00:07:48.450 --> 00:07:50.830
+but we need a way to check.
+
+108
+00:07:50.830 --> 00:07:54.750
+A question might ask, confirm your answers
+using
+
+109
+00:07:54.750 --> 00:07:58.770
+Kirchhoff's Current Law. Usually, they
+would
+
+110
+00:07:58.770 --> 00:08:01.610
+give you a point where you can use
+Kirchhoff's
+
+111
+00:08:01.610 --> 00:08:04.210
+Law, because Kirchhoff's Law, like we said
+before,
+
+112
+00:08:04.930 --> 00:08:07.870
+only applies to a junction. So, in this
+case,
+
+113
+00:08:08.150 --> 00:08:11.430
+let's say they give you point, I'll do
+this
+
+114
+00:08:11.430 --> 00:08:14.070
+in red, point C over here.
+
+115
+00:08:14.770 --> 00:08:20.870
+Now, the current will be going this way,
+because
+
+116
+00:08:20.870 --> 00:08:22.950
+positive to negative.
+
+117
+00:08:24.850 --> 00:08:28.050
+And what we do is we can calculate the
+total
+
+118
+00:08:28.050 --> 00:08:30.510
+current that exits out of this parallel
+circuit.
+
+119
+00:08:31.290 --> 00:08:34.910
+And we can also calculate the total
+current
+
+120
+00:08:34.910 --> 00:08:37.610
+that goes in here, or the total current of
+y
+
+121
+00:08:37.610 --> 00:08:41.490
+and the total current of x. Well, the
+total
+
+122
+00:08:41.490 --> 00:08:46.090
+current of y is essentially just I1 plus
+I2.
+
+123
+00:08:46.390 --> 00:08:48.490
+If you remember the chart we've learned,
+in
+
+124
+00:08:48.490 --> 00:08:52.350
+a parallel, it's a sum. And it's going to
+be
+
+125
+00:08:52.350 --> 00:08:54.230
+positive since it's going inside the
+junction,
+
+126
+00:08:54.270 --> 00:09:01.510
+as we've learned. So, according to
+Kirchhoff's
+
+127
+00:09:01.510 --> 00:09:05.930
+Law, the sum of all the voltages should be
+equal
+
+128
+00:09:05.930 --> 00:09:13.310
+to zero. So, I1 plus I2 plus I3 plus I4
+
+129
+00:09:13.310 --> 00:09:15.830
+plus I5 equals zero.
+
+130
+00:09:16.030 --> 00:09:19.510
+The reason why I can just add it is
+because
+
+131
+00:09:19.510 --> 00:09:22.950
+these are in parallel, which means you add
+them.
+
+132
+00:09:23.770 --> 00:09:26.130
+And these are also in parallel, which
+means
+
+133
+00:09:26.130 --> 00:09:28.710
+you add them, and they're going inside the
+middle
+
+134
+00:09:28.710 --> 00:09:36.390
+junction. I1 and I2 would be positive, so
+five
+
+135
+00:09:36.390 --> 00:09:39.150
+plus seven, five plus seven.
+
+136
+00:09:39.690 --> 00:09:43.070
+And since the current goes outwards over
+here,
+
+137
+00:09:43.070 --> 00:09:46.470
+and now the current's going this way,
+these
+
+138
+00:09:46.470 --> 00:09:48.490
+currents would all be negative because
+they're
+
+139
+00:09:48.490 --> 00:09:51.790
+going away from the junction. They're not
+actually
+
+140
+00:09:51.790 --> 00:09:53.930
+negative, it's just a direction.
+
+141
+00:09:54.950 --> 00:10:00.690
+Plus negative two, plus negative six, plus
+negative
+
+142
+00:10:00.690 --> 00:10:03.690
+four. And let's do it as a proof, so
+left-hand
+
+143
+00:10:03.690 --> 00:10:07.110
+side, right-hand side is equal to zero.
+
+144
+00:10:08.230 --> 00:10:11.970
+And five plus seven is twelve, negative
+two
+
+145
+00:10:11.970 --> 00:10:15.310
+minus six minus four is negative twelve.
+
+146
+00:10:17.410 --> 00:10:20.470
+So, zero. So, it does make sense.
+
+147
+00:10:20.610 --> 00:10:23.550
+Kirchhoff's Law affirms that our
+calculations
+
+148
+00:10:23.550 --> 00:10:27.750
+make sense because the total voltage at
+this
+
+149
+00:10:27.750 --> 00:10:30.670
+junction is zero. Sorry, the total current
+at
+
+150
+00:10:30.670 --> 00:10:33.350
+this junction is zero. And the total
+current
+
+151
+00:10:33.350 --> 00:10:37.190
+at any junction should be zero if you try
+to
+
+152
+00:10:37.190 --> 00:10:41.110
+calculate it. And that's basically a
+really
+
+153
+00:10:41.110 --> 00:10:43.470
+good use of Kirchhoff's Law. It's used to
+make
+
+154
+00:10:43.470 --> 00:10:45.910
+sure that your calculations are correct,
+especially
+
+155
+00:10:45.910 --> 00:10:50.530
+when you have time during a test, such as
+AP
+
+156
+00:10:50.530 --> 00:10:54.950
+or IB. But IB might be time-heavier, so
+unless
+
+157
+00:10:54.950 --> 00:10:57.970
+it asks you to do it, it's just a good
+thing
+
+158
+00:10:57.970 --> 00:11:00.650
+to know and assure that your answers are
+right.
+
+159
+00:11:01.590 --> 00:11:03.650
+Thank you for watching, and I hope you
+learned
+
+160
+00:11:03.650 --> 00:11:05.910
+how to do these types of circuit problems.
+
+161
+00:11:06.890 --> 00:11:07.050
+Bye!

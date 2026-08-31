@@ -1,0 +1,671 @@
+WEBVTT
+NOTE Introduction to Circuits
+
+1
+00:00:01.330 --> 00:00:04.510
+In this video, we will be talking about
+circuits
+
+2
+00:00:04.510 --> 00:00:08.810
+and Ohm's law. If you have taken science
+in
+
+3
+00:00:08.810 --> 00:00:11.890
+grade 9, this might be review for you, but
+this
+
+4
+00:00:11.890 --> 00:00:15.350
+will be further applied to high school
+physics,
+
+5
+00:00:15.550 --> 00:00:18.210
+especially in AP and IB.
+
+6
+00:00:19.150 --> 00:00:23.170
+So, first of all, what is Ohm's law?
+
+7
+00:00:23.850 --> 00:00:27.070
+Ohm's law states that the total voltage is
+equal
+
+8
+00:00:27.070 --> 00:00:33.350
+to I times R, where I is the current and R
+is
+
+9
+00:00:33.350 --> 00:00:36.310
+the resistance. Resistance.
+
+10
+00:00:37.750 --> 00:00:42.850
+Resistance is measured in ohms, current is
+measured
+
+11
+00:00:42.850 --> 00:00:48.490
+in amperes or amps, and voltage is
+measured
+
+12
+00:00:48.490 --> 00:00:55.920
+in volts. And
+
+13
+00:00:55.920 --> 00:00:59.920
+this formula can be applied to solving
+values
+
+14
+00:00:59.920 --> 00:01:05.120
+we need in a circuit. Now, there are two
+different
+
+15
+00:01:05.120 --> 00:01:08.020
+types of circuits, and they can be
+combined
+
+16
+00:01:08.020 --> 00:01:11.060
+to make one big circuit, like in this
+case.
+
+17
+00:01:11.740 --> 00:01:14.260
+These are series circuits and parallel
+circuits.
+
+18
+00:01:15.180 --> 00:01:19.980
+Series circuits are circuits that are in a
+series.
+
+19
+00:01:20.320 --> 00:01:25.260
+The voltage goes around, around the
+circuit,
+
+20
+00:01:25.580 --> 00:01:29.420
+whereas a parallel circuit, the voltage is
+going
+
+21
+00:01:29.420 --> 00:01:32.060
+parallel to each other that way.
+
+22
+00:01:33.880 --> 00:01:38.220
+So, there are rules that we have to do to
+follow
+
+23
+00:01:38.220 --> 00:01:41.480
+for a series circuit and a parallel
+circuit.
+
+24
+00:01:42.200 --> 00:01:45.180
+First of all, the current in a series
+circuit
+
+25
+00:01:45.180 --> 00:01:50.680
+is the same everywhere. I1 equals I2
+equals
+
+26
+00:01:50.680 --> 00:01:53.620
+I3, and so on.
+
+27
+00:01:53.880 --> 00:01:56.900
+Wherever you are in the series circuit,
+the
+
+28
+00:01:56.900 --> 00:01:59.320
+current is the same. However, in a
+parallel
+
+29
+00:01:59.320 --> 00:02:04.840
+circuit, the total current is equal to the
+sum
+
+30
+00:02:04.840 --> 00:02:06.920
+of all the currents in each branch.
+
+31
+00:02:06.920 --> 00:02:13.960
+So, I total equals I1 plus I2 plus dot dot
+
+32
+00:02:13.960 --> 00:02:16.560
+dot, and if this was a parallel, this
+would
+
+33
+00:02:16.560 --> 00:02:19.020
+be I1 and this would be I2.
+
+34
+00:02:20.020 --> 00:02:23.680
+Voltage, however, is quite the opposite.
+
+35
+00:02:24.600 --> 00:02:29.620
+The voltage in a series circuit is the sum
+of
+
+36
+00:02:29.620 --> 00:02:35.540
+all the total voltages, V1 plus V2 plus
+V3.
+
+37
+00:02:36.840 --> 00:02:39.320
+However, in a parallel circuit, the
+voltage
+
+38
+00:02:39.320 --> 00:02:42.360
+is the same for everywhere. In each
+branch,
+
+39
+00:02:42.640 --> 00:02:44.940
+there is the same voltage.
+
+40
+00:02:49.620 --> 00:02:54.200
+Now, resistance. In a series circuit, the
+resistance
+
+41
+00:02:54.200 --> 00:02:58.780
+is a cumulative sum, same thing as the
+voltage.
+
+42
+00:02:59.520 --> 00:03:06.740
+So, R total equals R1 plus R2 plus
+
+43
+00:03:06.740 --> 00:03:09.240
+R3 plus so on.
+
+44
+00:03:09.240 --> 00:03:12.960
+So, if let's say we had multiple
+resistors,
+
+45
+00:03:15.560 --> 00:03:18.480
+the total resistance of this circuit would
+be
+
+46
+00:03:18.480 --> 00:03:22.000
+the sum of all of these. However, in a
+parallel
+
+47
+00:03:22.000 --> 00:03:24.700
+circuit, the total resistance is the
+reciprocal.
+
+48
+00:03:26.140 --> 00:03:30.520
+The reciprocal of the total resistance is
+the
+
+49
+00:03:30.520 --> 00:03:33.000
+sum of all the reciprocals of the
+resistance.
+
+50
+00:03:33.760 --> 00:03:38.000
+This means that 1 over R total equals 1
+over
+
+51
+00:03:38.000 --> 00:03:44.020
+R1 plus 1 over R2 plus 1 over R3 and so
+on.
+
+52
+00:03:45.880 --> 00:03:49.900
+So, if we want to derive this formula
+further,
+
+53
+00:03:50.520 --> 00:03:52.540
+we can do it.
+
+54
+00:03:53.220 --> 00:04:00.550
+And isolating for R total, we get 1, 1,
+
+55
+00:04:00.830 --> 00:04:06.970
+sorry, we flip it, so it's R total equals
+1
+
+56
+00:04:06.970 --> 00:04:14.330
+over 1 over R1 plus 1 over R2 plus 1
+
+57
+00:04:14.330 --> 00:04:16.950
+over R3 plus dot dot dot.
+
+58
+00:04:19.490 --> 00:04:23.690
+And if we further want to simplify it, we
+can,
+
+59
+00:04:23.850 --> 00:04:25.950
+but I'll just leave it here because there
+is
+
+60
+00:04:25.950 --> 00:04:29.490
+no use for the simplifying by getting a
+common
+
+61
+00:04:29.490 --> 00:04:33.490
+denominator, flipping it. So, now that we
+know
+
+62
+00:04:33.490 --> 00:04:38.550
+a brief estimate of how to calculate each
+of
+
+63
+00:04:38.550 --> 00:04:41.250
+these values in a circuit and Ohm's Law,
+we
+
+64
+00:04:41.250 --> 00:04:44.230
+can have, let's look at this example
+question
+
+65
+00:04:44.230 --> 00:04:47.490
+over here. So, over here we have a
+circuit.
+
+66
+00:04:48.310 --> 00:04:50.830
+The first thing I notice is that there is
+a
+
+67
+00:04:50.830 --> 00:04:57.480
+parallel circuit here and everything else
+is
+
+68
+00:04:57.480 --> 00:05:00.760
+in series. This is in series.
+
+69
+00:05:02.460 --> 00:05:04.940
+So, what we first want to do is calculate
+the
+
+70
+00:05:04.940 --> 00:05:09.640
+current that flows through R1. So, we want
+A.
+
+71
+00:05:11.820 --> 00:05:18.720
+Well, we know the resistance and we know V
+equals
+
+72
+00:05:18.720 --> 00:05:24.180
+IR. I'll use green for this.
+
+73
+00:05:25.000 --> 00:05:31.300
+V equals IR, so I equals V over R.
+
+74
+00:05:31.900 --> 00:05:35.240
+We know R because at R1, R is just 24.
+
+75
+00:05:36.420 --> 00:05:38.720
+However, we need the voltage.
+
+76
+00:05:39.580 --> 00:05:44.580
+Well, in a parallel circuit, the voltage
+is
+
+77
+00:05:44.580 --> 00:05:48.000
+the same for both branches. So, basically
+what
+
+78
+00:05:48.000 --> 00:05:51.640
+that means is that the voltage here would
+be
+
+79
+00:05:51.640 --> 00:05:54.360
+equal to the voltage here or the voltage
+here
+
+80
+00:05:54.360 --> 00:05:57.480
+because, sorry, not the voltage there,
+would
+
+81
+00:05:57.480 --> 00:06:00.080
+be the voltage here, the voltage right
+before
+
+82
+00:06:00.080 --> 00:06:04.240
+it goes into the parallel circuit. So,
+basically
+
+83
+00:06:04.240 --> 00:06:08.480
+we need to calculate the voltage of our
+series
+
+84
+00:06:08.480 --> 00:06:11.880
+circuit. Now, we know that the voltage in
+a
+
+85
+00:06:11.880 --> 00:06:14.200
+series circuit is the sum of all the
+voltages
+
+86
+00:06:14.200 --> 00:06:17.240
+and we only have one voltage because we
+only
+
+87
+00:06:17.240 --> 00:06:19.600
+have one battery, which is here.
+
+88
+00:06:19.600 --> 00:06:23.720
+So, and that's 48 ohms.
+
+89
+00:06:23.900 --> 00:06:28.860
+So, if this is 48 ohms, oops, sorry, this
+should
+
+90
+00:06:28.860 --> 00:06:35.990
+be in volts. So, if this is 48 volts, then
+
+91
+00:06:35.990 --> 00:06:39.370
+according to our rule over here, this
+would
+
+92
+00:06:39.370 --> 00:06:43.830
+also be 48 volts. And now we can just plug
+it
+
+93
+00:06:43.830 --> 00:06:51.870
+in, 48 over 24, and that would give us 2
+
+94
+00:06:51.870 --> 00:06:56.070
+amps, and that would be our answer for
+that
+
+95
+00:06:56.070 --> 00:07:00.530
+question. Now, the next part wants us to
+calculate
+
+96
+00:07:00.530 --> 00:07:04.390
+the total current in the circuit. Well,
+the
+
+97
+00:07:04.390 --> 00:07:07.450
+total current in the circuit, we first
+need
+
+98
+00:07:07.450 --> 00:07:11.010
+to find the total voltage in the circuit
+and
+
+99
+00:07:11.010 --> 00:07:16.350
+then the total resistance. Let's first
+derive
+
+100
+00:07:16.350 --> 00:07:22.660
+a formula for the total current. I total
+equals
+
+101
+00:07:22.660 --> 00:07:26.680
+V total over R total.
+
+102
+00:07:28.140 --> 00:07:30.940
+Now, let's first get V total.
+
+103
+00:07:31.500 --> 00:07:34.080
+Like I said before, the total current in
+this
+
+104
+00:07:34.080 --> 00:07:39.820
+circuit is just 48 volts because there are
+no
+
+105
+00:07:39.820 --> 00:07:46.720
+other batteries. So, V total is 48 volts.
+
+106
+00:07:47.620 --> 00:07:52.440
+Now, the total resistance, let's see, we
+first
+
+107
+00:07:52.440 --> 00:07:55.900
+need to find the total resistance of this
+parallel
+
+108
+00:07:55.900 --> 00:08:00.020
+circuit. And that basically, we can
+imagine
+
+109
+00:08:00.020 --> 00:08:04.140
+it as whatever we get as the total
+resistance
+
+110
+00:08:04.140 --> 00:08:07.140
+in the parallel circuit is just one big
+resistor
+
+111
+00:08:07.140 --> 00:08:09.160
+that kind of goes like this.
+
+112
+00:08:09.520 --> 00:08:11.880
+And then after that, using this law, we
+can
+
+113
+00:08:11.880 --> 00:08:14.220
+add that total resistance with R3.
+
+114
+00:08:15.700 --> 00:08:21.820
+So, basically, R total is equal to, well,
+in
+
+115
+00:08:21.820 --> 00:08:24.700
+the parallel circuit first, it is equal to
+1
+
+116
+00:08:24.700 --> 00:08:32.540
+over R1 plus 1 over R2.
+
+117
+00:08:33.400 --> 00:08:36.540
+And that would be the total resistance of
+this
+
+118
+00:08:36.540 --> 00:08:41.180
+parallel circuit. Now, let's treat that as
+one
+
+119
+00:08:41.180 --> 00:08:44.900
+resistance. So, we have another resistor
+over
+
+120
+00:08:44.900 --> 00:08:47.240
+here, which is R3.
+
+121
+00:08:47.820 --> 00:08:49.940
+So, the total resistance in the whole
+circuit
+
+122
+00:08:49.940 --> 00:08:52.940
+would be this plus R3.
+
+123
+00:08:56.440 --> 00:09:00.540
+And when we calculate it, it's 1 over 24
+and
+
+124
+00:09:00.540 --> 00:09:05.860
+12. So, 1 over 1 over 24 plus 1 over 12
+plus
+
+125
+00:09:05.860 --> 00:09:13.020
+R3 would be 12. And when you calculate
+this,
+
+126
+00:09:13.180 --> 00:09:20.280
+you would get the total resistance of the
+thing,
+
+127
+00:09:20.400 --> 00:09:22.820
+which is 20 ohms.
+
+128
+00:09:23.720 --> 00:09:26.540
+So, now we have the total resistance and
+the
+
+129
+00:09:26.540 --> 00:09:30.120
+total voltage, so we can actually
+calculate
+
+130
+00:09:30.120 --> 00:09:37.840
+the total current. I total equals 48 volts
+
+131
+00:09:37.840 --> 00:09:40.520
+over 20 ohms.
+
+132
+00:09:40.900 --> 00:09:45.920
+So, that would give us 2.4 amps.
+
+133
+00:09:49.310 --> 00:09:52.870
+That would be your final answer. So,
+usually
+
+134
+00:09:52.870 --> 00:09:56.310
+in a lot of series problems, as you may
+have
+
+135
+00:09:56.310 --> 00:10:01.310
+seen in grade 9, you would have to combine
+the
+
+136
+00:10:01.310 --> 00:10:07.130
+parallel circuits into one big piece, and
+then
+
+137
+00:10:07.130 --> 00:10:09.010
+you would continue to do whatever you're
+doing,
+
+138
+00:10:09.050 --> 00:10:11.310
+for example, going on to a series circuit.
+
+139
+00:10:12.870 --> 00:10:14.990
+That's all for today's video.
+
+140
+00:10:15.290 --> 00:10:17.610
+I hope you learned something or reviewed,
+and
+
+141
+00:10:17.610 --> 00:10:20.170
+we'll see you next time talking about
+Kirchhoff's
+
+142
+00:10:20.170 --> 00:10:20.310
+Law.

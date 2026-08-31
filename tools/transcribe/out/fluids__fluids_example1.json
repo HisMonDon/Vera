@@ -1,0 +1,770 @@
+{
+ "lesson": {
+  "topicKey": "fluids",
+  "curriculumKey": "fluids_example1",
+  "title": "Fluid Statics and Dynamics Examples",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/2025%20AP%20Physics%201%20Solutions%20Free%20Response%20Q4%20(1080p).mp4",
+  "source": "fluids.dart"
+ },
+ "segments": [
+  {
+   "start": 0.85,
+   "end": 10.51,
+   "text": "Here we have question 4. In scenario 1, a swimmer holds a block of mass m at rest in a tank of fresh water with density rho 1 as shown in figure 1.",
+   "avg_logprob": -0.18745615084966025
+  },
+  {
+   "start": 11.49,
+   "end": 20.31,
+   "text": "The block is released from rest and accelerates upwards with an initial acceleration a. So that means there would be a net force going upwards.",
+   "avg_logprob": -0.18745615084966025
+  },
+  {
+   "start": 21.13,
+   "end": 29.93,
+   "text": "In scenario 2, the swimmer holds the same block at rest in a tank of salt water where density rho 2 is bigger than rho 1.",
+   "avg_logprob": -0.09681542106765381
+  },
+  {
+   "start": 30.21,
+   "end": 37.83,
+   "text": "The swimmer again releases the block from rest and the block accelerates upwards with an initial acceleration a2. All frictional forces are negligible.",
+   "avg_logprob": -0.09681542106765381
+  },
+  {
+   "start": 40.89,
+   "end": 47.53,
+   "text": "Indicate whether a1 is greater, equal, or less than a2 by writing one of the following in your answer booklet.",
+   "avg_logprob": -0.09681542106765381
+  },
+  {
+   "start": 47.53,
+   "end": 55.73,
+   "text": "Justify your answer in terms of all forces exerted on the block for each scenario. Use qualitative reasoning beyond referencing equations.",
+   "avg_logprob": -0.09984547518334298
+  },
+  {
+   "start": 57.21,
+   "end": 67.17,
+   "text": "Okay, so make sure that in these types of questions you do not reference equations. You have to use reasoning.",
+   "avg_logprob": -0.09984547518334298
+  },
+  {
+   "start": 68.13,
+   "end": 78.37,
+   "text": "In a pool with a greater density, that means that there will be more molecules per unit volume.",
+   "avg_logprob": -0.09909713913255663
+  },
+  {
+   "start": 79.25,
+   "end": 95.45,
+   "text": "So a mass, a block in that pool, there will be more molecules below it pushing it up, which means that it will have a higher pressure below it, which leads to a higher force upwards.",
+   "avg_logprob": -0.09909713913255663
+  },
+  {
+   "start": 95.45,
+   "end": 103.99,
+   "text": "So therefore, the acceleration a2 should be bigger than a1. So that would be your answer.",
+   "avg_logprob": -0.11914083480834961
+  },
+  {
+   "start": 103.99,
+   "end": 152.08,
+   "text": "And what you would say is that a1 is less than a2 because in a1, in the first scenario, the density of the liquid, of the water, is lower than that.",
+   "avg_logprob": -0.15954640438390333
+  },
+  {
+   "start": 152.08,
+   "end": 181.58,
+   "text": "Of the second scenario, so there will be less molecules exerting pressure underneath the first block, leading to a lower force and a lower acceleration.",
+   "avg_logprob": -0.19095730059074634
+  },
+  {
+   "start": 184.36,
+   "end": 194.48,
+   "text": "And that's all you really need to write, considering the general case where a block of mass m and a volume v is completely submerged in the fluid of density rho.",
+   "avg_logprob": -0.1467738980832307
+  },
+  {
+   "start": 194.82,
+   "end": 204.08,
+   "text": "Starting with Newton's second law, just derive an expression for the initial upward acceleration a of the block where the block is released from rest.",
+   "avg_logprob": -0.1467738980832307
+  },
+  {
+   "start": 204.08,
+   "end": 218.88,
+   "text": "Express your answer in terms of m, v, rho, and physical constants as appropriate. Begin your derivation by writing a fundamental physics principle or an equation from the reference information.",
+   "avg_logprob": -0.10281496441790036
+  },
+  {
+   "start": 220.42,
+   "end": 231.56,
+   "text": "So first of all, what is Newton's second law of motion? Well, it states that acceleration is proportional to the net force.",
+   "avg_logprob": -0.10281496441790036
+  },
+  {
+   "start": 232.56,
+   "end": 240.38,
+   "text": "And we need to derive an equation for the term of acceleration.",
+   "avg_logprob": -0.11428643390536308
+  },
+  {
+   "start": 241.36,
+   "end": 256.38,
+   "text": "So Newton's second law, the equation for that would be f net equals mass times the net acceleration.",
+   "avg_logprob": -0.11428643390536308
+  },
+  {
+   "start": 256.38,
+   "end": 264.7,
+   "text": "So the acceleration would then be a equals f net over m.",
+   "avg_logprob": -0.11468077417629868
+  },
+  {
+   "start": 265.76,
+   "end": 272.52,
+   "text": "Now what would be the net force? Well, to do that, we'll have to draw a free body diagram.",
+   "avg_logprob": -0.11468077417629868
+  },
+  {
+   "start": 274.08,
+   "end": 281.88,
+   "text": "Here would be my mass, and there would always be gravity, so this would be fg or mg.",
+   "avg_logprob": -0.11468077417629868
+  },
+  {
+   "start": 282.82,
+   "end": 291.98,
+   "text": "And the only other force would be the buoyant force. Since the block is accelerating upwards, that means the buoyant force should have a larger magnitude than the gravity force.",
+   "avg_logprob": -0.09316236061208388
+  },
+  {
+   "start": 292.44,
+   "end": 307.14,
+   "text": "So I would call that fb. So now we can do the sum of all forces, the net force would be equal to, let's call the upwards direction the positive direction and the downwards direction the negative direction.",
+   "avg_logprob": -0.09316236061208388
+  },
+  {
+   "start": 307.14,
+   "end": 320.78,
+   "text": "So it would be fb minus fg. We could put that in here, a equals fb minus fg over m.",
+   "avg_logprob": -0.09365556742015638
+  },
+  {
+   "start": 322.18,
+   "end": 328.94,
+   "text": "And a would be equal to, well, what is the force for buoyancy? Let me just pull that up.",
+   "avg_logprob": -0.09365556742015638
+  },
+  {
+   "start": 329.94,
+   "end": 349.56,
+   "text": "The force for buoyancy is rho vg, where rho is the density of the fluid, v is the volume displaced, and g is the acceleration due to gravity, and fg is simply just mass times gravity over m.",
+   "avg_logprob": -0.10460491578739423
+  },
+  {
+   "start": 350.56,
+   "end": 371.3,
+   "text": "And I would just factor out g, so g times rho v minus m over m, and that would be your net acceleration initially.",
+   "avg_logprob": -0.14045074488967657
+  },
+  {
+   "start": 372.82,
+   "end": 384.52,
+   "text": "Indicate whether the expression for the acceleration a you derived in part b is or is not consistent with the claim made in part a, and justify your answer referencing your equation.",
+   "avg_logprob": -0.14046304042522723
+  },
+  {
+   "start": 385.6,
+   "end": 404.36,
+   "text": "Okay, this one is simple, because we know that if rho, the density increases, then the acceleration increases, because the acceleration is proportional to rho v minus m, and if rho increases, then rho v minus m increases.",
+   "avg_logprob": -0.09674262269227593
+  },
+  {
+   "start": 404.36,
+   "end": 408.68,
+   "text": "So, we would just write exactly what I said.",
+   "avg_logprob": -0.23021392210533745
+  },
+  {
+   "start": 412.86,
+   "end": 429.61,
+   "text": "Okay, first of all, you would say yes, it is consistent with my claim in part a.",
+   "avg_logprob": -0.23021392210533745
+  },
+  {
+   "start": 433.92,
+   "end": 446.35,
+   "text": "Acceleration in my formula is proportional to rho, I'm just going to say p, v minus m.",
+   "avg_logprob": -0.18267888824144998
+  },
+  {
+   "start": 447.92,
+   "end": 467.86,
+   "text": "If the density, rho, increases, then p, v minus m increases, which leads to a higher acceleration, and that's really all you need to write.",
+   "avg_logprob": -0.15248929081778778
+  },
+  {
+   "start": 467.86,
+   "end": 487.78,
+   "text": "And also, I would mention that gravity is constant in both cases, the volume is constant in both cases, and the mass of the block is also constant in both cases.",
+   "avg_logprob": -0.08576324811348549
+  },
+  {
+   "start": 487.78,
+   "end": 503.1,
+   "text": "And that would be all you would need to write, and yeah, that is what I think are the correct answers for question 4 of the AP 2025 Physics I exam.",
+   "avg_logprob": -0.12884123894301328
+  },
+  {
+   "start": 503.68,
+   "end": 504.42,
+   "text": "Thank you for watching.",
+   "avg_logprob": -0.12884123894301328
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.85,
+   "end": 4.21,
+   "text": "Here we have question 4. In scenario 1, a swimmer"
+  },
+  {
+   "start": 4.21,
+   "end": 7.05,
+   "text": "holds a block of mass m at rest in a tank of"
+  },
+  {
+   "start": 7.05,
+   "end": 9.95,
+   "text": "fresh water with density rho 1 as shown in figure"
+  },
+  {
+   "start": 9.95,
+   "end": 13.63,
+   "text": "1. The block is released from rest and accelerates"
+  },
+  {
+   "start": 13.63,
+   "end": 16.21,
+   "text": "upwards with an initial acceleration a."
+  },
+  {
+   "start": 16.77,
+   "end": 19.81,
+   "text": "So that means there would be a net force going"
+  },
+  {
+   "start": 19.81,
+   "end": 23.51,
+   "text": "upwards. In scenario 2, the swimmer holds the"
+  },
+  {
+   "start": 23.51,
+   "end": 26.55,
+   "text": "same block at rest in a tank of salt water where"
+  },
+  {
+   "start": 26.55,
+   "end": 29.93,
+   "text": "density rho 2 is bigger than rho 1."
+  },
+  {
+   "start": 30.21,
+   "end": 32.09,
+   "text": "The swimmer again releases the block from rest"
+  },
+  {
+   "start": 32.09,
+   "end": 34.35,
+   "text": "and the block accelerates upwards with an initial"
+  },
+  {
+   "start": 34.35,
+   "end": 37.83,
+   "text": "acceleration a2. All frictional forces are negligible."
+  },
+  {
+   "start": 40.89,
+   "end": 44.45,
+   "text": "Indicate whether a1 is greater, equal, or less"
+  },
+  {
+   "start": 44.45,
+   "end": 46.93,
+   "text": "than a2 by writing one of the following in your"
+  },
+  {
+   "start": 46.93,
+   "end": 49.41,
+   "text": "answer booklet. Justify your answer in terms"
+  },
+  {
+   "start": 49.41,
+   "end": 51.67,
+   "text": "of all forces exerted on the block for each"
+  },
+  {
+   "start": 51.67,
+   "end": 55.05,
+   "text": "scenario. Use qualitative reasoning beyond referencing"
+  },
+  {
+   "start": 55.05,
+   "end": 62.65,
+   "text": "equations. Okay, so make sure that in"
+  },
+  {
+   "start": 62.65,
+   "end": 64.73,
+   "text": "these types of questions you do not reference"
+  },
+  {
+   "start": 64.73,
+   "end": 67.17,
+   "text": "equations. You have to use reasoning."
+  },
+  {
+   "start": 68.13,
+   "end": 73.93,
+   "text": "In a pool with a greater density, that means"
+  },
+  {
+   "start": 73.93,
+   "end": 78.37,
+   "text": "that there will be more molecules per unit volume."
+  },
+  {
+   "start": 79.25,
+   "end": 85.01,
+   "text": "So a mass, a block in that pool, there will"
+  },
+  {
+   "start": 85.01,
+   "end": 89.73,
+   "text": "be more molecules below it pushing it up, which"
+  },
+  {
+   "start": 89.73,
+   "end": 92.51,
+   "text": "means that it will have a higher pressure below"
+  },
+  {
+   "start": 92.51,
+   "end": 95.45,
+   "text": "it, which leads to a higher force upwards."
+  },
+  {
+   "start": 95.45,
+   "end": 100.97,
+   "text": "So therefore, the acceleration a2 should be"
+  },
+  {
+   "start": 100.97,
+   "end": 103.99,
+   "text": "bigger than a1. So that would be your answer."
+  },
+  {
+   "start": 103.99,
+   "end": 123.31,
+   "text": "And what you would say is that a1"
+  },
+  {
+   "start": 123.31,
+   "end": 131.11,
+   "text": "is less than a2 because in"
+  },
+  {
+   "start": 131.11,
+   "end": 138.11,
+   "text": "a1, in the first scenario, the"
+  },
+  {
+   "start": 138.11,
+   "end": 145.98,
+   "text": "density of the"
+  },
+  {
+   "start": 145.98,
+   "end": 152.08,
+   "text": "liquid, of the water, is lower than that."
+  },
+  {
+   "start": 152.08,
+   "end": 159.68,
+   "text": "Of the second scenario, so there will be less"
+  },
+  {
+   "start": 159.68,
+   "end": 167.32,
+   "text": "molecules exerting pressure underneath the"
+  },
+  {
+   "start": 167.32,
+   "end": 174.68,
+   "text": "first block, leading"
+  },
+  {
+   "start": 174.68,
+   "end": 181.58,
+   "text": "to a lower force and a lower acceleration."
+  },
+  {
+   "start": 184.36,
+   "end": 187.42,
+   "text": "And that's all you really need to write, considering"
+  },
+  {
+   "start": 187.42,
+   "end": 191.16,
+   "text": "the general case where a block of mass m and"
+  },
+  {
+   "start": 191.16,
+   "end": 193.58,
+   "text": "a volume v is completely submerged in the fluid"
+  },
+  {
+   "start": 193.58,
+   "end": 195.92,
+   "text": "of density rho. Starting with Newton's second"
+  },
+  {
+   "start": 195.92,
+   "end": 199.52,
+   "text": "law, just derive an expression for the initial"
+  },
+  {
+   "start": 199.52,
+   "end": 202.46,
+   "text": "upward acceleration a of the block where the"
+  },
+  {
+   "start": 202.46,
+   "end": 205.64,
+   "text": "block is released from rest. Express your answer"
+  },
+  {
+   "start": 205.64,
+   "end": 208.74,
+   "text": "in terms of m, v, rho, and physical constants"
+  },
+  {
+   "start": 208.74,
+   "end": 212.66,
+   "text": "as appropriate. Begin your derivation by writing"
+  },
+  {
+   "start": 212.66,
+   "end": 216.24,
+   "text": "a fundamental physics principle or an equation"
+  },
+  {
+   "start": 216.24,
+   "end": 218.88,
+   "text": "from the reference information."
+  },
+  {
+   "start": 220.42,
+   "end": 226.04,
+   "text": "So first of all, what is Newton's second law"
+  },
+  {
+   "start": 226.04,
+   "end": 228.2,
+   "text": "of motion? Well, it states that acceleration"
+  },
+  {
+   "start": 228.2,
+   "end": 231.56,
+   "text": "is proportional to the net force."
+  },
+  {
+   "start": 232.56,
+   "end": 239.32,
+   "text": "And we need to derive an equation for the term"
+  },
+  {
+   "start": 239.32,
+   "end": 243.26,
+   "text": "of acceleration. So Newton's second law, the"
+  },
+  {
+   "start": 243.26,
+   "end": 251.34,
+   "text": "equation for that would be f net"
+  },
+  {
+   "start": 251.34,
+   "end": 256.38,
+   "text": "equals mass times the net acceleration."
+  },
+  {
+   "start": 256.38,
+   "end": 261.94,
+   "text": "So the acceleration would then be a equals f"
+  },
+  {
+   "start": 261.94,
+   "end": 264.7,
+   "text": "net over m."
+  },
+  {
+   "start": 265.76,
+   "end": 268.44,
+   "text": "Now what would be the net force?"
+  },
+  {
+   "start": 268.92,
+   "end": 271.22,
+   "text": "Well, to do that, we'll have to draw a free"
+  },
+  {
+   "start": 271.22,
+   "end": 277.64,
+   "text": "body diagram. Here would be my mass, and there"
+  },
+  {
+   "start": 277.64,
+   "end": 280.78,
+   "text": "would always be gravity, so this would be fg"
+  },
+  {
+   "start": 280.78,
+   "end": 285.26,
+   "text": "or mg. And the only other force would be the"
+  },
+  {
+   "start": 285.26,
+   "end": 287.62,
+   "text": "buoyant force. Since the block is accelerating"
+  },
+  {
+   "start": 287.62,
+   "end": 289.5,
+   "text": "upwards, that means the buoyant force should"
+  },
+  {
+   "start": 289.5,
+   "end": 291.98,
+   "text": "have a larger magnitude than the gravity force."
+  },
+  {
+   "start": 292.44,
+   "end": 298.22,
+   "text": "So I would call that fb. So now we can do the"
+  },
+  {
+   "start": 298.22,
+   "end": 301.08,
+   "text": "sum of all forces, the net force would be equal"
+  },
+  {
+   "start": 301.08,
+   "end": 304.34,
+   "text": "to, let's call the upwards direction the positive"
+  },
+  {
+   "start": 304.34,
+   "end": 306.66,
+   "text": "direction and the downwards direction the negative"
+  },
+  {
+   "start": 306.66,
+   "end": 312.18,
+   "text": "direction. So it would be fb minus fg."
+  },
+  {
+   "start": 313.04,
+   "end": 318.38,
+   "text": "We could put that in here, a equals fb minus"
+  },
+  {
+   "start": 318.38,
+   "end": 320.78,
+   "text": "fg over m."
+  },
+  {
+   "start": 322.18,
+   "end": 326.18,
+   "text": "And a would be equal to, well, what is the force"
+  },
+  {
+   "start": 326.18,
+   "end": 328.94,
+   "text": "for buoyancy? Let me just pull that up."
+  },
+  {
+   "start": 329.94,
+   "end": 336.94,
+   "text": "The force for buoyancy is rho vg, where rho"
+  },
+  {
+   "start": 336.94,
+   "end": 340.76,
+   "text": "is the density of the fluid, v is the volume"
+  },
+  {
+   "start": 340.76,
+   "end": 344.64,
+   "text": "displaced, and g is the acceleration due to"
+  },
+  {
+   "start": 344.64,
+   "end": 348.38,
+   "text": "gravity, and fg is simply just mass times gravity"
+  },
+  {
+   "start": 348.38,
+   "end": 357.42,
+   "text": "over m. And I would just factor out g, so"
+  },
+  {
+   "start": 357.42,
+   "end": 364.82,
+   "text": "g times rho v minus m over"
+  },
+  {
+   "start": 364.82,
+   "end": 371.3,
+   "text": "m, and that would be your net acceleration initially."
+  },
+  {
+   "start": 372.82,
+   "end": 375.92,
+   "text": "Indicate whether the expression for the acceleration"
+  },
+  {
+   "start": 375.92,
+   "end": 379.9,
+   "text": "a you derived in part b is or is not consistent"
+  },
+  {
+   "start": 379.9,
+   "end": 382.86,
+   "text": "with the claim made in part a, and justify your"
+  },
+  {
+   "start": 382.86,
+   "end": 386.7,
+   "text": "answer referencing your equation. Okay, this"
+  },
+  {
+   "start": 386.7,
+   "end": 391.28,
+   "text": "one is simple, because we know that if rho,"
+  },
+  {
+   "start": 391.5,
+   "end": 395.54,
+   "text": "the density increases, then the acceleration"
+  },
+  {
+   "start": 395.54,
+   "end": 398.8,
+   "text": "increases, because the acceleration is proportional"
+  },
+  {
+   "start": 398.8,
+   "end": 402.8,
+   "text": "to rho v minus m, and if rho increases, then"
+  },
+  {
+   "start": 402.8,
+   "end": 407.26,
+   "text": "rho v minus m increases. So, we would just write"
+  },
+  {
+   "start": 407.26,
+   "end": 419.79,
+   "text": "exactly what I said. Okay, first"
+  },
+  {
+   "start": 419.79,
+   "end": 426.17,
+   "text": "of all, you would say yes, it is consistent"
+  },
+  {
+   "start": 426.17,
+   "end": 429.61,
+   "text": "with my claim in part a."
+  },
+  {
+   "start": 433.92,
+   "end": 441.02,
+   "text": "Acceleration in my formula is proportional to"
+  },
+  {
+   "start": 442.49,
+   "end": 446.35,
+   "text": "rho, I'm just going to say p, v minus m."
+  },
+  {
+   "start": 447.92,
+   "end": 455.26,
+   "text": "If the density, rho, increases, then"
+  },
+  {
+   "start": 455.26,
+   "end": 462.3,
+   "text": "p, v minus m increases, which leads to"
+  },
+  {
+   "start": 462.3,
+   "end": 466.94,
+   "text": "a higher acceleration, and that's really all"
+  },
+  {
+   "start": 466.94,
+   "end": 469.72,
+   "text": "you need to write. And also, I would mention"
+  },
+  {
+   "start": 469.72,
+   "end": 477.46,
+   "text": "that gravity is constant in both cases, the"
+  },
+  {
+   "start": 477.46,
+   "end": 483.16,
+   "text": "volume is constant in both cases, and the mass"
+  },
+  {
+   "start": 483.16,
+   "end": 487.78,
+   "text": "of the block is also constant in both cases."
+  },
+  {
+   "start": 487.78,
+   "end": 491.1,
+   "text": "And that would be all you would need to write,"
+  },
+  {
+   "start": 491.68,
+   "end": 496.7,
+   "text": "and yeah, that is what I think are the correct"
+  },
+  {
+   "start": 496.7,
+   "end": 502.58,
+   "text": "answers for question 4 of the AP 2025 Physics"
+  },
+  {
+   "start": 502.58,
+   "end": 504.42,
+   "text": "I exam. Thank you for watching."
+  }
+ ],
+ "report": {
+  "key": "fluids__fluids_example1",
+  "title": "Fluid Statics and Dynamics Examples",
+  "topicKey": "fluids",
+  "duration": 505.6841875,
+  "cues": 106,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.23021392210533745,
+  "flagged": []
+ }
+}

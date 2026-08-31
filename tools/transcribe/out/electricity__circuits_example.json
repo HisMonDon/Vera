@@ -1,0 +1,1369 @@
+{
+ "lesson": {
+  "topicKey": "electricity",
+  "curriculumKey": "circuits_example",
+  "title": "AP/IB Style Circuit Problem",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/3%20Circuit%20Example.mp4",
+  "source": "electricity.dart"
+ },
+ "segments": [
+  {
+   "start": 1.3,
+   "end": 11.88,
+   "text": "In this video, we will be looking at an example where we can apply Ohm's law and what we've learned over here with Kirchhoff's current law to solve a circuit problem.",
+   "avg_logprob": -0.09350831508636474
+  },
+  {
+   "start": 12.94,
+   "end": 29.34,
+   "text": "This problem asks us to find the current of all the resistance points, so we need to find the current over here, I1, I2, I3, I4, and I5.",
+   "avg_logprob": -0.09350831508636474
+  },
+  {
+   "start": 32.76,
+   "end": 53.26,
+   "text": "So how do we start? Well, first of all, we have all the resistors, we have the total voltage of the thing, so a first optimal step would be to calculate the total current, because that way we can use Kirchhoff's law.",
+   "avg_logprob": -0.11420888022372597
+  },
+  {
+   "start": 54.4,
+   "end": 66.5,
+   "text": "So in order to find the total current, I current, we would have to have the total voltage over the total resistance.",
+   "avg_logprob": -0.09600760884906935
+  },
+  {
+   "start": 67.42,
+   "end": 73.48,
+   "text": "We have the total voltage, it's 132 volts, so how do we find the total resistance?",
+   "avg_logprob": -0.09600760884906935
+  },
+  {
+   "start": 74.42,
+   "end": 79.3,
+   "text": "Well, the total resistance could be given by our other formula, R total.",
+   "avg_logprob": -0.09600760884906935
+  },
+  {
+   "start": 79.96,
+   "end": 89.38,
+   "text": "It's the sum of the resistors of this section and this section, because if we treat these as a series, we can just add them up.",
+   "avg_logprob": -0.07574397955267202
+  },
+  {
+   "start": 90.04,
+   "end": 103.9,
+   "text": "But these are in parallel, so before we treat it, we kind of have to combine it, so it's 1 over 2.4 plus 1 over 1.7, and this is the formula that I explained earlier about here.",
+   "avg_logprob": -0.07574397955267202
+  },
+  {
+   "start": 103.9,
+   "end": 117.66,
+   "text": "This is the total resistance of this parallel circuit, and we will do the same thing to get the total resistance of this parallel circuit, so we can treat them as single resistors in a whole series circuit.",
+   "avg_logprob": -0.0883699451883634
+  },
+  {
+   "start": 118.92,
+   "end": 124.7,
+   "text": "1 over 60 plus 1 over 20 plus 1 over 30.",
+   "avg_logprob": -0.0883699451883634
+  },
+  {
+   "start": 126.89,
+   "end": 135.73,
+   "text": "And the reason why we're adding them is we're treating this as a single resistor and this as another single resistor, so it would be the resistance for the whole series.",
+   "avg_logprob": -0.10658144568785644
+  },
+  {
+   "start": 136.73,
+   "end": 149.96,
+   "text": "So the resistance of the first section when we type this in our calculator would be about 1 ohm.",
+   "avg_logprob": -0.11932810439782984
+  },
+  {
+   "start": 151.12,
+   "end": 165.04,
+   "text": "1 ohm plus the resistor in the other section when you type it in the calculator would be about 10 ohms.",
+   "avg_logprob": -0.11932810439782984
+  },
+  {
+   "start": 166.42,
+   "end": 176.8,
+   "text": "So the total resistance of this circuit, R total, would be 11 ohms, equals 11 ohms.",
+   "avg_logprob": -0.13217101773868004
+  },
+  {
+   "start": 179.07,
+   "end": 187.44,
+   "text": "I'll actually write this in yellow to make sure that everything I write in yellow will be calculations.",
+   "avg_logprob": -0.13217101773868004
+  },
+  {
+   "start": 187.44,
+   "end": 194.56,
+   "text": "So R total equals 11 ohms.",
+   "avg_logprob": -0.15003996129546845
+  },
+  {
+   "start": 194.92,
+   "end": 210.38,
+   "text": "So using this formula, since we have R total now, I total would be equal to V total 132 over 11, which is 12.",
+   "avg_logprob": -0.15003996129546845
+  },
+  {
+   "start": 211.84,
+   "end": 212.96,
+   "text": "12 amps.",
+   "avg_logprob": -0.10047229561716953
+  },
+  {
+   "start": 214.42,
+   "end": 218.38,
+   "text": "So I total equals 12 amps.",
+   "avg_logprob": -0.10047229561716953
+  },
+  {
+   "start": 219.54,
+   "end": 223.44,
+   "text": "Now we need to calculate the individual currents here.",
+   "avg_logprob": -0.10047229561716953
+  },
+  {
+   "start": 224.56,
+   "end": 228.78,
+   "text": "In order to do that, we can use Ohm's law and the chart we've done here.",
+   "avg_logprob": -0.10047229561716953
+  },
+  {
+   "start": 228.96,
+   "end": 232.94,
+   "text": "It's really handy to know this, and you guys have probably learned it before.",
+   "avg_logprob": -0.10047229561716953
+  },
+  {
+   "start": 233.12,
+   "end": 234.28,
+   "text": "It was grade 9 curriculum.",
+   "avg_logprob": -0.10047229561716953
+  },
+  {
+   "start": 234.66,
+   "end": 238.66,
+   "text": "So we can use this in order to solve for each individual circuit.",
+   "avg_logprob": -0.10047229561716953
+  },
+  {
+   "start": 238.66,
+   "end": 241.92,
+   "text": "So I'll go over this pretty quickly.",
+   "avg_logprob": -0.05758070705398437
+  },
+  {
+   "start": 242.7,
+   "end": 247.66,
+   "text": "We know that the current everywhere is the same in a series circuit.",
+   "avg_logprob": -0.05758070705398437
+  },
+  {
+   "start": 248.26,
+   "end": 253.22,
+   "text": "So the current over here will be equal to 12 amps.",
+   "avg_logprob": -0.05758070705398437
+  },
+  {
+   "start": 253.88,
+   "end": 256.02,
+   "text": "The current over here is equal to 12 amps.",
+   "avg_logprob": -0.05758070705398437
+  },
+  {
+   "start": 259.51,
+   "end": 265.51,
+   "text": "So looking at the parallel circuit, the total current of the parallel circuit would be equal to 12 amps.",
+   "avg_logprob": -0.05758070705398437
+  },
+  {
+   "start": 265.65,
+   "end": 268.11,
+   "text": "Not in each branch, the total current will be 12 amps.",
+   "avg_logprob": -0.05758070705398437
+  },
+  {
+   "start": 268.11,
+   "end": 274.39,
+   "text": "So let's call this branch X, and let's call this branch Y.",
+   "avg_logprob": -0.10259521190936749
+  },
+  {
+   "start": 276.01,
+   "end": 279.19,
+   "text": "The total current of branch X is 12 amps.",
+   "avg_logprob": -0.10259521190936749
+  },
+  {
+   "start": 280.05,
+   "end": 286.83,
+   "text": "The total resistance of branch X, we calculated over here, is 1 ohm.",
+   "avg_logprob": -0.10259521190936749
+  },
+  {
+   "start": 289.7,
+   "end": 292.82,
+   "text": "So by doing that, we can calculate the total voltage.",
+   "avg_logprob": -0.10259521190936749
+  },
+  {
+   "start": 292.82,
+   "end": 303.56,
+   "text": "The total voltage in branch X would be equal to the total current times the total resistance, which is equal to 12 volts.",
+   "avg_logprob": -0.07849040096518638
+  },
+  {
+   "start": 304.48,
+   "end": 310.54,
+   "text": "So since it's a parallel circuit, over here would be 12 volts, over here would be 12 volts.",
+   "avg_logprob": -0.07849040096518638
+  },
+  {
+   "start": 311.62,
+   "end": 314.12,
+   "text": "Now let's do the same thing over here.",
+   "avg_logprob": -0.07849040096518638
+  },
+  {
+   "start": 317.43,
+   "end": 320.67,
+   "text": "We know that we don't actually have to calculate it.",
+   "avg_logprob": -0.07849040096518638
+  },
+  {
+   "start": 320.69,
+   "end": 321.53,
+   "text": "We could if we want.",
+   "avg_logprob": -0.07849040096518638
+  },
+  {
+   "start": 321.53,
+   "end": 329.09,
+   "text": "But we know that the total voltage in a series is the sum of all the individual voltages.",
+   "avg_logprob": -0.051343718944471095
+  },
+  {
+   "start": 329.49,
+   "end": 338.13,
+   "text": "If we know that the voltage here at X is 12 ohms, then we know 132 equals Vx plus Vy.",
+   "avg_logprob": -0.051343718944471095
+  },
+  {
+   "start": 339.13,
+   "end": 347.43,
+   "text": "And if X is 12 ohms, then the voltage at Y would be 120 when we calculate it.",
+   "avg_logprob": -0.051343718944471095
+  },
+  {
+   "start": 348.33,
+   "end": 349.17,
+   "text": "120 volts.",
+   "avg_logprob": -0.051343718944471095
+  },
+  {
+   "start": 349.17,
+   "end": 357.21,
+   "text": "So since it's parallel, this would be 120 volts, 120 volts, and 120 volts.",
+   "avg_logprob": -0.12303493382795802
+  },
+  {
+   "start": 358.03,
+   "end": 366.81,
+   "text": "And now we know that we can easily calculate for the resistance, sorry, the current.",
+   "avg_logprob": -0.12303493382795802
+  },
+  {
+   "start": 367.65,
+   "end": 369.73,
+   "text": "So let's start with I1.",
+   "avg_logprob": -0.12303493382795802
+  },
+  {
+   "start": 370.73,
+   "end": 379.73,
+   "text": "I1 is V1, or Vx in this case, because it's parallel, over R1.",
+   "avg_logprob": -0.10369188423183831
+  },
+  {
+   "start": 380.81,
+   "end": 386.97,
+   "text": "So it's 12 over 2.4, and you'll get 5 amps.",
+   "avg_logprob": -0.10369188423183831
+  },
+  {
+   "start": 388.69,
+   "end": 400.95,
+   "text": "I2 is Vx over R2, which is 12 over 1.7 ohms, which you'll get 7 amps about.",
+   "avg_logprob": -0.0687178543635777
+  },
+  {
+   "start": 403.12,
+   "end": 403.6,
+   "text": "7A.",
+   "avg_logprob": -0.0687178543635777
+  },
+  {
+   "start": 406.22,
+   "end": 412.9,
+   "text": "I3 is over here, so now the new voltage is 120 in all three branches.",
+   "avg_logprob": -0.0687178543635777
+  },
+  {
+   "start": 412.9,
+   "end": 420.72,
+   "text": "So Vy over R3, 120 over 60, that would be 2 amps.",
+   "avg_logprob": -0.1001768938398787
+  },
+  {
+   "start": 421.96,
+   "end": 424.28,
+   "text": "Same thing for I4 and I5.",
+   "avg_logprob": -0.1001768938398787
+  },
+  {
+   "start": 424.58,
+   "end": 436.38,
+   "text": "I4 equals Vy over R4, equals 120 over 20, that would be equal to 6 amps.",
+   "avg_logprob": -0.1001768938398787
+  },
+  {
+   "start": 436.38,
+   "end": 445.62,
+   "text": "And finally, I5 is Vy over R5, which is 120 over 30, which is 4 amps.",
+   "avg_logprob": -0.07814503079930017
+  },
+  {
+   "start": 446.58,
+   "end": 449.88,
+   "text": "And these would be your currents in all of the sections.",
+   "avg_logprob": -0.07814503079930017
+  },
+  {
+   "start": 458.81,
+   "end": 464.43,
+   "text": "Now, you might be wondering how we can use Kirchhoff's Law to actually help us in this question.",
+   "avg_logprob": -0.07814503079930017
+  },
+  {
+   "start": 465.05,
+   "end": 470.83,
+   "text": "Well, we've done all of these calculations, but we need a way to check.",
+   "avg_logprob": -0.07814503079930017
+  },
+  {
+   "start": 470.83,
+   "end": 476.55,
+   "text": "A question might ask, confirm your answers using Kirchhoff's Current Law.",
+   "avg_logprob": -0.08724711098989775
+  },
+  {
+   "start": 477.93,
+   "end": 486.27,
+   "text": "Usually, they would give you a point where you can use Kirchhoff's Law, because Kirchhoff's Law, like we said before, only applies to a junction.",
+   "avg_logprob": -0.08724711098989775
+  },
+  {
+   "start": 486.57,
+   "end": 494.07,
+   "text": "So, in this case, let's say they give you point, I'll do this in red, point C over here.",
+   "avg_logprob": -0.08724711098989775
+  },
+  {
+   "start": 494.77,
+   "end": 502.95,
+   "text": "Now, the current will be going this way, because positive to negative.",
+   "avg_logprob": -0.08470486115445108
+  },
+  {
+   "start": 504.85,
+   "end": 510.51,
+   "text": "And what we do is we can calculate the total current that exits out of this parallel circuit.",
+   "avg_logprob": -0.08470486115445108
+  },
+  {
+   "start": 511.29,
+   "end": 519.41,
+   "text": "And we can also calculate the total current that goes in here, or the total current of y and the total current of x.",
+   "avg_logprob": -0.08470486115445108
+  },
+  {
+   "start": 520.39,
+   "end": 526.09,
+   "text": "Well, the total current of y is essentially just I1 plus I2.",
+   "avg_logprob": -0.11079754277892497
+  },
+  {
+   "start": 526.39,
+   "end": 529.59,
+   "text": "If you remember the chart we've learned, in a parallel, it's a sum.",
+   "avg_logprob": -0.11079754277892497
+  },
+  {
+   "start": 531.65,
+   "end": 534.97,
+   "text": "And it's going to be positive since it's going inside the junction, as we've learned.",
+   "avg_logprob": -0.11079754277892497
+  },
+  {
+   "start": 535.71,
+   "end": 546.51,
+   "text": "So, according to Kirchhoff's Law, the sum of all the voltages should be equal to zero.",
+   "avg_logprob": -0.11079754277892497
+  },
+  {
+   "start": 546.51,
+   "end": 555.83,
+   "text": "So, I1 plus I2 plus I3 plus I4 plus I5 equals zero.",
+   "avg_logprob": -0.06977672427892685
+  },
+  {
+   "start": 556.03,
+   "end": 562.95,
+   "text": "The reason why I can just add it is because these are in parallel, which means you add them.",
+   "avg_logprob": -0.06977672427892685
+  },
+  {
+   "start": 563.77,
+   "end": 569.09,
+   "text": "And these are also in parallel, which means you add them, and they're going inside the middle junction.",
+   "avg_logprob": -0.06977672427892685
+  },
+  {
+   "start": 570.75,
+   "end": 579.15,
+   "text": "I1 and I2 would be positive, so five plus seven, five plus seven.",
+   "avg_logprob": -0.10570849627256393
+  },
+  {
+   "start": 579.69,
+   "end": 585.11,
+   "text": "And since the current goes outwards over here, and now the current's going this way,",
+   "avg_logprob": -0.10570849627256393
+  },
+  {
+   "start": 586.13,
+   "end": 589.61,
+   "text": "these currents would all be negative because they're going away from the junction.",
+   "avg_logprob": -0.10570849627256393
+  },
+  {
+   "start": 590.55,
+   "end": 593.93,
+   "text": "They're not actually negative, it's just a direction.",
+   "avg_logprob": -0.11708000143369039
+  },
+  {
+   "start": 594.95,
+   "end": 601.09,
+   "text": "Plus negative two, plus negative six, plus negative four.",
+   "avg_logprob": -0.11708000143369039
+  },
+  {
+   "start": 601.77,
+   "end": 607.11,
+   "text": "And let's do it as a proof, so left-hand side, right-hand side is equal to zero.",
+   "avg_logprob": -0.11708000143369039
+  },
+  {
+   "start": 608.23,
+   "end": 615.31,
+   "text": "And five plus seven is twelve, negative two minus six minus four is negative twelve.",
+   "avg_logprob": -0.11708000143369039
+  },
+  {
+   "start": 617.41,
+   "end": 618.61,
+   "text": "So, zero.",
+   "avg_logprob": -0.07614527659283744
+  },
+  {
+   "start": 619.43,
+   "end": 624.79,
+   "text": "So, it does make sense. Kirchhoff's Law affirms that our calculations make sense",
+   "avg_logprob": -0.07614527659283744
+  },
+  {
+   "start": 625.43,
+   "end": 628.63,
+   "text": "because the total voltage at this junction is zero.",
+   "avg_logprob": -0.07614527659283744
+  },
+  {
+   "start": 629.25,
+   "end": 631.59,
+   "text": "Sorry, the total current at this junction is zero.",
+   "avg_logprob": -0.07614527659283744
+  },
+  {
+   "start": 631.77,
+   "end": 637.93,
+   "text": "And the total current at any junction should be zero if you try to calculate it.",
+   "avg_logprob": -0.07614527659283744
+  },
+  {
+   "start": 638.45,
+   "end": 642.41,
+   "text": "And that's basically a really good use of Kirchhoff's Law.",
+   "avg_logprob": -0.07614527659283744
+  },
+  {
+   "start": 642.41,
+   "end": 645.17,
+   "text": "It's used to make sure that your calculations are correct,",
+   "avg_logprob": -0.05461475935421492
+  },
+  {
+   "start": 645.35,
+   "end": 651.13,
+   "text": "especially when you have time during a test, such as AP or IB.",
+   "avg_logprob": -0.05461475935421492
+  },
+  {
+   "start": 651.65,
+   "end": 656.45,
+   "text": "But IB might be time-heavier, so unless it asks you to do it,",
+   "avg_logprob": -0.05461475935421492
+  },
+  {
+   "start": 656.47,
+   "end": 660.65,
+   "text": "it's just a good thing to know and assure that your answers are right.",
+   "avg_logprob": -0.05461475935421492
+  },
+  {
+   "start": 661.59,
+   "end": 665.91,
+   "text": "Thank you for watching, and I hope you learned how to do these types of circuit problems.",
+   "avg_logprob": -0.05461475935421492
+  },
+  {
+   "start": 666.89,
+   "end": 667.05,
+   "text": "Bye!",
+   "avg_logprob": -0.05461475935421492
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.3,
+   "end": 4.1,
+   "text": "In this video, we will be looking at an example"
+  },
+  {
+   "start": 4.1,
+   "end": 6.94,
+   "text": "where we can apply Ohm's law and what we've"
+  },
+  {
+   "start": 6.94,
+   "end": 9.46,
+   "text": "learned over here with Kirchhoff's current law"
+  },
+  {
+   "start": 9.46,
+   "end": 11.88,
+   "text": "to solve a circuit problem."
+  },
+  {
+   "start": 12.94,
+   "end": 16.38,
+   "text": "This problem asks us to find the current of"
+  },
+  {
+   "start": 16.38,
+   "end": 19.78,
+   "text": "all the resistance points, so we need to find"
+  },
+  {
+   "start": 19.78,
+   "end": 28.34,
+   "text": "the current over here, I1, I2, I3, I4,"
+  },
+  {
+   "start": 28.66,
+   "end": 34.64,
+   "text": "and I5. So how do we start?"
+  },
+  {
+   "start": 35.92,
+   "end": 41.62,
+   "text": "Well, first of all, we have all the resistors,"
+  },
+  {
+   "start": 42.14,
+   "end": 46.54,
+   "text": "we have the total voltage of the thing, so a"
+  },
+  {
+   "start": 46.54,
+   "end": 49.62,
+   "text": "first optimal step would be to calculate the"
+  },
+  {
+   "start": 49.62,
+   "end": 53.14,
+   "text": "total current, because that way we can use Kirchhoff's"
+  },
+  {
+   "start": 53.14,
+   "end": 57.08,
+   "text": "law. So in order to find the total current,"
+  },
+  {
+   "start": 57.64,
+   "end": 63.86,
+   "text": "I current, we would have to have the total voltage"
+  },
+  {
+   "start": 63.86,
+   "end": 66.5,
+   "text": "over the total resistance."
+  },
+  {
+   "start": 67.42,
+   "end": 71.42,
+   "text": "We have the total voltage, it's 132 volts, so"
+  },
+  {
+   "start": 71.42,
+   "end": 73.48,
+   "text": "how do we find the total resistance?"
+  },
+  {
+   "start": 74.42,
+   "end": 77.64,
+   "text": "Well, the total resistance could be given by"
+  },
+  {
+   "start": 77.64,
+   "end": 81.36,
+   "text": "our other formula, R total. It's the sum of"
+  },
+  {
+   "start": 81.36,
+   "end": 84.64,
+   "text": "the resistors of this section and this section,"
+  },
+  {
+   "start": 84.64,
+   "end": 88.24,
+   "text": "because if we treat these as a series, we can"
+  },
+  {
+   "start": 88.24,
+   "end": 91.2,
+   "text": "just add them up. But these are in parallel,"
+  },
+  {
+   "start": 91.4,
+   "end": 94.2,
+   "text": "so before we treat it, we kind of have to combine"
+  },
+  {
+   "start": 94.2,
+   "end": 100.36,
+   "text": "it, so it's 1 over 2.4 plus 1 over 1.7, and"
+  },
+  {
+   "start": 100.36,
+   "end": 102.74,
+   "text": "this is the formula that I explained earlier"
+  },
+  {
+   "start": 102.74,
+   "end": 106.18,
+   "text": "about here. This is the total resistance of"
+  },
+  {
+   "start": 106.18,
+   "end": 109.0,
+   "text": "this parallel circuit, and we will do the same"
+  },
+  {
+   "start": 109.0,
+   "end": 111.12,
+   "text": "thing to get the total resistance of this parallel"
+  },
+  {
+   "start": 111.12,
+   "end": 115.04,
+   "text": "circuit, so we can treat them as single resistors"
+  },
+  {
+   "start": 115.04,
+   "end": 117.66,
+   "text": "in a whole series circuit."
+  },
+  {
+   "start": 118.92,
+   "end": 124.7,
+   "text": "1 over 60 plus 1 over 20 plus 1 over 30."
+  },
+  {
+   "start": 126.89,
+   "end": 129.09,
+   "text": "And the reason why we're adding them is we're"
+  },
+  {
+   "start": 129.09,
+   "end": 131.03,
+   "text": "treating this as a single resistor and this"
+  },
+  {
+   "start": 131.03,
+   "end": 134.09,
+   "text": "as another single resistor, so it would be the"
+  },
+  {
+   "start": 134.09,
+   "end": 138.65,
+   "text": "resistance for the whole series. So the resistance"
+  },
+  {
+   "start": 138.65,
+   "end": 141.59,
+   "text": "of the first section when we type this in our"
+  },
+  {
+   "start": 141.59,
+   "end": 149.1,
+   "text": "calculator would be about 1"
+  },
+  {
+   "start": 149.1,
+   "end": 155.66,
+   "text": "ohm. 1 ohm plus the resistor in the other section"
+  },
+  {
+   "start": 155.66,
+   "end": 159.7,
+   "text": "when you type it in the calculator would be"
+  },
+  {
+   "start": 159.7,
+   "end": 165.04,
+   "text": "about 10 ohms."
+  },
+  {
+   "start": 166.42,
+   "end": 171.52,
+   "text": "So the total resistance of this circuit, R total,"
+  },
+  {
+   "start": 172.46,
+   "end": 176.8,
+   "text": "would be 11 ohms, equals 11 ohms."
+  },
+  {
+   "start": 179.07,
+   "end": 182.79,
+   "text": "I'll actually write this in yellow to make sure"
+  },
+  {
+   "start": 182.79,
+   "end": 187.44,
+   "text": "that everything I write in yellow will be calculations."
+  },
+  {
+   "start": 187.44,
+   "end": 194.56,
+   "text": "So R total equals 11 ohms."
+  },
+  {
+   "start": 194.92,
+   "end": 197.18,
+   "text": "So using this formula, since we have R total"
+  },
+  {
+   "start": 197.18,
+   "end": 204.64,
+   "text": "now, I total would be equal to V total 132"
+  },
+  {
+   "start": 204.64,
+   "end": 210.38,
+   "text": "over 11, which is 12."
+  },
+  {
+   "start": 211.84,
+   "end": 218.38,
+   "text": "12 amps. So I total equals 12 amps."
+  },
+  {
+   "start": 219.54,
+   "end": 223.0,
+   "text": "Now we need to calculate the individual currents"
+  },
+  {
+   "start": 223.0,
+   "end": 227.0,
+   "text": "here. In order to do that, we can use Ohm's"
+  },
+  {
+   "start": 227.0,
+   "end": 229.46,
+   "text": "law and the chart we've done here. It's really"
+  },
+  {
+   "start": 229.46,
+   "end": 232.24,
+   "text": "handy to know this, and you guys have probably"
+  },
+  {
+   "start": 232.24,
+   "end": 234.28,
+   "text": "learned it before. It was grade 9 curriculum."
+  },
+  {
+   "start": 234.66,
+   "end": 237.7,
+   "text": "So we can use this in order to solve for each"
+  },
+  {
+   "start": 237.7,
+   "end": 241.5,
+   "text": "individual circuit. So I'll go over this pretty"
+  },
+  {
+   "start": 241.5,
+   "end": 245.5,
+   "text": "quickly. We know that the current everywhere"
+  },
+  {
+   "start": 245.5,
+   "end": 247.66,
+   "text": "is the same in a series circuit."
+  },
+  {
+   "start": 248.26,
+   "end": 252.88,
+   "text": "So the current over here will be equal to 12"
+  },
+  {
+   "start": 252.88,
+   "end": 256.02,
+   "text": "amps. The current over here is equal to 12 amps."
+  },
+  {
+   "start": 259.51,
+   "end": 262.61,
+   "text": "So looking at the parallel circuit, the total"
+  },
+  {
+   "start": 262.61,
+   "end": 264.83,
+   "text": "current of the parallel circuit would be equal"
+  },
+  {
+   "start": 264.83,
+   "end": 267.15,
+   "text": "to 12 amps. Not in each branch, the total current"
+  },
+  {
+   "start": 267.15,
+   "end": 272.11,
+   "text": "will be 12 amps. So let's call this branch X,"
+  },
+  {
+   "start": 272.55,
+   "end": 276.85,
+   "text": "and let's call this branch Y. The total current"
+  },
+  {
+   "start": 276.85,
+   "end": 279.19,
+   "text": "of branch X is 12 amps."
+  },
+  {
+   "start": 280.05,
+   "end": 284.01,
+   "text": "The total resistance of branch X, we calculated"
+  },
+  {
+   "start": 284.01,
+   "end": 286.83,
+   "text": "over here, is 1 ohm."
+  },
+  {
+   "start": 289.7,
+   "end": 292.4,
+   "text": "So by doing that, we can calculate the total"
+  },
+  {
+   "start": 292.4,
+   "end": 298.0,
+   "text": "voltage. The total voltage in branch X would"
+  },
+  {
+   "start": 298.0,
+   "end": 300.9,
+   "text": "be equal to the total current times the total"
+  },
+  {
+   "start": 300.9,
+   "end": 303.56,
+   "text": "resistance, which is equal to 12 volts."
+  },
+  {
+   "start": 304.48,
+   "end": 307.66,
+   "text": "So since it's a parallel circuit, over here"
+  },
+  {
+   "start": 307.66,
+   "end": 310.54,
+   "text": "would be 12 volts, over here would be 12 volts."
+  },
+  {
+   "start": 311.62,
+   "end": 314.12,
+   "text": "Now let's do the same thing over here."
+  },
+  {
+   "start": 317.43,
+   "end": 320.39,
+   "text": "We know that we don't actually have to calculate"
+  },
+  {
+   "start": 320.39,
+   "end": 323.63,
+   "text": "it. We could if we want. But we know that the"
+  },
+  {
+   "start": 323.63,
+   "end": 327.23,
+   "text": "total voltage in a series is the sum of all"
+  },
+  {
+   "start": 327.23,
+   "end": 330.51,
+   "text": "the individual voltages. If we know that the"
+  },
+  {
+   "start": 330.51,
+   "end": 335.79,
+   "text": "voltage here at X is 12 ohms, then we know 132"
+  },
+  {
+   "start": 335.79,
+   "end": 338.13,
+   "text": "equals Vx plus Vy."
+  },
+  {
+   "start": 339.13,
+   "end": 343.69,
+   "text": "And if X is 12 ohms, then the voltage at Y would"
+  },
+  {
+   "start": 343.69,
+   "end": 347.43,
+   "text": "be 120 when we calculate it."
+  },
+  {
+   "start": 348.33,
+   "end": 352.11,
+   "text": "120 volts. So since it's parallel, this would"
+  },
+  {
+   "start": 352.11,
+   "end": 357.21,
+   "text": "be 120 volts, 120 volts, and 120 volts."
+  },
+  {
+   "start": 358.03,
+   "end": 361.59,
+   "text": "And now we know that we can easily calculate"
+  },
+  {
+   "start": 361.59,
+   "end": 366.81,
+   "text": "for the resistance, sorry, the current."
+  },
+  {
+   "start": 367.65,
+   "end": 369.73,
+   "text": "So let's start with I1."
+  },
+  {
+   "start": 370.73,
+   "end": 378.03,
+   "text": "I1 is V1, or Vx in this case, because it's"
+  },
+  {
+   "start": 378.03,
+   "end": 385.47,
+   "text": "parallel, over R1. So it's 12 over 2.4, and"
+  },
+  {
+   "start": 385.47,
+   "end": 392.89,
+   "text": "you'll get 5 amps. I2 is Vx over R2,"
+  },
+  {
+   "start": 392.89,
+   "end": 399.63,
+   "text": "which is 12 over 1.7 ohms, which you'll get"
+  },
+  {
+   "start": 399.63,
+   "end": 403.6,
+   "text": "7 amps about. 7A."
+  },
+  {
+   "start": 406.22,
+   "end": 411.86,
+   "text": "I3 is over here, so now the new voltage is 120"
+  },
+  {
+   "start": 411.86,
+   "end": 418.44,
+   "text": "in all three branches. So Vy over R3, 120 over"
+  },
+  {
+   "start": 418.44,
+   "end": 420.72,
+   "text": "60, that would be 2 amps."
+  },
+  {
+   "start": 421.96,
+   "end": 424.28,
+   "text": "Same thing for I4 and I5."
+  },
+  {
+   "start": 424.58,
+   "end": 432.86,
+   "text": "I4 equals Vy over R4, equals 120 over 20,"
+  },
+  {
+   "start": 433.26,
+   "end": 436.38,
+   "text": "that would be equal to 6 amps."
+  },
+  {
+   "start": 436.38,
+   "end": 443.38,
+   "text": "And finally, I5 is Vy over R5, which is 120"
+  },
+  {
+   "start": 443.38,
+   "end": 445.62,
+   "text": "over 30, which is 4 amps."
+  },
+  {
+   "start": 446.58,
+   "end": 449.52,
+   "text": "And these would be your currents in all of the"
+  },
+  {
+   "start": 449.52,
+   "end": 458.93,
+   "text": "sections. Now,"
+  },
+  {
+   "start": 458.97,
+   "end": 461.33,
+   "text": "you might be wondering how we can use Kirchhoff's"
+  },
+  {
+   "start": 461.33,
+   "end": 464.43,
+   "text": "Law to actually help us in this question."
+  },
+  {
+   "start": 465.05,
+   "end": 467.93,
+   "text": "Well, we've done all of these calculations,"
+  },
+  {
+   "start": 468.45,
+   "end": 470.83,
+   "text": "but we need a way to check."
+  },
+  {
+   "start": 470.83,
+   "end": 474.75,
+   "text": "A question might ask, confirm your answers using"
+  },
+  {
+   "start": 474.75,
+   "end": 478.77,
+   "text": "Kirchhoff's Current Law. Usually, they would"
+  },
+  {
+   "start": 478.77,
+   "end": 481.61,
+   "text": "give you a point where you can use Kirchhoff's"
+  },
+  {
+   "start": 481.61,
+   "end": 484.21,
+   "text": "Law, because Kirchhoff's Law, like we said before,"
+  },
+  {
+   "start": 484.93,
+   "end": 487.87,
+   "text": "only applies to a junction. So, in this case,"
+  },
+  {
+   "start": 488.15,
+   "end": 491.43,
+   "text": "let's say they give you point, I'll do this"
+  },
+  {
+   "start": 491.43,
+   "end": 494.07,
+   "text": "in red, point C over here."
+  },
+  {
+   "start": 494.77,
+   "end": 500.87,
+   "text": "Now, the current will be going this way, because"
+  },
+  {
+   "start": 500.87,
+   "end": 502.95,
+   "text": "positive to negative."
+  },
+  {
+   "start": 504.85,
+   "end": 508.05,
+   "text": "And what we do is we can calculate the total"
+  },
+  {
+   "start": 508.05,
+   "end": 510.51,
+   "text": "current that exits out of this parallel circuit."
+  },
+  {
+   "start": 511.29,
+   "end": 514.91,
+   "text": "And we can also calculate the total current"
+  },
+  {
+   "start": 514.91,
+   "end": 517.61,
+   "text": "that goes in here, or the total current of y"
+  },
+  {
+   "start": 517.61,
+   "end": 521.49,
+   "text": "and the total current of x. Well, the total"
+  },
+  {
+   "start": 521.49,
+   "end": 526.09,
+   "text": "current of y is essentially just I1 plus I2."
+  },
+  {
+   "start": 526.39,
+   "end": 528.49,
+   "text": "If you remember the chart we've learned, in"
+  },
+  {
+   "start": 528.49,
+   "end": 532.35,
+   "text": "a parallel, it's a sum. And it's going to be"
+  },
+  {
+   "start": 532.35,
+   "end": 534.23,
+   "text": "positive since it's going inside the junction,"
+  },
+  {
+   "start": 534.27,
+   "end": 541.51,
+   "text": "as we've learned. So, according to Kirchhoff's"
+  },
+  {
+   "start": 541.51,
+   "end": 545.93,
+   "text": "Law, the sum of all the voltages should be equal"
+  },
+  {
+   "start": 545.93,
+   "end": 553.31,
+   "text": "to zero. So, I1 plus I2 plus I3 plus I4"
+  },
+  {
+   "start": 553.31,
+   "end": 555.83,
+   "text": "plus I5 equals zero."
+  },
+  {
+   "start": 556.03,
+   "end": 559.51,
+   "text": "The reason why I can just add it is because"
+  },
+  {
+   "start": 559.51,
+   "end": 562.95,
+   "text": "these are in parallel, which means you add them."
+  },
+  {
+   "start": 563.77,
+   "end": 566.13,
+   "text": "And these are also in parallel, which means"
+  },
+  {
+   "start": 566.13,
+   "end": 568.71,
+   "text": "you add them, and they're going inside the middle"
+  },
+  {
+   "start": 568.71,
+   "end": 576.39,
+   "text": "junction. I1 and I2 would be positive, so five"
+  },
+  {
+   "start": 576.39,
+   "end": 579.15,
+   "text": "plus seven, five plus seven."
+  },
+  {
+   "start": 579.69,
+   "end": 583.07,
+   "text": "And since the current goes outwards over here,"
+  },
+  {
+   "start": 583.07,
+   "end": 586.47,
+   "text": "and now the current's going this way, these"
+  },
+  {
+   "start": 586.47,
+   "end": 588.49,
+   "text": "currents would all be negative because they're"
+  },
+  {
+   "start": 588.49,
+   "end": 591.79,
+   "text": "going away from the junction. They're not actually"
+  },
+  {
+   "start": 591.79,
+   "end": 593.93,
+   "text": "negative, it's just a direction."
+  },
+  {
+   "start": 594.95,
+   "end": 600.69,
+   "text": "Plus negative two, plus negative six, plus negative"
+  },
+  {
+   "start": 600.69,
+   "end": 603.69,
+   "text": "four. And let's do it as a proof, so left-hand"
+  },
+  {
+   "start": 603.69,
+   "end": 607.11,
+   "text": "side, right-hand side is equal to zero."
+  },
+  {
+   "start": 608.23,
+   "end": 611.97,
+   "text": "And five plus seven is twelve, negative two"
+  },
+  {
+   "start": 611.97,
+   "end": 615.31,
+   "text": "minus six minus four is negative twelve."
+  },
+  {
+   "start": 617.41,
+   "end": 620.47,
+   "text": "So, zero. So, it does make sense."
+  },
+  {
+   "start": 620.61,
+   "end": 623.55,
+   "text": "Kirchhoff's Law affirms that our calculations"
+  },
+  {
+   "start": 623.55,
+   "end": 627.75,
+   "text": "make sense because the total voltage at this"
+  },
+  {
+   "start": 627.75,
+   "end": 630.67,
+   "text": "junction is zero. Sorry, the total current at"
+  },
+  {
+   "start": 630.67,
+   "end": 633.35,
+   "text": "this junction is zero. And the total current"
+  },
+  {
+   "start": 633.35,
+   "end": 637.19,
+   "text": "at any junction should be zero if you try to"
+  },
+  {
+   "start": 637.19,
+   "end": 641.11,
+   "text": "calculate it. And that's basically a really"
+  },
+  {
+   "start": 641.11,
+   "end": 643.47,
+   "text": "good use of Kirchhoff's Law. It's used to make"
+  },
+  {
+   "start": 643.47,
+   "end": 645.91,
+   "text": "sure that your calculations are correct, especially"
+  },
+  {
+   "start": 645.91,
+   "end": 650.53,
+   "text": "when you have time during a test, such as AP"
+  },
+  {
+   "start": 650.53,
+   "end": 654.95,
+   "text": "or IB. But IB might be time-heavier, so unless"
+  },
+  {
+   "start": 654.95,
+   "end": 657.97,
+   "text": "it asks you to do it, it's just a good thing"
+  },
+  {
+   "start": 657.97,
+   "end": 660.65,
+   "text": "to know and assure that your answers are right."
+  },
+  {
+   "start": 661.59,
+   "end": 663.65,
+   "text": "Thank you for watching, and I hope you learned"
+  },
+  {
+   "start": 663.65,
+   "end": 665.91,
+   "text": "how to do these types of circuit problems."
+  },
+  {
+   "start": 666.89,
+   "end": 667.05,
+   "text": "Bye!"
+  }
+ ],
+ "report": {
+  "key": "electricity__circuits_example",
+  "title": "AP/IB Style Circuit Problem",
+  "topicKey": "electricity",
+  "duration": 667.84,
+  "cues": 161,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.15003996129546845,
+  "flagged": []
+ }
+}

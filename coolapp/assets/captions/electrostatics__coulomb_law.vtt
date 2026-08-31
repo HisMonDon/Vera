@@ -1,0 +1,711 @@
+WEBVTT
+NOTE Coulomb's Law
+
+1
+00:00:00.980 --> 00:00:03.480
+In this video we will be looking at
+Coulomb's
+
+2
+00:00:03.480 --> 00:00:05.600
+law and what it does.
+
+3
+00:00:06.660 --> 00:00:10.040
+So what is Coulomb's law? Coulomb's law
+basically
+
+4
+00:00:10.040 --> 00:00:13.860
+gives the electric force between two point
+charges.
+
+5
+00:00:15.100 --> 00:00:17.960
+And that's really important because a lot
+of
+
+6
+00:00:17.960 --> 00:00:24.280
+the times there will be a relation between
+electrostatics
+
+7
+00:00:24.280 --> 00:00:28.760
+and forces or kinematics and it tells you
+the
+
+8
+00:00:28.760 --> 00:00:35.100
+magnitude of the force and whether the
+force
+
+9
+00:00:35.100 --> 00:00:37.300
+is attractive or repulsive. So the sign.
+
+10
+00:00:38.460 --> 00:00:44.040
+So whether the force, but the force if
+it's
+
+11
+00:00:44.040 --> 00:00:47.900
+attractive or repulsive just a good thing
+to
+
+12
+00:00:47.900 --> 00:00:51.880
+remember is just to know that forces repel
+and
+
+13
+00:00:51.880 --> 00:00:57.220
+opposite forces attract. So what is the
+equation
+
+14
+00:00:57.220 --> 00:01:01.180
+of Coulomb's law? Well the Coulomb's law
+equation
+
+15
+00:01:01.180 --> 00:01:04.380
+states that the force, the electrostatic
+force,
+
+16
+00:01:04.700 --> 00:01:08.600
+is equal to the Coulombic constant, which
+I'll
+
+17
+00:01:08.600 --> 00:01:12.080
+talk about later, times the two charges,
+the
+
+18
+00:01:12.080 --> 00:01:15.360
+magnitude of the product of the two
+charges,
+
+19
+00:01:15.360 --> 00:01:18.500
+over the distance squared.
+
+20
+00:01:20.000 --> 00:01:24.980
+And F is obviously the force in newtons.
+
+21
+00:01:27.040 --> 00:01:31.080
+K is the Coulombic attraction or Coulombic
+constant.
+
+22
+00:01:31.080 --> 00:01:35.960
+And it's the same for all formulae.
+
+23
+00:01:36.540 --> 00:01:41.540
+And it's equal to 8.99 times 10 to the 9
+newtons
+
+24
+00:01:41.540 --> 00:01:44.560
+times metres squared over Coulomb's
+squared.
+
+25
+00:01:46.240 --> 00:01:48.960
+Q1 and Q2 are the charges.
+
+26
+00:01:50.520 --> 00:01:54.020
+So it's measured in Coulomb's.
+
+27
+00:01:54.840 --> 00:01:58.380
+And R is the distance between the two
+charges.
+
+28
+00:01:59.680 --> 00:02:05.860
+Distance between charges in metres.
+
+29
+00:02:06.380 --> 00:02:08.340
+So a lot of the times they're going to
+give
+
+30
+00:02:08.340 --> 00:02:12.360
+you the distance in let's say nanometres
+or
+
+31
+00:02:12.360 --> 00:02:14.880
+picometres. So you're going to have to
+remember
+
+32
+00:02:14.880 --> 00:02:16.980
+how to convert those back to metres.
+
+33
+00:02:19.720 --> 00:02:22.100
+And this is Coulomb's law. And it's
+probably
+
+34
+00:02:22.100 --> 00:02:29.140
+given in your formula sheet. Now basically
+this
+
+35
+00:02:29.140 --> 00:02:31.480
+is a force and you know whether it's
+attractive
+
+36
+00:02:31.480 --> 00:02:34.660
+or repulsive because like charges distract
+and
+
+37
+00:02:34.660 --> 00:02:39.580
+opposite charges repel. So if Q1, the sine
+of
+
+38
+00:02:39.580 --> 00:02:46.960
+Q1 times the sine of Q2 is equal to, I'll
+
+39
+00:02:46.960 --> 00:02:48.960
+just write it like this, Q1, that would be
+the
+
+40
+00:02:48.960 --> 00:02:51.080
+sine over Q2, that would be the sine.
+
+41
+00:02:51.200 --> 00:02:55.680
+If both of these are the same, then that
+means
+
+42
+00:02:55.680 --> 00:02:58.200
+they're going to repel. But if they're
+different,
+
+43
+00:02:59.240 --> 00:03:03.440
+times Q2 over Q2, if they're different,
+that
+
+44
+00:03:03.440 --> 00:03:06.580
+means that they're going to attract. And
+it's
+
+45
+00:03:06.580 --> 00:03:08.980
+a pretty straightforward way of telling
+whether
+
+46
+00:03:08.980 --> 00:03:13.900
+they repel or attract. And you can use
+Coulomb's
+
+47
+00:03:13.900 --> 00:03:18.100
+law directly when either charges are point
+charges,
+
+48
+00:03:18.680 --> 00:03:22.440
+so they take up no space, they're just
+charges
+
+49
+00:03:22.440 --> 00:03:29.680
+in the grid or in the coordinate point
+
+50
+00:03:29.680 --> 00:03:35.880
+charges. Or the objects or the particles
+are
+
+51
+00:03:35.880 --> 00:03:41.870
+very small. Very small compared to the
+distance.
+
+52
+00:03:43.490 --> 00:03:45.770
+Because it depends on the distance.
+
+53
+00:03:46.550 --> 00:03:48.710
+And if you're talking about two big
+objects,
+
+54
+00:03:48.990 --> 00:03:51.690
+then the radius will be way bigger than
+the
+
+55
+00:03:51.690 --> 00:03:53.730
+distance between. So objects are very
+small
+
+56
+00:03:53.730 --> 00:04:00.200
+compared to distance. And a lot of the
+questions
+
+57
+00:04:00.200 --> 00:04:03.360
+ask you to calculate, let's say, the
+forces
+
+58
+00:04:03.360 --> 00:04:06.100
+exerted on an object surrounded by
+multiple
+
+59
+00:04:06.100 --> 00:04:09.140
+charges. And if multiple charges are
+present,
+
+60
+00:04:09.960 --> 00:04:14.160
+we might go over an example for this. If
+we
+
+61
+00:04:14.160 --> 00:04:18.120
+want to calculate the force exerted from
+each
+
+62
+00:04:18.120 --> 00:04:24.020
+charge, because they're vectors, calculate
+f
+
+63
+00:04:24.020 --> 00:04:26.720
+from each charge.
+
+64
+00:04:26.860 --> 00:04:31.070
+Usually they're going to be point charges.
+And
+
+65
+00:04:31.070 --> 00:04:33.470
+then you get the net force at the end
+using
+
+66
+00:04:33.470 --> 00:04:36.470
+trigonometry. Or basically you add the
+forces,
+
+67
+00:04:36.990 --> 00:04:41.230
+because they're vectors. Add forces to get
+net
+
+68
+00:04:41.230 --> 00:04:47.640
+force. So here's a really simple example.
+
+69
+00:04:50.400 --> 00:04:55.940
+Let's say we have a positive point charge.
+
+70
+00:04:57.120 --> 00:05:02.480
+So we have a positive point charge over
+here
+
+71
+00:05:02.480 --> 00:05:06.820
+with a charge of, let's say, 5 Coulombs.
+
+72
+00:05:07.720 --> 00:05:12.800
+And then we have, let's say, another
+positive
+
+73
+00:05:12.800 --> 00:05:17.040
+point charge with a charge of 10 Coulombs.
+
+74
+00:05:18.040 --> 00:05:22.460
+And we have a positively charged particle,
+let's
+
+75
+00:05:22.460 --> 00:05:28.000
+say, with a charge of 3 Coulombs.
+
+76
+00:05:29.100 --> 00:05:32.600
+Now we want to try to find its
+acceleration
+
+77
+00:05:32.600 --> 00:05:35.520
+and in what direction. So basically you
+have
+
+78
+00:05:35.520 --> 00:05:39.160
+to use, you have to get the net force
+exerted
+
+79
+00:05:39.160 --> 00:05:41.520
+on each of these positive charges. So
+let's
+
+80
+00:05:41.520 --> 00:05:43.660
+call this charge A, let's call this charge
+B,
+
+81
+00:05:44.140 --> 00:05:46.240
+and we'll just directly use Coulomb's law.
+
+82
+00:05:48.840 --> 00:05:55.480
+Let's say they're both, this charge is 3
+times
+
+83
+00:05:55.480 --> 00:05:58.400
+10 to the negative 9 metres apart. And
+this
+
+84
+00:05:58.400 --> 00:06:02.700
+charge is 4 times 10 to the negative 9
+metres
+
+85
+00:06:02.700 --> 00:06:08.560
+apart. So we know that, let's first
+calculate
+
+86
+00:06:08.560 --> 00:06:11.760
+the charge exerted for charge A.
+
+87
+00:06:12.420 --> 00:06:17.060
+Well, charge A, these are both positive
+charges.
+
+88
+00:06:17.200 --> 00:06:19.460
+So charge A is going to exert a force to
+the
+
+89
+00:06:19.460 --> 00:06:22.440
+right. So the free-body diagram of this
+particle
+
+90
+00:06:22.440 --> 00:06:26.120
+would be F A and F B.
+
+91
+00:06:26.180 --> 00:06:28.480
+We don't know the magnitude yet, but we
+know
+
+92
+00:06:28.480 --> 00:06:30.500
+that F B is going to exert a force this
+way.
+
+93
+00:06:30.500 --> 00:06:32.840
+And F A is going to exert a force this
+way,
+
+94
+00:06:32.840 --> 00:06:35.500
+because they're same signs.
+
+95
+00:06:37.320 --> 00:06:43.340
+So F A equals, the constant is 8.99 times
+10
+
+96
+00:06:43.340 --> 00:06:47.700
+to the 9, 8.99 times 10 to the 9.
+
+97
+00:06:48.920 --> 00:06:53.540
+The magnitude or the absolute value of Q1
+would
+
+98
+00:06:53.540 --> 00:06:59.360
+be, Q1 let's say would be the charge of A,
+really
+
+99
+00:06:59.360 --> 00:07:03.400
+doesn't matter, 5 times 3 over, what's the
+distance?
+
+100
+00:07:03.820 --> 00:07:07.580
+It's 4 times 10 to the negative 9 squared.
+
+101
+00:07:08.940 --> 00:07:10.900
+And that, when you type it in your
+calculator,
+
+102
+00:07:11.500 --> 00:07:14.120
+you're going to get a force, and that
+should
+
+103
+00:07:14.120 --> 00:07:20.300
+be in Newtons. 15 over 4 times 10 to the
+negative
+
+104
+00:07:20.300 --> 00:07:27.400
+9 squared. And you would get 8.43 times 10
+to
+
+105
+00:07:27.400 --> 00:07:30.660
+the 27 Newtons. Now this is probably not
+that
+
+106
+00:07:30.660 --> 00:07:33.400
+realistic, this is a really massive force,
+but
+
+107
+00:07:33.400 --> 00:07:36.060
+for the sake, I've just made up the
+quantities
+
+108
+00:07:36.060 --> 00:07:38.460
+for the sake of this question, let's just
+go
+
+109
+00:07:38.460 --> 00:07:42.940
+with it. The force of B, so force of A,
+this
+
+110
+00:07:42.940 --> 00:07:44.960
+is going to have a force exerted on this
+that
+
+111
+00:07:44.960 --> 00:07:50.380
+is this massive value, 8.43 times 10 to
+the
+
+112
+00:07:50.380 --> 00:07:52.400
+27 Newtons. And then we have to calculate
+force
+
+113
+00:07:52.400 --> 00:07:54.560
+B, and then we have to get the net force.
+
+114
+00:07:55.740 --> 00:07:59.180
+And then we use Newtons law. Force B, same
+thing,
+
+115
+00:07:59.560 --> 00:08:06.520
+8.99 times 10 to the 9 times 3 times 10
+over
+
+116
+00:08:06.520 --> 00:08:09.220
+3 times 10 to the negative 9 squared.
+
+117
+00:08:10.320 --> 00:08:18.780
+And when you do that, you would get 2.00
+
+118
+00:08:18.780 --> 00:08:22.140
+times 10 to the 28 Newtons.
+
+119
+00:08:22.760 --> 00:08:26.780
+So force B would obviously be a greater
+force
+
+120
+00:08:26.780 --> 00:08:29.040
+than force A. But by how much?
+
+121
+00:08:29.560 --> 00:08:35.520
+Well the net force, the total net force is
+equal
+
+122
+00:08:35.520 --> 00:08:38.080
+to force A minus force B.
+
+123
+00:08:38.640 --> 00:08:40.520
+Or plus force B, but then force B is
+negative
+
+124
+00:08:40.520 --> 00:08:43.580
+because it's in the opposite direction. So
+8.43
+
+125
+00:08:43.580 --> 00:08:48.380
+times 10 to the 27 plus negative 3.00
+times
+
+126
+00:08:48.380 --> 00:08:55.710
+10 to the 28. And that would be equal to
+8.43
+
+127
+00:08:55.710 --> 00:08:59.530
+times 10 to the 27 minus this. You'd get a
+net
+
+128
+00:08:59.530 --> 00:09:03.210
+force of negative 2.15 times 10 to the 28
+Newtons.
+
+129
+00:09:03.530 --> 00:09:05.930
+It's negative because it's going in the
+left
+
+130
+00:09:05.930 --> 00:09:08.770
+direction, because there's a greater force
+of
+
+131
+00:09:08.770 --> 00:09:11.890
+B. So it's going to go this way with a
+force
+
+132
+00:09:11.890 --> 00:09:17.570
+of this magnitude. And basically now that
+we
+
+133
+00:09:17.570 --> 00:09:19.990
+have the force, we can calculate the
+acceleration.
+
+134
+00:09:19.990 --> 00:09:23.170
+Let's say the question gave us a mass.
+
+135
+00:09:25.290 --> 00:09:27.470
+Doesn't really matter, I'll just call it x
+for
+
+136
+00:09:27.470 --> 00:09:31.230
+simplicity's sake. We know force net
+equals
+
+137
+00:09:31.230 --> 00:09:34.430
+mass times net acceleration. So
+acceleration
+
+138
+00:09:34.430 --> 00:09:39.750
+is F net over mass, which is negative 2.15
+times
+
+139
+00:09:39.750 --> 00:09:41.830
+10 to the 28 over x.
+
+140
+00:09:42.050 --> 00:09:44.690
+And that would be your final acceleration.
+
+141
+00:09:45.150 --> 00:09:47.810
+It really depends on what the question
+gives
+
+142
+00:09:47.810 --> 00:09:51.190
+you. But that's basically how you deal
+with
+
+143
+00:09:51.190 --> 00:09:54.130
+multiple charges, and how you use
+Coulomb's
+
+144
+00:09:54.130 --> 00:09:57.450
+law to calculate the multiple charges. And
+that's
+
+145
+00:09:57.450 --> 00:09:59.550
+all for today's video. I hope you've
+learned
+
+146
+00:09:59.550 --> 00:10:02.270
+how to calculate these types of questions
+with
+
+147
+00:10:02.270 --> 00:10:04.310
+Coulomb's law. And I hope you enjoyed!
+
+148
+00:10:04.790 --> 00:10:06.450
+Thank you for watching, and we'll see you
+in
+
+149
+00:10:06.450 --> 00:10:07.490
+the next one. Bye!

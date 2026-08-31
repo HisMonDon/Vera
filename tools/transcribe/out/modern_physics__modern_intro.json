@@ -1,0 +1,480 @@
+{
+ "lesson": {
+  "topicKey": "modern_physics",
+  "curriculumKey": "modern_intro",
+  "title": "Foundations of Modern Physics",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/modern_physics/Unit%201%20Introduction%20To%20Modern%20Physics.mp4",
+  "source": "modern.dart"
+ },
+ "segments": [
+  {
+   "start": 1.36,
+   "end": 30.74,
+   "text": "By the end of the 19th centuries, physicists believed that they have basically found out everything about physics. Newton explained motion. We found out about electricity and magnetism, and thermodynamics explained heat. But experiments completely shattered what we know about physics, and that's when modern physics come into play. Modern physics is when energy stops being continuous.",
+   "avg_logprob": -0.12509581278747237
+  },
+  {
+   "start": 30.74,
+   "end": 62.96,
+   "text": "And we find out that energy is discrete or quantized. So first of all, let's start with blackbody. Blackbody radiation. So what is blackbody radiation? Blackbody is an object that both absorbs and emits electromagnetic radiation. This can include infrared radiation.",
+   "avg_logprob": -0.10439853316971234
+  },
+  {
+   "start": 65.76,
+   "end": 93.33,
+   "text": "Ultraviolet. Visible light. Basically, everything on the electromagnetic spectrum, which is any type of energy there is. And physicists have experimentally measured how much energy is emitted at each wavelength. So, for example, let's say we have an atom over here.",
+   "avg_logprob": -0.10096688754856586
+  },
+  {
+   "start": 93.33,
+   "end": 121.57,
+   "text": "And this atom has shells. Let's say this is the first shell, this is the second shell, or energy levels. So this would be n equals one, and this would be n equals two. And n usually represents the energy level, or the shell. And in chemistry, this would be the valence shell. So this one would carry two electrons, eight, eight, eight, blah, blah, blah.",
+   "avg_logprob": -0.10799647131185422
+  },
+  {
+   "start": 121.57,
+   "end": 151.55,
+   "text": "So let's say we have a hydrogen atom over here, and it has one electron. However, if we shine, or if we put energy to it at a specific wavelength, let's say we put some energy here, or shine a photon here, it's going to excite this electron, and this electron is going to jump up. And that's absorption of energy.",
+   "avg_logprob": -0.08407868081942582
+  },
+  {
+   "start": 151.55,
+   "end": 180.07,
+   "text": "It absorbs the energy of the photon we shine through, making it jump up to a higher energy. And over time, this excited electron will go down, go back down in different steps. For example, it might take this route, or it goes down one by one, or it can jump all the way back down again, back to its original state, otherwise known as the ground level.",
+   "avg_logprob": -0.06847383028053376
+  },
+  {
+   "start": 180.67,
+   "end": 189.09,
+   "text": "And that is when it emits energy.",
+   "avg_logprob": -0.2494853213429451
+  },
+  {
+   "start": 190.05,
+   "end": 212.65,
+   "text": "Now, two main things you have to know about energy is, energy is in photons, and this can result in photons with a different frequency, and photons with a different wavelength.",
+   "avg_logprob": -0.12005816549062728
+  },
+  {
+   "start": 213.59,
+   "end": 236.78,
+   "text": "Now, what is the difference? Well, frequency and wavelength are inversely proportional. So, if the frequency increases, that means that you would have a lower wavelength, and if you have a higher wavelength, then frequency decreases.",
+   "avg_logprob": -0.10923249423503875
+  },
+  {
+   "start": 238.4,
+   "end": 257.28,
+   "text": "And frequency is the amount of oscillations, or the amount of up and downs, a photon goes through in one second. Wavelength is just the length between each thing, so it would make sense if the frequency was bigger, then the wavelength would be smaller.",
+   "avg_logprob": -0.09460919258887307
+  },
+  {
+   "start": 258.28,
+   "end": 267.28,
+   "text": "A higher frequency means that it's going up and down more quickly, and a higher frequency would indicate more energy.",
+   "avg_logprob": -0.10529939776117152
+  },
+  {
+   "start": 269.02,
+   "end": 281.88,
+   "text": "The energy formula is given by E equals hc over lambda, and this is a relatively important formula that you have to know.",
+   "avg_logprob": -0.10529939776117152
+  },
+  {
+   "start": 281.88,
+   "end": 290.08,
+   "text": "And this h is Planck's constant, c is the speed of light, and lambda is the wavelength.",
+   "avg_logprob": -0.1054606835047404
+  },
+  {
+   "start": 291.6,
+   "end": 297.98,
+   "text": "So, that's that. And that's just a really brief introduction about modern physics.",
+   "avg_logprob": -0.1054606835047404
+  },
+  {
+   "start": 298.44,
+   "end": 310.92,
+   "text": "Next video, we'll learn how each sublevel, or the jumping of each sublevel, requires different amount of energy, and how it eventually converges to infinity.",
+   "avg_logprob": -0.1054606835047404
+  },
+  {
+   "start": 311.88,
+   "end": 313.38,
+   "text": "See you, and thanks for watching!",
+   "avg_logprob": -0.14717635783282193
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.36,
+   "end": 4.36,
+   "text": "By the end of the 19th centuries, physicists"
+  },
+  {
+   "start": 4.36,
+   "end": 6.74,
+   "text": "believed that they have basically found out"
+  },
+  {
+   "start": 6.74,
+   "end": 10.12,
+   "text": "everything about physics. Newton explained motion."
+  },
+  {
+   "start": 11.1,
+   "end": 14.1,
+   "text": "We found out about electricity and magnetism,"
+  },
+  {
+   "start": 14.38,
+   "end": 18.2,
+   "text": "and thermodynamics explained heat. But experiments"
+  },
+  {
+   "start": 18.2,
+   "end": 21.18,
+   "text": "completely shattered what we know about physics,"
+  },
+  {
+   "start": 21.42,
+   "end": 24.82,
+   "text": "and that's when modern physics come into play."
+  },
+  {
+   "start": 26.34,
+   "end": 30.74,
+   "text": "Modern physics is when energy stops being continuous."
+  },
+  {
+   "start": 30.74,
+   "end": 36.08,
+   "text": "And we find out that energy is discrete or quantized."
+  },
+  {
+   "start": 37.14,
+   "end": 40.24,
+   "text": "So first of all, let's start with blackbody."
+  },
+  {
+   "start": 43.14,
+   "end": 50.02,
+   "text": "Blackbody radiation. So what is blackbody radiation?"
+  },
+  {
+   "start": 50.24,
+   "end": 54.78,
+   "text": "Blackbody is an object that both absorbs and"
+  },
+  {
+   "start": 54.78,
+   "end": 58.04,
+   "text": "emits electromagnetic radiation."
+  },
+  {
+   "start": 58.58,
+   "end": 62.96,
+   "text": "This can include infrared radiation."
+  },
+  {
+   "start": 65.76,
+   "end": 68.24,
+   "text": "Ultraviolet. Visible light."
+  },
+  {
+   "start": 69.8,
+   "end": 72.6,
+   "text": "Basically, everything on the electromagnetic"
+  },
+  {
+   "start": 72.6,
+   "end": 77.22,
+   "text": "spectrum, which is any type of energy there"
+  },
+  {
+   "start": 77.22,
+   "end": 82.86,
+   "text": "is. And physicists have experimentally measured"
+  },
+  {
+   "start": 82.86,
+   "end": 85.84,
+   "text": "how much energy is emitted at each wavelength."
+  },
+  {
+   "start": 87.32,
+   "end": 92.95,
+   "text": "So, for example, let's say we have an atom over"
+  },
+  {
+   "start": 92.95,
+   "end": 96.89,
+   "text": "here. And this atom has shells."
+  },
+  {
+   "start": 98.45,
+   "end": 101.47,
+   "text": "Let's say this is the first shell, this is the"
+  },
+  {
+   "start": 101.47,
+   "end": 103.75,
+   "text": "second shell, or energy levels."
+  },
+  {
+   "start": 104.85,
+   "end": 108.59,
+   "text": "So this would be n equals one, and this would"
+  },
+  {
+   "start": 108.59,
+   "end": 112.89,
+   "text": "be n equals two. And n usually represents the"
+  },
+  {
+   "start": 112.89,
+   "end": 116.05,
+   "text": "energy level, or the shell. And in chemistry,"
+  },
+  {
+   "start": 116.23,
+   "end": 118.95,
+   "text": "this would be the valence shell. So this one"
+  },
+  {
+   "start": 118.95,
+   "end": 120.89,
+   "text": "would carry two electrons, eight, eight, eight,"
+  },
+  {
+   "start": 120.97,
+   "end": 125.09,
+   "text": "blah, blah, blah. So let's say we have a hydrogen"
+  },
+  {
+   "start": 125.09,
+   "end": 128.93,
+   "text": "atom over here, and it has one electron."
+  },
+  {
+   "start": 130.03,
+   "end": 135.99,
+   "text": "However, if we shine, or if we put energy to"
+  },
+  {
+   "start": 135.99,
+   "end": 139.93,
+   "text": "it at a specific wavelength, let's say we put"
+  },
+  {
+   "start": 139.93,
+   "end": 145.23,
+   "text": "some energy here, or shine a photon here, it's"
+  },
+  {
+   "start": 145.23,
+   "end": 148.11,
+   "text": "going to excite this electron, and this electron"
+  },
+  {
+   "start": 148.11,
+   "end": 151.55,
+   "text": "is going to jump up. And that's absorption of"
+  },
+  {
+   "start": 151.55,
+   "end": 154.37,
+   "text": "energy. It absorbs the energy of the photon"
+  },
+  {
+   "start": 154.37,
+   "end": 157.41,
+   "text": "we shine through, making it jump up to a higher"
+  },
+  {
+   "start": 157.41,
+   "end": 164.91,
+   "text": "energy. And over time, this excited electron"
+  },
+  {
+   "start": 164.91,
+   "end": 169.17,
+   "text": "will go down, go back down in different steps."
+  },
+  {
+   "start": 169.19,
+   "end": 171.75,
+   "text": "For example, it might take this route, or it"
+  },
+  {
+   "start": 171.75,
+   "end": 173.99,
+   "text": "goes down one by one, or it can jump all the"
+  },
+  {
+   "start": 173.99,
+   "end": 178.15,
+   "text": "way back down again, back to its original state,"
+  },
+  {
+   "start": 178.49,
+   "end": 182.57,
+   "text": "otherwise known as the ground level. And that"
+  },
+  {
+   "start": 182.57,
+   "end": 189.09,
+   "text": "is when it emits energy."
+  },
+  {
+   "start": 190.05,
+   "end": 194.13,
+   "text": "Now, two main things you have to know about"
+  },
+  {
+   "start": 194.13,
+   "end": 201.75,
+   "text": "energy is, energy is in photons, and"
+  },
+  {
+   "start": 201.75,
+   "end": 206.93,
+   "text": "this can result in photons with a different"
+  },
+  {
+   "start": 206.93,
+   "end": 212.65,
+   "text": "frequency, and photons with a different wavelength."
+  },
+  {
+   "start": 213.59,
+   "end": 216.87,
+   "text": "Now, what is the difference? Well, frequency"
+  },
+  {
+   "start": 216.87,
+   "end": 220.33,
+   "text": "and wavelength are inversely proportional."
+  },
+  {
+   "start": 226.54,
+   "end": 230.68,
+   "text": "So, if the frequency increases, that means that"
+  },
+  {
+   "start": 230.68,
+   "end": 233.02,
+   "text": "you would have a lower wavelength, and if you"
+  },
+  {
+   "start": 233.02,
+   "end": 236.78,
+   "text": "have a higher wavelength, then frequency decreases."
+  },
+  {
+   "start": 238.4,
+   "end": 243.06,
+   "text": "And frequency is the amount of oscillations,"
+  },
+  {
+   "start": 243.26,
+   "end": 247.3,
+   "text": "or the amount of up and downs, a photon goes"
+  },
+  {
+   "start": 247.3,
+   "end": 251.54,
+   "text": "through in one second. Wavelength is just the"
+  },
+  {
+   "start": 251.54,
+   "end": 254.16,
+   "text": "length between each thing, so it would make"
+  },
+  {
+   "start": 254.16,
+   "end": 256.26,
+   "text": "sense if the frequency was bigger, then the"
+  },
+  {
+   "start": 256.26,
+   "end": 259.8,
+   "text": "wavelength would be smaller. A higher frequency"
+  },
+  {
+   "start": 259.8,
+   "end": 262.64,
+   "text": "means that it's going up and down more quickly,"
+  },
+  {
+   "start": 262.86,
+   "end": 267.28,
+   "text": "and a higher frequency would indicate more energy."
+  },
+  {
+   "start": 269.02,
+   "end": 274.22,
+   "text": "The energy formula is given by E equals hc over"
+  },
+  {
+   "start": 274.22,
+   "end": 280.56,
+   "text": "lambda, and this is a relatively important formula"
+  },
+  {
+   "start": 280.56,
+   "end": 284.78,
+   "text": "that you have to know. And this h is Planck's"
+  },
+  {
+   "start": 284.78,
+   "end": 288.96,
+   "text": "constant, c is the speed of light, and lambda"
+  },
+  {
+   "start": 288.96,
+   "end": 293.02,
+   "text": "is the wavelength. So, that's that."
+  },
+  {
+   "start": 293.46,
+   "end": 296.6,
+   "text": "And that's just a really brief introduction"
+  },
+  {
+   "start": 296.6,
+   "end": 299.6,
+   "text": "about modern physics. Next video, we'll learn"
+  },
+  {
+   "start": 299.6,
+   "end": 305.02,
+   "text": "how each sublevel, or the jumping of each sublevel,"
+  },
+  {
+   "start": 305.56,
+   "end": 308.76,
+   "text": "requires different amount of energy, and how"
+  },
+  {
+   "start": 308.76,
+   "end": 310.92,
+   "text": "it eventually converges to infinity."
+  },
+  {
+   "start": 311.88,
+   "end": 313.38,
+   "text": "See you, and thanks for watching!"
+  }
+ ],
+ "report": {
+  "key": "modern_physics__modern_intro",
+  "title": "Foundations of Modern Physics",
+  "topicKey": "modern_physics",
+  "duration": 313.7706875,
+  "cues": 72,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.2494853213429451,
+  "flagged": []
+ }
+}

@@ -1,0 +1,829 @@
+{
+ "lesson": {
+  "topicKey": "electricity",
+  "curriculumKey": "kirchhoff_current",
+  "title": "Kirchhoff's Current Law",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/2%20Kirchhoff's%20Current%20Law.mp4",
+  "source": "electricity.dart"
+ },
+ "segments": [
+  {
+   "start": 1.81,
+   "end": 7.91,
+   "text": "In this video, we will be talking about the junction rule and Kirchhoff's current law.",
+   "avg_logprob": -0.14012155007748378
+  },
+  {
+   "start": 9.41,
+   "end": 22.99,
+   "text": "So what is Kirchhoff's current law? Well, Kirchhoff's current law states that the total current passing through a junction is equal to zero. What does that mean?",
+   "avg_logprob": -0.14012155007748378
+  },
+  {
+   "start": 24.11,
+   "end": 31.96,
+   "text": "Well, first I'll write the formula. Let's say we have a junction like this.",
+   "avg_logprob": -0.14012155007748378
+  },
+  {
+   "start": 33.36,
+   "end": 47.16,
+   "text": "And the current going over here gets distributed here. Let's call this I1, I2, and I3.",
+   "avg_logprob": -0.08760577960069789
+  },
+  {
+   "start": 48.46,
+   "end": 54.72,
+   "text": "Well, I1 plus I2 plus I3 equals zero.",
+   "avg_logprob": -0.08760577960069789
+  },
+  {
+   "start": 56.42,
+   "end": 69.48,
+   "text": "Now, the thing is that you might be wondering is that means that some of these values have to be negative for them to be zero, or they have to be zero, which they probably aren't.",
+   "avg_logprob": -0.07784609572042393
+  },
+  {
+   "start": 70.32,
+   "end": 79.84,
+   "text": "How does that work? Well, whether it's negative or positive, that doesn't mean the current itself is negative or positive. That just means the direction.",
+   "avg_logprob": -0.07784609572042393
+  },
+  {
+   "start": 79.84,
+   "end": 93.9,
+   "text": "The sign indicates the direction. When there's a current going towards a junction, something like this, the sign would be positive. If it's going away, it's negative.",
+   "avg_logprob": -0.08806575381675281
+  },
+  {
+   "start": 94.88,
+   "end": 107.74,
+   "text": "Let's have an example over here. Let's say we have a junction over here, and there is a current I1 with a current of 5 amps.",
+   "avg_logprob": -0.08806575381675281
+  },
+  {
+   "start": 109.62,
+   "end": 117.48,
+   "text": "And I2 will have a current of negative 3 amps. So we want to find I3.",
+   "avg_logprob": -0.0623538824064391
+  },
+  {
+   "start": 119.02,
+   "end": 130.78,
+   "text": "Well, since the sum of all the currents is equal to zero, we know that I1 plus I2 plus I3 is equal to zero.",
+   "avg_logprob": -0.0623538824064391
+  },
+  {
+   "start": 130.78,
+   "end": 141.46,
+   "text": "So, negative 3, since it's negative, it means that the current is going away. This current is going towards, and we need to find this.",
+   "avg_logprob": -0.13941081854350426
+  },
+  {
+   "start": 141.94,
+   "end": 155.98,
+   "text": "So, I3 plus 5 plus 3 equals zero. Sorry, minus 3 equals zero, because that's negative 3. Minus 3 equals zero.",
+   "avg_logprob": -0.13941081854350426
+  },
+  {
+   "start": 156.7,
+   "end": 166.04,
+   "text": "So, I3 would be equal to negative 2. Since I3 is equal to negative 2, that means that the current will be going away.",
+   "avg_logprob": -0.05264443324671851
+  },
+  {
+   "start": 167.14,
+   "end": 174.9,
+   "text": "However, in some cases, when I3 or whatever you're calculating is positive, then the current would be going towards the junction.",
+   "avg_logprob": -0.05264443324671851
+  },
+  {
+   "start": 174.9,
+   "end": 189.88,
+   "text": "It would look something like this. Let's say I1 is 5 again, and however, I2 this time is negative 7 amps.",
+   "avg_logprob": -0.08038942460660581
+  },
+  {
+   "start": 190.48,
+   "end": 194.84,
+   "text": "So we need to calculate I3. First of all, let's look at the direction.",
+   "avg_logprob": -0.08038942460660581
+  },
+  {
+   "start": 195.54,
+   "end": 203.72,
+   "text": "Since this is negative, this will be going away from the junction, and this would be going towards, since it's positive.",
+   "avg_logprob": -0.08038942460660581
+  },
+  {
+   "start": 205.0,
+   "end": 219.86,
+   "text": "5 minus 7 plus I3 equals zero. So, in that case, then I3 is positive 2, equals positive 2.",
+   "avg_logprob": -0.1280889567732811
+  },
+  {
+   "start": 220.94,
+   "end": 225.26,
+   "text": "What this means is that since it's positive, it would be going towards the junction.",
+   "avg_logprob": -0.1280889567732811
+  },
+  {
+   "start": 225.26,
+   "end": 236.0,
+   "text": "So, the current would be going somewhere like this. These two go towards here, which gets outputted into I2.",
+   "avg_logprob": -0.08178223152549899
+  },
+  {
+   "start": 236.46,
+   "end": 241.36,
+   "text": "So, it really depends on the sign to see and know the direction of the current.",
+   "avg_logprob": -0.08178223152549899
+  },
+  {
+   "start": 242.36,
+   "end": 258.24,
+   "text": "Let's have a harder example. Let's say we have a 5-way junction. It goes here, 1, 2, 3, 4, 5.",
+   "avg_logprob": -0.1274011637737502
+  },
+  {
+   "start": 260.32,
+   "end": 276.22,
+   "text": "And what we're given is 3 of the values over here. So, I5, let's try to calculate I5 and I3.",
+   "avg_logprob": -0.1274011637737502
+  },
+  {
+   "start": 276.22,
+   "end": 287.74,
+   "text": "And what we're given is I3 equals 2I5. And I2 would be, let's say, negative 8 amps.",
+   "avg_logprob": -0.07746014541813305
+  },
+  {
+   "start": 288.98,
+   "end": 297.36,
+   "text": "I1 equals 6 amps. And I4 is equal to negative 25 amps.",
+   "avg_logprob": -0.07746014541813305
+  },
+  {
+   "start": 298.66,
+   "end": 304.62,
+   "text": "First of all, let's illustrate and try to depict what is going to happen over here.",
+   "avg_logprob": -0.07746014541813305
+  },
+  {
+   "start": 305.94,
+   "end": 314.28,
+   "text": "Since I1 is positive, it's going to be going towards the junction. Well, these two negative ones will be going away from the junction.",
+   "avg_logprob": -0.10230765949215806
+  },
+  {
+   "start": 317.32,
+   "end": 323.64,
+   "text": "Now, let's use Kirchhoff's Law. The sum of the currents is equal to zero.",
+   "avg_logprob": -0.10230765949215806
+  },
+  {
+   "start": 324.64,
+   "end": 337.96,
+   "text": "So, I1 plus I2 plus I3 plus I4 plus I5 is equal to zero.",
+   "avg_logprob": -0.08791822381317616
+  },
+  {
+   "start": 338.52,
+   "end": 348.12,
+   "text": "We can substitute this into our equation. Just convert this into 2 times I5, 2I5.",
+   "avg_logprob": -0.08791822381317616
+  },
+  {
+   "start": 348.12,
+   "end": 366.02,
+   "text": "And we could also plug in all our other values. So, 6 minus 8 plus 2I5 plus negative 25 plus I5 equals to zero.",
+   "avg_logprob": -0.08830477177135405
+  },
+  {
+   "start": 367.44,
+   "end": 376.62,
+   "text": "So, when you combine this, you get 3I5 plus negative 8 minus 25 plus 6 would be equal to negative 27.",
+   "avg_logprob": -0.08830477177135405
+  },
+  {
+   "start": 376.62,
+   "end": 387.81,
+   "text": "Negative 27 plus 3I5 equals zero. So, what we'll get is we will get 3I5 equals 27.",
+   "avg_logprob": -0.12544481683936384
+  },
+  {
+   "start": 388.7,
+   "end": 394.76,
+   "text": "So, I5 will ultimately be equal to 9. I5 equals 9.",
+   "avg_logprob": -0.12544481683936384
+  },
+  {
+   "start": 395.72,
+   "end": 402.76,
+   "text": "And since I5 equals 9 and we know I3 equals 2I5, I3 equals 2I5,",
+   "avg_logprob": -0.12544481683936384
+  },
+  {
+   "start": 402.76,
+   "end": 415.94,
+   "text": "then I3 would be equal to 2 times 9, which is equal to 18 amps and 9 amps.",
+   "avg_logprob": -0.0854396753488703
+  },
+  {
+   "start": 417.3,
+   "end": 425.52,
+   "text": "So, since these are positive, that means that they are going to be going towards the junction.",
+   "avg_logprob": -0.0854396753488703
+  },
+  {
+   "start": 427.02,
+   "end": 440.18,
+   "text": "So, what we can get from this is we used Kirchhoff's law and some algebra from what we're given to calculate the current and direction of two of the junction segments.",
+   "avg_logprob": -0.08909221293359268
+  },
+  {
+   "start": 441.3,
+   "end": 448.42,
+   "text": "And this is really useful in a lot of circuit problems and it's pretty relatively easy to remember.",
+   "avg_logprob": -0.08909221293359268
+  },
+  {
+   "start": 448.56,
+   "end": 452.88,
+   "text": "Just remember that the sum of all the currents is equal to zero in a junction.",
+   "avg_logprob": -0.08909221293359268
+  },
+  {
+   "start": 452.88,
+   "end": 460.18,
+   "text": "Remember also that positive current means it's going towards the junction, while negative means it's going away.",
+   "avg_logprob": -0.08441771419954971
+  },
+  {
+   "start": 460.56,
+   "end": 465.48,
+   "text": "But positive and negative don't actually mean that the magnitude is positive or negative.",
+   "avg_logprob": -0.08441771419954971
+  },
+  {
+   "start": 465.86,
+   "end": 468.82,
+   "text": "It just symbolizes and depicts a direction.",
+   "avg_logprob": -0.08441771419954971
+  },
+  {
+   "start": 469.62,
+   "end": 474.2,
+   "text": "Thank you for listening and I hope you learned something from this video. Bye!",
+   "avg_logprob": -0.08441771419954971
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.81,
+   "end": 4.75,
+   "text": "In this video, we will be talking about the"
+  },
+  {
+   "start": 4.75,
+   "end": 7.91,
+   "text": "junction rule and Kirchhoff's current law."
+  },
+  {
+   "start": 9.41,
+   "end": 11.49,
+   "text": "So what is Kirchhoff's current law?"
+  },
+  {
+   "start": 12.57,
+   "end": 15.91,
+   "text": "Well, Kirchhoff's current law states that the"
+  },
+  {
+   "start": 15.91,
+   "end": 20.11,
+   "text": "total current passing through a junction is"
+  },
+  {
+   "start": 20.11,
+   "end": 22.99,
+   "text": "equal to zero. What does that mean?"
+  },
+  {
+   "start": 24.11,
+   "end": 29.68,
+   "text": "Well, first I'll write the formula. Let's say"
+  },
+  {
+   "start": 29.68,
+   "end": 31.96,
+   "text": "we have a junction like this."
+  },
+  {
+   "start": 33.36,
+   "end": 41.18,
+   "text": "And the current going over here gets"
+  },
+  {
+   "start": 41.18,
+   "end": 46.46,
+   "text": "distributed here. Let's call this I1, I2, and"
+  },
+  {
+   "start": 46.46,
+   "end": 53.92,
+   "text": "I3. Well, I1 plus I2 plus I3"
+  },
+  {
+   "start": 53.92,
+   "end": 59.18,
+   "text": "equals zero. Now, the thing is that you might"
+  },
+  {
+   "start": 59.18,
+   "end": 63.8,
+   "text": "be wondering is that means that some of these"
+  },
+  {
+   "start": 63.8,
+   "end": 66.38,
+   "text": "values have to be negative for them to be zero,"
+  },
+  {
+   "start": 66.48,
+   "end": 69.06,
+   "text": "or they have to be zero, which they probably"
+  },
+  {
+   "start": 69.06,
+   "end": 71.14,
+   "text": "aren't. How does that work?"
+  },
+  {
+   "start": 71.94,
+   "end": 74.72,
+   "text": "Well, whether it's negative or positive, that"
+  },
+  {
+   "start": 74.72,
+   "end": 76.88,
+   "text": "doesn't mean the current itself is negative"
+  },
+  {
+   "start": 76.88,
+   "end": 79.84,
+   "text": "or positive. That just means the direction."
+  },
+  {
+   "start": 79.84,
+   "end": 82.54,
+   "text": "The sign indicates the direction."
+  },
+  {
+   "start": 83.66,
+   "end": 87.08,
+   "text": "When there's a current going towards a junction,"
+  },
+  {
+   "start": 88.18,
+   "end": 91.54,
+   "text": "something like this, the sign would be positive."
+  },
+  {
+   "start": 91.86,
+   "end": 93.9,
+   "text": "If it's going away, it's negative."
+  },
+  {
+   "start": 94.88,
+   "end": 98.38,
+   "text": "Let's have an example over here. Let's say we"
+  },
+  {
+   "start": 98.38,
+   "end": 102.22,
+   "text": "have a junction over here, and there is a current"
+  },
+  {
+   "start": 102.22,
+   "end": 107.74,
+   "text": "I1 with a current of 5 amps."
+  },
+  {
+   "start": 109.62,
+   "end": 114.28,
+   "text": "And I2 will have a current of negative 3 amps."
+  },
+  {
+   "start": 114.98,
+   "end": 117.48,
+   "text": "So we want to find I3."
+  },
+  {
+   "start": 119.02,
+   "end": 122.78,
+   "text": "Well, since the sum of all the currents is equal"
+  },
+  {
+   "start": 122.78,
+   "end": 129.78,
+   "text": "to zero, we know that I1 plus I2 plus I3"
+  },
+  {
+   "start": 129.78,
+   "end": 133.62,
+   "text": "is equal to zero. So, negative 3, since it's"
+  },
+  {
+   "start": 133.62,
+   "end": 135.3,
+   "text": "negative, it means that the current is going"
+  },
+  {
+   "start": 135.3,
+   "end": 140.66,
+   "text": "away. This current is going towards, and we"
+  },
+  {
+   "start": 140.66,
+   "end": 147.54,
+   "text": "need to find this. So, I3 plus 5 plus 3 equals"
+  },
+  {
+   "start": 147.54,
+   "end": 152.58,
+   "text": "zero. Sorry, minus 3 equals zero, because that's"
+  },
+  {
+   "start": 152.58,
+   "end": 155.98,
+   "text": "negative 3. Minus 3 equals zero."
+  },
+  {
+   "start": 156.7,
+   "end": 159.8,
+   "text": "So, I3 would be equal to negative 2."
+  },
+  {
+   "start": 160.6,
+   "end": 164.32,
+   "text": "Since I3 is equal to negative 2, that means"
+  },
+  {
+   "start": 164.32,
+   "end": 167.42,
+   "text": "that the current will be going away. However,"
+  },
+  {
+   "start": 167.6,
+   "end": 170.84,
+   "text": "in some cases, when I3 or whatever you're calculating"
+  },
+  {
+   "start": 170.84,
+   "end": 173.94,
+   "text": "is positive, then the current would be going"
+  },
+  {
+   "start": 173.94,
+   "end": 176.18,
+   "text": "towards the junction. It would look something"
+  },
+  {
+   "start": 176.18,
+   "end": 183.22,
+   "text": "like this. Let's say I1 is 5 again, and"
+  },
+  {
+   "start": 183.22,
+   "end": 189.88,
+   "text": "however, I2 this time is negative 7 amps."
+  },
+  {
+   "start": 190.48,
+   "end": 192.66,
+   "text": "So we need to calculate I3."
+  },
+  {
+   "start": 193.32,
+   "end": 195.7,
+   "text": "First of all, let's look at the direction. Since"
+  },
+  {
+   "start": 195.7,
+   "end": 199.52,
+   "text": "this is negative, this will be going away from"
+  },
+  {
+   "start": 199.52,
+   "end": 202.72,
+   "text": "the junction, and this would be going towards,"
+  },
+  {
+   "start": 202.96,
+   "end": 209.9,
+   "text": "since it's positive. 5 minus 7 plus I3 equals"
+  },
+  {
+   "start": 209.9,
+   "end": 216.86,
+   "text": "zero. So, in that case, then I3 is positive"
+  },
+  {
+   "start": 216.86,
+   "end": 219.86,
+   "text": "2, equals positive 2."
+  },
+  {
+   "start": 220.94,
+   "end": 223.5,
+   "text": "What this means is that since it's positive,"
+  },
+  {
+   "start": 223.72,
+   "end": 226.08,
+   "text": "it would be going towards the junction. So,"
+  },
+  {
+   "start": 227.16,
+   "end": 230.38,
+   "text": "the current would be going somewhere like this."
+  },
+  {
+   "start": 230.84,
+   "end": 235.06,
+   "text": "These two go towards here, which gets outputted"
+  },
+  {
+   "start": 235.06,
+   "end": 239.26,
+   "text": "into I2. So, it really depends on the sign to"
+  },
+  {
+   "start": 239.26,
+   "end": 241.36,
+   "text": "see and know the direction of the current."
+  },
+  {
+   "start": 242.36,
+   "end": 244.6,
+   "text": "Let's have a harder example."
+  },
+  {
+   "start": 246.68,
+   "end": 250.44,
+   "text": "Let's say we have a 5-way junction."
+  },
+  {
+   "start": 250.8,
+   "end": 258.24,
+   "text": "It goes here, 1, 2, 3, 4, 5."
+  },
+  {
+   "start": 260.32,
+   "end": 267.5,
+   "text": "And what we're given is 3 of"
+  },
+  {
+   "start": 267.5,
+   "end": 274.64,
+   "text": "the values over here. So, I5, let's try to calculate"
+  },
+  {
+   "start": 274.64,
+   "end": 279.86,
+   "text": "I5 and I3. And what we're given is I3 equals"
+  },
+  {
+   "start": 279.86,
+   "end": 282.16,
+   "text": "2I5."
+  },
+  {
+   "start": 283.3,
+   "end": 287.74,
+   "text": "And I2 would be, let's say, negative 8 amps."
+  },
+  {
+   "start": 288.98,
+   "end": 292.04,
+   "text": "I1 equals 6 amps."
+  },
+  {
+   "start": 292.92,
+   "end": 297.36,
+   "text": "And I4 is equal to negative 25 amps."
+  },
+  {
+   "start": 298.66,
+   "end": 302.66,
+   "text": "First of all, let's illustrate and try to depict"
+  },
+  {
+   "start": 302.66,
+   "end": 307.62,
+   "text": "what is going to happen over here. Since I1"
+  },
+  {
+   "start": 307.62,
+   "end": 309.76,
+   "text": "is positive, it's going to be going towards"
+  },
+  {
+   "start": 309.76,
+   "end": 312.58,
+   "text": "the junction. Well, these two negative ones"
+  },
+  {
+   "start": 312.58,
+   "end": 318.28,
+   "text": "will be going away from the junction. Now, let's"
+  },
+  {
+   "start": 318.28,
+   "end": 322.52,
+   "text": "use Kirchhoff's Law. The sum of the currents"
+  },
+  {
+   "start": 322.52,
+   "end": 329.56,
+   "text": "is equal to zero. So, I1 plus I2"
+  },
+  {
+   "start": 329.56,
+   "end": 337.22,
+   "text": "plus I3 plus I4 plus I5 is"
+  },
+  {
+   "start": 337.22,
+   "end": 340.58,
+   "text": "equal to zero. We can substitute this into our"
+  },
+  {
+   "start": 340.58,
+   "end": 346.56,
+   "text": "equation. Just convert this into 2 times I5,"
+  },
+  {
+   "start": 347.34,
+   "end": 350.62,
+   "text": "2I5. And we could also plug in all our other"
+  },
+  {
+   "start": 350.62,
+   "end": 357.86,
+   "text": "values. So, 6 minus 8 plus 2I5 plus"
+  },
+  {
+   "start": 357.86,
+   "end": 365.5,
+   "text": "negative 25 plus I5 equals"
+  },
+  {
+   "start": 365.5,
+   "end": 368.92,
+   "text": "to zero. So, when you combine this, you get"
+  },
+  {
+   "start": 368.92,
+   "end": 375.26,
+   "text": "3I5 plus negative 8 minus 25 plus 6 would be"
+  },
+  {
+   "start": 375.26,
+   "end": 380.14,
+   "text": "equal to negative 27. Negative 27 plus 3I5 equals"
+  },
+  {
+   "start": 380.14,
+   "end": 386.56,
+   "text": "zero. So, what we'll get is we will get 3I5"
+  },
+  {
+   "start": 386.56,
+   "end": 391.7,
+   "text": "equals 27. So, I5 will ultimately be equal to"
+  },
+  {
+   "start": 391.7,
+   "end": 394.76,
+   "text": "9. I5 equals 9."
+  },
+  {
+   "start": 395.72,
+   "end": 398.5,
+   "text": "And since I5 equals 9 and we know I3 equals"
+  },
+  {
+   "start": 398.5,
+   "end": 405.8,
+   "text": "2I5, I3 equals 2I5, then I3 would"
+  },
+  {
+   "start": 405.8,
+   "end": 410.82,
+   "text": "be equal to 2 times 9, which is equal to 18"
+  },
+  {
+   "start": 410.82,
+   "end": 415.94,
+   "text": "amps and 9 amps."
+  },
+  {
+   "start": 417.3,
+   "end": 421.46,
+   "text": "So, since these are positive, that means that"
+  },
+  {
+   "start": 421.46,
+   "end": 425.52,
+   "text": "they are going to be going towards the junction."
+  },
+  {
+   "start": 427.02,
+   "end": 431.46,
+   "text": "So, what we can get from this is we used Kirchhoff's"
+  },
+  {
+   "start": 431.46,
+   "end": 434.84,
+   "text": "law and some algebra from what we're given to"
+  },
+  {
+   "start": 434.84,
+   "end": 438.26,
+   "text": "calculate the current and direction of two of"
+  },
+  {
+   "start": 438.26,
+   "end": 442.42,
+   "text": "the junction segments. And this is really useful"
+  },
+  {
+   "start": 442.42,
+   "end": 446.9,
+   "text": "in a lot of circuit problems and it's pretty"
+  },
+  {
+   "start": 446.9,
+   "end": 449.34,
+   "text": "relatively easy to remember. Just remember that"
+  },
+  {
+   "start": 449.34,
+   "end": 452.14,
+   "text": "the sum of all the currents is equal to zero"
+  },
+  {
+   "start": 452.14,
+   "end": 456.38,
+   "text": "in a junction. Remember also that positive current"
+  },
+  {
+   "start": 456.38,
+   "end": 458.78,
+   "text": "means it's going towards the junction, while"
+  },
+  {
+   "start": 458.78,
+   "end": 461.08,
+   "text": "negative means it's going away. But positive"
+  },
+  {
+   "start": 461.08,
+   "end": 464.44,
+   "text": "and negative don't actually mean that the magnitude"
+  },
+  {
+   "start": 464.44,
+   "end": 467.26,
+   "text": "is positive or negative. It just symbolizes"
+  },
+  {
+   "start": 467.26,
+   "end": 470.34,
+   "text": "and depicts a direction. Thank you for listening"
+  },
+  {
+   "start": 470.34,
+   "end": 473.52,
+   "text": "and I hope you learned something from this video."
+  },
+  {
+   "start": 474.1,
+   "end": 474.2,
+   "text": "Bye!"
+  }
+ ],
+ "report": {
+  "key": "electricity__kirchhoff_current",
+  "title": "Kirchhoff's Current Law",
+  "topicKey": "electricity",
+  "duration": 474.944,
+  "cues": 107,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.14012155007748378,
+  "flagged": []
+ }
+}

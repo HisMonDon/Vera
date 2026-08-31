@@ -1,0 +1,646 @@
+WEBVTT
+NOTE Friction
+
+1
+00:00:01.200 --> 00:00:04.060
+Now, we are going to move on to friction,
+and
+
+2
+00:00:04.060 --> 00:00:06.120
+we are going to continue the problem that
+we
+
+3
+00:00:06.120 --> 00:00:10.420
+left off in the previous videos. So, let's
+go
+
+4
+00:00:10.420 --> 00:00:13.620
+back and quickly redraw the free-body
+diagram
+
+5
+00:00:13.620 --> 00:00:20.560
+we have drawn. So, there is going to be a
+force
+
+6
+00:00:20.560 --> 00:00:24.540
+of gravity, Fg, there is going to be a
+normal
+
+7
+00:00:24.540 --> 00:00:31.720
+force, Fn, F applied, and there will be
+
+8
+00:00:31.720 --> 00:00:38.140
+a friction force. Now, we are going to
+identify
+
+9
+00:00:38.140 --> 00:00:41.720
+which forces form an action-reaction pair
+according
+
+10
+00:00:41.720 --> 00:00:45.260
+to Newton's third law. So, in case you
+guys
+
+11
+00:00:45.260 --> 00:00:47.380
+forgot what's Newton's third law, I have
+it
+
+12
+00:00:47.380 --> 00:00:49.700
+up here. For every action, there is an
+equal
+
+13
+00:00:49.700 --> 00:00:52.920
+and opposite reaction, and that typically
+occurs
+
+14
+00:00:52.920 --> 00:00:55.540
+on two different objects.
+
+15
+00:00:56.100 --> 00:01:00.200
+For example, if you punch a piece of wood,
+the
+
+16
+00:01:00.200 --> 00:01:02.900
+two objects being analyzed here are your
+hand
+
+17
+00:01:02.900 --> 00:01:05.380
+and that piece of wood. If you catch a
+baseball,
+
+18
+00:01:05.580 --> 00:01:07.520
+it would be your hand and a baseball. It's
+never
+
+19
+00:01:07.520 --> 00:01:11.400
+on one object. So, with that in mind, I
+can
+
+20
+00:01:11.400 --> 00:01:16.080
+only think of one action-reaction pair on
+the
+
+21
+00:01:16.080 --> 00:01:20.580
+physical level, and that would be the
+table
+
+22
+00:01:20.580 --> 00:01:24.660
+and the box regarding the force of
+friction.
+
+23
+00:01:26.060 --> 00:01:32.260
+This is because the table exerts a force
+of
+
+24
+00:01:32.260 --> 00:01:35.720
+friction on the box, and that box exerts
+the
+
+25
+00:01:35.720 --> 00:01:38.060
+same force of friction on the table, and
+that's
+
+26
+00:01:38.060 --> 00:01:42.800
+just the definition of an action-reaction
+pair.
+
+27
+00:01:43.680 --> 00:01:46.640
+So, next question. Determine whether the
+car
+
+28
+00:01:46.640 --> 00:01:49.760
+accelerates or moves with constant
+velocity.
+
+29
+00:01:50.660 --> 00:01:53.720
+Well, this one, we have to know, first of
+all,
+
+30
+00:01:53.900 --> 00:01:56.580
+how to do the force of friction. The force
+of
+
+31
+00:01:56.580 --> 00:01:59.060
+friction is really, really simple. It's
+just
+
+32
+00:01:59.060 --> 00:02:02.540
+one straightforward formula. Force of
+friction
+
+33
+00:02:02.540 --> 00:02:08.200
+equals normal force, or f of n or n, f of
+n
+
+34
+00:02:08.200 --> 00:02:15.830
+times mu, where f of n is normal force and
+
+35
+00:02:15.830 --> 00:02:19.990
+mu is the coefficient of friction, which
+is
+
+36
+00:02:19.990 --> 00:02:25.780
+usually given. The coefficient of friction
+is
+
+37
+00:02:25.780 --> 00:02:28.980
+always determined experimentally in real
+life.
+
+38
+00:02:29.640 --> 00:02:33.860
+There is no shortcut or a formula to
+derive
+
+39
+00:02:33.860 --> 00:02:37.660
+the coefficient of friction. Everything we
+know
+
+40
+00:02:37.660 --> 00:02:39.480
+about the coefficient of friction is
+derived
+
+41
+00:02:39.480 --> 00:02:43.720
+experimentally. That's a fun fact, and
+yeah,
+
+42
+00:02:43.800 --> 00:02:46.820
+this is basically the main formula for
+today's
+
+43
+00:02:46.820 --> 00:02:49.240
+video, and we are going to put it in good
+use.
+
+44
+00:02:51.220 --> 00:02:54.180
+So, determine whether the car accelerates
+or
+
+45
+00:02:54.180 --> 00:02:58.280
+moves with constant velocity. Well, in
+order
+
+46
+00:02:58.280 --> 00:03:02.100
+to do that, we have to know about and
+calculate
+
+47
+00:03:02.100 --> 00:03:07.120
+the net force. The net force is basically
+the
+
+48
+00:03:07.120 --> 00:03:12.680
+overall force that an object undergoes, so
+all
+
+49
+00:03:12.680 --> 00:03:16.940
+these forces combined. Well, first of all,
+the
+
+50
+00:03:16.940 --> 00:03:21.020
+combination of the normal force and the
+force
+
+51
+00:03:21.020 --> 00:03:26.680
+of gravity cross out, so the net force
+going
+
+52
+00:03:26.680 --> 00:03:29.680
+up and down vertically is zero.
+
+53
+00:03:29.880 --> 00:03:31.660
+There's no net force going up and down.
+The
+
+54
+00:03:31.660 --> 00:03:34.640
+box stays where it is. However,
+horizontally,
+
+55
+00:03:34.820 --> 00:03:36.960
+it's a different story. The net force, if
+we
+
+56
+00:03:36.960 --> 00:03:40.320
+treat to the right as the positive
+direction,
+
+57
+00:03:43.280 --> 00:03:46.860
+it's the applied force subtracted by the
+force
+
+58
+00:03:46.860 --> 00:03:48.520
+of friction, because the force of friction
+is
+
+59
+00:03:48.520 --> 00:03:55.080
+going here, so f app minus f app, and
+getting
+
+60
+00:03:55.080 --> 00:03:59.020
+the net force is crucial, and it's
+basically
+
+61
+00:03:59.020 --> 00:04:01.500
+the start to every dynamics problem.
+
+62
+00:04:01.600 --> 00:04:04.460
+You have to get the overall force that the
+object
+
+63
+00:04:04.460 --> 00:04:08.280
+undergoes to even know and comprehend how
+it's
+
+64
+00:04:08.280 --> 00:04:10.800
+going to move. In this case, it's pretty
+simple.
+
+65
+00:04:11.260 --> 00:04:16.800
+The applied force, we know it is 18
+newtons.
+
+66
+00:04:17.740 --> 00:04:21.480
+The force of friction is, we know the
+normal
+
+67
+00:04:21.480 --> 00:04:26.260
+force. The normal force is positive
+because
+
+68
+00:04:26.260 --> 00:04:28.960
+it's going up, and it's the magnitude of
+gravity,
+
+69
+00:04:29.460 --> 00:04:34.060
+which is mass of the crate times the
+acceleration
+
+70
+00:04:34.060 --> 00:04:37.740
+to gravity, and now that's our normal
+force,
+
+71
+00:04:38.880 --> 00:04:41.120
+and now we have to have the coefficient of
+friction,
+
+72
+00:04:41.640 --> 00:04:47.300
+so times mu, so it'd just be 18 minus 5.0
+times
+
+73
+00:04:47.300 --> 00:04:51.480
+9.81 times the coefficient is 0.30.
+
+74
+00:04:54.460 --> 00:05:04.380
+And we should get around 3.2, 3.3
+
+75
+00:05:04.380 --> 00:05:09.840
+because of sig figs, 3.3 newtons.
+
+76
+00:05:11.340 --> 00:05:13.360
+And keep in mind that it's positive, which
+means
+
+77
+00:05:13.360 --> 00:05:18.630
+the net force is going that way with a
+magnitude
+
+78
+00:05:18.630 --> 00:05:22.470
+of 3.3 newtons. And what does that tell
+us?
+
+79
+00:05:22.970 --> 00:05:26.330
+Well, that means that the box undergoes a
+constant
+
+80
+00:05:26.330 --> 00:05:30.970
+force of 3.3 newtons to the right, and
+that's
+
+81
+00:05:30.970 --> 00:05:35.450
+its overall force. All of these forces
+combine
+
+82
+00:05:35.450 --> 00:05:39.090
+to make an overall force going 3.3 newtons
+to
+
+83
+00:05:39.090 --> 00:05:42.570
+the right, and no other force matters
+unless
+
+84
+00:05:42.570 --> 00:05:44.950
+there's an external force, as we talked
+about.
+
+85
+00:05:45.970 --> 00:05:49.650
+So what does that mean? Well, that means
+that
+
+86
+00:05:49.650 --> 00:05:51.870
+it's going to accelerate.
+
+87
+00:05:54.080 --> 00:05:57.920
+Why? Because there is constant force
+applied
+
+88
+00:05:57.920 --> 00:06:02.140
+to this, and force is mass times
+acceleration.
+
+89
+00:06:02.320 --> 00:06:04.860
+If this is constant, then acceleration
+will
+
+90
+00:06:04.860 --> 00:06:07.700
+be constant. There will be a constant
+acceleration
+
+91
+00:06:07.700 --> 00:06:14.900
+being undergone by the box, and
+
+92
+00:06:14.900 --> 00:06:17.180
+that will be the answer to that part.
+
+93
+00:06:17.860 --> 00:06:20.260
+Calculate the magnitude and direction of
+the
+
+94
+00:06:20.260 --> 00:06:24.640
+acceleration. Well, we already did 70% of
+the
+
+95
+00:06:24.640 --> 00:06:26.940
+problem by calculating this force.
+
+96
+00:06:27.560 --> 00:06:30.820
+So how about you first pause the video and
+try
+
+97
+00:06:30.820 --> 00:06:34.440
+doing this question, and we'll take it up.
+
+98
+00:06:36.220 --> 00:06:43.340
+Okay, so now what we have is we have f net
+is
+
+99
+00:06:43.340 --> 00:06:47.140
+equal to the mass times acceleration, the
+net
+
+100
+00:06:47.140 --> 00:06:50.700
+acceleration of the object. We have f net
+over
+
+101
+00:06:50.700 --> 00:06:54.460
+here, and we want to calculate the
+acceleration.
+
+102
+00:06:54.880 --> 00:06:57.740
+Do we have the mass? Yes, we do. The mass
+is
+
+103
+00:06:57.740 --> 00:07:00.600
+given in the problem, and it says 5
+kilograms.
+
+104
+00:07:04.020 --> 00:07:06.300
+Acceleration, a net.
+
+105
+00:07:06.760 --> 00:07:09.320
+So what would the acceleration be? Well,
+we
+
+106
+00:07:09.320 --> 00:07:13.780
+just isolate for it. It's f net over m 3.3
+over
+
+107
+00:07:13.780 --> 00:07:21.080
+5, and that would give you 3.3 divided by
+5,
+
+108
+00:07:22.000 --> 00:07:26.880
+0.66 metres per second squared.
+
+109
+00:07:28.300 --> 00:07:32.220
+And it also asks you to put a direction.
+
+110
+00:07:33.480 --> 00:07:36.100
+We know it's positive, which means it's
+going
+
+111
+00:07:36.100 --> 00:07:38.780
+to this way, which is to the right.
+
+112
+00:07:40.680 --> 00:07:44.580
+The question didn't specify, so we're just
+going
+
+113
+00:07:44.580 --> 00:07:47.960
+to say it goes in the positive direction,
+because
+
+114
+00:07:47.960 --> 00:07:50.820
+this is positive. Oh, it does say to the
+right.
+
+115
+00:07:51.420 --> 00:07:54.140
+So yeah, it's going to be towards the
+right.
+
+116
+00:07:57.300 --> 00:08:01.660
+Right. And that will be your answer for
+this
+
+117
+00:08:01.660 --> 00:08:04.740
+question. Oh, that's an ugly box.
+
+118
+00:08:05.440 --> 00:08:09.900
+And that's basically it for the force of
+friction,
+
+119
+00:08:09.900 --> 00:08:13.020
+and we went a little extra, and we talked
+about
+
+120
+00:08:13.020 --> 00:08:16.460
+how to do these types of dynamics
+problems.
+
+121
+00:08:17.980 --> 00:08:21.780
+Basically, the number one tip I'm going to
+give
+
+122
+00:08:21.780 --> 00:08:25.820
+you here is to always try to find the net
+force.
+
+123
+00:08:25.820 --> 00:08:29.240
+Always, always, always try to find the net
+force,
+
+124
+00:08:29.320 --> 00:08:31.700
+even if it's in components.
+
+125
+00:08:31.700 --> 00:08:33.520
+If you're dealing with harder questions,
+you
+
+126
+00:08:33.520 --> 00:08:35.820
+might have to find the net force
+horizontally
+
+127
+00:08:35.820 --> 00:08:38.820
+and the net force vertically separately,
+and
+
+128
+00:08:38.820 --> 00:08:41.140
+then you can deal with those numbers
+later.
+
+129
+00:08:41.140 --> 00:08:44.880
+But you have to combine vectors to get the
+overall
+
+130
+00:08:44.880 --> 00:08:49.180
+motion that the object is undergoing.
+
+131
+00:08:50.060 --> 00:08:52.900
+And yeah, that's it for the force of
+friction
+
+132
+00:08:52.900 --> 00:08:56.400
+and an introduction to how to solve real
+dynamics
+
+133
+00:08:56.400 --> 00:08:57.660
+problems. Thank you.

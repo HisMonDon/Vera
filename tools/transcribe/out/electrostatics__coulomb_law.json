@@ -1,0 +1,1033 @@
+{
+ "lesson": {
+  "topicKey": "electrostatics",
+  "curriculumKey": "coulomb_law",
+  "title": "Coulomb's Law",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/Electrostatics/Unit%202%20Coulombs%20Law.mp4",
+  "source": "electrostatics.dart"
+ },
+ "segments": [
+  {
+   "start": 0.98,
+   "end": 29.96,
+   "text": "In this video we will be looking at Coulomb's law and what it does. So what is Coulomb's law? Coulomb's law basically gives the electric force between two point charges. And that's really important because a lot of the times there will be a relation between electrostatics and forces or kinematics and it tells you the magnitude of the force",
+   "avg_logprob": -0.11587425282126979
+  },
+  {
+   "start": 32.16,
+   "end": 61.68,
+   "text": "and whether the force is attractive or repulsive. So the sign. So whether the force, but the force if it's attractive or repulsive just a good thing to remember is just to know that forces repel and opposite forces attract. So what is the equation of Coulomb's law? Well the Coulomb's law equation states",
+   "avg_logprob": -0.12217821807101154
+  },
+  {
+   "start": 61.68,
+   "end": 91.08,
+   "text": "that the force, the electrostatic force, is equal to the Coulombic constant, which I'll talk about later, times the two charges, the magnitude of the product of the two charges, over the distance squared. And F is obviously the force in newtons. K is the Coulombic attraction or Coulombic constant.",
+   "avg_logprob": -0.11729428161467825
+  },
+  {
+   "start": 91.08,
+   "end": 118.38,
+   "text": "And it's the same for all formulae. And it's equal to 8.99 times 10 to the 9 newtons times metres squared over Coulomb's squared. Q1 and Q2 are the charges. So it's measured in Coulomb's. And R is the distance between the two charges.",
+   "avg_logprob": -0.12355772165151743
+  },
+  {
+   "start": 119.68,
+   "end": 152.8,
+   "text": "Distance between charges in metres. So a lot of the times they're going to give you the distance in let's say nanometres or picometres. So you're going to have to remember how to convert those back to metres. And this is Coulomb's law. And it's probably given in your formula sheet. Now basically this is a force and you know whether it's attractive or repulsive because",
+   "avg_logprob": -0.11233862463165732
+  },
+  {
+   "start": 152.8,
+   "end": 182.7,
+   "text": "like charges distract and opposite charges repel. So if Q1, the sine of Q1 times the sine of Q2 is equal to, I'll just write it like this, Q1, that would be the sine over Q2, that would be the sine. If both of these are the same, then that means they're going to repel. But if they're different, times Q2 over Q2, if they're different,",
+   "avg_logprob": -0.10709502033351623
+  },
+  {
+   "start": 182.7,
+   "end": 210.24,
+   "text": "that means that they're going to attract. And it's a pretty straightforward way of telling whether they repel or attract. And you can use Coulomb's law directly when either charges are point charges, so they take up no space, they're just charges in the grid or in the coordinate point charges.",
+   "avg_logprob": -0.09711076563689858
+  },
+  {
+   "start": 211.8,
+   "end": 235.05,
+   "text": "Or the objects or the particles are very small. Very small compared to the distance. Because it depends on the distance. And if you're talking about two big objects, then the radius will be way bigger than the distance between. So objects are very small compared to distance.",
+   "avg_logprob": -0.09885817336834084
+  },
+  {
+   "start": 238.29,
+   "end": 251.96,
+   "text": "And a lot of the questions ask you to calculate, let's say, the forces exerted on an object surrounded by multiple charges. And if multiple charges are present, we might go over an example for this.",
+   "avg_logprob": -0.07593306024437366
+  },
+  {
+   "start": 252.96,
+   "end": 281.51,
+   "text": "If we want to calculate the force exerted from each charge, because they're vectors, calculate f from each charge. Usually they're going to be point charges. And then you get the net force at the end using trigonometry. Or basically you add the forces, because they're vectors. Add forces to get net force.",
+   "avg_logprob": -0.16492987402847836
+  },
+  {
+   "start": 284.82,
+   "end": 306.82,
+   "text": "So here's a really simple example. Let's say we have a positive point charge. So we have a positive point charge over here with a charge of, let's say, 5 Coulombs.",
+   "avg_logprob": -0.128678022460504
+  },
+  {
+   "start": 307.72,
+   "end": 328.0,
+   "text": "And then we have, let's say, another positive point charge with a charge of 10 Coulombs. And we have a positively charged particle, let's say, with a charge of 3 Coulombs.",
+   "avg_logprob": -0.07544720636473762
+  },
+  {
+   "start": 329.1,
+   "end": 340.9,
+   "text": "Now we want to try to find its acceleration and in what direction. So basically you have to use, you have to get the net force exerted on each of these positive charges.",
+   "avg_logprob": -0.10963088986189927
+  },
+  {
+   "start": 341.24,
+   "end": 346.24,
+   "text": "So let's call this charge A, let's call this charge B, and we'll just directly use Coulomb's law.",
+   "avg_logprob": -0.10963088986189927
+  },
+  {
+   "start": 348.84,
+   "end": 363.18,
+   "text": "Let's say they're both, this charge is 3 times 10 to the negative 9 meters apart. And this charge is 4 times 10 to the negative 9 meters apart.",
+   "avg_logprob": -0.0978856329855166
+  },
+  {
+   "start": 364.82,
+   "end": 379.66,
+   "text": "So we know that, let's first calculate the charge exerted for charge A. Well, charge A, these are both positive charges. So charge A is going to exert a force to the right.",
+   "avg_logprob": -0.10168264368001152
+  },
+  {
+   "start": 379.92,
+   "end": 390.5,
+   "text": "So the free body diagram of this particle would be F A and F B. We don't know the magnitude yet, but we know that F B is going to exert a force this way.",
+   "avg_logprob": -0.10168264368001152
+  },
+  {
+   "start": 390.5,
+   "end": 395.5,
+   "text": "And F A is going to exert a force this way, because they're same signs.",
+   "avg_logprob": -0.13366304755210875
+  },
+  {
+   "start": 397.32,
+   "end": 407.7,
+   "text": "So F A equals, the constant is 8.99 times 10 to the 9, 8.99 times 10 to the 9.",
+   "avg_logprob": -0.13366304755210875
+  },
+  {
+   "start": 408.92,
+   "end": 423.4,
+   "text": "The magnitude or the absolute value of Q1 would be, Q1 let's say would be the charge of A, really doesn't matter, 5 times 3 over, what's the distance?",
+   "avg_logprob": -0.14950002819658761
+  },
+  {
+   "start": 423.82,
+   "end": 435.0,
+   "text": "It's 4 times 10 to the negative 9 squared. And that, when you type it in your calculator, you're going to get a force, and that should be in Newtons.",
+   "avg_logprob": -0.14950002819658761
+  },
+  {
+   "start": 436.52,
+   "end": 448.84,
+   "text": "15 over 4 times 10 to the negative 9 squared. And you would get 8.43 times 10 to the 27 Newtons.",
+   "avg_logprob": -0.09320513924507245
+  },
+  {
+   "start": 449.2,
+   "end": 458.98,
+   "text": "Now this is probably not that realistic, this is a really massive force, but for the sake, I've just made up the quantities for the sake of this question, let's just go with it.",
+   "avg_logprob": -0.09320513924507245
+  },
+  {
+   "start": 459.54,
+   "end": 470.8,
+   "text": "The force of B, so force of A, this is going to have a force exerted on this that is this massive value, 8.43 times 10 to the 27 Newtons.",
+   "avg_logprob": -0.12223048625247819
+  },
+  {
+   "start": 471.22,
+   "end": 476.92,
+   "text": "And then we have to calculate force B, and then we have to get the net force. And then we use Newtons law.",
+   "avg_logprob": -0.12223048625247819
+  },
+  {
+   "start": 477.66,
+   "end": 489.22,
+   "text": "Force B, same thing, 8.99 times 10 to the 9 times 3 times 10 over 3 times 10 to the negative 9 squared.",
+   "avg_logprob": -0.10915340547976286
+  },
+  {
+   "start": 490.32,
+   "end": 502.14,
+   "text": "And when you do that, you would get 2.00 times 10 to the 28 Newtons.",
+   "avg_logprob": -0.10915340547976286
+  },
+  {
+   "start": 502.76,
+   "end": 507.86,
+   "text": "So force B would obviously be a greater force than force A.",
+   "avg_logprob": -0.10915340547976286
+  },
+  {
+   "start": 507.86,
+   "end": 518.08,
+   "text": "But by how much? Well the net force, the total net force is equal to force A minus force B.",
+   "avg_logprob": -0.0876104864690985
+  },
+  {
+   "start": 518.64,
+   "end": 521.7,
+   "text": "Or plus force B, but then force B is negative because it's in the opposite direction.",
+   "avg_logprob": -0.0876104864690985
+  },
+  {
+   "start": 522.2,
+   "end": 529.86,
+   "text": "So 8.43 times 10 to the 27 plus negative 3.00 times 10 to the 28.",
+   "avg_logprob": -0.0876104864690985
+  },
+  {
+   "start": 532.03,
+   "end": 537.29,
+   "text": "And that would be equal to 8.43 times 10 to the 27 minus this.",
+   "avg_logprob": -0.08756511334819023
+  },
+  {
+   "start": 538.63,
+   "end": 543.21,
+   "text": "You'd get a net force of negative 2.15 times 10 to the 28 Newtons.",
+   "avg_logprob": -0.08756511334819023
+  },
+  {
+   "start": 543.53,
+   "end": 548.93,
+   "text": "It's negative because it's going in the left direction, because there's a greater force of B.",
+   "avg_logprob": -0.08756511334819023
+  },
+  {
+   "start": 549.05,
+   "end": 552.57,
+   "text": "So it's going to go this way with a force of this magnitude.",
+   "avg_logprob": -0.08756511334819023
+  },
+  {
+   "start": 556.07,
+   "end": 559.99,
+   "text": "And basically now that we have the force, we can calculate the acceleration.",
+   "avg_logprob": -0.08756511334819023
+  },
+  {
+   "start": 559.99,
+   "end": 568.49,
+   "text": "Let's say the question gave us a mass. Doesn't really matter, I'll just call it x for simplicity's sake.",
+   "avg_logprob": -0.08280693036927418
+  },
+  {
+   "start": 569.19,
+   "end": 572.79,
+   "text": "We know force net equals mass times net acceleration.",
+   "avg_logprob": -0.08280693036927418
+  },
+  {
+   "start": 573.61,
+   "end": 581.83,
+   "text": "So acceleration is F net over mass, which is negative 2.15 times 10 to the 28 over x.",
+   "avg_logprob": -0.08280693036927418
+  },
+  {
+   "start": 582.05,
+   "end": 584.69,
+   "text": "And that would be your final acceleration.",
+   "avg_logprob": -0.08280693036927418
+  },
+  {
+   "start": 585.15,
+   "end": 588.21,
+   "text": "It really depends on what the question gives you.",
+   "avg_logprob": -0.08280693036927418
+  },
+  {
+   "start": 588.21,
+   "end": 595.91,
+   "text": "But that's basically how you deal with multiple charges, and how you use Coulomb's law to calculate the multiple charges.",
+   "avg_logprob": -0.08001171697567148
+  },
+  {
+   "start": 596.89,
+   "end": 602.79,
+   "text": "And that's all for today's video. I hope you've learned how to calculate these types of questions with Coulomb's law.",
+   "avg_logprob": -0.08001171697567148
+  },
+  {
+   "start": 603.49,
+   "end": 607.49,
+   "text": "And I hope you enjoyed! Thank you for watching, and we'll see you in the next one. Bye!",
+   "avg_logprob": -0.08001171697567148
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.98,
+   "end": 3.48,
+   "text": "In this video we will be looking at Coulomb's"
+  },
+  {
+   "start": 3.48,
+   "end": 5.6,
+   "text": "law and what it does."
+  },
+  {
+   "start": 6.66,
+   "end": 10.04,
+   "text": "So what is Coulomb's law? Coulomb's law basically"
+  },
+  {
+   "start": 10.04,
+   "end": 13.86,
+   "text": "gives the electric force between two point charges."
+  },
+  {
+   "start": 15.1,
+   "end": 17.96,
+   "text": "And that's really important because a lot of"
+  },
+  {
+   "start": 17.96,
+   "end": 24.28,
+   "text": "the times there will be a relation between electrostatics"
+  },
+  {
+   "start": 24.28,
+   "end": 28.76,
+   "text": "and forces or kinematics and it tells you the"
+  },
+  {
+   "start": 28.76,
+   "end": 35.1,
+   "text": "magnitude of the force and whether the force"
+  },
+  {
+   "start": 35.1,
+   "end": 37.3,
+   "text": "is attractive or repulsive. So the sign."
+  },
+  {
+   "start": 38.46,
+   "end": 44.04,
+   "text": "So whether the force, but the force if it's"
+  },
+  {
+   "start": 44.04,
+   "end": 47.9,
+   "text": "attractive or repulsive just a good thing to"
+  },
+  {
+   "start": 47.9,
+   "end": 51.88,
+   "text": "remember is just to know that forces repel and"
+  },
+  {
+   "start": 51.88,
+   "end": 57.22,
+   "text": "opposite forces attract. So what is the equation"
+  },
+  {
+   "start": 57.22,
+   "end": 61.18,
+   "text": "of Coulomb's law? Well the Coulomb's law equation"
+  },
+  {
+   "start": 61.18,
+   "end": 64.38,
+   "text": "states that the force, the electrostatic force,"
+  },
+  {
+   "start": 64.7,
+   "end": 68.6,
+   "text": "is equal to the Coulombic constant, which I'll"
+  },
+  {
+   "start": 68.6,
+   "end": 72.08,
+   "text": "talk about later, times the two charges, the"
+  },
+  {
+   "start": 72.08,
+   "end": 75.36,
+   "text": "magnitude of the product of the two charges,"
+  },
+  {
+   "start": 75.36,
+   "end": 78.5,
+   "text": "over the distance squared."
+  },
+  {
+   "start": 80.0,
+   "end": 84.98,
+   "text": "And F is obviously the force in newtons."
+  },
+  {
+   "start": 87.04,
+   "end": 91.08,
+   "text": "K is the Coulombic attraction or Coulombic constant."
+  },
+  {
+   "start": 91.08,
+   "end": 95.96,
+   "text": "And it's the same for all formulae."
+  },
+  {
+   "start": 96.54,
+   "end": 101.54,
+   "text": "And it's equal to 8.99 times 10 to the 9 newtons"
+  },
+  {
+   "start": 101.54,
+   "end": 104.56,
+   "text": "times metres squared over Coulomb's squared."
+  },
+  {
+   "start": 106.24,
+   "end": 108.96,
+   "text": "Q1 and Q2 are the charges."
+  },
+  {
+   "start": 110.52,
+   "end": 114.02,
+   "text": "So it's measured in Coulomb's."
+  },
+  {
+   "start": 114.84,
+   "end": 118.38,
+   "text": "And R is the distance between the two charges."
+  },
+  {
+   "start": 119.68,
+   "end": 125.86,
+   "text": "Distance between charges in metres."
+  },
+  {
+   "start": 126.38,
+   "end": 128.34,
+   "text": "So a lot of the times they're going to give"
+  },
+  {
+   "start": 128.34,
+   "end": 132.36,
+   "text": "you the distance in let's say nanometres or"
+  },
+  {
+   "start": 132.36,
+   "end": 134.88,
+   "text": "picometres. So you're going to have to remember"
+  },
+  {
+   "start": 134.88,
+   "end": 136.98,
+   "text": "how to convert those back to metres."
+  },
+  {
+   "start": 139.72,
+   "end": 142.1,
+   "text": "And this is Coulomb's law. And it's probably"
+  },
+  {
+   "start": 142.1,
+   "end": 149.14,
+   "text": "given in your formula sheet. Now basically this"
+  },
+  {
+   "start": 149.14,
+   "end": 151.48,
+   "text": "is a force and you know whether it's attractive"
+  },
+  {
+   "start": 151.48,
+   "end": 154.66,
+   "text": "or repulsive because like charges distract and"
+  },
+  {
+   "start": 154.66,
+   "end": 159.58,
+   "text": "opposite charges repel. So if Q1, the sine of"
+  },
+  {
+   "start": 159.58,
+   "end": 166.96,
+   "text": "Q1 times the sine of Q2 is equal to, I'll"
+  },
+  {
+   "start": 166.96,
+   "end": 168.96,
+   "text": "just write it like this, Q1, that would be the"
+  },
+  {
+   "start": 168.96,
+   "end": 171.08,
+   "text": "sine over Q2, that would be the sine."
+  },
+  {
+   "start": 171.2,
+   "end": 175.68,
+   "text": "If both of these are the same, then that means"
+  },
+  {
+   "start": 175.68,
+   "end": 178.2,
+   "text": "they're going to repel. But if they're different,"
+  },
+  {
+   "start": 179.24,
+   "end": 183.44,
+   "text": "times Q2 over Q2, if they're different, that"
+  },
+  {
+   "start": 183.44,
+   "end": 186.58,
+   "text": "means that they're going to attract. And it's"
+  },
+  {
+   "start": 186.58,
+   "end": 188.98,
+   "text": "a pretty straightforward way of telling whether"
+  },
+  {
+   "start": 188.98,
+   "end": 193.9,
+   "text": "they repel or attract. And you can use Coulomb's"
+  },
+  {
+   "start": 193.9,
+   "end": 198.1,
+   "text": "law directly when either charges are point charges,"
+  },
+  {
+   "start": 198.68,
+   "end": 202.44,
+   "text": "so they take up no space, they're just charges"
+  },
+  {
+   "start": 202.44,
+   "end": 209.68,
+   "text": "in the grid or in the coordinate point"
+  },
+  {
+   "start": 209.68,
+   "end": 215.88,
+   "text": "charges. Or the objects or the particles are"
+  },
+  {
+   "start": 215.88,
+   "end": 221.87,
+   "text": "very small. Very small compared to the distance."
+  },
+  {
+   "start": 223.49,
+   "end": 225.77,
+   "text": "Because it depends on the distance."
+  },
+  {
+   "start": 226.55,
+   "end": 228.71,
+   "text": "And if you're talking about two big objects,"
+  },
+  {
+   "start": 228.99,
+   "end": 231.69,
+   "text": "then the radius will be way bigger than the"
+  },
+  {
+   "start": 231.69,
+   "end": 233.73,
+   "text": "distance between. So objects are very small"
+  },
+  {
+   "start": 233.73,
+   "end": 240.2,
+   "text": "compared to distance. And a lot of the questions"
+  },
+  {
+   "start": 240.2,
+   "end": 243.36,
+   "text": "ask you to calculate, let's say, the forces"
+  },
+  {
+   "start": 243.36,
+   "end": 246.1,
+   "text": "exerted on an object surrounded by multiple"
+  },
+  {
+   "start": 246.1,
+   "end": 249.14,
+   "text": "charges. And if multiple charges are present,"
+  },
+  {
+   "start": 249.96,
+   "end": 254.16,
+   "text": "we might go over an example for this. If we"
+  },
+  {
+   "start": 254.16,
+   "end": 258.12,
+   "text": "want to calculate the force exerted from each"
+  },
+  {
+   "start": 258.12,
+   "end": 264.02,
+   "text": "charge, because they're vectors, calculate f"
+  },
+  {
+   "start": 264.02,
+   "end": 266.72,
+   "text": "from each charge."
+  },
+  {
+   "start": 266.86,
+   "end": 271.07,
+   "text": "Usually they're going to be point charges. And"
+  },
+  {
+   "start": 271.07,
+   "end": 273.47,
+   "text": "then you get the net force at the end using"
+  },
+  {
+   "start": 273.47,
+   "end": 276.47,
+   "text": "trigonometry. Or basically you add the forces,"
+  },
+  {
+   "start": 276.99,
+   "end": 281.23,
+   "text": "because they're vectors. Add forces to get net"
+  },
+  {
+   "start": 281.23,
+   "end": 287.64,
+   "text": "force. So here's a really simple example."
+  },
+  {
+   "start": 290.4,
+   "end": 295.94,
+   "text": "Let's say we have a positive point charge."
+  },
+  {
+   "start": 297.12,
+   "end": 302.48,
+   "text": "So we have a positive point charge over here"
+  },
+  {
+   "start": 302.48,
+   "end": 306.82,
+   "text": "with a charge of, let's say, 5 Coulombs."
+  },
+  {
+   "start": 307.72,
+   "end": 312.8,
+   "text": "And then we have, let's say, another positive"
+  },
+  {
+   "start": 312.8,
+   "end": 317.04,
+   "text": "point charge with a charge of 10 Coulombs."
+  },
+  {
+   "start": 318.04,
+   "end": 322.46,
+   "text": "And we have a positively charged particle, let's"
+  },
+  {
+   "start": 322.46,
+   "end": 328.0,
+   "text": "say, with a charge of 3 Coulombs."
+  },
+  {
+   "start": 329.1,
+   "end": 332.6,
+   "text": "Now we want to try to find its acceleration"
+  },
+  {
+   "start": 332.6,
+   "end": 335.52,
+   "text": "and in what direction. So basically you have"
+  },
+  {
+   "start": 335.52,
+   "end": 339.16,
+   "text": "to use, you have to get the net force exerted"
+  },
+  {
+   "start": 339.16,
+   "end": 341.52,
+   "text": "on each of these positive charges. So let's"
+  },
+  {
+   "start": 341.52,
+   "end": 343.66,
+   "text": "call this charge A, let's call this charge B,"
+  },
+  {
+   "start": 344.14,
+   "end": 346.24,
+   "text": "and we'll just directly use Coulomb's law."
+  },
+  {
+   "start": 348.84,
+   "end": 355.48,
+   "text": "Let's say they're both, this charge is 3 times"
+  },
+  {
+   "start": 355.48,
+   "end": 358.4,
+   "text": "10 to the negative 9 metres apart. And this"
+  },
+  {
+   "start": 358.4,
+   "end": 362.7,
+   "text": "charge is 4 times 10 to the negative 9 metres"
+  },
+  {
+   "start": 362.7,
+   "end": 368.56,
+   "text": "apart. So we know that, let's first calculate"
+  },
+  {
+   "start": 368.56,
+   "end": 371.76,
+   "text": "the charge exerted for charge A."
+  },
+  {
+   "start": 372.42,
+   "end": 377.06,
+   "text": "Well, charge A, these are both positive charges."
+  },
+  {
+   "start": 377.2,
+   "end": 379.46,
+   "text": "So charge A is going to exert a force to the"
+  },
+  {
+   "start": 379.46,
+   "end": 382.44,
+   "text": "right. So the free-body diagram of this particle"
+  },
+  {
+   "start": 382.44,
+   "end": 386.12,
+   "text": "would be F A and F B."
+  },
+  {
+   "start": 386.18,
+   "end": 388.48,
+   "text": "We don't know the magnitude yet, but we know"
+  },
+  {
+   "start": 388.48,
+   "end": 390.5,
+   "text": "that F B is going to exert a force this way."
+  },
+  {
+   "start": 390.5,
+   "end": 392.84,
+   "text": "And F A is going to exert a force this way,"
+  },
+  {
+   "start": 392.84,
+   "end": 395.5,
+   "text": "because they're same signs."
+  },
+  {
+   "start": 397.32,
+   "end": 403.34,
+   "text": "So F A equals, the constant is 8.99 times 10"
+  },
+  {
+   "start": 403.34,
+   "end": 407.7,
+   "text": "to the 9, 8.99 times 10 to the 9."
+  },
+  {
+   "start": 408.92,
+   "end": 413.54,
+   "text": "The magnitude or the absolute value of Q1 would"
+  },
+  {
+   "start": 413.54,
+   "end": 419.36,
+   "text": "be, Q1 let's say would be the charge of A, really"
+  },
+  {
+   "start": 419.36,
+   "end": 423.4,
+   "text": "doesn't matter, 5 times 3 over, what's the distance?"
+  },
+  {
+   "start": 423.82,
+   "end": 427.58,
+   "text": "It's 4 times 10 to the negative 9 squared."
+  },
+  {
+   "start": 428.94,
+   "end": 430.9,
+   "text": "And that, when you type it in your calculator,"
+  },
+  {
+   "start": 431.5,
+   "end": 434.12,
+   "text": "you're going to get a force, and that should"
+  },
+  {
+   "start": 434.12,
+   "end": 440.3,
+   "text": "be in Newtons. 15 over 4 times 10 to the negative"
+  },
+  {
+   "start": 440.3,
+   "end": 447.4,
+   "text": "9 squared. And you would get 8.43 times 10 to"
+  },
+  {
+   "start": 447.4,
+   "end": 450.66,
+   "text": "the 27 Newtons. Now this is probably not that"
+  },
+  {
+   "start": 450.66,
+   "end": 453.4,
+   "text": "realistic, this is a really massive force, but"
+  },
+  {
+   "start": 453.4,
+   "end": 456.06,
+   "text": "for the sake, I've just made up the quantities"
+  },
+  {
+   "start": 456.06,
+   "end": 458.46,
+   "text": "for the sake of this question, let's just go"
+  },
+  {
+   "start": 458.46,
+   "end": 462.94,
+   "text": "with it. The force of B, so force of A, this"
+  },
+  {
+   "start": 462.94,
+   "end": 464.96,
+   "text": "is going to have a force exerted on this that"
+  },
+  {
+   "start": 464.96,
+   "end": 470.38,
+   "text": "is this massive value, 8.43 times 10 to the"
+  },
+  {
+   "start": 470.38,
+   "end": 472.4,
+   "text": "27 Newtons. And then we have to calculate force"
+  },
+  {
+   "start": 472.4,
+   "end": 474.56,
+   "text": "B, and then we have to get the net force."
+  },
+  {
+   "start": 475.74,
+   "end": 479.18,
+   "text": "And then we use Newtons law. Force B, same thing,"
+  },
+  {
+   "start": 479.56,
+   "end": 486.52,
+   "text": "8.99 times 10 to the 9 times 3 times 10 over"
+  },
+  {
+   "start": 486.52,
+   "end": 489.22,
+   "text": "3 times 10 to the negative 9 squared."
+  },
+  {
+   "start": 490.32,
+   "end": 498.78,
+   "text": "And when you do that, you would get 2.00"
+  },
+  {
+   "start": 498.78,
+   "end": 502.14,
+   "text": "times 10 to the 28 Newtons."
+  },
+  {
+   "start": 502.76,
+   "end": 506.78,
+   "text": "So force B would obviously be a greater force"
+  },
+  {
+   "start": 506.78,
+   "end": 509.04,
+   "text": "than force A. But by how much?"
+  },
+  {
+   "start": 509.56,
+   "end": 515.52,
+   "text": "Well the net force, the total net force is equal"
+  },
+  {
+   "start": 515.52,
+   "end": 518.08,
+   "text": "to force A minus force B."
+  },
+  {
+   "start": 518.64,
+   "end": 520.52,
+   "text": "Or plus force B, but then force B is negative"
+  },
+  {
+   "start": 520.52,
+   "end": 523.58,
+   "text": "because it's in the opposite direction. So 8.43"
+  },
+  {
+   "start": 523.58,
+   "end": 528.38,
+   "text": "times 10 to the 27 plus negative 3.00 times"
+  },
+  {
+   "start": 528.38,
+   "end": 535.71,
+   "text": "10 to the 28. And that would be equal to 8.43"
+  },
+  {
+   "start": 535.71,
+   "end": 539.53,
+   "text": "times 10 to the 27 minus this. You'd get a net"
+  },
+  {
+   "start": 539.53,
+   "end": 543.21,
+   "text": "force of negative 2.15 times 10 to the 28 Newtons."
+  },
+  {
+   "start": 543.53,
+   "end": 545.93,
+   "text": "It's negative because it's going in the left"
+  },
+  {
+   "start": 545.93,
+   "end": 548.77,
+   "text": "direction, because there's a greater force of"
+  },
+  {
+   "start": 548.77,
+   "end": 551.89,
+   "text": "B. So it's going to go this way with a force"
+  },
+  {
+   "start": 551.89,
+   "end": 557.57,
+   "text": "of this magnitude. And basically now that we"
+  },
+  {
+   "start": 557.57,
+   "end": 559.99,
+   "text": "have the force, we can calculate the acceleration."
+  },
+  {
+   "start": 559.99,
+   "end": 563.17,
+   "text": "Let's say the question gave us a mass."
+  },
+  {
+   "start": 565.29,
+   "end": 567.47,
+   "text": "Doesn't really matter, I'll just call it x for"
+  },
+  {
+   "start": 567.47,
+   "end": 571.23,
+   "text": "simplicity's sake. We know force net equals"
+  },
+  {
+   "start": 571.23,
+   "end": 574.43,
+   "text": "mass times net acceleration. So acceleration"
+  },
+  {
+   "start": 574.43,
+   "end": 579.75,
+   "text": "is F net over mass, which is negative 2.15 times"
+  },
+  {
+   "start": 579.75,
+   "end": 581.83,
+   "text": "10 to the 28 over x."
+  },
+  {
+   "start": 582.05,
+   "end": 584.69,
+   "text": "And that would be your final acceleration."
+  },
+  {
+   "start": 585.15,
+   "end": 587.81,
+   "text": "It really depends on what the question gives"
+  },
+  {
+   "start": 587.81,
+   "end": 591.19,
+   "text": "you. But that's basically how you deal with"
+  },
+  {
+   "start": 591.19,
+   "end": 594.13,
+   "text": "multiple charges, and how you use Coulomb's"
+  },
+  {
+   "start": 594.13,
+   "end": 597.45,
+   "text": "law to calculate the multiple charges. And that's"
+  },
+  {
+   "start": 597.45,
+   "end": 599.55,
+   "text": "all for today's video. I hope you've learned"
+  },
+  {
+   "start": 599.55,
+   "end": 602.27,
+   "text": "how to calculate these types of questions with"
+  },
+  {
+   "start": 602.27,
+   "end": 604.31,
+   "text": "Coulomb's law. And I hope you enjoyed!"
+  },
+  {
+   "start": 604.79,
+   "end": 606.45,
+   "text": "Thank you for watching, and we'll see you in"
+  },
+  {
+   "start": 606.45,
+   "end": 607.49,
+   "text": "the next one. Bye!"
+  }
+ ],
+ "report": {
+  "key": "electrostatics__coulomb_law",
+  "title": "Coulomb's Law",
+  "topicKey": "electrostatics",
+  "duration": 608.0213125,
+  "cues": 149,
+  "corrections": 6,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.16492987402847836,
+  "flagged": []
+ }
+}

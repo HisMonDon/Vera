@@ -1,0 +1,674 @@
+{
+ "lesson": {
+  "topicKey": "kinematics",
+  "curriculumKey": "motion_2d_part2",
+  "title": "2D Motion Analysis Part 2",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%202D%20Part%202.mp4",
+  "source": "kinematics.dart"
+ },
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 9.62,
+   "text": "Alright, so we are going to now incorporate velocity into our kinematics questions. Sorry, acceleration.",
+   "avg_logprob": -0.11684175505154375
+  },
+  {
+   "start": 11.3,
+   "end": 22.69,
+   "text": "So acceleration, as we know, is how fast velocity changes over time. And before we even get started",
+   "avg_logprob": -0.11684175505154375
+  },
+  {
+   "start": 22.69,
+   "end": 29.91,
+   "text": "on acceleration questions, we already have some formulas that are pre-built that can help us with",
+   "avg_logprob": -0.11684175505154375
+  },
+  {
+   "start": 29.91,
+   "end": 37.43,
+   "text": "a lot of these physics questions. They're usually given to us or memorized on the exam. For example,",
+   "avg_logprob": -0.13151136001983246
+  },
+  {
+   "start": 37.63,
+   "end": 44.59,
+   "text": "AP Physics 1 has the formula sheet for it, and these are the three key formulas.",
+   "avg_logprob": -0.13151136001983246
+  },
+  {
+   "start": 45.61,
+   "end": 57.31,
+   "text": "I'm going to put it in red. First one is, whoa. First one is v of x equals v of x naught",
+   "avg_logprob": -0.13151136001983246
+  },
+  {
+   "start": 57.31,
+   "end": 71.55,
+   "text": "plus a of x times t. So, what does this mean? Well, v of x is the velocity,",
+   "avg_logprob": -0.08449237602097648
+  },
+  {
+   "start": 72.67,
+   "end": 88.1,
+   "text": "v of x naught is the initial velocity, initial velocity, a of x is the acceleration,",
+   "avg_logprob": -0.08449237602097648
+  },
+  {
+   "start": 88.28,
+   "end": 97.2,
+   "text": "acceleration is typically defined by a, and keep in mind that this is all in one direction.",
+   "avg_logprob": -0.08449237602097648
+  },
+  {
+   "start": 97.84,
+   "end": 104.0,
+   "text": "It's in the x direction or the y direction. If you have acceleration up and the initial velocity",
+   "avg_logprob": -0.07905707172640078
+  },
+  {
+   "start": 104.0,
+   "end": 110.08,
+   "text": "is going to somewhere like the right, this formula will not work. And t is the time past,",
+   "avg_logprob": -0.07905707172640078
+  },
+  {
+   "start": 110.72,
+   "end": 126.15,
+   "text": "or delta t, and v of x is the final velocity. So this is a really useful formula.",
+   "avg_logprob": -0.07905707172640078
+  },
+  {
+   "start": 126.85,
+   "end": 133.49,
+   "text": "When you have three values, for example, you have the final velocity, you have how long",
+   "avg_logprob": -0.07905707172640078
+  },
+  {
+   "start": 133.49,
+   "end": 138.21,
+   "text": "it accelerated for and how much it accelerated, you can easily find its initial velocity.",
+   "avg_logprob": -0.09535832993867921
+  },
+  {
+   "start": 139.59,
+   "end": 151.35,
+   "text": "Our second formula is going to be x equals x naught. By the way, this zero is naught,",
+   "avg_logprob": -0.09535832993867921
+  },
+  {
+   "start": 151.35,
+   "end": 157.33,
+   "text": "which represents the initial value. So this is the final x, this is the initial.",
+   "avg_logprob": -0.09535832993867921
+  },
+  {
+   "start": 157.89,
+   "end": 162.67,
+   "text": "This is the final velocity, this is its initial velocity before anything happened.",
+   "avg_logprob": -0.09535832993867921
+  },
+  {
+   "start": 163.49,
+   "end": 176.87,
+   "text": "Plus the initial velocity v x naught times t plus one over two a times t squared.",
+   "avg_logprob": -0.15401030399582602
+  },
+  {
+   "start": 178.25,
+   "end": 187.09,
+   "text": "And this is the formula for distance. So x, as you know, is final distance.",
+   "avg_logprob": -0.15401030399582602
+  },
+  {
+   "start": 190.83,
+   "end": 198.59,
+   "text": "x naught is initial distance. Sorry, it's final position, not distance.",
+   "avg_logprob": -0.1359157803512755
+  },
+  {
+   "start": 199.73,
+   "end": 216.36,
+   "text": "Final position, initial position. And all these, you know, velocity, time past, acceleration.",
+   "avg_logprob": -0.1359157803512755
+  },
+  {
+   "start": 224.41,
+   "end": 231.71,
+   "text": "And this is useful to find, calculate any three of these variables. Don't think that",
+   "avg_logprob": -0.1359157803512755
+  },
+  {
+   "start": 232.51,
+   "end": 239.57,
+   "text": "if it's pointing out x equals or v of x equals, you have to be solving for that. You can solve",
+   "avg_logprob": -0.09539414408491619
+  },
+  {
+   "start": 239.57,
+   "end": 245.39,
+   "text": "for any of these variables as long as you have the other ones. And the last formula",
+   "avg_logprob": -0.09539414408491619
+  },
+  {
+   "start": 245.39,
+   "end": 254.61,
+   "text": "will be v of x squared, the final velocity, is equal to the initial velocity",
+   "avg_logprob": -0.09539414408491619
+  },
+  {
+   "start": 256.21,
+   "end": 269.21,
+   "text": "plus two a times delta x, which is the distance traveled. So, and this one I find is really",
+   "avg_logprob": -0.18465964648188377
+  },
+  {
+   "start": 269.21,
+   "end": 279.17,
+   "text": "useful and I use it a lot in questions. Sorry, my stylus here is tweaking a bit.",
+   "avg_logprob": -0.18465964648188377
+  },
+  {
+   "start": 281.44,
+   "end": 302.74,
+   "text": "Distance, acceleration, initial velocity, and final velocity. And these formulas are",
+   "avg_logprob": -0.07321799642616703
+  },
+  {
+   "start": 303.42,
+   "end": 310.9,
+   "text": "really, really helpful. So I would either go on a site that has these three formulas or I would",
+   "avg_logprob": -0.07321799642616703
+  },
+  {
+   "start": 310.9,
+   "end": 317.92,
+   "text": "screenshot these three formulas and keep it for further use. A good site I like to use",
+   "avg_logprob": -0.07321799642616703
+  },
+  {
+   "start": 317.92,
+   "end": 325.3,
+   "text": "is the AP Physics 1 formula sheet. Even if you're not taking Physics 1, it's really useful to have.",
+   "avg_logprob": -0.09314753290484934
+  },
+  {
+   "start": 327.75,
+   "end": 335.59,
+   "text": "And also, I think that you are going to keep on revisiting these",
+   "avg_logprob": -0.09314753290484934
+  },
+  {
+   "start": 336.41,
+   "end": 346.15,
+   "text": "types of problems. So these are basically like the holy trinity for physics. You will need these.",
+   "avg_logprob": -0.09314753290484934
+  },
+  {
+   "start": 347.61,
+   "end": 356.73,
+   "text": "And it's good to note that in all cases, unless it says gravity is neglected, there will be",
+   "avg_logprob": -0.21253592871567784
+  },
+  {
+   "start": 356.73,
+   "end": 362.35,
+   "text": "gravity. Usually on Earth's surface, for example, this question, you will see it's being a ball",
+   "avg_logprob": -0.21253592871567784
+  },
+  {
+   "start": 362.35,
+   "end": 368.69,
+   "text": "being kicked. And then you have to take into account for the gravity of Earth.",
+   "avg_logprob": -0.21253592871567784
+  },
+  {
+   "start": 369.51,
+   "end": 380.69,
+   "text": "The gravity is an acceleration vector. It is 9.81 meters per second down. So",
+   "avg_logprob": -0.09209569376342151
+  },
+  {
+   "start": 381.69,
+   "end": 394.39,
+   "text": "if this is a ball, this would be gravity. 9.81 meters per second down. And this is a term,",
+   "avg_logprob": -0.09209569376342151
+  },
+  {
+   "start": 395.29,
+   "end": 404.49,
+   "text": "it's a constant that you must memorize. It's Earth's gravity. And I feel like",
+   "avg_logprob": -0.14805564066258872
+  },
+  {
+   "start": 404.49,
+   "end": 409.69,
+   "text": "this right here is one of the most important things that you will ever learn.",
+   "avg_logprob": -0.14805564066258872
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.0,
+   "end": 4.68,
+   "text": "Alright, so we are going to now incorporate"
+  },
+  {
+   "start": 4.68,
+   "end": 7.34,
+   "text": "velocity into our kinematics questions."
+  },
+  {
+   "start": 8.9,
+   "end": 15.99,
+   "text": "Sorry, acceleration. So acceleration, as we"
+  },
+  {
+   "start": 15.99,
+   "end": 19.95,
+   "text": "know, is how fast velocity changes over time."
+  },
+  {
+   "start": 20.85,
+   "end": 23.59,
+   "text": "And before we even get started on acceleration"
+  },
+  {
+   "start": 23.59,
+   "end": 27.01,
+   "text": "questions, we already have some formulas that"
+  },
+  {
+   "start": 27.01,
+   "end": 30.29,
+   "text": "are pre-built that can help us with a lot of"
+  },
+  {
+   "start": 30.29,
+   "end": 33.91,
+   "text": "these physics questions. They're usually given"
+  },
+  {
+   "start": 33.91,
+   "end": 36.47,
+   "text": "to us or memorized on the exam."
+  },
+  {
+   "start": 36.93,
+   "end": 39.81,
+   "text": "For example, AP Physics 1 has the formula sheet"
+  },
+  {
+   "start": 39.81,
+   "end": 44.59,
+   "text": "for it, and these are the three key formulas."
+  },
+  {
+   "start": 45.61,
+   "end": 51.29,
+   "text": "I'm going to put it in red. First one is, whoa."
+  },
+  {
+   "start": 52.71,
+   "end": 58.17,
+   "text": "First one is v of x equals v of x-initial plus"
+  },
+  {
+   "start": 58.17,
+   "end": 62.07,
+   "text": "a of x times t."
+  },
+  {
+   "start": 63.21,
+   "end": 70.33,
+   "text": "So, what does this mean? Well, v of x is the"
+  },
+  {
+   "start": 70.33,
+   "end": 75.33,
+   "text": "velocity, v of x-initial is the initial velocity,"
+  },
+  {
+   "start": 77.96,
+   "end": 86.58,
+   "text": "initial velocity, a"
+  },
+  {
+   "start": 86.58,
+   "end": 89.46,
+   "text": "of x is the acceleration, acceleration is typically"
+  },
+  {
+   "start": 89.46,
+   "end": 96.24,
+   "text": "defined by a, and keep in mind that this is"
+  },
+  {
+   "start": 96.24,
+   "end": 99.06,
+   "text": "all in one direction. It's in the x direction"
+  },
+  {
+   "start": 99.06,
+   "end": 101.64,
+   "text": "or the y direction. If you have acceleration"
+  },
+  {
+   "start": 101.64,
+   "end": 105.0,
+   "text": "up and the initial velocity is going to somewhere"
+  },
+  {
+   "start": 105.0,
+   "end": 107.28,
+   "text": "like the right, this formula will not work."
+  },
+  {
+   "start": 108.28,
+   "end": 117.62,
+   "text": "And t is the time past, or delta-t, and"
+  },
+  {
+   "start": 117.62,
+   "end": 124.87,
+   "text": "v of x is the final velocity. So this"
+  },
+  {
+   "start": 124.87,
+   "end": 127.87,
+   "text": "is a really useful formula. When you have three"
+  },
+  {
+   "start": 127.87,
+   "end": 131.99,
+   "text": "values, for example, you have the final velocity,"
+  },
+  {
+   "start": 132.39,
+   "end": 134.93,
+   "text": "you have how long it accelerated for and how"
+  },
+  {
+   "start": 134.93,
+   "end": 137.43,
+   "text": "much it accelerated, you can easily find its"
+  },
+  {
+   "start": 137.43,
+   "end": 144.05,
+   "text": "initial velocity. Our second formula is going"
+  },
+  {
+   "start": 144.05,
+   "end": 148.53,
+   "text": "to be x equals x-initial."
+  },
+  {
+   "start": 149.11,
+   "end": 152.67,
+   "text": "By the way, this zero is naught, which represents"
+  },
+  {
+   "start": 152.67,
+   "end": 156.43,
+   "text": "the initial value. So this is the final x, this"
+  },
+  {
+   "start": 156.43,
+   "end": 159.71,
+   "text": "is the initial. This is the final velocity,"
+  },
+  {
+   "start": 159.91,
+   "end": 162.25,
+   "text": "this is its initial velocity before anything"
+  },
+  {
+   "start": 162.25,
+   "end": 167.99,
+   "text": "happened. Plus the initial velocity v x-initial"
+  },
+  {
+   "start": 167.99,
+   "end": 175.05,
+   "text": "times t plus one over two a"
+  },
+  {
+   "start": 175.05,
+   "end": 181.69,
+   "text": "times t squared. And this is the formula for"
+  },
+  {
+   "start": 181.69,
+   "end": 187.09,
+   "text": "distance. So x, as you know, is final distance."
+  },
+  {
+   "start": 190.83,
+   "end": 193.47,
+   "text": "x-initial is initial distance."
+  },
+  {
+   "start": 196.83,
+   "end": 200.11,
+   "text": "Sorry, it's final position, not distance. Final"
+  },
+  {
+   "start": 200.11,
+   "end": 210.82,
+   "text": "position, initial"
+  },
+  {
+   "start": 210.82,
+   "end": 214.56,
+   "text": "position. And all these, you know, velocity,"
+  },
+  {
+   "start": 214.9,
+   "end": 224.75,
+   "text": "time past, acceleration. And"
+  },
+  {
+   "start": 224.75,
+   "end": 229.61,
+   "text": "this is useful to find, calculate any three"
+  },
+  {
+   "start": 229.61,
+   "end": 233.23,
+   "text": "of these variables. Don't think that if it's"
+  },
+  {
+   "start": 233.23,
+   "end": 237.41,
+   "text": "pointing out x equals or v of x equals, you"
+  },
+  {
+   "start": 237.41,
+   "end": 239.81,
+   "text": "have to be solving for that. You can solve for"
+  },
+  {
+   "start": 239.81,
+   "end": 242.13,
+   "text": "any of these variables as long as you have the"
+  },
+  {
+   "start": 242.13,
+   "end": 249.51,
+   "text": "other ones. And the last formula will be v"
+  },
+  {
+   "start": 249.51,
+   "end": 253.33,
+   "text": "of x squared, the final velocity, is equal to"
+  },
+  {
+   "start": 253.33,
+   "end": 260.21,
+   "text": "the initial velocity plus two a times delta"
+  },
+  {
+   "start": 260.21,
+   "end": 263.57,
+   "text": "x, which is the distance traveled."
+  },
+  {
+   "start": 264.61,
+   "end": 270.03,
+   "text": "So, and this one I find is really useful and"
+  },
+  {
+   "start": 270.03,
+   "end": 274.07,
+   "text": "I use it a lot in questions."
+  },
+  {
+   "start": 275.61,
+   "end": 279.17,
+   "text": "Sorry, my stylus here is tweaking a bit."
+  },
+  {
+   "start": 281.44,
+   "end": 293.66,
+   "text": "Distance, acceleration, initial velocity, and"
+  },
+  {
+   "start": 293.66,
+   "end": 300.84,
+   "text": "final velocity. And these"
+  },
+  {
+   "start": 300.84,
+   "end": 304.58,
+   "text": "formulas are really, really helpful."
+  },
+  {
+   "start": 304.82,
+   "end": 309.1,
+   "text": "So I would either go on a site that has these"
+  },
+  {
+   "start": 309.1,
+   "end": 312.58,
+   "text": "three formulas or I would screenshot these three"
+  },
+  {
+   "start": 312.58,
+   "end": 315.9,
+   "text": "formulas and keep it for further use."
+  },
+  {
+   "start": 316.5,
+   "end": 319.96,
+   "text": "A good site I like to use is the AP Physics"
+  },
+  {
+   "start": 319.96,
+   "end": 323.12,
+   "text": "1 formula sheet. Even if you're not taking Physics"
+  },
+  {
+   "start": 323.12,
+   "end": 325.3,
+   "text": "1, it's really useful to have."
+  },
+  {
+   "start": 327.75,
+   "end": 333.89,
+   "text": "And also, I think that you are going to keep"
+  },
+  {
+   "start": 333.89,
+   "end": 337.69,
+   "text": "on revisiting these types of problems."
+  },
+  {
+   "start": 338.01,
+   "end": 344.31,
+   "text": "So these are basically like the holy trinity"
+  },
+  {
+   "start": 344.31,
+   "end": 348.91,
+   "text": "for physics. You will need these. And it's good"
+  },
+  {
+   "start": 348.91,
+   "end": 354.49,
+   "text": "to note that in all cases, unless it says gravity"
+  },
+  {
+   "start": 354.49,
+   "end": 357.17,
+   "text": "is neglected, there will be gravity."
+  },
+  {
+   "start": 357.45,
+   "end": 359.43,
+   "text": "Usually on Earth's surface, for example, this"
+  },
+  {
+   "start": 359.43,
+   "end": 363.23,
+   "text": "question, you will see it's being a ball being"
+  },
+  {
+   "start": 363.23,
+   "end": 367.23,
+   "text": "kicked. And then you have to take into account"
+  },
+  {
+   "start": 367.23,
+   "end": 373.05,
+   "text": "for the gravity of Earth. The gravity is an"
+  },
+  {
+   "start": 373.05,
+   "end": 379.33,
+   "text": "acceleration vector. It is 9.81 metres per second"
+  },
+  {
+   "start": 379.33,
+   "end": 384.83,
+   "text": "down. So if this is a ball, this would be gravity."
+  },
+  {
+   "start": 385.97,
+   "end": 390.49,
+   "text": "9.81 metres per second down."
+  },
+  {
+   "start": 391.65,
+   "end": 397.61,
+   "text": "And this is a term, it's a constant that you"
+  },
+  {
+   "start": 397.61,
+   "end": 399.85,
+   "text": "must memorize. It's Earth's gravity."
+  },
+  {
+   "start": 403.31,
+   "end": 407.65,
+   "text": "And I feel like this right here is one of the"
+  },
+  {
+   "start": 407.65,
+   "end": 409.69,
+   "text": "most important things that you will ever learn."
+  }
+ ],
+ "report": {
+  "key": "kinematics__motion_2d_part2",
+  "title": "2D Motion Analysis Part 2",
+  "topicKey": "kinematics",
+  "duration": 409.8133125,
+  "cues": 82,
+  "corrections": 8,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.21253592871567784,
+  "flagged": []
+ }
+}

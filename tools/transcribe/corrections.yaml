@@ -1,0 +1,85 @@
+# Systematic speech-to-text errors, fixed once here instead of 72 times by hand.
+#
+# Whisper is worst at exactly the words that carry the physics: dictated symbols,
+# named laws, and units. Everything below is a whole-word, case-insensitive
+# regex applied after transcription. Order matters — earlier rules run first.
+#
+# Rules of thumb when adding entries:
+#   - Only add a rule when the wrong form is UNAMBIGUOUS. "v naught" always
+#     means v-zero, so it is safe. Bare "k" could be a spring constant or
+#     Coulomb's constant, so it is not.
+#   - Prefer readable plain text over Unicode symbols where a student might be
+#     using a screen reader. We keep subscripts as ASCII-friendly forms.
+#   - Test with:  py -3.11 tools/transcribe/transcribe.py --check-corrections
+
+# --- named laws and constants (capitalisation + possessives) ---
+- pattern: '\bcoulombs law\b'
+  replace: "Coulomb's law"
+- pattern: '\bcoulomb''?s constant\b'
+  replace: "Coulomb's constant"
+- pattern: '\bcoulombic\b'
+  replace: 'Coulombic'
+# Normalise the spelling BEFORE the possessive rule, or "kirchoffs" would
+# become "Kirchhoffs" with no apostrophe.
+- pattern: '\bkirkhoff|\bkirchoff|\bkirchof\b'
+  replace: 'Kirchhoff'
+- pattern: '\bkirchhoffs\b'
+  replace: "Kirchhoff's"
+- pattern: '\bhookes law\b'
+  replace: "Hooke's law"
+- pattern: '\bnewtons (first|second|third) law\b'
+  replace: "Newton's \\1 law"
+- pattern: '\barchimedes( |''s )principle'
+  replace: "Archimedes' principle"
+- pattern: '\bbernoullis? (equation|principle)\b'
+  replace: "Bernoulli's \\1"
+- pattern: '\bohms law\b'
+  replace: "Ohm's law"
+- pattern: '\bplancks constant\b'
+  replace: "Planck's constant"
+- pattern: '\byoungs double slit\b'
+  replace: "Young's double-slit"
+
+# --- dictated subscripts and symbols ---
+- pattern: '\bv naught\b'
+  replace: 'v-initial'
+- pattern: '\bv nought\b'
+  replace: 'v-initial'
+- pattern: '\bv not\b'
+  replace: 'v-initial'
+- pattern: '\bx naught\b|\bx nought\b'
+  replace: 'x-initial'
+- pattern: '\bdelta (x|y|t|v|p)\b'
+  replace: 'delta-\1'
+- pattern: '\bv f\b|\bv final\b'
+  replace: 'v-final'
+
+# --- unit spellings: match the instructor's usage (metric, British) ---
+- pattern: '\bmeters\b'
+  replace: 'metres'
+- pattern: '\bmeter\b'
+  replace: 'metre'
+- pattern: '\bnanometers\b'
+  replace: 'nanometres'
+- pattern: '\bpicometers\b'
+  replace: 'picometres'
+- pattern: '\bkilometers\b'
+  replace: 'kilometres'
+- pattern: '\bcentimeters\b'
+  replace: 'centimetres'
+
+# --- common physics-term mishearings ---
+- pattern: '\bfree body diagram\b'
+  replace: 'free-body diagram'
+- pattern: '\bphoto electric\b'
+  replace: 'photoelectric'
+- pattern: '\bwave particle duality\b'
+  replace: 'wave-particle duality'
+- pattern: '\bbouyancy\b|\bbuoyency\b'
+  replace: 'buoyancy'
+- pattern: '\bcentripedal\b'
+  replace: 'centripetal'
+- pattern: '\bmoment of inertia\b'
+  replace: 'moment of inertia'
+- pattern: '\btotal internal refraction\b'
+  replace: 'total internal reflection'

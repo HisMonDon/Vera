@@ -1,0 +1,620 @@
+{
+ "lesson": {
+  "topicKey": "electrostatics",
+  "curriculumKey": "electric_field",
+  "title": "Electric Fields",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/Electrostatics/Unit%204%20Electric%20Field%20Lines.mp4",
+  "source": "electrostatics.dart"
+ },
+ "segments": [
+  {
+   "start": 1.23,
+   "end": 7.99,
+   "text": "In this video, we will be talking about electric field lines. So, what are electric field lines?",
+   "avg_logprob": -0.1865954217703446
+  },
+  {
+   "start": 8.95,
+   "end": 37.87,
+   "text": "Electric field lines is the electric charge in a certain direction. Electric field lines for positively charged objects point outside, while electric field charges for negatively go towards negatively charged objects. And in this case, we're going to be dealing with point charges, which are charges with no mass. They're just charges in space.",
+   "avg_logprob": -0.11216931979158032
+  },
+  {
+   "start": 38.53,
+   "end": 61.17,
+   "text": "When you put two charges or two point charges close together, the electric field will change depending on what type of charges they are. For example, if you put a positive and a negatively charged object together, the electric field lines will go away from the positively charged object towards the negatively charged object.",
+   "avg_logprob": -0.0873266172314447
+  },
+  {
+   "start": 61.17,
+   "end": 87.43,
+   "text": "If you put two positives together, they'll repel each other and they will go sort of like this. Electric field is quantifiable and it's given by the equation E equals k q over r squared, which is kind of like what we've learned before about Coulomb's law.",
+   "avg_logprob": -0.10928818751727382
+  },
+  {
+   "start": 87.43,
+   "end": 118.38,
+   "text": "But instead, this time there is only one charge. This is because this electric field measures the electric field of one single point charge instead of two different objects. So, electric fields are a really good way of depicting how charges interact with each other, and they can also be quantifiable in the diagram.",
+   "avg_logprob": -0.0864053359398475
+  },
+  {
+   "start": 119.84,
+   "end": 146.4,
+   "text": "Let's say we have a positive charge. Let's call this charge A. And in our diagram, let's say A only has five arrows going away from it. However, charge B, or six arrows, sure. However, charge B only has three arrows going away from it.",
+   "avg_logprob": -0.09467926693539466
+  },
+  {
+   "start": 149.28,
+   "end": 179.26,
+   "text": "And the number of arrows, or the density of the electric fields in the diagram, depict how strong the charge is. If the charge of A, qA, is equal to five, or let's say if the charge of A is equal to 10 Coulombs, then the charge of B would be equal to half that because the number of lines is half of A.",
+   "avg_logprob": -0.09441737286173381
+  },
+  {
+   "start": 179.28,
+   "end": 197.68,
+   "text": "So the charge of B is equal to five Coulombs. Same thing if it goes in the opposite direction. If C has 12 lines, one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve.",
+   "avg_logprob": -0.11588006679500852
+  },
+  {
+   "start": 197.68,
+   "end": 216.02,
+   "text": "If C has 12 lines, then what will its charge be? Well, 12 lines is double that of over here in A, so we know that our charge for C would be equal to double that of the charge of A, 20 Coulombs.",
+   "avg_logprob": -0.0783149191626796
+  },
+  {
+   "start": 218.92,
+   "end": 235.02,
+   "text": "Now, this can be used for anything, even if it's the opposite charge as well. For example, let's say charge D this time is negatively charged, but it has three arrows going towards it.",
+   "avg_logprob": -0.07748613215011099
+  },
+  {
+   "start": 236.34,
+   "end": 249.8,
+   "text": "Based off of A, if A has six arrows and its magnitude is 10, then the magnitude of this would be five. Even though the sign is different because it's negative, the magnitude would be five.",
+   "avg_logprob": -0.11207356110011062
+  },
+  {
+   "start": 250.0,
+   "end": 260.72,
+   "text": "So we base off the density of the electric field lines and the number of electric field lines we have to quantify our data.",
+   "avg_logprob": -0.11207356110011062
+  },
+  {
+   "start": 261.72,
+   "end": 288.59,
+   "text": "Let's have another example. Let's say we have a charge over here of positive five Coulombs, and we have another charge over here of negative 15 Coulombs.",
+   "avg_logprob": -0.11300134599993103
+  },
+  {
+   "start": 294.72,
+   "end": 311.8,
+   "text": "So how will we draw the electric field diagrams towards this? Well, we know that the electric field lines are going to be going towards the negative lines, but we don't know how many.",
+   "avg_logprob": -0.11074152380921119
+  },
+  {
+   "start": 312.88,
+   "end": 324.58,
+   "text": "And to do that, we could literally use what we've just learned, the density. So the negative one should have three times the amount of lines as this one.",
+   "avg_logprob": -0.08722284867575295
+  },
+  {
+   "start": 324.58,
+   "end": 339.9,
+   "text": "So let's just pretend that this one has four lines. I'm probably going to draw one of these lines to go away like that, and then another one like that.",
+   "avg_logprob": -0.10465268752513787
+  },
+  {
+   "start": 339.9,
+   "end": 361.28,
+   "text": "One, two, three, four, four. And now, since this has four lines, we'll need three times four is 12 lines for this one. We already have one here, so we need 11 more.",
+   "avg_logprob": -0.1648634234443307
+  },
+  {
+   "start": 361.28,
+   "end": 383.26,
+   "text": "So we could do one, two, one, two, three, four, five, six, seven, eight, nine, ten, eleven.",
+   "avg_logprob": -0.09540365548694835
+  },
+  {
+   "start": 384.02,
+   "end": 405.6,
+   "text": "And this would be a rough estimate of what this diagram would look like. So this has four lines, and this has four times three, or 15 over 12, negative 15 over five, sorry, equals 12 lines.",
+   "avg_logprob": -0.14270872777948776
+  },
+  {
+   "start": 406.68,
+   "end": 421.8,
+   "text": "So the number of lines really depends on just the ratio of the magnitude of the charges. And that's basically electric field lines and how you calculate them.",
+   "avg_logprob": -0.07697399438552137
+  },
+  {
+   "start": 422.7,
+   "end": 425.7,
+   "text": "Thank you for listening, and we'll see you in the next one. Bye!",
+   "avg_logprob": -0.07697399438552137
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.23,
+   "end": 3.93,
+   "text": "In this video, we will be talking about electric"
+  },
+  {
+   "start": 3.93,
+   "end": 7.99,
+   "text": "field lines. So, what are electric field lines?"
+  },
+  {
+   "start": 8.95,
+   "end": 15.65,
+   "text": "Electric field lines is the electric charge"
+  },
+  {
+   "start": 15.65,
+   "end": 19.57,
+   "text": "in a certain direction. Electric field lines"
+  },
+  {
+   "start": 19.57,
+   "end": 23.39,
+   "text": "for positively charged objects point outside,"
+  },
+  {
+   "start": 23.83,
+   "end": 26.63,
+   "text": "while electric field charges for negatively"
+  },
+  {
+   "start": 26.63,
+   "end": 29.83,
+   "text": "go towards negatively charged objects."
+  },
+  {
+   "start": 30.47,
+   "end": 32.11,
+   "text": "And in this case, we're going to be dealing"
+  },
+  {
+   "start": 32.11,
+   "end": 35.07,
+   "text": "with point charges, which are charges with no"
+  },
+  {
+   "start": 35.07,
+   "end": 37.87,
+   "text": "mass. They're just charges in space."
+  },
+  {
+   "start": 38.53,
+   "end": 43.01,
+   "text": "When you put two charges or two point charges"
+  },
+  {
+   "start": 43.01,
+   "end": 47.23,
+   "text": "close together, the electric field will change"
+  },
+  {
+   "start": 47.23,
+   "end": 49.87,
+   "text": "depending on what type of charges they are."
+  },
+  {
+   "start": 50.25,
+   "end": 53.21,
+   "text": "For example, if you put a positive and a negatively"
+  },
+  {
+   "start": 53.21,
+   "end": 56.21,
+   "text": "charged object together, the electric field"
+  },
+  {
+   "start": 56.21,
+   "end": 59.23,
+   "text": "lines will go away from the positively charged"
+  },
+  {
+   "start": 59.23,
+   "end": 61.17,
+   "text": "object towards the negatively charged object."
+  },
+  {
+   "start": 61.17,
+   "end": 65.35,
+   "text": "If you put two positives together, they'll repel"
+  },
+  {
+   "start": 65.35,
+   "end": 70.17,
+   "text": "each other and they will go sort of like this."
+  },
+  {
+   "start": 70.69,
+   "end": 74.63,
+   "text": "Electric field is quantifiable and it's given"
+  },
+  {
+   "start": 74.63,
+   "end": 81.63,
+   "text": "by the equation E equals k q over r"
+  },
+  {
+   "start": 81.63,
+   "end": 85.85,
+   "text": "squared, which is kind of like what we've learned"
+  },
+  {
+   "start": 85.85,
+   "end": 89.01,
+   "text": "before about Coulomb's law. But instead, this"
+  },
+  {
+   "start": 89.01,
+   "end": 92.31,
+   "text": "time there is only one charge. This is because"
+  },
+  {
+   "start": 92.31,
+   "end": 96.51,
+   "text": "this electric field measures the electric field"
+  },
+  {
+   "start": 96.51,
+   "end": 100.43,
+   "text": "of one single point charge instead of two different"
+  },
+  {
+   "start": 100.43,
+   "end": 107.5,
+   "text": "objects. So, electric"
+  },
+  {
+   "start": 107.5,
+   "end": 111.72,
+   "text": "fields are a really good way of depicting how"
+  },
+  {
+   "start": 111.72,
+   "end": 116.02,
+   "text": "charges interact with each other, and they can"
+  },
+  {
+   "start": 116.02,
+   "end": 118.38,
+   "text": "also be quantifiable in the diagram."
+  },
+  {
+   "start": 119.84,
+   "end": 122.1,
+   "text": "Let's say we have a positive charge."
+  },
+  {
+   "start": 122.28,
+   "end": 127.38,
+   "text": "Let's call this charge A. And in our diagram,"
+  },
+  {
+   "start": 127.58,
+   "end": 133.34,
+   "text": "let's say A only has five arrows going away"
+  },
+  {
+   "start": 133.34,
+   "end": 140.1,
+   "text": "from it. However, charge B, or six arrows, sure."
+  },
+  {
+   "start": 141.08,
+   "end": 145.54,
+   "text": "However, charge B only has three arrows going"
+  },
+  {
+   "start": 145.54,
+   "end": 152.68,
+   "text": "away from it. And the number of arrows, or the"
+  },
+  {
+   "start": 152.68,
+   "end": 156.94,
+   "text": "density of the electric fields in the diagram,"
+  },
+  {
+   "start": 157.2,
+   "end": 159.68,
+   "text": "depict how strong the charge is."
+  },
+  {
+   "start": 160.38,
+   "end": 168.12,
+   "text": "If the charge of A, qA, is equal to five,"
+  },
+  {
+   "start": 169.16,
+   "end": 172.22,
+   "text": "or let's say if the charge of A is equal to"
+  },
+  {
+   "start": 172.22,
+   "end": 176.28,
+   "text": "10 Coulombs, then the charge of B would be equal"
+  },
+  {
+   "start": 176.28,
+   "end": 178.62,
+   "text": "to half that because the number of lines is"
+  },
+  {
+   "start": 178.62,
+   "end": 183.12,
+   "text": "half of A. So the charge of B is equal to five"
+  },
+  {
+   "start": 183.12,
+   "end": 186.48,
+   "text": "Coulombs. Same thing if it goes in the opposite"
+  },
+  {
+   "start": 186.48,
+   "end": 191.96,
+   "text": "direction. If C has 12 lines, one, two, three,"
+  },
+  {
+   "start": 191.96,
+   "end": 197.06,
+   "text": "four, five, six, seven, eight, nine, ten, eleven,"
+  },
+  {
+   "start": 197.52,
+   "end": 201.02,
+   "text": "twelve. If C has 12 lines, then what will its"
+  },
+  {
+   "start": 201.02,
+   "end": 204.8,
+   "text": "charge be? Well, 12 lines is double that of"
+  },
+  {
+   "start": 204.8,
+   "end": 210.38,
+   "text": "over here in A, so we know that our charge for"
+  },
+  {
+   "start": 210.38,
+   "end": 213.82,
+   "text": "C would be equal to double that of the charge"
+  },
+  {
+   "start": 213.82,
+   "end": 216.02,
+   "text": "of A, 20 Coulombs."
+  },
+  {
+   "start": 218.92,
+   "end": 224.96,
+   "text": "Now, this can be used for anything, even if"
+  },
+  {
+   "start": 224.96,
+   "end": 227.02,
+   "text": "it's the opposite charge as well."
+  },
+  {
+   "start": 227.2,
+   "end": 229.66,
+   "text": "For example, let's say charge D this time is"
+  },
+  {
+   "start": 229.66,
+   "end": 233.78,
+   "text": "negatively charged, but it has three arrows"
+  },
+  {
+   "start": 233.78,
+   "end": 239.56,
+   "text": "going towards it. Based off of A, if A has six"
+  },
+  {
+   "start": 239.56,
+   "end": 243.54,
+   "text": "arrows and its magnitude is 10, then the magnitude"
+  },
+  {
+   "start": 243.54,
+   "end": 245.82,
+   "text": "of this would be five. Even though the sign"
+  },
+  {
+   "start": 245.82,
+   "end": 248.94,
+   "text": "is different because it's negative, the magnitude"
+  },
+  {
+   "start": 248.94,
+   "end": 253.1,
+   "text": "would be five. So we base off the density of"
+  },
+  {
+   "start": 253.1,
+   "end": 257.84,
+   "text": "the electric field lines and the number of electric"
+  },
+  {
+   "start": 257.84,
+   "end": 260.72,
+   "text": "field lines we have to quantify our data."
+  },
+  {
+   "start": 261.72,
+   "end": 263.98,
+   "text": "Let's have another example."
+  },
+  {
+   "start": 265.08,
+   "end": 272.59,
+   "text": "Let's say we have a charge over here"
+  },
+  {
+   "start": 273.87,
+   "end": 281.61,
+   "text": "of positive five Coulombs, and"
+  },
+  {
+   "start": 281.61,
+   "end": 286.89,
+   "text": "we have another charge over here of negative"
+  },
+  {
+   "start": 286.89,
+   "end": 295.4,
+   "text": "15 Coulombs. So"
+  },
+  {
+   "start": 295.4,
+   "end": 300.74,
+   "text": "how will we draw the electric field diagrams"
+  },
+  {
+   "start": 300.74,
+   "end": 305.56,
+   "text": "towards this? Well, we know that the electric"
+  },
+  {
+   "start": 305.56,
+   "end": 308.34,
+   "text": "field lines are going to be going towards the"
+  },
+  {
+   "start": 308.34,
+   "end": 311.8,
+   "text": "negative lines, but we don't know how many."
+  },
+  {
+   "start": 312.88,
+   "end": 316.52,
+   "text": "And to do that, we could literally use what"
+  },
+  {
+   "start": 316.52,
+   "end": 319.6,
+   "text": "we've just learned, the density. So the negative"
+  },
+  {
+   "start": 319.6,
+   "end": 323.74,
+   "text": "one should have three times the amount of lines"
+  },
+  {
+   "start": 323.74,
+   "end": 328.06,
+   "text": "as this one. So let's just pretend that this"
+  },
+  {
+   "start": 328.06,
+   "end": 331.62,
+   "text": "one has four lines."
+  },
+  {
+   "start": 332.94,
+   "end": 335.86,
+   "text": "I'm probably going to draw one of these lines"
+  },
+  {
+   "start": 335.86,
+   "end": 339.5,
+   "text": "to go away like that, and then another one like"
+  },
+  {
+   "start": 339.5,
+   "end": 346.51,
+   "text": "that. One, two, three, four, four."
+  },
+  {
+   "start": 350.44,
+   "end": 355.84,
+   "text": "And now, since this has four lines, we'll need"
+  },
+  {
+   "start": 355.84,
+   "end": 358.7,
+   "text": "three times four is 12 lines for this one."
+  },
+  {
+   "start": 359.04,
+   "end": 361.28,
+   "text": "We already have one here, so we need 11 more."
+  },
+  {
+   "start": 361.28,
+   "end": 369.74,
+   "text": "So we could do one, two, one, two,"
+  },
+  {
+   "start": 369.88,
+   "end": 377.74,
+   "text": "three, four, five, six, seven,"
+  },
+  {
+   "start": 377.8,
+   "end": 383.26,
+   "text": "eight, nine, ten, eleven."
+  },
+  {
+   "start": 384.02,
+   "end": 389.26,
+   "text": "And this would be a rough estimate of what this"
+  },
+  {
+   "start": 389.26,
+   "end": 393.16,
+   "text": "diagram would look like. So this has four lines,"
+  },
+  {
+   "start": 394.24,
+   "end": 399.46,
+   "text": "and this has four times three, or 15 over 12,"
+  },
+  {
+   "start": 400.74,
+   "end": 405.6,
+   "text": "negative 15 over five, sorry, equals 12 lines."
+  },
+  {
+   "start": 406.68,
+   "end": 410.98,
+   "text": "So the number of lines really depends on just"
+  },
+  {
+   "start": 410.98,
+   "end": 416.0,
+   "text": "the ratio of the magnitude of the charges."
+  },
+  {
+   "start": 416.9,
+   "end": 420.84,
+   "text": "And that's basically electric field lines and"
+  },
+  {
+   "start": 420.84,
+   "end": 423.52,
+   "text": "how you calculate them. Thank you for listening,"
+  },
+  {
+   "start": 423.98,
+   "end": 425.7,
+   "text": "and we'll see you in the next one. Bye!"
+  }
+ ],
+ "report": {
+  "key": "electrostatics__electric_field",
+  "title": "Electric Fields",
+  "topicKey": "electrostatics",
+  "duration": 426.5173125,
+  "cues": 94,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.1865954217703446,
+  "flagged": []
+ }
+}

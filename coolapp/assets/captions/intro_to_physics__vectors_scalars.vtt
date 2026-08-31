@@ -1,0 +1,372 @@
+WEBVTT
+NOTE Vectors and Scalars
+
+1
+00:00:01.490 --> 00:00:04.450
+Before we get started into real physics, I
+would
+
+2
+00:00:04.450 --> 00:00:07.610
+like to review some basic concepts that
+are
+
+3
+00:00:07.610 --> 00:00:11.350
+really helpful to know in order to do
+physics
+
+4
+00:00:11.350 --> 00:00:15.310
+well. First of all, we would go over
+vectors
+
+5
+00:00:15.310 --> 00:00:19.830
+and scalars. So what are vectors and
+scalars?
+
+6
+00:00:20.550 --> 00:00:23.050
+Vectors and scalars are considered
+physical
+
+7
+00:00:23.050 --> 00:00:27.550
+quantities. And that means that they
+describe
+
+8
+00:00:27.550 --> 00:00:33.630
+measurable quantities of the physical
+world.
+
+9
+00:00:34.030 --> 00:00:39.170
+For example, speed or distance.
+
+10
+00:00:42.980 --> 00:00:45.720
+And these physical quantities fall into
+two
+
+11
+00:00:45.720 --> 00:00:48.280
+different sections, vectors and scalars.
+
+12
+00:00:49.780 --> 00:00:52.620
+What's the difference? First of all,
+scalars.
+
+13
+00:00:54.340 --> 00:00:57.080
+A scalar is a quantity that is completely
+described
+
+14
+00:00:57.080 --> 00:01:02.580
+by magnitude only. So it has a size, but
+there
+
+15
+00:01:02.580 --> 00:01:05.000
+is no direction associated with it.
+
+16
+00:01:07.220 --> 00:01:10.760
+On the other hand, vectors have both a
+magnitude
+
+17
+00:01:10.760 --> 00:01:17.690
+and a direction. An example of the
+difference
+
+18
+00:01:17.690 --> 00:01:23.230
+between these two is scalars could be
+distance,
+
+19
+00:01:24.610 --> 00:01:28.490
+while vectors, an example, would be
+displacement.
+
+20
+00:01:32.420 --> 00:01:33.980
+Now, what's the difference between
+distance
+
+21
+00:01:33.980 --> 00:01:37.960
+and displacement? Let's say we want to get
+from
+
+22
+00:01:37.960 --> 00:01:40.260
+point A to point B on a map.
+
+23
+00:01:41.920 --> 00:01:44.540
+The distance travelled is, let's say you
+took
+
+24
+00:01:44.540 --> 00:01:51.580
+a curvy trail. The distance travelled will
+be
+
+25
+00:01:51.580 --> 00:01:55.340
+your total distance travelled.
+
+26
+00:01:55.520 --> 00:01:58.400
+If you were to take the trail and you were
+to
+
+27
+00:01:58.400 --> 00:02:01.960
+start a GPS or a workout timer, that would
+be
+
+28
+00:02:01.960 --> 00:02:05.700
+your distance. However, your displacement
+only
+
+29
+00:02:05.700 --> 00:02:09.520
+takes into account the starting point and
+the
+
+30
+00:02:09.520 --> 00:02:11.900
+ending point because it has to have a
+direction.
+
+31
+00:02:12.500 --> 00:02:15.980
+So the displacement doesn't matter how,
+what
+
+32
+00:02:15.980 --> 00:02:19.260
+trail you took. The displacement is just
+the
+
+33
+00:02:19.260 --> 00:02:22.000
+distance, the closest distance between A
+and
+
+34
+00:02:22.000 --> 00:02:27.080
+B. So distance could, you could go
+anywhere
+
+35
+00:02:27.080 --> 00:02:29.900
+and it would vary. But if you start from
+this
+
+36
+00:02:29.900 --> 00:02:32.000
+point and end at that point, the
+displacement
+
+37
+00:02:32.000 --> 00:02:35.740
+is always the same. Another example of a
+scalar
+
+38
+00:02:35.740 --> 00:02:40.720
+versus quantity would be speed. Speed is a
+scalar
+
+39
+00:02:40.720 --> 00:02:45.280
+quantity, while velocity is a vector.
+
+40
+00:02:46.280 --> 00:02:48.380
+This is because velocity has a direction.
+For
+
+41
+00:02:48.380 --> 00:02:52.220
+example, if you have a car going to the
+right
+
+42
+00:02:52.220 --> 00:02:58.880
+at 3 metres per second, then its speed
+would
+
+43
+00:02:58.880 --> 00:03:02.920
+be equal to 3 metres per second.
+
+44
+00:03:07.970 --> 00:03:10.930
+However, its velocity must have a
+direction.
+
+45
+00:03:11.670 --> 00:03:15.810
+Since it's a vector, you would say 3
+metres
+
+46
+00:03:15.810 --> 00:03:18.370
+per second to the right. And directions
+are
+
+47
+00:03:18.370 --> 00:03:22.250
+usually depicted by square brackets, like
+over
+
+48
+00:03:22.250 --> 00:03:27.090
+here. Another really useful thing to know,
+and
+
+49
+00:03:27.090 --> 00:03:30.290
+it also appears a lot in IB Math as well,
+is
+
+50
+00:03:30.290 --> 00:03:36.530
+compasses. Compasses are used to depict
+direction.
+
+51
+00:03:36.770 --> 00:03:41.390
+For example, this would be north, east,
+south,
+
+52
+00:03:41.390 --> 00:03:45.610
+west. There are two types of things you
+can
+
+53
+00:03:45.610 --> 00:03:52.930
+do for compasses. Bearings and normal
+direction.
+
+54
+00:03:56.720 --> 00:04:01.720
+Bearings are angles relative to the north
+axis.
+
+55
+00:04:02.320 --> 00:04:08.900
+So for example, if a car had a velocity of
+3
+
+56
+00:04:08.900 --> 00:04:13.280
+metres per second with an angle of let's
+say
+
+57
+00:04:13.280 --> 00:04:16.720
+30 degrees, the bearing would be relative
+to
+
+58
+00:04:16.720 --> 00:04:21.180
+north. So the bearing would be like this.
+
+59
+00:04:22.000 --> 00:04:24.340
+And that would be 120 degrees.
+
+60
+00:04:25.880 --> 00:04:29.000
+That would be the bearing. However, normal
+direction
+
+61
+00:04:29.000 --> 00:04:31.780
+is when you actually state the axis.
+
+62
+00:04:32.540 --> 00:04:35.540
+So same example over here. If a car was
+going
+
+63
+00:04:35.540 --> 00:04:39.000
+3 metres per second over here and this was
+30
+
+64
+00:04:39.000 --> 00:04:43.180
+degrees, well you know that this is east
+and
+
+65
+00:04:43.180 --> 00:04:47.160
+then this is south. So since it's 30
+degrees
+
+66
+00:04:47.160 --> 00:04:49.880
+to the east, you would say that it's going
+3
+
+67
+00:04:49.880 --> 00:04:54.820
+metres per second east 30 degrees south.
+
+68
+00:04:55.620 --> 00:04:59.300
+So 30 degrees is relative to the east axis
+and
+
+69
+00:04:59.300 --> 00:05:02.460
+it's facing the south direction as well.
+
+70
+00:05:03.400 --> 00:05:06.260
+And usually in physics, we use normal
+direction
+
+71
+00:05:06.260 --> 00:05:08.680
+over bearings. Bearings is more of math.
+
+72
+00:05:09.780 --> 00:05:11.980
+That's it for the first video.
+
+73
+00:05:12.660 --> 00:05:13.740
+Basically, it's just a simple example.
+This
+
+74
+00:05:13.740 --> 00:05:17.100
+is a starter to get you familiar with
+vectors
+
+75
+00:05:17.100 --> 00:05:21.540
+and scalars and how to answer your
+questions
+
+76
+00:05:21.540 --> 00:05:25.140
+in physics. Thank you for watching and I
+hope
+
+77
+00:05:25.140 --> 00:05:25.500
+you enjoyed.

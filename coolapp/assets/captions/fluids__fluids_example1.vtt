@@ -1,0 +1,502 @@
+WEBVTT
+NOTE Fluid Statics and Dynamics Examples
+
+1
+00:00:00.850 --> 00:00:04.210
+Here we have question 4. In scenario 1, a
+swimmer
+
+2
+00:00:04.210 --> 00:00:07.050
+holds a block of mass m at rest in a tank
+of
+
+3
+00:00:07.050 --> 00:00:09.950
+fresh water with density rho 1 as shown in
+figure
+
+4
+00:00:09.950 --> 00:00:13.630
+1. The block is released from rest and
+accelerates
+
+5
+00:00:13.630 --> 00:00:16.210
+upwards with an initial acceleration a.
+
+6
+00:00:16.770 --> 00:00:19.810
+So that means there would be a net force
+going
+
+7
+00:00:19.810 --> 00:00:23.510
+upwards. In scenario 2, the swimmer holds
+the
+
+8
+00:00:23.510 --> 00:00:26.550
+same block at rest in a tank of salt water
+where
+
+9
+00:00:26.550 --> 00:00:29.930
+density rho 2 is bigger than rho 1.
+
+10
+00:00:30.210 --> 00:00:32.090
+The swimmer again releases the block from
+rest
+
+11
+00:00:32.090 --> 00:00:34.350
+and the block accelerates upwards with an
+initial
+
+12
+00:00:34.350 --> 00:00:37.830
+acceleration a2. All frictional forces are
+negligible.
+
+13
+00:00:40.890 --> 00:00:44.450
+Indicate whether a1 is greater, equal, or
+less
+
+14
+00:00:44.450 --> 00:00:46.930
+than a2 by writing one of the following in
+your
+
+15
+00:00:46.930 --> 00:00:49.410
+answer booklet. Justify your answer in
+terms
+
+16
+00:00:49.410 --> 00:00:51.670
+of all forces exerted on the block for
+each
+
+17
+00:00:51.670 --> 00:00:55.050
+scenario. Use qualitative reasoning beyond
+referencing
+
+18
+00:00:55.050 --> 00:01:02.650
+equations. Okay, so make sure that in
+
+19
+00:01:02.650 --> 00:01:04.730
+these types of questions you do not
+reference
+
+20
+00:01:04.730 --> 00:01:07.170
+equations. You have to use reasoning.
+
+21
+00:01:08.130 --> 00:01:13.930
+In a pool with a greater density, that
+means
+
+22
+00:01:13.930 --> 00:01:18.370
+that there will be more molecules per unit
+volume.
+
+23
+00:01:19.250 --> 00:01:25.010
+So a mass, a block in that pool, there
+will
+
+24
+00:01:25.010 --> 00:01:29.730
+be more molecules below it pushing it up,
+which
+
+25
+00:01:29.730 --> 00:01:32.510
+means that it will have a higher pressure
+below
+
+26
+00:01:32.510 --> 00:01:35.450
+it, which leads to a higher force upwards.
+
+27
+00:01:35.450 --> 00:01:40.970
+So therefore, the acceleration a2 should
+be
+
+28
+00:01:40.970 --> 00:01:43.990
+bigger than a1. So that would be your
+answer.
+
+29
+00:01:43.990 --> 00:02:03.310
+And what you would say is that a1
+
+30
+00:02:03.310 --> 00:02:11.110
+is less than a2 because in
+
+31
+00:02:11.110 --> 00:02:18.110
+a1, in the first scenario, the
+
+32
+00:02:18.110 --> 00:02:25.980
+density of the
+
+33
+00:02:25.980 --> 00:02:32.080
+liquid, of the water, is lower than that.
+
+34
+00:02:32.080 --> 00:02:39.680
+Of the second scenario, so there will be
+less
+
+35
+00:02:39.680 --> 00:02:47.320
+molecules exerting pressure underneath the
+
+36
+00:02:47.320 --> 00:02:54.680
+first block, leading
+
+37
+00:02:54.680 --> 00:03:01.580
+to a lower force and a lower acceleration.
+
+38
+00:03:04.360 --> 00:03:07.420
+And that's all you really need to write,
+considering
+
+39
+00:03:07.420 --> 00:03:11.160
+the general case where a block of mass m
+and
+
+40
+00:03:11.160 --> 00:03:13.580
+a volume v is completely submerged in the
+fluid
+
+41
+00:03:13.580 --> 00:03:15.920
+of density rho. Starting with Newton's
+second
+
+42
+00:03:15.920 --> 00:03:19.520
+law, just derive an expression for the
+initial
+
+43
+00:03:19.520 --> 00:03:22.460
+upward acceleration a of the block where
+the
+
+44
+00:03:22.460 --> 00:03:25.640
+block is released from rest. Express your
+answer
+
+45
+00:03:25.640 --> 00:03:28.740
+in terms of m, v, rho, and physical
+constants
+
+46
+00:03:28.740 --> 00:03:32.660
+as appropriate. Begin your derivation by
+writing
+
+47
+00:03:32.660 --> 00:03:36.240
+a fundamental physics principle or an
+equation
+
+48
+00:03:36.240 --> 00:03:38.880
+from the reference information.
+
+49
+00:03:40.420 --> 00:03:46.040
+So first of all, what is Newton's second
+law
+
+50
+00:03:46.040 --> 00:03:48.200
+of motion? Well, it states that
+acceleration
+
+51
+00:03:48.200 --> 00:03:51.560
+is proportional to the net force.
+
+52
+00:03:52.560 --> 00:03:59.320
+And we need to derive an equation for the
+term
+
+53
+00:03:59.320 --> 00:04:03.260
+of acceleration. So Newton's second law,
+the
+
+54
+00:04:03.260 --> 00:04:11.340
+equation for that would be f net
+
+55
+00:04:11.340 --> 00:04:16.380
+equals mass times the net acceleration.
+
+56
+00:04:16.380 --> 00:04:21.940
+So the acceleration would then be a equals
+f
+
+57
+00:04:21.940 --> 00:04:24.700
+net over m.
+
+58
+00:04:25.760 --> 00:04:28.440
+Now what would be the net force?
+
+59
+00:04:28.920 --> 00:04:31.220
+Well, to do that, we'll have to draw a
+free
+
+60
+00:04:31.220 --> 00:04:37.640
+body diagram. Here would be my mass, and
+there
+
+61
+00:04:37.640 --> 00:04:40.780
+would always be gravity, so this would be
+fg
+
+62
+00:04:40.780 --> 00:04:45.260
+or mg. And the only other force would be
+the
+
+63
+00:04:45.260 --> 00:04:47.620
+buoyant force. Since the block is
+accelerating
+
+64
+00:04:47.620 --> 00:04:49.500
+upwards, that means the buoyant force
+should
+
+65
+00:04:49.500 --> 00:04:51.980
+have a larger magnitude than the gravity
+force.
+
+66
+00:04:52.440 --> 00:04:58.220
+So I would call that fb. So now we can do
+the
+
+67
+00:04:58.220 --> 00:05:01.080
+sum of all forces, the net force would be
+equal
+
+68
+00:05:01.080 --> 00:05:04.340
+to, let's call the upwards direction the
+positive
+
+69
+00:05:04.340 --> 00:05:06.660
+direction and the downwards direction the
+negative
+
+70
+00:05:06.660 --> 00:05:12.180
+direction. So it would be fb minus fg.
+
+71
+00:05:13.040 --> 00:05:18.380
+We could put that in here, a equals fb
+minus
+
+72
+00:05:18.380 --> 00:05:20.780
+fg over m.
+
+73
+00:05:22.180 --> 00:05:26.180
+And a would be equal to, well, what is the
+force
+
+74
+00:05:26.180 --> 00:05:28.940
+for buoyancy? Let me just pull that up.
+
+75
+00:05:29.940 --> 00:05:36.940
+The force for buoyancy is rho vg, where
+rho
+
+76
+00:05:36.940 --> 00:05:40.760
+is the density of the fluid, v is the
+volume
+
+77
+00:05:40.760 --> 00:05:44.640
+displaced, and g is the acceleration due
+to
+
+78
+00:05:44.640 --> 00:05:48.380
+gravity, and fg is simply just mass times
+gravity
+
+79
+00:05:48.380 --> 00:05:57.420
+over m. And I would just factor out g, so
+
+80
+00:05:57.420 --> 00:06:04.820
+g times rho v minus m over
+
+81
+00:06:04.820 --> 00:06:11.300
+m, and that would be your net acceleration
+initially.
+
+82
+00:06:12.820 --> 00:06:15.920
+Indicate whether the expression for the
+acceleration
+
+83
+00:06:15.920 --> 00:06:19.900
+a you derived in part b is or is not
+consistent
+
+84
+00:06:19.900 --> 00:06:22.860
+with the claim made in part a, and justify
+your
+
+85
+00:06:22.860 --> 00:06:26.700
+answer referencing your equation. Okay,
+this
+
+86
+00:06:26.700 --> 00:06:31.280
+one is simple, because we know that if
+rho,
+
+87
+00:06:31.500 --> 00:06:35.540
+the density increases, then the
+acceleration
+
+88
+00:06:35.540 --> 00:06:38.800
+increases, because the acceleration is
+proportional
+
+89
+00:06:38.800 --> 00:06:42.800
+to rho v minus m, and if rho increases,
+then
+
+90
+00:06:42.800 --> 00:06:47.260
+rho v minus m increases. So, we would just
+write
+
+91
+00:06:47.260 --> 00:06:59.790
+exactly what I said. Okay, first
+
+92
+00:06:59.790 --> 00:07:06.170
+of all, you would say yes, it is
+consistent
+
+93
+00:07:06.170 --> 00:07:09.610
+with my claim in part a.
+
+94
+00:07:13.920 --> 00:07:21.020
+Acceleration in my formula is proportional
+to
+
+95
+00:07:22.490 --> 00:07:26.350
+rho, I'm just going to say p, v minus m.
+
+96
+00:07:27.920 --> 00:07:35.260
+If the density, rho, increases, then
+
+97
+00:07:35.260 --> 00:07:42.300
+p, v minus m increases, which leads to
+
+98
+00:07:42.300 --> 00:07:46.940
+a higher acceleration, and that's really
+all
+
+99
+00:07:46.940 --> 00:07:49.720
+you need to write. And also, I would
+mention
+
+100
+00:07:49.720 --> 00:07:57.460
+that gravity is constant in both cases,
+the
+
+101
+00:07:57.460 --> 00:08:03.160
+volume is constant in both cases, and the
+mass
+
+102
+00:08:03.160 --> 00:08:07.780
+of the block is also constant in both
+cases.
+
+103
+00:08:07.780 --> 00:08:11.100
+And that would be all you would need to
+write,
+
+104
+00:08:11.680 --> 00:08:16.700
+and yeah, that is what I think are the
+correct
+
+105
+00:08:16.700 --> 00:08:22.580
+answers for question 4 of the AP 2025
+Physics
+
+106
+00:08:22.580 --> 00:08:24.420
+I exam. Thank you for watching.

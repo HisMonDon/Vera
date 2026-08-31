@@ -1,0 +1,475 @@
+{
+ "lesson": {
+  "topicKey": "intro_to_physics",
+  "curriculumKey": "vectors_scalars",
+  "title": "Vectors and Scalars",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/intro_to_physics/Unit%201%20Vectors%20and%20Scalars.mp4",
+  "source": "intro_to_physics.dart"
+ },
+ "segments": [
+  {
+   "start": 1.49,
+   "end": 29.93,
+   "text": "Before we get started into real physics, I would like to review some basic concepts that are really helpful to know in order to do physics well. First of all, we would go over vectors and scalars. So what are vectors and scalars? Vectors and scalars are considered physical quantities. And that means that they describe measurable quantities",
+   "avg_logprob": -0.07876343500446266
+  },
+  {
+   "start": 29.93,
+   "end": 59.08,
+   "text": "of the physical world. For example, speed or distance. And these physical quantities fall into two different sections, vectors and scalars. What's the difference? First of all, scalars. A scalar is a quantity that is completely described by magnitude only.",
+   "avg_logprob": -0.09265876845879988
+  },
+  {
+   "start": 59.08,
+   "end": 94.76,
+   "text": "So it has a size, but there is no direction associated with it. On the other hand, vectors have both a magnitude and a direction. An example of the difference between these two is scalars could be distance, while vectors, an example, would be displacement. Now, what's the difference between distance and displacement?",
+   "avg_logprob": -0.0752125208947196
+  },
+  {
+   "start": 94.76,
+   "end": 127.08,
+   "text": "Let's say we want to get from point A to point B on a map. The distance travelled is, let's say you took a curvy trail. The distance travelled will be your total distance travelled. If you were to take the trail and you were to start a GPS or a workout timer, that would be your distance. However, your displacement only takes into account",
+   "avg_logprob": -0.06633911001217829
+  },
+  {
+   "start": 127.86,
+   "end": 157.06,
+   "text": "the starting point and the ending point because it has to have a direction. So the displacement doesn't matter how, what trail you took. The displacement is just the distance, the closest distance between A and B. So distance could, you could go anywhere and it would vary. But if you start from this point and end at that point, the displacement is always the same. Another example of a scalar versus quantity would be",
+   "avg_logprob": -0.1052681387994777
+  },
+  {
+   "start": 157.06,
+   "end": 190.93,
+   "text": "speed. Speed is a scalar quantity, while velocity is a vector. This is because velocity has a direction. For example, if you have a car going to the right at 3 meters per second, then its speed would be equal to 3 meters per second. However, its velocity must have a direction.",
+   "avg_logprob": -0.05671746167354286
+  },
+  {
+   "start": 191.67,
+   "end": 220.63,
+   "text": "Since it's a vector, you would say 3 meters per second to the right. And directions are usually depicted by square brackets, like over here. Another really useful thing to know, and it also appears a lot in IB Math as well, is compasses. Compasses are used to depict direction. For example, this would be north, east,",
+   "avg_logprob": -0.11221692333482716
+  },
+  {
+   "start": 220.63,
+   "end": 253.78,
+   "text": "south, west. There are two types of things you can do for compasses. Bearings and normal direction. Bearings are angles relative to the north axis. So for example, if a car had a velocity of 3 meters per second with an angle of let's say 30 degrees,",
+   "avg_logprob": -0.10264926093320052
+  },
+  {
+   "start": 254.68,
+   "end": 283.76,
+   "text": "the bearing would be relative to north. So the bearing would be like this. And that would be 120 degrees. That would be the bearing. However, normal direction is when you actually state the axis. So same example over here. If a car was going 3 meters per second over here and this was 30 degrees, well you know that this is east and then this is south.",
+   "avg_logprob": -0.09895769893368588
+  },
+  {
+   "start": 283.76,
+   "end": 313.74,
+   "text": "So since it's 30 degrees to the east, you would say that it's going 3 meters per second east 30 degrees south. So 30 degrees is relative to the east axis and it's facing the south direction as well. And usually in physics, we use normal direction over bearings. Bearings is more of math. That's it for the first video. Basically, it's just a simple example.",
+   "avg_logprob": -0.14247111275971655
+  },
+  {
+   "start": 313.74,
+   "end": 325.5,
+   "text": "This is a starter to get you familiar with vectors and scalars and how to answer your questions in physics. Thank you for watching and I hope you enjoyed.",
+   "avg_logprob": -0.1044631404536111
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.49,
+   "end": 4.45,
+   "text": "Before we get started into real physics, I would"
+  },
+  {
+   "start": 4.45,
+   "end": 7.61,
+   "text": "like to review some basic concepts that are"
+  },
+  {
+   "start": 7.61,
+   "end": 11.35,
+   "text": "really helpful to know in order to do physics"
+  },
+  {
+   "start": 11.35,
+   "end": 15.31,
+   "text": "well. First of all, we would go over vectors"
+  },
+  {
+   "start": 15.31,
+   "end": 19.83,
+   "text": "and scalars. So what are vectors and scalars?"
+  },
+  {
+   "start": 20.55,
+   "end": 23.05,
+   "text": "Vectors and scalars are considered physical"
+  },
+  {
+   "start": 23.05,
+   "end": 27.55,
+   "text": "quantities. And that means that they describe"
+  },
+  {
+   "start": 27.55,
+   "end": 33.63,
+   "text": "measurable quantities of the physical world."
+  },
+  {
+   "start": 34.03,
+   "end": 39.17,
+   "text": "For example, speed or distance."
+  },
+  {
+   "start": 42.98,
+   "end": 45.72,
+   "text": "And these physical quantities fall into two"
+  },
+  {
+   "start": 45.72,
+   "end": 48.28,
+   "text": "different sections, vectors and scalars."
+  },
+  {
+   "start": 49.78,
+   "end": 52.62,
+   "text": "What's the difference? First of all, scalars."
+  },
+  {
+   "start": 54.34,
+   "end": 57.08,
+   "text": "A scalar is a quantity that is completely described"
+  },
+  {
+   "start": 57.08,
+   "end": 62.58,
+   "text": "by magnitude only. So it has a size, but there"
+  },
+  {
+   "start": 62.58,
+   "end": 65.0,
+   "text": "is no direction associated with it."
+  },
+  {
+   "start": 67.22,
+   "end": 70.76,
+   "text": "On the other hand, vectors have both a magnitude"
+  },
+  {
+   "start": 70.76,
+   "end": 77.69,
+   "text": "and a direction. An example of the difference"
+  },
+  {
+   "start": 77.69,
+   "end": 83.23,
+   "text": "between these two is scalars could be distance,"
+  },
+  {
+   "start": 84.61,
+   "end": 88.49,
+   "text": "while vectors, an example, would be displacement."
+  },
+  {
+   "start": 92.42,
+   "end": 93.98,
+   "text": "Now, what's the difference between distance"
+  },
+  {
+   "start": 93.98,
+   "end": 97.96,
+   "text": "and displacement? Let's say we want to get from"
+  },
+  {
+   "start": 97.96,
+   "end": 100.26,
+   "text": "point A to point B on a map."
+  },
+  {
+   "start": 101.92,
+   "end": 104.54,
+   "text": "The distance travelled is, let's say you took"
+  },
+  {
+   "start": 104.54,
+   "end": 111.58,
+   "text": "a curvy trail. The distance travelled will be"
+  },
+  {
+   "start": 111.58,
+   "end": 115.34,
+   "text": "your total distance travelled."
+  },
+  {
+   "start": 115.52,
+   "end": 118.4,
+   "text": "If you were to take the trail and you were to"
+  },
+  {
+   "start": 118.4,
+   "end": 121.96,
+   "text": "start a GPS or a workout timer, that would be"
+  },
+  {
+   "start": 121.96,
+   "end": 125.7,
+   "text": "your distance. However, your displacement only"
+  },
+  {
+   "start": 125.7,
+   "end": 129.52,
+   "text": "takes into account the starting point and the"
+  },
+  {
+   "start": 129.52,
+   "end": 131.9,
+   "text": "ending point because it has to have a direction."
+  },
+  {
+   "start": 132.5,
+   "end": 135.98,
+   "text": "So the displacement doesn't matter how, what"
+  },
+  {
+   "start": 135.98,
+   "end": 139.26,
+   "text": "trail you took. The displacement is just the"
+  },
+  {
+   "start": 139.26,
+   "end": 142.0,
+   "text": "distance, the closest distance between A and"
+  },
+  {
+   "start": 142.0,
+   "end": 147.08,
+   "text": "B. So distance could, you could go anywhere"
+  },
+  {
+   "start": 147.08,
+   "end": 149.9,
+   "text": "and it would vary. But if you start from this"
+  },
+  {
+   "start": 149.9,
+   "end": 152.0,
+   "text": "point and end at that point, the displacement"
+  },
+  {
+   "start": 152.0,
+   "end": 155.74,
+   "text": "is always the same. Another example of a scalar"
+  },
+  {
+   "start": 155.74,
+   "end": 160.72,
+   "text": "versus quantity would be speed. Speed is a scalar"
+  },
+  {
+   "start": 160.72,
+   "end": 165.28,
+   "text": "quantity, while velocity is a vector."
+  },
+  {
+   "start": 166.28,
+   "end": 168.38,
+   "text": "This is because velocity has a direction. For"
+  },
+  {
+   "start": 168.38,
+   "end": 172.22,
+   "text": "example, if you have a car going to the right"
+  },
+  {
+   "start": 172.22,
+   "end": 178.88,
+   "text": "at 3 metres per second, then its speed would"
+  },
+  {
+   "start": 178.88,
+   "end": 182.92,
+   "text": "be equal to 3 metres per second."
+  },
+  {
+   "start": 187.97,
+   "end": 190.93,
+   "text": "However, its velocity must have a direction."
+  },
+  {
+   "start": 191.67,
+   "end": 195.81,
+   "text": "Since it's a vector, you would say 3 metres"
+  },
+  {
+   "start": 195.81,
+   "end": 198.37,
+   "text": "per second to the right. And directions are"
+  },
+  {
+   "start": 198.37,
+   "end": 202.25,
+   "text": "usually depicted by square brackets, like over"
+  },
+  {
+   "start": 202.25,
+   "end": 207.09,
+   "text": "here. Another really useful thing to know, and"
+  },
+  {
+   "start": 207.09,
+   "end": 210.29,
+   "text": "it also appears a lot in IB Math as well, is"
+  },
+  {
+   "start": 210.29,
+   "end": 216.53,
+   "text": "compasses. Compasses are used to depict direction."
+  },
+  {
+   "start": 216.77,
+   "end": 221.39,
+   "text": "For example, this would be north, east, south,"
+  },
+  {
+   "start": 221.39,
+   "end": 225.61,
+   "text": "west. There are two types of things you can"
+  },
+  {
+   "start": 225.61,
+   "end": 232.93,
+   "text": "do for compasses. Bearings and normal direction."
+  },
+  {
+   "start": 236.72,
+   "end": 241.72,
+   "text": "Bearings are angles relative to the north axis."
+  },
+  {
+   "start": 242.32,
+   "end": 248.9,
+   "text": "So for example, if a car had a velocity of 3"
+  },
+  {
+   "start": 248.9,
+   "end": 253.28,
+   "text": "metres per second with an angle of let's say"
+  },
+  {
+   "start": 253.28,
+   "end": 256.72,
+   "text": "30 degrees, the bearing would be relative to"
+  },
+  {
+   "start": 256.72,
+   "end": 261.18,
+   "text": "north. So the bearing would be like this."
+  },
+  {
+   "start": 262.0,
+   "end": 264.34,
+   "text": "And that would be 120 degrees."
+  },
+  {
+   "start": 265.88,
+   "end": 269.0,
+   "text": "That would be the bearing. However, normal direction"
+  },
+  {
+   "start": 269.0,
+   "end": 271.78,
+   "text": "is when you actually state the axis."
+  },
+  {
+   "start": 272.54,
+   "end": 275.54,
+   "text": "So same example over here. If a car was going"
+  },
+  {
+   "start": 275.54,
+   "end": 279.0,
+   "text": "3 metres per second over here and this was 30"
+  },
+  {
+   "start": 279.0,
+   "end": 283.18,
+   "text": "degrees, well you know that this is east and"
+  },
+  {
+   "start": 283.18,
+   "end": 287.16,
+   "text": "then this is south. So since it's 30 degrees"
+  },
+  {
+   "start": 287.16,
+   "end": 289.88,
+   "text": "to the east, you would say that it's going 3"
+  },
+  {
+   "start": 289.88,
+   "end": 294.82,
+   "text": "metres per second east 30 degrees south."
+  },
+  {
+   "start": 295.62,
+   "end": 299.3,
+   "text": "So 30 degrees is relative to the east axis and"
+  },
+  {
+   "start": 299.3,
+   "end": 302.46,
+   "text": "it's facing the south direction as well."
+  },
+  {
+   "start": 303.4,
+   "end": 306.26,
+   "text": "And usually in physics, we use normal direction"
+  },
+  {
+   "start": 306.26,
+   "end": 308.68,
+   "text": "over bearings. Bearings is more of math."
+  },
+  {
+   "start": 309.78,
+   "end": 311.98,
+   "text": "That's it for the first video."
+  },
+  {
+   "start": 312.66,
+   "end": 313.74,
+   "text": "Basically, it's just a simple example. This"
+  },
+  {
+   "start": 313.74,
+   "end": 317.1,
+   "text": "is a starter to get you familiar with vectors"
+  },
+  {
+   "start": 317.1,
+   "end": 321.54,
+   "text": "and scalars and how to answer your questions"
+  },
+  {
+   "start": 321.54,
+   "end": 325.14,
+   "text": "in physics. Thank you for watching and I hope"
+  },
+  {
+   "start": 325.14,
+   "end": 325.5,
+   "text": "you enjoyed."
+  }
+ ],
+ "report": {
+  "key": "intro_to_physics__vectors_scalars",
+  "title": "Vectors and Scalars",
+  "topicKey": "intro_to_physics",
+  "duration": 326.016,
+  "cues": 77,
+  "corrections": 6,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.14247111275971655,
+  "flagged": []
+ }
+}

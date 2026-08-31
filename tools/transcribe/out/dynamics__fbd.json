@@ -1,0 +1,649 @@
+{
+ "lesson": {
+  "topicKey": "dynamics",
+  "curriculumKey": "fbd",
+  "title": "Free Body Diagrams",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/free_body_diagrams.mp4",
+  "source": "dynamics.dart"
+ },
+ "segments": [
+  {
+   "start": 1.58,
+   "end": 9.96,
+   "text": "In this video, we will be visiting this question and looking at how to draw the free-body diagram for it.",
+   "avg_logprob": -0.1197753382634513
+  },
+  {
+   "start": 10.24,
+   "end": 17.52,
+   "text": "Everything else in this question, we will visit in a later video when we have learned about gravity, normal force, and friction.",
+   "avg_logprob": -0.1197753382634513
+  },
+  {
+   "start": 18.54,
+   "end": 24.32,
+   "text": "But first of all, let's see. The question first wants to draw a free-body diagram.",
+   "avg_logprob": -0.1197753382634513
+  },
+  {
+   "start": 24.32,
+   "end": 33.62,
+   "text": "And a free-body diagram is basically a diagram that shows and demonstrates all the forces acting on an object, in this case, the crate.",
+   "avg_logprob": -0.08441394997824883
+  },
+  {
+   "start": 34.14,
+   "end": 38.0,
+   "text": "So let's see the question. A five kilogram crate is placed on a rough horizontal floor.",
+   "avg_logprob": -0.08441394997824883
+  },
+  {
+   "start": 38.46,
+   "end": 46.04,
+   "text": "The crate is pulled to the right by a net force of 18 newtons. Sorry, not net, by a horizontal force of 18 newtons.",
+   "avg_logprob": -0.08441394997824883
+  },
+  {
+   "start": 46.4,
+   "end": 52.58,
+   "text": "The coefficient of kinetic friction between the crate and the floor is, we don't need to know that, we will learn that later.",
+   "avg_logprob": -0.08441394997824883
+  },
+  {
+   "start": 52.58,
+   "end": 57.42,
+   "text": "But first of all, let's draw all the forces acting on the crate.",
+   "avg_logprob": -0.06129377617711021
+  },
+  {
+   "start": 58.36,
+   "end": 70.38,
+   "text": "The first thing you want to think of when drawing all the forces is, in most questions, in 99% of the questions, unless it occurs in space, there will always be a gravity component.",
+   "avg_logprob": -0.06129377617711021
+  },
+  {
+   "start": 71.73,
+   "end": 84.39,
+   "text": "And we would call that FG, or we can sometimes denote that as MG, depends on how you want to portray that.",
+   "avg_logprob": -0.10980347947527964
+  },
+  {
+   "start": 85.01,
+   "end": 91.93,
+   "text": "Next, what we have is something called the normal force. Why is there a normal force?",
+   "avg_logprob": -0.10980347947527964
+  },
+  {
+   "start": 92.37,
+   "end": 98.39,
+   "text": "Well, remember Newton's third law. For every action, there's an equal and opposite reaction.",
+   "avg_logprob": -0.10980347947527964
+  },
+  {
+   "start": 98.39,
+   "end": 107.91,
+   "text": "So if the box is leaning on the floor and it exerts a force of FG on the floor because of its weight,",
+   "avg_logprob": -0.05762814929087957
+  },
+  {
+   "start": 107.91,
+   "end": 115.79,
+   "text": "then there will be an equal and opposite reaction that the floor exerts back on that box.",
+   "avg_logprob": -0.05762814929087957
+  },
+  {
+   "start": 116.01,
+   "end": 123.03,
+   "text": "And we will call that F normal. Without this normal force, the box will just slide down through the box.",
+   "avg_logprob": -0.05762814929087957
+  },
+  {
+   "start": 124.21,
+   "end": 130.01,
+   "text": "Next, we have it being pulled to the right by a horizontal force of 18 Newton's.",
+   "avg_logprob": -0.10672943494640864
+  },
+  {
+   "start": 130.07,
+   "end": 141.71,
+   "text": "I forgot to mention that most of the times forces are denoted from the center when we're talking about things like external forces, for example, in this case, or gravity.",
+   "avg_logprob": -0.10672943494640864
+  },
+  {
+   "start": 142.99,
+   "end": 148.15,
+   "text": "So over here we have a force. Let's call this force applied.",
+   "avg_logprob": -0.10672943494640864
+  },
+  {
+   "start": 149.03,
+   "end": 156.15,
+   "text": "You can denote this whatever you want, but usually it would be applied force. And this is 18 Newton's.",
+   "avg_logprob": -0.09228028522597419
+  },
+  {
+   "start": 158.75,
+   "end": 169.2,
+   "text": "And now we need another force because it's a rough horizontal floor. So there will be a friction force.",
+   "avg_logprob": -0.09228028522597419
+  },
+  {
+   "start": 170.02,
+   "end": 176.8,
+   "text": "I'll denote this friction force coming from here because it's between the floor and the box.",
+   "avg_logprob": -0.09228028522597419
+  },
+  {
+   "start": 176.8,
+   "end": 187.75,
+   "text": "You can also do it here. Really doesn't matter, but putting it here would make it more accurate and make it easier to visualize.",
+   "avg_logprob": -0.08406931770519471
+  },
+  {
+   "start": 191.08,
+   "end": 197.72,
+   "text": "And we could call this F of friction. And that is basically free body diagrams.",
+   "avg_logprob": -0.08406931770519471
+  },
+  {
+   "start": 198.6,
+   "end": 203.92,
+   "text": "How about let's have another example down here. Let's say we have a ball.",
+   "avg_logprob": -0.08406931770519471
+  },
+  {
+   "start": 205.26,
+   "end": 210.52,
+   "text": "Let's say this would be the diagram that's not free body, just a normal diagram.",
+   "avg_logprob": -0.0720220904845696
+  },
+  {
+   "start": 212.08,
+   "end": 218.7,
+   "text": "Now, let's say this is a pendulum and the ball starts from here and it's going to go swing back and forth.",
+   "avg_logprob": -0.0720220904845696
+  },
+  {
+   "start": 219.46,
+   "end": 225.3,
+   "text": "Now, what are the forces acting on this ball? Let's draw it out in a free body diagram here.",
+   "avg_logprob": -0.0720220904845696
+  },
+  {
+   "start": 225.3,
+   "end": 241.9,
+   "text": "First of all, as always, there's gravity. And to counteract that gravity, there's also going to be a tension force that partially counteracts that.",
+   "avg_logprob": -0.1276980017962521
+  },
+  {
+   "start": 242.98,
+   "end": 257.06,
+   "text": "So we would call that F t and F g. There will also be air resistance, but in most problems at this level, we won't need to take into account.",
+   "avg_logprob": -0.1276980017962521
+  },
+  {
+   "start": 257.06,
+   "end": 263.2,
+   "text": "The problem will probably say air resistance is neglected, so we can ignore that.",
+   "avg_logprob": -0.04931749124079943
+  },
+  {
+   "start": 264.7,
+   "end": 271.84,
+   "text": "Sometimes it's going to give you the angle at which the pendulum is released. We'll get into that in another unit.",
+   "avg_logprob": -0.04931749124079943
+  },
+  {
+   "start": 272.2,
+   "end": 282.8,
+   "text": "But that angle is the same as the angle on a free body diagram, which makes a free body diagram really, really useful for calculating these things.",
+   "avg_logprob": -0.04931749124079943
+  },
+  {
+   "start": 283.5,
+   "end": 289.4,
+   "text": "And that's it for an introduction of free body diagrams. Remember, there will always be gravity.",
+   "avg_logprob": -0.07793421696486144
+  },
+  {
+   "start": 289.6,
+   "end": 300.74,
+   "text": "There will usually be a normal force, especially if it's on a surface and you do applied forces starting from the middle.",
+   "avg_logprob": -0.07793421696486144
+  },
+  {
+   "start": 302.1,
+   "end": 302.9,
+   "text": "Thank you guys for watching.",
+   "avg_logprob": -0.07793421696486144
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.58,
+   "end": 5.02,
+   "text": "In this video, we will be visiting this question"
+  },
+  {
+   "start": 5.02,
+   "end": 9.16,
+   "text": "and looking at how to draw the free-body diagram"
+  },
+  {
+   "start": 9.16,
+   "end": 12.44,
+   "text": "for it. Everything else in this question, we"
+  },
+  {
+   "start": 12.44,
+   "end": 14.74,
+   "text": "will visit in a later video when we have learned"
+  },
+  {
+   "start": 14.74,
+   "end": 17.52,
+   "text": "about gravity, normal force, and friction."
+  },
+  {
+   "start": 18.54,
+   "end": 20.88,
+   "text": "But first of all, let's see."
+  },
+  {
+   "start": 21.6,
+   "end": 23.8,
+   "text": "The question first wants to draw a free-body"
+  },
+  {
+   "start": 23.8,
+   "end": 26.82,
+   "text": "diagram. And a free-body diagram is basically"
+  },
+  {
+   "start": 26.82,
+   "end": 30.46,
+   "text": "a diagram that shows and demonstrates all the"
+  },
+  {
+   "start": 30.46,
+   "end": 33.44,
+   "text": "forces acting on an object, in this case, the"
+  },
+  {
+   "start": 33.44,
+   "end": 35.82,
+   "text": "crate. So let's see the question. A five kilogram"
+  },
+  {
+   "start": 35.82,
+   "end": 38.0,
+   "text": "crate is placed on a rough horizontal floor."
+  },
+  {
+   "start": 38.46,
+   "end": 41.56,
+   "text": "The crate is pulled to the right by a net force"
+  },
+  {
+   "start": 41.56,
+   "end": 44.78,
+   "text": "of 18 newtons. Sorry, not net, by a horizontal"
+  },
+  {
+   "start": 44.78,
+   "end": 48.1,
+   "text": "force of 18 newtons. The coefficient of kinetic"
+  },
+  {
+   "start": 48.1,
+   "end": 50.14,
+   "text": "friction between the crate and the floor is,"
+  },
+  {
+   "start": 50.38,
+   "end": 52.32,
+   "text": "we don't need to know that, we will learn that"
+  },
+  {
+   "start": 52.32,
+   "end": 55.88,
+   "text": "later. But first of all, let's draw all the"
+  },
+  {
+   "start": 55.88,
+   "end": 59.08,
+   "text": "forces acting on the crate. The first thing"
+  },
+  {
+   "start": 59.08,
+   "end": 61.02,
+   "text": "you want to think of when drawing all the forces"
+  },
+  {
+   "start": 61.02,
+   "end": 65.18,
+   "text": "is, in most questions, in 99% of the questions,"
+  },
+  {
+   "start": 65.3,
+   "end": 67.96,
+   "text": "unless it occurs in space, there will always"
+  },
+  {
+   "start": 67.96,
+   "end": 70.38,
+   "text": "be a gravity component."
+  },
+  {
+   "start": 71.73,
+   "end": 75.91,
+   "text": "And we would call that FG, or we can sometimes"
+  },
+  {
+   "start": 75.91,
+   "end": 82.67,
+   "text": "denote that as MG, depends on how you want to"
+  },
+  {
+   "start": 82.67,
+   "end": 87.35,
+   "text": "portray that. Next, what we have is something"
+  },
+  {
+   "start": 87.35,
+   "end": 91.59,
+   "text": "called the normal force. Why is there a normal"
+  },
+  {
+   "start": 91.59,
+   "end": 94.67,
+   "text": "force? Well, remember Newton's third law."
+  },
+  {
+   "start": 94.97,
+   "end": 97.95,
+   "text": "For every action, there's an equal and opposite"
+  },
+  {
+   "start": 97.95,
+   "end": 102.21,
+   "text": "reaction. So if the box is leaning on the floor"
+  },
+  {
+   "start": 102.21,
+   "end": 107.21,
+   "text": "and it exerts a force of FG on the floor because"
+  },
+  {
+   "start": 107.21,
+   "end": 111.09,
+   "text": "of its weight, then there will be an equal and"
+  },
+  {
+   "start": 111.09,
+   "end": 114.49,
+   "text": "opposite reaction that the floor exerts back"
+  },
+  {
+   "start": 114.49,
+   "end": 118.69,
+   "text": "on that box. And we will call that F normal."
+  },
+  {
+   "start": 118.99,
+   "end": 121.01,
+   "text": "Without this normal force, the box will just"
+  },
+  {
+   "start": 121.01,
+   "end": 123.03,
+   "text": "slide down through the box."
+  },
+  {
+   "start": 124.21,
+   "end": 128.05,
+   "text": "Next, we have it being pulled to the right by"
+  },
+  {
+   "start": 128.05,
+   "end": 130.33,
+   "text": "a horizontal force of 18 Newton's. I forgot"
+  },
+  {
+   "start": 130.33,
+   "end": 133.49,
+   "text": "to mention that most of the times forces are"
+  },
+  {
+   "start": 133.49,
+   "end": 136.61,
+   "text": "denoted from the center when we're talking about"
+  },
+  {
+   "start": 136.61,
+   "end": 140.55,
+   "text": "things like external forces, for example, in"
+  },
+  {
+   "start": 140.55,
+   "end": 144.87,
+   "text": "this case, or gravity. So over here we have"
+  },
+  {
+   "start": 144.87,
+   "end": 148.15,
+   "text": "a force. Let's call this force applied."
+  },
+  {
+   "start": 149.03,
+   "end": 151.23,
+   "text": "You can denote this whatever you want, but usually"
+  },
+  {
+   "start": 151.23,
+   "end": 156.15,
+   "text": "it would be applied force. And this is 18 Newton's."
+  },
+  {
+   "start": 158.75,
+   "end": 164.88,
+   "text": "And now we need another force because it's a"
+  },
+  {
+   "start": 164.88,
+   "end": 167.44,
+   "text": "rough horizontal floor."
+  },
+  {
+   "start": 167.52,
+   "end": 170.88,
+   "text": "So there will be a friction force. I'll denote"
+  },
+  {
+   "start": 170.88,
+   "end": 174.1,
+   "text": "this friction force coming from here because"
+  },
+  {
+   "start": 174.1,
+   "end": 176.8,
+   "text": "it's between the floor and the box."
+  },
+  {
+   "start": 176.8,
+   "end": 179.16,
+   "text": "You can also do it here."
+  },
+  {
+   "start": 180.08,
+   "end": 184.47,
+   "text": "Really doesn't matter, but putting it here would"
+  },
+  {
+   "start": 184.47,
+   "end": 187.29,
+   "text": "make it more accurate and make it easier to"
+  },
+  {
+   "start": 187.29,
+   "end": 194.04,
+   "text": "visualize. And we could call this F of friction."
+  },
+  {
+   "start": 194.88,
+   "end": 197.72,
+   "text": "And that is basically free body diagrams."
+  },
+  {
+   "start": 198.6,
+   "end": 201.42,
+   "text": "How about let's have another example down here."
+  },
+  {
+   "start": 202.1,
+   "end": 206.78,
+   "text": "Let's say we have a ball. Let's say this would"
+  },
+  {
+   "start": 206.78,
+   "end": 209.76,
+   "text": "be the diagram that's not free body, just a"
+  },
+  {
+   "start": 209.76,
+   "end": 213.62,
+   "text": "normal diagram. Now, let's say this is a pendulum"
+  },
+  {
+   "start": 213.62,
+   "end": 216.78,
+   "text": "and the ball starts from here and it's going"
+  },
+  {
+   "start": 216.78,
+   "end": 220.36,
+   "text": "to go swing back and forth. Now, what are the"
+  },
+  {
+   "start": 220.36,
+   "end": 222.54,
+   "text": "forces acting on this ball? Let's draw it out"
+  },
+  {
+   "start": 222.54,
+   "end": 225.3,
+   "text": "in a free-body diagram here."
+  },
+  {
+   "start": 225.3,
+   "end": 228.82,
+   "text": "First of all, as always, there's gravity."
+  },
+  {
+   "start": 233.08,
+   "end": 236.18,
+   "text": "And to counteract that gravity, there's also"
+  },
+  {
+   "start": 236.18,
+   "end": 241.48,
+   "text": "going to be a tension force that partially counteracts"
+  },
+  {
+   "start": 241.48,
+   "end": 246.34,
+   "text": "that. So we would call that F t and F g."
+  },
+  {
+   "start": 247.62,
+   "end": 251.42,
+   "text": "There will also be air resistance, but in most"
+  },
+  {
+   "start": 251.42,
+   "end": 256.4,
+   "text": "problems at this level, we won't need to take"
+  },
+  {
+   "start": 256.4,
+   "end": 258.9,
+   "text": "into account. The problem will probably say"
+  },
+  {
+   "start": 258.9,
+   "end": 262.64,
+   "text": "air resistance is neglected, so we can ignore"
+  },
+  {
+   "start": 262.64,
+   "end": 268.2,
+   "text": "that. Sometimes it's going to give you the angle"
+  },
+  {
+   "start": 268.2,
+   "end": 270.48,
+   "text": "at which the pendulum is released. We'll get"
+  },
+  {
+   "start": 270.48,
+   "end": 273.72,
+   "text": "into that in another unit. But that angle is"
+  },
+  {
+   "start": 273.72,
+   "end": 277.18,
+   "text": "the same as the angle on a free-body diagram,"
+  },
+  {
+   "start": 277.34,
+   "end": 279.54,
+   "text": "which makes a free-body diagram really, really"
+  },
+  {
+   "start": 279.54,
+   "end": 282.8,
+   "text": "useful for calculating these things."
+  },
+  {
+   "start": 283.5,
+   "end": 286.6,
+   "text": "And that's it for an introduction of free body"
+  },
+  {
+   "start": 286.6,
+   "end": 289.4,
+   "text": "diagrams. Remember, there will always be gravity."
+  },
+  {
+   "start": 289.6,
+   "end": 292.36,
+   "text": "There will usually be a normal force, especially"
+  },
+  {
+   "start": 292.36,
+   "end": 298.64,
+   "text": "if it's on a surface and you do applied forces"
+  },
+  {
+   "start": 298.64,
+   "end": 300.74,
+   "text": "starting from the middle."
+  },
+  {
+   "start": 302.1,
+   "end": 302.9,
+   "text": "Thank you guys for watching."
+  }
+ ],
+ "report": {
+  "key": "dynamics__fbd",
+  "title": "Free Body Diagrams",
+  "topicKey": "dynamics",
+  "duration": 303.6373125,
+  "cues": 83,
+  "corrections": 3,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.1276980017962521,
+  "flagged": []
+ }
+}

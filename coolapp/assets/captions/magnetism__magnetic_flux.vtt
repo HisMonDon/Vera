@@ -1,0 +1,190 @@
+WEBVTT
+NOTE Magnetic Flux (IB/AP)
+
+1
+00:00:00.780 --> 00:00:03.520
+In this video, I'll be talking about
+magnetic
+
+2
+00:00:03.520 --> 00:00:06.240
+flux and what it is used for.
+
+3
+00:00:07.060 --> 00:00:11.180
+First of all, magnetic flux is the amount
+of
+
+4
+00:00:11.180 --> 00:00:14.340
+magnetic field passing over a certain
+area.
+
+5
+00:00:15.180 --> 00:00:18.660
+For example, if we took a magnetic field
+that
+
+6
+00:00:18.660 --> 00:00:20.900
+looks like this, it's pointing into the
+page,
+
+7
+00:00:20.900 --> 00:00:25.100
+and let's say we took an area of two by
+two,
+
+8
+00:00:25.540 --> 00:00:29.100
+the magnetic flux would be the numerical
+value
+
+9
+00:00:29.100 --> 00:00:33.580
+of these four units. When you increase the
+area,
+
+10
+00:00:33.580 --> 00:00:37.200
+let's say to three by three now, the
+magnetic
+
+11
+00:00:37.200 --> 00:00:41.100
+flux goes up as well, so it's proportional
+to
+
+12
+00:00:41.100 --> 00:00:48.460
+area. The magnetic flux, phi, is equal to
+the
+
+13
+00:00:48.460 --> 00:00:50.480
+magnetic field, the strength of the
+magnetic
+
+14
+00:00:50.480 --> 00:00:53.400
+field, times the area, times cosine theta.
+
+15
+00:00:54.180 --> 00:00:57.140
+Now, what does cosine theta mean? Well, if
+you
+
+16
+00:00:57.140 --> 00:01:01.700
+imagine this on a 3D plane, and we have an
+axis
+
+17
+00:01:01.700 --> 00:01:05.780
+for the area over here, you can actually
+rotate
+
+18
+00:01:05.780 --> 00:01:08.780
+this area.
+
+19
+00:01:09.360 --> 00:01:12.380
+For example, if you rotate it like this,
+it
+
+20
+00:01:12.380 --> 00:01:14.960
+would look something like that now. And
+when
+
+21
+00:01:14.960 --> 00:01:18.680
+you rotate it at an angle of theta, there
+are
+
+22
+00:01:18.680 --> 00:01:21.900
+going to be less x's in the area now.
+
+23
+00:01:22.080 --> 00:01:26.300
+So as the angle of rotation goes up, the
+number
+
+24
+00:01:26.300 --> 00:01:28.760
+of x's actually decreases.
+
+25
+00:01:30.380 --> 00:01:34.860
+Until, let's say, it's directly facing
+forwards.
+
+26
+00:01:35.380 --> 00:01:37.820
+So this would be the area, but you can't
+see
+
+27
+00:01:37.820 --> 00:01:40.480
+anything except a line, because it's going
+facing
+
+28
+00:01:40.480 --> 00:01:44.280
+that way. And that's when cosine is 90
+degrees,
+
+29
+00:01:44.520 --> 00:01:47.800
+and that's why cosine 90 is zero, so the
+magnetic
+
+30
+00:01:47.800 --> 00:01:50.420
+flux will be zero, because there will not
+be
+
+31
+00:01:50.420 --> 00:01:56.160
+any axis. So, ultimately, magnetic flux is
+a
+
+32
+00:01:56.160 --> 00:01:58.740
+great way to measure the total amount of
+magnetic
+
+33
+00:01:58.740 --> 00:02:06.080
+field. Calculating essentially the
+strength
+
+34
+00:02:06.080 --> 00:02:10.760
+of the magnetic force through a surface.
+
+35
+00:02:11.460 --> 00:02:16.160
+And it's really useful for calculating the
+strength
+
+36
+00:02:16.160 --> 00:02:19.440
+for powering devices such as generators,
+motors,
+
+37
+00:02:19.860 --> 00:02:23.040
+and transformers, because you can
+calculate
+
+38
+00:02:23.040 --> 00:02:26.800
+motion when it's converted to electricity,
+or
+
+39
+00:02:26.800 --> 00:02:27.360
+vice versa.

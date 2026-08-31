@@ -1,0 +1,600 @@
+WEBVTT
+NOTE Fluid Dynamics
+
+1
+00:00:02.220 --> 00:00:06.020
+Okay, so in the previous lesson, we have
+been
+
+2
+00:00:06.020 --> 00:00:10.080
+learning about fluid statics.
+
+3
+00:00:10.640 --> 00:00:13.180
+And today, we are going to be learning
+about
+
+4
+00:00:13.180 --> 00:00:15.880
+fluid dynamics, just a quick overview, and
+the
+
+5
+00:00:15.880 --> 00:00:19.420
+introduction to a new formula, Bernoulli's
+equation.
+
+6
+00:00:19.760 --> 00:00:22.680
+And this formula basically governs all of
+what
+
+7
+00:00:22.680 --> 00:00:24.800
+you need for Bernoulli's equation.
+
+8
+00:00:26.980 --> 00:00:30.440
+So, what is Bernoulli's equation?
+
+9
+00:00:30.460 --> 00:00:33.680
+I'll just start off the lesson by
+introducing
+
+10
+00:00:33.680 --> 00:00:41.270
+this. It is
+
+11
+00:00:44.020 --> 00:00:51.140
+p plus one over two rho v
+
+12
+00:00:51.140 --> 00:00:57.060
+squared plus rho gh equals constant.
+
+13
+00:01:00.680 --> 00:01:06.940
+Or, yeah. So basically, p is the static
+pressure,
+
+14
+00:01:08.000 --> 00:01:14.320
+and this is just like the pressure of the
+molecular
+
+15
+00:01:14.320 --> 00:01:17.160
+motion inside the fluid. I'll just go over
+what
+
+16
+00:01:17.160 --> 00:01:20.180
+each of these mean really quickly. You
+don't
+
+17
+00:01:20.180 --> 00:01:23.640
+really have to know them. This is one over
+two
+
+18
+00:01:23.640 --> 00:01:27.840
+density v squared is dynamic pressure,
+which
+
+19
+00:01:27.840 --> 00:01:30.560
+is due to the fluid's motion.
+
+20
+00:01:31.540 --> 00:01:34.800
+And basically, it states that if you have
+a
+
+21
+00:01:34.800 --> 00:01:40.840
+faster flowing liquid, the faster this
+pressure
+
+22
+00:01:40.840 --> 00:01:43.660
+will be. So this is static.
+
+23
+00:01:46.150 --> 00:01:48.350
+This is dynamic, or flowing.
+
+24
+00:01:56.040 --> 00:02:00.300
+And this is a hydrostatic pressure.
+
+25
+00:02:01.660 --> 00:02:07.860
+And basically, if you recognize this, it's
+somewhat
+
+26
+00:02:07.860 --> 00:02:11.460
+like the gravitational potential energy.
+
+27
+00:02:12.120 --> 00:02:16.400
+So basically, it's pressure dependent on
+height.
+
+28
+00:02:19.830 --> 00:02:25.820
+And this also, basically, the higher the
+fluid
+
+29
+00:02:25.820 --> 00:02:27.860
+is, the greater this term.
+
+30
+00:02:31.890 --> 00:02:36.050
+And since this is equal to a constant, we
+can
+
+31
+00:02:36.050 --> 00:02:39.530
+modify this equation, actually, to make it
+very,
+
+32
+00:02:39.690 --> 00:02:43.630
+very useful for our calculations.
+
+33
+00:02:48.420 --> 00:02:55.500
+p one plus one over two rho v
+
+34
+00:02:55.500 --> 00:02:58.600
+squared plus rho gh.
+
+35
+00:03:00.580 --> 00:03:06.240
+The initial, just add one to everything,
+equals
+
+36
+00:03:06.240 --> 00:03:11.560
+p two plus one over two rho two v two
+squared
+
+37
+00:03:11.560 --> 00:03:14.880
+plus rho two gh two.
+
+38
+00:03:15.400 --> 00:03:17.520
+And you might be wondering, wow, this is
+such
+
+39
+00:03:17.520 --> 00:03:20.740
+a big equation. This is gonna probably be
+very
+
+40
+00:03:20.740 --> 00:03:23.700
+complicated. But not really. In most
+questions,
+
+41
+00:03:24.640 --> 00:03:26.660
+a lot of these stay the same.
+
+42
+00:03:26.860 --> 00:03:31.540
+For example, usually sometimes the height
+will
+
+43
+00:03:31.540 --> 00:03:35.520
+stay the same. So these will cancel out.
+
+44
+00:03:36.260 --> 00:03:39.480
+And usually the liquid stays the same as
+well.
+
+45
+00:03:39.500 --> 00:03:43.320
+So a lot of these will not matter. And you
+will
+
+46
+00:03:43.320 --> 00:03:47.500
+only need parts of these for parts of your
+question.
+
+47
+00:03:48.580 --> 00:03:54.260
+But this is a good formula to know, or to
+know
+
+48
+00:03:54.260 --> 00:04:01.480
+how to use. And now we are going
+
+49
+00:04:01.480 --> 00:04:06.960
+to use another example.
+
+50
+00:04:09.460 --> 00:04:15.410
+Let's say we have water flowing through,
+let's
+
+51
+00:04:15.410 --> 00:04:19.270
+say, a pipe. So I'm going to draw a pipe
+over
+
+52
+00:04:19.270 --> 00:04:27.890
+here. And all of a sudden, this water now
+
+53
+00:04:27.890 --> 00:04:30.610
+starts flowing through a smaller pipe.
+
+54
+00:04:33.770 --> 00:04:37.810
+And you need to calculate the change in
+velocity
+
+55
+00:04:37.810 --> 00:04:41.370
+of the pipe.
+
+56
+00:04:42.830 --> 00:04:47.280
+So let's fill this with water.
+
+57
+00:04:54.070 --> 00:04:57.610
+First of all, we know, what do we know?
+
+58
+00:04:58.170 --> 00:05:03.060
+Well, we know that the fluid density is
+the
+
+59
+00:05:03.060 --> 00:05:07.800
+same everywhere. It's 1,000 kilograms per
+metre
+
+60
+00:05:07.800 --> 00:05:10.820
+squared, like I've said before, sorry,
+metres
+
+61
+00:05:10.820 --> 00:05:18.860
+cubed. And let's say our pipe diameter is
+
+62
+00:05:18.860 --> 00:05:21.080
+0.1 metres.
+
+63
+00:05:22.140 --> 00:05:26.940
+And this is half, so we would be 0.05
+metres.
+
+64
+00:05:29.160 --> 00:05:36.020
+And let's say the water is moving, oops,
+the
+
+65
+00:05:36.020 --> 00:05:40.980
+water is moving at a speed of 2 metres per
+second,
+
+66
+00:05:41.240 --> 00:05:48.350
+right? And the pressure in this
+
+67
+00:05:48.350 --> 00:05:53.620
+section is 100,000, sure.
+
+68
+00:05:59.800 --> 00:06:03.440
+And let's say you don't want to find the
+velocity.
+
+69
+00:06:03.540 --> 00:06:05.960
+Let's say you want to find the new
+pressure
+
+70
+00:06:05.960 --> 00:06:09.900
+in the narrow section, because if you use
+common
+
+71
+00:06:09.900 --> 00:06:12.400
+sense, it's going to move faster. So let's
+find
+
+72
+00:06:12.400 --> 00:06:14.640
+the pressure, P2.
+
+73
+00:06:18.700 --> 00:06:23.440
+Well, first of all, we need to find the
+velocity
+
+74
+00:06:23.440 --> 00:06:26.020
+in the narrow section first.
+
+75
+00:06:27.100 --> 00:06:32.300
+And we can use something called the
+continuity
+
+76
+00:06:32.300 --> 00:06:36.820
+equation. And that basically states that
+the
+
+77
+00:06:36.820 --> 00:06:42.440
+area times the velocity is constant.
+
+78
+00:06:44.820 --> 00:06:47.820
+So sorry, this is also another formula you
+need
+
+79
+00:06:47.820 --> 00:06:54.830
+to know. And so the first area is
+
+80
+00:06:54.830 --> 00:06:59.490
+0.05 r squared times pi.
+
+81
+00:07:00.630 --> 00:07:07.650
+So pi times r1 squared times
+
+82
+00:07:07.650 --> 00:07:13.690
+v1, which is, I'll just write v1 for now,
+equals,
+
+83
+00:07:14.050 --> 00:07:19.890
+well, this is pi times r2 squared times
+v2.
+
+84
+00:07:20.670 --> 00:07:26.370
+So what is r1? Well, r1 is 0.05 squared
+times
+
+85
+00:07:26.370 --> 00:07:29.650
+v1 is 2 metres per second. Again, I'll
+just
+
+86
+00:07:29.650 --> 00:07:32.990
+not use units for simplicity's sake.
+
+87
+00:07:34.010 --> 00:07:41.250
+r2 is 0.025 squared times
+
+88
+00:07:41.250 --> 00:07:46.710
+v2. And if you plug in all your numbers,
+you
+
+89
+00:07:46.710 --> 00:07:54.170
+should get about pi times 0.05 squared
+
+90
+00:07:54.170 --> 00:07:57.710
+times 2 divided by pi, so pi is cancelled
+out,
+
+91
+00:07:57.910 --> 00:08:04.070
+0.025 squared, you should get exactly 8
+metres
+
+92
+00:08:04.070 --> 00:08:08.930
+per second. And this will be the speed
+it's
+
+93
+00:08:08.930 --> 00:08:12.650
+flowing through here. So notice that it's
+exponential.
+
+94
+00:08:13.290 --> 00:08:17.850
+If the diameter decreases by a half, the
+velocity
+
+95
+00:08:17.850 --> 00:08:19.910
+increases by four times.
+
+96
+00:08:19.970 --> 00:08:23.930
+So it's exponential. Now we have the new
+velocity.
+
+97
+00:08:24.690 --> 00:08:27.710
+So we're going to use our Bernoulli's
+equation
+
+98
+00:08:27.710 --> 00:08:30.510
+over here. I'm just going to real quick
+copy
+
+99
+00:08:30.510 --> 00:08:39.660
+and paste it. Okay.
+
+100
+00:08:40.020 --> 00:08:42.520
+Now we have the new Bernoulli's equation.
+
+101
+00:08:43.460 --> 00:08:45.500
+We could just, oops, lag.
+
+102
+00:08:46.300 --> 00:08:52.920
+We can use it. So if you plug everything
+into
+
+103
+00:08:52.920 --> 00:09:00.130
+the equation, we have, um, this stays
+
+104
+00:09:00.130 --> 00:09:03.810
+constant because in this case, the height
+of
+
+105
+00:09:03.810 --> 00:09:06.750
+the fluid is always the same.
+
+106
+00:09:06.910 --> 00:09:09.970
+So this stays constant. So our simplified
+equation
+
+107
+00:09:09.970 --> 00:09:14.550
+will be p1 plus one over two rho one times
+v1
+
+108
+00:09:14.550 --> 00:09:19.390
+squared equals p2 plus one over two rho
+two
+
+109
+00:09:19.390 --> 00:09:26.680
+v2 squared. And now p1 is, as
+
+110
+00:09:26.680 --> 00:09:33.300
+we know, 100,000 plus one over two, the
+density
+
+111
+00:09:33.300 --> 00:09:35.520
+of the fluid. We know it's just a density
+of
+
+112
+00:09:35.520 --> 00:09:40.460
+water, which is 1000 times v1 is two
+squared
+
+113
+00:09:40.460 --> 00:09:44.180
+is equal to p2, which we want to solve
+plus
+
+114
+00:09:44.180 --> 00:09:49.220
+one over two times 1000, because it's
+still
+
+115
+00:09:49.220 --> 00:09:54.120
+the same liquid doesn't change. And v2 is
+as
+
+116
+00:09:54.120 --> 00:09:57.640
+we calculated eight squared.
+
+117
+00:09:59.700 --> 00:10:04.480
+And when you plug this in your calculator,
+you
+
+118
+00:10:04.480 --> 00:10:13.430
+will get a
+
+119
+00:10:13.430 --> 00:10:21.330
+one sec, you'll
+
+120
+00:10:21.330 --> 00:10:29.920
+get 70,000 pascals. So
+
+121
+00:10:29.920 --> 00:10:34.480
+notice that 70,000 is less than the
+initial
+
+122
+00:10:34.480 --> 00:10:36.880
+pressure and the higher container. So you
+might
+
+123
+00:10:36.880 --> 00:10:39.180
+think that since it's being squeezed into
+such
+
+124
+00:10:39.180 --> 00:10:45.760
+a tight spot, the pressure is not going to
+be
+
+125
+00:10:45.760 --> 00:10:49.840
+as great. But it's actually the opposite.
+
+126
+00:10:49.860 --> 00:10:52.540
+If you go inside, even though the velocity
+is
+
+127
+00:10:52.540 --> 00:10:54.500
+going to increase, the pressure actually
+decrease.
+
+128
+00:10:56.880 --> 00:11:00.840
+And in conclusion, basically, this is the
+formula
+
+129
+00:11:00.840 --> 00:11:04.520
+that governs all fluid mechanics.
+
+130
+00:11:05.760 --> 00:11:06.480
+Thank you for watching.

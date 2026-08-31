@@ -1,0 +1,499 @@
+{
+ "lesson": {
+  "topicKey": "light",
+  "curriculumKey": "light_interference",
+  "title": "Young's Double Slit Experiment",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%205%20Double%20Slit%20Experiment.mp4",
+  "source": "light.dart"
+ },
+ "segments": [
+  {
+   "start": 1.23,
+   "end": 25.75,
+   "text": "In this video, we will be covering the double slit experiment. And this is one of the key pieces of evidence that confirms that light is a wave. It's a photon and it behaves like a wave. And basically, what this does is you shine a beam of light into the double split.",
+   "avg_logprob": -0.15916878297444312
+  },
+  {
+   "start": 26.53,
+   "end": 50.31,
+   "text": "And it's going to create a pattern on the wall. And the pattern looks something like this. It's going to be bright lights and it fades away eventually. But this is basically proving that light behaves like a wave. Because in order for these bright lights to happen, the waves need to have constructive and destructive interference.",
+   "avg_logprob": -0.07400729229201132
+  },
+  {
+   "start": 50.31,
+   "end": 79.69,
+   "text": "At constructive points, the waves form the bands of light and at destructive interference points, it's dark. And we will be going over a couple of formulas that you will need to know in order to do these types of problems. So first of all, what is this experiment? Well, in this experiment, a screen is placed behind the slit and a beam of light is over here.",
+   "avg_logprob": -0.06025440809316933
+  },
+  {
+   "start": 79.69,
+   "end": 110.74,
+   "text": "And it's at a distance of usually depicted by L from the double slit. And each slit basically acts as a source of waves because light is going through them. And what you observe is based off of constructive and destructive interference, like I've said before. And the key idea is that the path difference",
+   "avg_logprob": -0.06843423417636327
+  },
+  {
+   "start": 110.74,
+   "end": 143.28,
+   "text": "is delta r. And the path difference is basically the distance between each slit, the length travelled by each slit. And whether point P is bright or dark really depends on delta r. This is given by the formula delta r equals",
+   "avg_logprob": -0.10957511328160763
+  },
+  {
+   "start": 143.28,
+   "end": 173.1,
+   "text": "m lambda. And m is basically like the order or the number of the fringe. So this, it would start at zero, and it would go to one, two, three, four, and so on. Same side for this, one, two, three, four, and that would be equal to m. Lambda is just a wavelength. Now, for spacing on a screen, we need to use the spot angle approximation.",
+   "avg_logprob": -0.11772100735041831
+  },
+  {
+   "start": 173.1,
+   "end": 203.08,
+   "text": "So in these setups, in a double slit experiment, the angles are really, really small. So we can use small angle approximations, which basically says that sine theta equals tan theta, which is equal to y over L. So if we know that d sine of theta, let's call this theta, equals m times lambda, which is r.",
+   "avg_logprob": -0.06801910223439336
+  },
+  {
+   "start": 203.08,
+   "end": 223.48,
+   "text": "So d sine theta equals m times lambda, we would get y equals m lambda L over d. And that is basically one of the main formulas that we would have to know for double slit experiments.",
+   "avg_logprob": -0.07282373130969379
+  },
+  {
+   "start": 225.74,
+   "end": 248.56,
+   "text": "Now, this basically shows that the larger the wavelength is, the fringes are further apart, because y is the distance between the fringes. So the larger the wavelength, the fringes are further apart. The larger the length away from the slit, the more wider the fringes are apart.",
+   "avg_logprob": -0.06373933085706085
+  },
+  {
+   "start": 248.56,
+   "end": 260.26,
+   "text": "And for the fringes to be closer together, you would need a greater distance of your slit.",
+   "avg_logprob": -0.10759869279960792
+  },
+  {
+   "start": 261.73,
+   "end": 284.35,
+   "text": "Now, another formula you can use is delta y. The change, the distance between two of the bands is equal to theta L over d. Because m basically depicts the order, and y depends purely on the order.",
+   "avg_logprob": -0.12249768996725277
+  },
+  {
+   "start": 284.35,
+   "end": 293.19,
+   "text": "So instead of using m, you could use delta y. And that's another formula you would be using for this double slit experiment.",
+   "avg_logprob": -0.0685504574829073
+  },
+  {
+   "start": 293.97,
+   "end": 316.18,
+   "text": "And that's basically all you need to know about double slit experiments. It proves that light acts as a wave, because it uses constructive and destructive interference to prove that.",
+   "avg_logprob": -0.0685504574829073
+  },
+  {
+   "start": 316.18,
+   "end": 326.9,
+   "text": "And it also can be calculated, a lot of the values can be calculated from the formulae we learned over here, and the small angle approximation.",
+   "avg_logprob": -0.08948509436514643
+  },
+  {
+   "start": 330.49,
+   "end": 335.33,
+   "text": "And that's all for what you need to know about the double slit. Thank you!",
+   "avg_logprob": -0.08948509436514643
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.23,
+   "end": 3.85,
+   "text": "In this video, we will be covering the double"
+  },
+  {
+   "start": 3.85,
+   "end": 6.67,
+   "text": "slit experiment. And this is one of the key"
+  },
+  {
+   "start": 6.67,
+   "end": 9.87,
+   "text": "pieces of evidence that confirms that light"
+  },
+  {
+   "start": 9.87,
+   "end": 13.51,
+   "text": "is a wave."
+  },
+  {
+   "start": 13.99,
+   "end": 16.33,
+   "text": "It's a photon and it behaves like a wave."
+  },
+  {
+   "start": 18.67,
+   "end": 23.61,
+   "text": "And basically, what this does is you shine a"
+  },
+  {
+   "start": 23.61,
+   "end": 25.75,
+   "text": "beam of light into the double split."
+  },
+  {
+   "start": 26.53,
+   "end": 29.85,
+   "text": "And it's going to create a pattern on the wall."
+  },
+  {
+   "start": 30.83,
+   "end": 32.87,
+   "text": "And the pattern looks something like this. It's"
+  },
+  {
+   "start": 32.87,
+   "end": 36.59,
+   "text": "going to be bright lights and it fades away"
+  },
+  {
+   "start": 36.59,
+   "end": 40.79,
+   "text": "eventually. But this is basically proving that"
+  },
+  {
+   "start": 40.79,
+   "end": 44.21,
+   "text": "light behaves like a wave. Because in order"
+  },
+  {
+   "start": 44.21,
+   "end": 46.79,
+   "text": "for these bright lights to happen, the waves"
+  },
+  {
+   "start": 46.79,
+   "end": 50.31,
+   "text": "need to have constructive and destructive interference."
+  },
+  {
+   "start": 50.31,
+   "end": 55.81,
+   "text": "At constructive points, the waves form the bands"
+  },
+  {
+   "start": 55.81,
+   "end": 59.03,
+   "text": "of light and at destructive interference points,"
+  },
+  {
+   "start": 59.61,
+   "end": 64.09,
+   "text": "it's dark. And we will be going over a couple"
+  },
+  {
+   "start": 64.09,
+   "end": 66.85,
+   "text": "of formulas that you will need to know in order"
+  },
+  {
+   "start": 66.85,
+   "end": 70.53,
+   "text": "to do these types of problems. So first of all,"
+  },
+  {
+   "start": 70.57,
+   "end": 74.67,
+   "text": "what is this experiment? Well, in this experiment,"
+  },
+  {
+   "start": 75.05,
+   "end": 78.49,
+   "text": "a screen is placed behind the slit and a beam"
+  },
+  {
+   "start": 78.49,
+   "end": 82.93,
+   "text": "of light is over here. And it's at a distance"
+  },
+  {
+   "start": 82.93,
+   "end": 88.01,
+   "text": "of usually depicted by L from the double slit."
+  },
+  {
+   "start": 88.77,
+   "end": 92.51,
+   "text": "And each slit basically acts as a source of"
+  },
+  {
+   "start": 92.51,
+   "end": 95.13,
+   "text": "waves because light is going through them."
+  },
+  {
+   "start": 97.6,
+   "end": 102.28,
+   "text": "And what you observe is based off of constructive"
+  },
+  {
+   "start": 102.28,
+   "end": 104.18,
+   "text": "and destructive interference, like I've said"
+  },
+  {
+   "start": 104.18,
+   "end": 110.74,
+   "text": "before. And the key idea is that the path difference"
+  },
+  {
+   "start": 110.74,
+   "end": 114.64,
+   "text": "is delta r."
+  },
+  {
+   "start": 117.34,
+   "end": 123.22,
+   "text": "And the path difference is basically the distance"
+  },
+  {
+   "start": 123.22,
+   "end": 130.4,
+   "text": "between each slit, the length travelled"
+  },
+  {
+   "start": 130.4,
+   "end": 135.08,
+   "text": "by each slit. And whether point P is bright"
+  },
+  {
+   "start": 135.08,
+   "end": 138.04,
+   "text": "or dark really depends on delta r."
+  },
+  {
+   "start": 139.98,
+   "end": 143.28,
+   "text": "This is given by the formula delta r equals"
+  },
+  {
+   "start": 143.28,
+   "end": 147.66,
+   "text": "m lambda. And m is basically like the order"
+  },
+  {
+   "start": 147.66,
+   "end": 151.24,
+   "text": "or the number of the fringe."
+  },
+  {
+   "start": 151.7,
+   "end": 154.98,
+   "text": "So this, it would start at zero, and it would"
+  },
+  {
+   "start": 154.98,
+   "end": 158.62,
+   "text": "go to one, two, three, four, and so on."
+  },
+  {
+   "start": 159.06,
+   "end": 161.78,
+   "text": "Same side for this, one, two, three, four, and"
+  },
+  {
+   "start": 161.78,
+   "end": 164.52,
+   "text": "that would be equal to m. Lambda is just a wavelength."
+  },
+  {
+   "start": 166.06,
+   "end": 171.48,
+   "text": "Now, for spacing on a screen, we need to use"
+  },
+  {
+   "start": 171.48,
+   "end": 176.38,
+   "text": "the spot angle approximation. So in these setups,"
+  },
+  {
+   "start": 176.9,
+   "end": 179.8,
+   "text": "in a double slit experiment, the angles are"
+  },
+  {
+   "start": 179.8,
+   "end": 182.38,
+   "text": "really, really small. So we can use small angle"
+  },
+  {
+   "start": 182.38,
+   "end": 186.22,
+   "text": "approximations, which basically says that sine"
+  },
+  {
+   "start": 186.22,
+   "end": 191.78,
+   "text": "theta equals tan theta, which is equal to y"
+  },
+  {
+   "start": 191.78,
+   "end": 197.14,
+   "text": "over L. So if we know that d sine of theta,"
+  },
+  {
+   "start": 197.14,
+   "end": 202.14,
+   "text": "let's call this theta, equals m times lambda,"
+  },
+  {
+   "start": 202.14,
+   "end": 209.3,
+   "text": "which is r. So d sine theta equals m times lambda,"
+  },
+  {
+   "start": 209.7,
+   "end": 214.22,
+   "text": "we would get y equals m lambda L over d."
+  },
+  {
+   "start": 215.08,
+   "end": 218.84,
+   "text": "And that is basically one of the main formulas"
+  },
+  {
+   "start": 218.84,
+   "end": 223.48,
+   "text": "that we would have to know for double slit experiments."
+  },
+  {
+   "start": 225.74,
+   "end": 230.92,
+   "text": "Now, this basically shows that the larger the"
+  },
+  {
+   "start": 230.92,
+   "end": 234.36,
+   "text": "wavelength is, the fringes are further apart,"
+  },
+  {
+   "start": 234.6,
+   "end": 237.48,
+   "text": "because y is the distance between the fringes."
+  },
+  {
+   "start": 238.28,
+   "end": 240.26,
+   "text": "So the larger the wavelength, the fringes are"
+  },
+  {
+   "start": 240.26,
+   "end": 244.0,
+   "text": "further apart. The larger the length away from"
+  },
+  {
+   "start": 244.0,
+   "end": 248.56,
+   "text": "the slit, the more wider the fringes are apart."
+  },
+  {
+   "start": 248.56,
+   "end": 254.12,
+   "text": "And for the fringes to be closer together, you"
+  },
+  {
+   "start": 254.12,
+   "end": 260.26,
+   "text": "would need a greater distance of your slit."
+  },
+  {
+   "start": 261.73,
+   "end": 268.75,
+   "text": "Now, another formula you can use is delta-y."
+  },
+  {
+   "start": 269.03,
+   "end": 273.15,
+   "text": "The change, the distance between two of the"
+  },
+  {
+   "start": 273.15,
+   "end": 277.61,
+   "text": "bands is equal to theta L over d."
+  },
+  {
+   "start": 278.35,
+   "end": 282.87,
+   "text": "Because m basically depicts the order, and y"
+  },
+  {
+   "start": 282.87,
+   "end": 285.77,
+   "text": "depends purely on the order. So instead of using"
+  },
+  {
+   "start": 285.77,
+   "end": 289.59,
+   "text": "m, you could use delta-y. And that's another"
+  },
+  {
+   "start": 289.59,
+   "end": 292.63,
+   "text": "formula you would be using for this double slit"
+  },
+  {
+   "start": 292.63,
+   "end": 295.51,
+   "text": "experiment. And that's basically all you need"
+  },
+  {
+   "start": 295.51,
+   "end": 298.15,
+   "text": "to know about double slit experiments."
+  },
+  {
+   "start": 299.17,
+   "end": 306.91,
+   "text": "It proves that light acts as"
+  },
+  {
+   "start": 308.42,
+   "end": 314.7,
+   "text": "a wave, because it uses constructive and destructive"
+  },
+  {
+   "start": 314.7,
+   "end": 317.94,
+   "text": "interference to prove that. And it also can"
+  },
+  {
+   "start": 317.94,
+   "end": 321.58,
+   "text": "be calculated, a lot of the values can be calculated"
+  },
+  {
+   "start": 321.58,
+   "end": 324.92,
+   "text": "from the formulae we learned over here, and"
+  },
+  {
+   "start": 324.92,
+   "end": 331.57,
+   "text": "the small angle approximation. And that's all"
+  },
+  {
+   "start": 331.57,
+   "end": 334.21,
+   "text": "for what you need to know about the double slit."
+  },
+  {
+   "start": 334.97,
+   "end": 335.33,
+   "text": "Thank you!"
+  }
+ ],
+ "report": {
+  "key": "light__light_interference",
+  "title": "Young's Double Slit Experiment",
+  "topicKey": "light",
+  "duration": 336.704,
+  "cues": 77,
+  "corrections": 2,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.15916878297444312,
+  "flagged": []
+ }
+}

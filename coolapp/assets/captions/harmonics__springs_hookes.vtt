@@ -1,0 +1,507 @@
+WEBVTT
+NOTE Springs and Hookes Law
+
+1
+00:00:00.720 --> 00:00:03.580
+In this video, we will be introduced to
+Hooke's
+
+2
+00:00:03.580 --> 00:00:06.880
+law and how oscillations can happen in
+springs.
+
+3
+00:00:08.020 --> 00:00:10.400
+Next video, we'll be further analyzing
+this
+
+4
+00:00:10.400 --> 00:00:14.420
+through energy diagrams and how potential
+energy
+
+5
+00:00:14.420 --> 00:00:17.420
+can alternate with kinetic energy.
+
+6
+00:00:17.980 --> 00:00:21.340
+But let's focus on this lesson first.
+First
+
+7
+00:00:21.340 --> 00:00:28.340
+of all, let's say we have a spring and it
+
+8
+00:00:28.340 --> 00:00:34.000
+is stretched by a distance of x metres.
+
+9
+00:00:34.880 --> 00:00:37.400
+So if the spring was at rest, let's say it
+would
+
+10
+00:00:37.400 --> 00:00:42.350
+look like this. Let's do it like that.
+
+11
+00:00:43.230 --> 00:00:47.350
+Now, when the spring is stretched by a
+distance
+
+12
+00:00:47.350 --> 00:00:53.810
+of x, it's going to apply a force on the
+object
+
+13
+00:00:53.810 --> 00:00:57.690
+that is attached to the string. And this
+force
+
+14
+00:00:57.690 --> 00:01:01.310
+is called the restoring force. And it's
+the
+
+15
+00:01:01.310 --> 00:01:06.730
+force applied on an object that tries to
+make
+
+16
+00:01:06.730 --> 00:01:11.310
+the spring go back to equilibrium or its
+resting
+
+17
+00:01:11.310 --> 00:01:16.430
+position. And equilibrium refers to that.
+
+18
+00:01:17.450 --> 00:01:25.200
+This force is given as
+
+19
+00:01:25.200 --> 00:01:31.760
+force is negative kx, where x is the
+distance
+
+20
+00:01:31.760 --> 00:01:36.400
+travelled or the distance stretched by the
+spring,
+
+21
+00:01:36.800 --> 00:01:40.100
+and k is the spring constant.
+
+22
+00:01:41.820 --> 00:01:45.680
+Since the force is a vector, we know it's
+negative
+
+23
+00:01:45.680 --> 00:01:49.020
+because x, if it stretches in the positive
+direction
+
+24
+00:01:49.020 --> 00:01:51.560
+over here, the force is going to be
+applied
+
+25
+00:01:51.560 --> 00:01:55.860
+the other way. Now, k is the spring
+constant,
+
+26
+00:01:56.180 --> 00:01:59.100
+and basically it's a numerical value of
+how
+
+27
+00:01:59.100 --> 00:02:04.680
+stiff the spring is.
+
+28
+00:02:05.020 --> 00:02:07.960
+And usually k is given to you in these
+types
+
+29
+00:02:07.960 --> 00:02:11.720
+of questions. If k is not given to you, if
+it
+
+30
+00:02:11.720 --> 00:02:14.240
+doesn't ask you to solve k, you probably
+won't
+
+31
+00:02:14.240 --> 00:02:19.960
+be needing this formula. Negative kx, I
+kind
+
+32
+00:02:19.960 --> 00:02:24.640
+of rewrote that, but that's basically this
+equation.
+
+33
+00:02:26.060 --> 00:02:33.470
+Now, the same thing can also happen when
+the
+
+34
+00:02:33.470 --> 00:02:37.970
+spring is compressed. Let's say it's
+compressed
+
+35
+00:02:37.970 --> 00:02:41.390
+by a distance of y now.
+
+36
+00:02:42.910 --> 00:02:45.190
+So we're going to put this down, and let's
+call
+
+37
+00:02:45.190 --> 00:02:51.530
+this y. Now, let's try to draw a free-body
+diagram
+
+38
+00:02:51.530 --> 00:02:55.830
+on this box. There is going to be gravity
+and
+
+39
+00:02:55.830 --> 00:03:00.710
+normal force, fN, fG, where normal force
+is
+
+40
+00:03:00.710 --> 00:03:04.550
+perpendicular to the surface, and also
+there
+
+41
+00:03:04.550 --> 00:03:11.670
+is going to be the restoring force, fr.
+
+42
+00:03:14.290 --> 00:03:18.590
+Now, in a lot of these questions, when
+it's
+
+43
+00:03:18.590 --> 00:03:21.110
+oscillating, there will not be friction.
+But
+
+44
+00:03:21.110 --> 00:03:26.010
+if we say something like the box is going
+to
+
+45
+00:03:26.010 --> 00:03:29.530
+be launched, then friction might be in
+this
+
+46
+00:03:29.530 --> 00:03:32.730
+problem. So, if it's not moving, let's say
+it's
+
+47
+00:03:32.730 --> 00:03:35.610
+released from rest, the initial type of
+friction
+
+48
+00:03:35.610 --> 00:03:38.430
+will be static friction because it's not
+moving,
+
+49
+00:03:38.750 --> 00:03:42.390
+so fstatic. However, if we're drawing the
+free
+
+50
+00:03:42.390 --> 00:03:46.470
+body diagram while it's in motion, which a
+lot
+
+51
+00:03:46.470 --> 00:03:48.410
+of the times we have to do because we have
+to
+
+52
+00:03:48.410 --> 00:03:51.770
+calculate kinematics, then we would be
+using
+
+53
+00:03:51.770 --> 00:03:55.230
+the kinetic friction and using the kinetic
+friction
+
+54
+00:03:55.230 --> 00:03:58.790
+coefficient. And that's basically the
+forces
+
+55
+00:03:58.790 --> 00:04:02.770
+exerted on this box, or this object.
+
+56
+00:04:05.370 --> 00:04:10.710
+Now, energy continuously changes form, and
+we're
+
+57
+00:04:10.710 --> 00:04:13.230
+going to learn that in the next video.
+
+58
+00:04:14.090 --> 00:04:19.090
+For a mass-spring system, though, we know
+that
+
+59
+00:04:19.090 --> 00:04:24.590
+for a pendulum, the period is 2 pi root L
+over
+
+60
+00:04:24.590 --> 00:04:29.110
+G. In this case, it's quite the same
+thing,
+
+61
+00:04:29.110 --> 00:04:32.310
+but with a bit of variable changes. So the
+period
+
+62
+00:04:32.310 --> 00:04:39.650
+of a spring is equal to 2 pi root M over
+
+63
+00:04:39.650 --> 00:04:44.250
+k. So, as you notice, there are some
+differences
+
+64
+00:04:44.250 --> 00:04:47.170
+between this new period and the previous
+period.
+
+65
+00:04:47.910 --> 00:04:51.130
+Now, this period depends on the mass of
+the
+
+66
+00:04:51.130 --> 00:04:55.150
+object. A heavier object would have a
+larger
+
+67
+00:04:55.150 --> 00:04:59.350
+time for it to oscillate because the
+period
+
+68
+00:04:59.350 --> 00:05:03.350
+would be larger. And the stiffness, or the
+spring
+
+69
+00:05:03.350 --> 00:05:08.750
+constant, is also a factor that comes into
+play
+
+70
+00:05:08.750 --> 00:05:15.590
+for a period. And you could also notice
+that
+
+71
+00:05:15.590 --> 00:05:17.910
+period doesn't depend on amplitude.
+
+72
+00:05:20.230 --> 00:05:24.330
+So, in real systems, friction and air
+resistance
+
+73
+00:05:24.330 --> 00:05:28.630
+are present. Otherwise, when you pull a
+spring,
+
+74
+00:05:28.890 --> 00:05:32.590
+it's just going to keep on going until a
+net
+
+75
+00:05:32.590 --> 00:05:34.770
+external force is applied to it, Newton's
+law.
+
+76
+00:05:34.770 --> 00:05:40.660
+So, this basically causes oscillations
+that
+
+77
+00:05:40.660 --> 00:05:43.640
+have an amplitude that decreases over
+time,
+
+78
+00:05:44.140 --> 00:05:47.120
+and that's called damped oscillations.
+
+79
+00:05:47.120 --> 00:05:54.640
+And this is present in every experimental
+
+80
+00:05:54.640 --> 00:05:59.800
+or every real-life case, where basically
+amplitude
+
+81
+00:05:59.800 --> 00:06:07.500
+decreases over time due to friction
+
+82
+00:06:07.500 --> 00:06:18.280
+and air resistance. And
+
+83
+00:06:18.280 --> 00:06:24.960
+it's present in real life.
+
+84
+00:06:30.180 --> 00:06:33.980
+And over time, if damping is large enough,
+this
+
+85
+00:06:33.980 --> 00:06:38.640
+will stop oscillations completely. So, the
+two
+
+86
+00:06:38.640 --> 00:06:41.120
+formulas we learned today that will
+probably
+
+87
+00:06:41.120 --> 00:06:43.360
+be given on your formula sheet if you're
+doing
+
+88
+00:06:43.360 --> 00:06:50.320
+IB or AP are T of a spring is 2 pi root m
+over
+
+89
+00:06:50.320 --> 00:06:54.320
+k, and the restoring force, or the force
+of
+
+90
+00:06:54.320 --> 00:06:58.160
+a spring, is equal to negative spring
+constant
+
+91
+00:06:58.160 --> 00:07:01.640
+and x, where k is the spring constant or
+the
+
+92
+00:07:01.640 --> 00:07:06.420
+stiffness, and x is the distance
+displaced.
+
+93
+00:07:06.420 --> 00:07:09.180
+Next video, we will be looking at some
+examples
+
+94
+00:07:09.180 --> 00:07:13.000
+of this, and we are going to be
+introducing
+
+95
+00:07:13.000 --> 00:07:17.220
+how we can relate energy to equilibrium,
+because
+
+96
+00:07:17.220 --> 00:07:21.320
+if you think about it, when you oscillate
+it,
+
+97
+00:07:21.940 --> 00:07:25.560
+at this point, there is going to be
+potential
+
+98
+00:07:25.560 --> 00:07:28.960
+energy at max, but at the middle, when
+it's
+
+99
+00:07:28.960 --> 00:07:30.900
+at equilibrium and it's still going this
+way,
+
+100
+00:07:31.060 --> 00:07:33.620
+kinetic energy is at max, which means it's
+the
+
+101
+00:07:33.620 --> 00:07:36.400
+fastest at equilibrium when you oscillate
+it.
+
+102
+00:07:36.420 --> 00:07:41.060
+And we will be looking into that, and I'll
+be
+
+103
+00:07:41.060 --> 00:07:43.800
+explaining that more in depth in the next
+video.
+
+104
+00:07:44.500 --> 00:07:48.320
+So, thank you for listening, and I hope
+you
+
+105
+00:07:48.320 --> 00:07:50.020
+enjoyed this video. Bye!

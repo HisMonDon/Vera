@@ -1,0 +1,633 @@
+WEBVTT
+NOTE Graphical Kinematics
+
+1
+00:00:01.010 --> 00:00:03.650
+In this video, we will be looking at
+graphical
+
+2
+00:00:03.650 --> 00:00:06.490
+kinematics and how position relates with
+velocity
+
+3
+00:00:06.490 --> 00:00:09.050
+and how that relates with acceleration.
+
+4
+00:00:10.550 --> 00:00:15.010
+Basically, in graphical kinematics, before
+AP
+
+5
+00:00:15.010 --> 00:00:18.130
+Physics C, or in normal high school
+physics,
+
+6
+00:00:18.670 --> 00:00:21.450
+you will not need to use calculus to use
+this.
+
+7
+00:00:21.810 --> 00:00:23.910
+So the questions are going to be
+relatively
+
+8
+00:00:23.910 --> 00:00:27.310
+easy. The main thing that you need to know
+is
+
+9
+00:00:27.310 --> 00:00:30.990
+that velocity is the slope of the
+position.
+
+10
+00:00:32.170 --> 00:00:35.930
+And acceleration is the slope of the
+velocity.
+
+11
+00:00:37.370 --> 00:00:42.590
+So if you think of position as y, and if
+you
+
+12
+00:00:42.590 --> 00:00:45.090
+know calculus, velocity would just be y
+prime
+
+13
+00:00:45.090 --> 00:00:47.870
+and acceleration would be y double prime.
+
+14
+00:00:48.470 --> 00:00:52.930
+Or acceleration would be the slope of the
+position
+
+15
+00:00:52.930 --> 00:00:54.790
+and velocity would just be the slope of
+the
+
+16
+00:00:54.790 --> 00:00:57.310
+position. If that sounds hard to you and
+you
+
+17
+00:00:57.310 --> 00:01:00.170
+don't know calculus, let me make this
+easier
+
+18
+00:01:00.170 --> 00:01:05.770
+for you. Let's say the position was going
+like
+
+19
+00:01:05.770 --> 00:01:10.290
+this. If the position is in the shape of a
+parabola,
+
+20
+00:01:10.750 --> 00:01:13.570
+then the velocity is going to be the slope
+at
+
+21
+00:01:13.570 --> 00:01:16.470
+every point. And the velocity would look
+something
+
+22
+00:01:16.470 --> 00:01:19.270
+like this. It would just increase in a
+straight
+
+23
+00:01:19.270 --> 00:01:23.530
+line. And since the velocity is increasing
+in
+
+24
+00:01:23.530 --> 00:01:26.210
+a straight line, the acceleration would be
+the
+
+25
+00:01:26.210 --> 00:01:28.670
+same everywhere because the slope of this
+line
+
+26
+00:01:28.670 --> 00:01:33.730
+is just one. So basically, if this
+position
+
+27
+00:01:33.730 --> 00:01:40.800
+was y equals x squared, then the equation
+
+28
+00:01:40.800 --> 00:01:44.340
+of the velocity line graph would be equal
+to
+
+29
+00:01:44.340 --> 00:01:50.400
+y equals x and acceleration would be y
+equals
+
+30
+00:01:50.400 --> 00:01:57.600
+one. Or in this case, y is a, velocity is
+
+31
+00:01:57.600 --> 00:02:00.080
+v, and position is p.
+
+32
+00:02:00.540 --> 00:02:05.120
+And x in this case is always t because
+this
+
+33
+00:02:05.120 --> 00:02:08.940
+is a position over time. The x-axis in
+these
+
+34
+00:02:08.940 --> 00:02:11.020
+types of graphs is always t.
+
+35
+00:02:13.160 --> 00:02:15.460
+So let's try another example.
+
+36
+00:02:16.820 --> 00:02:20.280
+Let's say the position this time is
+increasing
+
+37
+00:02:20.280 --> 00:02:26.380
+at a steady rate. And we need to draw the
+graphs
+
+38
+00:02:26.380 --> 00:02:30.580
+for velocity and acceleration.
+
+39
+00:02:31.640 --> 00:02:35.260
+Well, let's see. We need to find the slope
+of
+
+40
+00:02:35.260 --> 00:02:40.600
+this position first of all. This is time
+and
+
+41
+00:02:40.600 --> 00:02:44.680
+this is the respective value. So what is
+the
+
+42
+00:02:44.680 --> 00:02:47.560
+slope of this? Well, looking at it, slope
+is
+
+43
+00:02:47.560 --> 00:02:50.100
+change in y over change in x.
+
+44
+00:02:50.100 --> 00:02:52.360
+So delta-y, delta-x.
+
+45
+00:02:53.140 --> 00:02:56.740
+So the slope is two. So since the slope is
+two
+
+46
+00:02:56.740 --> 00:03:03.970
+at any point in this graph, that means
+
+47
+00:03:03.970 --> 00:03:07.450
+that the velocity will be constant because
+the
+
+48
+00:03:07.450 --> 00:03:09.210
+slope is the same at any point in the
+graph.
+
+49
+00:03:09.210 --> 00:03:12.530
+So since the slope is two, the velocity
+will
+
+50
+00:03:12.530 --> 00:03:16.810
+be two at every single point. Now the
+acceleration
+
+51
+00:03:16.810 --> 00:03:20.250
+is the slope of the velocity. Now if the
+velocity
+
+52
+00:03:20.250 --> 00:03:22.930
+is just a horizontal line, because this
+has
+
+53
+00:03:22.930 --> 00:03:25.310
+the same slope, then the slope of a
+horizontal
+
+54
+00:03:25.310 --> 00:03:29.190
+line is always zero. So there will not be
+an
+
+55
+00:03:29.190 --> 00:03:31.810
+acceleration here. And when you think
+about
+
+56
+00:03:31.810 --> 00:03:34.350
+it, it makes sense. When the position is
+steadily
+
+57
+00:03:34.350 --> 00:03:37.450
+increasing at a constant rate, that means
+the
+
+58
+00:03:37.450 --> 00:03:41.150
+velocity or the speed of that object is
+going
+
+59
+00:03:41.150 --> 00:03:43.150
+to be the same and it's not going to be
+undergoing
+
+60
+00:03:43.150 --> 00:03:47.150
+any acceleration. Let's see another
+example.
+
+61
+00:03:48.030 --> 00:03:50.890
+This time we need to derive the position
+from
+
+62
+00:03:50.890 --> 00:03:56.230
+an acceleration. Let's say we have an
+acceleration
+
+63
+00:03:56.230 --> 00:03:58.870
+one. Usually acceleration doesn't go up
+and
+
+64
+00:03:58.870 --> 00:04:02.730
+down. It's an instantaneous change.
+
+65
+00:04:03.610 --> 00:04:08.750
+So over here, and then we will experience
+zero
+
+66
+00:04:08.750 --> 00:04:11.710
+acceleration. Now we have to work
+backwards.
+
+67
+00:04:12.410 --> 00:04:19.110
+As we can see, from time zero to two, the
+acceleration
+
+68
+00:04:19.110 --> 00:04:21.910
+is one metres per second squared.
+
+69
+00:04:23.210 --> 00:04:26.810
+So that means the slope from time zero to
+two
+
+70
+00:04:26.810 --> 00:04:30.190
+will be equal to one. So it's going to be
+linear
+
+71
+00:04:30.190 --> 00:04:33.910
+with a slope of one. Next, from time two
+to
+
+72
+00:04:33.910 --> 00:04:38.410
+four, the slope is going to be three. So
+we're
+
+73
+00:04:38.410 --> 00:04:41.930
+going to go over a bit, but let's say this
+is
+
+74
+00:04:41.930 --> 00:04:46.250
+eight. It's going to go all the way up to
+eight
+
+75
+00:04:46.250 --> 00:04:51.030
+in a straight line. Because since the
+acceleration
+
+76
+00:04:51.030 --> 00:04:54.430
+is constant, the velocity is increasing at
+a
+
+77
+00:04:54.430 --> 00:04:58.870
+constant rate of a slope of three.
+
+78
+00:04:58.870 --> 00:05:02.570
+So this is a slope of three. And now,
+finally,
+
+79
+00:05:03.590 --> 00:05:07.730
+the acceleration goes down to zero, which
+means
+
+80
+00:05:07.730 --> 00:05:11.990
+that the velocity is going to have a slope
+of
+
+81
+00:05:11.990 --> 00:05:15.510
+zero here. Now we can map out the
+position.
+
+82
+00:05:15.930 --> 00:05:18.470
+The position is basically like a parabola
+of
+
+83
+00:05:18.470 --> 00:05:21.070
+what we have. So it's going to look
+something
+
+84
+00:05:21.070 --> 00:05:25.210
+like this, and then it's going to go all
+the
+
+85
+00:05:25.210 --> 00:05:29.970
+way up. So let's just pretend that this is
+a
+
+86
+00:05:29.970 --> 00:05:32.330
+really large number, like 1000.
+
+87
+00:05:33.770 --> 00:05:37.710
+It's going to look something like that
+going
+
+88
+00:05:37.710 --> 00:05:41.550
+up, and then it's going to constantly
+increase
+
+89
+00:05:41.550 --> 00:05:44.570
+over here. I kind of overshot the
+question,
+
+90
+00:05:45.050 --> 00:05:48.170
+but that's basically the gist of it.
+
+91
+00:05:48.490 --> 00:05:51.310
+Let me give you another question that is
+like
+
+92
+00:05:51.310 --> 00:05:53.830
+this, but I won't overshoot it this time.
+So
+
+93
+00:05:53.830 --> 00:05:56.930
+we're going to start off with constant
+velocity,
+
+94
+00:05:56.930 --> 00:06:00.650
+and keep in mind that these velocity time
+graphs
+
+95
+00:06:00.650 --> 00:06:05.830
+can go into the negatives as well. So
+let's
+
+96
+00:06:05.830 --> 00:06:09.930
+say if acceleration went down to negative
+two,
+
+97
+00:06:10.470 --> 00:06:13.350
+and then it went up to positive two for
+one
+
+98
+00:06:13.350 --> 00:06:20.600
+second, and then it went up here, and then
+
+99
+00:06:20.600 --> 00:06:23.600
+it went down to zero. So how would we
+depict
+
+100
+00:06:23.600 --> 00:06:26.180
+the velocity time graph? Try yourself,
+pause
+
+101
+00:06:26.180 --> 00:06:28.040
+the video, and come back when you're
+ready.
+
+102
+00:06:29.700 --> 00:06:33.180
+So first of all, since we start with an
+acceleration
+
+103
+00:06:33.180 --> 00:06:36.000
+of one, we start with a slope of one.
+
+104
+00:06:36.480 --> 00:06:39.900
+So it's going to go like this, up to time
+equals
+
+105
+00:06:39.900 --> 00:06:42.260
+one. I'm going to label the time here.
+
+106
+00:06:45.560 --> 00:06:51.100
+And now, from time one to three seconds,
+we're
+
+107
+00:06:51.100 --> 00:06:54.300
+going to be going at a slope of negative
+two.
+
+108
+00:06:56.100 --> 00:07:01.050
+So it's going to have a slope of two.
+
+109
+00:07:02.590 --> 00:07:04.710
+So it's going to go all the way down to
+negative
+
+110
+00:07:04.710 --> 00:07:07.150
+three. And then we're going to have a
+slope
+
+111
+00:07:07.150 --> 00:07:10.030
+of positive two for one second. So it's
+going
+
+112
+00:07:10.030 --> 00:07:12.950
+to go up here, and then it's going to have
+a
+
+113
+00:07:12.950 --> 00:07:16.330
+slope of one, and then it's going to have
+a
+
+114
+00:07:16.330 --> 00:07:23.430
+slope of zero. So basically, the key is to
+map
+
+115
+00:07:23.430 --> 00:07:25.650
+out and treat this as a slope.
+
+116
+00:07:26.390 --> 00:07:28.410
+You treat this as a slope and you map it
+out
+
+117
+00:07:28.410 --> 00:07:32.830
+over here. Now, same thing for position.
+
+118
+00:07:33.550 --> 00:07:36.830
+We're going to have a parabola looking
+sort
+
+119
+00:07:36.830 --> 00:07:42.450
+of like that. And then we're going to have
+a
+
+120
+00:07:42.450 --> 00:07:46.750
+parabola looking like this, the other way
+now,
+
+121
+00:07:47.730 --> 00:07:51.210
+all the way down to negative nine.
+
+122
+00:07:52.530 --> 00:07:54.810
+Kind of overshotted again, but it's fine.
+
+123
+00:07:55.710 --> 00:07:58.110
+And then we're going to have a parabola
+that
+
+124
+00:07:58.110 --> 00:08:05.300
+looks like this, and then a less
+
+125
+00:08:05.300 --> 00:08:07.480
+steep parabola that goes here.
+
+126
+00:08:08.760 --> 00:08:12.880
+And then goes over here.
+
+127
+00:08:15.020 --> 00:08:18.680
+Goes all the way up, back up, and then
+flat
+
+128
+00:08:18.680 --> 00:08:22.400
+down. So that's basically how you do
+position,
+
+129
+00:08:22.580 --> 00:08:24.940
+velocity, and acceleration graphs. You
+have
+
+130
+00:08:24.940 --> 00:08:28.180
+to find the slope of the previous one.
+
+131
+00:08:29.120 --> 00:08:30.580
+Thank you for watching, and I hope you
+found
+
+132
+00:08:30.580 --> 00:08:32.140
+this helpful. Bye!

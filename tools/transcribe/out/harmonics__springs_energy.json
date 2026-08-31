@@ -1,0 +1,1730 @@
+{
+ "lesson": {
+  "topicKey": "harmonics",
+  "curriculumKey": "springs_energy",
+  "title": "Springs and Conservation of Energy",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%203%20Springs%20and%20Conservation%20of%20Energy.mp4",
+  "source": "harmonics.dart"
+ },
+ "segments": [
+  {
+   "start": 1.87,
+   "end": 10.47,
+   "text": "Let's take a look at this oscillating spring. We can actually use energy to map this out,",
+   "avg_logprob": -0.13459679910114833
+  },
+  {
+   "start": 11.23,
+   "end": 21.89,
+   "text": "and we can use energy to basically solve a lot of problems involving time, speed, and",
+   "avg_logprob": -0.13459679910114833
+  },
+  {
+   "start": 21.89,
+   "end": 27.61,
+   "text": "potential energy. Usually the question will want us to calculate something like its speed,",
+   "avg_logprob": -0.13459679910114833
+  },
+  {
+   "start": 27.61,
+   "end": 34.47,
+   "text": "its fastest possible speed. And now you have this image in mind. This is what they mean by",
+   "avg_logprob": -0.12315350731213888
+  },
+  {
+   "start": 34.47,
+   "end": 44.21,
+   "text": "an oscillating spring. Let's map this out using time. So let's say the spring is first initially",
+   "avg_logprob": -0.12315350731213888
+  },
+  {
+   "start": 46.09,
+   "end": 57.88,
+   "text": "at its highest peak, so all the way down here. And then it goes a bit up, and this would be the",
+   "avg_logprob": -0.12315350731213888
+  },
+  {
+   "start": 57.88,
+   "end": 65.5,
+   "text": "spring at its equilibrium, which means it would be the spring at rest. And then, as you can see,",
+   "avg_logprob": -0.11339918872978114
+  },
+  {
+   "start": 66.04,
+   "end": 73.34,
+   "text": "as you saw in the diagram, it's going to go up beyond equilibrium for a bit, and then it's going",
+   "avg_logprob": -0.11339918872978114
+  },
+  {
+   "start": 73.34,
+   "end": 82.04,
+   "text": "to repeat the process all over again. So it's going to go up, up, and then it's going to",
+   "avg_logprob": -0.11339918872978114
+  },
+  {
+   "start": 82.04,
+   "end": 90.88,
+   "text": "go down, and then back down. So that's basically the motion of the spring. Now, what you notice is",
+   "avg_logprob": -0.14070419470469156
+  },
+  {
+   "start": 91.5,
+   "end": 101.74,
+   "text": "if you just mapped the velocity out of the block, well, this over here would have a velocity",
+   "avg_logprob": -0.14070419470469156
+  },
+  {
+   "start": 101.74,
+   "end": 110.48,
+   "text": "of zero, and this would also have a velocity of zero, and this would be in motion. Let's just",
+   "avg_logprob": -0.14070419470469156
+  },
+  {
+   "start": 110.48,
+   "end": 118.14,
+   "text": "call this velocity x for now, for simplicity's sake. And why is it that these two have a",
+   "avg_logprob": -0.11078525780011779
+  },
+  {
+   "start": 118.14,
+   "end": 126.68,
+   "text": "velocity of zero? When you see over here, when they change direction, the velocity kind of stops.",
+   "avg_logprob": -0.11078525780011779
+  },
+  {
+   "start": 126.84,
+   "end": 131.66,
+   "text": "It stops moving for a split second, and then it goes in the other direction. Well,",
+   "avg_logprob": -0.11078525780011779
+  },
+  {
+   "start": 131.96,
+   "end": 139.02,
+   "text": "that's when energy comes into play. We have learned that \u2014 I'll erase this \u2014 we have learned",
+   "avg_logprob": -0.11078525780011779
+  },
+  {
+   "start": 139.02,
+   "end": 146.96,
+   "text": "that the total mechanical energy of the system, E total, is the sum of the kinetic energy and",
+   "avg_logprob": -0.12327886803049437
+  },
+  {
+   "start": 148.08,
+   "end": 157.6,
+   "text": "the potential energy. Now, if kinetic energy, as we know, is the energy based off of motion,",
+   "avg_logprob": -0.12327886803049437
+  },
+  {
+   "start": 158.62,
+   "end": 164.46,
+   "text": "if v equals zero, then that means that there's no kinetic energy. So at these two points,",
+   "avg_logprob": -0.12327886803049437
+  },
+  {
+   "start": 164.46,
+   "end": 174.34,
+   "text": "let's call this point one, point two, point three, at point one and three, all the energy",
+   "avg_logprob": -0.1646762770049426
+  },
+  {
+   "start": 174.34,
+   "end": 197.35,
+   "text": "is potential energy. All the energy is potential energy. However, at point two, when it's at",
+   "avg_logprob": -0.1646762770049426
+  },
+  {
+   "start": 197.35,
+   "end": 212.03,
+   "text": "point two, all the energy is kinetic energy. So between these points, between one and two,",
+   "avg_logprob": -0.13656689859416388
+  },
+  {
+   "start": 212.15,
+   "end": 218.75,
+   "text": "and between two and three, let's say, for example, at this point, the box is still going",
+   "avg_logprob": -0.13656689859416388
+  },
+  {
+   "start": 218.75,
+   "end": 224.23,
+   "text": "up. It has a velocity, it has kinetic energy going up, but it's not at its fastest speed.",
+   "avg_logprob": -0.13656689859416388
+  },
+  {
+   "start": 224.23,
+   "end": 229.13,
+   "text": "There's still potential energy because there's still a force driving it up, and that's the",
+   "avg_logprob": -0.15491436097932898
+  },
+  {
+   "start": 229.13,
+   "end": 237.61,
+   "text": "restoring force, as we learned. So if at two, kinetic energy is at max because all the total",
+   "avg_logprob": -0.15491436097932898
+  },
+  {
+   "start": 237.61,
+   "end": 254.21,
+   "text": "mechanical energy is kinetic energy, then we can say that at point two, the speed is \u2014 or the",
+   "avg_logprob": -0.15491436097932898
+  },
+  {
+   "start": 254.21,
+   "end": 262.75,
+   "text": "means it would be faster because one over two mv squared, as we know. And that is basically",
+   "avg_logprob": -0.1622192969447688
+  },
+  {
+   "start": 262.75,
+   "end": 269.55,
+   "text": "how we map out energy. Now, we know that, let's say, this box has a mass of m. The",
+   "avg_logprob": -0.1622192969447688
+  },
+  {
+   "start": 269.55,
+   "end": 276.67,
+   "text": "kinetic energy will be one over two mv squared. We know that. We've learned that equals one",
+   "avg_logprob": -0.1622192969447688
+  },
+  {
+   "start": 276.67,
+   "end": 281.47,
+   "text": "over two mv squared. But what is potential energy? We've only learned about gravitational",
+   "avg_logprob": -0.1622192969447688
+  },
+  {
+   "start": 281.47,
+   "end": 288.35,
+   "text": "potential energy. We haven't really touched on elastic potential energy. And I don't know if",
+   "avg_logprob": -0.0760661962247172
+  },
+  {
+   "start": 288.35,
+   "end": 293.39,
+   "text": "I've said this before in the energy thing. I think I saved it for this video. The elastic",
+   "avg_logprob": -0.0760661962247172
+  },
+  {
+   "start": 293.39,
+   "end": 300.85,
+   "text": "potential energy is given as one over two kx squared. And you know all the variables \u2014 spring",
+   "avg_logprob": -0.0760661962247172
+  },
+  {
+   "start": 300.85,
+   "end": 309.89,
+   "text": "constant and displacement from equilibrium. And this is basically a very, very crucial formula",
+   "avg_logprob": -0.0760661962247172
+  },
+  {
+   "start": 309.89,
+   "end": 317.85,
+   "text": "that we can use. Now, we can use this to solve a lot of problems because we know that,",
+   "avg_logprob": -0.10415621069925173
+  },
+  {
+   "start": 317.91,
+   "end": 326.03,
+   "text": "at equilibrium, this will be all the energy that remains. And at either points one or three,",
+   "avg_logprob": -0.10415621069925173
+  },
+  {
+   "start": 326.23,
+   "end": 334.69,
+   "text": "at the turning points, this will be the only type of energy that remains \u2014 only potential energy.",
+   "avg_logprob": -0.10415621069925173
+  },
+  {
+   "start": 335.79,
+   "end": 344.09,
+   "text": "Now, you might be wondering about energy. We've learned that you could be gravitational",
+   "avg_logprob": -0.14193753819716604
+  },
+  {
+   "start": 344.09,
+   "end": 350.77,
+   "text": "potential energy as well. So if there's gravitational potential energy, then why",
+   "avg_logprob": -0.14193753819716604
+  },
+  {
+   "start": 350.77,
+   "end": 359.85,
+   "text": "are we ignoring it? Well, the gravitational potential energy can be ignored because it's",
+   "avg_logprob": -0.14193753819716604
+  },
+  {
+   "start": 360.83,
+   "end": 367.09,
+   "text": "very, very close to being constant for all of these scenarios. A spring won't be that massive.",
+   "avg_logprob": -0.10172252635379414
+  },
+  {
+   "start": 368.03,
+   "end": 374.03,
+   "text": "So at point one, point two, and point three, it's safe to say that the gravitational potential",
+   "avg_logprob": -0.10172252635379414
+  },
+  {
+   "start": 374.03,
+   "end": 381.33,
+   "text": "energy is constant. So if we map out and do our energy calculations, it's just going to cancel",
+   "avg_logprob": -0.10172252635379414
+  },
+  {
+   "start": 381.33,
+   "end": 388.61,
+   "text": "out. That's why mostly we ignore gravitational potential energy. So in spring systems, unless",
+   "avg_logprob": -0.10172252635379414
+  },
+  {
+   "start": 388.61,
+   "end": 396.77,
+   "text": "there's a net external force or another major key factor that moves the object, you will only",
+   "avg_logprob": -0.09782763959756538
+  },
+  {
+   "start": 396.77,
+   "end": 403.27,
+   "text": "be dealing with kinetic energy of the block or the object and the potential elastic energy.",
+   "avg_logprob": -0.09782763959756538
+  },
+  {
+   "start": 404.39,
+   "end": 416.49,
+   "text": "Now, let's see a question. Over here, I have a question. And this is a question that must",
+   "avg_logprob": -0.09782763959756538
+  },
+  {
+   "start": 416.49,
+   "end": 423.01,
+   "text": "need energy to be solved. And if you get energy, if you get that unit,",
+   "avg_logprob": -0.07555874727666378
+  },
+  {
+   "start": 423.77,
+   "end": 427.53,
+   "text": "this is a really, really easy question. And if you get what I just said over here.",
+   "avg_logprob": -0.07555874727666378
+  },
+  {
+   "start": 428.39,
+   "end": 434.89,
+   "text": "So physics is really just understanding what you're doing. Practice won't help everything.",
+   "avg_logprob": -0.07555874727666378
+  },
+  {
+   "start": 435.01,
+   "end": 438.93,
+   "text": "You actually have to understand what's happening. And once you understand it,",
+   "avg_logprob": -0.07555874727666378
+  },
+  {
+   "start": 438.99,
+   "end": 442.75,
+   "text": "maybe not the first time. I definitely did not get it the first time. I took",
+   "avg_logprob": -0.07555874727666378
+  },
+  {
+   "start": 443.37,
+   "end": 446.99,
+   "text": "two sets of classes doing the same thing. But when it clicks,",
+   "avg_logprob": -0.08911081615247224
+  },
+  {
+   "start": 447.91,
+   "end": 451.45,
+   "text": "you're going to get the question right every, every single time.",
+   "avg_logprob": -0.08911081615247224
+  },
+  {
+   "start": 453.25,
+   "end": 459.07,
+   "text": "So really try your hardest to understand these. And if you don't get what I'm saying,",
+   "avg_logprob": -0.08911081615247224
+  },
+  {
+   "start": 459.19,
+   "end": 465.69,
+   "text": "you could search it up, ask AI, because AI is actually a really, really good tool to",
+   "avg_logprob": -0.08911081615247224
+  },
+  {
+   "start": 465.69,
+   "end": 470.29,
+   "text": "ask if you don't understand something, because it gives you personalized answers.",
+   "avg_logprob": -0.08911081615247224
+  },
+  {
+   "start": 472.53,
+   "end": 479.87,
+   "text": "But this question will just do it right now. A 0.8 kilogram mass is attached to a horizontal spring",
+   "avg_logprob": -0.07432925187655397
+  },
+  {
+   "start": 479.87,
+   "end": 487.53,
+   "text": "with a spring constant of 400. The spring is compressed by 0.12 meters and released from rest",
+   "avg_logprob": -0.07432925187655397
+  },
+  {
+   "start": 487.53,
+   "end": 494.31,
+   "text": "and calculate the maximum speed of the mass. Well, let's map it out. I'm just going to real",
+   "avg_logprob": -0.07432925187655397
+  },
+  {
+   "start": 494.31,
+   "end": 504.9,
+   "text": "quick borrow the diagram we drew over here and we can label our values. So",
+   "avg_logprob": -0.0982387017677812
+  },
+  {
+   "start": 506.68,
+   "end": 512.12,
+   "text": "really does not matter which way it's compressed. If it's compressed like this or it's stretched,",
+   "avg_logprob": -0.0982387017677812
+  },
+  {
+   "start": 512.12,
+   "end": 518.56,
+   "text": "really does not matter. But for the sake of the question, we'll just treat it as it's compressed.",
+   "avg_logprob": -0.0982387017677812
+  },
+  {
+   "start": 519.16,
+   "end": 529.37,
+   "text": "If this was equilibrium, then x over here or the compressed would be 0.12 meters. So",
+   "avg_logprob": -0.10386206556198209
+  },
+  {
+   "start": 530.45,
+   "end": 534.37,
+   "text": "in order to know the maximum speed, we will need the kinetic energy",
+   "avg_logprob": -0.10386206556198209
+  },
+  {
+   "start": 535.17,
+   "end": 541.21,
+   "text": "because that's the only thing that has the speed. So k equals one over two mv squared.",
+   "avg_logprob": -0.10386206556198209
+  },
+  {
+   "start": 543.13,
+   "end": 549.27,
+   "text": "Now, as we've talked about, the maximum speed is always in the middle of the turning points or",
+   "avg_logprob": -0.10386206556198209
+  },
+  {
+   "start": 549.27,
+   "end": 559.55,
+   "text": "aka equilibrium. So the total mechanical energy initially is equal to the end",
+   "avg_logprob": -0.08304682042863634
+  },
+  {
+   "start": 561.19,
+   "end": 567.23,
+   "text": "because the law of conservation of energy. Initially, as we've talked about, there is",
+   "avg_logprob": -0.08304682042863634
+  },
+  {
+   "start": 567.23,
+   "end": 574.15,
+   "text": "only potential energy because it's released from rest. There's no kinetic energy, but there is a",
+   "avg_logprob": -0.08304682042863634
+  },
+  {
+   "start": 574.15,
+   "end": 579.75,
+   "text": "lot of potential elastic energy. How do we calculate that? We use our formula over here,",
+   "avg_logprob": -0.08304682042863634
+  },
+  {
+   "start": 579.75,
+   "end": 593.99,
+   "text": "one over two kx squared. So I'll just explain it. ue plus kei equals kef at equilibrium plus uef",
+   "avg_logprob": -0.18239095746254436
+  },
+  {
+   "start": 596.01,
+   "end": 601.75,
+   "text": "at equilibrium. There is no potential energy at equilibrium and there is no kinetic energy",
+   "avg_logprob": -0.18239095746254436
+  },
+  {
+   "start": 601.75,
+   "end": 607.81,
+   "text": "initially. So what we're left with is ue equals kef.",
+   "avg_logprob": -0.11445601455500869
+  },
+  {
+   "start": 608.97,
+   "end": 613.19,
+   "text": "Now, we can just plug in our formula, one over two kx squared.",
+   "avg_logprob": -0.11445601455500869
+  },
+  {
+   "start": 614.51,
+   "end": 624.77,
+   "text": "So one over two kx squared equals one over two mv squared. And v will be the velocity",
+   "avg_logprob": -0.11445601455500869
+  },
+  {
+   "start": 624.77,
+   "end": 636.99,
+   "text": "at equilibrium. We can cancel out these terms. We know k is 400. 400 times 0.12 squared equals",
+   "avg_logprob": -0.1036677456327847
+  },
+  {
+   "start": 636.99,
+   "end": 653.19,
+   "text": "the mass is 0.80 v squared. So v would be equal to root 400 times 0.12 squared over 0.80.",
+   "avg_logprob": -0.1036677456327847
+  },
+  {
+   "start": 654.09,
+   "end": 668.25,
+   "text": "And when you solve that, you get v equals 2.7 meters per second. And that will be",
+   "avg_logprob": -0.08775402093306184
+  },
+  {
+   "start": 668.99,
+   "end": 677.45,
+   "text": "your final velocity. So as you can see, you can use energy to solve for velocity",
+   "avg_logprob": -0.08775402093306184
+  },
+  {
+   "start": 678.05,
+   "end": 682.49,
+   "text": "and a lot of other values as well. You need to use the conservation of energy",
+   "avg_logprob": -0.08775402093306184
+  },
+  {
+   "start": 682.49,
+   "end": 690.35,
+   "text": "and you need to remember three things or these things. The turning point's velocity is zero",
+   "avg_logprob": -0.09465342573821545
+  },
+  {
+   "start": 691.13,
+   "end": 696.55,
+   "text": "and that means that the total mechanical energy is equal to the total potential energy.",
+   "avg_logprob": -0.09465342573821545
+  },
+  {
+   "start": 697.55,
+   "end": 704.29,
+   "text": "However, in the middle at equilibrium, all the total mechanical energy is equal to the total",
+   "avg_logprob": -0.09465342573821545
+  },
+  {
+   "start": 704.29,
+   "end": 708.79,
+   "text": "kinetic energy and there is no potential energy. And once we know that, we can easily",
+   "avg_logprob": -0.09465342573821545
+  },
+  {
+   "start": 709.51,
+   "end": 719.21,
+   "text": "use our conservation of energy to solve for whatever we want. And we can also know this",
+   "avg_logprob": -0.06191568681970239
+  },
+  {
+   "start": 719.21,
+   "end": 725.31,
+   "text": "formula and this formula is useful because it literally depicts the potential energy of a",
+   "avg_logprob": -0.06191568681970239
+  },
+  {
+   "start": 725.31,
+   "end": 730.97,
+   "text": "spring. Gravitational potential energy in these types of questions can mainly be ignored because",
+   "avg_logprob": -0.06191568681970239
+  },
+  {
+   "start": 730.97,
+   "end": 738.09,
+   "text": "it's usually constant or not big enough to do a lot of things. Another thing is they might ask",
+   "avg_logprob": -0.06191568681970239
+  },
+  {
+   "start": 738.09,
+   "end": 746.19,
+   "text": "you a question for the speed in the middle of its path. So let's say we have a mass that's not",
+   "avg_logprob": -0.08139828733495764
+  },
+  {
+   "start": 746.19,
+   "end": 751.45,
+   "text": "at the turning point, not at equilibrium, it's at the middle. And you can still use the",
+   "avg_logprob": -0.08139828733495764
+  },
+  {
+   "start": 751.45,
+   "end": 758.47,
+   "text": "conservation of energy to solve it. Let's say you're given this or this, doesn't matter,",
+   "avg_logprob": -0.08139828733495764
+  },
+  {
+   "start": 758.47,
+   "end": 768.75,
+   "text": "but when you're given one of these, let's say we're given the x and we're given also the spring",
+   "avg_logprob": -0.09704289340547152
+  },
+  {
+   "start": 768.75,
+   "end": 778.15,
+   "text": "constant, we can find the total mechanical energy. And if it says the distance away from",
+   "avg_logprob": -0.09704289340547152
+  },
+  {
+   "start": 778.15,
+   "end": 784.13,
+   "text": "the equilibrium, for example, this would be y, then we can easily solve for the speed because",
+   "avg_logprob": -0.09704289340547152
+  },
+  {
+   "start": 784.13,
+   "end": 790.63,
+   "text": "what we can do is this is the initial total mechanical energy and using our formula,",
+   "avg_logprob": -0.15814923203509787
+  },
+  {
+   "start": 790.87,
+   "end": 798.93,
+   "text": "we know that 1 over 2 kx squared will equal to, and at this point it has both kinetic energy",
+   "avg_logprob": -0.15814923203509787
+  },
+  {
+   "start": 800.85,
+   "end": 808.33,
+   "text": "and potential energy, but we can calculate both of them if we know y over here. So it would be",
+   "avg_logprob": -0.15814923203509787
+  },
+  {
+   "start": 808.33,
+   "end": 815.19,
+   "text": "equal to, let's first do kinetic energy, 1 over 2 m v squared, v squared is what we wanted to",
+   "avg_logprob": -0.10128398401581723
+  },
+  {
+   "start": 815.19,
+   "end": 825.85,
+   "text": "calculate, and then 1 over 2 ky squared because this would be the total mechanical energy of the",
+   "avg_logprob": -0.10128398401581723
+  },
+  {
+   "start": 825.85,
+   "end": 830.63,
+   "text": "system here. So it's still using conservation of energy, it's just slightly more complicated",
+   "avg_logprob": -0.10128398401581723
+  },
+  {
+   "start": 830.63,
+   "end": 837.33,
+   "text": "than the example we did here. And we can simplify it, I probably won't be doing that",
+   "avg_logprob": -0.10128398401581723
+  },
+  {
+   "start": 837.33,
+   "end": 843.41,
+   "text": "right now, but basically I've demonstrated that you can do it and I've showed you how.",
+   "avg_logprob": -0.136160386460168
+  },
+  {
+   "start": 844.19,
+   "end": 849.45,
+   "text": "And that's how you use energy to solve these questions. I hope you enjoyed and you",
+   "avg_logprob": -0.136160386460168
+  },
+  {
+   "start": 849.45,
+   "end": 852.99,
+   "text": "learned how to do it, and I'll see you in the next one. Bye!",
+   "avg_logprob": -0.136160386460168
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.87,
+   "end": 5.21,
+   "text": "Let's take a look at this oscillating spring."
+  },
+  {
+   "start": 6.61,
+   "end": 10.47,
+   "text": "We can actually use energy to map this out,"
+  },
+  {
+   "start": 11.23,
+   "end": 17.37,
+   "text": "and we can use energy to basically solve a lot"
+  },
+  {
+   "start": 17.37,
+   "end": 22.59,
+   "text": "of problems involving time, speed, and potential"
+  },
+  {
+   "start": 22.59,
+   "end": 25.71,
+   "text": "energy. Usually the question will want us to"
+  },
+  {
+   "start": 25.71,
+   "end": 28.73,
+   "text": "calculate something like its speed, its fastest"
+  },
+  {
+   "start": 28.73,
+   "end": 32.47,
+   "text": "possible speed. And now you have this image"
+  },
+  {
+   "start": 32.47,
+   "end": 35.29,
+   "text": "in mind. This is what they mean by an oscillating"
+  },
+  {
+   "start": 35.29,
+   "end": 40.59,
+   "text": "spring. Let's map this out using time."
+  },
+  {
+   "start": 41.79,
+   "end": 46.73,
+   "text": "So let's say the spring is first initially at"
+  },
+  {
+   "start": 46.73,
+   "end": 49.71,
+   "text": "its highest peak, so all the way down here."
+  },
+  {
+   "start": 51.72,
+   "end": 57.68,
+   "text": "And then it goes a bit up, and this would be"
+  },
+  {
+   "start": 57.68,
+   "end": 61.36,
+   "text": "the spring at its equilibrium, which means it"
+  },
+  {
+   "start": 61.36,
+   "end": 65.04,
+   "text": "would be the spring at rest. And then, as you"
+  },
+  {
+   "start": 65.04,
+   "end": 68.22,
+   "text": "can see, as you saw in the diagram, it's going"
+  },
+  {
+   "start": 68.22,
+   "end": 72.82,
+   "text": "to go up beyond equilibrium for a bit, and then"
+  },
+  {
+   "start": 72.82,
+   "end": 75.7,
+   "text": "it's going to repeat the process all over again."
+  },
+  {
+   "start": 76.36,
+   "end": 81.24,
+   "text": "So it's going to go up, up, and then it's going"
+  },
+  {
+   "start": 81.24,
+   "end": 83.8,
+   "text": "to go down, and then back down."
+  },
+  {
+   "start": 85.4,
+   "end": 87.82,
+   "text": "So that's basically the motion of the spring."
+  },
+  {
+   "start": 89.18,
+   "end": 93.8,
+   "text": "Now, what you notice is if you just mapped the"
+  },
+  {
+   "start": 93.8,
+   "end": 100.28,
+   "text": "velocity out of the block, well, this over here"
+  },
+  {
+   "start": 100.28,
+   "end": 104.18,
+   "text": "would have a velocity of zero, and this would"
+  },
+  {
+   "start": 104.18,
+   "end": 108.08,
+   "text": "also have a velocity of zero, and this would"
+  },
+  {
+   "start": 108.08,
+   "end": 111.2,
+   "text": "be in motion. Let's just call this velocity"
+  },
+  {
+   "start": 111.2,
+   "end": 113.6,
+   "text": "x for now, for simplicity's sake."
+  },
+  {
+   "start": 114.76,
+   "end": 118.66,
+   "text": "And why is it that these two have a velocity"
+  },
+  {
+   "start": 118.66,
+   "end": 124.08,
+   "text": "of zero? When you see over here, when they change"
+  },
+  {
+   "start": 124.08,
+   "end": 126.68,
+   "text": "direction, the velocity kind of stops."
+  },
+  {
+   "start": 126.84,
+   "end": 129.26,
+   "text": "It stops moving for a split second, and then"
+  },
+  {
+   "start": 129.26,
+   "end": 132.36,
+   "text": "it goes in the other direction. Well, that's"
+  },
+  {
+   "start": 132.36,
+   "end": 135.46,
+   "text": "when energy comes into play. We have learned"
+  },
+  {
+   "start": 135.46,
+   "end": 139.2,
+   "text": "that \u2014 I'll erase this \u2014 we have learned that"
+  },
+  {
+   "start": 139.2,
+   "end": 142.76,
+   "text": "the total mechanical energy of the system, E"
+  },
+  {
+   "start": 142.76,
+   "end": 146.96,
+   "text": "total, is the sum of the kinetic energy and"
+  },
+  {
+   "start": 148.08,
+   "end": 152.58,
+   "text": "the potential energy. Now, if kinetic energy,"
+  },
+  {
+   "start": 153.04,
+   "end": 157.6,
+   "text": "as we know, is the energy based off of motion,"
+  },
+  {
+   "start": 158.62,
+   "end": 161.86,
+   "text": "if v equals zero, then that means that there's"
+  },
+  {
+   "start": 161.86,
+   "end": 164.8,
+   "text": "no kinetic energy. So at these two points, let's"
+  },
+  {
+   "start": 164.8,
+   "end": 168.42,
+   "text": "call this point one, point two, point three,"
+  },
+  {
+   "start": 169.24,
+   "end": 176.82,
+   "text": "at point one and three, all the energy is potential"
+  },
+  {
+   "start": 176.82,
+   "end": 183.7,
+   "text": "energy. All the energy is potential energy."
+  },
+  {
+   "start": 187.35,
+   "end": 197.33,
+   "text": "However, at point two, when it's"
+  },
+  {
+   "start": 197.33,
+   "end": 206.05,
+   "text": "at point two, all the energy is"
+  },
+  {
+   "start": 206.05,
+   "end": 211.37,
+   "text": "kinetic energy. So between these points, between"
+  },
+  {
+   "start": 211.37,
+   "end": 213.87,
+   "text": "one and two, and between two and three, let's"
+  },
+  {
+   "start": 213.87,
+   "end": 218.29,
+   "text": "say, for example, at this point, the box is"
+  },
+  {
+   "start": 218.29,
+   "end": 221.29,
+   "text": "still going up. It has a velocity, it has kinetic"
+  },
+  {
+   "start": 221.29,
+   "end": 223.83,
+   "text": "energy going up, but it's not at its fastest"
+  },
+  {
+   "start": 223.83,
+   "end": 226.47,
+   "text": "speed. There's still potential energy because"
+  },
+  {
+   "start": 226.47,
+   "end": 229.03,
+   "text": "there's still a force driving it up, and that's"
+  },
+  {
+   "start": 229.03,
+   "end": 233.35,
+   "text": "the restoring force, as we learned. So if at"
+  },
+  {
+   "start": 233.35,
+   "end": 236.77,
+   "text": "two, kinetic energy is at max because all the"
+  },
+  {
+   "start": 236.77,
+   "end": 240.21,
+   "text": "total mechanical energy is kinetic energy, then"
+  },
+  {
+   "start": 240.21,
+   "end": 248.67,
+   "text": "we can say that at point two, the speed is \u2014"
+  },
+  {
+   "start": 248.67,
+   "end": 255.71,
+   "text": "or the means it would"
+  },
+  {
+   "start": 255.71,
+   "end": 258.57,
+   "text": "be faster because one over two mv squared, as"
+  },
+  {
+   "start": 258.57,
+   "end": 263.49,
+   "text": "we know. And that is basically how we map out"
+  },
+  {
+   "start": 263.49,
+   "end": 267.21,
+   "text": "energy. Now, we know that, let's say, this box"
+  },
+  {
+   "start": 267.21,
+   "end": 271.75,
+   "text": "has a mass of m. The kinetic energy will be"
+  },
+  {
+   "start": 271.75,
+   "end": 274.09,
+   "text": "one over two mv squared. We know that."
+  },
+  {
+   "start": 274.17,
+   "end": 278.17,
+   "text": "We've learned that equals one over two mv squared."
+  },
+  {
+   "start": 278.43,
+   "end": 280.67,
+   "text": "But what is potential energy? We've only learned"
+  },
+  {
+   "start": 280.67,
+   "end": 282.89,
+   "text": "about gravitational potential energy. We haven't"
+  },
+  {
+   "start": 282.89,
+   "end": 286.19,
+   "text": "really touched on elastic potential energy."
+  },
+  {
+   "start": 286.57,
+   "end": 289.59,
+   "text": "And I don't know if I've said this before in"
+  },
+  {
+   "start": 289.59,
+   "end": 291.79,
+   "text": "the energy thing. I think I saved it for this"
+  },
+  {
+   "start": 291.79,
+   "end": 295.17,
+   "text": "video. The elastic potential energy is given"
+  },
+  {
+   "start": 295.17,
+   "end": 298.59,
+   "text": "as one over two kx squared."
+  },
+  {
+   "start": 298.73,
+   "end": 301.29,
+   "text": "And you know all the variables \u2014 spring constant"
+  },
+  {
+   "start": 301.29,
+   "end": 303.65,
+   "text": "and displacement from equilibrium."
+  },
+  {
+   "start": 304.81,
+   "end": 309.89,
+   "text": "And this is basically a very, very crucial formula"
+  },
+  {
+   "start": 309.89,
+   "end": 315.43,
+   "text": "that we can use. Now, we can use this to solve"
+  },
+  {
+   "start": 315.43,
+   "end": 318.79,
+   "text": "a lot of problems because we know that, at equilibrium,"
+  },
+  {
+   "start": 319.57,
+   "end": 322.51,
+   "text": "this will be all the energy that remains."
+  },
+  {
+   "start": 322.85,
+   "end": 326.71,
+   "text": "And at either points one or three, at the turning"
+  },
+  {
+   "start": 326.71,
+   "end": 332.17,
+   "text": "points, this will be the only type of energy"
+  },
+  {
+   "start": 332.17,
+   "end": 334.69,
+   "text": "that remains \u2014 only potential energy."
+  },
+  {
+   "start": 335.79,
+   "end": 339.57,
+   "text": "Now, you might be wondering about energy."
+  },
+  {
+   "start": 339.85,
+   "end": 344.09,
+   "text": "We've learned that you could be gravitational"
+  },
+  {
+   "start": 344.09,
+   "end": 348.71,
+   "text": "potential energy as well. So if there's gravitational"
+  },
+  {
+   "start": 348.71,
+   "end": 352.71,
+   "text": "potential energy, then why are we ignoring it?"
+  },
+  {
+   "start": 353.25,
+   "end": 357.33,
+   "text": "Well, the gravitational potential energy can"
+  },
+  {
+   "start": 357.33,
+   "end": 362.47,
+   "text": "be ignored because it's very, very close to"
+  },
+  {
+   "start": 362.47,
+   "end": 364.71,
+   "text": "being constant for all of these scenarios."
+  },
+  {
+   "start": 365.23,
+   "end": 369.41,
+   "text": "A spring won't be that massive. So at point"
+  },
+  {
+   "start": 369.41,
+   "end": 371.87,
+   "text": "one, point two, and point three, it's safe to"
+  },
+  {
+   "start": 371.87,
+   "end": 374.47,
+   "text": "say that the gravitational potential energy"
+  },
+  {
+   "start": 374.47,
+   "end": 379.49,
+   "text": "is constant. So if we map out and do our energy"
+  },
+  {
+   "start": 379.49,
+   "end": 381.69,
+   "text": "calculations, it's just going to cancel out."
+  },
+  {
+   "start": 381.85,
+   "end": 385.95,
+   "text": "That's why mostly we ignore gravitational potential"
+  },
+  {
+   "start": 385.95,
+   "end": 389.05,
+   "text": "energy. So in spring systems, unless there's"
+  },
+  {
+   "start": 389.05,
+   "end": 394.05,
+   "text": "a net external force or another major key factor"
+  },
+  {
+   "start": 394.05,
+   "end": 397.21,
+   "text": "that moves the object, you will only be dealing"
+  },
+  {
+   "start": 397.21,
+   "end": 400.37,
+   "text": "with kinetic energy of the block or the object"
+  },
+  {
+   "start": 400.37,
+   "end": 403.27,
+   "text": "and the potential elastic energy."
+  },
+  {
+   "start": 404.39,
+   "end": 406.87,
+   "text": "Now, let's see a question."
+  },
+  {
+   "start": 410.49,
+   "end": 415.17,
+   "text": "Over here, I have a question. And this is a"
+  },
+  {
+   "start": 415.17,
+   "end": 419.37,
+   "text": "question that must need energy to be solved."
+  },
+  {
+   "start": 420.31,
+   "end": 423.01,
+   "text": "And if you get energy, if you get that unit,"
+  },
+  {
+   "start": 423.77,
+   "end": 425.85,
+   "text": "this is a really, really easy question. And"
+  },
+  {
+   "start": 425.85,
+   "end": 429.61,
+   "text": "if you get what I just said over here. So physics"
+  },
+  {
+   "start": 429.61,
+   "end": 432.51,
+   "text": "is really just understanding what you're doing."
+  },
+  {
+   "start": 433.71,
+   "end": 435.35,
+   "text": "Practice won't help everything. You actually"
+  },
+  {
+   "start": 435.35,
+   "end": 437.55,
+   "text": "have to understand what's happening."
+  },
+  {
+   "start": 437.65,
+   "end": 439.71,
+   "text": "And once you understand it, maybe not the first"
+  },
+  {
+   "start": 439.71,
+   "end": 442.05,
+   "text": "time. I definitely did not get it the first"
+  },
+  {
+   "start": 442.05,
+   "end": 445.57,
+   "text": "time. I took two sets of classes doing the same"
+  },
+  {
+   "start": 445.57,
+   "end": 448.79,
+   "text": "thing. But when it clicks, you're going to get"
+  },
+  {
+   "start": 448.79,
+   "end": 451.45,
+   "text": "the question right every, every single time."
+  },
+  {
+   "start": 453.25,
+   "end": 456.21,
+   "text": "So really try your hardest to understand these."
+  },
+  {
+   "start": 456.65,
+   "end": 459.53,
+   "text": "And if you don't get what I'm saying, you could"
+  },
+  {
+   "start": 459.53,
+   "end": 463.99,
+   "text": "search it up, ask AI, because AI is actually"
+  },
+  {
+   "start": 463.99,
+   "end": 467.09,
+   "text": "a really, really good tool to ask if you don't"
+  },
+  {
+   "start": 467.09,
+   "end": 469.71,
+   "text": "understand something, because it gives you personalized"
+  },
+  {
+   "start": 469.71,
+   "end": 475.55,
+   "text": "answers. But this question will just do it right"
+  },
+  {
+   "start": 475.55,
+   "end": 479.41,
+   "text": "now. A 0.8 kilogram mass is attached to a horizontal"
+  },
+  {
+   "start": 479.41,
+   "end": 481.99,
+   "text": "spring with a spring constant of 400."
+  },
+  {
+   "start": 483.27,
+   "end": 486.79,
+   "text": "The spring is compressed by 0.12 metres and"
+  },
+  {
+   "start": 486.79,
+   "end": 488.87,
+   "text": "released from rest and calculate the maximum"
+  },
+  {
+   "start": 488.87,
+   "end": 490.89,
+   "text": "speed of the mass."
+  },
+  {
+   "start": 491.77,
+   "end": 494.31,
+   "text": "Well, let's map it out. I'm just going to real"
+  },
+  {
+   "start": 494.31,
+   "end": 499.53,
+   "text": "quick borrow the diagram we drew over here and"
+  },
+  {
+   "start": 499.53,
+   "end": 501.63,
+   "text": "we can label our values."
+  },
+  {
+   "start": 504.9,
+   "end": 509.92,
+   "text": "So really does not matter which way it's compressed."
+  },
+  {
+   "start": 510.5,
+   "end": 512.12,
+   "text": "If it's compressed like this or it's stretched,"
+  },
+  {
+   "start": 512.12,
+   "end": 515.8,
+   "text": "really does not matter. But for the sake of"
+  },
+  {
+   "start": 515.8,
+   "end": 518.56,
+   "text": "the question, we'll just treat it as it's compressed."
+  },
+  {
+   "start": 519.16,
+   "end": 524.32,
+   "text": "If this was equilibrium, then x over here or"
+  },
+  {
+   "start": 524.32,
+   "end": 526.92,
+   "text": "the compressed would be 0.12 metres."
+  },
+  {
+   "start": 529.23,
+   "end": 533.21,
+   "text": "So in order to know the maximum speed, we will"
+  },
+  {
+   "start": 533.21,
+   "end": 536.35,
+   "text": "need the kinetic energy because that's the only"
+  },
+  {
+   "start": 536.35,
+   "end": 538.61,
+   "text": "thing that has the speed."
+  },
+  {
+   "start": 538.85,
+   "end": 541.21,
+   "text": "So k equals one over two mv squared."
+  },
+  {
+   "start": 543.13,
+   "end": 546.13,
+   "text": "Now, as we've talked about, the maximum speed"
+  },
+  {
+   "start": 546.13,
+   "end": 548.81,
+   "text": "is always in the middle of the turning points"
+  },
+  {
+   "start": 548.81,
+   "end": 555.83,
+   "text": "or aka equilibrium. So the total"
+  },
+  {
+   "start": 555.83,
+   "end": 559.39,
+   "text": "mechanical energy initially is equal to the"
+  },
+  {
+   "start": 559.39,
+   "end": 563.75,
+   "text": "end because the law of conservation of energy."
+  },
+  {
+   "start": 564.47,
+   "end": 567.53,
+   "text": "Initially, as we've talked about, there is only"
+  },
+  {
+   "start": 567.53,
+   "end": 571.29,
+   "text": "potential energy because it's released from"
+  },
+  {
+   "start": 571.29,
+   "end": 573.99,
+   "text": "rest. There's no kinetic energy, but there is"
+  },
+  {
+   "start": 573.99,
+   "end": 576.03,
+   "text": "a lot of potential elastic energy."
+  },
+  {
+   "start": 576.97,
+   "end": 578.93,
+   "text": "How do we calculate that? We use our formula"
+  },
+  {
+   "start": 578.93,
+   "end": 581.87,
+   "text": "over here, one over two kx squared."
+  },
+  {
+   "start": 582.85,
+   "end": 585.79,
+   "text": "So I'll just explain it."
+  },
+  {
+   "start": 586.05,
+   "end": 593.25,
+   "text": "ue plus kei equals kef at equilibrium plus"
+  },
+  {
+   "start": 593.25,
+   "end": 596.89,
+   "text": "uef at equilibrium."
+  },
+  {
+   "start": 597.07,
+   "end": 599.63,
+   "text": "There is no potential energy at equilibrium"
+  },
+  {
+   "start": 599.63,
+   "end": 602.73,
+   "text": "and there is no kinetic energy initially."
+  },
+  {
+   "start": 603.43,
+   "end": 607.81,
+   "text": "So what we're left with is ue equals kef."
+  },
+  {
+   "start": 608.97,
+   "end": 612.33,
+   "text": "Now, we can just plug in our formula, one over"
+  },
+  {
+   "start": 612.33,
+   "end": 618.35,
+   "text": "two kx squared. So one over two kx squared equals"
+  },
+  {
+   "start": 618.35,
+   "end": 620.69,
+   "text": "one over two mv squared."
+  },
+  {
+   "start": 622.03,
+   "end": 625.73,
+   "text": "And v will be the velocity at equilibrium."
+  },
+  {
+   "start": 626.91,
+   "end": 630.57,
+   "text": "We can cancel out these terms. We know k is"
+  },
+  {
+   "start": 630.57,
+   "end": 637.73,
+   "text": "400. 400 times 0.12 squared equals the mass"
+  },
+  {
+   "start": 637.73,
+   "end": 643.85,
+   "text": "is 0.80 v squared."
+  },
+  {
+   "start": 644.21,
+   "end": 650.61,
+   "text": "So v would be equal to root 400 times 0.12 squared"
+  },
+  {
+   "start": 650.61,
+   "end": 653.19,
+   "text": "over 0.80."
+  },
+  {
+   "start": 654.09,
+   "end": 664.23,
+   "text": "And when you solve that, you get v equals 2.7"
+  },
+  {
+   "start": 664.23,
+   "end": 670.07,
+   "text": "metres per second. And that will be your final"
+  },
+  {
+   "start": 670.07,
+   "end": 674.27,
+   "text": "velocity. So as you can see, you can use energy"
+  },
+  {
+   "start": 674.27,
+   "end": 679.81,
+   "text": "to solve for velocity and a lot of other values"
+  },
+  {
+   "start": 679.81,
+   "end": 682.15,
+   "text": "as well. You need to use the conservation of"
+  },
+  {
+   "start": 682.15,
+   "end": 684.43,
+   "text": "energy and you need to remember three things"
+  },
+  {
+   "start": 684.43,
+   "end": 686.79,
+   "text": "or these things."
+  },
+  {
+   "start": 687.09,
+   "end": 691.65,
+   "text": "The turning point's velocity is zero and that"
+  },
+  {
+   "start": 691.65,
+   "end": 695.15,
+   "text": "means that the total mechanical energy is equal"
+  },
+  {
+   "start": 695.15,
+   "end": 699.09,
+   "text": "to the total potential energy. However, in the"
+  },
+  {
+   "start": 699.09,
+   "end": 702.89,
+   "text": "middle at equilibrium, all the total mechanical"
+  },
+  {
+   "start": 702.89,
+   "end": 705.05,
+   "text": "energy is equal to the total kinetic energy"
+  },
+  {
+   "start": 705.05,
+   "end": 707.65,
+   "text": "and there is no potential energy. And once we"
+  },
+  {
+   "start": 707.65,
+   "end": 711.19,
+   "text": "know that, we can easily use our conservation"
+  },
+  {
+   "start": 711.19,
+   "end": 713.55,
+   "text": "of energy to solve for whatever we want."
+  },
+  {
+   "start": 714.95,
+   "end": 720.71,
+   "text": "And we can also know this formula and this formula"
+  },
+  {
+   "start": 720.71,
+   "end": 724.71,
+   "text": "is useful because it literally depicts the potential"
+  },
+  {
+   "start": 724.71,
+   "end": 727.01,
+   "text": "energy of a spring. Gravitational potential"
+  },
+  {
+   "start": 727.01,
+   "end": 729.75,
+   "text": "energy in these types of questions can mainly"
+  },
+  {
+   "start": 729.75,
+   "end": 732.69,
+   "text": "be ignored because it's usually constant or"
+  },
+  {
+   "start": 732.69,
+   "end": 734.85,
+   "text": "not big enough to do a lot of things."
+  },
+  {
+   "start": 736.01,
+   "end": 738.79,
+   "text": "Another thing is they might ask you a question"
+  },
+  {
+   "start": 738.79,
+   "end": 742.95,
+   "text": "for the speed in the middle of its path."
+  },
+  {
+   "start": 743.19,
+   "end": 746.85,
+   "text": "So let's say we have a mass that's not at the"
+  },
+  {
+   "start": 746.85,
+   "end": 749.03,
+   "text": "turning point, not at equilibrium, it's at the"
+  },
+  {
+   "start": 749.03,
+   "end": 751.89,
+   "text": "middle. And you can still use the conservation"
+  },
+  {
+   "start": 751.89,
+   "end": 754.09,
+   "text": "of energy to solve it. Let's say you're given"
+  },
+  {
+   "start": 754.09,
+   "end": 759.97,
+   "text": "this or this, doesn't matter, but when you're"
+  },
+  {
+   "start": 759.97,
+   "end": 764.35,
+   "text": "given one of these, let's say we're given the"
+  },
+  {
+   "start": 764.35,
+   "end": 769.19,
+   "text": "x and we're given also the spring constant,"
+  },
+  {
+   "start": 769.59,
+   "end": 771.71,
+   "text": "we can find the total mechanical energy."
+  },
+  {
+   "start": 772.29,
+   "end": 778.79,
+   "text": "And if it says the distance away from the equilibrium,"
+  },
+  {
+   "start": 778.89,
+   "end": 782.87,
+   "text": "for example, this would be y, then we can easily"
+  },
+  {
+   "start": 782.87,
+   "end": 786.07,
+   "text": "solve for the speed because what we can do is"
+  },
+  {
+   "start": 786.07,
+   "end": 789.03,
+   "text": "this is the initial total mechanical energy"
+  },
+  {
+   "start": 789.03,
+   "end": 792.89,
+   "text": "and using our formula, we know that 1 over 2"
+  },
+  {
+   "start": 792.89,
+   "end": 797.39,
+   "text": "kx squared will equal to, and at this point"
+  },
+  {
+   "start": 797.39,
+   "end": 802.45,
+   "text": "it has both kinetic energy and potential energy,"
+  },
+  {
+   "start": 802.77,
+   "end": 805.65,
+   "text": "but we can calculate both of them if we know"
+  },
+  {
+   "start": 805.65,
+   "end": 809.41,
+   "text": "y over here. So it would be equal to, let's"
+  },
+  {
+   "start": 809.41,
+   "end": 813.71,
+   "text": "first do kinetic energy, 1 over 2 m v squared,"
+  },
+  {
+   "start": 813.95,
+   "end": 816.41,
+   "text": "v squared is what we wanted to calculate, and"
+  },
+  {
+   "start": 816.41,
+   "end": 823.49,
+   "text": "then 1 over 2 ky squared because"
+  },
+  {
+   "start": 823.49,
+   "end": 825.71,
+   "text": "this would be the total mechanical energy of"
+  },
+  {
+   "start": 825.71,
+   "end": 828.43,
+   "text": "the system here. So it's still using conservation"
+  },
+  {
+   "start": 828.43,
+   "end": 830.63,
+   "text": "of energy, it's just slightly more complicated"
+  },
+  {
+   "start": 830.63,
+   "end": 834.03,
+   "text": "than the example we did here. And we can simplify"
+  },
+  {
+   "start": 834.03,
+   "end": 837.75,
+   "text": "it, I probably won't be doing that right now,"
+  },
+  {
+   "start": 837.83,
+   "end": 841.37,
+   "text": "but basically I've demonstrated that you can"
+  },
+  {
+   "start": 841.37,
+   "end": 843.41,
+   "text": "do it and I've showed you how."
+  },
+  {
+   "start": 844.19,
+   "end": 846.29,
+   "text": "And that's how you use energy to solve these"
+  },
+  {
+   "start": 846.29,
+   "end": 849.71,
+   "text": "questions. I hope you enjoyed and you learned"
+  },
+  {
+   "start": 849.71,
+   "end": 852.41,
+   "text": "how to do it, and I'll see you in the next one."
+  },
+  {
+   "start": 852.83,
+   "end": 852.99,
+   "text": "Bye!"
+  }
+ ],
+ "report": {
+  "key": "harmonics__springs_energy",
+  "title": "Springs and Conservation of Energy",
+  "topicKey": "harmonics",
+  "duration": 853.568,
+  "cues": 214,
+  "corrections": 3,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.18239095746254436,
+  "flagged": []
+ }
+}

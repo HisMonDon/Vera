@@ -1,0 +1,750 @@
+WEBVTT
+NOTE More 2D Kinematics Example
+
+1
+00:00:00.050 --> 00:00:03.790
+In this video, we will be going over more
+kinematics
+
+2
+00:00:03.790 --> 00:00:08.190
+examples. In all of my classes before, I
+have
+
+3
+00:00:08.190 --> 00:00:11.750
+learned the kinematics, but I was really
+struggling
+
+4
+00:00:11.750 --> 00:00:14.590
+and confused on how to understand these
+questions
+
+5
+00:00:14.590 --> 00:00:18.330
+and I think what I needed was more
+examples
+
+6
+00:00:18.330 --> 00:00:22.590
+on how to do it. So, I will be going over
+a
+
+7
+00:00:22.590 --> 00:00:25.950
+couple of more kinematics examples to help
+you
+
+8
+00:00:25.950 --> 00:00:29.850
+better understand and to solve kinematics
+equations.
+
+9
+00:00:30.910 --> 00:00:33.470
+First of all, before we start, I'd like to
+say
+
+10
+00:00:33.470 --> 00:00:37.750
+that having a formula sheet on hand every
+time
+
+11
+00:00:37.750 --> 00:00:40.250
+you do one of these questions is really,
+really
+
+12
+00:00:40.250 --> 00:00:44.130
+handy. This is a snippet from the AP
+Physics
+
+13
+00:00:44.130 --> 00:00:48.970
+1 formula sheet and these are the main
+three
+
+14
+00:00:48.970 --> 00:00:53.470
+equations that we use to solve kinematics
+questions.
+
+15
+00:00:53.830 --> 00:00:55.870
+I have explained this in a previous video.
+
+16
+00:00:57.950 --> 00:01:01.330
+So, our first question is, a ball is
+thrown
+
+17
+00:01:01.330 --> 00:01:04.730
+horizontally from the top of a 20m high
+cliff
+
+18
+00:01:04.730 --> 00:01:07.610
+with a speed of 10m per second.
+
+19
+00:01:08.530 --> 00:01:11.730
+How far from the base of the cliff does it
+land?
+
+20
+00:01:12.330 --> 00:01:14.210
+Keep in mind that it's thrown
+horizontally,
+
+21
+00:01:14.490 --> 00:01:16.730
+so the speed is horizontal.
+
+22
+00:01:16.730 --> 00:01:19.390
+So, let's imagine this.
+
+23
+00:01:19.550 --> 00:01:26.230
+We have a cliff and we have a ball and
+this
+
+24
+00:01:26.230 --> 00:01:35.180
+ball is thrown with a
+
+25
+00:01:35.180 --> 00:01:39.180
+speed of 10m per second.
+
+26
+00:01:40.080 --> 00:01:47.280
+The cliff is 20m high and
+
+27
+00:01:47.280 --> 00:01:50.340
+we want to solve how far from the base of
+the
+
+28
+00:01:50.340 --> 00:01:53.120
+cliff. This is the base of the cliff, so
+it's
+
+29
+00:01:53.120 --> 00:01:59.080
+thrown here and we want to solve this
+distance.
+
+30
+00:01:59.260 --> 00:02:05.310
+Let's call this distance d. Now, first of
+all,
+
+31
+00:02:05.670 --> 00:02:08.790
+let's see what we have here.
+
+32
+00:02:11.840 --> 00:02:15.340
+Well, we can first use our initial
+equation,
+
+33
+00:02:18.670 --> 00:02:24.750
+distance equals speed times time, and
+since
+
+34
+00:02:24.750 --> 00:02:27.630
+distance and the initial speed are both
+horizontal,
+
+35
+00:02:27.770 --> 00:02:31.210
+you can do that. So, distance equals speed
+times
+
+36
+00:02:31.210 --> 00:02:35.010
+time. You want to solve for distance and
+you
+
+37
+00:02:35.010 --> 00:02:38.350
+have the speed. The speed is 10m per
+second,
+
+38
+00:02:40.650 --> 00:02:45.250
+so 10 times t. And now, we can see that
+the
+
+39
+00:02:45.250 --> 00:02:48.310
+only thing we need to solve left is t.
+
+40
+00:02:52.350 --> 00:02:55.930
+So, we need to find the time it takes for
+the
+
+41
+00:02:55.930 --> 00:02:59.530
+ball to drop from up here to down here,
+and
+
+42
+00:02:59.530 --> 00:03:01.810
+that depends entirely on the vertical.
+
+43
+00:03:02.750 --> 00:03:06.010
+How do we do this? Well, we know that the
+acceleration
+
+44
+00:03:06.010 --> 00:03:10.950
+of gravity is, let's just call it 10m per
+second.
+
+45
+00:03:11.610 --> 00:03:14.530
+Sometimes you gotta use 9.81, sometimes
+you
+
+46
+00:03:14.530 --> 00:03:17.970
+use 10. It really depends on what physics
+course
+
+47
+00:03:17.970 --> 00:03:21.970
+or exam you're taking. But for simplicity,
+let's
+
+48
+00:03:21.970 --> 00:03:26.270
+do 10. So, you know the acceleration
+downwards
+
+49
+00:03:26.270 --> 00:03:32.840
+is 10, so negative 10m per second squared,
+and
+
+50
+00:03:32.840 --> 00:03:39.080
+then the height is 20m, and the initial
+velocity
+
+51
+00:03:39.080 --> 00:03:44.480
+going downwards is 0m per second, because
+the
+
+52
+00:03:44.480 --> 00:03:46.760
+ball is thrown horizontally, so it's not
+going
+
+53
+00:03:46.760 --> 00:03:51.440
+anywhere downwards. Now, if you know the
+acceleration,
+
+54
+00:03:51.720 --> 00:03:55.540
+the distance, and the initial velocity, if
+you
+
+55
+00:03:55.540 --> 00:04:01.560
+look at all of these options, you can see
+that
+
+56
+00:04:01.560 --> 00:04:03.680
+this one fits the most.
+
+57
+00:04:07.830 --> 00:04:13.660
+Let's first write this equation down. x
+equals
+
+58
+00:04:13.660 --> 00:04:21.460
+x0 plus vx0t plus 1 over 2 at
+
+59
+00:04:21.460 --> 00:04:29.100
+squared. So, x is
+
+60
+00:04:29.100 --> 00:04:31.500
+usually representing distance, but when
+you
+
+61
+00:04:31.500 --> 00:04:34.000
+use these formulas, it doesn't have to be
+x,
+
+62
+00:04:34.100 --> 00:04:36.480
+it could be x, y, or z, or whatever.
+
+63
+00:04:37.280 --> 00:04:42.740
+So, let's replace it with y, because
+that's
+
+64
+00:04:42.740 --> 00:04:44.860
+what we're dealing with. We're dealing
+with
+
+65
+00:04:44.860 --> 00:04:51.020
+y. y equals y0 plus vy0 times t plus 1
+over
+
+66
+00:04:51.020 --> 00:04:54.020
+2 at squared.
+
+67
+00:04:55.320 --> 00:04:58.220
+y means the final y position.
+
+68
+00:04:59.020 --> 00:05:02.040
+Well, finally, when the ball lands over
+here,
+
+69
+00:05:02.580 --> 00:05:09.160
+y equals 0. And y0, this means naught,
+which
+
+70
+00:05:09.160 --> 00:05:11.200
+means the original one.
+
+71
+00:05:11.200 --> 00:05:17.180
+y0, originally, it's at 20m, so originally
+it's
+
+72
+00:05:17.180 --> 00:05:21.420
+20m, so y, which is final, is 0, equals
+20.
+
+73
+00:05:22.360 --> 00:05:26.600
+The original velocity of y is 0m per
+second,
+
+74
+00:05:26.740 --> 00:05:30.360
+like I said, so 0 times t.
+
+75
+00:05:32.220 --> 00:05:37.330
+And 1 over 2a.
+
+76
+00:05:37.630 --> 00:05:39.790
+What is a? Well, a is just gravity.
+
+77
+00:05:39.890 --> 00:05:42.670
+That's the only acceleration it has, which
+is
+
+78
+00:05:42.670 --> 00:05:48.090
+negative 10m per second squared, t
+squared.
+
+79
+00:05:50.210 --> 00:05:53.110
+And now, you can solve the equation.
+
+80
+00:05:53.710 --> 00:05:57.410
+You get negative 20 equals 1 over 2,
+negative
+
+81
+00:05:57.410 --> 00:06:04.450
+10, t squared. So, what you would get is t
+squared
+
+82
+00:06:04.450 --> 00:06:12.210
+equals 4. And
+
+83
+00:06:12.210 --> 00:06:14.990
+you cannot have negative time, so this is
+inadmissible.
+
+84
+00:06:20.080 --> 00:06:22.700
+So, the final answer, it would take 2
+seconds
+
+85
+00:06:22.700 --> 00:06:27.180
+for the ball to go from up here to all the
+way
+
+86
+00:06:27.180 --> 00:06:30.260
+here. So, time equals 2 seconds.
+
+87
+00:06:30.260 --> 00:06:33.620
+Now, you have the time. You can easily
+solve
+
+88
+00:06:33.620 --> 00:06:40.020
+for the distance. d equals 10 times 2,
+which
+
+89
+00:06:40.020 --> 00:06:43.960
+is 20m. And that would be the answer for
+your
+
+90
+00:06:43.960 --> 00:06:49.960
+first question. So, as you can see, what
+it
+
+91
+00:06:49.960 --> 00:06:54.600
+really is, is finding the correct formula
+to
+
+92
+00:06:54.600 --> 00:07:00.660
+use for a question. Now, let's go to a bit
+more
+
+93
+00:07:00.660 --> 00:07:05.960
+different question. A ball is thrown at a
+speed
+
+94
+00:07:05.960 --> 00:07:09.200
+of 20m per second at an angle of 30
+degrees
+
+95
+00:07:09.200 --> 00:07:12.620
+above the horizontal. Find the total time
+it
+
+96
+00:07:12.620 --> 00:07:20.140
+stays in the air. So, it's thrown like
+
+97
+00:07:20.140 --> 00:07:22.300
+this. This is 30 degrees.
+
+98
+00:07:24.970 --> 00:07:29.910
+And its projectile will be like a
+parabola,
+
+99
+00:07:31.580 --> 00:07:33.760
+and it lands all the way here.
+
+100
+00:07:45.760 --> 00:07:47.960
+And you want to solve for time.
+
+101
+00:07:50.180 --> 00:07:56.480
+So, what do we do, first of all? What
+defines
+
+102
+00:07:56.480 --> 00:08:03.080
+time, first of all? Does the x-velocity
+matter?
+
+103
+00:08:03.080 --> 00:08:07.720
+No, because time depends solely on y in
+this
+
+104
+00:08:07.720 --> 00:08:15.960
+case. Because
+
+105
+00:08:15.960 --> 00:08:22.240
+y is what defines the ball when it's
+dropped.
+
+106
+00:08:22.840 --> 00:08:28.000
+When the y equals 0, the ball does not
+stay
+
+107
+00:08:28.000 --> 00:08:30.680
+in the time. So, anything before y equals
+0,
+
+108
+00:08:30.860 --> 00:08:33.560
+the ball is staying in the air. X does not
+matter.
+
+109
+00:08:35.800 --> 00:08:38.880
+And that's one of the most important
+things
+
+110
+00:08:38.880 --> 00:08:44.640
+you need to know for this question. So,
+now,
+
+111
+00:08:45.900 --> 00:08:49.120
+like we usually do with angle questions,
+we
+
+112
+00:08:49.120 --> 00:08:55.240
+want to split this velocity vector into
+two
+
+113
+00:08:55.240 --> 00:08:58.360
+components, the x and y. So, 30.
+
+114
+00:08:59.220 --> 00:09:01.360
+But we don't need the x one, we only need
+the
+
+115
+00:09:01.360 --> 00:09:03.880
+y one. The y-velocity.
+
+116
+00:09:05.440 --> 00:09:09.640
+Y, v of y. And we know this is 20 metres
+per
+
+117
+00:09:09.640 --> 00:09:13.120
+second. So, what would the y-velocity be?
+
+118
+00:09:14.200 --> 00:09:17.700
+Well, if you have the hypotenuse, which is
+20,
+
+119
+00:09:17.820 --> 00:09:20.940
+and you have the angle, which is 30, y
+would
+
+120
+00:09:20.940 --> 00:09:25.860
+just be the opposite, so sine. So, v of y
+equals
+
+121
+00:09:25.860 --> 00:09:33.000
+20 sine times 30 degrees, which is 10
+
+122
+00:09:33.000 --> 00:09:37.100
+metres per second. So, originally, the
+ball
+
+123
+00:09:37.100 --> 00:09:39.120
+is going 10 metres per second up.
+
+124
+00:09:41.040 --> 00:09:45.560
+So, v y naught equals 10 metres per
+second.
+
+125
+00:09:47.440 --> 00:09:51.520
+And we know that the acceleration is,
+again,
+
+126
+00:09:51.720 --> 00:09:54.400
+negative 10 metres per second because of
+gravity.
+
+127
+00:09:55.860 --> 00:10:00.540
+And one more thing, we have the final and
+initial
+
+128
+00:10:00.540 --> 00:10:05.200
+y-value. They both start and end at y
+equals
+
+129
+00:10:05.200 --> 00:10:13.700
+0. So, y naught equals 0, and y final
+
+130
+00:10:13.700 --> 00:10:19.840
+equals 0. So, looking at the formula
+sheet,
+
+131
+00:10:20.700 --> 00:10:27.490
+the one that we could use would be this
+one.
+
+132
+00:10:27.490 --> 00:10:33.230
+Because you have x, or y final, x-initial,
+y
+
+133
+00:10:33.230 --> 00:10:37.990
+naught, v x-initial, or the initial
+y-velocity,
+
+134
+00:10:38.010 --> 00:10:40.770
+and the acceleration. So, you can just
+solve
+
+135
+00:10:40.770 --> 00:10:47.850
+for t. So, x equals x-initial plus v
+
+136
+00:10:47.850 --> 00:10:53.450
+naught x-initial t plus, I'm just copying
+this
+
+137
+00:10:53.450 --> 00:10:57.830
+formula down. And now, we can replace our
+variables
+
+138
+00:10:57.830 --> 00:11:03.610
+with it. So, x would just be the initial
+position,
+
+139
+00:11:03.950 --> 00:11:08.290
+which is 0. x-initial would be 0 as well.
+
+140
+00:11:09.510 --> 00:11:13.830
+The initial velocity, as we calculated, is
+10
+
+141
+00:11:13.830 --> 00:11:19.290
+metres per second, times t, plus 1 over 2,
+the
+
+142
+00:11:19.290 --> 00:11:23.470
+acceleration is negative 10, times t
+squared.
+
+143
+00:11:26.340 --> 00:11:33.500
+And, now we get 0 equals 10 t minus 5 t
+squared.
+
+144
+00:11:35.400 --> 00:11:38.260
+0 equals 2 t minus t squared.
+
+145
+00:11:39.900 --> 00:11:43.780
+So, t can either be 0, because if you
+factor
+
+146
+00:11:43.780 --> 00:11:49.940
+out t, or it could be positive 2, because
+2
+
+147
+00:11:49.940 --> 00:11:52.860
+minus t, so that equals 0, you get 2.
+
+148
+00:11:55.020 --> 00:11:56.900
+Let me just expand it, if you guys don't
+get
+
+149
+00:11:56.900 --> 00:11:59.600
+it. 2 minus t.
+
+150
+00:12:00.760 --> 00:12:05.880
+Alright. Now, which one do we know is the
+correct
+
+151
+00:12:05.880 --> 00:12:09.060
+one? Well, what is it at 0 seconds?
+
+152
+00:12:09.760 --> 00:12:13.200
+At 0 seconds, the ball is still here, at y
+equals
+
+153
+00:12:13.200 --> 00:12:15.800
+0. And that's correct, because we were
+solving
+
+154
+00:12:15.800 --> 00:12:20.660
+for the times in which the ball was at y
+equals
+
+155
+00:12:20.660 --> 00:12:24.040
+0. But, at 2 seconds, that's when time
+already
+
+156
+00:12:24.040 --> 00:12:26.220
+passed, and it hit y equals 0 again.
+
+157
+00:12:26.220 --> 00:12:29.080
+So, that would be here. So, this would be
+your
+
+158
+00:12:29.080 --> 00:12:30.120
+answer. 2 seconds.

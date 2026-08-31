@@ -1,0 +1,558 @@
+{
+ "lesson": {
+  "topicKey": "light",
+  "curriculumKey": "light_refraction",
+  "title": "Total Internal Refraction",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/optics/Unit%204%20Total%20Internal%20Reflection.mp4",
+  "source": "light.dart"
+ },
+ "segments": [
+  {
+   "start": 1.07,
+   "end": 36.09,
+   "text": "In this video, we will be talking about total internal reflection. So, as we have learned before, light refracts, and it's going to bend towards the medium. But there is a case when light goes from the higher index medium to a lower index medium, for example from this glass of water to air, and the incident angle is so large that",
+   "avg_logprob": -0.12330958147843679
+  },
+  {
+   "start": 36.09,
+   "end": 60.27,
+   "text": "the light reflects back. And that is because it would require sine theta to be bigger than one, which is impossible. So, there are two conditions for total internal reflection. The first condition is that the light must go from a higher medium to a lower medium.",
+   "avg_logprob": -0.08735745726970204
+  },
+  {
+   "start": 75.26,
+   "end": 92.94,
+   "text": "The second condition is that the incident angle must be greater than the critical angle. And the critical angle is the incident angle that makes the reflected ray travel along the boundary, which I will talk about later.",
+   "avg_logprob": -0.09055288690467213
+  },
+  {
+   "start": 92.94,
+   "end": 123.4,
+   "text": "But all you need to know is that the incident angle is bigger than the critical angle. So, what does the critical angle mean? Well, let's say you have light that reflects towards the medium. And it is so that an angle goes all the way like this. And it's going to refract. It's not going to go past. It's not going to reflect.",
+   "avg_logprob": -0.07982754930853844
+  },
+  {
+   "start": 123.4,
+   "end": 150.67,
+   "text": "It's going to go exactly at the middle. So basically, theta 2 in this case would be equal to 90. Because this would be the medium. And the critical angle is this angle over here. That makes the theta 2 equal to 90. And from Snell's law, we can actually derive the critical angle.",
+   "avg_logprob": -0.1372365787409354
+  },
+  {
+   "start": 150.67,
+   "end": 177.31,
+   "text": "Because n1 sine theta critical, which is what we want to find, will be equal to n2 sine 90. Because n2 is 90 when we have the critical angle. So sine theta critical equals n2 over n1. And sine 90 is just 1. And this is what we have.",
+   "avg_logprob": -0.08346723171247952
+  },
+  {
+   "start": 177.31,
+   "end": 207.23,
+   "text": "Also, n1 must be greater than n2 because sine theta can't be equal to more than 1. And now, let's have a quick example about this critical angle. If light travels from glass, which typically has an index of refraction of 1.5, to air, which has an index of refraction to 1.00,",
+   "avg_logprob": -0.06667876606051987
+  },
+  {
+   "start": 207.23,
+   "end": 238.46,
+   "text": "then the critical angle, sine of theta critical, would just be equal to that of air over that of glass. Because it's traveling from air to glass. So it would be nA over nG, which is 1 over 1.5, which is 0.667. So when we solve it, sine theta C,",
+   "avg_logprob": -0.12008218301667108
+  },
+  {
+   "start": 238.46,
+   "end": 268.44,
+   "text": "equals 0.667, theta C would be equal to 41.8 degrees. So that is our critical angle. Our critical angle is 41.8 degrees here. Since in order to have internal reflection, theta 1 must be equal to the critical angle. Any incident angle greater than 41.8 degrees will give total inflection.",
+   "avg_logprob": -0.11351931095123291
+  },
+  {
+   "start": 269.86,
+   "end": 297.96,
+   "text": "So for example, if we copy this diagram and we pretend this is our diagram, then in order for this to occur, our critical angle would need to be 41.8 degrees. However, if we want it to reflect, then the incident angle must be greater than 41.8 degrees.",
+   "avg_logprob": -0.07246187720142427
+  },
+  {
+   "start": 297.96,
+   "end": 321.56,
+   "text": "If we want it to refract, then it must be less than 41.8 degrees. So we can know a lot of things from the critical angle. If it's higher than the critical angle, then total internal reflection occurs. Otherwise, if it's lower than the critical angle, it refracts. So the key takeaways are that",
+   "avg_logprob": -0.04801536874017782
+  },
+  {
+   "start": 323.64,
+   "end": 348.96,
+   "text": "the critical angle is when it doesn't refract nor reflect. And also, be very, very familiar with Snell's law because you're going to use it in many, many different applications. And if you forget something, you can always look at Snell's law and you will probably remember it because you can use numbers to try and figure things out with this law.",
+   "avg_logprob": -0.08395279160676858
+  },
+  {
+   "start": 350.42,
+   "end": 378.62,
+   "text": "And yeah, total internal reflection is also used in a lot of real world applications, of course. You have to know this for grade 10 science and IB, probably not AP, but just know that some examples include fiber optics, binoculars, and also it's what causes the sparkle in a lot of jewels, such as diamonds, because they have a very, very high index of refraction.",
+   "avg_logprob": -0.10895704203063533
+  },
+  {
+   "start": 378.62,
+   "end": 390.1,
+   "text": "Which, in turn, gives small critical angles. So light is easily reflected. That's all for today's video and I hope you enjoyed. Thank you!",
+   "avg_logprob": -0.15493433390344893
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.07,
+   "end": 3.71,
+   "text": "In this video, we will be talking about total"
+  },
+  {
+   "start": 3.71,
+   "end": 12.21,
+   "text": "internal reflection. So,"
+  },
+  {
+   "start": 13.65,
+   "end": 18.97,
+   "text": "as we have learned before, light refracts, and"
+  },
+  {
+   "start": 18.97,
+   "end": 21.27,
+   "text": "it's going to bend towards the medium."
+  },
+  {
+   "start": 22.25,
+   "end": 26.37,
+   "text": "But there is a case when light goes from the"
+  },
+  {
+   "start": 26.37,
+   "end": 29.31,
+   "text": "higher index medium to a lower index medium,"
+  },
+  {
+   "start": 29.35,
+   "end": 32.23,
+   "text": "for example from this glass of water to air,"
+  },
+  {
+   "start": 32.23,
+   "end": 37.47,
+   "text": "and the incident angle is so large that the"
+  },
+  {
+   "start": 37.47,
+   "end": 42.17,
+   "text": "light reflects back. And that is because it"
+  },
+  {
+   "start": 42.17,
+   "end": 44.89,
+   "text": "would require sine theta to be bigger than one,"
+  },
+  {
+   "start": 45.53,
+   "end": 50.49,
+   "text": "which is impossible. So, there are two conditions"
+  },
+  {
+   "start": 50.49,
+   "end": 54.89,
+   "text": "for total internal reflection. The first condition"
+  },
+  {
+   "start": 54.89,
+   "end": 59.37,
+   "text": "is that the light must go from a higher medium"
+  },
+  {
+   "start": 59.37,
+   "end": 75.94,
+   "text": "to a lower medium. The"
+  },
+  {
+   "start": 75.94,
+   "end": 79.94,
+   "text": "second condition is that the incident angle"
+  },
+  {
+   "start": 79.94,
+   "end": 82.02,
+   "text": "must be greater than the critical angle."
+  },
+  {
+   "start": 82.7,
+   "end": 86.62,
+   "text": "And the critical angle is the incident angle"
+  },
+  {
+   "start": 86.62,
+   "end": 90.02,
+   "text": "that makes the reflected ray travel along the"
+  },
+  {
+   "start": 90.02,
+   "end": 92.94,
+   "text": "boundary, which I will talk about later."
+  },
+  {
+   "start": 92.94,
+   "end": 95.36,
+   "text": "But all you need to know is that the incident"
+  },
+  {
+   "start": 95.36,
+   "end": 98.44,
+   "text": "angle is bigger than the critical angle."
+  },
+  {
+   "start": 101.12,
+   "end": 103.44,
+   "text": "So, what does the critical angle mean?"
+  },
+  {
+   "start": 104.92,
+   "end": 109.08,
+   "text": "Well, let's say you have light that reflects"
+  },
+  {
+   "start": 109.08,
+   "end": 111.26,
+   "text": "towards the medium."
+  },
+  {
+   "start": 111.9,
+   "end": 116.88,
+   "text": "And it is so that an angle goes all the way"
+  },
+  {
+   "start": 116.88,
+   "end": 120.08,
+   "text": "like this. And it's going to refract."
+  },
+  {
+   "start": 120.46,
+   "end": 122.96,
+   "text": "It's not going to go past. It's not going to"
+  },
+  {
+   "start": 122.96,
+   "end": 126.22,
+   "text": "reflect. It's going to go exactly at the middle."
+  },
+  {
+   "start": 126.6,
+   "end": 130.24,
+   "text": "So basically, theta 2 in this case would be"
+  },
+  {
+   "start": 130.24,
+   "end": 133.8,
+   "text": "equal to 90. Because this would be the medium."
+  },
+  {
+   "start": 134.38,
+   "end": 138.42,
+   "text": "And the critical angle is this angle over here."
+  },
+  {
+   "start": 138.62,
+   "end": 142.88,
+   "text": "That makes the theta 2 equal to 90."
+  },
+  {
+   "start": 145.23,
+   "end": 149.17,
+   "text": "And from Snell's law, we can actually derive"
+  },
+  {
+   "start": 149.17,
+   "end": 154.15,
+   "text": "the critical angle. Because n1 sine theta critical,"
+  },
+  {
+   "start": 154.75,
+   "end": 157.41,
+   "text": "which is what we want to find, will be equal"
+  },
+  {
+   "start": 157.41,
+   "end": 160.19,
+   "text": "to n2 sine 90."
+  },
+  {
+   "start": 161.25,
+   "end": 165.35,
+   "text": "Because n2 is 90 when we have the critical angle."
+  },
+  {
+   "start": 166.05,
+   "end": 170.33,
+   "text": "So sine theta critical equals n2 over n1."
+  },
+  {
+   "start": 170.59,
+   "end": 177.31,
+   "text": "And sine 90 is just 1. And this is what we have."
+  },
+  {
+   "start": 177.31,
+   "end": 182.07,
+   "text": "Also, n1 must be greater than n2 because sine"
+  },
+  {
+   "start": 182.07,
+   "end": 186.63,
+   "text": "theta can't be equal to more than 1."
+  },
+  {
+   "start": 188.95,
+   "end": 193.47,
+   "text": "And now, let's have a quick example about this"
+  },
+  {
+   "start": 193.47,
+   "end": 197.89,
+   "text": "critical angle. If light travels from glass,"
+  },
+  {
+   "start": 198.31,
+   "end": 201.69,
+   "text": "which typically has an index of refraction of"
+  },
+  {
+   "start": 201.69,
+   "end": 206.15,
+   "text": "1.5, to air, which has an index of refraction"
+  },
+  {
+   "start": 206.15,
+   "end": 212.43,
+   "text": "to 1.00, then the critical angle, sine of theta"
+  },
+  {
+   "start": 212.43,
+   "end": 216.55,
+   "text": "critical, would just be equal to that of air"
+  },
+  {
+   "start": 216.55,
+   "end": 220.19,
+   "text": "over that of glass. Because it's traveling from"
+  },
+  {
+   "start": 220.19,
+   "end": 226.63,
+   "text": "air to glass. So it would be nA over nG, which"
+  },
+  {
+   "start": 226.63,
+   "end": 232.31,
+   "text": "is 1 over 1.5, which is 0.667."
+  },
+  {
+   "start": 234.72,
+   "end": 240.6,
+   "text": "So when we solve it, sine theta C, equals 0.667,"
+  },
+  {
+   "start": 241.28,
+   "end": 246.24,
+   "text": "theta C would be equal to 41.8 degrees."
+  },
+  {
+   "start": 247.06,
+   "end": 250.18,
+   "text": "So that is our critical angle."
+  },
+  {
+   "start": 250.3,
+   "end": 254.96,
+   "text": "Our critical angle is 41.8 degrees here."
+  },
+  {
+   "start": 255.48,
+   "end": 258.18,
+   "text": "Since in order to have internal reflection,"
+  },
+  {
+   "start": 258.88,
+   "end": 261.1,
+   "text": "theta 1 must be equal to the critical angle."
+  },
+  {
+   "start": 261.66,
+   "end": 266.32,
+   "text": "Any incident angle greater than 41.8 degrees"
+  },
+  {
+   "start": 266.32,
+   "end": 268.44,
+   "text": "will give total inflection."
+  },
+  {
+   "start": 269.86,
+   "end": 273.56,
+   "text": "So for example, if we copy this diagram and"
+  },
+  {
+   "start": 273.56,
+   "end": 278.62,
+   "text": "we pretend this is our diagram, then in order"
+  },
+  {
+   "start": 278.62,
+   "end": 284.74,
+   "text": "for this to occur, our critical angle would"
+  },
+  {
+   "start": 284.74,
+   "end": 287.22,
+   "text": "need to be 41.8 degrees."
+  },
+  {
+   "start": 289.8,
+   "end": 294.0,
+   "text": "However, if we want it to reflect, then the"
+  },
+  {
+   "start": 294.0,
+   "end": 297.96,
+   "text": "incident angle must be greater than 41.8 degrees."
+  },
+  {
+   "start": 297.96,
+   "end": 302.76,
+   "text": "If we want it to refract, then it must be less"
+  },
+  {
+   "start": 302.76,
+   "end": 307.2,
+   "text": "than 41.8 degrees. So we can know a lot of things"
+  },
+  {
+   "start": 307.2,
+   "end": 309.62,
+   "text": "from the critical angle. If it's higher than"
+  },
+  {
+   "start": 309.62,
+   "end": 312.34,
+   "text": "the critical angle, then total internal reflection"
+  },
+  {
+   "start": 312.34,
+   "end": 314.86,
+   "text": "occurs. Otherwise, if it's lower than the critical"
+  },
+  {
+   "start": 314.86,
+   "end": 316.88,
+   "text": "angle, it refracts."
+  },
+  {
+   "start": 317.26,
+   "end": 324.32,
+   "text": "So the key takeaways are that the"
+  },
+  {
+   "start": 324.32,
+   "end": 327.76,
+   "text": "critical angle is when it doesn't refract nor"
+  },
+  {
+   "start": 327.76,
+   "end": 334.36,
+   "text": "reflect. And also, be very, very familiar with"
+  },
+  {
+   "start": 334.36,
+   "end": 337.82,
+   "text": "Snell's law because you're going to use it in"
+  },
+  {
+   "start": 337.82,
+   "end": 340.48,
+   "text": "many, many different applications. And if you"
+  },
+  {
+   "start": 340.48,
+   "end": 342.68,
+   "text": "forget something, you can always look at Snell's"
+  },
+  {
+   "start": 342.68,
+   "end": 345.18,
+   "text": "law and you will probably remember it because"
+  },
+  {
+   "start": 345.18,
+   "end": 348.06,
+   "text": "you can use numbers to try and figure things"
+  },
+  {
+   "start": 348.06,
+   "end": 353.58,
+   "text": "out with this law. And yeah, total internal"
+  },
+  {
+   "start": 353.58,
+   "end": 356.28,
+   "text": "reflection is also used in a lot of real world"
+  },
+  {
+   "start": 356.28,
+   "end": 359.0,
+   "text": "applications, of course. You have to know this"
+  },
+  {
+   "start": 359.0,
+   "end": 362.86,
+   "text": "for grade 10 science and IB, probably not AP,"
+  },
+  {
+   "start": 363.24,
+   "end": 366.7,
+   "text": "but just know that some examples include fiber"
+  },
+  {
+   "start": 366.7,
+   "end": 371.72,
+   "text": "optics, binoculars, and also it's what causes"
+  },
+  {
+   "start": 371.72,
+   "end": 374.7,
+   "text": "the sparkle in a lot of jewels, such as diamonds,"
+  },
+  {
+   "start": 375.12,
+   "end": 378.08,
+   "text": "because they have a very, very high index of"
+  },
+  {
+   "start": 378.08,
+   "end": 382.64,
+   "text": "refraction. Which, in turn, gives small critical"
+  },
+  {
+   "start": 382.64,
+   "end": 385.74,
+   "text": "angles. So light is easily reflected."
+  },
+  {
+   "start": 386.58,
+   "end": 388.94,
+   "text": "That's all for today's video and I hope you"
+  },
+  {
+   "start": 388.94,
+   "end": 390.1,
+   "text": "enjoyed. Thank you!"
+  }
+ ],
+ "report": {
+  "key": "light__light_refraction",
+  "title": "Total Internal Refraction",
+  "topicKey": "light",
+  "duration": 390.7626875,
+  "cues": 90,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.15493433390344893,
+  "flagged": []
+ }
+}

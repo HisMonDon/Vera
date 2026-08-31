@@ -8,6 +8,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_an
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
+import 'package:coolapp/views/pages/videos/physics_videos/course_registry.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
 
@@ -20,6 +21,9 @@ class Grade11Physics extends StatefulWidget {
 }
 
 class _Grade11PhysicsState extends State<Grade11Physics> {
+  /// This page's course. Heading and filtering both derive from it.
+  static const String _courseKey = CourseRegistry.grade11Physics;
+
   Widget _buildVideoButton(
     String title,
     String description,
@@ -221,7 +225,7 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    globals.courseTitle = 'Grade 11 Physics';
+    globals.enterCourse(_courseKey);
     return Scaffold(
       appBar: TimedAppBar(),
       body: SingleChildScrollView(
@@ -272,7 +276,7 @@ class _Grade11PhysicsState extends State<Grade11Physics> {
                           children: [
                             SizedBox(height: 10),
                             Text(
-                              "Grade 11 Physics",
+                              CourseRegistry.nameOf(_courseKey),
                               style: GoogleFonts.montserrat(
                                 fontSize: 28,
                                 fontWeight: FontWeight.bold,

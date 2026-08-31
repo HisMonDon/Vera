@@ -11,6 +11,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_an
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
+import 'package:coolapp/views/pages/videos/physics_videos/course_registry.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class IbPhysicsSl extends StatefulWidget {
@@ -21,6 +22,9 @@ class IbPhysicsSl extends StatefulWidget {
 }
 
 class _IbPhysicsSlState extends State<IbPhysicsSl> {
+  /// This page's course. Heading and filtering both derive from it.
+  static const String _courseKey = CourseRegistry.ibPhysicsSl;
+
   Widget _buildVideoButton(
     String title,
     String description,
@@ -243,7 +247,7 @@ class _IbPhysicsSlState extends State<IbPhysicsSl> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    globals.courseTitle = 'IB Physics SL';
+    globals.enterCourse(_courseKey);
     return Scaffold(
       appBar: TimedAppBar(),
       body: SingleChildScrollView(
@@ -294,7 +298,7 @@ class _IbPhysicsSlState extends State<IbPhysicsSl> {
                           children: [
                             SizedBox(height: 10),
                             Text(
-                              "IB Physics SL",
+                              CourseRegistry.nameOf(_courseKey),
                               style: GoogleFonts.montserrat(
                                 fontSize: 28,
                                 fontWeight: FontWeight.bold,

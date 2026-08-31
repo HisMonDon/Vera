@@ -1,0 +1,972 @@
+{
+ "lesson": {
+  "topicKey": "kinematics",
+  "curriculumKey": "motion_graphical",
+  "title": "Graphical Kinematics",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/Graphical%20Kinematics.mp4",
+  "source": "kinematics.dart"
+ },
+ "segments": [
+  {
+   "start": 1.01,
+   "end": 30.99,
+   "text": "In this video, we will be looking at graphical kinematics and how position relates with velocity and how that relates with acceleration. Basically, in graphical kinematics, before AP Physics C, or in normal high school physics, you will not need to use calculus to use this. So the questions are going to be relatively easy. The main thing that you need to know is that velocity is the slope of the position.",
+   "avg_logprob": -0.09438891657467546
+  },
+  {
+   "start": 32.17,
+   "end": 55.13,
+   "text": "And acceleration is the slope of the velocity. So if you think of position as y, and if you know calculus, velocity would just be y prime and acceleration would be y double prime. Or acceleration would be the slope of the position and velocity would just be the slope of the position.",
+   "avg_logprob": -0.13223868944952566
+  },
+  {
+   "start": 55.69,
+   "end": 79.63,
+   "text": "If that sounds hard to you and you don't know calculus, let me make this easier for you. Let's say the position was going like this. If the position is in the shape of a parabola, then the velocity is going to be the slope at every point. And the velocity would look something like this. It would just increase in a straight line.",
+   "avg_logprob": -0.09352861024156402
+  },
+  {
+   "start": 80.53,
+   "end": 89.83,
+   "text": "And since the velocity is increasing in a straight line, the acceleration would be the same everywhere because the slope of this line is just one.",
+   "avg_logprob": -0.08670936152338982
+  },
+  {
+   "start": 91.21,
+   "end": 110.88,
+   "text": "So basically, if this position was y equals x squared, then the equation of the velocity line graph would be equal to y equals x and acceleration would be y equals one.",
+   "avg_logprob": -0.08670936152338982
+  },
+  {
+   "start": 111.74,
+   "end": 131.02,
+   "text": "Or in this case, y is a, velocity is v, and position is p. And x in this case is always t because this is a position over time. The x-axis in these types of graphs is always t.",
+   "avg_logprob": -0.11733167019544863
+  },
+  {
+   "start": 133.16,
+   "end": 150.58,
+   "text": "So let's try another example. Let's say the position this time is increasing at a steady rate. And we need to draw the graphs for velocity and acceleration.",
+   "avg_logprob": -0.0780697230468778
+  },
+  {
+   "start": 151.64,
+   "end": 162.32,
+   "text": "Well, let's see. We need to find the slope of this position first of all. This is time and this is the respective value.",
+   "avg_logprob": -0.0780697230468778
+  },
+  {
+   "start": 163.54,
+   "end": 174.42,
+   "text": "So what is the slope of this? Well, looking at it, slope is change in y over change in x. So delta y, delta x. So the slope is two.",
+   "avg_logprob": -0.07233137743813652
+  },
+  {
+   "start": 175.32,
+   "end": 189.21,
+   "text": "So since the slope is two at any point in this graph, that means that the velocity will be constant because the slope is the same at any point in the graph.",
+   "avg_logprob": -0.07233137743813652
+  },
+  {
+   "start": 189.21,
+   "end": 198.71,
+   "text": "So since the slope is two, the velocity will be two at every single point. Now the acceleration is the slope of the velocity.",
+   "avg_logprob": -0.060585624392492224
+  },
+  {
+   "start": 199.45,
+   "end": 206.37,
+   "text": "Now if the velocity is just a horizontal line, because this has the same slope, then the slope of a horizontal line is always zero.",
+   "avg_logprob": -0.060585624392492224
+  },
+  {
+   "start": 206.75,
+   "end": 212.59,
+   "text": "So there will not be an acceleration here. And when you think about it, it makes sense.",
+   "avg_logprob": -0.060585624392492224
+  },
+  {
+   "start": 212.59,
+   "end": 224.09,
+   "text": "When the position is steadily increasing at a constant rate, that means the velocity or the speed of that object is going to be the same and it's not going to be undergoing any acceleration.",
+   "avg_logprob": -0.07189523128251876
+  },
+  {
+   "start": 225.47,
+   "end": 231.75,
+   "text": "Let's see another example. This time we need to derive the position from an acceleration.",
+   "avg_logprob": -0.07189523128251876
+  },
+  {
+   "start": 232.79,
+   "end": 242.73,
+   "text": "Let's say we have an acceleration one. Usually acceleration doesn't go up and down. It's an instantaneous change.",
+   "avg_logprob": -0.12745765277317592
+  },
+  {
+   "start": 243.61,
+   "end": 251.71,
+   "text": "So over here, and then we will experience zero acceleration. Now we have to work backwards.",
+   "avg_logprob": -0.12745765277317592
+  },
+  {
+   "start": 252.41,
+   "end": 261.91,
+   "text": "As we can see, from time zero to two, the acceleration is one meters per second squared.",
+   "avg_logprob": -0.09198674342849038
+  },
+  {
+   "start": 263.21,
+   "end": 271.47,
+   "text": "So that means the slope from time zero to two will be equal to one. So it's going to be linear with a slope of one.",
+   "avg_logprob": -0.09198674342849038
+  },
+  {
+   "start": 271.47,
+   "end": 282.19,
+   "text": "Next, from time two to four, the slope is going to be three. So we're going to go over a bit, but let's say this is eight.",
+   "avg_logprob": -0.07917183524445642
+  },
+  {
+   "start": 283.95,
+   "end": 287.51,
+   "text": "It's going to go all the way up to eight in a straight line.",
+   "avg_logprob": -0.07917183524445642
+  },
+  {
+   "start": 289.31,
+   "end": 298.87,
+   "text": "Because since the acceleration is constant, the velocity is increasing at a constant rate of a slope of three.",
+   "avg_logprob": -0.07917183524445642
+  },
+  {
+   "start": 298.87,
+   "end": 312.65,
+   "text": "So this is a slope of three. And now, finally, the acceleration goes down to zero, which means that the velocity is going to have a slope of zero here.",
+   "avg_logprob": -0.08167315317296434
+  },
+  {
+   "start": 313.29,
+   "end": 319.59,
+   "text": "Now we can map out the position. The position is basically like a parabola of what we have.",
+   "avg_logprob": -0.08167315317296434
+  },
+  {
+   "start": 319.79,
+   "end": 325.71,
+   "text": "So it's going to look something like this, and then it's going to go all the way up.",
+   "avg_logprob": -0.08167315317296434
+  },
+  {
+   "start": 325.71,
+   "end": 332.33,
+   "text": "So let's just pretend that this is a really large number, like 1000.",
+   "avg_logprob": -0.0642545742177686
+  },
+  {
+   "start": 333.77,
+   "end": 342.21,
+   "text": "It's going to look something like that going up, and then it's going to constantly increase over here.",
+   "avg_logprob": -0.0642545742177686
+  },
+  {
+   "start": 342.83,
+   "end": 348.17,
+   "text": "I kind of overshot the question, but that's basically the gist of it.",
+   "avg_logprob": -0.0642545742177686
+  },
+  {
+   "start": 348.49,
+   "end": 353.21,
+   "text": "Let me give you another question that is like this, but I won't overshoot it this time.",
+   "avg_logprob": -0.0642545742177686
+  },
+  {
+   "start": 353.21,
+   "end": 362.51,
+   "text": "So we're going to start off with constant velocity, and keep in mind that these velocity time graphs can go into the negatives as well.",
+   "avg_logprob": -0.07132113551440304
+  },
+  {
+   "start": 364.63,
+   "end": 381.54,
+   "text": "So let's say if acceleration went down to negative two, and then it went up to positive two for one second, and then it went up here, and then it went down to zero.",
+   "avg_logprob": -0.07132113551440304
+  },
+  {
+   "start": 381.54,
+   "end": 388.04,
+   "text": "So how would we depict the velocity time graph? Try yourself, pause the video, and come back when you're ready.",
+   "avg_logprob": -0.07049977930286262
+  },
+  {
+   "start": 389.7,
+   "end": 396.0,
+   "text": "So first of all, since we start with an acceleration of one, we start with a slope of one.",
+   "avg_logprob": -0.07049977930286262
+  },
+  {
+   "start": 396.48,
+   "end": 402.26,
+   "text": "So it's going to go like this, up to time equals one. I'm going to label the time here.",
+   "avg_logprob": -0.07049977930286262
+  },
+  {
+   "start": 405.56,
+   "end": 414.3,
+   "text": "And now, from time one to three seconds, we're going to be going at a slope of negative two.",
+   "avg_logprob": -0.041042312159450776
+  },
+  {
+   "start": 416.1,
+   "end": 421.05,
+   "text": "So it's going to have a slope of two.",
+   "avg_logprob": -0.041042312159450776
+  },
+  {
+   "start": 422.59,
+   "end": 425.07,
+   "text": "So it's going to go all the way down to negative three.",
+   "avg_logprob": -0.041042312159450776
+  },
+  {
+   "start": 425.91,
+   "end": 428.93,
+   "text": "And then we're going to have a slope of positive two for one second.",
+   "avg_logprob": -0.041042312159450776
+  },
+  {
+   "start": 429.53,
+   "end": 436.91,
+   "text": "So it's going to go up here, and then it's going to have a slope of one, and then it's going to have a slope of zero.",
+   "avg_logprob": -0.041042312159450776
+  },
+  {
+   "start": 439.95,
+   "end": 449.15,
+   "text": "So basically, the key is to map out and treat this as a slope. You treat this as a slope and you map it out over here.",
+   "avg_logprob": -0.08272209416689544
+  },
+  {
+   "start": 451.25,
+   "end": 457.53,
+   "text": "Now, same thing for position. We're going to have a parabola looking sort of like that.",
+   "avg_logprob": -0.08272209416689544
+  },
+  {
+   "start": 457.53,
+   "end": 471.21,
+   "text": "And then we're going to have a parabola looking like this, the other way now, all the way down to negative nine.",
+   "avg_logprob": -0.13021202757954597
+  },
+  {
+   "start": 472.53,
+   "end": 474.81,
+   "text": "Kind of overshotted again, but it's fine.",
+   "avg_logprob": -0.13021202757954597
+  },
+  {
+   "start": 475.71,
+   "end": 487.48,
+   "text": "And then we're going to have a parabola that looks like this, and then a less steep parabola that goes here.",
+   "avg_logprob": -0.13021202757954597
+  },
+  {
+   "start": 488.76,
+   "end": 492.88,
+   "text": "And then goes over here.",
+   "avg_logprob": -0.1068200344485896
+  },
+  {
+   "start": 495.02,
+   "end": 498.9,
+   "text": "Goes all the way up, back up, and then flat down.",
+   "avg_logprob": -0.1068200344485896
+  },
+  {
+   "start": 499.62,
+   "end": 508.18,
+   "text": "So that's basically how you do position, velocity, and acceleration graphs. You have to find the slope of the previous one.",
+   "avg_logprob": -0.1068200344485896
+  },
+  {
+   "start": 509.12,
+   "end": 512.14,
+   "text": "Thank you for watching, and I hope you found this helpful. Bye!",
+   "avg_logprob": -0.1068200344485896
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.01,
+   "end": 3.65,
+   "text": "In this video, we will be looking at graphical"
+  },
+  {
+   "start": 3.65,
+   "end": 6.49,
+   "text": "kinematics and how position relates with velocity"
+  },
+  {
+   "start": 6.49,
+   "end": 9.05,
+   "text": "and how that relates with acceleration."
+  },
+  {
+   "start": 10.55,
+   "end": 15.01,
+   "text": "Basically, in graphical kinematics, before AP"
+  },
+  {
+   "start": 15.01,
+   "end": 18.13,
+   "text": "Physics C, or in normal high school physics,"
+  },
+  {
+   "start": 18.67,
+   "end": 21.45,
+   "text": "you will not need to use calculus to use this."
+  },
+  {
+   "start": 21.81,
+   "end": 23.91,
+   "text": "So the questions are going to be relatively"
+  },
+  {
+   "start": 23.91,
+   "end": 27.31,
+   "text": "easy. The main thing that you need to know is"
+  },
+  {
+   "start": 27.31,
+   "end": 30.99,
+   "text": "that velocity is the slope of the position."
+  },
+  {
+   "start": 32.17,
+   "end": 35.93,
+   "text": "And acceleration is the slope of the velocity."
+  },
+  {
+   "start": 37.37,
+   "end": 42.59,
+   "text": "So if you think of position as y, and if you"
+  },
+  {
+   "start": 42.59,
+   "end": 45.09,
+   "text": "know calculus, velocity would just be y prime"
+  },
+  {
+   "start": 45.09,
+   "end": 47.87,
+   "text": "and acceleration would be y double prime."
+  },
+  {
+   "start": 48.47,
+   "end": 52.93,
+   "text": "Or acceleration would be the slope of the position"
+  },
+  {
+   "start": 52.93,
+   "end": 54.79,
+   "text": "and velocity would just be the slope of the"
+  },
+  {
+   "start": 54.79,
+   "end": 57.31,
+   "text": "position. If that sounds hard to you and you"
+  },
+  {
+   "start": 57.31,
+   "end": 60.17,
+   "text": "don't know calculus, let me make this easier"
+  },
+  {
+   "start": 60.17,
+   "end": 65.77,
+   "text": "for you. Let's say the position was going like"
+  },
+  {
+   "start": 65.77,
+   "end": 70.29,
+   "text": "this. If the position is in the shape of a parabola,"
+  },
+  {
+   "start": 70.75,
+   "end": 73.57,
+   "text": "then the velocity is going to be the slope at"
+  },
+  {
+   "start": 73.57,
+   "end": 76.47,
+   "text": "every point. And the velocity would look something"
+  },
+  {
+   "start": 76.47,
+   "end": 79.27,
+   "text": "like this. It would just increase in a straight"
+  },
+  {
+   "start": 79.27,
+   "end": 83.53,
+   "text": "line. And since the velocity is increasing in"
+  },
+  {
+   "start": 83.53,
+   "end": 86.21,
+   "text": "a straight line, the acceleration would be the"
+  },
+  {
+   "start": 86.21,
+   "end": 88.67,
+   "text": "same everywhere because the slope of this line"
+  },
+  {
+   "start": 88.67,
+   "end": 93.73,
+   "text": "is just one. So basically, if this position"
+  },
+  {
+   "start": 93.73,
+   "end": 100.8,
+   "text": "was y equals x squared, then the equation"
+  },
+  {
+   "start": 100.8,
+   "end": 104.34,
+   "text": "of the velocity line graph would be equal to"
+  },
+  {
+   "start": 104.34,
+   "end": 110.4,
+   "text": "y equals x and acceleration would be y equals"
+  },
+  {
+   "start": 110.4,
+   "end": 117.6,
+   "text": "one. Or in this case, y is a, velocity is"
+  },
+  {
+   "start": 117.6,
+   "end": 120.08,
+   "text": "v, and position is p."
+  },
+  {
+   "start": 120.54,
+   "end": 125.12,
+   "text": "And x in this case is always t because this"
+  },
+  {
+   "start": 125.12,
+   "end": 128.94,
+   "text": "is a position over time. The x-axis in these"
+  },
+  {
+   "start": 128.94,
+   "end": 131.02,
+   "text": "types of graphs is always t."
+  },
+  {
+   "start": 133.16,
+   "end": 135.46,
+   "text": "So let's try another example."
+  },
+  {
+   "start": 136.82,
+   "end": 140.28,
+   "text": "Let's say the position this time is increasing"
+  },
+  {
+   "start": 140.28,
+   "end": 146.38,
+   "text": "at a steady rate. And we need to draw the graphs"
+  },
+  {
+   "start": 146.38,
+   "end": 150.58,
+   "text": "for velocity and acceleration."
+  },
+  {
+   "start": 151.64,
+   "end": 155.26,
+   "text": "Well, let's see. We need to find the slope of"
+  },
+  {
+   "start": 155.26,
+   "end": 160.6,
+   "text": "this position first of all. This is time and"
+  },
+  {
+   "start": 160.6,
+   "end": 164.68,
+   "text": "this is the respective value. So what is the"
+  },
+  {
+   "start": 164.68,
+   "end": 167.56,
+   "text": "slope of this? Well, looking at it, slope is"
+  },
+  {
+   "start": 167.56,
+   "end": 170.1,
+   "text": "change in y over change in x."
+  },
+  {
+   "start": 170.1,
+   "end": 172.36,
+   "text": "So delta-y, delta-x."
+  },
+  {
+   "start": 173.14,
+   "end": 176.74,
+   "text": "So the slope is two. So since the slope is two"
+  },
+  {
+   "start": 176.74,
+   "end": 183.97,
+   "text": "at any point in this graph, that means"
+  },
+  {
+   "start": 183.97,
+   "end": 187.45,
+   "text": "that the velocity will be constant because the"
+  },
+  {
+   "start": 187.45,
+   "end": 189.21,
+   "text": "slope is the same at any point in the graph."
+  },
+  {
+   "start": 189.21,
+   "end": 192.53,
+   "text": "So since the slope is two, the velocity will"
+  },
+  {
+   "start": 192.53,
+   "end": 196.81,
+   "text": "be two at every single point. Now the acceleration"
+  },
+  {
+   "start": 196.81,
+   "end": 200.25,
+   "text": "is the slope of the velocity. Now if the velocity"
+  },
+  {
+   "start": 200.25,
+   "end": 202.93,
+   "text": "is just a horizontal line, because this has"
+  },
+  {
+   "start": 202.93,
+   "end": 205.31,
+   "text": "the same slope, then the slope of a horizontal"
+  },
+  {
+   "start": 205.31,
+   "end": 209.19,
+   "text": "line is always zero. So there will not be an"
+  },
+  {
+   "start": 209.19,
+   "end": 211.81,
+   "text": "acceleration here. And when you think about"
+  },
+  {
+   "start": 211.81,
+   "end": 214.35,
+   "text": "it, it makes sense. When the position is steadily"
+  },
+  {
+   "start": 214.35,
+   "end": 217.45,
+   "text": "increasing at a constant rate, that means the"
+  },
+  {
+   "start": 217.45,
+   "end": 221.15,
+   "text": "velocity or the speed of that object is going"
+  },
+  {
+   "start": 221.15,
+   "end": 223.15,
+   "text": "to be the same and it's not going to be undergoing"
+  },
+  {
+   "start": 223.15,
+   "end": 227.15,
+   "text": "any acceleration. Let's see another example."
+  },
+  {
+   "start": 228.03,
+   "end": 230.89,
+   "text": "This time we need to derive the position from"
+  },
+  {
+   "start": 230.89,
+   "end": 236.23,
+   "text": "an acceleration. Let's say we have an acceleration"
+  },
+  {
+   "start": 236.23,
+   "end": 238.87,
+   "text": "one. Usually acceleration doesn't go up and"
+  },
+  {
+   "start": 238.87,
+   "end": 242.73,
+   "text": "down. It's an instantaneous change."
+  },
+  {
+   "start": 243.61,
+   "end": 248.75,
+   "text": "So over here, and then we will experience zero"
+  },
+  {
+   "start": 248.75,
+   "end": 251.71,
+   "text": "acceleration. Now we have to work backwards."
+  },
+  {
+   "start": 252.41,
+   "end": 259.11,
+   "text": "As we can see, from time zero to two, the acceleration"
+  },
+  {
+   "start": 259.11,
+   "end": 261.91,
+   "text": "is one metres per second squared."
+  },
+  {
+   "start": 263.21,
+   "end": 266.81,
+   "text": "So that means the slope from time zero to two"
+  },
+  {
+   "start": 266.81,
+   "end": 270.19,
+   "text": "will be equal to one. So it's going to be linear"
+  },
+  {
+   "start": 270.19,
+   "end": 273.91,
+   "text": "with a slope of one. Next, from time two to"
+  },
+  {
+   "start": 273.91,
+   "end": 278.41,
+   "text": "four, the slope is going to be three. So we're"
+  },
+  {
+   "start": 278.41,
+   "end": 281.93,
+   "text": "going to go over a bit, but let's say this is"
+  },
+  {
+   "start": 281.93,
+   "end": 286.25,
+   "text": "eight. It's going to go all the way up to eight"
+  },
+  {
+   "start": 286.25,
+   "end": 291.03,
+   "text": "in a straight line. Because since the acceleration"
+  },
+  {
+   "start": 291.03,
+   "end": 294.43,
+   "text": "is constant, the velocity is increasing at a"
+  },
+  {
+   "start": 294.43,
+   "end": 298.87,
+   "text": "constant rate of a slope of three."
+  },
+  {
+   "start": 298.87,
+   "end": 302.57,
+   "text": "So this is a slope of three. And now, finally,"
+  },
+  {
+   "start": 303.59,
+   "end": 307.73,
+   "text": "the acceleration goes down to zero, which means"
+  },
+  {
+   "start": 307.73,
+   "end": 311.99,
+   "text": "that the velocity is going to have a slope of"
+  },
+  {
+   "start": 311.99,
+   "end": 315.51,
+   "text": "zero here. Now we can map out the position."
+  },
+  {
+   "start": 315.93,
+   "end": 318.47,
+   "text": "The position is basically like a parabola of"
+  },
+  {
+   "start": 318.47,
+   "end": 321.07,
+   "text": "what we have. So it's going to look something"
+  },
+  {
+   "start": 321.07,
+   "end": 325.21,
+   "text": "like this, and then it's going to go all the"
+  },
+  {
+   "start": 325.21,
+   "end": 329.97,
+   "text": "way up. So let's just pretend that this is a"
+  },
+  {
+   "start": 329.97,
+   "end": 332.33,
+   "text": "really large number, like 1000."
+  },
+  {
+   "start": 333.77,
+   "end": 337.71,
+   "text": "It's going to look something like that going"
+  },
+  {
+   "start": 337.71,
+   "end": 341.55,
+   "text": "up, and then it's going to constantly increase"
+  },
+  {
+   "start": 341.55,
+   "end": 344.57,
+   "text": "over here. I kind of overshot the question,"
+  },
+  {
+   "start": 345.05,
+   "end": 348.17,
+   "text": "but that's basically the gist of it."
+  },
+  {
+   "start": 348.49,
+   "end": 351.31,
+   "text": "Let me give you another question that is like"
+  },
+  {
+   "start": 351.31,
+   "end": 353.83,
+   "text": "this, but I won't overshoot it this time. So"
+  },
+  {
+   "start": 353.83,
+   "end": 356.93,
+   "text": "we're going to start off with constant velocity,"
+  },
+  {
+   "start": 356.93,
+   "end": 360.65,
+   "text": "and keep in mind that these velocity time graphs"
+  },
+  {
+   "start": 360.65,
+   "end": 365.83,
+   "text": "can go into the negatives as well. So let's"
+  },
+  {
+   "start": 365.83,
+   "end": 369.93,
+   "text": "say if acceleration went down to negative two,"
+  },
+  {
+   "start": 370.47,
+   "end": 373.35,
+   "text": "and then it went up to positive two for one"
+  },
+  {
+   "start": 373.35,
+   "end": 380.6,
+   "text": "second, and then it went up here, and then"
+  },
+  {
+   "start": 380.6,
+   "end": 383.6,
+   "text": "it went down to zero. So how would we depict"
+  },
+  {
+   "start": 383.6,
+   "end": 386.18,
+   "text": "the velocity time graph? Try yourself, pause"
+  },
+  {
+   "start": 386.18,
+   "end": 388.04,
+   "text": "the video, and come back when you're ready."
+  },
+  {
+   "start": 389.7,
+   "end": 393.18,
+   "text": "So first of all, since we start with an acceleration"
+  },
+  {
+   "start": 393.18,
+   "end": 396.0,
+   "text": "of one, we start with a slope of one."
+  },
+  {
+   "start": 396.48,
+   "end": 399.9,
+   "text": "So it's going to go like this, up to time equals"
+  },
+  {
+   "start": 399.9,
+   "end": 402.26,
+   "text": "one. I'm going to label the time here."
+  },
+  {
+   "start": 405.56,
+   "end": 411.1,
+   "text": "And now, from time one to three seconds, we're"
+  },
+  {
+   "start": 411.1,
+   "end": 414.3,
+   "text": "going to be going at a slope of negative two."
+  },
+  {
+   "start": 416.1,
+   "end": 421.05,
+   "text": "So it's going to have a slope of two."
+  },
+  {
+   "start": 422.59,
+   "end": 424.71,
+   "text": "So it's going to go all the way down to negative"
+  },
+  {
+   "start": 424.71,
+   "end": 427.15,
+   "text": "three. And then we're going to have a slope"
+  },
+  {
+   "start": 427.15,
+   "end": 430.03,
+   "text": "of positive two for one second. So it's going"
+  },
+  {
+   "start": 430.03,
+   "end": 432.95,
+   "text": "to go up here, and then it's going to have a"
+  },
+  {
+   "start": 432.95,
+   "end": 436.33,
+   "text": "slope of one, and then it's going to have a"
+  },
+  {
+   "start": 436.33,
+   "end": 443.43,
+   "text": "slope of zero. So basically, the key is to map"
+  },
+  {
+   "start": 443.43,
+   "end": 445.65,
+   "text": "out and treat this as a slope."
+  },
+  {
+   "start": 446.39,
+   "end": 448.41,
+   "text": "You treat this as a slope and you map it out"
+  },
+  {
+   "start": 448.41,
+   "end": 452.83,
+   "text": "over here. Now, same thing for position."
+  },
+  {
+   "start": 453.55,
+   "end": 456.83,
+   "text": "We're going to have a parabola looking sort"
+  },
+  {
+   "start": 456.83,
+   "end": 462.45,
+   "text": "of like that. And then we're going to have a"
+  },
+  {
+   "start": 462.45,
+   "end": 466.75,
+   "text": "parabola looking like this, the other way now,"
+  },
+  {
+   "start": 467.73,
+   "end": 471.21,
+   "text": "all the way down to negative nine."
+  },
+  {
+   "start": 472.53,
+   "end": 474.81,
+   "text": "Kind of overshotted again, but it's fine."
+  },
+  {
+   "start": 475.71,
+   "end": 478.11,
+   "text": "And then we're going to have a parabola that"
+  },
+  {
+   "start": 478.11,
+   "end": 485.3,
+   "text": "looks like this, and then a less"
+  },
+  {
+   "start": 485.3,
+   "end": 487.48,
+   "text": "steep parabola that goes here."
+  },
+  {
+   "start": 488.76,
+   "end": 492.88,
+   "text": "And then goes over here."
+  },
+  {
+   "start": 495.02,
+   "end": 498.68,
+   "text": "Goes all the way up, back up, and then flat"
+  },
+  {
+   "start": 498.68,
+   "end": 502.4,
+   "text": "down. So that's basically how you do position,"
+  },
+  {
+   "start": 502.58,
+   "end": 504.94,
+   "text": "velocity, and acceleration graphs. You have"
+  },
+  {
+   "start": 504.94,
+   "end": 508.18,
+   "text": "to find the slope of the previous one."
+  },
+  {
+   "start": 509.12,
+   "end": 510.58,
+   "text": "Thank you for watching, and I hope you found"
+  },
+  {
+   "start": 510.58,
+   "end": 512.14,
+   "text": "this helpful. Bye!"
+  }
+ ],
+ "report": {
+  "key": "kinematics__motion_graphical",
+  "title": "Graphical Kinematics",
+  "topicKey": "kinematics",
+  "duration": 512.7253125,
+  "cues": 132,
+  "corrections": 3,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.13223868944952566,
+  "flagged": []
+ }
+}

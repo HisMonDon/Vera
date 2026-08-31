@@ -1,0 +1,753 @@
+{
+ "lesson": {
+  "topicKey": "harmonics",
+  "curriculumKey": "harmonics_ap_momentum",
+  "title": "Springs and Momentum - Past AP Physics 1 Example",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%204%20Springs%20and%20Momentum%20-%20Past%20AP%20Physics%201%20Example.mp4",
+  "source": "harmonics.dart"
+ },
+ "segments": [
+  {
+   "start": 1.42,
+   "end": 27.36,
+   "text": "The 2024 AP Physics 1 exam has a couple of questions that relate to oscillations, pendulums, and springs, so I will be going over these in a few videos. And even if you're not doing AP Physics 1, if you're doing high school physics, this is still really, really good practice, and maybe even goes beyond what you're learning, but it's still really, really good to know.",
+   "avg_logprob": -0.11153255687670761
+  },
+  {
+   "start": 29.5,
+   "end": 53.98,
+   "text": "So, in an experiment, the student attaches one end of a spring to a force sensor that is attached to a wall. The other end of the spring is attached to a cart with a mass m equals 0.25 kilograms. So, we know the mass, 0.25 kilograms.",
+   "avg_logprob": -0.0956762759916244
+  },
+  {
+   "start": 54.72,
+   "end": 80.26,
+   "text": "The student places a motion detector to the right of the cart, as shown in Figure 2, and pulls the cart to the right a small distance so that the spring is stretched. And then the cart is released from rest, and the cart's spring system oscillates. And the following graph shows the velocity of the cart and the force exerted on the cart by the spring as functions of time t.",
+   "avg_logprob": -0.08697506244338694
+  },
+  {
+   "start": 80.26,
+   "end": 110.24,
+   "text": "So, before we even get started, this is relating to what we learned in the previous video about kinetic and potential energy. These are the maximums for kinetic energy. So, at here, kinetic energy is at max, and all of these points are when the cart is either at the farthest or at the closest to the wall.",
+   "avg_logprob": -0.11605371576799474
+  },
+  {
+   "start": 110.26,
+   "end": 116.58,
+   "text": "Or the force center. So, that's good to know. And this is the force.",
+   "avg_logprob": -0.12811182149044878
+  },
+  {
+   "start": 118.16,
+   "end": 132.5,
+   "text": "And using your data in the velocity-time graph, calculate the change in kinetic energy of the cart from t equals 0.5 seconds to t equals 2.0 seconds. Show your steps and calculations. This part a is really, really, really easy.",
+   "avg_logprob": -0.12811182149044878
+  },
+  {
+   "start": 132.5,
+   "end": 142.4,
+   "text": "All you gotta do is do simple math. Don't know how to explain that further. It's really self-explanatory.",
+   "avg_logprob": -0.14938408809323464
+  },
+  {
+   "start": 142.4,
+   "end": 165.52,
+   "text": "Delta Ke equals Ke final minus Ke initial. So, one over two mv final squared minus one over two mv initial squared. And then you can factor this out if you want.",
+   "avg_logprob": -0.17448772809335164
+  },
+  {
+   "start": 166.32,
+   "end": 184.48,
+   "text": "One over two mvf squared minus vi squared. And now it's just a matter of plugging in our values. What do we have for m? We have 0.25 kilograms times 0.25.",
+   "avg_logprob": -0.09512571546625584
+  },
+  {
+   "start": 185.4,
+   "end": 198.84,
+   "text": "The final velocity, well, would be at two seconds. So, we just read our graph. At two seconds, the velocity is zero. So, it's just zero squared. I'm not gonna write that down.",
+   "avg_logprob": -0.1288905143737793
+  },
+  {
+   "start": 198.84,
+   "end": 220.29,
+   "text": "Initial velocity is 0.5 seconds, which is 0.3. 0.3 squared. And when you type this into your calculator, you would get one over two times 0.25 times 0.3 squared.",
+   "avg_logprob": -0.08899098463977377
+  },
+  {
+   "start": 220.29,
+   "end": 241.61,
+   "text": "You would get 0.011 joules because it's force. And it's negative because it's minus vi.",
+   "avg_logprob": -0.21784939457263267
+  },
+  {
+   "start": 241.61,
+   "end": 253.79,
+   "text": "Now, using the data in the force-time graph, estimate the change in momentum of the cart from t equals 0.5 seconds to t equals 2.5 seconds and briefly explain how you arrived at your estimation.",
+   "avg_logprob": -0.08151295886320227
+  },
+  {
+   "start": 255.21,
+   "end": 269.35,
+   "text": "So, if you didn't look at my momentum video, check it out because it's really helpful and it relates directly to this question. This is a classic impulse question.",
+   "avg_logprob": -0.08151295886320227
+  },
+  {
+   "start": 269.35,
+   "end": 277.99,
+   "text": "Change in momentum. The first thing when you see this is you want to think delta p, change in momentum, is equal to impulse.",
+   "avg_logprob": -0.107884468237559
+  },
+  {
+   "start": 278.83,
+   "end": 297.07,
+   "text": "So, impulse from time t equals 0.5 to t equals 2.5. 0.5 to 2.5. Impulse is just the measure of the area beneath the force-time curve.",
+   "avg_logprob": -0.107884468237559
+  },
+  {
+   "start": 297.07,
+   "end": 309.45,
+   "text": "I've mentioned that in my momentum video. So, the area here, let's call this, we don't actually have to calculate it, let's call this negative x, doesn't matter.",
+   "avg_logprob": -0.11069307146327836
+  },
+  {
+   "start": 309.89,
+   "end": 318.69,
+   "text": "The area here, however, is positive x. It's the same magnitude, but it's in a different direction.",
+   "avg_logprob": -0.11069307146327836
+  },
+  {
+   "start": 318.69,
+   "end": 329.93,
+   "text": "So, the total net impulse or the total net area under this part will be zero. So, that means the change in momentum is zero.",
+   "avg_logprob": -0.10410876406563653
+  },
+  {
+   "start": 331.49,
+   "end": 343.71,
+   "text": "And you can also use logic. Here, here, the velocity is the same. When you look at the graph, the velocity is the same, so change in momentum is zero.",
+   "avg_logprob": -0.10410876406563653
+  },
+  {
+   "start": 343.71,
+   "end": 352.93,
+   "text": "So, you're obviously not going to write that because it asks you to use a force-time graph, not the velocity-time graph, but it's still a good thing to affirm your answer.",
+   "avg_logprob": -0.09687754114468893
+  },
+  {
+   "start": 352.93,
+   "end": 379.78,
+   "text": "And what you would say is the area, the net area, under the force-time graph from t equals 0.5 seconds to t equals 2.5 seconds is zero.",
+   "avg_logprob": -0.07893346287310124
+  },
+  {
+   "start": 381.09,
+   "end": 407.85,
+   "text": "This means that the impulse or the change in momentum is also zero. And that's basically it for this question.",
+   "avg_logprob": -0.16210107891647904
+  },
+  {
+   "start": 410.23,
+   "end": 422.81,
+   "text": "Okay, three, I explained it in part two. Basically, you say that the velocity here is the same as the velocity here. Momentum depends on mass times velocity. Mass is constant.",
+   "avg_logprob": -0.08634394354053906
+  },
+  {
+   "start": 423.49,
+   "end": 437.33,
+   "text": "So, from 0.5 to 2.5, if velocity is also the same at 0.3, then momentum will be the same. So, I'm not going to write that down because that's going to take time, but that's basically it.",
+   "avg_logprob": -0.08634394354053906
+  },
+  {
+   "start": 437.33,
+   "end": 447.69,
+   "text": "So, these are pretty straightforward questions, and they basically connect momentum with springs.",
+   "avg_logprob": -0.15826212918316876
+  },
+  {
+   "start": 449.47,
+   "end": 453.31,
+   "text": "This is rotational motion. I'll get to that in another video.",
+   "avg_logprob": -0.15826212918316876
+  },
+  {
+   "start": 454.29,
+   "end": 459.59,
+   "text": "But, we have this question. I think that's the next one.",
+   "avg_logprob": -0.15826212918316876
+  },
+  {
+   "start": 459.59,
+   "end": 467.29,
+   "text": "Yep, we have this question, and I'm going to be going over that in the next video. Bye!",
+   "avg_logprob": -0.13631115166040567
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.42,
+   "end": 6.32,
+   "text": "The 2024 AP Physics 1 exam has a couple of questions"
+  },
+  {
+   "start": 6.32,
+   "end": 10.14,
+   "text": "that relate to oscillations, pendulums, and"
+  },
+  {
+   "start": 10.14,
+   "end": 15.08,
+   "text": "springs, so I will be going over these in a"
+  },
+  {
+   "start": 15.08,
+   "end": 17.6,
+   "text": "few videos. And even if you're not doing AP"
+  },
+  {
+   "start": 17.6,
+   "end": 19.76,
+   "text": "Physics 1, if you're doing high school physics,"
+  },
+  {
+   "start": 20.24,
+   "end": 22.46,
+   "text": "this is still really, really good practice,"
+  },
+  {
+   "start": 22.9,
+   "end": 24.96,
+   "text": "and maybe even goes beyond what you're learning,"
+  },
+  {
+   "start": 25.08,
+   "end": 27.36,
+   "text": "but it's still really, really good to know."
+  },
+  {
+   "start": 29.5,
+   "end": 33.9,
+   "text": "So, in an experiment, the student attaches one"
+  },
+  {
+   "start": 33.9,
+   "end": 37.96,
+   "text": "end of a spring to a force sensor that is attached"
+  },
+  {
+   "start": 37.96,
+   "end": 42.88,
+   "text": "to a wall. The other end of the spring is attached"
+  },
+  {
+   "start": 42.88,
+   "end": 46.34,
+   "text": "to a cart with a mass m equals 0.25 kilograms."
+  },
+  {
+   "start": 47.38,
+   "end": 53.98,
+   "text": "So, we know the mass, 0.25 kilograms."
+  },
+  {
+   "start": 54.72,
+   "end": 57.36,
+   "text": "The student places a motion detector to the"
+  },
+  {
+   "start": 57.36,
+   "end": 60.38,
+   "text": "right of the cart, as shown in Figure 2, and"
+  },
+  {
+   "start": 60.38,
+   "end": 62.96,
+   "text": "pulls the cart to the right a small distance"
+  },
+  {
+   "start": 62.96,
+   "end": 66.34,
+   "text": "so that the spring is stretched. And then the"
+  },
+  {
+   "start": 66.34,
+   "end": 68.84,
+   "text": "cart is released from rest, and the cart's spring"
+  },
+  {
+   "start": 68.84,
+   "end": 72.42,
+   "text": "system oscillates. And the following graph shows"
+  },
+  {
+   "start": 72.42,
+   "end": 75.58,
+   "text": "the velocity of the cart and the force exerted"
+  },
+  {
+   "start": 75.58,
+   "end": 80.04,
+   "text": "on the cart by the spring as functions of time"
+  },
+  {
+   "start": 80.04,
+   "end": 84.16,
+   "text": "t. So, before we even get started, this is relating"
+  },
+  {
+   "start": 84.16,
+   "end": 87.34,
+   "text": "to what we learned in the previous video about"
+  },
+  {
+   "start": 87.34,
+   "end": 89.52,
+   "text": "kinetic and potential energy."
+  },
+  {
+   "start": 90.48,
+   "end": 95.04,
+   "text": "These are the maximums for kinetic energy."
+  },
+  {
+   "start": 95.3,
+   "end": 101.06,
+   "text": "So, at here, kinetic energy is at max, and all"
+  },
+  {
+   "start": 101.06,
+   "end": 106.44,
+   "text": "of these points are when the cart is either"
+  },
+  {
+   "start": 106.44,
+   "end": 110.24,
+   "text": "at the farthest or at the closest to the wall."
+  },
+  {
+   "start": 110.26,
+   "end": 115.04,
+   "text": "Or the force center. So, that's good to know."
+  },
+  {
+   "start": 115.82,
+   "end": 119.38,
+   "text": "And this is the force. And using your data in"
+  },
+  {
+   "start": 119.38,
+   "end": 121.28,
+   "text": "the velocity-time graph, calculate the change"
+  },
+  {
+   "start": 121.28,
+   "end": 123.98,
+   "text": "in kinetic energy of the cart from t equals"
+  },
+  {
+   "start": 123.98,
+   "end": 126.84,
+   "text": "0.5 seconds to t equals 2.0 seconds."
+  },
+  {
+   "start": 127.14,
+   "end": 129.86,
+   "text": "Show your steps and calculations. This part"
+  },
+  {
+   "start": 129.86,
+   "end": 132.5,
+   "text": "a is really, really, really easy."
+  },
+  {
+   "start": 132.5,
+   "end": 136.12,
+   "text": "All you gotta do is do simple math."
+  },
+  {
+   "start": 137.76,
+   "end": 140.62,
+   "text": "Don't know how to explain that further. It's"
+  },
+  {
+   "start": 140.62,
+   "end": 146.64,
+   "text": "really self-explanatory. Delta Ke equals Ke"
+  },
+  {
+   "start": 146.64,
+   "end": 149.82,
+   "text": "final minus Ke initial."
+  },
+  {
+   "start": 151.36,
+   "end": 158.9,
+   "text": "So, one over two mv final squared"
+  },
+  {
+   "start": 158.9,
+   "end": 162.68,
+   "text": "minus one over two mv initial squared."
+  },
+  {
+   "start": 163.3,
+   "end": 165.52,
+   "text": "And then you can factor this out if you want."
+  },
+  {
+   "start": 166.32,
+   "end": 172.14,
+   "text": "One over two mvf squared minus vi squared."
+  },
+  {
+   "start": 173.22,
+   "end": 176.26,
+   "text": "And now it's just a matter of plugging in our"
+  },
+  {
+   "start": 176.26,
+   "end": 180.78,
+   "text": "values. What do we have for m? We have 0.25"
+  },
+  {
+   "start": 180.78,
+   "end": 184.48,
+   "text": "kilograms times 0.25."
+  },
+  {
+   "start": 185.4,
+   "end": 190.58,
+   "text": "The final velocity, well, would be at two seconds."
+  },
+  {
+   "start": 191.22,
+   "end": 193.22,
+   "text": "So, we just read our graph. At two seconds,"
+  },
+  {
+   "start": 193.28,
+   "end": 197.08,
+   "text": "the velocity is zero. So, it's just zero squared."
+  },
+  {
+   "start": 197.68,
+   "end": 200.14,
+   "text": "I'm not gonna write that down. Initial velocity"
+  },
+  {
+   "start": 200.14,
+   "end": 205.92,
+   "text": "is 0.5 seconds, which is 0.3."
+  },
+  {
+   "start": 206.86,
+   "end": 209.7,
+   "text": "0.3 squared."
+  },
+  {
+   "start": 211.95,
+   "end": 214.49,
+   "text": "And when you type this into your calculator,"
+  },
+  {
+   "start": 215.79,
+   "end": 219.21,
+   "text": "you would get one over two times 0.25 times"
+  },
+  {
+   "start": 219.21,
+   "end": 231.11,
+   "text": "0.3 squared. You would get 0.011"
+  },
+  {
+   "start": 231.11,
+   "end": 236.61,
+   "text": "joules because it's force."
+  },
+  {
+   "start": 237.73,
+   "end": 241.61,
+   "text": "And it's negative because it's minus vi."
+  },
+  {
+   "start": 241.61,
+   "end": 244.35,
+   "text": "Now, using the data in the force-time graph,"
+  },
+  {
+   "start": 244.45,
+   "end": 246.47,
+   "text": "estimate the change in momentum of the cart"
+  },
+  {
+   "start": 246.47,
+   "end": 250.07,
+   "text": "from t equals 0.5 seconds to t equals 2.5 seconds"
+  },
+  {
+   "start": 250.07,
+   "end": 253.21,
+   "text": "and briefly explain how you arrived at your"
+  },
+  {
+   "start": 253.21,
+   "end": 261.39,
+   "text": "estimation. So, if you didn't look at my"
+  },
+  {
+   "start": 261.39,
+   "end": 264.21,
+   "text": "momentum video, check it out because it's really"
+  },
+  {
+   "start": 264.21,
+   "end": 266.55,
+   "text": "helpful and it relates directly to this question."
+  },
+  {
+   "start": 266.75,
+   "end": 269.35,
+   "text": "This is a classic impulse question."
+  },
+  {
+   "start": 269.35,
+   "end": 272.59,
+   "text": "Change in momentum. The first thing when you"
+  },
+  {
+   "start": 272.59,
+   "end": 276.03,
+   "text": "see this is you want to think delta-p, change"
+  },
+  {
+   "start": 276.03,
+   "end": 281.25,
+   "text": "in momentum, is equal to impulse. So, impulse"
+  },
+  {
+   "start": 281.25,
+   "end": 285.91,
+   "text": "from time t equals 0.5 to t equals 2.5."
+  },
+  {
+   "start": 286.43,
+   "end": 293.53,
+   "text": "0.5 to 2.5. Impulse is just the measure of"
+  },
+  {
+   "start": 293.53,
+   "end": 297.07,
+   "text": "the area beneath the force-time curve."
+  },
+  {
+   "start": 297.07,
+   "end": 299.77,
+   "text": "I've mentioned that in my momentum video."
+  },
+  {
+   "start": 300.51,
+   "end": 303.47,
+   "text": "So, the area here, let's call this, we don't"
+  },
+  {
+   "start": 303.47,
+   "end": 306.55,
+   "text": "actually have to calculate it, let's call this"
+  },
+  {
+   "start": 306.55,
+   "end": 309.45,
+   "text": "negative x, doesn't matter."
+  },
+  {
+   "start": 309.89,
+   "end": 312.73,
+   "text": "The area here, however, is positive x."
+  },
+  {
+   "start": 312.83,
+   "end": 318.33,
+   "text": "It's the same magnitude, but it's in a different"
+  },
+  {
+   "start": 318.33,
+   "end": 322.43,
+   "text": "direction. So, the total net impulse or the"
+  },
+  {
+   "start": 322.43,
+   "end": 326.07,
+   "text": "total net area under this part will be zero."
+  },
+  {
+   "start": 327.23,
+   "end": 329.93,
+   "text": "So, that means the change in momentum is zero."
+  },
+  {
+   "start": 331.49,
+   "end": 334.87,
+   "text": "And you can also use logic."
+  },
+  {
+   "start": 335.97,
+   "end": 339.31,
+   "text": "Here, here, the velocity is the same."
+  },
+  {
+   "start": 339.49,
+   "end": 341.13,
+   "text": "When you look at the graph, the velocity is"
+  },
+  {
+   "start": 341.13,
+   "end": 343.71,
+   "text": "the same, so change in momentum is zero."
+  },
+  {
+   "start": 343.71,
+   "end": 346.55,
+   "text": "So, you're obviously not going to write that"
+  },
+  {
+   "start": 346.55,
+   "end": 348.49,
+   "text": "because it asks you to use a force-time graph,"
+  },
+  {
+   "start": 348.61,
+   "end": 350.65,
+   "text": "not the velocity-time graph, but it's still"
+  },
+  {
+   "start": 350.65,
+   "end": 352.93,
+   "text": "a good thing to affirm your answer."
+  },
+  {
+   "start": 352.93,
+   "end": 358.17,
+   "text": "And what you would say is the area, the net"
+  },
+  {
+   "start": 358.17,
+   "end": 365.46,
+   "text": "area, under the force-time"
+  },
+  {
+   "start": 365.46,
+   "end": 373.36,
+   "text": "graph from t equals 0.5"
+  },
+  {
+   "start": 373.36,
+   "end": 379.78,
+   "text": "seconds to t equals 2.5 seconds is zero."
+  },
+  {
+   "start": 381.09,
+   "end": 389.0,
+   "text": "This means that the impulse or"
+  },
+  {
+   "start": 390.25,
+   "end": 398.51,
+   "text": "the change in momentum is"
+  },
+  {
+   "start": 398.51,
+   "end": 401.79,
+   "text": "also zero."
+  },
+  {
+   "start": 402.37,
+   "end": 407.85,
+   "text": "And that's basically it for this question."
+  },
+  {
+   "start": 410.23,
+   "end": 413.95,
+   "text": "Okay, three, I explained it in part two."
+  },
+  {
+   "start": 414.19,
+   "end": 417.83,
+   "text": "Basically, you say that the velocity here is"
+  },
+  {
+   "start": 417.83,
+   "end": 420.75,
+   "text": "the same as the velocity here. Momentum depends"
+  },
+  {
+   "start": 420.75,
+   "end": 422.81,
+   "text": "on mass times velocity. Mass is constant."
+  },
+  {
+   "start": 423.49,
+   "end": 428.41,
+   "text": "So, from 0.5 to 2.5, if velocity is also the"
+  },
+  {
+   "start": 428.41,
+   "end": 431.61,
+   "text": "same at 0.3, then momentum will be the same."
+  },
+  {
+   "start": 431.73,
+   "end": 433.21,
+   "text": "So, I'm not going to write that down because"
+  },
+  {
+   "start": 433.21,
+   "end": 436.93,
+   "text": "that's going to take time, but that's basically"
+  },
+  {
+   "start": 436.93,
+   "end": 440.87,
+   "text": "it. So, these are pretty straightforward questions,"
+  },
+  {
+   "start": 441.89,
+   "end": 447.69,
+   "text": "and they basically connect momentum with springs."
+  },
+  {
+   "start": 449.47,
+   "end": 452.47,
+   "text": "This is rotational motion. I'll get to that"
+  },
+  {
+   "start": 452.47,
+   "end": 457.35,
+   "text": "in another video. But, we have this question."
+  },
+  {
+   "start": 457.95,
+   "end": 461.05,
+   "text": "I think that's the next one. Yep, we have this"
+  },
+  {
+   "start": 461.05,
+   "end": 464.73,
+   "text": "question, and I'm going to be going over that"
+  },
+  {
+   "start": 464.73,
+   "end": 467.29,
+   "text": "in the next video. Bye!"
+  }
+ ],
+ "report": {
+  "key": "harmonics__harmonics_ap_momentum",
+  "title": "Springs and Momentum - Past AP Physics 1 Example",
+  "topicKey": "harmonics",
+  "duration": 468.3946875,
+  "cues": 111,
+  "corrections": 1,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.21784939457263267,
+  "flagged": []
+ }
+}

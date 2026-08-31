@@ -1,0 +1,656 @@
+{
+ "lesson": {
+  "topicKey": "electricity",
+  "curriculumKey": "capacitance",
+  "title": "Capacitance",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/4%20Capacitance.mp4",
+  "source": "electricity.dart"
+ },
+ "segments": [
+  {
+   "start": 0.91,
+   "end": 22.71,
+   "text": "In this video, we will be talking about capacitors. A capacitor is a device that is used to store electrical charge. In real life, it might look like this. It's a small thing with two rods or two plates covered by an insulator that looks like this, but in reality it is actually two plates.",
+   "avg_logprob": -0.10459603591641384
+  },
+  {
+   "start": 25.01,
+   "end": 51.79,
+   "text": "Now, unlike a battery which produces energy through chemical reactions, a capacitor stores energy instead. And the plates are also not touching, and between these plates is an insulating material called a dielectric. It could be air, sometimes it's other things such as paper is used as a good dielectric,",
+   "avg_logprob": -0.1231374007004958
+  },
+  {
+   "start": 51.79,
+   "end": 76.11,
+   "text": "but basically that insulates between the plates, and since the plates are separated by an insulator, charges can't cross directly from one plate to the other. But for now, we don't need to know that much about dielectrics, just know that it's used to preserve the charge stored on each plate.",
+   "avg_logprob": -0.06280400423389493
+  },
+  {
+   "start": 77.47,
+   "end": 98.79,
+   "text": "When one of these capacitors acts and connects on a battery, initially electrons are pushed from one plate and pulled off the other plate. So this plate would have a net positive charge, while this plate will pull electrons from it. And this creates a charge.",
+   "avg_logprob": -0.12240454155419554
+  },
+  {
+   "start": 99.65,
+   "end": 111.55,
+   "text": "And even though electrons don't cross the dielectric, there's an electric field formed between the plates, and that electric field is where the energy is actually stored.",
+   "avg_logprob": -0.07064654109509368
+  },
+  {
+   "start": 111.55,
+   "end": 130.51,
+   "text": "The energy stored in a capacitor is equal to E equals Cv, or Q equals Cv, where Q is the charge stored, C is the capacitance, and V is the voltage across the capacitor.",
+   "avg_logprob": -0.09334553842959196
+  },
+  {
+   "start": 130.51,
+   "end": 155.19,
+   "text": "The capacitance depends mostly on the dielectric. Basically, C equals epsilon naught times A over D, where A is the area of the plates, D is the distance between them, and E is the permittivity of free space, so it's a constant.",
+   "avg_logprob": -0.08171663180954995
+  },
+  {
+   "start": 156.66,
+   "end": 166.52,
+   "text": "Increasing the plate area basically increases the capacitance, so that's why bigger capacitors can store more charges.",
+   "avg_logprob": -0.07842499872340876
+  },
+  {
+   "start": 168.83,
+   "end": 181.37,
+   "text": "However, how does a capacitor actually act in a circuit? Well, when first connected to the battery, there's obviously going to be no net charge, so current flows and charge starts building up.",
+   "avg_logprob": -0.07842499872340876
+  },
+  {
+   "start": 181.37,
+   "end": 191.81,
+   "text": "However, as a capacitor charges, the voltage across the capacitor increases until it has a maximum charge.",
+   "avg_logprob": -0.09122409874742682
+  },
+  {
+   "start": 192.81,
+   "end": 203.61,
+   "text": "And since it has a maximum charge now, there's no voltage left in the series circuit to actually push the electrons away from the first capacitor.",
+   "avg_logprob": -0.09122409874742682
+  },
+  {
+   "start": 203.61,
+   "end": 209.73,
+   "text": "So, after a while, there is not going to be a current.",
+   "avg_logprob": -0.12793574424890372
+  },
+  {
+   "start": 210.99,
+   "end": 221.99,
+   "text": "So, what you'd have to know is, initially, after the circuit starts, the capacitor acts as a normal wire, or as a short circuit.",
+   "avg_logprob": -0.12793574424890372
+  },
+  {
+   "start": 221.99,
+   "end": 231.37,
+   "text": "So, a capacitor acts like a short circuit.",
+   "avg_logprob": -0.11413636266208085
+  },
+  {
+   "start": 232.79,
+   "end": 239.13,
+   "text": "So, basically you could ignore the capacitor initially, it just acts like a wire.",
+   "avg_logprob": -0.11413636266208085
+  },
+  {
+   "start": 239.43,
+   "end": 250.17,
+   "text": "However, as charge builds up, and the voltage increases between the capacitor, so after a while, or a period of time,",
+   "avg_logprob": -0.11413636266208085
+  },
+  {
+   "start": 250.17,
+   "end": 258.87,
+   "text": "there is not going to be a current passing through the capacitor.",
+   "avg_logprob": -0.12985216636283725
+  },
+  {
+   "start": 260.59,
+   "end": 267.63,
+   "text": "So, basically it acts like an open circuit to be a current.",
+   "avg_logprob": -0.12985216636283725
+  },
+  {
+   "start": 269.91,
+   "end": 275.99,
+   "text": "So, initially, basically you can imagine it would just look something like this.",
+   "avg_logprob": -0.12985216636283725
+  },
+  {
+   "start": 275.99,
+   "end": 281.97,
+   "text": "But after a while, you can imagine that the circuit looks like this.",
+   "avg_logprob": -0.08843139978972349
+  },
+  {
+   "start": 284.1,
+   "end": 287.34,
+   "text": "And that's basically it.",
+   "avg_logprob": -0.08843139978972349
+  },
+  {
+   "start": 288.4,
+   "end": 298.44,
+   "text": "The energy stored in an electric field is given by a different formula, but the two main formulas you have to know are these.",
+   "avg_logprob": -0.08843139978972349
+  },
+  {
+   "start": 300.32,
+   "end": 308.34,
+   "text": "But the energy stored between the electric field is E equals one over two C V squared.",
+   "avg_logprob": -0.12052037921108183
+  },
+  {
+   "start": 308.92,
+   "end": 314.7,
+   "text": "And this is the energy that is released by the capacitor when you discharge it.",
+   "avg_logprob": -0.12052037921108183
+  },
+  {
+   "start": 317.59,
+   "end": 320.91,
+   "text": "Energy released through discharge.",
+   "avg_logprob": -0.12052037921108183
+  },
+  {
+   "start": 325.75,
+   "end": 329.25,
+   "text": "So, ultimately, capacitors are things that store charges.",
+   "avg_logprob": -0.12052037921108183
+  },
+  {
+   "start": 329.25,
+   "end": 335.71,
+   "text": "At first, initially, in a circuit, it acts like a short circuit, or basically just a wire connecting.",
+   "avg_logprob": -0.07735548254690672
+  },
+  {
+   "start": 336.21,
+   "end": 344.13,
+   "text": "But over time, as charges build up, the current is going to decrease until ultimately there is no current going through it at all.",
+   "avg_logprob": -0.07735548254690672
+  },
+  {
+   "start": 345.71,
+   "end": 352.15,
+   "text": "The capacitance, or the energy stored, depends on the area and the distance.",
+   "avg_logprob": -0.07735548254690672
+  },
+  {
+   "start": 352.57,
+   "end": 356.75,
+   "text": "It's inversely proportional to the distance, and it's directly proportional to the area.",
+   "avg_logprob": -0.07735548254690672
+  },
+  {
+   "start": 358.13,
+   "end": 361.71,
+   "text": "And, yeah, that's basically all you need to know about capacitors.",
+   "avg_logprob": -0.09342778044251296
+  },
+  {
+   "start": 362.37,
+   "end": 363.03,
+   "text": "Thank you for watching!",
+   "avg_logprob": -0.09342778044251296
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.91,
+   "end": 4.45,
+   "text": "In this video, we will be talking about capacitors."
+  },
+  {
+   "start": 5.35,
+   "end": 9.75,
+   "text": "A capacitor is a device that is used to store"
+  },
+  {
+   "start": 9.75,
+   "end": 12.29,
+   "text": "electrical charge. In real life, it might look"
+  },
+  {
+   "start": 12.29,
+   "end": 15.39,
+   "text": "like this. It's a small thing with two rods"
+  },
+  {
+   "start": 15.39,
+   "end": 19.65,
+   "text": "or two plates covered by an insulator that looks"
+  },
+  {
+   "start": 19.65,
+   "end": 22.27,
+   "text": "like this, but in reality it is actually two"
+  },
+  {
+   "start": 22.27,
+   "end": 28.43,
+   "text": "plates. Now, unlike a battery which produces"
+  },
+  {
+   "start": 28.43,
+   "end": 31.43,
+   "text": "energy through chemical reactions, a capacitor"
+  },
+  {
+   "start": 31.43,
+   "end": 33.83,
+   "text": "stores energy instead."
+  },
+  {
+   "start": 35.03,
+   "end": 38.49,
+   "text": "And the plates are also not touching, and between"
+  },
+  {
+   "start": 38.49,
+   "end": 42.83,
+   "text": "these plates is an insulating material called"
+  },
+  {
+   "start": 42.83,
+   "end": 47.15,
+   "text": "a dielectric. It could be air, sometimes it's"
+  },
+  {
+   "start": 47.15,
+   "end": 50.91,
+   "text": "other things such as paper is used as a good"
+  },
+  {
+   "start": 50.91,
+   "end": 56.95,
+   "text": "dielectric, but basically that insulates between"
+  },
+  {
+   "start": 56.95,
+   "end": 60.63,
+   "text": "the plates, and since the plates are separated"
+  },
+  {
+   "start": 60.63,
+   "end": 63.69,
+   "text": "by an insulator, charges can't cross directly"
+  },
+  {
+   "start": 63.69,
+   "end": 66.75,
+   "text": "from one plate to the other."
+  },
+  {
+   "start": 66.99,
+   "end": 70.47,
+   "text": "But for now, we don't need to know that much"
+  },
+  {
+   "start": 70.47,
+   "end": 73.57,
+   "text": "about dielectrics, just know that it's used"
+  },
+  {
+   "start": 73.57,
+   "end": 76.11,
+   "text": "to preserve the charge stored on each plate."
+  },
+  {
+   "start": 77.47,
+   "end": 82.45,
+   "text": "When one of these capacitors acts and connects"
+  },
+  {
+   "start": 82.45,
+   "end": 85.93,
+   "text": "on a battery, initially electrons are pushed"
+  },
+  {
+   "start": 85.93,
+   "end": 88.57,
+   "text": "from one plate and pulled off the other plate."
+  },
+  {
+   "start": 88.75,
+   "end": 93.61,
+   "text": "So this plate would have a net positive charge,"
+  },
+  {
+   "start": 93.77,
+   "end": 96.75,
+   "text": "while this plate will pull electrons from it."
+  },
+  {
+   "start": 96.77,
+   "end": 98.79,
+   "text": "And this creates a charge."
+  },
+  {
+   "start": 99.65,
+   "end": 104.49,
+   "text": "And even though electrons don't cross the dielectric,"
+  },
+  {
+   "start": 105.13,
+   "end": 107.77,
+   "text": "there's an electric field formed between the"
+  },
+  {
+   "start": 107.77,
+   "end": 110.01,
+   "text": "plates, and that electric field is where the"
+  },
+  {
+   "start": 110.01,
+   "end": 113.51,
+   "text": "energy is actually stored. The energy stored"
+  },
+  {
+   "start": 113.51,
+   "end": 120.61,
+   "text": "in a capacitor is equal to E equals Cv, or"
+  },
+  {
+   "start": 120.61,
+   "end": 125.87,
+   "text": "Q equals Cv, where Q is the charge stored, C"
+  },
+  {
+   "start": 125.87,
+   "end": 129.89,
+   "text": "is the capacitance, and V is the voltage across"
+  },
+  {
+   "start": 129.89,
+   "end": 133.79,
+   "text": "the capacitor. The capacitance depends mostly"
+  },
+  {
+   "start": 133.79,
+   "end": 141.57,
+   "text": "on the dielectric. Basically, C equals epsilon"
+  },
+  {
+   "start": 141.57,
+   "end": 146.21,
+   "text": "naught times A over D, where A is the area of"
+  },
+  {
+   "start": 146.21,
+   "end": 149.59,
+   "text": "the plates, D is the distance between them,"
+  },
+  {
+   "start": 149.93,
+   "end": 153.79,
+   "text": "and E is the permittivity of free space, so"
+  },
+  {
+   "start": 153.79,
+   "end": 159.5,
+   "text": "it's a constant. Increasing the plate area basically"
+  },
+  {
+   "start": 159.5,
+   "end": 162.78,
+   "text": "increases the capacitance, so that's why bigger"
+  },
+  {
+   "start": 162.78,
+   "end": 166.52,
+   "text": "capacitors can store more charges."
+  },
+  {
+   "start": 168.83,
+   "end": 172.19,
+   "text": "However, how does a capacitor actually act in"
+  },
+  {
+   "start": 172.19,
+   "end": 175.21,
+   "text": "a circuit? Well, when first connected to the"
+  },
+  {
+   "start": 175.21,
+   "end": 177.55,
+   "text": "battery, there's obviously going to be no net"
+  },
+  {
+   "start": 177.55,
+   "end": 180.89,
+   "text": "charge, so current flows and charge starts building"
+  },
+  {
+   "start": 180.89,
+   "end": 185.01,
+   "text": "up. However, as a capacitor charges, the voltage"
+  },
+  {
+   "start": 185.01,
+   "end": 190.83,
+   "text": "across the capacitor increases until it has"
+  },
+  {
+   "start": 190.83,
+   "end": 194.35,
+   "text": "a maximum charge. And since it has a maximum"
+  },
+  {
+   "start": 194.35,
+   "end": 199.11,
+   "text": "charge now, there's no voltage left in the series"
+  },
+  {
+   "start": 199.11,
+   "end": 202.37,
+   "text": "circuit to actually push the electrons away"
+  },
+  {
+   "start": 202.37,
+   "end": 205.31,
+   "text": "from the first capacitor. So, after a while,"
+  },
+  {
+   "start": 205.63,
+   "end": 209.73,
+   "text": "there is not going to be a current."
+  },
+  {
+   "start": 210.99,
+   "end": 213.91,
+   "text": "So, what you'd have to know is, initially, after"
+  },
+  {
+   "start": 213.91,
+   "end": 220.21,
+   "text": "the circuit starts, the capacitor acts as a"
+  },
+  {
+   "start": 220.21,
+   "end": 223.55,
+   "text": "normal wire, or as a short circuit. So, a capacitor"
+  },
+  {
+   "start": 225.31,
+   "end": 231.37,
+   "text": "acts like a short circuit."
+  },
+  {
+   "start": 232.79,
+   "end": 235.63,
+   "text": "So, basically you could ignore the capacitor"
+  },
+  {
+   "start": 235.63,
+   "end": 239.13,
+   "text": "initially, it just acts like a wire."
+  },
+  {
+   "start": 239.43,
+   "end": 241.71,
+   "text": "However, as charge builds up, and the voltage"
+  },
+  {
+   "start": 241.71,
+   "end": 247.45,
+   "text": "increases between the capacitor, so after a"
+  },
+  {
+   "start": 247.45,
+   "end": 253.85,
+   "text": "while, or a period of time, there is not going"
+  },
+  {
+   "start": 253.85,
+   "end": 258.87,
+   "text": "to be a current passing through the capacitor."
+  },
+  {
+   "start": 260.59,
+   "end": 265.53,
+   "text": "So, basically it acts like an open circuit to"
+  },
+  {
+   "start": 265.53,
+   "end": 267.63,
+   "text": "be a current."
+  },
+  {
+   "start": 269.91,
+   "end": 274.47,
+   "text": "So, initially, basically you can imagine it"
+  },
+  {
+   "start": 274.47,
+   "end": 276.81,
+   "text": "would just look something like this. But after"
+  },
+  {
+   "start": 276.81,
+   "end": 281.29,
+   "text": "a while, you can imagine that the circuit looks"
+  },
+  {
+   "start": 281.29,
+   "end": 287.34,
+   "text": "like this. And that's basically it."
+  },
+  {
+   "start": 288.4,
+   "end": 292.62,
+   "text": "The energy stored in an electric field is given"
+  },
+  {
+   "start": 292.62,
+   "end": 296.26,
+   "text": "by a different formula, but the two main formulas"
+  },
+  {
+   "start": 296.26,
+   "end": 298.44,
+   "text": "you have to know are these."
+  },
+  {
+   "start": 300.32,
+   "end": 304.58,
+   "text": "But the energy stored between the electric field"
+  },
+  {
+   "start": 304.58,
+   "end": 308.34,
+   "text": "is E equals one over two C V squared."
+  },
+  {
+   "start": 308.92,
+   "end": 312.68,
+   "text": "And this is the energy that is released by the"
+  },
+  {
+   "start": 312.68,
+   "end": 314.7,
+   "text": "capacitor when you discharge it."
+  },
+  {
+   "start": 317.59,
+   "end": 320.91,
+   "text": "Energy released through discharge."
+  },
+  {
+   "start": 325.75,
+   "end": 328.71,
+   "text": "So, ultimately, capacitors are things that store"
+  },
+  {
+   "start": 328.71,
+   "end": 331.71,
+   "text": "charges. At first, initially, in a circuit,"
+  },
+  {
+   "start": 332.15,
+   "end": 334.75,
+   "text": "it acts like a short circuit, or basically just"
+  },
+  {
+   "start": 334.75,
+   "end": 337.35,
+   "text": "a wire connecting. But over time, as charges"
+  },
+  {
+   "start": 337.35,
+   "end": 340.87,
+   "text": "build up, the current is going to decrease until"
+  },
+  {
+   "start": 340.87,
+   "end": 343.53,
+   "text": "ultimately there is no current going through"
+  },
+  {
+   "start": 343.53,
+   "end": 348.23,
+   "text": "it at all. The capacitance, or the energy stored,"
+  },
+  {
+   "start": 348.61,
+   "end": 352.15,
+   "text": "depends on the area and the distance."
+  },
+  {
+   "start": 352.57,
+   "end": 354.57,
+   "text": "It's inversely proportional to the distance,"
+  },
+  {
+   "start": 354.61,
+   "end": 356.75,
+   "text": "and it's directly proportional to the area."
+  },
+  {
+   "start": 358.13,
+   "end": 360.63,
+   "text": "And, yeah, that's basically all you need to"
+  },
+  {
+   "start": 360.63,
+   "end": 363.03,
+   "text": "know about capacitors. Thank you for watching!"
+  }
+ ],
+ "report": {
+  "key": "electricity__capacitance",
+  "title": "Capacitance",
+  "topicKey": "electricity",
+  "duration": 363.584,
+  "cues": 88,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.12985216636283725,
+  "flagged": []
+ }
+}

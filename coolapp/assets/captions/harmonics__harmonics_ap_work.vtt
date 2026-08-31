@@ -1,0 +1,557 @@
+WEBVTT
+NOTE Pendulums and Work - Past AP Physics 1 Example
+
+1
+00:00:02.290 --> 00:00:04.470
+In this video, we'll be going over the
+next
+
+2
+00:00:04.470 --> 00:00:08.210
+question about oscillations, and this is a
+question
+
+3
+00:00:08.210 --> 00:00:12.930
+that I really like because it demonstrates
+a
+
+4
+00:00:12.930 --> 00:00:16.270
+lot of what we have learned, not only
+oscillations
+
+5
+00:00:16.270 --> 00:00:21.270
+but also work, and it's a really good
+application
+
+6
+00:00:21.270 --> 00:00:24.990
+of oscillations as well in part b. So,
+what
+
+7
+00:00:24.990 --> 00:00:27.930
+we have here is a simple pendulum consists
+of
+
+8
+00:00:27.930 --> 00:00:30.130
+a small sphere that hangs from a string
+with
+
+9
+00:00:30.130 --> 00:00:33.030
+negligible mass. The top end of the string
+is
+
+10
+00:00:33.030 --> 00:00:35.690
+fixed. The sphere is pulled to point A so
+that
+
+11
+00:00:35.690 --> 00:00:39.470
+the string makes an angle theta, and the
+sphere
+
+12
+00:00:39.470 --> 00:00:42.370
+is released from rest and it oscillates
+back
+
+13
+00:00:42.370 --> 00:00:47.670
+and forth. The work done on the sphere by
+Earth
+
+14
+00:00:47.670 --> 00:00:50.730
+between points A and B is W.
+
+15
+00:00:51.330 --> 00:00:54.390
+The pendulum is then taken to planet X,
+and
+
+16
+00:00:54.390 --> 00:00:57.670
+the mass of planet X is the same as the
+mass
+
+17
+00:00:57.670 --> 00:01:04.150
+of Earth, but the radius is greater than
+the
+
+18
+00:01:04.150 --> 00:01:08.750
+radius of Earth. So, first of all, when we
+see
+
+19
+00:01:08.750 --> 00:01:11.810
+that the mass of planet X is the same as
+the
+
+20
+00:01:11.810 --> 00:01:14.910
+mass of Earth but the radius is greater,
+then
+
+21
+00:01:14.910 --> 00:01:20.430
+that means that G on planet X will be
+smaller
+
+22
+00:01:20.430 --> 00:01:24.170
+than the acceleration of Earth, because
+the
+
+23
+00:01:24.170 --> 00:01:27.010
+gravitational field strength would be
+smaller
+
+24
+00:01:27.010 --> 00:01:31.810
+for a greater radius. And the sphere is
+then
+
+25
+00:01:31.810 --> 00:01:34.970
+brought back to point A and swung again on
+planet
+
+26
+00:01:34.970 --> 00:01:37.610
+X, and you have to justify why the work
+done
+
+27
+00:01:37.610 --> 00:01:41.810
+on planet X is less than the work done on
+planet
+
+28
+00:01:41.810 --> 00:01:45.590
+E. Well, as I've said in another video, I
+don't
+
+29
+00:01:45.590 --> 00:01:48.090
+remember which one, but I've said this
+before,
+
+30
+00:01:48.630 --> 00:01:51.510
+the work is equal to force times distance.
+
+31
+00:01:52.190 --> 00:01:55.610
+And also another thing is force times
+distance
+
+32
+00:01:55.610 --> 00:02:00.950
+cosine theta, but also AP Physics 1 has a
+formula
+
+33
+00:02:00.950 --> 00:02:04.930
+booklet, and it basically has everything
+you
+
+34
+00:02:04.930 --> 00:02:12.170
+need to know to solve these questions,
+other
+
+35
+00:02:12.170 --> 00:02:15.910
+than one or two formulae. So what you have
+here
+
+36
+00:02:15.910 --> 00:02:18.890
+is work is equal to force times distance,
+or
+
+37
+00:02:18.890 --> 00:02:23.050
+force times distance in the direction. And
+so
+
+38
+00:02:23.050 --> 00:02:26.270
+it's just mainly about applying these and
+understanding
+
+39
+00:02:26.270 --> 00:02:33.950
+what you're doing. So force, well, force,
+Newton's
+
+40
+00:02:33.950 --> 00:02:36.810
+law, is mass times acceleration.
+
+41
+00:02:37.110 --> 00:02:40.870
+In this case, it's mass times gravity,
+because
+
+42
+00:02:40.870 --> 00:02:44.350
+that's the acceleration times distance.
+
+43
+00:02:46.070 --> 00:02:53.800
+And the same thing for X equals
+
+44
+00:02:53.800 --> 00:02:58.340
+force times distance, and it's equal to
+mass
+
+45
+00:02:58.340 --> 00:03:03.400
+times gravity on X times D, while this is
+gravity
+
+46
+00:03:03.400 --> 00:03:06.740
+times E on D. But like I've explained
+before,
+
+47
+00:03:07.360 --> 00:03:11.800
+since the acceleration on X is lower, so
+this
+
+48
+00:03:11.800 --> 00:03:15.400
+is lower than that, and M and D are
+constants
+
+49
+00:03:15.400 --> 00:03:17.880
+in both cases, because the distance and
+the
+
+50
+00:03:17.880 --> 00:03:21.060
+mass of the ball are the same, then we can
+conclude
+
+51
+00:03:21.060 --> 00:03:24.020
+that the work done on X is less than the
+work
+
+52
+00:03:24.020 --> 00:03:26.360
+done on E, and that's basically what you
+need
+
+53
+00:03:26.360 --> 00:03:28.320
+to explain. I'm not going to write it
+down,
+
+54
+00:03:28.520 --> 00:03:30.660
+but the question is solved.
+
+55
+00:03:30.740 --> 00:03:35.040
+You just need to state what I've said.
+Okay,
+
+56
+00:03:35.120 --> 00:03:37.920
+a new pendulum is made by hanging the same
+small
+
+57
+00:03:37.920 --> 00:03:40.720
+sphere on a different string with
+negligible
+
+58
+00:03:40.720 --> 00:03:44.820
+mass. Different string means that the
+length
+
+59
+00:03:44.820 --> 00:03:48.340
+of the string is different. The new string
+is
+
+60
+00:03:48.340 --> 00:03:51.380
+slightly elastic, and the length of the
+string
+
+61
+00:03:51.380 --> 00:03:54.780
+may increase or decrease depending on the
+tension
+
+62
+00:03:54.780 --> 00:04:00.820
+applied. I haven't read this question in a
+while,
+
+63
+00:04:00.840 --> 00:04:04.980
+but from what I see here, you don't really
+need
+
+64
+00:04:04.980 --> 00:04:07.360
+to mind this. All you need to know is that
+the
+
+65
+00:04:07.360 --> 00:04:10.020
+length of the string can vary. On Earth,
+when
+
+66
+00:04:10.020 --> 00:04:13.380
+the sphere is displaced from the vertical
+and
+
+67
+00:04:13.380 --> 00:04:15.840
+released from rest, the new pendulum
+oscillates
+
+68
+00:04:15.840 --> 00:04:18.080
+with this period. And then the new
+pendulum
+
+69
+00:04:18.080 --> 00:04:20.720
+is taken to a different planet with the
+same
+
+70
+00:04:20.720 --> 00:04:23.120
+radius, but a larger mass.
+
+71
+00:04:23.120 --> 00:04:27.240
+So basically, that means a larger G.
+
+72
+00:04:27.520 --> 00:04:31.480
+So G of Y is bigger than G of E.
+
+73
+00:04:33.700 --> 00:04:37.560
+And on planet Y, it oscillates with period
+T
+
+74
+00:04:37.560 --> 00:04:42.300
+Y. And you have to explain how T Y could
+be
+
+75
+00:04:42.300 --> 00:04:45.780
+larger than T, or it could also be smaller
+than
+
+76
+00:04:45.780 --> 00:04:48.580
+T. Now, I'm not going to write a
+paragraph,
+
+77
+00:04:48.900 --> 00:04:54.740
+but I'm going to explain why. So
+basically,
+
+78
+00:04:55.260 --> 00:04:57.920
+first of all, when we do this, we want to
+know
+
+79
+00:04:57.920 --> 00:05:03.220
+our variables in play. And I would be
+pulling
+
+80
+00:05:03.220 --> 00:05:05.440
+up the formula sheet if I was doing the
+exam
+
+81
+00:05:05.440 --> 00:05:08.200
+right now. And you would know that T P
+equals
+
+82
+00:05:08.200 --> 00:05:10.680
+2 pi root L over G, as we've learned.
+
+83
+00:05:12.880 --> 00:05:20.160
+So T equals 2 pi root L
+
+84
+00:05:20.160 --> 00:05:27.640
+over G. Now, it's kind of obvious now
+
+85
+00:05:27.640 --> 00:05:30.520
+why it could be either larger or smaller.
+
+86
+00:05:31.460 --> 00:05:39.360
+If the length of the string is
+
+87
+00:05:39.360 --> 00:05:45.520
+way, way larger, then the period on Earth
+would
+
+88
+00:05:45.520 --> 00:05:49.420
+be greater. So if it's elastic, if it's
+more
+
+89
+00:05:49.420 --> 00:05:51.900
+elastic, then the period on Earth could be
+greater.
+
+90
+00:05:52.560 --> 00:05:55.860
+But, sorry, the period on planet Y could
+be
+
+91
+00:05:55.860 --> 00:05:59.300
+greater. Because if it's more elastic,
+then
+
+92
+00:05:59.300 --> 00:06:02.600
+the length on planet Y would be larger,
+because
+
+93
+00:06:02.600 --> 00:06:04.760
+there would be a greater tension force.
+
+94
+00:06:05.800 --> 00:06:10.340
+But if it's not so elastic, that means
+that
+
+95
+00:06:10.340 --> 00:06:13.380
+gravity on planet Y would be way, way
+larger
+
+96
+00:06:13.380 --> 00:06:16.580
+than the gravity on planet E or Earth.
+
+97
+00:06:16.580 --> 00:06:23.720
+So if it's not so elastic, then the
+
+98
+00:06:23.720 --> 00:06:28.820
+period on planet Y would be less.
+
+99
+00:06:29.260 --> 00:06:31.460
+And the period on planet E would be
+greater.
+
+100
+00:06:31.840 --> 00:06:35.220
+So it really depends on the elasticity of
+the
+
+101
+00:06:35.220 --> 00:06:37.400
+string. And that's basically how you
+answer
+
+102
+00:06:37.400 --> 00:06:41.340
+the question. So say that gravity is
+inversely
+
+103
+00:06:41.340 --> 00:06:45.260
+related to period. So if gravity is
+greater,
+
+104
+00:06:45.480 --> 00:06:48.860
+then the period will be smaller. And also
+say
+
+105
+00:06:48.860 --> 00:06:53.120
+that length is related, or the root of
+length
+
+106
+00:06:53.120 --> 00:06:56.380
+is related to period. So if it's really
+elastic,
+
+107
+00:06:56.400 --> 00:06:59.260
+which means the length will be greater,
+then
+
+108
+00:06:59.260 --> 00:07:04.460
+the period on planet Y would be greater,
+because
+
+109
+00:07:04.460 --> 00:07:06.920
+it would have a larger length. Since it's
+elastic,
+
+110
+00:07:08.020 --> 00:07:11.780
+and planet Y's greater gravitational field
+would
+
+111
+00:07:11.780 --> 00:07:15.460
+pull it down more, and result in more
+elasticity
+
+112
+00:07:15.460 --> 00:07:17.760
+and more length. And that's basically how
+you
+
+113
+00:07:17.760 --> 00:07:22.940
+answer this question. Okay, that's all for
+today's
+
+114
+00:07:22.940 --> 00:07:25.120
+video, and I hope you enjoyed.
+
+115
+00:07:25.560 --> 00:07:25.940
+Thank you!

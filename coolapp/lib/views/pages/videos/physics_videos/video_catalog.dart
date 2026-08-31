@@ -1,3 +1,5 @@
+import 'package:flutter/widgets.dart';
+
 import 'package:coolapp/views/pages/videos/physics_videos/curriculum_topic_filters.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity.dart';
@@ -16,6 +18,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/rotatio
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/sample_videos.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_and_energy.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/topic_registry.dart';
 
 /// Single source of truth for looking up a video by its URL-facing
 /// `topicKey`/`curriculumKey` pair, without having to build the topic
@@ -43,24 +46,30 @@ class VideoCatalog {
     CurriculumTopicFilters.sampleVideos: SampleVideos.videos,
   };
 
-  static const Map<String, String> _topicTitles = {
-    CurriculumTopicFilters.introToPhysics: 'Introduction to Physics',
-    CurriculumTopicFilters.kinematics: 'Kinematics',
-    CurriculumTopicFilters.dynamics: 'Forces and Dynamics',
-    CurriculumTopicFilters.workAndEnergy: 'Work and Energy',
-    CurriculumTopicFilters.momentumAndCollisions: 'Momentum and Collisions',
-    CurriculumTopicFilters.harmonics: 'Harmonics',
-    CurriculumTopicFilters.thermalPhysics: 'Thermal Physics',
-    CurriculumTopicFilters.electricity: 'Electricity',
-    CurriculumTopicFilters.magnetism: 'Magnetism',
-    CurriculumTopicFilters.electrostatics: 'Electrostatics',
-    CurriculumTopicFilters.rotationalMotion: 'Rotational Motion',
-    CurriculumTopicFilters.fluids: 'Fluids',
-    CurriculumTopicFilters.optics: 'Optics',
-    CurriculumTopicFilters.light: 'Light',
-    CurriculumTopicFilters.modernPhysics: 'Modern Physics',
-    CurriculumTopicFilters.other: 'Other',
-    CurriculumTopicFilters.sampleVideos: 'Sample Videos',
+  /// Topic key -> the page widget for that topic.
+  ///
+  /// Lives here because this is already the one file that imports all 17 topic
+  /// pages. Callers that only need names/descriptions use `TopicRegistry`
+  /// instead and stay free of the widget tree.
+  static const Map<String, Widget Function()> _pageBuilders =
+      <String, Widget Function()>{
+    CurriculumTopicFilters.introToPhysics: IntroToPhysics.new,
+    CurriculumTopicFilters.kinematics: Kinematics.new,
+    CurriculumTopicFilters.dynamics: Dynamics.new,
+    CurriculumTopicFilters.workAndEnergy: WorkAndEnergy.new,
+    CurriculumTopicFilters.momentumAndCollisions: MomentumAndCollisions.new,
+    CurriculumTopicFilters.harmonics: Harmonics.new,
+    CurriculumTopicFilters.thermalPhysics: ThermalPhysics.new,
+    CurriculumTopicFilters.electricity: Electricity.new,
+    CurriculumTopicFilters.magnetism: Magnetism.new,
+    CurriculumTopicFilters.electrostatics: Electrostatics.new,
+    CurriculumTopicFilters.rotationalMotion: RotationalMotion.new,
+    CurriculumTopicFilters.fluids: Fluids.new,
+    CurriculumTopicFilters.optics: Optics.new,
+    CurriculumTopicFilters.light: Light.new,
+    CurriculumTopicFilters.modernPhysics: Modern.new,
+    CurriculumTopicFilters.other: Other.new,
+    CurriculumTopicFilters.sampleVideos: SampleVideos.new,
   };
 
   static Map<String, dynamic>? resolve(String topicKey, String curriculumKey) {
@@ -82,5 +91,36 @@ class VideoCatalog {
     return list[index + 1];
   }
 
-  static String topicTitle(String topicKey) => _topicTitles[topicKey] ?? '';
+  /// Canonical display name for a topic.
+  ///
+  /// Delegates to [TopicRegistry] so a name cannot be defined in two places.
+  /// Kept as a method on VideoCatalog because the router already calls it.
+  static String topicTitle(String topicKey) => TopicRegistry.nameOf(topicKey);
+
+  /// Finds the lesson that plays [videoLink], as a `(topicKey, curriculumKey)`
+  /// pair, or `null` if no lesson uses that file.
+  ///
+  /// Needed because the Home "video of the day" list identifies the same videos
+  /// by its own curriculum keys (`free_body_diagrams` where the catalog says
+  /// `fbd`). Resolving through the shared video URL means captions and lesson
+  /// data are found without maintaining a second mapping that could drift.
+  static ({String topicKey, String curriculumKey})? locate(String videoLink) {
+    if (videoLink.isEmpty) return null;
+    for (final MapEntry<String, List<Map<String, dynamic>>> topic
+        in _byTopic.entries) {
+      for (final Map<String, dynamic> video in topic.value) {
+        if (video['videoLink'] == videoLink) {
+          return (
+            topicKey: topic.key,
+            curriculumKey: video['curriculumKey'] as String,
+          );
+        }
+      }
+    }
+    return null;
+  }
+
+  /// Builder for a topic's page, or `null` if the key is unknown.
+  static Widget Function()? pageFor(String topicKey) =>
+      _pageBuilders[topicKey];
 }

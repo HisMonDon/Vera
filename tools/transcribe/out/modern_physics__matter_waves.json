@@ -1,0 +1,501 @@
+{
+ "lesson": {
+  "topicKey": "modern_physics",
+  "curriculumKey": "matter_waves",
+  "title": "Matter as Waves and Atomic Structure",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/modern_physics/Unit%204%20Wave-Particle%20Duality.mp4",
+  "source": "modern.dart"
+ },
+ "segments": [
+  {
+   "start": 0.66,
+   "end": 27.84,
+   "text": "In this video, we will be talking about how matter can behave like waves. Now we know waves can behave like matter, because light behaves like matter. Light is a particle, a photon. So that raises the question, then if everything is matter, and if this type of matter behaves like waves, then can all types of matter behave like waves?",
+   "avg_logprob": -0.11495876557206454
+  },
+  {
+   "start": 27.84,
+   "end": 57.82,
+   "text": "Well, modern physics actually shows that it can. Now a scientist about 100 years ago proposed that if photons can behave like particles, then these particles should all have wavelength and behave like waves. And he proposed that the wavelength of the particles is equal to Planck's constant over momentum, or Planck's constant over matter.",
+   "avg_logprob": -0.11381037533283234
+  },
+  {
+   "start": 60.62,
+   "end": 87.6,
+   "text": "And this equation is actually later proven to be true. And this applies for all types of matter. For example, it applies to you right now. The atoms that make you up are actually vibrating or oscillating and behaving like waves. And although it may not seem like it, if you look at your hand, it's pretty solid, it's not vibrating.",
+   "avg_logprob": -0.12305710983427265
+  },
+  {
+   "start": 87.6,
+   "end": 103.24,
+   "text": "That's because your wavelength is really really really small. Planck's constant, h, is about 6.63 times 10 to the negative 34 metres squared kilograms per second.",
+   "avg_logprob": -0.16130523803906563
+  },
+  {
+   "start": 103.24,
+   "end": 118.52,
+   "text": "So if the numerator is this small, then there is a really really good chance that you won't be able to notice anything. But that's the rule out there, and everything behaves like waves.",
+   "avg_logprob": -0.08853873742951288
+  },
+  {
+   "start": 119.46,
+   "end": 137.28,
+   "text": "And this was very controversial when it first came out, because in classical physics, mass behaved like a particle, and no mass behaved like a wave. And this scientist unified both.",
+   "avg_logprob": -0.12448596954345703
+  },
+  {
+   "start": 137.28,
+   "end": 153.12,
+   "text": "So he proposed this formula, which basically proves that everything has both wave and particle properties.",
+   "avg_logprob": -0.14989881691607562
+  },
+  {
+   "start": 155.68,
+   "end": 173.2,
+   "text": "So when we talk about wave-particle duality about light, this actually applies for everything. All of us and every type of matter undergoes wave-particle duality.",
+   "avg_logprob": -0.09236952153647818
+  },
+  {
+   "start": 174.52,
+   "end": 201.96,
+   "text": "And like I said, it's only noticeable for very very small electrons. It must have an extremely small mass or speed for this to actually be non-negligible, for example electrons. But if you're looking at a baseball, this basically is non-existent.",
+   "avg_logprob": -0.1359955729064295
+  },
+  {
+   "start": 204.6,
+   "end": 220.58,
+   "text": "So the experimental proof for this was electron diffraction. I have talked about this in another unit, so I'm not going to go over it. But basically it proved that light behaves like a wave.",
+   "avg_logprob": -0.1335578759511312
+  },
+  {
+   "start": 222.74,
+   "end": 238.62,
+   "text": "And that basically also changed a lot of what we know. Before we were using the Bohr-Rotherford diagram, which is discrete energy levels and electrons go around it.",
+   "avg_logprob": -0.1041936183348298
+  },
+  {
+   "start": 238.62,
+   "end": 251.88,
+   "text": "Well now we know that electrons or any subatomic particle has a relatively non-negligible wave, then how does that work? Well, we used quantized energy level.",
+   "avg_logprob": -0.15212425639232
+  },
+  {
+   "start": 252.32,
+   "end": 257.96,
+   "text": "And this is going a bit into chemistry, but I'll quickly brief you about it.",
+   "avg_logprob": -0.15212425639232
+  },
+  {
+   "start": 258.94,
+   "end": 276.76,
+   "text": "We divide things into subatomic orbitals. And orbitals are direct paths. Orbitals are clouds or a place of possibilities of where the electron can be, because the electron is going up and down and behaving like a wave.",
+   "avg_logprob": -0.1405581820011139
+  },
+  {
+   "start": 276.76,
+   "end": 290.92,
+   "text": "So it's nearly impossible to predict where exactly the electron is. So orbitals basically are estimations of where the electron is likely to be clustered.",
+   "avg_logprob": -0.1305965426213601
+  },
+  {
+   "start": 290.92,
+   "end": 314.64,
+   "text": "And yeah, that's basically it for this video. And I hope you learned something. We'll see you in the next one about the limits of possible measurements since we now know about this wave particle duality, and why exactly position and momentum can't both be known.",
+   "avg_logprob": -0.16328313874911113
+  },
+  {
+   "start": 315.74,
+   "end": 320.36,
+   "text": "So yeah, that's it for today's video and we'll see you in the next one. Thank you!",
+   "avg_logprob": -0.16328313874911113
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.66,
+   "end": 4.42,
+   "text": "In this video, we will be talking about how"
+  },
+  {
+   "start": 4.42,
+   "end": 6.6,
+   "text": "matter can behave like waves."
+  },
+  {
+   "start": 7.68,
+   "end": 11.28,
+   "text": "Now we know waves can behave like matter, because"
+  },
+  {
+   "start": 11.28,
+   "end": 14.04,
+   "text": "light behaves like matter."
+  },
+  {
+   "start": 14.48,
+   "end": 17.12,
+   "text": "Light is a particle, a photon. So that raises"
+  },
+  {
+   "start": 17.12,
+   "end": 21.28,
+   "text": "the question, then if everything is matter,"
+  },
+  {
+   "start": 22.28,
+   "end": 24.84,
+   "text": "and if this type of matter behaves like waves,"
+  },
+  {
+   "start": 25.44,
+   "end": 27.84,
+   "text": "then can all types of matter behave like waves?"
+  },
+  {
+   "start": 27.84,
+   "end": 31.66,
+   "text": "Well, modern physics actually shows that it"
+  },
+  {
+   "start": 31.66,
+   "end": 38.0,
+   "text": "can. Now a scientist about 100 years ago proposed"
+  },
+  {
+   "start": 38.0,
+   "end": 41.52,
+   "text": "that if photons can behave like particles, then"
+  },
+  {
+   "start": 41.52,
+   "end": 44.66,
+   "text": "these particles should all have wavelength and"
+  },
+  {
+   "start": 44.66,
+   "end": 49.38,
+   "text": "behave like waves. And he proposed that the"
+  },
+  {
+   "start": 49.38,
+   "end": 52.34,
+   "text": "wavelength of the particles is equal to Planck's"
+  },
+  {
+   "start": 52.34,
+   "end": 56.34,
+   "text": "constant over momentum, or Planck's constant"
+  },
+  {
+   "start": 56.34,
+   "end": 63.42,
+   "text": "over matter. And this equation is actually later"
+  },
+  {
+   "start": 63.42,
+   "end": 67.58,
+   "text": "proven to be true. And this applies for all"
+  },
+  {
+   "start": 67.58,
+   "end": 71.34,
+   "text": "types of matter. For example, it applies to"
+  },
+  {
+   "start": 71.34,
+   "end": 76.6,
+   "text": "you right now. The atoms that make you up are"
+  },
+  {
+   "start": 76.6,
+   "end": 79.46,
+   "text": "actually vibrating or oscillating and behaving"
+  },
+  {
+   "start": 79.46,
+   "end": 83.52,
+   "text": "like waves. And although it may not seem like"
+  },
+  {
+   "start": 83.52,
+   "end": 86.52,
+   "text": "it, if you look at your hand, it's pretty solid,"
+  },
+  {
+   "start": 86.52,
+   "end": 90.76,
+   "text": "it's not vibrating. That's because your wavelength"
+  },
+  {
+   "start": 90.76,
+   "end": 93.14,
+   "text": "is really really really small."
+  },
+  {
+   "start": 93.52,
+   "end": 98.52,
+   "text": "Planck's constant, h, is about 6.63 times 10"
+  },
+  {
+   "start": 98.52,
+   "end": 102.46,
+   "text": "to the negative 34 metres squared kilograms"
+  },
+  {
+   "start": 102.46,
+   "end": 106.42,
+   "text": "per second. So if the numerator is this small,"
+  },
+  {
+   "start": 106.54,
+   "end": 110.16,
+   "text": "then there is a really really good chance that"
+  },
+  {
+   "start": 110.16,
+   "end": 112.74,
+   "text": "you won't be able to notice anything."
+  },
+  {
+   "start": 113.4,
+   "end": 116.74,
+   "text": "But that's the rule out there, and everything"
+  },
+  {
+   "start": 116.74,
+   "end": 122.62,
+   "text": "behaves like waves. And this was very controversial"
+  },
+  {
+   "start": 122.62,
+   "end": 125.94,
+   "text": "when it first came out, because in classical"
+  },
+  {
+   "start": 125.94,
+   "end": 132.64,
+   "text": "physics, mass behaved like a particle, and no"
+  },
+  {
+   "start": 132.64,
+   "end": 135.68,
+   "text": "mass behaved like a wave. And this scientist"
+  },
+  {
+   "start": 135.68,
+   "end": 140.4,
+   "text": "unified both. So he proposed this formula, which"
+  },
+  {
+   "start": 140.4,
+   "end": 147.44,
+   "text": "basically proves that everything has both wave"
+  },
+  {
+   "start": 147.44,
+   "end": 153.12,
+   "text": "and particle properties."
+  },
+  {
+   "start": 155.68,
+   "end": 162.28,
+   "text": "So when we talk about wave-particle duality"
+  },
+  {
+   "start": 162.28,
+   "end": 166.04,
+   "text": "about light, this actually applies for everything."
+  },
+  {
+   "start": 166.9,
+   "end": 171.72,
+   "text": "All of us and every type of matter undergoes"
+  },
+  {
+   "start": 171.72,
+   "end": 178.72,
+   "text": "wave-particle duality. And like I said, it's"
+  },
+  {
+   "start": 178.72,
+   "end": 183.36,
+   "text": "only noticeable for very very small electrons."
+  },
+  {
+   "start": 183.82,
+   "end": 190.72,
+   "text": "It must have an extremely small mass or speed"
+  },
+  {
+   "start": 190.72,
+   "end": 194.7,
+   "text": "for this to actually be non-negligible, for"
+  },
+  {
+   "start": 194.7,
+   "end": 198.22,
+   "text": "example electrons. But if you're looking at"
+  },
+  {
+   "start": 198.22,
+   "end": 201.96,
+   "text": "a baseball, this basically is non-existent."
+  },
+  {
+   "start": 204.6,
+   "end": 208.12,
+   "text": "So the experimental proof for this was electron"
+  },
+  {
+   "start": 208.12,
+   "end": 212.1,
+   "text": "diffraction. I have talked about this in another"
+  },
+  {
+   "start": 212.1,
+   "end": 214.96,
+   "text": "unit, so I'm not going to go over it. But basically"
+  },
+  {
+   "start": 214.96,
+   "end": 220.58,
+   "text": "it proved that light behaves like a wave."
+  },
+  {
+   "start": 222.74,
+   "end": 227.02,
+   "text": "And that basically also changed a lot of what"
+  },
+  {
+   "start": 227.02,
+   "end": 230.8,
+   "text": "we know. Before we were using the Bohr-Rotherford"
+  },
+  {
+   "start": 230.8,
+   "end": 237.12,
+   "text": "diagram, which is discrete energy levels and"
+  },
+  {
+   "start": 237.12,
+   "end": 239.8,
+   "text": "electrons go around it. Well now we know that"
+  },
+  {
+   "start": 239.8,
+   "end": 244.5,
+   "text": "electrons or any subatomic particle has a relatively"
+  },
+  {
+   "start": 244.5,
+   "end": 248.56,
+   "text": "non-negligible wave, then how does that work?"
+  },
+  {
+   "start": 248.74,
+   "end": 251.88,
+   "text": "Well, we used quantized energy level."
+  },
+  {
+   "start": 252.32,
+   "end": 254.88,
+   "text": "And this is going a bit into chemistry, but"
+  },
+  {
+   "start": 254.88,
+   "end": 257.96,
+   "text": "I'll quickly brief you about it."
+  },
+  {
+   "start": 258.94,
+   "end": 262.08,
+   "text": "We divide things into subatomic orbitals."
+  },
+  {
+   "start": 262.66,
+   "end": 266.04,
+   "text": "And orbitals are direct paths. Orbitals are"
+  },
+  {
+   "start": 266.04,
+   "end": 271.46,
+   "text": "clouds or a place of possibilities of where"
+  },
+  {
+   "start": 271.46,
+   "end": 274.86,
+   "text": "the electron can be, because the electron is"
+  },
+  {
+   "start": 274.86,
+   "end": 276.76,
+   "text": "going up and down and behaving like a wave."
+  },
+  {
+   "start": 276.76,
+   "end": 280.72,
+   "text": "So it's nearly impossible to predict where exactly"
+  },
+  {
+   "start": 280.72,
+   "end": 286.76,
+   "text": "the electron is. So orbitals basically are estimations"
+  },
+  {
+   "start": 286.76,
+   "end": 290.92,
+   "text": "of where the electron is likely to be clustered."
+  },
+  {
+   "start": 290.92,
+   "end": 297.2,
+   "text": "And yeah, that's basically it for this video."
+  },
+  {
+   "start": 298.22,
+   "end": 300.78,
+   "text": "And I hope you learned something. We'll see"
+  },
+  {
+   "start": 300.78,
+   "end": 305.2,
+   "text": "you in the next one about the limits of possible"
+  },
+  {
+   "start": 305.2,
+   "end": 307.76,
+   "text": "measurements since we now know about this wave"
+  },
+  {
+   "start": 307.76,
+   "end": 312.38,
+   "text": "particle duality, and why exactly position and"
+  },
+  {
+   "start": 312.38,
+   "end": 314.64,
+   "text": "momentum can't both be known."
+  },
+  {
+   "start": 315.74,
+   "end": 319.16,
+   "text": "So yeah, that's it for today's video and we'll"
+  },
+  {
+   "start": 319.16,
+   "end": 320.36,
+   "text": "see you in the next one. Thank you!"
+  }
+ ],
+ "report": {
+  "key": "modern_physics__matter_waves",
+  "title": "Matter as Waves and Atomic Structure",
+  "topicKey": "modern_physics",
+  "duration": 320.5546875,
+  "cues": 75,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.16328313874911113,
+  "flagged": []
+ }
+}

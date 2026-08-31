@@ -1,0 +1,760 @@
+{
+ "lesson": {
+  "topicKey": "electrostatics",
+  "curriculumKey": "coulomb_energy",
+  "title": "Example - Coulomb's Law and Energy",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/Electrostatics/Unit%203%20Coulombs%20Law%20and%20Energy.mp4",
+  "source": "electrostatics.dart"
+ },
+ "segments": [
+  {
+   "start": 0.62,
+   "end": 5.4,
+   "text": "Hey guys, in this video I'll be telling you how to do this AP Physics 2 question.",
+   "avg_logprob": -0.15129215260074563
+  },
+  {
+   "start": 6.64,
+   "end": 16.42,
+   "text": "A small ball of mass 200 grams and charge 60 mu coulombs, so this would be equal to 6.0",
+   "avg_logprob": -0.15129215260074563
+  },
+  {
+   "start": 16.42,
+   "end": 25.28,
+   "text": "times 10 to the negative 6 coulombs, this would be 0.2 kilograms, is initially suspended",
+   "avg_logprob": -0.15129215260074563
+  },
+  {
+   "start": 25.28,
+   "end": 30.78,
+   "text": "vertically by a massless and inaccessible string of length 50 centimetres, which is 0.5 metres.",
+   "avg_logprob": -0.1703151102816121
+  },
+  {
+   "start": 31.4,
+   "end": 36.88,
+   "text": "Sometime later, a strong uniform external electric field, E, is switched on, and the",
+   "avg_logprob": -0.1703151102816121
+  },
+  {
+   "start": 36.88,
+   "end": 41.86,
+   "text": "ball swings to a maximum height where the string makes a 45 degree angle with the",
+   "avg_logprob": -0.1703151102816121
+  },
+  {
+   "start": 41.86,
+   "end": 50.36,
+   "text": "vertical as shown in the figure above, so theta equals 45 degrees, or pi over 4 radians.",
+   "avg_logprob": -0.1703151102816121
+  },
+  {
+   "start": 51.46,
+   "end": 57.54,
+   "text": "So, first of all, what the question wants you to do is find the gravitational potential",
+   "avg_logprob": -0.19041407658503606
+  },
+  {
+   "start": 57.54,
+   "end": 66.6,
+   "text": "energy gained by the ball. So, the question asks you for delta U. We know that delta",
+   "avg_logprob": -0.19041407658503606
+  },
+  {
+   "start": 66.6,
+   "end": 77.48,
+   "text": "U is force times distance, force is mg, distance is delta h, because we're talking",
+   "avg_logprob": -0.19041407658503606
+  },
+  {
+   "start": 77.48,
+   "end": 85.87,
+   "text": "about the gravitational potential energy, and we need to find, we have mass, we have",
+   "avg_logprob": -0.13418415663898856
+  },
+  {
+   "start": 85.87,
+   "end": 94.13,
+   "text": "gravity, we need to find delta h. Delta h is the vertical distance gained by the ball,",
+   "avg_logprob": -0.13418415663898856
+  },
+  {
+   "start": 94.25,
+   "end": 104.87,
+   "text": "so this would be delta h. We know, let's call this side L, the length, so this would",
+   "avg_logprob": -0.13418415663898856
+  },
+  {
+   "start": 104.87,
+   "end": 117.79,
+   "text": "be L. If this is L, then, and this is 45 degrees, then this would also be 45 degrees",
+   "avg_logprob": -0.13359246370585068
+  },
+  {
+   "start": 117.79,
+   "end": 126.23,
+   "text": "because these two are parallel, and so therefore this side length would be considered L times",
+   "avg_logprob": -0.13359246370585068
+  },
+  {
+   "start": 126.23,
+   "end": 144.38,
+   "text": "cosine of 45. Now, L cosine 45 degrees plus delta h would be equal to L, so delta h would",
+   "avg_logprob": -0.14514472687019492
+  },
+  {
+   "start": 144.38,
+   "end": 154.24,
+   "text": "be equal to L minus L cosine of 45 degrees, delta h would be equal to L times 1 minus",
+   "avg_logprob": -0.14514472687019492
+  },
+  {
+   "start": 154.24,
+   "end": 165.25,
+   "text": "cosine of 45 degrees. So, now we have delta h, we have mass, we have gravity, we can",
+   "avg_logprob": -0.09082919223742052
+  },
+  {
+   "start": 165.25,
+   "end": 174.35,
+   "text": "plug in the numbers, and this is really easy to do. Mass would be 0.2, gravity 9.81,",
+   "avg_logprob": -0.09082919223742052
+  },
+  {
+   "start": 174.35,
+   "end": 186.73,
+   "text": "or 10, if you want, and then we have delta h, L is 0.5, 50 centimeters is 0.5 meters,",
+   "avg_logprob": -0.18327894127159788
+  },
+  {
+   "start": 190.87,
+   "end": 201.19,
+   "text": "1 minus cosine of 45 degrees. This is root 2 over 2. When you plug in all the numbers,",
+   "avg_logprob": -0.18327894127159788
+  },
+  {
+   "start": 201.19,
+   "end": 216.83,
+   "text": "0.2, you would get delta u g would be equal to 0.287 joules. That would be your final",
+   "avg_logprob": -0.23393455982208253
+  },
+  {
+   "start": 216.83,
+   "end": 226.45,
+   "text": "answer. Okay, this is pretty straightforward. Number b, using the law of conservation of",
+   "avg_logprob": -0.23393455982208253
+  },
+  {
+   "start": 226.45,
+   "end": 233.41,
+   "text": "energy, this should be learned in AP Physics 1, find the magnitude of the electric field,",
+   "avg_logprob": -0.14276359289411514
+  },
+  {
+   "start": 234.43,
+   "end": 239.69,
+   "text": "so we have to find the magnitude, which is the absolute value, and you can ignore",
+   "avg_logprob": -0.14276359289411514
+  },
+  {
+   "start": 239.69,
+   "end": 252.05,
+   "text": "air resistance. So, the law of conservation of energy states that the net work done is",
+   "avg_logprob": -0.14276359289411514
+  },
+  {
+   "start": 252.05,
+   "end": 261.86,
+   "text": "equal to the change in energy of a system. So, the net external work done would be the",
+   "avg_logprob": -0.11672139102045227
+  },
+  {
+   "start": 261.86,
+   "end": 268.08,
+   "text": "change in energy of the system, which in this case, the system would be the ball and",
+   "avg_logprob": -0.11672139102045227
+  },
+  {
+   "start": 268.08,
+   "end": 279.74,
+   "text": "it would be the Earth. So, we know that the work would be equal to force times distance.",
+   "avg_logprob": -0.11672139102045227
+  },
+  {
+   "start": 280.22,
+   "end": 292.24,
+   "text": "In this case, we're talking about horizontal distance. So, the force would be Fq, the",
+   "avg_logprob": -0.18572467986656271
+  },
+  {
+   "start": 292.24,
+   "end": 302.9,
+   "text": "force of the electric field, times the horizontal distance, here to here. This is really easy",
+   "avg_logprob": -0.18572467986656271
+  },
+  {
+   "start": 302.9,
+   "end": 312.64,
+   "text": "to calculate. We know that this is L, so this length here, this length here, would",
+   "avg_logprob": -0.1302009475313955
+  },
+  {
+   "start": 312.64,
+   "end": 329.97,
+   "text": "be L sine of 45 degrees, opposite over hypotenuse, or pi over 4, if you're used to ratings.",
+   "avg_logprob": -0.1302009475313955
+  },
+  {
+   "start": 330.77,
+   "end": 337.13,
+   "text": "Now, we know that the net energy done on the system would be equal to the change",
+   "avg_logprob": -0.1302009475313955
+  },
+  {
+   "start": 337.13,
+   "end": 349.31,
+   "text": "in potential energy plus the change in kinetic energy. However, we see that over here,",
+   "avg_logprob": -0.13695732312543052
+  },
+  {
+   "start": 349.63,
+   "end": 356.93,
+   "text": "the ball is not moving, so the kinetic energy would be equal to zero. At the start, the ball",
+   "avg_logprob": -0.13695732312543052
+  },
+  {
+   "start": 356.93,
+   "end": 363.37,
+   "text": "is also not moving, so kinetic energy is also equal to zero. So, in this case, delta k",
+   "avg_logprob": -0.13695732312543052
+  },
+  {
+   "start": 364.75,
+   "end": 379.88,
+   "text": "would be equal to zero. So, what we're left with is Fq L sine of 45 degrees equals delta ug,",
+   "avg_logprob": -0.15660784383872886
+  },
+  {
+   "start": 380.04,
+   "end": 385.68,
+   "text": "which we have calculated over here. The force is equal to the charge times electric field.",
+   "avg_logprob": -0.15660784383872886
+  },
+  {
+   "start": 386.84,
+   "end": 398.34,
+   "text": "So, charge times electric field, which is what we need to solve here, and L sine 45 delta ug.",
+   "avg_logprob": -0.15660784383872886
+  },
+  {
+   "start": 398.58,
+   "end": 412.1,
+   "text": "Isolate for the electric field. So, E would be equal to delta ug over Q times L sine of 45",
+   "avg_logprob": -0.10652057427380766
+  },
+  {
+   "start": 413.16,
+   "end": 430.42,
+   "text": "degrees. E would be equal to 0.287 over, we know that the charge is 6.0 times 10 to the",
+   "avg_logprob": -0.10652057427380766
+  },
+  {
+   "start": 430.42,
+   "end": 442.8,
+   "text": "negative 6 times 0.5 times root 2 over 2, which is sine of 45 degrees.",
+   "avg_logprob": -0.11666290660699209
+  },
+  {
+   "start": 444.08,
+   "end": 452.72,
+   "text": "When you plug this in, you will get around 1.35 times 10 to the negative 5,",
+   "avg_logprob": -0.11666290660699209
+  },
+  {
+   "start": 453.66,
+   "end": 457.02,
+   "text": "and this is measured in electric field, so it would be",
+   "avg_logprob": -0.11666290660699209
+  },
+  {
+   "start": 457.64,
+   "end": 463.5,
+   "text": "newtons per coulomb. That would be your final answer.",
+   "avg_logprob": -0.3358340543859145
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.62,
+   "end": 3.18,
+   "text": "Hey guys, in this video I'll be telling you"
+  },
+  {
+   "start": 3.18,
+   "end": 5.4,
+   "text": "how to do this AP Physics 2 question."
+  },
+  {
+   "start": 6.64,
+   "end": 10.9,
+   "text": "A small ball of mass 200 grams and charge 60"
+  },
+  {
+   "start": 10.9,
+   "end": 16.84,
+   "text": "mu coulombs, so this would be equal to 6.0 times"
+  },
+  {
+   "start": 16.84,
+   "end": 20.88,
+   "text": "10 to the negative 6 coulombs, this would be"
+  },
+  {
+   "start": 20.88,
+   "end": 25.78,
+   "text": "0.2 kilograms, is initially suspended vertically"
+  },
+  {
+   "start": 25.78,
+   "end": 28.42,
+   "text": "by a massless and inaccessible string of length"
+  },
+  {
+   "start": 28.42,
+   "end": 30.78,
+   "text": "50 centimetres, which is 0.5 metres."
+  },
+  {
+   "start": 31.4,
+   "end": 34.64,
+   "text": "Sometime later, a strong uniform external electric"
+  },
+  {
+   "start": 34.64,
+   "end": 37.38,
+   "text": "field, E, is switched on, and the ball swings"
+  },
+  {
+   "start": 37.38,
+   "end": 39.68,
+   "text": "to a maximum height where the string makes a"
+  },
+  {
+   "start": 39.68,
+   "end": 42.92,
+   "text": "45 degree angle with the vertical as shown in"
+  },
+  {
+   "start": 42.92,
+   "end": 46.5,
+   "text": "the figure above, so theta equals 45 degrees,"
+  },
+  {
+   "start": 47.92,
+   "end": 50.36,
+   "text": "or pi over 4 radians."
+  },
+  {
+   "start": 51.46,
+   "end": 54.78,
+   "text": "So, first of all, what the question wants you"
+  },
+  {
+   "start": 54.78,
+   "end": 58.08,
+   "text": "to do is find the gravitational potential energy"
+  },
+  {
+   "start": 58.08,
+   "end": 61.72,
+   "text": "gained by the ball. So, the question asks you"
+  },
+  {
+   "start": 61.72,
+   "end": 69.24,
+   "text": "for delta U. We know that delta U is force"
+  },
+  {
+   "start": 69.24,
+   "end": 75.06,
+   "text": "times distance, force is mg, distance is delta"
+  },
+  {
+   "start": 75.06,
+   "end": 78.5,
+   "text": "h, because we're talking about the gravitational"
+  },
+  {
+   "start": 78.5,
+   "end": 84.63,
+   "text": "potential energy, and we need to find, we have"
+  },
+  {
+   "start": 84.63,
+   "end": 88.51,
+   "text": "mass, we have gravity, we need to find delta"
+  },
+  {
+   "start": 88.51,
+   "end": 93.85,
+   "text": "h. Delta h is the vertical distance gained by"
+  },
+  {
+   "start": 93.85,
+   "end": 96.05,
+   "text": "the ball, so this would be delta h."
+  },
+  {
+   "start": 97.75,
+   "end": 101.71,
+   "text": "We know, let's call this side L, the length,"
+  },
+  {
+   "start": 103.75,
+   "end": 110.86,
+   "text": "so this would be L. If this is L, then,"
+  },
+  {
+   "start": 113.33,
+   "end": 116.55,
+   "text": "and this is 45 degrees, then this would also"
+  },
+  {
+   "start": 116.55,
+   "end": 119.31,
+   "text": "be 45 degrees because these two are parallel,"
+  },
+  {
+   "start": 120.71,
+   "end": 124.93,
+   "text": "and so therefore this side length would be considered"
+  },
+  {
+   "start": 124.93,
+   "end": 127.97,
+   "text": "L times cosine of 45."
+  },
+  {
+   "start": 130.67,
+   "end": 138.12,
+   "text": "Now, L cosine 45 degrees plus"
+  },
+  {
+   "start": 138.12,
+   "end": 144.38,
+   "text": "delta h would be equal to L, so delta h would"
+  },
+  {
+   "start": 144.38,
+   "end": 149.94,
+   "text": "be equal to L minus L cosine of 45 degrees,"
+  },
+  {
+   "start": 150.96,
+   "end": 155.12,
+   "text": "delta h would be equal to L times 1 minus cosine"
+  },
+  {
+   "start": 155.12,
+   "end": 162.31,
+   "text": "of 45 degrees. So, now"
+  },
+  {
+   "start": 162.31,
+   "end": 164.85,
+   "text": "we have delta h, we have mass, we have gravity,"
+  },
+  {
+   "start": 164.97,
+   "end": 167.85,
+   "text": "we can plug in the numbers, and this is really"
+  },
+  {
+   "start": 167.85,
+   "end": 174.35,
+   "text": "easy to do. Mass would be 0.2, gravity 9.81,"
+  },
+  {
+   "start": 174.35,
+   "end": 180.53,
+   "text": "or 10, if you want, and then we have delta h,"
+  },
+  {
+   "start": 180.97,
+   "end": 191.45,
+   "text": "L is 0.5, 50 centimetres is 0.5 metres, 1"
+  },
+  {
+   "start": 191.45,
+   "end": 194.91,
+   "text": "minus cosine of 45 degrees."
+  },
+  {
+   "start": 195.31,
+   "end": 198.05,
+   "text": "This is root 2 over 2."
+  },
+  {
+   "start": 199.03,
+   "end": 204.39,
+   "text": "When you plug in all the numbers, 0.2, you would"
+  },
+  {
+   "start": 204.39,
+   "end": 213.47,
+   "text": "get delta u g would be equal to 0.287"
+  },
+  {
+   "start": 213.47,
+   "end": 217.25,
+   "text": "joules. That would be your final answer."
+  },
+  {
+   "start": 219.79,
+   "end": 221.85,
+   "text": "Okay, this is pretty straightforward."
+  },
+  {
+   "start": 223.51,
+   "end": 226.93,
+   "text": "Number b, using the law of conservation of energy,"
+  },
+  {
+   "start": 227.75,
+   "end": 231.39,
+   "text": "this should be learned in AP Physics 1, find"
+  },
+  {
+   "start": 231.39,
+   "end": 235.57,
+   "text": "the magnitude of the electric field, so we have"
+  },
+  {
+   "start": 235.57,
+   "end": 237.57,
+   "text": "to find the magnitude, which is the absolute"
+  },
+  {
+   "start": 237.57,
+   "end": 240.37,
+   "text": "value, and you can ignore air resistance."
+  },
+  {
+   "start": 242.09,
+   "end": 246.27,
+   "text": "So, the law of conservation of energy states"
+  },
+  {
+   "start": 246.27,
+   "end": 255.03,
+   "text": "that the net work done is equal to the change"
+  },
+  {
+   "start": 255.03,
+   "end": 260.24,
+   "text": "in energy of a system. So, the net external"
+  },
+  {
+   "start": 260.24,
+   "end": 263.06,
+   "text": "work done would be the change in energy of the"
+  },
+  {
+   "start": 263.06,
+   "end": 265.6,
+   "text": "system, which in this case, the system would"
+  },
+  {
+   "start": 265.6,
+   "end": 270.7,
+   "text": "be the ball and it would be the Earth."
+  },
+  {
+   "start": 273.54,
+   "end": 278.74,
+   "text": "So, we know that the work would be equal to"
+  },
+  {
+   "start": 278.74,
+   "end": 282.58,
+   "text": "force times distance. In this case, we're talking"
+  },
+  {
+   "start": 282.58,
+   "end": 284.64,
+   "text": "about horizontal distance."
+  },
+  {
+   "start": 286.8,
+   "end": 293.36,
+   "text": "So, the force would be Fq, the force of the"
+  },
+  {
+   "start": 293.36,
+   "end": 298.86,
+   "text": "electric field, times the horizontal distance,"
+  },
+  {
+   "start": 299.84,
+   "end": 303.56,
+   "text": "here to here. This is really easy to calculate."
+  },
+  {
+   "start": 304.04,
+   "end": 310.76,
+   "text": "We know that this is L, so this length here,"
+  },
+  {
+   "start": 310.8,
+   "end": 316.8,
+   "text": "this length here, would be L sine of 45 degrees,"
+  },
+  {
+   "start": 317.48,
+   "end": 327.61,
+   "text": "opposite over hypotenuse, or"
+  },
+  {
+   "start": 327.61,
+   "end": 329.97,
+   "text": "pi over 4, if you're used to ratings."
+  },
+  {
+   "start": 330.77,
+   "end": 333.05,
+   "text": "Now, we know that the net energy done on the"
+  },
+  {
+   "start": 333.05,
+   "end": 338.39,
+   "text": "system would be equal to the change in potential"
+  },
+  {
+   "start": 338.39,
+   "end": 341.63,
+   "text": "energy plus the change in kinetic energy."
+  },
+  {
+   "start": 345.39,
+   "end": 350.55,
+   "text": "However, we see that over here, the ball is"
+  },
+  {
+   "start": 350.55,
+   "end": 353.81,
+   "text": "not moving, so the kinetic energy would be equal"
+  },
+  {
+   "start": 353.81,
+   "end": 358.11,
+   "text": "to zero. At the start, the ball is also not"
+  },
+  {
+   "start": 358.11,
+   "end": 361.25,
+   "text": "moving, so kinetic energy is also equal to zero."
+  },
+  {
+   "start": 361.49,
+   "end": 366.29,
+   "text": "So, in this case, delta k would be equal to"
+  },
+  {
+   "start": 366.29,
+   "end": 374.22,
+   "text": "zero. So, what we're left with is Fq"
+  },
+  {
+   "start": 374.22,
+   "end": 380.42,
+   "text": "L sine of 45 degrees equals delta ug, which"
+  },
+  {
+   "start": 380.42,
+   "end": 383.68,
+   "text": "we have calculated over here. The force is equal"
+  },
+  {
+   "start": 383.68,
+   "end": 388.04,
+   "text": "to the charge times electric field. So, charge"
+  },
+  {
+   "start": 388.04,
+   "end": 390.54,
+   "text": "times electric field, which is what we need"
+  },
+  {
+   "start": 390.54,
+   "end": 398.34,
+   "text": "to solve here, and L sine 45 delta ug."
+  },
+  {
+   "start": 398.58,
+   "end": 400.9,
+   "text": "Isolate for the electric field."
+  },
+  {
+   "start": 401.82,
+   "end": 409.12,
+   "text": "So, E would be equal to delta ug over Q"
+  },
+  {
+   "start": 409.12,
+   "end": 413.68,
+   "text": "times L sine of 45 degrees."
+  },
+  {
+   "start": 418.18,
+   "end": 426.48,
+   "text": "E would be equal to 0.287 over, we"
+  },
+  {
+   "start": 426.48,
+   "end": 430.42,
+   "text": "know that the charge is 6.0 times 10 to the"
+  },
+  {
+   "start": 430.42,
+   "end": 437.62,
+   "text": "negative 6 times 0.5"
+  },
+  {
+   "start": 437.62,
+   "end": 442.8,
+   "text": "times root 2 over 2, which is sine of 45 degrees."
+  },
+  {
+   "start": 444.08,
+   "end": 450.08,
+   "text": "When you plug this in, you will get around 1.35"
+  },
+  {
+   "start": 450.08,
+   "end": 454.9,
+   "text": "times 10 to the negative 5, and this is measured"
+  },
+  {
+   "start": 454.9,
+   "end": 458.8,
+   "text": "in electric field, so it would be newtons per"
+  },
+  {
+   "start": 458.8,
+   "end": 463.5,
+   "text": "coulomb. That would be your final answer."
+  }
+ ],
+ "report": {
+  "key": "electrostatics__coulomb_energy",
+  "title": "Example - Coulomb's Law and Energy",
+  "topicKey": "electrostatics",
+  "duration": 481.9301875,
+  "cues": 92,
+  "corrections": 2,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.3358340543859145,
+  "flagged": []
+ }
+}

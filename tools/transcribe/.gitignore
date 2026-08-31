@@ -1,0 +1,5 @@
+# Downloaded source videos. Grows to roughly 1.5 GB across the full batch and is
+# re-fetchable from R2 at any time, so it must never be committed.
+cache/
+__pycache__/
+*.pyc

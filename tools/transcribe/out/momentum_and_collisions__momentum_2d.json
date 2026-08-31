@@ -1,0 +1,1297 @@
+{
+ "lesson": {
+  "topicKey": "momentum_and_collisions",
+  "curriculumKey": "momentum_2d",
+  "title": "Momentum in 2D",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/momentum_and_collisions/Momentum%20in%202D.mp4",
+  "source": "momentum_and_collisions.dart"
+ },
+ "segments": [
+  {
+   "start": 1.46,
+   "end": 20.62,
+   "text": "One thing I really like about momentum is that it uses a lot of math. And in this case, we will be looking at a 2D momentum question that mainly uses math and logic to be able to solve it. Momentum is all about deriving equations, as you guys probably saw in the previous two examples.",
+   "avg_logprob": -0.10452624289866756
+  },
+  {
+   "start": 21.54,
+   "end": 47.46,
+   "text": "So in this case, a 2 kilogram puck moving east at 4 metres per second, it would be first good to draw a compass, so north, east, south, west, at 4 metres per second collides with a 0.3 kilogram puck moving north at 2.5 metres per second on frictionless ice, so you would probably need to use momentum.",
+   "avg_logprob": -0.11929389985301826
+  },
+  {
+   "start": 47.46,
+   "end": 70.38,
+   "text": "They stick together after the collision. And that's good, as we've seen before, because that means it's an inelastic equation. And if it's inelastic, elastic, that means that there will be one single mass after. You can treat it as one single system after they collide.",
+   "avg_logprob": -0.08625700279618755
+  },
+  {
+   "start": 70.38,
+   "end": 90.5,
+   "text": "Find the magnitude of the final velocity and find the direction. So first, let's do magnitude. We can map this out, for example, a 0.2 kilogram puck moving east. So let's say east is the x direction and north is the y direction.",
+   "avg_logprob": -0.09932193336850506
+  },
+  {
+   "start": 91.72,
+   "end": 118.54,
+   "text": "If it's moving east at 4.00 metres per second, and this puck is moving north, 0.300 kilograms, at 2.5 metres per second, well, if they stick together, their final velocity will be something along the lines of this way.",
+   "avg_logprob": -0.10022055266196267
+  },
+  {
+   "start": 118.54,
+   "end": 142.48,
+   "text": "So, north of east. And we want to find the magnitude of that. So, if we treat north as the y direction and we treat east as the x direction, we can actually split the final vector into two components.",
+   "avg_logprob": -0.10256760746240616
+  },
+  {
+   "start": 142.48,
+   "end": 154.24,
+   "text": "We can split it into the y component and the x component. And this question is really good, because you don't have to do anything to this vector alone.",
+   "avg_logprob": -0.07165651739417732
+  },
+  {
+   "start": 154.72,
+   "end": 169.14,
+   "text": "We know that the y component of this momentum is 0. It's going completely towards the east axis. So its y component is 0, but its x component is whatever the momentum is.",
+   "avg_logprob": -0.07165651739417732
+  },
+  {
+   "start": 169.14,
+   "end": 186.12,
+   "text": "So, let's call this puck A, let's call this puck B. So the momentum of A in the y component is mass times velocity in the y direction.",
+   "avg_logprob": -0.0998314015807644
+  },
+  {
+   "start": 186.78,
+   "end": 192.48,
+   "text": "And since velocity in the y direction for puck A is 0, that means that the momentum here is 0.",
+   "avg_logprob": -0.0998314015807644
+  },
+  {
+   "start": 192.48,
+   "end": 204.12,
+   "text": "However, in the x direction, the momentum would be equal to mass times velocity in the x direction. And the velocity in the x direction is 4 metres per second.",
+   "avg_logprob": -0.0725125620164067
+  },
+  {
+   "start": 204.98,
+   "end": 220.36,
+   "text": "So, it's 0.2 times 4.00 metres per second. It's kind of like kinematics in a sense that you will have to be using trig or splitting vectors into y and x components.",
+   "avg_logprob": -0.0725125620164067
+  },
+  {
+   "start": 221.52,
+   "end": 228.44,
+   "text": "And you would get 0.8 kilograms metres per second.",
+   "avg_logprob": -0.15995211209823837
+  },
+  {
+   "start": 230.2,
+   "end": 234.9,
+   "text": "And now we will do the same thing for the other puck.",
+   "avg_logprob": -0.15995211209823837
+  },
+  {
+   "start": 236.93,
+   "end": 248.91,
+   "text": "Initially, sorry, P B, because this is puck B. P B y, well it has a velocity in the y direction, 2.5 metres per second.",
+   "avg_logprob": -0.15995211209823837
+  },
+  {
+   "start": 248.91,
+   "end": 266.99,
+   "text": "So m v y, which is 0.300 times 2.5. And that would be 0.75 kilograms per metres per second.",
+   "avg_logprob": -0.1292728058555547
+  },
+  {
+   "start": 267.89,
+   "end": 275.75,
+   "text": "On the other hand, the x component of this puck's velocity, well it's not going left, it's not going right, so the x component is 0.",
+   "avg_logprob": -0.1292728058555547
+  },
+  {
+   "start": 275.75,
+   "end": 281.91,
+   "text": "m v x. So v x is 0, which means there's not going to be momentum in the x direction.",
+   "avg_logprob": -0.09737238261316504
+  },
+  {
+   "start": 282.67,
+   "end": 289.01,
+   "text": "So basically what I've done so far is I've looked at the two pucks and I've split them into x and y directions.",
+   "avg_logprob": -0.09737238261316504
+  },
+  {
+   "start": 290.43,
+   "end": 298.81,
+   "text": "Now we can calculate the total momentum, or we can calculate the total momentum in the x direction and the y direction.",
+   "avg_logprob": -0.09737238261316504
+  },
+  {
+   "start": 298.81,
+   "end": 327.01,
+   "text": "The total momentum p final, I'll do this in green, p final, let's call that, in the x direction, will just be equal to p a x plus p b x,",
+   "avg_logprob": -0.1678696399511293
+  },
+  {
+   "start": 327.01,
+   "end": 334.55,
+   "text": "because there's no thing. So the total momentum in the x direction is 0.8 kilograms metres per second.",
+   "avg_logprob": -0.07949951932662064
+  },
+  {
+   "start": 335.09,
+   "end": 345.71,
+   "text": "Same thing for the final total momentum in the y direction, p a y plus p b y, which is 0 plus 0.75.",
+   "avg_logprob": -0.07949951932662064
+  },
+  {
+   "start": 346.27,
+   "end": 350.73,
+   "text": "So this would be 0.75 kilograms per metres per second.",
+   "avg_logprob": -0.07949951932662064
+  },
+  {
+   "start": 352.01,
+   "end": 357.21,
+   "text": "And that would be the momentum in the x direction and the y direction.",
+   "avg_logprob": -0.0644288459378812
+  },
+  {
+   "start": 357.51,
+   "end": 363.85,
+   "text": "So knowing the momentum in the x direction and the y direction, we can actually calculate the speed, because we know the mass.",
+   "avg_logprob": -0.0644288459378812
+  },
+  {
+   "start": 364.25,
+   "end": 372.01,
+   "text": "The mass of the system after they stick together would be just a sum, 0.200 plus 0.300.",
+   "avg_logprob": -0.0644288459378812
+  },
+  {
+   "start": 372.01,
+   "end": 381.95,
+   "text": "So m total is 0.200 plus 0.300, which is 0.500 kilograms.",
+   "avg_logprob": -0.09826578745027868
+  },
+  {
+   "start": 383.61,
+   "end": 387.45,
+   "text": "And now let's calculate the speed in the x and y direction, respectively.",
+   "avg_logprob": -0.09826578745027868
+  },
+  {
+   "start": 387.45,
+   "end": 405.54,
+   "text": "So we can do speed final x is equal to momentum over mass, p of f x over mass total mass,",
+   "avg_logprob": -0.09781958105472419
+  },
+  {
+   "start": 406.32,
+   "end": 410.02,
+   "text": "because p equals m v, so we just rearrange that equation.",
+   "avg_logprob": -0.09781958105472419
+  },
+  {
+   "start": 410.5,
+   "end": 418.74,
+   "text": "So you get 0.8 over 0.5, so you just multiply it by two, and you get 1.6 metres per second in the x direction.",
+   "avg_logprob": -0.09781958105472419
+  },
+  {
+   "start": 418.74,
+   "end": 430.88,
+   "text": "Same thing for the y. The final y velocity would be equal to p f y over m total.",
+   "avg_logprob": -0.038651074330831314
+  },
+  {
+   "start": 431.56,
+   "end": 437.14,
+   "text": "And if you don't get what I'm doing, it's really important to revisit or replay the video to see what I did,",
+   "avg_logprob": -0.038651074330831314
+  },
+  {
+   "start": 437.52,
+   "end": 442.04,
+   "text": "because this is really, really important. I basically split the vectors up.",
+   "avg_logprob": -0.038651074330831314
+  },
+  {
+   "start": 442.44,
+   "end": 447.1,
+   "text": "And if you don't know how I did that, you probably won't be understanding what I'm doing right now.",
+   "avg_logprob": -0.038651074330831314
+  },
+  {
+   "start": 447.1,
+   "end": 451.72,
+   "text": "But if you do, this will be pretty straightforward for you.",
+   "avg_logprob": -0.09037849719707783
+  },
+  {
+   "start": 452.18,
+   "end": 456.42,
+   "text": "2.5 and it would be 1.5 metres per second.",
+   "avg_logprob": -0.09037849719707783
+  },
+  {
+   "start": 457.26,
+   "end": 464.74,
+   "text": "And now we have basically everything we need. This is now back to beginner vectors and scalars.",
+   "avg_logprob": -0.09037849719707783
+  },
+  {
+   "start": 465.46,
+   "end": 467.48,
+   "text": "This is the final velocity we need.",
+   "avg_logprob": -0.09037849719707783
+  },
+  {
+   "start": 467.48,
+   "end": 476.84,
+   "text": "We know that y velocity, v f y, we know v f x.",
+   "avg_logprob": -0.08963002034408205
+  },
+  {
+   "start": 477.16,
+   "end": 484.42,
+   "text": "So what we can do is we can bring v f x over here, like I've talked about in previous units.",
+   "avg_logprob": -0.08963002034408205
+  },
+  {
+   "start": 484.78,
+   "end": 489.4,
+   "text": "You can bring this here, and you could use Pythagorean theorem to calculate for the final.",
+   "avg_logprob": -0.08963002034408205
+  },
+  {
+   "start": 489.4,
+   "end": 498.16,
+   "text": "So the final velocity is the square root of 1.6 squared plus 1.5 squared.",
+   "avg_logprob": -0.10789532612447869
+  },
+  {
+   "start": 498.62,
+   "end": 510.62,
+   "text": "And when you type that into the calculator, it is 1.5 squared, 2.19, or sig figs, 2.2.",
+   "avg_logprob": -0.10789532612447869
+  },
+  {
+   "start": 511.42,
+   "end": 516.66,
+   "text": "2.2 metres per second. And that will be the final answer for A.",
+   "avg_logprob": -0.10789532612447869
+  },
+  {
+   "start": 517.91,
+   "end": 522.37,
+   "text": "Now for number 2, it's also pretty straightforward.",
+   "avg_logprob": -0.08074514239671685
+  },
+  {
+   "start": 523.51,
+   "end": 531.21,
+   "text": "After we've solved the final velocity in both the x direction and the y direction, we can basically calculate the angle as well.",
+   "avg_logprob": -0.08074514239671685
+  },
+  {
+   "start": 532.67,
+   "end": 539.11,
+   "text": "Since the question asks north of east, we want to measure the angle relative to north.",
+   "avg_logprob": -0.08074514239671685
+  },
+  {
+   "start": 539.59,
+   "end": 544.33,
+   "text": "So we want to measure, this would be north, so we want to measure this angle.",
+   "avg_logprob": -0.08074514239671685
+  },
+  {
+   "start": 545.81,
+   "end": 553.03,
+   "text": "Now, when we measure this angle, we will have to use tangent, because we have v f of y and v f of x.",
+   "avg_logprob": -0.11420501692562687
+  },
+  {
+   "start": 553.49,
+   "end": 559.71,
+   "text": "So let me just copy and paste this diagram over down here, and I can edit it a bit.",
+   "avg_logprob": -0.11420501692562687
+  },
+  {
+   "start": 560.53,
+   "end": 571.97,
+   "text": "Okay, so v f of x, what we calculated, is 1.6 metres per second, and this is 1.5 metres per second.",
+   "avg_logprob": -0.11420501692562687
+  },
+  {
+   "start": 571.97,
+   "end": 573.07,
+   "text": "And we want to find theta.",
+   "avg_logprob": -0.11420501692562687
+  },
+  {
+   "start": 573.07,
+   "end": 585.15,
+   "text": "Well, we know that tan of theta is equal to opposite over adjacent, so tan of theta equals 1.6 over 1.5.",
+   "avg_logprob": -0.0910211679801135
+  },
+  {
+   "start": 588.13,
+   "end": 591.15,
+   "text": "And now we can just solve for theta.",
+   "avg_logprob": -0.0910211679801135
+  },
+  {
+   "start": 591.59,
+   "end": 598.45,
+   "text": "And when we solve for theta, we have tan of negative 1, 1.6 over 1.5.",
+   "avg_logprob": -0.0910211679801135
+  },
+  {
+   "start": 599.45,
+   "end": 604.89,
+   "text": "And it would be 46.8 degrees.",
+   "avg_logprob": -0.09443044203023115
+  },
+  {
+   "start": 606.01,
+   "end": 610.59,
+   "text": "So, relative to the north axis, theta would be 46.8 degrees.",
+   "avg_logprob": -0.09443044203023115
+  },
+  {
+   "start": 612.99,
+   "end": 622.57,
+   "text": "So, if the vector would look like this, this would be 46.8 degrees, and that would be our final answer.",
+   "avg_logprob": -0.09443044203023115
+  },
+  {
+   "start": 623.33,
+   "end": 629.49,
+   "text": "Our direction would be north 46.8 degrees east.",
+   "avg_logprob": -0.09681892721620325
+  },
+  {
+   "start": 631.71,
+   "end": 635.31,
+   "text": "And that's basically how you get the angle and the velocity.",
+   "avg_logprob": -0.09681892721620325
+  },
+  {
+   "start": 635.91,
+   "end": 640.27,
+   "text": "So the final velocity vector ultimately, this would be the answer to part b by the way,",
+   "avg_logprob": -0.09681892721620325
+  },
+  {
+   "start": 640.53,
+   "end": 650.19,
+   "text": "but the final velocity vector would be 2.2 metres per second north 46.8 degrees east.",
+   "avg_logprob": -0.09681892721620325
+  },
+  {
+   "start": 651.11,
+   "end": 658.79,
+   "text": "And that would be your final direction and velocity of the puck system.",
+   "avg_logprob": -0.06446218797937035
+  },
+  {
+   "start": 659.65,
+   "end": 662.49,
+   "text": "And that's how you solve 2D system equations.",
+   "avg_logprob": -0.06446218797937035
+  },
+  {
+   "start": 662.77,
+   "end": 667.39,
+   "text": "You basically have to split the momentum into x and y components,",
+   "avg_logprob": -0.06446218797937035
+  },
+  {
+   "start": 667.39,
+   "end": 672.05,
+   "text": "and then after you split them, you can add them if they're inelastic,",
+   "avg_logprob": -0.06446218797937035
+  },
+  {
+   "start": 672.45,
+   "end": 674.79,
+   "text": "or do your energy equation if they're inelastic.",
+   "avg_logprob": -0.06446218797937035
+  },
+  {
+   "start": 674.79,
+   "end": 683.09,
+   "text": "And with those different components of your momentums, you can calculate their x and y velocities.",
+   "avg_logprob": -0.06911941698274097
+  },
+  {
+   "start": 683.29,
+   "end": 687.21,
+   "text": "And after that, it's just a matter of applying what we've learned in the past",
+   "avg_logprob": -0.06911941698274097
+  },
+  {
+   "start": 687.21,
+   "end": 692.73,
+   "text": "to get the overall velocity and the overall direction using tan.",
+   "avg_logprob": -0.06911941698274097
+  },
+  {
+   "start": 693.37,
+   "end": 696.51,
+   "text": "Thank you for listening, and I hope you learned something. Bye!",
+   "avg_logprob": -0.06911941698274097
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.46,
+   "end": 4.44,
+   "text": "One thing I really like about momentum is that"
+  },
+  {
+   "start": 4.44,
+   "end": 7.56,
+   "text": "it uses a lot of math. And in this case, we"
+  },
+  {
+   "start": 7.56,
+   "end": 10.54,
+   "text": "will be looking at a 2D momentum question that"
+  },
+  {
+   "start": 10.54,
+   "end": 14.36,
+   "text": "mainly uses math and logic to be able to solve"
+  },
+  {
+   "start": 14.36,
+   "end": 17.24,
+   "text": "it. Momentum is all about deriving equations,"
+  },
+  {
+   "start": 17.24,
+   "end": 20.04,
+   "text": "as you guys probably saw in the previous two"
+  },
+  {
+   "start": 20.04,
+   "end": 24.38,
+   "text": "examples. So in this case, a 2 kilogram puck"
+  },
+  {
+   "start": 24.38,
+   "end": 28.16,
+   "text": "moving east at 4 metres per second, it would"
+  },
+  {
+   "start": 28.16,
+   "end": 33.76,
+   "text": "be first good to draw a compass, so north, east,"
+  },
+  {
+   "start": 34.34,
+   "end": 37.86,
+   "text": "south, west, at 4 metres per second collides"
+  },
+  {
+   "start": 37.86,
+   "end": 42.52,
+   "text": "with a 0.3 kilogram puck moving north at 2.5"
+  },
+  {
+   "start": 42.52,
+   "end": 46.14,
+   "text": "metres per second on frictionless ice, so you"
+  },
+  {
+   "start": 46.14,
+   "end": 48.36,
+   "text": "would probably need to use momentum. They stick"
+  },
+  {
+   "start": 48.36,
+   "end": 51.66,
+   "text": "together after the collision. And that's good,"
+  },
+  {
+   "start": 51.7,
+   "end": 54.3,
+   "text": "as we've seen before, because that means it's"
+  },
+  {
+   "start": 54.3,
+   "end": 58.72,
+   "text": "an inelastic equation. And if it's inelastic,"
+  },
+  {
+   "start": 60.04,
+   "end": 66.8,
+   "text": "elastic, that means that there will be one single"
+  },
+  {
+   "start": 66.8,
+   "end": 69.62,
+   "text": "mass after. You can treat it as one single system"
+  },
+  {
+   "start": 69.62,
+   "end": 72.98,
+   "text": "after they collide. Find the magnitude of the"
+  },
+  {
+   "start": 72.98,
+   "end": 76.1,
+   "text": "final velocity and find the direction. So first,"
+  },
+  {
+   "start": 76.2,
+   "end": 81.22,
+   "text": "let's do magnitude. We can map this out, for"
+  },
+  {
+   "start": 81.22,
+   "end": 85.44,
+   "text": "example, a 0.2 kilogram puck moving east."
+  },
+  {
+   "start": 86.08,
+   "end": 89.58,
+   "text": "So let's say east is the x direction and north"
+  },
+  {
+   "start": 89.58,
+   "end": 95.62,
+   "text": "is the y direction. If it's moving east at 4.00"
+  },
+  {
+   "start": 95.62,
+   "end": 100.84,
+   "text": "metres per second, and this puck is moving north,"
+  },
+  {
+   "start": 102.3,
+   "end": 109.36,
+   "text": "0.300 kilograms, at 2.5 metres"
+  },
+  {
+   "start": 109.36,
+   "end": 112.66,
+   "text": "per second, well, if they stick together, their"
+  },
+  {
+   "start": 112.66,
+   "end": 117.66,
+   "text": "final velocity will be something along the lines"
+  },
+  {
+   "start": 117.66,
+   "end": 121.06,
+   "text": "of this way. So, north of east."
+  },
+  {
+   "start": 122.28,
+   "end": 124.52,
+   "text": "And we want to find the magnitude of that."
+  },
+  {
+   "start": 125.7,
+   "end": 135.68,
+   "text": "So, if we treat north as"
+  },
+  {
+   "start": 135.68,
+   "end": 138.28,
+   "text": "the y direction and we treat east as the x direction,"
+  },
+  {
+   "start": 138.42,
+   "end": 141.74,
+   "text": "we can actually split the final vector into"
+  },
+  {
+   "start": 141.74,
+   "end": 146.06,
+   "text": "two components. We can split it into the y component"
+  },
+  {
+   "start": 146.06,
+   "end": 150.6,
+   "text": "and the x component. And this question is really"
+  },
+  {
+   "start": 150.6,
+   "end": 153.18,
+   "text": "good, because you don't have to do anything"
+  },
+  {
+   "start": 153.18,
+   "end": 156.8,
+   "text": "to this vector alone. We know that the y component"
+  },
+  {
+   "start": 156.8,
+   "end": 159.58,
+   "text": "of this momentum is 0."
+  },
+  {
+   "start": 159.86,
+   "end": 163.74,
+   "text": "It's going completely towards the east axis."
+  },
+  {
+   "start": 164.1,
+   "end": 167.12,
+   "text": "So its y component is 0, but its x component"
+  },
+  {
+   "start": 167.12,
+   "end": 169.14,
+   "text": "is whatever the momentum is."
+  },
+  {
+   "start": 169.14,
+   "end": 172.64,
+   "text": "So, let's call this puck A, let's call this"
+  },
+  {
+   "start": 172.64,
+   "end": 180.04,
+   "text": "puck B. So the momentum of A in the y component"
+  },
+  {
+   "start": 180.04,
+   "end": 186.12,
+   "text": "is mass times velocity in the y direction."
+  },
+  {
+   "start": 186.78,
+   "end": 188.96,
+   "text": "And since velocity in the y direction for puck"
+  },
+  {
+   "start": 188.96,
+   "end": 192.18,
+   "text": "A is 0, that means that the momentum here is"
+  },
+  {
+   "start": 192.18,
+   "end": 196.24,
+   "text": "0. However, in the x direction, the momentum"
+  },
+  {
+   "start": 196.24,
+   "end": 200.28,
+   "text": "would be equal to mass times velocity in the"
+  },
+  {
+   "start": 200.28,
+   "end": 202.8,
+   "text": "x direction. And the velocity in the x direction"
+  },
+  {
+   "start": 202.8,
+   "end": 209.16,
+   "text": "is 4 metres per second. So, it's 0.2 times 4.00"
+  },
+  {
+   "start": 209.16,
+   "end": 212.44,
+   "text": "metres per second. It's kind of like kinematics"
+  },
+  {
+   "start": 212.44,
+   "end": 216.12,
+   "text": "in a sense that you will have to be using trig"
+  },
+  {
+   "start": 216.12,
+   "end": 220.36,
+   "text": "or splitting vectors into y and x components."
+  },
+  {
+   "start": 221.52,
+   "end": 228.44,
+   "text": "And you would get 0.8 kilograms metres per second."
+  },
+  {
+   "start": 230.2,
+   "end": 234.6,
+   "text": "And now we will do the same thing for the other"
+  },
+  {
+   "start": 234.6,
+   "end": 242.05,
+   "text": "puck. Initially, sorry, P B, because this"
+  },
+  {
+   "start": 242.05,
+   "end": 246.45,
+   "text": "is puck B. P B y, well it has a velocity in"
+  },
+  {
+   "start": 246.45,
+   "end": 248.91,
+   "text": "the y direction, 2.5 metres per second."
+  },
+  {
+   "start": 248.91,
+   "end": 254.81,
+   "text": "So m v y, which is 0.300 times 2.5."
+  },
+  {
+   "start": 256.27,
+   "end": 264.57,
+   "text": "And that would be 0.75 kilograms"
+  },
+  {
+   "start": 264.57,
+   "end": 266.99,
+   "text": "per metres per second."
+  },
+  {
+   "start": 267.89,
+   "end": 271.11,
+   "text": "On the other hand, the x component of this puck's"
+  },
+  {
+   "start": 271.11,
+   "end": 273.23,
+   "text": "velocity, well it's not going left, it's not"
+  },
+  {
+   "start": 273.23,
+   "end": 275.75,
+   "text": "going right, so the x component is 0."
+  },
+  {
+   "start": 275.75,
+   "end": 280.03,
+   "text": "m v x. So v x is 0, which means there's not"
+  },
+  {
+   "start": 280.03,
+   "end": 282.73,
+   "text": "going to be momentum in the x direction. So"
+  },
+  {
+   "start": 282.73,
+   "end": 285.21,
+   "text": "basically what I've done so far is I've looked"
+  },
+  {
+   "start": 285.21,
+   "end": 287.93,
+   "text": "at the two pucks and I've split them into x"
+  },
+  {
+   "start": 287.93,
+   "end": 292.37,
+   "text": "and y directions. Now we can calculate the total"
+  },
+  {
+   "start": 292.37,
+   "end": 296.49,
+   "text": "momentum, or we can calculate the total momentum"
+  },
+  {
+   "start": 296.49,
+   "end": 298.81,
+   "text": "in the x direction and the y direction."
+  },
+  {
+   "start": 298.81,
+   "end": 304.73,
+   "text": "The total momentum p final, I'll do this in"
+  },
+  {
+   "start": 304.73,
+   "end": 311.87,
+   "text": "green, p final, let's call that, in the x"
+  },
+  {
+   "start": 311.87,
+   "end": 315.73,
+   "text": "direction, will just be equal to p a x plus"
+  },
+  {
+   "start": 315.73,
+   "end": 327.01,
+   "text": "p b x,"
+  },
+  {
+   "start": 327.01,
+   "end": 330.27,
+   "text": "because there's no thing. So the total momentum"
+  },
+  {
+   "start": 330.27,
+   "end": 334.25,
+   "text": "in the x direction is 0.8 kilograms metres per"
+  },
+  {
+   "start": 334.25,
+   "end": 337.35,
+   "text": "second. Same thing for the final total momentum"
+  },
+  {
+   "start": 337.35,
+   "end": 343.27,
+   "text": "in the y direction, p a y plus p b y, which"
+  },
+  {
+   "start": 343.27,
+   "end": 345.71,
+   "text": "is 0 plus 0.75."
+  },
+  {
+   "start": 346.27,
+   "end": 350.39,
+   "text": "So this would be 0.75 kilograms per metres per"
+  },
+  {
+   "start": 350.39,
+   "end": 355.93,
+   "text": "second. And that would be the momentum in the"
+  },
+  {
+   "start": 355.93,
+   "end": 358.05,
+   "text": "x direction and the y direction. So knowing"
+  },
+  {
+   "start": 358.05,
+   "end": 360.33,
+   "text": "the momentum in the x direction and the y direction,"
+  },
+  {
+   "start": 360.59,
+   "end": 362.95,
+   "text": "we can actually calculate the speed, because"
+  },
+  {
+   "start": 362.95,
+   "end": 365.81,
+   "text": "we know the mass. The mass of the system after"
+  },
+  {
+   "start": 365.81,
+   "end": 369.33,
+   "text": "they stick together would be just a sum, 0.200"
+  },
+  {
+   "start": 369.33,
+   "end": 372.01,
+   "text": "plus 0.300."
+  },
+  {
+   "start": 372.01,
+   "end": 379.29,
+   "text": "So m total is 0.200 plus 0.300, which"
+  },
+  {
+   "start": 379.29,
+   "end": 381.95,
+   "text": "is 0.500 kilograms."
+  },
+  {
+   "start": 383.61,
+   "end": 386.27,
+   "text": "And now let's calculate the speed in the x and"
+  },
+  {
+   "start": 386.27,
+   "end": 394.26,
+   "text": "y direction, respectively. So we can do speed"
+  },
+  {
+   "start": 394.26,
+   "end": 402.28,
+   "text": "final x is equal to momentum over mass, p"
+  },
+  {
+   "start": 402.28,
+   "end": 407.48,
+   "text": "of f x over mass total mass, because p equals"
+  },
+  {
+   "start": 407.48,
+   "end": 410.02,
+   "text": "m v, so we just rearrange that equation."
+  },
+  {
+   "start": 410.5,
+   "end": 414.52,
+   "text": "So you get 0.8 over 0.5, so you just multiply"
+  },
+  {
+   "start": 414.52,
+   "end": 417.7,
+   "text": "it by two, and you get 1.6 metres per second"
+  },
+  {
+   "start": 417.7,
+   "end": 422.56,
+   "text": "in the x direction. Same thing for the y."
+  },
+  {
+   "start": 423.14,
+   "end": 428.04,
+   "text": "The final y velocity would be equal to p f y"
+  },
+  {
+   "start": 428.04,
+   "end": 430.88,
+   "text": "over m total."
+  },
+  {
+   "start": 431.56,
+   "end": 433.84,
+   "text": "And if you don't get what I'm doing, it's really"
+  },
+  {
+   "start": 433.84,
+   "end": 436.48,
+   "text": "important to revisit or replay the video to"
+  },
+  {
+   "start": 436.48,
+   "end": 438.76,
+   "text": "see what I did, because this is really, really"
+  },
+  {
+   "start": 438.76,
+   "end": 442.04,
+   "text": "important. I basically split the vectors up."
+  },
+  {
+   "start": 442.44,
+   "end": 444.92,
+   "text": "And if you don't know how I did that, you probably"
+  },
+  {
+   "start": 444.92,
+   "end": 446.74,
+   "text": "won't be understanding what I'm doing right"
+  },
+  {
+   "start": 446.74,
+   "end": 450.48,
+   "text": "now. But if you do, this will be pretty straightforward"
+  },
+  {
+   "start": 450.48,
+   "end": 456.12,
+   "text": "for you. 2.5 and it would be 1.5 metres per"
+  },
+  {
+   "start": 456.12,
+   "end": 460.58,
+   "text": "second. And now we have basically everything"
+  },
+  {
+   "start": 460.58,
+   "end": 464.06,
+   "text": "we need. This is now back to beginner vectors"
+  },
+  {
+   "start": 464.06,
+   "end": 467.48,
+   "text": "and scalars. This is the final velocity we need."
+  },
+  {
+   "start": 467.48,
+   "end": 474.84,
+   "text": "We know that y velocity, v-final y, we know v"
+  },
+  {
+   "start": 474.84,
+   "end": 480.44,
+   "text": "f x. So what we can do is we can bring v-final x"
+  },
+  {
+   "start": 480.44,
+   "end": 483.3,
+   "text": "over here, like I've talked about in previous"
+  },
+  {
+   "start": 483.3,
+   "end": 486.74,
+   "text": "units. You can bring this here, and you could"
+  },
+  {
+   "start": 486.74,
+   "end": 489.2,
+   "text": "use Pythagorean theorem to calculate for the"
+  },
+  {
+   "start": 489.2,
+   "end": 494.74,
+   "text": "final. So the final velocity is the square root"
+  },
+  {
+   "start": 494.74,
+   "end": 498.16,
+   "text": "of 1.6 squared plus 1.5 squared."
+  },
+  {
+   "start": 498.62,
+   "end": 500.46,
+   "text": "And when you type that into the calculator,"
+  },
+  {
+   "start": 501.78,
+   "end": 508.88,
+   "text": "it is 1.5 squared, 2.19, or"
+  },
+  {
+   "start": 508.88,
+   "end": 514.26,
+   "text": "sig figs, 2.2. 2.2 metres per second."
+  },
+  {
+   "start": 514.74,
+   "end": 518.97,
+   "text": "And that will be the final answer for A. Now"
+  },
+  {
+   "start": 518.97,
+   "end": 522.37,
+   "text": "for number 2, it's also pretty straightforward."
+  },
+  {
+   "start": 523.51,
+   "end": 526.95,
+   "text": "After we've solved the final velocity in both"
+  },
+  {
+   "start": 526.95,
+   "end": 529.49,
+   "text": "the x direction and the y direction, we can"
+  },
+  {
+   "start": 529.49,
+   "end": 532.91,
+   "text": "basically calculate the angle as well. Since"
+  },
+  {
+   "start": 532.91,
+   "end": 537.37,
+   "text": "the question asks north of east, we want to"
+  },
+  {
+   "start": 537.37,
+   "end": 540.01,
+   "text": "measure the angle relative to north. So we want"
+  },
+  {
+   "start": 540.01,
+   "end": 543.07,
+   "text": "to measure, this would be north, so we want"
+  },
+  {
+   "start": 543.07,
+   "end": 547.17,
+   "text": "to measure this angle. Now, when we measure"
+  },
+  {
+   "start": 547.17,
+   "end": 550.73,
+   "text": "this angle, we will have to use tangent, because"
+  },
+  {
+   "start": 550.73,
+   "end": 553.03,
+   "text": "we have v-final of y and v-final of x."
+  },
+  {
+   "start": 553.49,
+   "end": 556.65,
+   "text": "So let me just copy and paste this diagram over"
+  },
+  {
+   "start": 556.65,
+   "end": 559.71,
+   "text": "down here, and I can edit it a bit."
+  },
+  {
+   "start": 560.53,
+   "end": 568.19,
+   "text": "Okay, so v-final of x, what we calculated, is 1.6"
+  },
+  {
+   "start": 568.19,
+   "end": 571.69,
+   "text": "metres per second, and this is 1.5 metres per"
+  },
+  {
+   "start": 571.69,
+   "end": 574.97,
+   "text": "second. And we want to find theta. Well, we"
+  },
+  {
+   "start": 574.97,
+   "end": 579.05,
+   "text": "know that tan of theta is equal to opposite"
+  },
+  {
+   "start": 579.05,
+   "end": 583.71,
+   "text": "over adjacent, so tan of theta equals 1.6 over"
+  },
+  {
+   "start": 583.71,
+   "end": 591.15,
+   "text": "1.5. And now we can just solve for theta."
+  },
+  {
+   "start": 591.59,
+   "end": 595.35,
+   "text": "And when we solve for theta, we have tan of"
+  },
+  {
+   "start": 595.35,
+   "end": 598.45,
+   "text": "negative 1, 1.6 over 1.5."
+  },
+  {
+   "start": 599.45,
+   "end": 604.89,
+   "text": "And it would be 46.8 degrees."
+  },
+  {
+   "start": 606.01,
+   "end": 609.07,
+   "text": "So, relative to the north axis, theta would"
+  },
+  {
+   "start": 609.07,
+   "end": 616.13,
+   "text": "be 46.8 degrees. So, if the vector"
+  },
+  {
+   "start": 616.13,
+   "end": 619.17,
+   "text": "would look like this, this would be 46.8 degrees,"
+  },
+  {
+   "start": 619.83,
+   "end": 622.57,
+   "text": "and that would be our final answer."
+  },
+  {
+   "start": 623.33,
+   "end": 629.49,
+   "text": "Our direction would be north 46.8 degrees east."
+  },
+  {
+   "start": 631.71,
+   "end": 634.83,
+   "text": "And that's basically how you get the angle and"
+  },
+  {
+   "start": 634.83,
+   "end": 638.33,
+   "text": "the velocity. So the final velocity vector ultimately,"
+  },
+  {
+   "start": 638.47,
+   "end": 640.27,
+   "text": "this would be the answer to part b by the way,"
+  },
+  {
+   "start": 640.53,
+   "end": 644.71,
+   "text": "but the final velocity vector would be 2.2 metres"
+  },
+  {
+   "start": 644.71,
+   "end": 650.19,
+   "text": "per second north 46.8 degrees east."
+  },
+  {
+   "start": 651.11,
+   "end": 656.47,
+   "text": "And that would be your final direction and velocity"
+  },
+  {
+   "start": 656.47,
+   "end": 658.79,
+   "text": "of the puck system."
+  },
+  {
+   "start": 659.65,
+   "end": 662.49,
+   "text": "And that's how you solve 2D system equations."
+  },
+  {
+   "start": 662.77,
+   "end": 666.09,
+   "text": "You basically have to split the momentum into"
+  },
+  {
+   "start": 666.09,
+   "end": 669.29,
+   "text": "x and y components, and then after you split"
+  },
+  {
+   "start": 669.29,
+   "end": 672.05,
+   "text": "them, you can add them if they're inelastic,"
+  },
+  {
+   "start": 672.45,
+   "end": 674.79,
+   "text": "or do your energy equation if they're inelastic."
+  },
+  {
+   "start": 674.79,
+   "end": 678.53,
+   "text": "And with those different components of your"
+  },
+  {
+   "start": 678.53,
+   "end": 683.09,
+   "text": "momentums, you can calculate their x and y velocities."
+  },
+  {
+   "start": 683.29,
+   "end": 685.95,
+   "text": "And after that, it's just a matter of applying"
+  },
+  {
+   "start": 685.95,
+   "end": 689.85,
+   "text": "what we've learned in the past to get the overall"
+  },
+  {
+   "start": 689.85,
+   "end": 692.73,
+   "text": "velocity and the overall direction using tan."
+  },
+  {
+   "start": 693.37,
+   "end": 695.01,
+   "text": "Thank you for listening, and I hope you learned"
+  },
+  {
+   "start": 695.01,
+   "end": 696.51,
+   "text": "something. Bye!"
+  }
+ ],
+ "report": {
+  "key": "momentum_and_collisions__momentum_2d",
+  "title": "Momentum in 2D",
+  "topicKey": "momentum_and_collisions",
+  "duration": 696.9813125,
+  "cues": 167,
+  "corrections": 5,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.1678696399511293,
+  "flagged": []
+ }
+}

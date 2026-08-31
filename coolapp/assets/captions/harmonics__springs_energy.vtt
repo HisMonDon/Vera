@@ -1,0 +1,1029 @@
+WEBVTT
+NOTE Springs and Conservation of Energy
+
+1
+00:00:01.870 --> 00:00:05.210
+Let's take a look at this oscillating
+spring.
+
+2
+00:00:06.610 --> 00:00:10.470
+We can actually use energy to map this
+out,
+
+3
+00:00:11.230 --> 00:00:17.370
+and we can use energy to basically solve a
+lot
+
+4
+00:00:17.370 --> 00:00:22.590
+of problems involving time, speed, and
+potential
+
+5
+00:00:22.590 --> 00:00:25.710
+energy. Usually the question will want us
+to
+
+6
+00:00:25.710 --> 00:00:28.730
+calculate something like its speed, its
+fastest
+
+7
+00:00:28.730 --> 00:00:32.470
+possible speed. And now you have this
+image
+
+8
+00:00:32.470 --> 00:00:35.290
+in mind. This is what they mean by an
+oscillating
+
+9
+00:00:35.290 --> 00:00:40.590
+spring. Let's map this out using time.
+
+10
+00:00:41.790 --> 00:00:46.730
+So let's say the spring is first initially
+at
+
+11
+00:00:46.730 --> 00:00:49.710
+its highest peak, so all the way down
+here.
+
+12
+00:00:51.720 --> 00:00:57.680
+And then it goes a bit up, and this would
+be
+
+13
+00:00:57.680 --> 00:01:01.360
+the spring at its equilibrium, which means
+it
+
+14
+00:01:01.360 --> 00:01:05.040
+would be the spring at rest. And then, as
+you
+
+15
+00:01:05.040 --> 00:01:08.220
+can see, as you saw in the diagram, it's
+going
+
+16
+00:01:08.220 --> 00:01:12.820
+to go up beyond equilibrium for a bit, and
+then
+
+17
+00:01:12.820 --> 00:01:15.700
+it's going to repeat the process all over
+again.
+
+18
+00:01:16.360 --> 00:01:21.240
+So it's going to go up, up, and then it's
+going
+
+19
+00:01:21.240 --> 00:01:23.800
+to go down, and then back down.
+
+20
+00:01:25.400 --> 00:01:27.820
+So that's basically the motion of the
+spring.
+
+21
+00:01:29.180 --> 00:01:33.800
+Now, what you notice is if you just mapped
+the
+
+22
+00:01:33.800 --> 00:01:40.280
+velocity out of the block, well, this over
+here
+
+23
+00:01:40.280 --> 00:01:44.180
+would have a velocity of zero, and this
+would
+
+24
+00:01:44.180 --> 00:01:48.080
+also have a velocity of zero, and this
+would
+
+25
+00:01:48.080 --> 00:01:51.200
+be in motion. Let's just call this
+velocity
+
+26
+00:01:51.200 --> 00:01:53.600
+x for now, for simplicity's sake.
+
+27
+00:01:54.760 --> 00:01:58.660
+And why is it that these two have a
+velocity
+
+28
+00:01:58.660 --> 00:02:04.080
+of zero? When you see over here, when they
+change
+
+29
+00:02:04.080 --> 00:02:06.680
+direction, the velocity kind of stops.
+
+30
+00:02:06.840 --> 00:02:09.260
+It stops moving for a split second, and
+then
+
+31
+00:02:09.260 --> 00:02:12.360
+it goes in the other direction. Well,
+that's
+
+32
+00:02:12.360 --> 00:02:15.460
+when energy comes into play. We have
+learned
+
+33
+00:02:15.460 --> 00:02:19.200
+that — I'll erase this — we have learned
+that
+
+34
+00:02:19.200 --> 00:02:22.760
+the total mechanical energy of the system,
+E
+
+35
+00:02:22.760 --> 00:02:26.960
+total, is the sum of the kinetic energy
+and
+
+36
+00:02:28.080 --> 00:02:32.580
+the potential energy. Now, if kinetic
+energy,
+
+37
+00:02:33.040 --> 00:02:37.600
+as we know, is the energy based off of
+motion,
+
+38
+00:02:38.620 --> 00:02:41.860
+if v equals zero, then that means that
+there's
+
+39
+00:02:41.860 --> 00:02:44.800
+no kinetic energy. So at these two points,
+let's
+
+40
+00:02:44.800 --> 00:02:48.420
+call this point one, point two, point
+three,
+
+41
+00:02:49.240 --> 00:02:56.820
+at point one and three, all the energy is
+potential
+
+42
+00:02:56.820 --> 00:03:03.700
+energy. All the energy is potential
+energy.
+
+43
+00:03:07.350 --> 00:03:17.330
+However, at point two, when it's
+
+44
+00:03:17.330 --> 00:03:26.050
+at point two, all the energy is
+
+45
+00:03:26.050 --> 00:03:31.370
+kinetic energy. So between these points,
+between
+
+46
+00:03:31.370 --> 00:03:33.870
+one and two, and between two and three,
+let's
+
+47
+00:03:33.870 --> 00:03:38.290
+say, for example, at this point, the box
+is
+
+48
+00:03:38.290 --> 00:03:41.290
+still going up. It has a velocity, it has
+kinetic
+
+49
+00:03:41.290 --> 00:03:43.830
+energy going up, but it's not at its
+fastest
+
+50
+00:03:43.830 --> 00:03:46.470
+speed. There's still potential energy
+because
+
+51
+00:03:46.470 --> 00:03:49.030
+there's still a force driving it up, and
+that's
+
+52
+00:03:49.030 --> 00:03:53.350
+the restoring force, as we learned. So if
+at
+
+53
+00:03:53.350 --> 00:03:56.770
+two, kinetic energy is at max because all
+the
+
+54
+00:03:56.770 --> 00:04:00.210
+total mechanical energy is kinetic energy,
+then
+
+55
+00:04:00.210 --> 00:04:08.670
+we can say that at point two, the speed is
+—
+
+56
+00:04:08.670 --> 00:04:15.710
+or the means it would
+
+57
+00:04:15.710 --> 00:04:18.570
+be faster because one over two mv squared,
+as
+
+58
+00:04:18.570 --> 00:04:23.490
+we know. And that is basically how we map
+out
+
+59
+00:04:23.490 --> 00:04:27.210
+energy. Now, we know that, let's say, this
+box
+
+60
+00:04:27.210 --> 00:04:31.750
+has a mass of m. The kinetic energy will
+be
+
+61
+00:04:31.750 --> 00:04:34.090
+one over two mv squared. We know that.
+
+62
+00:04:34.170 --> 00:04:38.170
+We've learned that equals one over two mv
+squared.
+
+63
+00:04:38.430 --> 00:04:40.670
+But what is potential energy? We've only
+learned
+
+64
+00:04:40.670 --> 00:04:42.890
+about gravitational potential energy. We
+haven't
+
+65
+00:04:42.890 --> 00:04:46.190
+really touched on elastic potential
+energy.
+
+66
+00:04:46.570 --> 00:04:49.590
+And I don't know if I've said this before
+in
+
+67
+00:04:49.590 --> 00:04:51.790
+the energy thing. I think I saved it for
+this
+
+68
+00:04:51.790 --> 00:04:55.170
+video. The elastic potential energy is
+given
+
+69
+00:04:55.170 --> 00:04:58.590
+as one over two kx squared.
+
+70
+00:04:58.730 --> 00:05:01.290
+And you know all the variables — spring
+constant
+
+71
+00:05:01.290 --> 00:05:03.650
+and displacement from equilibrium.
+
+72
+00:05:04.810 --> 00:05:09.890
+And this is basically a very, very crucial
+formula
+
+73
+00:05:09.890 --> 00:05:15.430
+that we can use. Now, we can use this to
+solve
+
+74
+00:05:15.430 --> 00:05:18.790
+a lot of problems because we know that, at
+equilibrium,
+
+75
+00:05:19.570 --> 00:05:22.510
+this will be all the energy that remains.
+
+76
+00:05:22.850 --> 00:05:26.710
+And at either points one or three, at the
+turning
+
+77
+00:05:26.710 --> 00:05:32.170
+points, this will be the only type of
+energy
+
+78
+00:05:32.170 --> 00:05:34.690
+that remains — only potential energy.
+
+79
+00:05:35.790 --> 00:05:39.570
+Now, you might be wondering about energy.
+
+80
+00:05:39.850 --> 00:05:44.090
+We've learned that you could be
+gravitational
+
+81
+00:05:44.090 --> 00:05:48.710
+potential energy as well. So if there's
+gravitational
+
+82
+00:05:48.710 --> 00:05:52.710
+potential energy, then why are we ignoring
+it?
+
+83
+00:05:53.250 --> 00:05:57.330
+Well, the gravitational potential energy
+can
+
+84
+00:05:57.330 --> 00:06:02.470
+be ignored because it's very, very close
+to
+
+85
+00:06:02.470 --> 00:06:04.710
+being constant for all of these scenarios.
+
+86
+00:06:05.230 --> 00:06:09.410
+A spring won't be that massive. So at
+point
+
+87
+00:06:09.410 --> 00:06:11.870
+one, point two, and point three, it's safe
+to
+
+88
+00:06:11.870 --> 00:06:14.470
+say that the gravitational potential
+energy
+
+89
+00:06:14.470 --> 00:06:19.490
+is constant. So if we map out and do our
+energy
+
+90
+00:06:19.490 --> 00:06:21.690
+calculations, it's just going to cancel
+out.
+
+91
+00:06:21.850 --> 00:06:25.950
+That's why mostly we ignore gravitational
+potential
+
+92
+00:06:25.950 --> 00:06:29.050
+energy. So in spring systems, unless
+there's
+
+93
+00:06:29.050 --> 00:06:34.050
+a net external force or another major key
+factor
+
+94
+00:06:34.050 --> 00:06:37.210
+that moves the object, you will only be
+dealing
+
+95
+00:06:37.210 --> 00:06:40.370
+with kinetic energy of the block or the
+object
+
+96
+00:06:40.370 --> 00:06:43.270
+and the potential elastic energy.
+
+97
+00:06:44.390 --> 00:06:46.870
+Now, let's see a question.
+
+98
+00:06:50.490 --> 00:06:55.170
+Over here, I have a question. And this is
+a
+
+99
+00:06:55.170 --> 00:06:59.370
+question that must need energy to be
+solved.
+
+100
+00:07:00.310 --> 00:07:03.010
+And if you get energy, if you get that
+unit,
+
+101
+00:07:03.770 --> 00:07:05.850
+this is a really, really easy question.
+And
+
+102
+00:07:05.850 --> 00:07:09.610
+if you get what I just said over here. So
+physics
+
+103
+00:07:09.610 --> 00:07:12.510
+is really just understanding what you're
+doing.
+
+104
+00:07:13.710 --> 00:07:15.350
+Practice won't help everything. You
+actually
+
+105
+00:07:15.350 --> 00:07:17.550
+have to understand what's happening.
+
+106
+00:07:17.650 --> 00:07:19.710
+And once you understand it, maybe not the
+first
+
+107
+00:07:19.710 --> 00:07:22.050
+time. I definitely did not get it the
+first
+
+108
+00:07:22.050 --> 00:07:25.570
+time. I took two sets of classes doing the
+same
+
+109
+00:07:25.570 --> 00:07:28.790
+thing. But when it clicks, you're going to
+get
+
+110
+00:07:28.790 --> 00:07:31.450
+the question right every, every single
+time.
+
+111
+00:07:33.250 --> 00:07:36.210
+So really try your hardest to understand
+these.
+
+112
+00:07:36.650 --> 00:07:39.530
+And if you don't get what I'm saying, you
+could
+
+113
+00:07:39.530 --> 00:07:43.990
+search it up, ask AI, because AI is
+actually
+
+114
+00:07:43.990 --> 00:07:47.090
+a really, really good tool to ask if you
+don't
+
+115
+00:07:47.090 --> 00:07:49.710
+understand something, because it gives you
+personalized
+
+116
+00:07:49.710 --> 00:07:55.550
+answers. But this question will just do it
+right
+
+117
+00:07:55.550 --> 00:07:59.410
+now. A 0.8 kilogram mass is attached to a
+horizontal
+
+118
+00:07:59.410 --> 00:08:01.990
+spring with a spring constant of 400.
+
+119
+00:08:03.270 --> 00:08:06.790
+The spring is compressed by 0.12 metres
+and
+
+120
+00:08:06.790 --> 00:08:08.870
+released from rest and calculate the
+maximum
+
+121
+00:08:08.870 --> 00:08:10.890
+speed of the mass.
+
+122
+00:08:11.770 --> 00:08:14.310
+Well, let's map it out. I'm just going to
+real
+
+123
+00:08:14.310 --> 00:08:19.530
+quick borrow the diagram we drew over here
+and
+
+124
+00:08:19.530 --> 00:08:21.630
+we can label our values.
+
+125
+00:08:24.900 --> 00:08:29.920
+So really does not matter which way it's
+compressed.
+
+126
+00:08:30.500 --> 00:08:32.120
+If it's compressed like this or it's
+stretched,
+
+127
+00:08:32.120 --> 00:08:35.800
+really does not matter. But for the sake
+of
+
+128
+00:08:35.800 --> 00:08:38.560
+the question, we'll just treat it as it's
+compressed.
+
+129
+00:08:39.160 --> 00:08:44.320
+If this was equilibrium, then x over here
+or
+
+130
+00:08:44.320 --> 00:08:46.920
+the compressed would be 0.12 metres.
+
+131
+00:08:49.230 --> 00:08:53.210
+So in order to know the maximum speed, we
+will
+
+132
+00:08:53.210 --> 00:08:56.350
+need the kinetic energy because that's the
+only
+
+133
+00:08:56.350 --> 00:08:58.610
+thing that has the speed.
+
+134
+00:08:58.850 --> 00:09:01.210
+So k equals one over two mv squared.
+
+135
+00:09:03.130 --> 00:09:06.130
+Now, as we've talked about, the maximum
+speed
+
+136
+00:09:06.130 --> 00:09:08.810
+is always in the middle of the turning
+points
+
+137
+00:09:08.810 --> 00:09:15.830
+or aka equilibrium. So the total
+
+138
+00:09:15.830 --> 00:09:19.390
+mechanical energy initially is equal to
+the
+
+139
+00:09:19.390 --> 00:09:23.750
+end because the law of conservation of
+energy.
+
+140
+00:09:24.470 --> 00:09:27.530
+Initially, as we've talked about, there is
+only
+
+141
+00:09:27.530 --> 00:09:31.290
+potential energy because it's released
+from
+
+142
+00:09:31.290 --> 00:09:33.990
+rest. There's no kinetic energy, but there
+is
+
+143
+00:09:33.990 --> 00:09:36.030
+a lot of potential elastic energy.
+
+144
+00:09:36.970 --> 00:09:38.930
+How do we calculate that? We use our
+formula
+
+145
+00:09:38.930 --> 00:09:41.870
+over here, one over two kx squared.
+
+146
+00:09:42.850 --> 00:09:45.790
+So I'll just explain it.
+
+147
+00:09:46.050 --> 00:09:53.250
+ue plus kei equals kef at equilibrium plus
+
+148
+00:09:53.250 --> 00:09:56.890
+uef at equilibrium.
+
+149
+00:09:57.070 --> 00:09:59.630
+There is no potential energy at
+equilibrium
+
+150
+00:09:59.630 --> 00:10:02.730
+and there is no kinetic energy initially.
+
+151
+00:10:03.430 --> 00:10:07.810
+So what we're left with is ue equals kef.
+
+152
+00:10:08.970 --> 00:10:12.330
+Now, we can just plug in our formula, one
+over
+
+153
+00:10:12.330 --> 00:10:18.350
+two kx squared. So one over two kx squared
+equals
+
+154
+00:10:18.350 --> 00:10:20.690
+one over two mv squared.
+
+155
+00:10:22.030 --> 00:10:25.730
+And v will be the velocity at equilibrium.
+
+156
+00:10:26.910 --> 00:10:30.570
+We can cancel out these terms. We know k
+is
+
+157
+00:10:30.570 --> 00:10:37.730
+400. 400 times 0.12 squared equals the
+mass
+
+158
+00:10:37.730 --> 00:10:43.850
+is 0.80 v squared.
+
+159
+00:10:44.210 --> 00:10:50.610
+So v would be equal to root 400 times 0.12
+squared
+
+160
+00:10:50.610 --> 00:10:53.190
+over 0.80.
+
+161
+00:10:54.090 --> 00:11:04.230
+And when you solve that, you get v equals
+2.7
+
+162
+00:11:04.230 --> 00:11:10.070
+metres per second. And that will be your
+final
+
+163
+00:11:10.070 --> 00:11:14.270
+velocity. So as you can see, you can use
+energy
+
+164
+00:11:14.270 --> 00:11:19.810
+to solve for velocity and a lot of other
+values
+
+165
+00:11:19.810 --> 00:11:22.150
+as well. You need to use the conservation
+of
+
+166
+00:11:22.150 --> 00:11:24.430
+energy and you need to remember three
+things
+
+167
+00:11:24.430 --> 00:11:26.790
+or these things.
+
+168
+00:11:27.090 --> 00:11:31.650
+The turning point's velocity is zero and
+that
+
+169
+00:11:31.650 --> 00:11:35.150
+means that the total mechanical energy is
+equal
+
+170
+00:11:35.150 --> 00:11:39.090
+to the total potential energy. However, in
+the
+
+171
+00:11:39.090 --> 00:11:42.890
+middle at equilibrium, all the total
+mechanical
+
+172
+00:11:42.890 --> 00:11:45.050
+energy is equal to the total kinetic
+energy
+
+173
+00:11:45.050 --> 00:11:47.650
+and there is no potential energy. And once
+we
+
+174
+00:11:47.650 --> 00:11:51.190
+know that, we can easily use our
+conservation
+
+175
+00:11:51.190 --> 00:11:53.550
+of energy to solve for whatever we want.
+
+176
+00:11:54.950 --> 00:12:00.710
+And we can also know this formula and this
+formula
+
+177
+00:12:00.710 --> 00:12:04.710
+is useful because it literally depicts the
+potential
+
+178
+00:12:04.710 --> 00:12:07.010
+energy of a spring. Gravitational
+potential
+
+179
+00:12:07.010 --> 00:12:09.750
+energy in these types of questions can
+mainly
+
+180
+00:12:09.750 --> 00:12:12.690
+be ignored because it's usually constant
+or
+
+181
+00:12:12.690 --> 00:12:14.850
+not big enough to do a lot of things.
+
+182
+00:12:16.010 --> 00:12:18.790
+Another thing is they might ask you a
+question
+
+183
+00:12:18.790 --> 00:12:22.950
+for the speed in the middle of its path.
+
+184
+00:12:23.190 --> 00:12:26.850
+So let's say we have a mass that's not at
+the
+
+185
+00:12:26.850 --> 00:12:29.030
+turning point, not at equilibrium, it's at
+the
+
+186
+00:12:29.030 --> 00:12:31.890
+middle. And you can still use the
+conservation
+
+187
+00:12:31.890 --> 00:12:34.090
+of energy to solve it. Let's say you're
+given
+
+188
+00:12:34.090 --> 00:12:39.970
+this or this, doesn't matter, but when
+you're
+
+189
+00:12:39.970 --> 00:12:44.350
+given one of these, let's say we're given
+the
+
+190
+00:12:44.350 --> 00:12:49.190
+x and we're given also the spring
+constant,
+
+191
+00:12:49.590 --> 00:12:51.710
+we can find the total mechanical energy.
+
+192
+00:12:52.290 --> 00:12:58.790
+And if it says the distance away from the
+equilibrium,
+
+193
+00:12:58.890 --> 00:13:02.870
+for example, this would be y, then we can
+easily
+
+194
+00:13:02.870 --> 00:13:06.070
+solve for the speed because what we can do
+is
+
+195
+00:13:06.070 --> 00:13:09.030
+this is the initial total mechanical
+energy
+
+196
+00:13:09.030 --> 00:13:12.890
+and using our formula, we know that 1 over
+2
+
+197
+00:13:12.890 --> 00:13:17.390
+kx squared will equal to, and at this
+point
+
+198
+00:13:17.390 --> 00:13:22.450
+it has both kinetic energy and potential
+energy,
+
+199
+00:13:22.770 --> 00:13:25.650
+but we can calculate both of them if we
+know
+
+200
+00:13:25.650 --> 00:13:29.410
+y over here. So it would be equal to,
+let's
+
+201
+00:13:29.410 --> 00:13:33.710
+first do kinetic energy, 1 over 2 m v
+squared,
+
+202
+00:13:33.950 --> 00:13:36.410
+v squared is what we wanted to calculate,
+and
+
+203
+00:13:36.410 --> 00:13:43.490
+then 1 over 2 ky squared because
+
+204
+00:13:43.490 --> 00:13:45.710
+this would be the total mechanical energy
+of
+
+205
+00:13:45.710 --> 00:13:48.430
+the system here. So it's still using
+conservation
+
+206
+00:13:48.430 --> 00:13:50.630
+of energy, it's just slightly more
+complicated
+
+207
+00:13:50.630 --> 00:13:54.030
+than the example we did here. And we can
+simplify
+
+208
+00:13:54.030 --> 00:13:57.750
+it, I probably won't be doing that right
+now,
+
+209
+00:13:57.830 --> 00:14:01.370
+but basically I've demonstrated that you
+can
+
+210
+00:14:01.370 --> 00:14:03.410
+do it and I've showed you how.
+
+211
+00:14:04.190 --> 00:14:06.290
+And that's how you use energy to solve
+these
+
+212
+00:14:06.290 --> 00:14:09.710
+questions. I hope you enjoyed and you
+learned
+
+213
+00:14:09.710 --> 00:14:12.410
+how to do it, and I'll see you in the next
+one.
+
+214
+00:14:12.830 --> 00:14:12.990
+Bye!

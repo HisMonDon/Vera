@@ -1,0 +1,637 @@
+WEBVTT
+NOTE Fluid Statics
+
+1
+00:00:01.100 --> 00:00:05.280
+Now previously, we have talked about the
+difference
+
+2
+00:00:05.280 --> 00:00:08.180
+between fluid statics and fluid dynamics.
+
+3
+00:00:08.400 --> 00:00:11.260
+And in this video, we will be going more
+in
+
+4
+00:00:11.260 --> 00:00:13.340
+depth of fluid statics.
+
+5
+00:00:14.420 --> 00:00:18.260
+For fluid statics, it's mostly about just
+buoyant
+
+6
+00:00:18.260 --> 00:00:21.440
+forces and buoyancy. So let's introduce
+you
+
+7
+00:00:21.440 --> 00:00:25.380
+to buoyant forces. Obviously, you have
+heard
+
+8
+00:00:25.380 --> 00:00:28.320
+of what buoyancy is.
+
+9
+00:00:28.500 --> 00:00:33.400
+If you haven't, then that might be an
+issue.
+
+10
+00:00:33.940 --> 00:00:36.720
+But you have heard the general term of
+what
+
+11
+00:00:36.720 --> 00:00:41.780
+buoyancy is. For example, if you hold a
+ball
+
+12
+00:00:41.780 --> 00:00:44.680
+underwater, a beach ball underwater, let's
+say,
+
+13
+00:00:44.880 --> 00:00:47.260
+it's going to rise up to the top.
+
+14
+00:00:48.120 --> 00:00:53.480
+If you swim, if you hold a pole buoy or a
+paddleboard
+
+15
+00:00:53.480 --> 00:00:57.800
+underwater, it's also going to rise to the
+top.
+
+16
+00:00:58.440 --> 00:01:01.160
+And that is buoyancy.
+
+17
+00:01:01.400 --> 00:01:08.220
+So buoyancy is the force acting on an
+object
+
+18
+00:01:14.490 --> 00:01:21.510
+as a result from displacing
+
+19
+00:01:21.510 --> 00:01:24.270
+a fluid, displacing a fluid's volume.
+
+20
+00:01:24.470 --> 00:01:27.890
+Because when you're putting it in the
+water,
+
+21
+00:01:28.030 --> 00:01:30.430
+it's going to displace some of the volume.
+
+22
+00:01:30.510 --> 00:01:33.990
+And we will get into that later. Force
+acting
+
+23
+00:01:33.990 --> 00:01:39.860
+on an object, salt.
+
+24
+00:01:46.980 --> 00:01:49.700
+Okay, so what is volume displacement?
+
+25
+00:01:49.980 --> 00:01:55.140
+Well, it's basically like, for example, if
+you're
+
+26
+00:01:55.140 --> 00:01:59.440
+in a bathtub, and the water is filled to
+the
+
+27
+00:01:59.440 --> 00:02:02.660
+brim at the bathtub. If you go in the
+bathtub,
+
+28
+00:02:03.340 --> 00:02:05.240
+the water is not going to stay filled in
+the
+
+29
+00:02:05.240 --> 00:02:09.040
+brim. Some of the water is going to leak
+and
+
+30
+00:02:09.040 --> 00:02:11.060
+overflow out of the hot tub.
+
+31
+00:02:11.060 --> 00:02:17.380
+Once you get in. And that is the water
+displaced.
+
+32
+00:02:17.960 --> 00:02:20.220
+The volume of the water displaced,
+however,
+
+33
+00:02:20.220 --> 00:02:23.560
+is the exact same amount of the volume
+that
+
+34
+00:02:23.560 --> 00:02:25.580
+your body goes in the water.
+
+35
+00:02:26.180 --> 00:02:29.720
+That's pretty straightforward. If you put,
+if
+
+36
+00:02:29.720 --> 00:02:33.740
+you place a block of, let's say, five,
+with
+
+37
+00:02:33.740 --> 00:02:38.820
+a volume of five liters inside a tube, the
+volume
+
+38
+00:02:38.820 --> 00:02:42.960
+of the water going out would also be five
+liters.
+
+39
+00:02:46.110 --> 00:02:48.790
+And now let's get into the formula of
+buoyant
+
+40
+00:02:48.790 --> 00:02:54.790
+force. So the buoyant forces formula is,
+oh,
+
+41
+00:02:54.950 --> 00:02:59.230
+before that, why do some objects sink
+while
+
+42
+00:02:59.230 --> 00:03:02.990
+some objects don't? Well, you guys have
+hopefully
+
+43
+00:03:02.990 --> 00:03:07.150
+learned of dynamics. And so you know that
+dynamics,
+
+44
+00:03:07.750 --> 00:03:11.070
+there's obviously free body diagrams.
+
+45
+00:03:11.110 --> 00:03:14.730
+And in this case, there are two forces
+acting
+
+46
+00:03:14.730 --> 00:03:15.110
+on an object. There will be two forces
+acting
+
+47
+00:03:15.110 --> 00:03:19.090
+on this. For example, if you have a rock,
+there
+
+48
+00:03:19.090 --> 00:03:22.850
+will be the buoyant force and the force of
+gravity.
+
+49
+00:03:23.370 --> 00:03:26.550
+And if the force of gravity is higher than
+the
+
+50
+00:03:26.550 --> 00:03:28.550
+buoyant force, then the net force will be
+acting
+
+51
+00:03:28.550 --> 00:03:32.410
+down, which will ultimately be making it
+go
+
+52
+00:03:32.410 --> 00:03:35.350
+down. Or if you want it formula-wise, it
+would
+
+53
+00:03:35.350 --> 00:03:39.910
+be F net equals, let's say, positive would
+be
+
+54
+00:03:39.910 --> 00:03:46.290
+up. It would be the buoyant force
+subtracted
+
+55
+00:03:46.290 --> 00:03:49.210
+by the gravity force. And if F net is
+negative,
+
+56
+00:03:49.430 --> 00:03:54.090
+well, it's going to sink. The formula for
+the
+
+57
+00:03:54.090 --> 00:04:00.590
+buoyant force depends on two things, the
+density
+
+58
+00:04:00.590 --> 00:04:08.040
+of the fluid and also the
+
+59
+00:04:08.040 --> 00:04:11.140
+volume displaced.
+
+60
+00:04:16.500 --> 00:04:19.880
+And the reason I say volume displaced, not
+the
+
+61
+00:04:19.880 --> 00:04:23.440
+volume of the object, is, for example, if
+you
+
+62
+00:04:23.440 --> 00:04:29.720
+have an object here, the volume of this
+object
+
+63
+00:04:29.720 --> 00:04:33.000
+is not the same as the volume displaced.
+
+64
+00:04:33.440 --> 00:04:36.760
+The volume displaced is only the volume of
+the
+
+65
+00:04:36.760 --> 00:04:42.080
+object that is below the water level.
+
+66
+00:04:44.780 --> 00:04:48.820
+And the buoyant force uses these by, let's
+say,
+
+67
+00:04:49.460 --> 00:04:51.840
+it's the same thing as the density of the
+fluid,
+
+68
+00:04:53.220 --> 00:04:56.520
+rho fluid, times the acceleration of
+gravity,
+
+69
+00:04:58.330 --> 00:05:02.070
+on Earth it's 9.81, as you know, and the
+volume
+
+70
+00:05:02.070 --> 00:05:05.310
+displaced. The volume displaced, we'll
+just
+
+71
+00:05:05.310 --> 00:05:17.360
+call it V displaced. And
+
+72
+00:05:17.360 --> 00:05:19.840
+that would be the buoyant force.
+
+73
+00:05:21.520 --> 00:05:25.360
+Let's have an example question over here,
+where
+
+74
+00:05:25.360 --> 00:05:29.760
+we see whether an object sinks or floats.
+
+75
+00:05:30.360 --> 00:05:35.920
+Let's say we have a ball over here, or a
+sphere
+
+76
+00:05:35.920 --> 00:05:41.100
+in this case, whose radius is 5 metres.
+
+77
+00:05:42.800 --> 00:05:51.220
+And it has a mass of, let's say, 10
+
+78
+00:05:51.220 --> 00:05:56.280
+kilograms. So radius is 5 metres, and mass
+is
+
+79
+00:05:56.280 --> 00:06:01.380
+10 kilograms. And let's pretend the liquid
+is
+
+80
+00:06:01.380 --> 00:06:10.020
+water. And
+
+81
+00:06:10.020 --> 00:06:13.580
+from this information, we actually can
+just
+
+82
+00:06:13.580 --> 00:06:16.640
+directly calculate whether it sinks or
+not.
+
+83
+00:06:17.220 --> 00:06:22.400
+And yeah, a pole buoyant doesn't float
+because
+
+84
+00:06:22.400 --> 00:06:25.640
+it's made of that material. It depends
+entirely
+
+85
+00:06:25.640 --> 00:06:30.020
+on only the mass of whatever your object
+is,
+
+86
+00:06:30.020 --> 00:06:33.180
+and the density, not the material.
+
+87
+00:06:33.860 --> 00:06:36.000
+I mean, the material could affect the
+mass,
+
+88
+00:06:36.020 --> 00:06:39.360
+but it's mostly on the mass. And the
+volume
+
+89
+00:06:39.360 --> 00:06:45.160
+displaced. That's why ships don't sink,
+because
+
+90
+00:06:45.160 --> 00:06:47.580
+it displaces a large amount of volume.
+
+91
+00:06:47.660 --> 00:06:50.840
+So even if it's really, really heavy, and
+it's
+
+92
+00:06:50.840 --> 00:06:54.740
+made of metal, it still does not sink.
+Yeah,
+
+93
+00:06:55.220 --> 00:06:57.980
+so we have to calculate the net force.
+
+94
+00:06:58.520 --> 00:07:02.040
+Let's draw a free-body diagram. Oops, what
+happened
+
+95
+00:07:02.040 --> 00:07:05.280
+there? Let's draw a free-body diagram.
+
+96
+00:07:05.400 --> 00:07:11.380
+You have the buoyant force and the
+gravity.
+
+97
+00:07:11.540 --> 00:07:13.960
+We do not know the magnitude, so I'll keep
+them
+
+98
+00:07:13.960 --> 00:07:21.840
+about equal lengths. So f net is given by
+the,
+
+99
+00:07:22.160 --> 00:07:24.580
+like I said, the buoyant force minus the
+gravity,
+
+100
+00:07:25.100 --> 00:07:27.520
+so fb minus fg.
+
+101
+00:07:28.640 --> 00:07:30.980
+And what is the buoyant force? Well, the
+buoyant
+
+102
+00:07:30.980 --> 00:07:34.140
+force, as we found over here, is the
+density
+
+103
+00:07:34.140 --> 00:07:36.520
+of the fluid times whatever.
+
+104
+00:07:37.520 --> 00:07:41.280
+So the density of water. The density of
+water
+
+105
+00:07:43.240 --> 00:07:50.820
+is a constant, and it's 1000 kilograms per
+
+106
+00:07:50.820 --> 00:07:53.300
+metres cubed.
+
+107
+00:07:53.920 --> 00:07:56.600
+And this you should know.
+
+108
+00:08:00.240 --> 00:08:07.460
+So buoyant force is density of water times
+acceleration
+
+109
+00:08:07.460 --> 00:08:11.580
+of gravity times volume displaced, which
+is,
+
+110
+00:08:11.580 --> 00:08:18.500
+for a sphere, it's 4 over 3 pi r cubed
+minus
+
+111
+00:08:18.500 --> 00:08:22.460
+force of gravity is just mass times
+gravity.
+
+112
+00:08:23.740 --> 00:08:26.600
+So density of water, we can plug that in.
+
+113
+00:08:26.600 --> 00:08:30.720
+1000. For simplicity, I'll just not write
+the
+
+114
+00:08:30.720 --> 00:08:37.940
+units. Times 9.81 times 4
+
+115
+00:08:37.940 --> 00:08:41.700
+over 3 pi r cubed.
+
+116
+00:08:41.940 --> 00:08:49.040
+Sorry, 4 over 3 pi times 5 cubed, which is
+
+117
+00:08:49.040 --> 00:08:54.080
+125, minus 10 times 9.81.
+
+118
+00:08:56.910 --> 00:08:59.910
+Once you calculate it, let me just get my
+calculator
+
+119
+00:08:59.910 --> 00:09:03.210
+out. Give me a sec.
+
+120
+00:09:06.380 --> 00:09:11.080
+All right, so the value I got for this one
+is
+
+121
+00:09:11.080 --> 00:09:13.780
+a really big number.
+
+122
+00:09:16.280 --> 00:09:20.860
+And I'm just going to ignore sig figs for
+simplicity
+
+123
+00:09:20.860 --> 00:09:28.060
+sake. Minus about 98.1 newtons.
+
+124
+00:09:28.240 --> 00:09:31.760
+And obviously, this is very theoretical.
+
+125
+00:09:31.760 --> 00:09:35.220
+I just made these unit values on the spot.
+
+126
+00:09:35.740 --> 00:09:40.080
+But as you can see, in this case, the
+buoyant
+
+127
+00:09:40.080 --> 00:09:43.880
+force way exceeds the gravitational force,
+which
+
+128
+00:09:43.880 --> 00:09:47.660
+means if you submerge this, this thing is
+going
+
+129
+00:09:47.660 --> 00:09:51.740
+to have a net force of a lot, a really,
+really
+
+130
+00:09:51.740 --> 00:09:53.400
+big net force, and it's just going to
+start
+
+131
+00:09:53.400 --> 00:09:58.560
+accelerating. But this is, like I said,
+probably
+
+132
+00:09:58.560 --> 00:10:03.180
+not possible. I just made these numbers on
+the
+
+133
+00:10:03.180 --> 00:10:06.910
+spot. It's 89.
+
+134
+00:10:11.440 --> 00:10:17.620
+And yeah, that's a basic calculation of
+buoyancy
+
+135
+00:10:17.620 --> 00:10:21.420
+and the introduction of buoyancy.
+
+136
+00:10:22.120 --> 00:10:23.260
+Thank you for listening.

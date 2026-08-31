@@ -1,0 +1,249 @@
+{
+ "lesson": {
+  "topicKey": "magnetism",
+  "curriculumKey": "magnetic_flux",
+  "title": "Magnetic Flux (IB/AP)",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/IBAP%20Introduction%20to%20Magnetic%20Flux.mp4",
+  "source": "magnetism.dart"
+ },
+ "segments": [
+  {
+   "start": 0.78,
+   "end": 30.58,
+   "text": "In this video, I'll be talking about magnetic flux and what it is used for. First of all, magnetic flux is the amount of magnetic field passing over a certain area. For example, if we took a magnetic field that looks like this, it's pointing into the page, and let's say we took an area of two by two, the magnetic flux would be the numerical value of these four units.",
+   "avg_logprob": -0.05811577930169947
+  },
+  {
+   "start": 31.38,
+   "end": 59.14,
+   "text": "When you increase the area, let's say to three by three now, the magnetic flux goes up as well, so it's proportional to area. The magnetic flux, phi, is equal to the magnetic field, the strength of the magnetic field, times the area, times cosine theta. Now, what does cosine theta mean? Well, if you imagine this on a 3D plane,",
+   "avg_logprob": -0.11340036602581248
+  },
+  {
+   "start": 59.14,
+   "end": 88.76,
+   "text": "and we have an axis for the area over here, you can actually rotate this area. For example, if you rotate it like this, it would look something like that now. And when you rotate it at an angle of theta, there are going to be less x's in the area now. So as the angle of rotation goes up, the number of x's actually decreases.",
+   "avg_logprob": -0.050803710520267484
+  },
+  {
+   "start": 90.38,
+   "end": 118.74,
+   "text": "Until, let's say, it's directly facing forwards. So this would be the area, but you can't see anything except a line, because it's going facing that way. And that's when cosine is 90 degrees, and that's why cosine 90 is zero, so the magnetic flux will be zero, because there will not be any axis. So, ultimately, magnetic flux is a great way to measure the total amount of magnetic field.",
+   "avg_logprob": -0.09711827908424621
+  },
+  {
+   "start": 123.16,
+   "end": 147.36,
+   "text": "Calculating essentially the strength of the magnetic force through a surface. And it's really useful for calculating the strength for powering devices such as generators, motors, and transformers, because you can calculate motion when it's converted to electricity, or vice versa.",
+   "avg_logprob": -0.12563667032453749
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.78,
+   "end": 3.52,
+   "text": "In this video, I'll be talking about magnetic"
+  },
+  {
+   "start": 3.52,
+   "end": 6.24,
+   "text": "flux and what it is used for."
+  },
+  {
+   "start": 7.06,
+   "end": 11.18,
+   "text": "First of all, magnetic flux is the amount of"
+  },
+  {
+   "start": 11.18,
+   "end": 14.34,
+   "text": "magnetic field passing over a certain area."
+  },
+  {
+   "start": 15.18,
+   "end": 18.66,
+   "text": "For example, if we took a magnetic field that"
+  },
+  {
+   "start": 18.66,
+   "end": 20.9,
+   "text": "looks like this, it's pointing into the page,"
+  },
+  {
+   "start": 20.9,
+   "end": 25.1,
+   "text": "and let's say we took an area of two by two,"
+  },
+  {
+   "start": 25.54,
+   "end": 29.1,
+   "text": "the magnetic flux would be the numerical value"
+  },
+  {
+   "start": 29.1,
+   "end": 33.58,
+   "text": "of these four units. When you increase the area,"
+  },
+  {
+   "start": 33.58,
+   "end": 37.2,
+   "text": "let's say to three by three now, the magnetic"
+  },
+  {
+   "start": 37.2,
+   "end": 41.1,
+   "text": "flux goes up as well, so it's proportional to"
+  },
+  {
+   "start": 41.1,
+   "end": 48.46,
+   "text": "area. The magnetic flux, phi, is equal to the"
+  },
+  {
+   "start": 48.46,
+   "end": 50.48,
+   "text": "magnetic field, the strength of the magnetic"
+  },
+  {
+   "start": 50.48,
+   "end": 53.4,
+   "text": "field, times the area, times cosine theta."
+  },
+  {
+   "start": 54.18,
+   "end": 57.14,
+   "text": "Now, what does cosine theta mean? Well, if you"
+  },
+  {
+   "start": 57.14,
+   "end": 61.7,
+   "text": "imagine this on a 3D plane, and we have an axis"
+  },
+  {
+   "start": 61.7,
+   "end": 65.78,
+   "text": "for the area over here, you can actually rotate"
+  },
+  {
+   "start": 65.78,
+   "end": 68.78,
+   "text": "this area."
+  },
+  {
+   "start": 69.36,
+   "end": 72.38,
+   "text": "For example, if you rotate it like this, it"
+  },
+  {
+   "start": 72.38,
+   "end": 74.96,
+   "text": "would look something like that now. And when"
+  },
+  {
+   "start": 74.96,
+   "end": 78.68,
+   "text": "you rotate it at an angle of theta, there are"
+  },
+  {
+   "start": 78.68,
+   "end": 81.9,
+   "text": "going to be less x's in the area now."
+  },
+  {
+   "start": 82.08,
+   "end": 86.3,
+   "text": "So as the angle of rotation goes up, the number"
+  },
+  {
+   "start": 86.3,
+   "end": 88.76,
+   "text": "of x's actually decreases."
+  },
+  {
+   "start": 90.38,
+   "end": 94.86,
+   "text": "Until, let's say, it's directly facing forwards."
+  },
+  {
+   "start": 95.38,
+   "end": 97.82,
+   "text": "So this would be the area, but you can't see"
+  },
+  {
+   "start": 97.82,
+   "end": 100.48,
+   "text": "anything except a line, because it's going facing"
+  },
+  {
+   "start": 100.48,
+   "end": 104.28,
+   "text": "that way. And that's when cosine is 90 degrees,"
+  },
+  {
+   "start": 104.52,
+   "end": 107.8,
+   "text": "and that's why cosine 90 is zero, so the magnetic"
+  },
+  {
+   "start": 107.8,
+   "end": 110.42,
+   "text": "flux will be zero, because there will not be"
+  },
+  {
+   "start": 110.42,
+   "end": 116.16,
+   "text": "any axis. So, ultimately, magnetic flux is a"
+  },
+  {
+   "start": 116.16,
+   "end": 118.74,
+   "text": "great way to measure the total amount of magnetic"
+  },
+  {
+   "start": 118.74,
+   "end": 126.08,
+   "text": "field. Calculating essentially the strength"
+  },
+  {
+   "start": 126.08,
+   "end": 130.76,
+   "text": "of the magnetic force through a surface."
+  },
+  {
+   "start": 131.46,
+   "end": 136.16,
+   "text": "And it's really useful for calculating the strength"
+  },
+  {
+   "start": 136.16,
+   "end": 139.44,
+   "text": "for powering devices such as generators, motors,"
+  },
+  {
+   "start": 139.86,
+   "end": 143.04,
+   "text": "and transformers, because you can calculate"
+  },
+  {
+   "start": 143.04,
+   "end": 146.8,
+   "text": "motion when it's converted to electricity, or"
+  },
+  {
+   "start": 146.8,
+   "end": 147.36,
+   "text": "vice versa."
+  }
+ ],
+ "report": {
+  "key": "magnetism__magnetic_flux",
+  "title": "Magnetic Flux (IB/AP)",
+  "topicKey": "magnetism",
+  "duration": 150.3146875,
+  "cues": 39,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.12563667032453749,
+  "flagged": []
+ }
+}

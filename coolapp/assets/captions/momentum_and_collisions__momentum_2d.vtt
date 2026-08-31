@@ -1,0 +1,799 @@
+WEBVTT
+NOTE Momentum in 2D
+
+1
+00:00:01.460 --> 00:00:04.440
+One thing I really like about momentum is
+that
+
+2
+00:00:04.440 --> 00:00:07.560
+it uses a lot of math. And in this case,
+we
+
+3
+00:00:07.560 --> 00:00:10.540
+will be looking at a 2D momentum question
+that
+
+4
+00:00:10.540 --> 00:00:14.360
+mainly uses math and logic to be able to
+solve
+
+5
+00:00:14.360 --> 00:00:17.240
+it. Momentum is all about deriving
+equations,
+
+6
+00:00:17.240 --> 00:00:20.040
+as you guys probably saw in the previous
+two
+
+7
+00:00:20.040 --> 00:00:24.380
+examples. So in this case, a 2 kilogram
+puck
+
+8
+00:00:24.380 --> 00:00:28.160
+moving east at 4 metres per second, it
+would
+
+9
+00:00:28.160 --> 00:00:33.760
+be first good to draw a compass, so north,
+east,
+
+10
+00:00:34.340 --> 00:00:37.860
+south, west, at 4 metres per second
+collides
+
+11
+00:00:37.860 --> 00:00:42.520
+with a 0.3 kilogram puck moving north at
+2.5
+
+12
+00:00:42.520 --> 00:00:46.140
+metres per second on frictionless ice, so
+you
+
+13
+00:00:46.140 --> 00:00:48.360
+would probably need to use momentum. They
+stick
+
+14
+00:00:48.360 --> 00:00:51.660
+together after the collision. And that's
+good,
+
+15
+00:00:51.700 --> 00:00:54.300
+as we've seen before, because that means
+it's
+
+16
+00:00:54.300 --> 00:00:58.720
+an inelastic equation. And if it's
+inelastic,
+
+17
+00:01:00.040 --> 00:01:06.800
+elastic, that means that there will be one
+single
+
+18
+00:01:06.800 --> 00:01:09.620
+mass after. You can treat it as one single
+system
+
+19
+00:01:09.620 --> 00:01:12.980
+after they collide. Find the magnitude of
+the
+
+20
+00:01:12.980 --> 00:01:16.100
+final velocity and find the direction. So
+first,
+
+21
+00:01:16.200 --> 00:01:21.220
+let's do magnitude. We can map this out,
+for
+
+22
+00:01:21.220 --> 00:01:25.440
+example, a 0.2 kilogram puck moving east.
+
+23
+00:01:26.080 --> 00:01:29.580
+So let's say east is the x direction and
+north
+
+24
+00:01:29.580 --> 00:01:35.620
+is the y direction. If it's moving east at
+4.00
+
+25
+00:01:35.620 --> 00:01:40.840
+metres per second, and this puck is moving
+north,
+
+26
+00:01:42.300 --> 00:01:49.360
+0.300 kilograms, at 2.5 metres
+
+27
+00:01:49.360 --> 00:01:52.660
+per second, well, if they stick together,
+their
+
+28
+00:01:52.660 --> 00:01:57.660
+final velocity will be something along the
+lines
+
+29
+00:01:57.660 --> 00:02:01.060
+of this way. So, north of east.
+
+30
+00:02:02.280 --> 00:02:04.520
+And we want to find the magnitude of that.
+
+31
+00:02:05.700 --> 00:02:15.680
+So, if we treat north as
+
+32
+00:02:15.680 --> 00:02:18.280
+the y direction and we treat east as the x
+direction,
+
+33
+00:02:18.420 --> 00:02:21.740
+we can actually split the final vector
+into
+
+34
+00:02:21.740 --> 00:02:26.060
+two components. We can split it into the y
+component
+
+35
+00:02:26.060 --> 00:02:30.600
+and the x component. And this question is
+really
+
+36
+00:02:30.600 --> 00:02:33.180
+good, because you don't have to do
+anything
+
+37
+00:02:33.180 --> 00:02:36.800
+to this vector alone. We know that the y
+component
+
+38
+00:02:36.800 --> 00:02:39.580
+of this momentum is 0.
+
+39
+00:02:39.860 --> 00:02:43.740
+It's going completely towards the east
+axis.
+
+40
+00:02:44.100 --> 00:02:47.120
+So its y component is 0, but its x
+component
+
+41
+00:02:47.120 --> 00:02:49.140
+is whatever the momentum is.
+
+42
+00:02:49.140 --> 00:02:52.640
+So, let's call this puck A, let's call
+this
+
+43
+00:02:52.640 --> 00:03:00.040
+puck B. So the momentum of A in the y
+component
+
+44
+00:03:00.040 --> 00:03:06.120
+is mass times velocity in the y direction.
+
+45
+00:03:06.780 --> 00:03:08.960
+And since velocity in the y direction for
+puck
+
+46
+00:03:08.960 --> 00:03:12.180
+A is 0, that means that the momentum here
+is
+
+47
+00:03:12.180 --> 00:03:16.240
+0. However, in the x direction, the
+momentum
+
+48
+00:03:16.240 --> 00:03:20.280
+would be equal to mass times velocity in
+the
+
+49
+00:03:20.280 --> 00:03:22.800
+x direction. And the velocity in the x
+direction
+
+50
+00:03:22.800 --> 00:03:29.160
+is 4 metres per second. So, it's 0.2 times
+4.00
+
+51
+00:03:29.160 --> 00:03:32.440
+metres per second. It's kind of like
+kinematics
+
+52
+00:03:32.440 --> 00:03:36.120
+in a sense that you will have to be using
+trig
+
+53
+00:03:36.120 --> 00:03:40.360
+or splitting vectors into y and x
+components.
+
+54
+00:03:41.520 --> 00:03:48.440
+And you would get 0.8 kilograms metres per
+second.
+
+55
+00:03:50.200 --> 00:03:54.600
+And now we will do the same thing for the
+other
+
+56
+00:03:54.600 --> 00:04:02.050
+puck. Initially, sorry, P B, because this
+
+57
+00:04:02.050 --> 00:04:06.450
+is puck B. P B y, well it has a velocity
+in
+
+58
+00:04:06.450 --> 00:04:08.910
+the y direction, 2.5 metres per second.
+
+59
+00:04:08.910 --> 00:04:14.810
+So m v y, which is 0.300 times 2.5.
+
+60
+00:04:16.270 --> 00:04:24.570
+And that would be 0.75 kilograms
+
+61
+00:04:24.570 --> 00:04:26.990
+per metres per second.
+
+62
+00:04:27.890 --> 00:04:31.110
+On the other hand, the x component of this
+puck's
+
+63
+00:04:31.110 --> 00:04:33.230
+velocity, well it's not going left, it's
+not
+
+64
+00:04:33.230 --> 00:04:35.750
+going right, so the x component is 0.
+
+65
+00:04:35.750 --> 00:04:40.030
+m v x. So v x is 0, which means there's
+not
+
+66
+00:04:40.030 --> 00:04:42.730
+going to be momentum in the x direction.
+So
+
+67
+00:04:42.730 --> 00:04:45.210
+basically what I've done so far is I've
+looked
+
+68
+00:04:45.210 --> 00:04:47.930
+at the two pucks and I've split them into
+x
+
+69
+00:04:47.930 --> 00:04:52.370
+and y directions. Now we can calculate the
+total
+
+70
+00:04:52.370 --> 00:04:56.490
+momentum, or we can calculate the total
+momentum
+
+71
+00:04:56.490 --> 00:04:58.810
+in the x direction and the y direction.
+
+72
+00:04:58.810 --> 00:05:04.730
+The total momentum p final, I'll do this
+in
+
+73
+00:05:04.730 --> 00:05:11.870
+green, p final, let's call that, in the x
+
+74
+00:05:11.870 --> 00:05:15.730
+direction, will just be equal to p a x
+plus
+
+75
+00:05:15.730 --> 00:05:27.010
+p b x,
+
+76
+00:05:27.010 --> 00:05:30.270
+because there's no thing. So the total
+momentum
+
+77
+00:05:30.270 --> 00:05:34.250
+in the x direction is 0.8 kilograms metres
+per
+
+78
+00:05:34.250 --> 00:05:37.350
+second. Same thing for the final total
+momentum
+
+79
+00:05:37.350 --> 00:05:43.270
+in the y direction, p a y plus p b y,
+which
+
+80
+00:05:43.270 --> 00:05:45.710
+is 0 plus 0.75.
+
+81
+00:05:46.270 --> 00:05:50.390
+So this would be 0.75 kilograms per metres
+per
+
+82
+00:05:50.390 --> 00:05:55.930
+second. And that would be the momentum in
+the
+
+83
+00:05:55.930 --> 00:05:58.050
+x direction and the y direction. So
+knowing
+
+84
+00:05:58.050 --> 00:06:00.330
+the momentum in the x direction and the y
+direction,
+
+85
+00:06:00.590 --> 00:06:02.950
+we can actually calculate the speed,
+because
+
+86
+00:06:02.950 --> 00:06:05.810
+we know the mass. The mass of the system
+after
+
+87
+00:06:05.810 --> 00:06:09.330
+they stick together would be just a sum,
+0.200
+
+88
+00:06:09.330 --> 00:06:12.010
+plus 0.300.
+
+89
+00:06:12.010 --> 00:06:19.290
+So m total is 0.200 plus 0.300, which
+
+90
+00:06:19.290 --> 00:06:21.950
+is 0.500 kilograms.
+
+91
+00:06:23.610 --> 00:06:26.270
+And now let's calculate the speed in the x
+and
+
+92
+00:06:26.270 --> 00:06:34.260
+y direction, respectively. So we can do
+speed
+
+93
+00:06:34.260 --> 00:06:42.280
+final x is equal to momentum over mass, p
+
+94
+00:06:42.280 --> 00:06:47.480
+of f x over mass total mass, because p
+equals
+
+95
+00:06:47.480 --> 00:06:50.020
+m v, so we just rearrange that equation.
+
+96
+00:06:50.500 --> 00:06:54.520
+So you get 0.8 over 0.5, so you just
+multiply
+
+97
+00:06:54.520 --> 00:06:57.700
+it by two, and you get 1.6 metres per
+second
+
+98
+00:06:57.700 --> 00:07:02.560
+in the x direction. Same thing for the y.
+
+99
+00:07:03.140 --> 00:07:08.040
+The final y velocity would be equal to p f
+y
+
+100
+00:07:08.040 --> 00:07:10.880
+over m total.
+
+101
+00:07:11.560 --> 00:07:13.840
+And if you don't get what I'm doing, it's
+really
+
+102
+00:07:13.840 --> 00:07:16.480
+important to revisit or replay the video
+to
+
+103
+00:07:16.480 --> 00:07:18.760
+see what I did, because this is really,
+really
+
+104
+00:07:18.760 --> 00:07:22.040
+important. I basically split the vectors
+up.
+
+105
+00:07:22.440 --> 00:07:24.920
+And if you don't know how I did that, you
+probably
+
+106
+00:07:24.920 --> 00:07:26.740
+won't be understanding what I'm doing
+right
+
+107
+00:07:26.740 --> 00:07:30.480
+now. But if you do, this will be pretty
+straightforward
+
+108
+00:07:30.480 --> 00:07:36.120
+for you. 2.5 and it would be 1.5 metres
+per
+
+109
+00:07:36.120 --> 00:07:40.580
+second. And now we have basically
+everything
+
+110
+00:07:40.580 --> 00:07:44.060
+we need. This is now back to beginner
+vectors
+
+111
+00:07:44.060 --> 00:07:47.480
+and scalars. This is the final velocity we
+need.
+
+112
+00:07:47.480 --> 00:07:54.840
+We know that y velocity, v-final y, we
+know v
+
+113
+00:07:54.840 --> 00:08:00.440
+f x. So what we can do is we can bring
+v-final x
+
+114
+00:08:00.440 --> 00:08:03.300
+over here, like I've talked about in
+previous
+
+115
+00:08:03.300 --> 00:08:06.740
+units. You can bring this here, and you
+could
+
+116
+00:08:06.740 --> 00:08:09.200
+use Pythagorean theorem to calculate for
+the
+
+117
+00:08:09.200 --> 00:08:14.740
+final. So the final velocity is the square
+root
+
+118
+00:08:14.740 --> 00:08:18.160
+of 1.6 squared plus 1.5 squared.
+
+119
+00:08:18.620 --> 00:08:20.460
+And when you type that into the
+calculator,
+
+120
+00:08:21.780 --> 00:08:28.880
+it is 1.5 squared, 2.19, or
+
+121
+00:08:28.880 --> 00:08:34.260
+sig figs, 2.2. 2.2 metres per second.
+
+122
+00:08:34.740 --> 00:08:38.970
+And that will be the final answer for A.
+Now
+
+123
+00:08:38.970 --> 00:08:42.370
+for number 2, it's also pretty
+straightforward.
+
+124
+00:08:43.510 --> 00:08:46.950
+After we've solved the final velocity in
+both
+
+125
+00:08:46.950 --> 00:08:49.490
+the x direction and the y direction, we
+can
+
+126
+00:08:49.490 --> 00:08:52.910
+basically calculate the angle as well.
+Since
+
+127
+00:08:52.910 --> 00:08:57.370
+the question asks north of east, we want
+to
+
+128
+00:08:57.370 --> 00:09:00.010
+measure the angle relative to north. So we
+want
+
+129
+00:09:00.010 --> 00:09:03.070
+to measure, this would be north, so we
+want
+
+130
+00:09:03.070 --> 00:09:07.170
+to measure this angle. Now, when we
+measure
+
+131
+00:09:07.170 --> 00:09:10.730
+this angle, we will have to use tangent,
+because
+
+132
+00:09:10.730 --> 00:09:13.030
+we have v-final of y and v-final of x.
+
+133
+00:09:13.490 --> 00:09:16.650
+So let me just copy and paste this diagram
+over
+
+134
+00:09:16.650 --> 00:09:19.710
+down here, and I can edit it a bit.
+
+135
+00:09:20.530 --> 00:09:28.190
+Okay, so v-final of x, what we calculated,
+is 1.6
+
+136
+00:09:28.190 --> 00:09:31.690
+metres per second, and this is 1.5 metres
+per
+
+137
+00:09:31.690 --> 00:09:34.970
+second. And we want to find theta. Well,
+we
+
+138
+00:09:34.970 --> 00:09:39.050
+know that tan of theta is equal to
+opposite
+
+139
+00:09:39.050 --> 00:09:43.710
+over adjacent, so tan of theta equals 1.6
+over
+
+140
+00:09:43.710 --> 00:09:51.150
+1.5. And now we can just solve for theta.
+
+141
+00:09:51.590 --> 00:09:55.350
+And when we solve for theta, we have tan
+of
+
+142
+00:09:55.350 --> 00:09:58.450
+negative 1, 1.6 over 1.5.
+
+143
+00:09:59.450 --> 00:10:04.890
+And it would be 46.8 degrees.
+
+144
+00:10:06.010 --> 00:10:09.070
+So, relative to the north axis, theta
+would
+
+145
+00:10:09.070 --> 00:10:16.130
+be 46.8 degrees. So, if the vector
+
+146
+00:10:16.130 --> 00:10:19.170
+would look like this, this would be 46.8
+degrees,
+
+147
+00:10:19.830 --> 00:10:22.570
+and that would be our final answer.
+
+148
+00:10:23.330 --> 00:10:29.490
+Our direction would be north 46.8 degrees
+east.
+
+149
+00:10:31.710 --> 00:10:34.830
+And that's basically how you get the angle
+and
+
+150
+00:10:34.830 --> 00:10:38.330
+the velocity. So the final velocity vector
+ultimately,
+
+151
+00:10:38.470 --> 00:10:40.270
+this would be the answer to part b by the
+way,
+
+152
+00:10:40.530 --> 00:10:44.710
+but the final velocity vector would be 2.2
+metres
+
+153
+00:10:44.710 --> 00:10:50.190
+per second north 46.8 degrees east.
+
+154
+00:10:51.110 --> 00:10:56.470
+And that would be your final direction and
+velocity
+
+155
+00:10:56.470 --> 00:10:58.790
+of the puck system.
+
+156
+00:10:59.650 --> 00:11:02.490
+And that's how you solve 2D system
+equations.
+
+157
+00:11:02.770 --> 00:11:06.090
+You basically have to split the momentum
+into
+
+158
+00:11:06.090 --> 00:11:09.290
+x and y components, and then after you
+split
+
+159
+00:11:09.290 --> 00:11:12.050
+them, you can add them if they're
+inelastic,
+
+160
+00:11:12.450 --> 00:11:14.790
+or do your energy equation if they're
+inelastic.
+
+161
+00:11:14.790 --> 00:11:18.530
+And with those different components of
+your
+
+162
+00:11:18.530 --> 00:11:23.090
+momentums, you can calculate their x and y
+velocities.
+
+163
+00:11:23.290 --> 00:11:25.950
+And after that, it's just a matter of
+applying
+
+164
+00:11:25.950 --> 00:11:29.850
+what we've learned in the past to get the
+overall
+
+165
+00:11:29.850 --> 00:11:32.730
+velocity and the overall direction using
+tan.
+
+166
+00:11:33.370 --> 00:11:35.010
+Thank you for listening, and I hope you
+learned
+
+167
+00:11:35.010 --> 00:11:36.510
+something. Bye!

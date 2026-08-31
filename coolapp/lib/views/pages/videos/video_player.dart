@@ -7,11 +7,23 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/services/auth_service.dart';
+import 'package:coolapp/services/caption_loader.dart';
+import 'package:coolapp/widgets/transcript_panel.dart';
 import 'package:video_player/video_player.dart';
 import 'package:chewie/chewie.dart';
 
 class VideoPlayerScreen extends StatefulWidget {
-  const VideoPlayerScreen({super.key});
+  const VideoPlayerScreen({
+    super.key,
+    this.topicKey = '',
+    this.curriculumKey = '',
+  });
+
+  /// Identify the lesson so its caption file can be found. Empty when the
+  /// player is reached without route parameters, in which case captions are
+  /// simply unavailable.
+  final String topicKey;
+  final String curriculumKey;
 
   @override
   State<VideoPlayerScreen> createState() => _VideoPlayerScreenState();
@@ -24,6 +36,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   String stackedTitle = '';
   bool _isLoading = true;
   String? _errorMessage;
+  Subtitles? _captions;
 
   @override
   void initState() {
@@ -97,12 +110,37 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     _videoPlayerController =
         VideoPlayerController.networkUrl(Uri.parse(globals.videoLink));
 
+    // Null when this lesson has no caption file yet; Chewie then hides its
+    // captions toggle instead of showing an empty one.
+    _captions = await CaptionLoader.load(widget.topicKey, widget.curriculumKey);
+
     try {
       await _videoPlayerController.initialize();
       _chewieController = ChewieController(
         videoPlayerController: _videoPlayerController,
         autoPlay: false,
         looping: false,
+        subtitle: _captions,
+        // Off by default: captions cover the diagram the instructor is drawing,
+        // so let the student opt in via the toggle.
+        showSubtitles: false,
+        subtitleBuilder: (BuildContext context, dynamic subtitle) => Container(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+          margin: const EdgeInsets.only(bottom: 8),
+          decoration: BoxDecoration(
+            color: Colors.black.withValues(alpha: 0.72),
+            borderRadius: BorderRadius.circular(6),
+          ),
+          child: Text(
+            subtitle is String ? subtitle : subtitle.toString(),
+            textAlign: TextAlign.center,
+            style: GoogleFonts.roboto(
+              fontSize: 17,
+              height: 1.35,
+              color: Colors.white,
+            ),
+          ),
+        ),
         aspectRatio: _videoPlayerController.value.aspectRatio,
         playbackSpeeds: const [0.5, 1.0, 1.5, 2.0, 2.5],
         materialProgressColors: ChewieProgressColors(
@@ -239,6 +277,12 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                 child: _buildPlayer(),
               ),
             ),
+            if (!_isLoading && _errorMessage == null)
+              TranscriptPanel(
+                captions: _captions,
+                controller: _videoPlayerController,
+                isLight: globals.isLight,
+              ),
             if (globals.nextVideoTitle != 'last_one')
               Column(
                 children: [

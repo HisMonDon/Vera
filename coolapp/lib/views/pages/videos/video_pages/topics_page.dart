@@ -1,20 +1,6 @@
 import 'package:coolapp/views/pages/videos/not_logged_in.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/dynamics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electricity.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/electrostatics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/fluids.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/harmonics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/intro_to_physics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/kinematics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/light.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/magnetism.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/modern.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/momentum_and_collisions.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/optics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/other.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/rotational_motion.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal_physics.dart';
-import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/work_and_energy.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/topic_registry.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/video_catalog.dart';
 import 'package:coolapp/views/pages/videos/video_pages/courses_page.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
@@ -70,7 +56,6 @@ class _TopicsPageState extends State<TopicsPage> {
     required String label,
     required bool isEnabled,
   }) {
-    globals.courseTitle = '';
     return ElevatedButton.icon(
       icon: Icon(icon, size: 20, color: const Color.fromARGB(255, 15, 48, 40)),
       label: Text(
@@ -118,16 +103,15 @@ class _TopicsPageState extends State<TopicsPage> {
     );
   }
 
-  Widget _buildVideoButton(
-    String title,
-    String imagePath,
-    String description,
-    int index,
-    Widget videoPage,
-  ) {
+  Widget _buildVideoButton(TopicInfo topic, int index) {
     if (!globals.isLoggedIn && kIsWeb) {
       return NotLoggedIn(); //keep in mind that this js does the message in every single button
     }
+    final Widget Function()? pageBuilder = VideoCatalog.pageFor(topic.key);
+    // Covered by a test, so this should be unreachable; assert loudly in debug
+    // rather than silently dropping a topic out of the grid.
+    assert(pageBuilder != null, 'No page registered for topic "${topic.key}"');
+    if (pageBuilder == null) return const SizedBox.shrink();
     bool isHovered = hoveredStates[index] ?? false;
     return MouseRegion(
       onEnter: (_) => setState(() => hoveredStates[index] = true),
@@ -155,7 +139,7 @@ class _TopicsPageState extends State<TopicsPage> {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (_) => videoPage),
+                MaterialPageRoute(builder: (_) => pageBuilder()),
               );
             },
             child: Container(
@@ -174,7 +158,7 @@ class _TopicsPageState extends State<TopicsPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    title,
+                    topic.name,
                     style: GoogleFonts.montserrat(
                       fontSize: 26,
                       fontWeight: FontWeight.w700,
@@ -198,7 +182,7 @@ class _TopicsPageState extends State<TopicsPage> {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(8),
                     child: Image(
-                      image: AssetImage(imagePath),
+                      image: AssetImage(topic.imageAsset),
                       fit: BoxFit.cover,
                       height: 200,
                       width: double.infinity,
@@ -206,7 +190,7 @@ class _TopicsPageState extends State<TopicsPage> {
                   ),
                   SizedBox(height: 16),
                   Text(
-                    description,
+                    topic.shortDescription,
                     style: GoogleFonts.roboto(
                       fontSize: 15,
                       color: Color(0xFFCCF7E3),
@@ -236,7 +220,7 @@ class _TopicsPageState extends State<TopicsPage> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (_) => videoPage),
+                          MaterialPageRoute(builder: (_) => pageBuilder()),
                         );
                       },
                     ),
@@ -252,120 +236,44 @@ class _TopicsPageState extends State<TopicsPage> {
   }
 
   Map<int, bool> hoveredStates = {};
-  List<Map<String, dynamic>> courseList = [
-    {
-      'title': 'Introduction to Physics',
-      'imagePath': 'images/intro_to_physics.jpg',
-      'description':
-          'Short topic explaining the introduction to physics, including vectors, velocity, and displacement',
-      'videoPage': IntroToPhysics(),
-    },
-    {
-      'title': 'Kinematics',
-      'imagePath': 'images/kinematics.jpg',
-      'description':
-          'Motion analysis, explore concepts such as displacement, velocity, acceleration, and time, and how to apply kinematic equations to describe motion in one and two dimensions.',
-      'videoPage': Kinematics(),
-    },
-    {
-      'title': 'Forces and Dynamics',
-      'imagePath': 'images/dynamics.jpg',
-      'description':
-          "Examine how forces influence motion through Newton's laws of motion. Concepts such as mass, weight, friction, tension, and normal force, learn how to analyze interactions between objects, use Free Body Diagrams",
-      'videoPage': Dynamics(),
-    },
-    {
-      'title': 'Work and Energy',
-      'imagePath': 'images/work_and_energy.jpg',
-      'description':
-          'Calculate work done by forces, analyze kinetic and potential energy transformations, and apply conservation of energy to solve complex physics problems',
-      'videoPage': WorkAndEnergy(),
-    },
-    {
-      'title': 'Electricity and Circuits',
-      'imagePath': 'images/electricity.jpg',
-      'description':
-          'Principles of electric phenomena, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits.',
-      'videoPage': Electricity(),
-    },
-    {
-      'title': 'Magnetism',
-      'imagePath': 'images/magnetism.jpg',
-      'description':
-          'Principles of magnetic phenomena, exploring concepts such as magnetic fields, forces on moving charges, electromagnetic induction, and applications of magnetism.',
-      'videoPage': Magnetism(),
-    },
-    {
-      'title': 'Momentum and Collisions',
-      'imagePath': 'images/momentum.jpg',
-      'description':
-          'Momentum, elastic and non-elastic collisions, and impulse',
-      'videoPage': MomentumAndCollisions(),
-    },
-    {
-      'title': 'Optics',
-      'imagePath': 'images/optics.png',
-      'description':
-          'Mirror and lens equations, analyze optical instruments, understand diffraction patterns and interference phenomena.',
-      'videoPage': Optics(),
-    },
-    {
-      'title': 'Light',
-      'imagePath': 'images/light.png',
-      'description':
-          'The study of light as electromagnetic radiation, its wave properties, diffraction, polarization, and interference patterns',
-      'videoPage': Light(),
-    },
-    {
-      'title': 'Fluids',
-      'imagePath': 'images/fluids.png',
-      'description':
-          'Hydrostatic pressure at different depths, analyze buoyant forces using Archimedes\' principle, apply Bernoulli\'s equation to fluid flow problems, and understand viscosity effects in real-world applications like blood flow and aerodynamics.',
-      'videoPage': Fluids(),
-    },
-    {
-      'title': 'Harmonics',
-      'imagePath': 'images/harmonics.jpg',
-      'description':
-          'Analyze simple harmonic motion equations, calculate periods of pendulums and spring systems, understand resonance conditions, solve damped oscillation problems, and model coupled oscillators in mechanical and electrical systems.',
-      'videoPage': Harmonics(),
-    },
-    {
-      'title': 'Electrostatics',
-      'imagePath': 'images/electrostatics.png',
-      'description':
-          'Electric fields and forces using Coulomb\'s law, analyze charge distributions, determine electric potential and energy, solve capacitor problems, and understand electric field mapping through equipotential surfaces.',
-      'videoPage': Electrostatics(),
-    },
-    {
-      'title': 'Rotational Motion',
-      'imagePath': 'images/rotational_motion.jpg',
-      'description':
-          'Angular velocity, torque calculations, moment of inertia for different shapes, angular momentum conservation, and rotational kinetic energy. Learn to solve problems with rotating objects and analyze gyroscopic motion.',
-      'videoPage': RotationalMotion(),
-    },
-    {
-      'title': 'Modern Physics and Quantum Mechanics',
-      'imagePath': 'images/modern_physics.jpg',
-      'description':
-          'Principles of modern physics, including special relativity, quantum mechanics, atomic structure, and nuclear physics. Understand wave-particle duality, the uncertainty principle, and applications of quantum theory in technology and research.',
-      'videoPage': Modern(),
-    },
-    {
-      'title': 'Thermal Physics',
-      'imagePath': 'images/thermal_physics.jpg',
-      'description':
-          'Study of heat, temperature, and thermodynamic laws. Calculate heat capacity, analyze phase changes, understand entropy, and solve problems involving thermodynamic cycles and efficiency.',
-      'videoPage': ThermalPhysics(),
-    },
-    {
-      'title': 'Other Physics Topics',
-      'imagePath': 'images/other.jpg',
-      'description':
-          'Additional physics topics including mathematical methods, measurement techniques, nuclear physics, astrophysics, and the relationship between physics and society',
-      'videoPage': Other(),
-    },
-  ];
+
+  /// The topics currently shown, in the current sort order.
+  ///
+  /// A working copy — never the registry list itself. The previous code sorted
+  /// its topic list in place, which permanently reordered the app and is the
+  /// reason a second hardcoded copy of the list existed just to restore
+  /// "Relevance".
+  List<TopicInfo> _topics = TopicRegistry.exploreTopics;
+
+  @override
+  void initState() {
+    super.initState();
+    // Entering the topic grid means we are no longer inside a course. This used
+    // to run inside a widget-builder helper, firing twice per rebuild.
+    globals.exitCourse();
+  }
+
+  /// Reorders [_topics]. Relevance re-derives from the registry rather than
+  /// restoring a hardcoded copy, so the three branches differ only in ordering.
+  void _applySort(String sortOption) {
+    setState(() {
+      final List<TopicInfo> sorted = List<TopicInfo>.of(
+        TopicRegistry.exploreTopics,
+      );
+      switch (sortOption) {
+        case 'Alphabetical (A-Z)':
+          sorted.sort((TopicInfo a, TopicInfo b) => a.name.compareTo(b.name));
+          break;
+        case 'Alphabetical (Z-A)':
+          sorted.sort((TopicInfo a, TopicInfo b) => b.name.compareTo(a.name));
+          break;
+        case 'Relevance':
+          // Registry order is the relevance order.
+          break;
+      }
+      _topics = sorted;
+    });
+  }
 
   List<String> sortBy = <String>[
     'Relevance',
@@ -375,146 +283,9 @@ class _TopicsPageState extends State<TopicsPage> {
   int sortIndex = 0;
   @override
   Widget build(BuildContext context) {
-    // add an immediate check in build method
-    String currentSortOption = sortBy[0];
-    globals.courseTitle = '';
     if (!globals.isLoggedIn && kIsWeb) {
       return NotLoggedIn();
     }
-    void sortCourseList(String sortOption) {
-      setState(() {
-        switch (sortOption) {
-          case 'Alphabetical (A-Z)':
-            courseList.sort(
-              (a, b) => (a['title'] as String).compareTo(b['title'] as String),
-            );
-            break;
-          case 'Alphabetical (Z-A)':
-            courseList.sort(
-              (a, b) => (b['title'] as String).compareTo(a['title'] as String),
-            );
-            break;
-          case 'Relevance':
-            courseList = [
-              {
-                'title': 'Introduction to Physics',
-                'imagePath': 'images/intro_to_physics.jpg',
-                'description':
-                    'Short topic explaining the introduction to physics, including vectors, velocity, and displacement',
-                'videoPage': IntroToPhysics(),
-              },
-              {
-                'title': 'Kinematics',
-                'imagePath': 'images/kinematics.jpg',
-                'description':
-                    'Motion analysis, explore concepts such as displacement, velocity, acceleration, and time, and how to apply kinematic equations to describe motion in one and two dimensions.',
-                'videoPage': Kinematics(),
-              },
-              {
-                'title': 'Forces and Dynamics',
-                'imagePath': 'images/dynamics.jpg',
-                'description':
-                    "Examine how forces influence motion through Newton's laws of motion. Concepts such as mass, weight, friction, tension, and normal force, learn how to analyze interactions between objects, use Free Body Diagrams",
-                'videoPage': Dynamics(),
-              },
-              {
-                'title': 'Work and Energy',
-                'imagePath': 'images/work_and_energy.jpg',
-                'description':
-                    'Calculate work done by forces, analyze kinetic and potential energy transformations, and apply conservation of energy to solve complex physics problems',
-                'videoPage': WorkAndEnergy(),
-              },
-              {
-                'title': 'Circuits and Electricity',
-                'imagePath': 'images/electricity.jpg',
-                'description':
-                    'Principles of electric phenomena, exploring concepts such as electric charge, electric fields, potential difference, current, resistance, and circuits. ',
-                'videoPage': Electricity(),
-              },
-              {
-                'title': 'Momentum and Collisions',
-                'imagePath': 'images/momentum.jpg',
-                'description':
-                    'Momentum, elastic and non-elastic collisions, and impulse',
-                'videoPage': MomentumAndCollisions(),
-              },
-              
-              {
-                'title': 'Magnetism',
-                'imagePath': 'images/magnetism.jpg',
-                'description':
-                    'Principles of magnetic phenomena, exploring concepts such as magnetic fields, forces on moving charges, electromagnetic induction, and applications of magnetism.',
-                'videoPage': Magnetism(),
-              },
-              {
-                'title': 'Optics',
-                'imagePath': 'images/optics.png',
-                'description':
-                    'Mirror and lens equations, analyze optical instruments. Calculate critical angles for total internal reflection and solve problems involving polarization.',
-                'videoPage': Optics(),
-              },
-              {
-                'title': 'Light',
-                'imagePath': 'images/light.png',
-                'description':
-                    'The study of light as electromagnetic radiation, its wave properties, diffraction, polarization, and interference patterns',
-                'videoPage': Light(),
-              },
-              {
-                'title': 'Fluids',
-                'imagePath': 'images/fluids.png',
-                'description':
-                    'Hydrostatic pressure at different depths, analyze buoyant forces using Archimedes\' principle, apply Bernoulli\'s equation to fluid flow problems, and understand viscosity effects in real-world applications like blood flow and aerodynamics.',
-                'videoPage': Fluids(),
-              },
-              {
-                'title': 'Harmonics',
-                'imagePath': 'images/harmonics.jpg',
-                'description':
-                    'Analyze simple harmonic motion equations, calculate periods of pendulums and spring systems, understand resonance conditions, solve damped oscillation problems, and model coupled oscillators in mechanical and electrical systems.',
-                'videoPage': Harmonics(),
-              },
-              {
-                'title': 'Electrostatics',
-                'imagePath': 'images/electrostatics.png',
-                'description':
-                    'Electric fields and forces using Coulomb\'s law, analyze charge distributions, determine electric potential and energy, solve capacitor problems, and understand electric field mapping through equipotential surfaces.',
-                'videoPage': Electrostatics(),
-              },
-              {
-                'title': 'Rotational Motion',
-                'imagePath': 'images/rotational_motion.jpg',
-                'description':
-                    'Angular velocity, torque calculations, moment of inertia for different shapes, angular momentum conservation, and rotational kinetic energy. Learn to solve problems with rotating objects and analyze gyroscopic motion.',
-                'videoPage': RotationalMotion(),
-              },
-              {
-                'title': 'Thermal Physics',
-                'imagePath': 'images/thermal_physics.jpg',
-                'description':
-                    'Study of heat, temperature, and thermodynamic laws. Calculate heat capacity, analyze phase changes, understand entropy, and solve problems involving thermodynamic cycles and efficiency.',
-                'videoPage': ThermalPhysics(),
-              },
-              {
-                'title': 'Modern Physics and Quantum Mechanics',
-                'imagePath': 'images/modern_physics.jpg',
-                'description':
-                    'Principles of modern physics, including special relativity, quantum mechanics, atomic structure, and nuclear physics. Understand wave-particle duality, the uncertainty principle, and applications of quantum theory in technology and research.',
-                'videoPage': Modern(),
-              },
-              {
-                'title': 'Other Physics Topics',
-                'imagePath': 'images/other.jpg',
-                'description':
-                    'Additional physics topics including mathematical methods, measurement techniques, nuclear physics, astrophysics, and the relationship between physics and society',
-                'videoPage': Other(),
-              },
-            ];
-            break;
-        }
-      });
-    }
-
     return Scaffold(
       appBar: TimedAppBar(),
       body: Container(
@@ -668,8 +439,7 @@ class _TopicsPageState extends State<TopicsPage> {
                                         if (value == null) return;
                                         sortIndex = sortBy.indexOf(value);
                                         setState(() {
-                                          currentSortOption = value;
-                                          sortCourseList(value);
+                                          _applySort(value);
                                         });
                                       },
                                       items:
@@ -709,15 +479,8 @@ class _TopicsPageState extends State<TopicsPage> {
                             context,
                             index,
                           ) {
-                            final course = courseList[index];
-                            return _buildVideoButton(
-                              course['title'] ?? '',
-                              course['imagePath'] ?? '',
-                              course['description'] ?? '',
-                              index,
-                              course['videoPage']!,
-                            );
-                          }, childCount: courseList.length),
+                            return _buildVideoButton(_topics[index], index);
+                          }, childCount: _topics.length),
                         ),
                       ),
                     ],

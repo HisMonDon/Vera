@@ -1,0 +1,335 @@
+{
+ "lesson": {
+  "topicKey": "modern_physics",
+  "curriculumKey": "photoelectric_effect",
+  "title": "The Photoelectric Effect and Wave-Particle Duality",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/modern_physics/Unit%203%20The%20Photoelectric%20Effect.mp4",
+  "source": "modern.dart"
+ },
+ "segments": [
+  {
+   "start": 0.88,
+   "end": 27.68,
+   "text": "In this video, we will be talking about the photoelectric effect. To understand this, it's very helpful to look at how light interacts with matter because we find out in this unit that light isn't just non-existent and not matter. Light is matter. It's made up of tiny particles called photons. So let's say we have a metal surface over here and we strike a beam of light through it.",
+   "avg_logprob": -0.07988101477886356
+  },
+  {
+   "start": 27.68,
+   "end": 54.54,
+   "text": "This light may result in some electrons being emitted out of the metal atoms. So in an experiment, you might see some electrons being emitted. I've explained that through here. Remember when I mentioned that there is an infinity energy level and that's when the electron is ejected? Some photons have enough energy to eject that.",
+   "avg_logprob": -0.09967070587855928
+  },
+  {
+   "start": 54.54,
+   "end": 69.82,
+   "text": "But before, when they were doing this experiment, we didn't know that. We just thought that if we had more photons, if we increase the number of photons or the intensity of the light, more electrons will be ejected.",
+   "avg_logprob": -0.07081393092870712
+  },
+  {
+   "start": 69.82,
+   "end": 85.34,
+   "text": "And obviously that wasn't the case. Light, if they kept it at the same frequency or kept the photons with the same amount of energy, no electrons would be ejected.",
+   "avg_logprob": -0.09469436987852439
+  },
+  {
+   "start": 85.34,
+   "end": 106.46,
+   "text": "Because even if trillions of electrons bombarded this, let's say, metal atom, if they don't have enough energy to make an electron jump from the first energy level all the way to infinity, then, well, it's not going to emit an electron.",
+   "avg_logprob": -0.07129302464033428
+  },
+  {
+   "start": 106.46,
+   "end": 124.12,
+   "text": "And we later realized it from Einstein's explanation. And scientists thought that light was only a wave. But based off of Einstein's explanation, we realized that light is actually matter. It behaves like photons.",
+   "avg_logprob": -0.10082492497232225
+  },
+  {
+   "start": 124.12,
+   "end": 136.52,
+   "text": "And that helped us understand a lot of things, such as in order to increase the amount of electrons being emitted from this metal surface, we are going to have to increase the frequency.",
+   "avg_logprob": -0.0989426636114353
+  },
+  {
+   "start": 139.2,
+   "end": 160.8,
+   "text": "Because this corresponds to energy up, and an increased energy per photon will result in more electrons emitted. And just increasing the number of electrons won't work.",
+   "avg_logprob": -0.18732192856924876
+  },
+  {
+   "start": 160.8,
+   "end": 168.76,
+   "text": "You actually have to increase the energy of these photons for more electrons to be emitted.",
+   "avg_logprob": -0.08021381084940263
+  },
+  {
+   "start": 169.38,
+   "end": 184.44,
+   "text": "And that's an overview of how we actually discovered quantum physics and how this experiment led to a whole new unit and a whole new sector of physics called modern physics.",
+   "avg_logprob": -0.08021381084940263
+  },
+  {
+   "start": 185.48,
+   "end": 189.42,
+   "text": "Thank you, and we'll see you in the next one. Bye!",
+   "avg_logprob": -0.15805029537942675
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.88,
+   "end": 3.4,
+   "text": "In this video, we will be talking about the"
+  },
+  {
+   "start": 3.4,
+   "end": 7.9,
+   "text": "photoelectric effect. To understand this, it's"
+  },
+  {
+   "start": 7.9,
+   "end": 10.56,
+   "text": "very helpful to look at how light interacts"
+  },
+  {
+   "start": 10.56,
+   "end": 13.42,
+   "text": "with matter because we find out in this unit"
+  },
+  {
+   "start": 13.42,
+   "end": 17.42,
+   "text": "that light isn't just non-existent and not matter."
+  },
+  {
+   "start": 17.58,
+   "end": 20.72,
+   "text": "Light is matter. It's made up of tiny particles"
+  },
+  {
+   "start": 20.72,
+   "end": 23.2,
+   "text": "called photons. So let's say we have a metal"
+  },
+  {
+   "start": 23.2,
+   "end": 26.7,
+   "text": "surface over here and we strike a beam of light"
+  },
+  {
+   "start": 26.7,
+   "end": 32.18,
+   "text": "through it. This light may result in some electrons"
+  },
+  {
+   "start": 32.18,
+   "end": 36.08,
+   "text": "being emitted out of the metal atoms."
+  },
+  {
+   "start": 36.44,
+   "end": 39.38,
+   "text": "So in an experiment, you might see some electrons"
+  },
+  {
+   "start": 39.38,
+   "end": 42.76,
+   "text": "being emitted. I've explained that through here."
+  },
+  {
+   "start": 43.94,
+   "end": 46.6,
+   "text": "Remember when I mentioned that there is an infinity"
+  },
+  {
+   "start": 46.6,
+   "end": 49.86,
+   "text": "energy level and that's when the electron is"
+  },
+  {
+   "start": 49.86,
+   "end": 53.88,
+   "text": "ejected? Some photons have enough energy to"
+  },
+  {
+   "start": 53.88,
+   "end": 56.48,
+   "text": "eject that. But before, when they were doing"
+  },
+  {
+   "start": 56.48,
+   "end": 58.44,
+   "text": "this experiment, we didn't know that. We just"
+  },
+  {
+   "start": 58.44,
+   "end": 63.1,
+   "text": "thought that if we had more photons, if we increase"
+  },
+  {
+   "start": 63.1,
+   "end": 66.36,
+   "text": "the number of photons or the intensity of the"
+  },
+  {
+   "start": 66.36,
+   "end": 69.82,
+   "text": "light, more electrons will be ejected."
+  },
+  {
+   "start": 69.82,
+   "end": 73.8,
+   "text": "And obviously that wasn't the case."
+  },
+  {
+   "start": 75.22,
+   "end": 79.14,
+   "text": "Light, if they kept it at the same frequency"
+  },
+  {
+   "start": 79.14,
+   "end": 82.66,
+   "text": "or kept the photons with the same amount of"
+  },
+  {
+   "start": 82.66,
+   "end": 85.34,
+   "text": "energy, no electrons would be ejected."
+  },
+  {
+   "start": 85.34,
+   "end": 90.32,
+   "text": "Because even if trillions of electrons bombarded"
+  },
+  {
+   "start": 90.32,
+   "end": 93.9,
+   "text": "this, let's say, metal atom, if they don't have"
+  },
+  {
+   "start": 93.9,
+   "end": 98.86,
+   "text": "enough energy to make an electron jump from"
+  },
+  {
+   "start": 98.86,
+   "end": 102.08,
+   "text": "the first energy level all the way to infinity,"
+  },
+  {
+   "start": 102.86,
+   "end": 106.46,
+   "text": "then, well, it's not going to emit an electron."
+  },
+  {
+   "start": 106.46,
+   "end": 112.3,
+   "text": "And we later realized it from Einstein's explanation."
+  },
+  {
+   "start": 113.2,
+   "end": 115.48,
+   "text": "And scientists thought that light was only a"
+  },
+  {
+   "start": 115.48,
+   "end": 119.62,
+   "text": "wave. But based off of Einstein's explanation,"
+  },
+  {
+   "start": 119.94,
+   "end": 122.8,
+   "text": "we realized that light is actually matter."
+  },
+  {
+   "start": 123.02,
+   "end": 125.1,
+   "text": "It behaves like photons. And that helped us"
+  },
+  {
+   "start": 125.1,
+   "end": 128.34,
+   "text": "understand a lot of things, such as in order"
+  },
+  {
+   "start": 128.34,
+   "end": 131.42,
+   "text": "to increase the amount of electrons being emitted"
+  },
+  {
+   "start": 131.42,
+   "end": 134.7,
+   "text": "from this metal surface, we are going to have"
+  },
+  {
+   "start": 134.7,
+   "end": 142.06,
+   "text": "to increase the frequency. Because this corresponds"
+  },
+  {
+   "start": 142.06,
+   "end": 148.72,
+   "text": "to energy up, and an increased energy per photon"
+  },
+  {
+   "start": 148.72,
+   "end": 153.62,
+   "text": "will result in more electrons emitted."
+  },
+  {
+   "start": 157.22,
+   "end": 160.3,
+   "text": "And just increasing the number of electrons"
+  },
+  {
+   "start": 160.3,
+   "end": 164.02,
+   "text": "won't work. You actually have to increase the"
+  },
+  {
+   "start": 164.02,
+   "end": 168.28,
+   "text": "energy of these photons for more electrons to"
+  },
+  {
+   "start": 168.28,
+   "end": 171.5,
+   "text": "be emitted. And that's an overview of how we"
+  },
+  {
+   "start": 171.5,
+   "end": 176.4,
+   "text": "actually discovered quantum physics and how"
+  },
+  {
+   "start": 176.4,
+   "end": 180.52,
+   "text": "this experiment led to a whole new unit and"
+  },
+  {
+   "start": 180.52,
+   "end": 183.98,
+   "text": "a whole new sector of physics called modern"
+  },
+  {
+   "start": 183.98,
+   "end": 188.14,
+   "text": "physics. Thank you, and we'll see you in the"
+  },
+  {
+   "start": 188.14,
+   "end": 189.42,
+   "text": "next one. Bye!"
+  }
+ ],
+ "report": {
+  "key": "modern_physics__photoelectric_effect",
+  "title": "The Photoelectric Effect and Wave-Particle Duality",
+  "topicKey": "modern_physics",
+  "duration": 190.4213125,
+  "cues": 49,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.18732192856924876,
+  "flagged": []
+ }
+}

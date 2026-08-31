@@ -1,0 +1,989 @@
+{
+ "lesson": {
+  "topicKey": "kinematics",
+  "curriculumKey": "motion_2d_part1",
+  "title": "2D Motion Analysis Part 1",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/Unit%202%202D%20Kinematics.mp4",
+  "source": "kinematics.dart"
+ },
+ "segments": [
+  {
+   "start": 2.13,
+   "end": 9.83,
+   "text": "After we learn 1D kinematics, the next step will obviously be to learn two-dimension kinematics.",
+   "avg_logprob": -0.11920243453072465
+  },
+  {
+   "start": 11.09,
+   "end": 17.95,
+   "text": "The difference is self-explanatory. You move from one dimension to two dimensions. But",
+   "avg_logprob": -0.11920243453072465
+  },
+  {
+   "start": 17.95,
+   "end": 23.91,
+   "text": "this time, we're actually going to be using a cool little trick to help us split the",
+   "avg_logprob": -0.11920243453072465
+  },
+  {
+   "start": 23.91,
+   "end": 31.05,
+   "text": "vectors into x and y components. Before, if the velocity was this way, it would be something",
+   "avg_logprob": -0.11920243453072465
+  },
+  {
+   "start": 31.05,
+   "end": 40.16,
+   "text": "like 5 metres per second to the right. But now that we have two dimensions, it can go",
+   "avg_logprob": -0.1633452928983248
+  },
+  {
+   "start": 40.16,
+   "end": 50.8,
+   "text": "either up or vertically or horizontally. So now a vector might look like this. And",
+   "avg_logprob": -0.1633452928983248
+  },
+  {
+   "start": 51.22,
+   "end": 59.64,
+   "text": "a question might say that a ball is launched with a velocity of, what, 5 metres per second",
+   "avg_logprob": -0.1633452928983248
+  },
+  {
+   "start": 59.64,
+   "end": 70.1,
+   "text": "with an angle of 30 degrees to the horizontal. And it has your magnitude and it has a direction.",
+   "avg_logprob": -0.173518981622613
+  },
+  {
+   "start": 70.44,
+   "end": 74.7,
+   "text": "We know the direction is 30 degrees to the horizontal, which means it's going this way.",
+   "avg_logprob": -0.173518981622613
+  },
+  {
+   "start": 74.7,
+   "end": 87.54,
+   "text": "And now what if the question asks, if the ball maintains its speed, its velocity,",
+   "avg_logprob": -0.1947875533785139
+  },
+  {
+   "start": 91.92,
+   "end": 109.35,
+   "text": "how far will it land? How far will it travel horizontally after 10 seconds? Now,",
+   "avg_logprob": -0.1947875533785139
+  },
+  {
+   "start": 109.35,
+   "end": 114.59,
+   "text": "what does this mean by how far will it travel horizontally? Well, let's say this is the path",
+   "avg_logprob": -0.0970423317269275
+  },
+  {
+   "start": 114.59,
+   "end": 119.87,
+   "text": "of the ball. Since there's no gravity or nothing else, it maintains its velocity. It's",
+   "avg_logprob": -0.0970423317269275
+  },
+  {
+   "start": 119.87,
+   "end": 125.75,
+   "text": "just going to keep going up. Let's just imagine that for the sake of this question. Now,",
+   "avg_logprob": -0.0970423317269275
+  },
+  {
+   "start": 127.39,
+   "end": 134.85,
+   "text": "we know that after 10 seconds, the distance it's going to travel is, let's say, x after 10",
+   "avg_logprob": -0.0970423317269275
+  },
+  {
+   "start": 134.85,
+   "end": 141.71,
+   "text": "seconds. But the question wants us to ask, wants us to solve its distance in terms of",
+   "avg_logprob": -0.10243529073066182
+  },
+  {
+   "start": 141.71,
+   "end": 146.91,
+   "text": "the horizontal. So we're not actually trying to solve for x. If we were, it would",
+   "avg_logprob": -0.10243529073066182
+  },
+  {
+   "start": 146.91,
+   "end": 153.25,
+   "text": "just be 5 times 10. But we're trying to solve for, let's call this y. We want",
+   "avg_logprob": -0.10243529073066182
+  },
+  {
+   "start": 153.25,
+   "end": 161.89,
+   "text": "to solve for the horizontal distance, not the total distance. So how do we do that?",
+   "avg_logprob": -0.10243529073066182
+  },
+  {
+   "start": 162.77,
+   "end": 171.17,
+   "text": "Well, we need to get the horizontal velocity. So let me give you this. If the ball is going",
+   "avg_logprob": -0.1058781932700764
+  },
+  {
+   "start": 173.11,
+   "end": 178.91,
+   "text": "this way, do you agree that there is going to be a motion of the ball that's going to the right?",
+   "avg_logprob": -0.1058781932700764
+  },
+  {
+   "start": 179.59,
+   "end": 184.67,
+   "text": "There will be. It's going here, which means it's going right. And do you also agree that",
+   "avg_logprob": -0.1058781932700764
+  },
+  {
+   "start": 184.67,
+   "end": 191.83,
+   "text": "there will be another component of the ball that is going up? Is the ball also going up as well",
+   "avg_logprob": -0.1058781932700764
+  },
+  {
+   "start": 191.83,
+   "end": 197.95,
+   "text": "as right? It is. It's both going up and right. So if we have the angle, we can actually",
+   "avg_logprob": -0.09428111733274257
+  },
+  {
+   "start": 197.95,
+   "end": 206.01,
+   "text": "calculate the speed at which it's going up and the speed at which it's going right.",
+   "avg_logprob": -0.09428111733274257
+  },
+  {
+   "start": 206.51,
+   "end": 212.49,
+   "text": "And we call that the x component and the y component. Let's first try to solve it.",
+   "avg_logprob": -0.09428111733274257
+  },
+  {
+   "start": 213.63,
+   "end": 220.21,
+   "text": "So if this is 30 degrees, and we know this is 5 meters per second, we want to calculate",
+   "avg_logprob": -0.09428111733274257
+  },
+  {
+   "start": 220.21,
+   "end": 225.87,
+   "text": "the distance it travels horizontally, which means we want to calculate the x component.",
+   "avg_logprob": -0.09909668124057877
+  },
+  {
+   "start": 226.93,
+   "end": 236.75,
+   "text": "Now, the x component is just 5 times cosine of 30. You can treat velocities as a triangle.",
+   "avg_logprob": -0.09909668124057877
+  },
+  {
+   "start": 237.65,
+   "end": 244.69,
+   "text": "If it makes it easier to visualize, I'll draw this out. So there's going to be this component,",
+   "avg_logprob": -0.09909668124057877
+  },
+  {
+   "start": 244.69,
+   "end": 253.45,
+   "text": "v of x, and this would be v of y. And v of x, you can treat it as a triangle, would just be equal",
+   "avg_logprob": -0.10783527406413904
+  },
+  {
+   "start": 255.87,
+   "end": 266.69,
+   "text": "to 5 cos 30 degrees, since cosine is adjacent over hypotenuse. So the adjacent would just be",
+   "avg_logprob": -0.10783527406413904
+  },
+  {
+   "start": 266.69,
+   "end": 273.39,
+   "text": "5 cos 30, which is v of x. Now, we don't need v of y. We only need v of x. And that means that",
+   "avg_logprob": -0.10783527406413904
+  },
+  {
+   "start": 275.55,
+   "end": 282.47,
+   "text": "that means that it's going to travel 5 cos 30 degrees horizontally every second, horizontally",
+   "avg_logprob": -0.10301048308610916
+  },
+  {
+   "start": 282.47,
+   "end": 291.33,
+   "text": "only. So now we basically have the question down. The answer would be distance equals",
+   "avg_logprob": -0.10301048308610916
+  },
+  {
+   "start": 291.33,
+   "end": 302.87,
+   "text": "velocity times time. And we know velocity is 5 cos 30 degrees times time, which is 10.",
+   "avg_logprob": -0.10301048308610916
+  },
+  {
+   "start": 303.74,
+   "end": 314.69,
+   "text": "So it would be 50 times root 3 over 3, I believe. So that, we know, would be equal to 50 root 3",
+   "avg_logprob": -0.09735540171655324
+  },
+  {
+   "start": 314.69,
+   "end": 324.17,
+   "text": "over 3 meters horizontally. So now we know that y is 50 root 3 over 3 meters.",
+   "avg_logprob": -0.09735540171655324
+  },
+  {
+   "start": 325.81,
+   "end": 334.45,
+   "text": "Now, let's say we wanted to calculate the distance traveled vertically. Let's call this not y,",
+   "avg_logprob": -0.15669494475189008
+  },
+  {
+   "start": 334.67,
+   "end": 345.39,
+   "text": "but let's call it z. Now, if we know x is 50, because 10 times 5 is 50, we can actually",
+   "avg_logprob": -0.15669494475189008
+  },
+  {
+   "start": 345.39,
+   "end": 350.53,
+   "text": "use the Pythagorean theorem to calculate z. That would be no problem. But let's try solving",
+   "avg_logprob": -0.15669494475189008
+  },
+  {
+   "start": 350.53,
+   "end": 358.77,
+   "text": "for v of y and confirming that it does work. So v of y is this one. So pause the video",
+   "avg_logprob": -0.09688620553597023
+  },
+  {
+   "start": 358.77,
+   "end": 366.5,
+   "text": "and think, what would be the formula for v of y? Well, we know v of y is the opposite",
+   "avg_logprob": -0.09688620553597023
+  },
+  {
+   "start": 366.5,
+   "end": 376.64,
+   "text": "of 30 degrees. So it would be 5 sine 30 degrees. And we can do that and you would",
+   "avg_logprob": -0.09688620553597023
+  },
+  {
+   "start": 376.64,
+   "end": 387.62,
+   "text": "get 2.5. Sine 30 is 1 over 2. Now, the distance would be v of y times t, which would be equal",
+   "avg_logprob": -0.13938469008395546
+  },
+  {
+   "start": 387.62,
+   "end": 396.6,
+   "text": "to 2.5 times 10, which would be equal to 25 meters. So we know that it travels horizontally",
+   "avg_logprob": -0.13938469008395546
+  },
+  {
+   "start": 396.6,
+   "end": 406.62,
+   "text": "25 meters. And this actually makes sense because, let me pull up my calculator real",
+   "avg_logprob": -0.22749909402235693
+  },
+  {
+   "start": 406.62,
+   "end": 419.62,
+   "text": "quick, because it is, ooh, sorry. This should be over 2 because cosine of 30 is over",
+   "avg_logprob": -0.22749909402235693
+  },
+  {
+   "start": 419.62,
+   "end": 432.54,
+   "text": "2, not over 3. Sorry, that's my bad. Okay. Now, let's use the Pythagorean theorem to",
+   "avg_logprob": -0.11095644696018635
+  },
+  {
+   "start": 432.54,
+   "end": 440.22,
+   "text": "confirm that this works. Well, we actually don't need it. We have a 30, 60, 90 triangle",
+   "avg_logprob": -0.11095644696018635
+  },
+  {
+   "start": 440.22,
+   "end": 445.88,
+   "text": "over here. If you didn't notice, it's 30 meters, 30 degrees directly to the horizontal.",
+   "avg_logprob": -0.11095644696018635
+  },
+  {
+   "start": 446.8,
+   "end": 453.48,
+   "text": "So it's a 1, 2, root 3 triangle. Is it? Well, here's our 1, here's our root 3, and here's",
+   "avg_logprob": -0.11748558467196435
+  },
+  {
+   "start": 453.48,
+   "end": 457.36,
+   "text": "our 2. So it does follow it. If you use the Pythagorean theorem, you'll find this",
+   "avg_logprob": -0.11748558467196435
+  },
+  {
+   "start": 457.36,
+   "end": 464.14,
+   "text": "exact same thing. So that basically confirms that we can split our velocity and calculate",
+   "avg_logprob": -0.11748558467196435
+  },
+  {
+   "start": 464.14,
+   "end": 472.36,
+   "text": "the distance and get the right answer. And that's basically all for using two-dimensional",
+   "avg_logprob": -0.11748558467196435
+  },
+  {
+   "start": 472.36,
+   "end": 479.88,
+   "text": "vectors. You can use the same thing for displacement, for acceleration. Just make sure that these",
+   "avg_logprob": -0.11928672837583643
+  },
+  {
+   "start": 479.88,
+   "end": 486.48,
+   "text": "are not separate velocities, but they're just part of the main velocity itself. And",
+   "avg_logprob": -0.11928672837583643
+  },
+  {
+   "start": 486.48,
+   "end": 492.66,
+   "text": "we use these to calculate horizontally or vertically, which can be useful in a lot of situations",
+   "avg_logprob": -0.11928672837583643
+  },
+  {
+   "start": 492.66,
+   "end": 497.98,
+   "text": "as you will see in the future. That's it for today's video, and we'll see you",
+   "avg_logprob": -0.11928672837583643
+  },
+  {
+   "start": 497.98,
+   "end": 499.16,
+   "text": "in the next one. Bye.",
+   "avg_logprob": -0.11928672837583643
+  }
+ ],
+ "cues": [
+  {
+   "start": 2.13,
+   "end": 5.63,
+   "text": "After we learn 1D kinematics, the next step"
+  },
+  {
+   "start": 5.63,
+   "end": 9.83,
+   "text": "will obviously be to learn two-dimension kinematics."
+  },
+  {
+   "start": 11.09,
+   "end": 13.43,
+   "text": "The difference is self-explanatory."
+  },
+  {
+   "start": 14.19,
+   "end": 17.09,
+   "text": "You move from one dimension to two dimensions."
+  },
+  {
+   "start": 17.73,
+   "end": 21.33,
+   "text": "But this time, we're actually going to be using"
+  },
+  {
+   "start": 21.33,
+   "end": 24.17,
+   "text": "a cool little trick to help us split the vectors"
+  },
+  {
+   "start": 24.17,
+   "end": 29.53,
+   "text": "into x and y components. Before, if the velocity"
+  },
+  {
+   "start": 29.53,
+   "end": 32.27,
+   "text": "was this way, it would be something like 5 metres"
+  },
+  {
+   "start": 32.27,
+   "end": 38.12,
+   "text": "per second to the right. But now that we have"
+  },
+  {
+   "start": 38.12,
+   "end": 43.02,
+   "text": "two dimensions, it can go either up or vertically"
+  },
+  {
+   "start": 43.02,
+   "end": 47.1,
+   "text": "or horizontally. So now a vector might look"
+  },
+  {
+   "start": 47.1,
+   "end": 54.08,
+   "text": "like this. And a question might say that a ball"
+  },
+  {
+   "start": 54.08,
+   "end": 58.84,
+   "text": "is launched with a velocity of, what, 5 metres"
+  },
+  {
+   "start": 58.84,
+   "end": 62.76,
+   "text": "per second with an angle of 30 degrees to the"
+  },
+  {
+   "start": 62.76,
+   "end": 69.32,
+   "text": "horizontal. And it has your magnitude and it"
+  },
+  {
+   "start": 69.32,
+   "end": 71.94,
+   "text": "has a direction. We know the direction is 30"
+  },
+  {
+   "start": 71.94,
+   "end": 74.12,
+   "text": "degrees to the horizontal, which means it's"
+  },
+  {
+   "start": 74.12,
+   "end": 78.1,
+   "text": "going this way. And now what if the question"
+  },
+  {
+   "start": 78.1,
+   "end": 85.76,
+   "text": "asks, if the ball maintains its"
+  },
+  {
+   "start": 85.76,
+   "end": 93.96,
+   "text": "speed, its velocity, how far"
+  },
+  {
+   "start": 93.96,
+   "end": 100.28,
+   "text": "will it land? How far will it travel horizontally"
+  },
+  {
+   "start": 102.29,
+   "end": 108.11,
+   "text": "after 10 seconds?"
+  },
+  {
+   "start": 108.97,
+   "end": 111.39,
+   "text": "Now, what does this mean by how far will it"
+  },
+  {
+   "start": 111.39,
+   "end": 114.13,
+   "text": "travel horizontally? Well, let's say this is"
+  },
+  {
+   "start": 114.13,
+   "end": 117.57,
+   "text": "the path of the ball. Since there's no gravity"
+  },
+  {
+   "start": 117.57,
+   "end": 119.59,
+   "text": "or nothing else, it maintains its velocity."
+  },
+  {
+   "start": 119.59,
+   "end": 121.95,
+   "text": "It's just going to keep going up. Let's just"
+  },
+  {
+   "start": 121.95,
+   "end": 123.71,
+   "text": "imagine that for the sake of this question."
+  },
+  {
+   "start": 125.59,
+   "end": 130.77,
+   "text": "Now, we know that after 10 seconds, the distance"
+  },
+  {
+   "start": 130.77,
+   "end": 134.55,
+   "text": "it's going to travel is, let's say, x after"
+  },
+  {
+   "start": 134.55,
+   "end": 138.01,
+   "text": "10 seconds. But the question wants us to ask,"
+  },
+  {
+   "start": 138.49,
+   "end": 142.27,
+   "text": "wants us to solve its distance in terms of the"
+  },
+  {
+   "start": 142.27,
+   "end": 144.69,
+   "text": "horizontal. So we're not actually trying to"
+  },
+  {
+   "start": 144.69,
+   "end": 147.49,
+   "text": "solve for x. If we were, it would just be 5"
+  },
+  {
+   "start": 147.49,
+   "end": 151.25,
+   "text": "times 10. But we're trying to solve for, let's"
+  },
+  {
+   "start": 151.25,
+   "end": 156.63,
+   "text": "call this y. We want to solve for the horizontal"
+  },
+  {
+   "start": 156.63,
+   "end": 161.49,
+   "text": "distance, not the total distance. So how do"
+  },
+  {
+   "start": 161.49,
+   "end": 165.39,
+   "text": "we do that? Well, we need to get the horizontal"
+  },
+  {
+   "start": 165.39,
+   "end": 168.61,
+   "text": "velocity. So let me give you this."
+  },
+  {
+   "start": 169.91,
+   "end": 174.91,
+   "text": "If the ball is going this way, do you agree"
+  },
+  {
+   "start": 174.91,
+   "end": 177.99,
+   "text": "that there is going to be a motion of the ball"
+  },
+  {
+   "start": 177.99,
+   "end": 180.11,
+   "text": "that's going to the right? There will be."
+  },
+  {
+   "start": 180.25,
+   "end": 182.85,
+   "text": "It's going here, which means it's going right."
+  },
+  {
+   "start": 183.47,
+   "end": 185.67,
+   "text": "And do you also agree that there will be another"
+  },
+  {
+   "start": 185.67,
+   "end": 189.47,
+   "text": "component of the ball that is going up?"
+  },
+  {
+   "start": 189.69,
+   "end": 192.21,
+   "text": "Is the ball also going up as well as right?"
+  },
+  {
+   "start": 192.33,
+   "end": 194.35,
+   "text": "It is. It's both going up and right."
+  },
+  {
+   "start": 195.15,
+   "end": 198.67,
+   "text": "So if we have the angle, we can actually calculate"
+  },
+  {
+   "start": 198.67,
+   "end": 203.25,
+   "text": "the speed at which it's going up and the speed"
+  },
+  {
+   "start": 203.25,
+   "end": 206.01,
+   "text": "at which it's going right."
+  },
+  {
+   "start": 206.51,
+   "end": 209.85,
+   "text": "And we call that the x component and the y component."
+  },
+  {
+   "start": 210.99,
+   "end": 214.89,
+   "text": "Let's first try to solve it. So if this is 30"
+  },
+  {
+   "start": 214.89,
+   "end": 218.23,
+   "text": "degrees, and we know this is 5 metres per second,"
+  },
+  {
+   "start": 219.05,
+   "end": 221.55,
+   "text": "we want to calculate the distance it travels"
+  },
+  {
+   "start": 221.55,
+   "end": 224.73,
+   "text": "horizontally, which means we want to calculate"
+  },
+  {
+   "start": 224.73,
+   "end": 231.29,
+   "text": "the x component. Now, the x component is just"
+  },
+  {
+   "start": 231.29,
+   "end": 233.59,
+   "text": "5 times cosine of 30."
+  },
+  {
+   "start": 234.05,
+   "end": 236.75,
+   "text": "You can treat velocities as a triangle."
+  },
+  {
+   "start": 237.65,
+   "end": 241.25,
+   "text": "If it makes it easier to visualize, I'll draw"
+  },
+  {
+   "start": 241.25,
+   "end": 244.69,
+   "text": "this out. So there's going to be this component,"
+  },
+  {
+   "start": 244.69,
+   "end": 248.39,
+   "text": "v of x, and this would be v of y."
+  },
+  {
+   "start": 249.83,
+   "end": 252.19,
+   "text": "And v of x, you can treat it as a triangle,"
+  },
+  {
+   "start": 252.31,
+   "end": 259.61,
+   "text": "would just be equal to 5 cos 30 degrees,"
+  },
+  {
+   "start": 259.93,
+   "end": 263.91,
+   "text": "since cosine is adjacent over hypotenuse."
+  },
+  {
+   "start": 264.83,
+   "end": 267.85,
+   "text": "So the adjacent would just be 5 cos 30, which"
+  },
+  {
+   "start": 267.85,
+   "end": 269.97,
+   "text": "is v of x. Now, we don't need v of y."
+  },
+  {
+   "start": 270.43,
+   "end": 275.97,
+   "text": "We only need v of x. And that means that that"
+  },
+  {
+   "start": 275.97,
+   "end": 279.97,
+   "text": "means that it's going to travel 5 cos 30 degrees"
+  },
+  {
+   "start": 279.97,
+   "end": 283.29,
+   "text": "horizontally every second, horizontally only."
+  },
+  {
+   "start": 284.15,
+   "end": 287.19,
+   "text": "So now we basically have the question down."
+  },
+  {
+   "start": 288.21,
+   "end": 292.01,
+   "text": "The answer would be distance equals velocity"
+  },
+  {
+   "start": 292.01,
+   "end": 298.27,
+   "text": "times time. And we know velocity is 5 cos 30"
+  },
+  {
+   "start": 298.27,
+   "end": 302.87,
+   "text": "degrees times time, which is 10."
+  },
+  {
+   "start": 303.74,
+   "end": 308.57,
+   "text": "So it would be 50 times root 3 over 3, I believe."
+  },
+  {
+   "start": 309.47,
+   "end": 313.99,
+   "text": "So that, we know, would be equal to 50 root"
+  },
+  {
+   "start": 313.99,
+   "end": 319.63,
+   "text": "3 over 3 metres horizontally."
+  },
+  {
+   "start": 319.81,
+   "end": 324.17,
+   "text": "So now we know that y is 50 root 3 over 3 metres."
+  },
+  {
+   "start": 325.81,
+   "end": 329.21,
+   "text": "Now, let's say we wanted to calculate the distance"
+  },
+  {
+   "start": 329.21,
+   "end": 332.51,
+   "text": "traveled vertically."
+  },
+  {
+   "start": 332.87,
+   "end": 335.95,
+   "text": "Let's call this not y, but let's call it z."
+  },
+  {
+   "start": 337.39,
+   "end": 342.61,
+   "text": "Now, if we know x is 50, because 10 times 5"
+  },
+  {
+   "start": 342.61,
+   "end": 347.19,
+   "text": "is 50, we can actually use the Pythagorean theorem"
+  },
+  {
+   "start": 347.19,
+   "end": 349.53,
+   "text": "to calculate z. That would be no problem. But"
+  },
+  {
+   "start": 349.53,
+   "end": 352.05,
+   "text": "let's try solving for v of y and confirming"
+  },
+  {
+   "start": 352.05,
+   "end": 354.17,
+   "text": "that it does work."
+  },
+  {
+   "start": 355.49,
+   "end": 358.95,
+   "text": "So v of y is this one. So pause the video and"
+  },
+  {
+   "start": 358.95,
+   "end": 361.77,
+   "text": "think, what would be the formula for v of y?"
+  },
+  {
+   "start": 363.74,
+   "end": 367.74,
+   "text": "Well, we know v of y is the opposite of 30 degrees."
+  },
+  {
+   "start": 368.08,
+   "end": 372.48,
+   "text": "So it would be 5 sine 30 degrees."
+  },
+  {
+   "start": 374.1,
+   "end": 377.52,
+   "text": "And we can do that and you would get 2.5."
+  },
+  {
+   "start": 377.84,
+   "end": 383.96,
+   "text": "Sine 30 is 1 over 2. Now, the distance would"
+  },
+  {
+   "start": 383.96,
+   "end": 388.66,
+   "text": "be v of y times t, which would be equal to 2.5"
+  },
+  {
+   "start": 388.66,
+   "end": 393.88,
+   "text": "times 10, which would be equal to 25 metres."
+  },
+  {
+   "start": 394.6,
+   "end": 398.44,
+   "text": "So we know that it travels horizontally 25 metres."
+  },
+  {
+   "start": 400.3,
+   "end": 405.5,
+   "text": "And this actually makes sense because, let me"
+  },
+  {
+   "start": 405.5,
+   "end": 411.82,
+   "text": "pull up my calculator real quick, because it"
+  },
+  {
+   "start": 411.82,
+   "end": 417.66,
+   "text": "is, ooh, sorry. This should be over 2 because"
+  },
+  {
+   "start": 417.66,
+   "end": 420.8,
+   "text": "cosine of 30 is over 2, not over 3."
+  },
+  {
+   "start": 421.46,
+   "end": 426.68,
+   "text": "Sorry, that's my bad. Okay."
+  },
+  {
+   "start": 428.2,
+   "end": 433.24,
+   "text": "Now, let's use the Pythagorean theorem to confirm"
+  },
+  {
+   "start": 433.24,
+   "end": 437.54,
+   "text": "that this works. Well, we actually don't need"
+  },
+  {
+   "start": 437.54,
+   "end": 441.12,
+   "text": "it. We have a 30, 60, 90 triangle over here."
+  },
+  {
+   "start": 441.4,
+   "end": 444.52,
+   "text": "If you didn't notice, it's 30 metres, 30 degrees"
+  },
+  {
+   "start": 444.52,
+   "end": 448.34,
+   "text": "directly to the horizontal. So it's a 1, 2,"
+  },
+  {
+   "start": 448.36,
+   "end": 451.2,
+   "text": "root 3 triangle. Is it? Well, here's our 1,"
+  },
+  {
+   "start": 451.76,
+   "end": 453.8,
+   "text": "here's our root 3, and here's our 2."
+  },
+  {
+   "start": 454.08,
+   "end": 456.52,
+   "text": "So it does follow it. If you use the Pythagorean"
+  },
+  {
+   "start": 456.52,
+   "end": 458.36,
+   "text": "theorem, you'll find this exact same thing."
+  },
+  {
+   "start": 459.16,
+   "end": 462.48,
+   "text": "So that basically confirms that we can split"
+  },
+  {
+   "start": 462.48,
+   "end": 466.24,
+   "text": "our velocity and calculate the distance and"
+  },
+  {
+   "start": 466.24,
+   "end": 470.72,
+   "text": "get the right answer. And that's basically all"
+  },
+  {
+   "start": 470.72,
+   "end": 472.98,
+   "text": "for using two-dimensional vectors."
+  },
+  {
+   "start": 474.68,
+   "end": 476.66,
+   "text": "You can use the same thing for displacement,"
+  },
+  {
+   "start": 476.96,
+   "end": 479.88,
+   "text": "for acceleration. Just make sure that these"
+  },
+  {
+   "start": 479.88,
+   "end": 482.18,
+   "text": "are not separate velocities, but they're just"
+  },
+  {
+   "start": 482.18,
+   "end": 485.9,
+   "text": "part of the main velocity itself."
+  },
+  {
+   "start": 486.32,
+   "end": 489.68,
+   "text": "And we use these to calculate horizontally or"
+  },
+  {
+   "start": 489.68,
+   "end": 492.16,
+   "text": "vertically, which can be useful in a lot of"
+  },
+  {
+   "start": 492.16,
+   "end": 495.54,
+   "text": "situations as you will see in the future. That's"
+  },
+  {
+   "start": 495.54,
+   "end": 498.18,
+   "text": "it for today's video, and we'll see you in the"
+  },
+  {
+   "start": 498.18,
+   "end": 499.16,
+   "text": "next one. Bye."
+  }
+ ],
+ "report": {
+  "key": "kinematics__motion_2d_part1",
+  "title": "2D Motion Analysis Part 1",
+  "topicKey": "kinematics",
+  "duration": 499.712,
+  "cues": 121,
+  "corrections": 6,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.22749909402235693,
+  "flagged": []
+ }
+}

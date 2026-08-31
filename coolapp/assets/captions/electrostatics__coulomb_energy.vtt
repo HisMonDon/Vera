@@ -1,0 +1,433 @@
+WEBVTT
+NOTE Example - Coulomb's Law and Energy
+
+1
+00:00:00.620 --> 00:00:03.180
+Hey guys, in this video I'll be telling
+you
+
+2
+00:00:03.180 --> 00:00:05.400
+how to do this AP Physics 2 question.
+
+3
+00:00:06.640 --> 00:00:10.900
+A small ball of mass 200 grams and charge
+60
+
+4
+00:00:10.900 --> 00:00:16.840
+mu coulombs, so this would be equal to 6.0
+times
+
+5
+00:00:16.840 --> 00:00:20.880
+10 to the negative 6 coulombs, this would
+be
+
+6
+00:00:20.880 --> 00:00:25.780
+0.2 kilograms, is initially suspended
+vertically
+
+7
+00:00:25.780 --> 00:00:28.420
+by a massless and inaccessible string of
+length
+
+8
+00:00:28.420 --> 00:00:30.780
+50 centimetres, which is 0.5 metres.
+
+9
+00:00:31.400 --> 00:00:34.640
+Sometime later, a strong uniform external
+electric
+
+10
+00:00:34.640 --> 00:00:37.380
+field, E, is switched on, and the ball
+swings
+
+11
+00:00:37.380 --> 00:00:39.680
+to a maximum height where the string makes
+a
+
+12
+00:00:39.680 --> 00:00:42.920
+45 degree angle with the vertical as shown
+in
+
+13
+00:00:42.920 --> 00:00:46.500
+the figure above, so theta equals 45
+degrees,
+
+14
+00:00:47.920 --> 00:00:50.360
+or pi over 4 radians.
+
+15
+00:00:51.460 --> 00:00:54.780
+So, first of all, what the question wants
+you
+
+16
+00:00:54.780 --> 00:00:58.080
+to do is find the gravitational potential
+energy
+
+17
+00:00:58.080 --> 00:01:01.720
+gained by the ball. So, the question asks
+you
+
+18
+00:01:01.720 --> 00:01:09.240
+for delta U. We know that delta U is force
+
+19
+00:01:09.240 --> 00:01:15.060
+times distance, force is mg, distance is
+delta
+
+20
+00:01:15.060 --> 00:01:18.500
+h, because we're talking about the
+gravitational
+
+21
+00:01:18.500 --> 00:01:24.630
+potential energy, and we need to find, we
+have
+
+22
+00:01:24.630 --> 00:01:28.510
+mass, we have gravity, we need to find
+delta
+
+23
+00:01:28.510 --> 00:01:33.850
+h. Delta h is the vertical distance gained
+by
+
+24
+00:01:33.850 --> 00:01:36.050
+the ball, so this would be delta h.
+
+25
+00:01:37.750 --> 00:01:41.710
+We know, let's call this side L, the
+length,
+
+26
+00:01:43.750 --> 00:01:50.860
+so this would be L. If this is L, then,
+
+27
+00:01:53.330 --> 00:01:56.550
+and this is 45 degrees, then this would
+also
+
+28
+00:01:56.550 --> 00:01:59.310
+be 45 degrees because these two are
+parallel,
+
+29
+00:02:00.710 --> 00:02:04.930
+and so therefore this side length would be
+considered
+
+30
+00:02:04.930 --> 00:02:07.970
+L times cosine of 45.
+
+31
+00:02:10.670 --> 00:02:18.120
+Now, L cosine 45 degrees plus
+
+32
+00:02:18.120 --> 00:02:24.380
+delta h would be equal to L, so delta h
+would
+
+33
+00:02:24.380 --> 00:02:29.940
+be equal to L minus L cosine of 45
+degrees,
+
+34
+00:02:30.960 --> 00:02:35.120
+delta h would be equal to L times 1 minus
+cosine
+
+35
+00:02:35.120 --> 00:02:42.310
+of 45 degrees. So, now
+
+36
+00:02:42.310 --> 00:02:44.850
+we have delta h, we have mass, we have
+gravity,
+
+37
+00:02:44.970 --> 00:02:47.850
+we can plug in the numbers, and this is
+really
+
+38
+00:02:47.850 --> 00:02:54.350
+easy to do. Mass would be 0.2, gravity
+9.81,
+
+39
+00:02:54.350 --> 00:03:00.530
+or 10, if you want, and then we have delta
+h,
+
+40
+00:03:00.970 --> 00:03:11.450
+L is 0.5, 50 centimetres is 0.5 metres, 1
+
+41
+00:03:11.450 --> 00:03:14.910
+minus cosine of 45 degrees.
+
+42
+00:03:15.310 --> 00:03:18.050
+This is root 2 over 2.
+
+43
+00:03:19.030 --> 00:03:24.390
+When you plug in all the numbers, 0.2, you
+would
+
+44
+00:03:24.390 --> 00:03:33.470
+get delta u g would be equal to 0.287
+
+45
+00:03:33.470 --> 00:03:37.250
+joules. That would be your final answer.
+
+46
+00:03:39.790 --> 00:03:41.850
+Okay, this is pretty straightforward.
+
+47
+00:03:43.510 --> 00:03:46.930
+Number b, using the law of conservation of
+energy,
+
+48
+00:03:47.750 --> 00:03:51.390
+this should be learned in AP Physics 1,
+find
+
+49
+00:03:51.390 --> 00:03:55.570
+the magnitude of the electric field, so we
+have
+
+50
+00:03:55.570 --> 00:03:57.570
+to find the magnitude, which is the
+absolute
+
+51
+00:03:57.570 --> 00:04:00.370
+value, and you can ignore air resistance.
+
+52
+00:04:02.090 --> 00:04:06.270
+So, the law of conservation of energy
+states
+
+53
+00:04:06.270 --> 00:04:15.030
+that the net work done is equal to the
+change
+
+54
+00:04:15.030 --> 00:04:20.240
+in energy of a system. So, the net
+external
+
+55
+00:04:20.240 --> 00:04:23.060
+work done would be the change in energy of
+the
+
+56
+00:04:23.060 --> 00:04:25.600
+system, which in this case, the system
+would
+
+57
+00:04:25.600 --> 00:04:30.700
+be the ball and it would be the Earth.
+
+58
+00:04:33.540 --> 00:04:38.740
+So, we know that the work would be equal
+to
+
+59
+00:04:38.740 --> 00:04:42.580
+force times distance. In this case, we're
+talking
+
+60
+00:04:42.580 --> 00:04:44.640
+about horizontal distance.
+
+61
+00:04:46.800 --> 00:04:53.360
+So, the force would be Fq, the force of
+the
+
+62
+00:04:53.360 --> 00:04:58.860
+electric field, times the horizontal
+distance,
+
+63
+00:04:59.840 --> 00:05:03.560
+here to here. This is really easy to
+calculate.
+
+64
+00:05:04.040 --> 00:05:10.760
+We know that this is L, so this length
+here,
+
+65
+00:05:10.800 --> 00:05:16.800
+this length here, would be L sine of 45
+degrees,
+
+66
+00:05:17.480 --> 00:05:27.610
+opposite over hypotenuse, or
+
+67
+00:05:27.610 --> 00:05:29.970
+pi over 4, if you're used to ratings.
+
+68
+00:05:30.770 --> 00:05:33.050
+Now, we know that the net energy done on
+the
+
+69
+00:05:33.050 --> 00:05:38.390
+system would be equal to the change in
+potential
+
+70
+00:05:38.390 --> 00:05:41.630
+energy plus the change in kinetic energy.
+
+71
+00:05:45.390 --> 00:05:50.550
+However, we see that over here, the ball
+is
+
+72
+00:05:50.550 --> 00:05:53.810
+not moving, so the kinetic energy would be
+equal
+
+73
+00:05:53.810 --> 00:05:58.110
+to zero. At the start, the ball is also
+not
+
+74
+00:05:58.110 --> 00:06:01.250
+moving, so kinetic energy is also equal to
+zero.
+
+75
+00:06:01.490 --> 00:06:06.290
+So, in this case, delta k would be equal
+to
+
+76
+00:06:06.290 --> 00:06:14.220
+zero. So, what we're left with is Fq
+
+77
+00:06:14.220 --> 00:06:20.420
+L sine of 45 degrees equals delta ug,
+which
+
+78
+00:06:20.420 --> 00:06:23.680
+we have calculated over here. The force is
+equal
+
+79
+00:06:23.680 --> 00:06:28.040
+to the charge times electric field. So,
+charge
+
+80
+00:06:28.040 --> 00:06:30.540
+times electric field, which is what we
+need
+
+81
+00:06:30.540 --> 00:06:38.340
+to solve here, and L sine 45 delta ug.
+
+82
+00:06:38.580 --> 00:06:40.900
+Isolate for the electric field.
+
+83
+00:06:41.820 --> 00:06:49.120
+So, E would be equal to delta ug over Q
+
+84
+00:06:49.120 --> 00:06:53.680
+times L sine of 45 degrees.
+
+85
+00:06:58.180 --> 00:07:06.480
+E would be equal to 0.287 over, we
+
+86
+00:07:06.480 --> 00:07:10.420
+know that the charge is 6.0 times 10 to
+the
+
+87
+00:07:10.420 --> 00:07:17.620
+negative 6 times 0.5
+
+88
+00:07:17.620 --> 00:07:22.800
+times root 2 over 2, which is sine of 45
+degrees.
+
+89
+00:07:24.080 --> 00:07:30.080
+When you plug this in, you will get around
+1.35
+
+90
+00:07:30.080 --> 00:07:34.900
+times 10 to the negative 5, and this is
+measured
+
+91
+00:07:34.900 --> 00:07:38.800
+in electric field, so it would be newtons
+per
+
+92
+00:07:38.800 --> 00:07:43.500
+coulomb. That would be your final answer.

@@ -1,0 +1,429 @@
+WEBVTT
+NOTE Total Internal Refraction
+
+1
+00:00:01.070 --> 00:00:03.710
+In this video, we will be talking about
+total
+
+2
+00:00:03.710 --> 00:00:12.210
+internal reflection. So,
+
+3
+00:00:13.650 --> 00:00:18.970
+as we have learned before, light refracts,
+and
+
+4
+00:00:18.970 --> 00:00:21.270
+it's going to bend towards the medium.
+
+5
+00:00:22.250 --> 00:00:26.370
+But there is a case when light goes from
+the
+
+6
+00:00:26.370 --> 00:00:29.310
+higher index medium to a lower index
+medium,
+
+7
+00:00:29.350 --> 00:00:32.230
+for example from this glass of water to
+air,
+
+8
+00:00:32.230 --> 00:00:37.470
+and the incident angle is so large that
+the
+
+9
+00:00:37.470 --> 00:00:42.170
+light reflects back. And that is because
+it
+
+10
+00:00:42.170 --> 00:00:44.890
+would require sine theta to be bigger than
+one,
+
+11
+00:00:45.530 --> 00:00:50.490
+which is impossible. So, there are two
+conditions
+
+12
+00:00:50.490 --> 00:00:54.890
+for total internal reflection. The first
+condition
+
+13
+00:00:54.890 --> 00:00:59.370
+is that the light must go from a higher
+medium
+
+14
+00:00:59.370 --> 00:01:15.940
+to a lower medium. The
+
+15
+00:01:15.940 --> 00:01:19.940
+second condition is that the incident
+angle
+
+16
+00:01:19.940 --> 00:01:22.020
+must be greater than the critical angle.
+
+17
+00:01:22.700 --> 00:01:26.620
+And the critical angle is the incident
+angle
+
+18
+00:01:26.620 --> 00:01:30.020
+that makes the reflected ray travel along
+the
+
+19
+00:01:30.020 --> 00:01:32.940
+boundary, which I will talk about later.
+
+20
+00:01:32.940 --> 00:01:35.360
+But all you need to know is that the
+incident
+
+21
+00:01:35.360 --> 00:01:38.440
+angle is bigger than the critical angle.
+
+22
+00:01:41.120 --> 00:01:43.440
+So, what does the critical angle mean?
+
+23
+00:01:44.920 --> 00:01:49.080
+Well, let's say you have light that
+reflects
+
+24
+00:01:49.080 --> 00:01:51.260
+towards the medium.
+
+25
+00:01:51.900 --> 00:01:56.880
+And it is so that an angle goes all the
+way
+
+26
+00:01:56.880 --> 00:02:00.080
+like this. And it's going to refract.
+
+27
+00:02:00.460 --> 00:02:02.960
+It's not going to go past. It's not going
+to
+
+28
+00:02:02.960 --> 00:02:06.220
+reflect. It's going to go exactly at the
+middle.
+
+29
+00:02:06.600 --> 00:02:10.240
+So basically, theta 2 in this case would
+be
+
+30
+00:02:10.240 --> 00:02:13.800
+equal to 90. Because this would be the
+medium.
+
+31
+00:02:14.380 --> 00:02:18.420
+And the critical angle is this angle over
+here.
+
+32
+00:02:18.620 --> 00:02:22.880
+That makes the theta 2 equal to 90.
+
+33
+00:02:25.230 --> 00:02:29.170
+And from Snell's law, we can actually
+derive
+
+34
+00:02:29.170 --> 00:02:34.150
+the critical angle. Because n1 sine theta
+critical,
+
+35
+00:02:34.750 --> 00:02:37.410
+which is what we want to find, will be
+equal
+
+36
+00:02:37.410 --> 00:02:40.190
+to n2 sine 90.
+
+37
+00:02:41.250 --> 00:02:45.350
+Because n2 is 90 when we have the critical
+angle.
+
+38
+00:02:46.050 --> 00:02:50.330
+So sine theta critical equals n2 over n1.
+
+39
+00:02:50.590 --> 00:02:57.310
+And sine 90 is just 1. And this is what we
+have.
+
+40
+00:02:57.310 --> 00:03:02.070
+Also, n1 must be greater than n2 because
+sine
+
+41
+00:03:02.070 --> 00:03:06.630
+theta can't be equal to more than 1.
+
+42
+00:03:08.950 --> 00:03:13.470
+And now, let's have a quick example about
+this
+
+43
+00:03:13.470 --> 00:03:17.890
+critical angle. If light travels from
+glass,
+
+44
+00:03:18.310 --> 00:03:21.690
+which typically has an index of refraction
+of
+
+45
+00:03:21.690 --> 00:03:26.150
+1.5, to air, which has an index of
+refraction
+
+46
+00:03:26.150 --> 00:03:32.430
+to 1.00, then the critical angle, sine of
+theta
+
+47
+00:03:32.430 --> 00:03:36.550
+critical, would just be equal to that of
+air
+
+48
+00:03:36.550 --> 00:03:40.190
+over that of glass. Because it's traveling
+from
+
+49
+00:03:40.190 --> 00:03:46.630
+air to glass. So it would be nA over nG,
+which
+
+50
+00:03:46.630 --> 00:03:52.310
+is 1 over 1.5, which is 0.667.
+
+51
+00:03:54.720 --> 00:04:00.600
+So when we solve it, sine theta C, equals
+0.667,
+
+52
+00:04:01.280 --> 00:04:06.240
+theta C would be equal to 41.8 degrees.
+
+53
+00:04:07.060 --> 00:04:10.180
+So that is our critical angle.
+
+54
+00:04:10.300 --> 00:04:14.960
+Our critical angle is 41.8 degrees here.
+
+55
+00:04:15.480 --> 00:04:18.180
+Since in order to have internal
+reflection,
+
+56
+00:04:18.880 --> 00:04:21.100
+theta 1 must be equal to the critical
+angle.
+
+57
+00:04:21.660 --> 00:04:26.320
+Any incident angle greater than 41.8
+degrees
+
+58
+00:04:26.320 --> 00:04:28.440
+will give total inflection.
+
+59
+00:04:29.860 --> 00:04:33.560
+So for example, if we copy this diagram
+and
+
+60
+00:04:33.560 --> 00:04:38.620
+we pretend this is our diagram, then in
+order
+
+61
+00:04:38.620 --> 00:04:44.740
+for this to occur, our critical angle
+would
+
+62
+00:04:44.740 --> 00:04:47.220
+need to be 41.8 degrees.
+
+63
+00:04:49.800 --> 00:04:54.000
+However, if we want it to reflect, then
+the
+
+64
+00:04:54.000 --> 00:04:57.960
+incident angle must be greater than 41.8
+degrees.
+
+65
+00:04:57.960 --> 00:05:02.760
+If we want it to refract, then it must be
+less
+
+66
+00:05:02.760 --> 00:05:07.200
+than 41.8 degrees. So we can know a lot of
+things
+
+67
+00:05:07.200 --> 00:05:09.620
+from the critical angle. If it's higher
+than
+
+68
+00:05:09.620 --> 00:05:12.340
+the critical angle, then total internal
+reflection
+
+69
+00:05:12.340 --> 00:05:14.860
+occurs. Otherwise, if it's lower than the
+critical
+
+70
+00:05:14.860 --> 00:05:16.880
+angle, it refracts.
+
+71
+00:05:17.260 --> 00:05:24.320
+So the key takeaways are that the
+
+72
+00:05:24.320 --> 00:05:27.760
+critical angle is when it doesn't refract
+nor
+
+73
+00:05:27.760 --> 00:05:34.360
+reflect. And also, be very, very familiar
+with
+
+74
+00:05:34.360 --> 00:05:37.820
+Snell's law because you're going to use it
+in
+
+75
+00:05:37.820 --> 00:05:40.480
+many, many different applications. And if
+you
+
+76
+00:05:40.480 --> 00:05:42.680
+forget something, you can always look at
+Snell's
+
+77
+00:05:42.680 --> 00:05:45.180
+law and you will probably remember it
+because
+
+78
+00:05:45.180 --> 00:05:48.060
+you can use numbers to try and figure
+things
+
+79
+00:05:48.060 --> 00:05:53.580
+out with this law. And yeah, total
+internal
+
+80
+00:05:53.580 --> 00:05:56.280
+reflection is also used in a lot of real
+world
+
+81
+00:05:56.280 --> 00:05:59.000
+applications, of course. You have to know
+this
+
+82
+00:05:59.000 --> 00:06:02.860
+for grade 10 science and IB, probably not
+AP,
+
+83
+00:06:03.240 --> 00:06:06.700
+but just know that some examples include
+fiber
+
+84
+00:06:06.700 --> 00:06:11.720
+optics, binoculars, and also it's what
+causes
+
+85
+00:06:11.720 --> 00:06:14.700
+the sparkle in a lot of jewels, such as
+diamonds,
+
+86
+00:06:15.120 --> 00:06:18.080
+because they have a very, very high index
+of
+
+87
+00:06:18.080 --> 00:06:22.640
+refraction. Which, in turn, gives small
+critical
+
+88
+00:06:22.640 --> 00:06:25.740
+angles. So light is easily reflected.
+
+89
+00:06:26.580 --> 00:06:28.940
+That's all for today's video and I hope
+you
+
+90
+00:06:28.940 --> 00:06:30.100
+enjoyed. Thank you!

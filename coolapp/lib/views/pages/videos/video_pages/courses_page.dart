@@ -6,6 +6,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_courses/grade_
 import 'package:coolapp/views/pages/videos/physics_videos/physics_courses/ib_physics_hl.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_courses/ib_physics_sl.dart';
 import 'package:coolapp/views/pages/videos/video_pages/topics_page.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/course_registry.dart';
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
@@ -107,13 +108,13 @@ class _CoursePageState extends State<CoursePage> {
     );
   }
 
-  Widget _buildVideoButton(
-    String title,
-    String imagePath,
-    String description,
-    int index,
-    Widget videoPage,
-  ) {
+  Widget _buildVideoButton(CourseInfo course, int index) {
+    final Widget Function()? pageBuilder = _coursePages[course.key];
+    assert(pageBuilder != null, 'No page registered for course "${course.key}"');
+    if (pageBuilder == null) return const SizedBox.shrink();
+    final String title = course.name;
+    final String imagePath = course.imageAsset;
+    final String description = course.description;
     if (!globals.isLoggedIn && kIsWeb) {
       return NotLoggedIn(); //keep in mind that this js does the message in every single button
     }
@@ -144,7 +145,7 @@ class _CoursePageState extends State<CoursePage> {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (_) => videoPage),
+                MaterialPageRoute(builder: (_) => pageBuilder()),
               );
             },
             child: Container(
@@ -225,7 +226,7 @@ class _CoursePageState extends State<CoursePage> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (_) => videoPage),
+                          MaterialPageRoute(builder: (_) => pageBuilder()),
                         );
                       },
                     ),
@@ -241,50 +242,18 @@ class _CoursePageState extends State<CoursePage> {
   }
 
   Map<int, bool> hoveredStates = {};
-  final List<Map<String, dynamic>> courseList = [
-    {
-      'title': 'IB Physics HL',
-      'imagePath': 'images/ib_physics_hl.jpg',
-      'description':
-          'Complete International Baccalaureate Higher Level physics curriculum with focus on experimental skills and data analysis.',
-      'videoPage': IbPhysicsHl(),
-    },
-    {
-      'title': 'IB Physics SL',
-      'imagePath': 'images/physicssl.png',
-      'description':
-          'Core International Baccalaureate Standard Level physics curriculum, building a strong foundation in key physics principles.',
-      'videoPage': IbPhysicsSl(),
-    },
-    {
-      'title': 'AP Physics 1',
-      'imagePath': 'images/ap_courses.jpg',
-      'description':
-          'Preparation videos for the AP Physics 1 exam covering kinematics, Newton\'s laws, circular motion, and simple harmonic oscillators.',
-      'videoPage': ApPhysics1(),
-    },
-    {
-      'title': 'AP Physics 2',
-      'imagePath': 'images/ap_physics_2.png',
-      'description':
-          'Algebra-based physics covering fluid mechanics, thermodynamics, electricity, magnetism, optics, and quantum phenomena',
-      'videoPage': ApPhysics2(),
-    },
-    {
-      'title': 'Grade 11 Physics',
-      'imagePath': 'images/physics_11.jpg',
-      'description':
-          'Videos and tutorials for the Grade 11 Physics Ontario curriculum.',
-      'videoPage': Grade11Physics(),
-    },
-    {
-      'title': 'Grade 12 Physics',
-      'imagePath': 'images/physics_12.jpg',
-      'description':
-          'Videos and tutorials for the Grade 12 Physics Ontario curriculum.',
-      'videoPage': Grade12Physics(),
-    },
-  ];
+  /// Course key -> page widget. Presentation (name, image, blurb) comes from
+  /// CourseRegistry, so a rename cannot desync the card from the filter table.
+  static const Map<String, Widget Function()> _coursePages =
+      <String, Widget Function()>{
+    CourseRegistry.ibPhysicsHl: IbPhysicsHl.new,
+    CourseRegistry.ibPhysicsSl: IbPhysicsSl.new,
+    CourseRegistry.apPhysics1: ApPhysics1.new,
+    CourseRegistry.apPhysics2: ApPhysics2.new,
+    CourseRegistry.grade11Physics: Grade11Physics.new,
+    CourseRegistry.grade12Physics: Grade12Physics.new,
+  };
+
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
@@ -394,15 +363,11 @@ class _CoursePageState extends State<CoursePage> {
                             context,
                             index,
                           ) {
-                            final course = courseList[index];
                             return _buildVideoButton(
-                              course['title'] ?? '',
-                              course['imagePath'] ?? '',
-                              course['description'] ?? '',
+                              CourseRegistry.all[index],
                               index,
-                              course['videoPage']!,
                             );
-                          }, childCount: courseList.length),
+                          }, childCount: CourseRegistry.all.length),
                         ),
                       ),
                     ],

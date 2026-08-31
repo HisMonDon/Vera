@@ -11,6 +11,7 @@ import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/thermal
 import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
+import 'package:coolapp/views/pages/videos/physics_videos/course_registry.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 //not done
@@ -22,6 +23,9 @@ class IbPhysicsHl extends StatefulWidget {
 }
 
 class _IbPhysicsHlState extends State<IbPhysicsHl> {
+  /// This page's course. Heading and filtering both derive from it.
+  static const String _courseKey = CourseRegistry.ibPhysicsHl;
+
   Widget _buildVideoButton(
     String title,
     String description,
@@ -237,7 +241,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    globals.courseTitle = 'IB Physics HL';
+    globals.enterCourse(_courseKey);
     globals.topicTitle = '';
     return Scaffold(
       appBar: TimedAppBar(),
@@ -289,7 +293,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
                           children: [
                             SizedBox(height: 10),
                             Text(
-                              "IB Physics HL",
+                              CourseRegistry.nameOf(_courseKey),
                               style: GoogleFonts.montserrat(
                                 fontSize: 28,
                                 fontWeight: FontWeight.bold,
@@ -344,7 +348,7 @@ class _IbPhysicsHlState extends State<IbPhysicsHl> {
                     ),
                   ),
                   onPressed: () {
-                    globals.courseTitle = '';
+                    globals.exitCourse();
                     Navigator.of(context).pop();
                   },
                 ),

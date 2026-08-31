@@ -1,0 +1,739 @@
+{
+ "lesson": {
+  "topicKey": "fluids",
+  "curriculumKey": "fluids_intro",
+  "title": "Introduction to Fluid Mechanics",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/intro%20to%20fluids.mp4",
+  "source": "fluids.dart"
+ },
+ "segments": [
+  {
+   "start": 1.87,
+   "end": 16.33,
+   "text": "In the previous lesson, we were introduced to fluids and we learned about fluid mechanics and how it was separated into both fluid dynamics and fluid dynamics.",
+   "avg_logprob": -0.17386016552731143
+  },
+  {
+   "start": 18.85,
+   "end": 29.23,
+   "text": "One thing I want to mention about last video that I forgot to mention is that the units for density are in kilograms.",
+   "avg_logprob": -0.17386016552731143
+  },
+  {
+   "start": 30.43,
+   "end": 47.87,
+   "text": "Oops. They are in kilograms per metres cubed. Or kilograms per metres cubed.",
+   "avg_logprob": -0.19889505499083063
+  },
+  {
+   "start": 48.11,
+   "end": 59.53,
+   "text": "Or if you're doing chemistry, which some of you might also be taking, it would be in kilograms because",
+   "avg_logprob": -0.19889505499083063
+  },
+  {
+   "start": 59.53,
+   "end": 70.65,
+   "text": "chemistry, usually you would use grams per decimetres cubed. Or grams per litre would also work because a decimetre cubed is also a litre.",
+   "avg_logprob": -0.14063597036831416
+  },
+  {
+   "start": 72.65,
+   "end": 89.07,
+   "text": "But we will be using kilograms per metre cubed. And pressure, they are measured in either kilopascals or atoms.",
+   "avg_logprob": -0.14063597036831416
+  },
+  {
+   "start": 90.47,
+   "end": 104.89,
+   "text": "PA, or, and this is just basically, what this is, is it's the atmospheric pressure at sea level is one atom.",
+   "avg_logprob": -0.23164263332173937
+  },
+  {
+   "start": 105.57,
+   "end": 109.25,
+   "text": "And kilopascals are another unit.",
+   "avg_logprob": -0.23164263332173937
+  },
+  {
+   "start": 111.33,
+   "end": 118.73,
+   "text": "101, I believe, kilopascals is equal to one atmospheric pressure.",
+   "avg_logprob": -0.15438338201873156
+  },
+  {
+   "start": 124.18,
+   "end": 135.48,
+   "text": "And for IB, another good thing to know, especially for chemistry, is there are certain conditions where you will be doing your calculations.",
+   "avg_logprob": -0.15438338201873156
+  },
+  {
+   "start": 136.54,
+   "end": 145.78,
+   "text": "This is standard temperature pressure conditions. And I'm telling you this because it's pretty useful to know ahead of time.",
+   "avg_logprob": -0.09214980807155371
+  },
+  {
+   "start": 146.82,
+   "end": 151.12,
+   "text": "Especially if you're like grade 9 or 10 and you haven't been introduced to the chemistry.",
+   "avg_logprob": -0.09214980807155371
+  },
+  {
+   "start": 151.68,
+   "end": 159.66,
+   "text": "So standard temperature pressure conditions are basically a set unit of conditions that you often use to make your calculations.",
+   "avg_logprob": -0.09214980807155371
+  },
+  {
+   "start": 159.66,
+   "end": 174.14,
+   "text": "And what this is, is pressure is equal to 100 kilopascals. Or if you're doing AP, it would be one atmospheric pressure.",
+   "avg_logprob": -0.14968087787137313
+  },
+  {
+   "start": 175.14,
+   "end": 185.8,
+   "text": "And temperature is zero degrees Celsius, or you could say 273.15 Kelvin if you like.",
+   "avg_logprob": -0.16076427830590143
+  },
+  {
+   "start": 186.98,
+   "end": 195.18,
+   "text": "And yeah, basically these are a set of conditions that are really useful to know ahead of time.",
+   "avg_logprob": -0.16076427830590143
+  },
+  {
+   "start": 195.18,
+   "end": 206.16,
+   "text": "Because you're going to have to use it anyways if you're going into IB, whether it's physics or chem, or maybe even mainstream as well.",
+   "avg_logprob": -0.10824032771734544
+  },
+  {
+   "start": 207.46,
+   "end": 214.26,
+   "text": "Anyways, today's lesson we are going to be starting buoyancy.",
+   "avg_logprob": -0.10824032771734544
+  },
+  {
+   "start": 215.14,
+   "end": 226.51,
+   "text": "So if you've ever tried to push in a beach, let's say a beach ball underwater, or it would start going up.",
+   "avg_logprob": -0.10824032771734544
+  },
+  {
+   "start": 226.51,
+   "end": 233.25,
+   "text": "Or if you swim, if you try to push one of those paddle boards or a pool buddy up, it would also go up.",
+   "avg_logprob": -0.12881253549346217
+  },
+  {
+   "start": 234.51,
+   "end": 244.85,
+   "text": "And this is governed by buoyancy. Anything below a liquid would have buoyancy, buoyant force.",
+   "avg_logprob": -0.12881253549346217
+  },
+  {
+   "start": 244.85,
+   "end": 259.11,
+   "text": "Or if you would say it more scientifically and you will learn later, anything that displaces volume from a liquid and has density would have a buoyant force acting on it.",
+   "avg_logprob": -0.1291466806179438
+  },
+  {
+   "start": 260.81,
+   "end": 274.37,
+   "text": "Um, yeah. So, first of all, why do some things sink? And why do some things float?",
+   "avg_logprob": -0.21787032043492352
+  },
+  {
+   "start": 274.37,
+   "end": 290.67,
+   "text": "Well, as you have learned, hopefully learned before, for a free body diagram, usually let's say you have a rock, there are two forces governing the motion of the rock.",
+   "avg_logprob": -0.118563616559619
+  },
+  {
+   "start": 290.83,
+   "end": 297.81,
+   "text": "In this case, the gravitational force and the buoyant force. Let's just call it FB.",
+   "avg_logprob": -0.118563616559619
+  },
+  {
+   "start": 298.79,
+   "end": 311.33,
+   "text": "If the net force is pointing down, if the gravitation, the magnitude of the gravitational force is bigger than the magnitude of the buoyant force, then it's going to sink.",
+   "avg_logprob": -0.11267680093033673
+  },
+  {
+   "start": 311.87,
+   "end": 319.33,
+   "text": "So we know that F net equals FB minus FG.",
+   "avg_logprob": -0.11267680093033673
+  },
+  {
+   "start": 320.21,
+   "end": 326.01,
+   "text": "If this is bigger and this is smaller, then this ball is going to sink.",
+   "avg_logprob": -0.11267680093033673
+  },
+  {
+   "start": 326.01,
+   "end": 333.73,
+   "text": "And if it's the other way around, if the buoyant force is larger and the gravitational force is smaller, then it's going to float.",
+   "avg_logprob": -0.0709039939844862
+  },
+  {
+   "start": 337.32,
+   "end": 344.88,
+   "text": "And what are the key determinants of buoyancy?",
+   "avg_logprob": -0.0709039939844862
+  },
+  {
+   "start": 344.88,
+   "end": 350.42,
+   "text": "Well, the buoyant force depends entirely on only two things.",
+   "avg_logprob": -0.09956337733471647
+  },
+  {
+   "start": 351.24,
+   "end": 373.18,
+   "text": "The density of the liquid, of the fluid, and the volume, the volume of the object that's submerged, or the volume displaced.",
+   "avg_logprob": -0.09956337733471647
+  },
+  {
+   "start": 375.62,
+   "end": 394.76,
+   "text": "And the buoyant force equation is the density of the fluid times gravity, times, or the acceleration of gravity, times the volume displaced.",
+   "avg_logprob": -0.15418577659875154
+  },
+  {
+   "start": 397.86,
+   "end": 410.58,
+   "text": "And this can be used to basically calculate it.",
+   "avg_logprob": -0.1659096676414296
+  },
+  {
+   "start": 410.68,
+   "end": 423.3,
+   "text": "So let's say if you have a ball underwater and the ball, you want to calculate whether it sinks or not.",
+   "avg_logprob": -0.1659096676414296
+  },
+  {
+   "start": 423.56,
+   "end": 428.44,
+   "text": "Let's say the ball has a radius of five. Let's make this bigger.",
+   "avg_logprob": -0.1659096676414296
+  },
+  {
+   "start": 429.56,
+   "end": 439.62,
+   "text": "Let's say the ball has a radius of five meters, or a sphere, let's say.",
+   "avg_logprob": -0.1584613411984545
+  },
+  {
+   "start": 439.88,
+   "end": 446.51,
+   "text": "Then the area would be five over two times five meters cubed.",
+   "avg_logprob": -0.1584613411984545
+  },
+  {
+   "start": 452.07,
+   "end": 452.81,
+   "text": "Times pi, sorry.",
+   "avg_logprob": -0.1584613411984545
+  },
+  {
+   "start": 452.81,
+   "end": 459.19,
+   "text": "And whatever you get would be your volume displaced.",
+   "avg_logprob": -0.18819868106108445
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.87,
+   "end": 5.63,
+   "text": "In the previous lesson, we were introduced to"
+  },
+  {
+   "start": 5.63,
+   "end": 9.87,
+   "text": "fluids and we learned about fluid mechanics"
+  },
+  {
+   "start": 9.87,
+   "end": 14.25,
+   "text": "and how it was separated into both fluid dynamics"
+  },
+  {
+   "start": 14.25,
+   "end": 16.33,
+   "text": "and fluid dynamics."
+  },
+  {
+   "start": 18.85,
+   "end": 21.89,
+   "text": "One thing I want to mention about last video"
+  },
+  {
+   "start": 21.89,
+   "end": 25.31,
+   "text": "that I forgot to mention is that the units for"
+  },
+  {
+   "start": 25.31,
+   "end": 29.23,
+   "text": "density are in kilograms."
+  },
+  {
+   "start": 30.43,
+   "end": 39.21,
+   "text": "Oops. They are in kilograms per"
+  },
+  {
+   "start": 39.21,
+   "end": 42.99,
+   "text": "metres cubed."
+  },
+  {
+   "start": 43.17,
+   "end": 47.87,
+   "text": "Or kilograms per metres cubed."
+  },
+  {
+   "start": 48.11,
+   "end": 51.91,
+   "text": "Or if you're doing chemistry, which some of"
+  },
+  {
+   "start": 51.91,
+   "end": 57.91,
+   "text": "you might also be taking, it would be in kilograms"
+  },
+  {
+   "start": 57.91,
+   "end": 62.15,
+   "text": "because chemistry, usually you would use grams"
+  },
+  {
+   "start": 62.15,
+   "end": 64.45,
+   "text": "per decimetres cubed."
+  },
+  {
+   "start": 65.33,
+   "end": 68.79,
+   "text": "Or grams per litre would also work because a"
+  },
+  {
+   "start": 68.79,
+   "end": 73.45,
+   "text": "decimetre cubed is also a litre. But we will"
+  },
+  {
+   "start": 73.45,
+   "end": 76.39,
+   "text": "be using kilograms per metre cubed."
+  },
+  {
+   "start": 80.03,
+   "end": 87.25,
+   "text": "And pressure, they are measured in either kilopascals"
+  },
+  {
+   "start": 87.25,
+   "end": 95.51,
+   "text": "or atoms. PA, or, and"
+  },
+  {
+   "start": 95.51,
+   "end": 99.89,
+   "text": "this is just basically, what this is, is it's"
+  },
+  {
+   "start": 99.89,
+   "end": 103.11,
+   "text": "the atmospheric pressure at sea level is one"
+  },
+  {
+   "start": 103.11,
+   "end": 109.25,
+   "text": "atom. And kilopascals are another unit."
+  },
+  {
+   "start": 111.33,
+   "end": 116.79,
+   "text": "101, I believe, kilopascals is equal to one"
+  },
+  {
+   "start": 116.79,
+   "end": 124.98,
+   "text": "atmospheric pressure. And"
+  },
+  {
+   "start": 124.98,
+   "end": 128.4,
+   "text": "for IB, another good thing to know, especially"
+  },
+  {
+   "start": 128.4,
+   "end": 131.86,
+   "text": "for chemistry, is there are certain conditions"
+  },
+  {
+   "start": 131.86,
+   "end": 135.48,
+   "text": "where you will be doing your calculations."
+  },
+  {
+   "start": 136.54,
+   "end": 139.44,
+   "text": "This is standard temperature pressure conditions."
+  },
+  {
+   "start": 141.28,
+   "end": 144.12,
+   "text": "And I'm telling you this because it's pretty"
+  },
+  {
+   "start": 144.12,
+   "end": 147.7,
+   "text": "useful to know ahead of time. Especially if"
+  },
+  {
+   "start": 147.7,
+   "end": 149.98,
+   "text": "you're like grade 9 or 10 and you haven't been"
+  },
+  {
+   "start": 149.98,
+   "end": 152.64,
+   "text": "introduced to the chemistry. So standard temperature"
+  },
+  {
+   "start": 152.64,
+   "end": 155.42,
+   "text": "pressure conditions are basically a set unit"
+  },
+  {
+   "start": 155.42,
+   "end": 159.16,
+   "text": "of conditions that you often use to make your"
+  },
+  {
+   "start": 159.16,
+   "end": 162.5,
+   "text": "calculations. And what this is, is pressure"
+  },
+  {
+   "start": 162.5,
+   "end": 165.98,
+   "text": "is equal to 100 kilopascals."
+  },
+  {
+   "start": 167.02,
+   "end": 173.58,
+   "text": "Or if you're doing AP, it would be one atmospheric"
+  },
+  {
+   "start": 173.58,
+   "end": 180.38,
+   "text": "pressure. And temperature is zero degrees Celsius,"
+  },
+  {
+   "start": 181.42,
+   "end": 185.8,
+   "text": "or you could say 273.15 Kelvin if you like."
+  },
+  {
+   "start": 186.98,
+   "end": 192.44,
+   "text": "And yeah, basically these are a set of conditions"
+  },
+  {
+   "start": 192.44,
+   "end": 195.18,
+   "text": "that are really useful to know ahead of time."
+  },
+  {
+   "start": 195.18,
+   "end": 200.18,
+   "text": "Because you're going to have to use it anyways"
+  },
+  {
+   "start": 200.18,
+   "end": 202.28,
+   "text": "if you're going into IB, whether it's physics"
+  },
+  {
+   "start": 202.28,
+   "end": 206.16,
+   "text": "or chem, or maybe even mainstream as well."
+  },
+  {
+   "start": 207.46,
+   "end": 211.44,
+   "text": "Anyways, today's lesson we are going to be starting"
+  },
+  {
+   "start": 211.44,
+   "end": 214.26,
+   "text": "buoyancy."
+  },
+  {
+   "start": 215.14,
+   "end": 218.92,
+   "text": "So if you've ever tried to push in a beach,"
+  },
+  {
+   "start": 219.16,
+   "end": 225.51,
+   "text": "let's say a beach ball underwater, or it would"
+  },
+  {
+   "start": 225.51,
+   "end": 228.19,
+   "text": "start going up. Or if you swim, if you try to"
+  },
+  {
+   "start": 228.19,
+   "end": 230.97,
+   "text": "push one of those paddle boards or a pool buddy"
+  },
+  {
+   "start": 230.97,
+   "end": 233.25,
+   "text": "up, it would also go up."
+  },
+  {
+   "start": 234.51,
+   "end": 238.95,
+   "text": "And this is governed by buoyancy."
+  },
+  {
+   "start": 239.21,
+   "end": 243.65,
+   "text": "Anything below a liquid would have buoyancy,"
+  },
+  {
+   "start": 244.15,
+   "end": 247.93,
+   "text": "buoyant force. Or if you would say it more scientifically"
+  },
+  {
+   "start": 247.93,
+   "end": 250.45,
+   "text": "and you will learn later, anything that displaces"
+  },
+  {
+   "start": 250.45,
+   "end": 256.67,
+   "text": "volume from a liquid and has density would have"
+  },
+  {
+   "start": 256.67,
+   "end": 259.11,
+   "text": "a buoyant force acting on it."
+  },
+  {
+   "start": 260.81,
+   "end": 263.09,
+   "text": "Um, yeah."
+  },
+  {
+   "start": 263.87,
+   "end": 270.99,
+   "text": "So, first of all, why do some things"
+  },
+  {
+   "start": 270.99,
+   "end": 274.37,
+   "text": "sink? And why do some things float?"
+  },
+  {
+   "start": 274.37,
+   "end": 279.71,
+   "text": "Well, as you have learned, hopefully learned"
+  },
+  {
+   "start": 279.71,
+   "end": 284.57,
+   "text": "before, for a free-body diagram, usually let's"
+  },
+  {
+   "start": 284.57,
+   "end": 289.43,
+   "text": "say you have a rock, there are two forces governing"
+  },
+  {
+   "start": 289.43,
+   "end": 293.73,
+   "text": "the motion of the rock. In this case, the gravitational"
+  },
+  {
+   "start": 293.73,
+   "end": 296.43,
+   "text": "force and the buoyant force."
+  },
+  {
+   "start": 296.53,
+   "end": 301.05,
+   "text": "Let's just call it FB. If the net force is pointing"
+  },
+  {
+   "start": 301.05,
+   "end": 304.01,
+   "text": "down, if the gravitation, the magnitude of the"
+  },
+  {
+   "start": 304.01,
+   "end": 309.37,
+   "text": "gravitational force is bigger than the magnitude"
+  },
+  {
+   "start": 309.37,
+   "end": 311.33,
+   "text": "of the buoyant force, then it's going to sink."
+  },
+  {
+   "start": 311.87,
+   "end": 319.33,
+   "text": "So we know that F net equals FB minus FG."
+  },
+  {
+   "start": 320.21,
+   "end": 324.51,
+   "text": "If this is bigger and this is smaller, then"
+  },
+  {
+   "start": 324.51,
+   "end": 327.15,
+   "text": "this ball is going to sink. And if it's the"
+  },
+  {
+   "start": 327.15,
+   "end": 329.79,
+   "text": "other way around, if the buoyant force is larger"
+  },
+  {
+   "start": 329.79,
+   "end": 332.95,
+   "text": "and the gravitational force is smaller, then"
+  },
+  {
+   "start": 332.95,
+   "end": 340.26,
+   "text": "it's going to float. And what are the"
+  },
+  {
+   "start": 340.26,
+   "end": 344.88,
+   "text": "key determinants of buoyancy?"
+  },
+  {
+   "start": 344.88,
+   "end": 349.3,
+   "text": "Well, the buoyant force depends entirely on"
+  },
+  {
+   "start": 349.3,
+   "end": 352.52,
+   "text": "only two things. The density of the liquid,"
+  },
+  {
+   "start": 356.5,
+   "end": 365.62,
+   "text": "of the fluid, and the volume, the"
+  },
+  {
+   "start": 365.62,
+   "end": 371.9,
+   "text": "volume of the object that's submerged, or the"
+  },
+  {
+   "start": 371.9,
+   "end": 379.0,
+   "text": "volume displaced. And the buoyant force"
+  },
+  {
+   "start": 379.0,
+   "end": 386.98,
+   "text": "equation is the density of the fluid times"
+  },
+  {
+   "start": 386.98,
+   "end": 391.6,
+   "text": "gravity, times, or the acceleration of gravity,"
+  },
+  {
+   "start": 391.98,
+   "end": 394.76,
+   "text": "times the volume displaced."
+  },
+  {
+   "start": 397.86,
+   "end": 404.94,
+   "text": "And this"
+  },
+  {
+   "start": 404.94,
+   "end": 410.58,
+   "text": "can be used to basically calculate it."
+  },
+  {
+   "start": 410.68,
+   "end": 417.82,
+   "text": "So let's say if you have a ball underwater and"
+  },
+  {
+   "start": 417.82,
+   "end": 422.78,
+   "text": "the ball, you want to calculate whether it sinks"
+  },
+  {
+   "start": 422.78,
+   "end": 426.88,
+   "text": "or not. Let's say the ball has a radius of five."
+  },
+  {
+   "start": 427.38,
+   "end": 431.36,
+   "text": "Let's make this bigger. Let's say the ball has"
+  },
+  {
+   "start": 431.36,
+   "end": 438.46,
+   "text": "a radius of five metres, or a"
+  },
+  {
+   "start": 438.46,
+   "end": 443.04,
+   "text": "sphere, let's say. Then the area would be five"
+  },
+  {
+   "start": 443.04,
+   "end": 446.51,
+   "text": "over two times five metres cubed."
+  },
+  {
+   "start": 452.07,
+   "end": 457.21,
+   "text": "Times pi, sorry. And whatever you get would"
+  },
+  {
+   "start": 457.21,
+   "end": 459.19,
+   "text": "be your volume displaced."
+  }
+ ],
+ "report": {
+  "key": "fluids__fluids_intro",
+  "title": "Introduction to Fluid Mechanics",
+  "topicKey": "fluids",
+  "duration": 473.2373125,
+  "cues": 95,
+  "corrections": 3,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.23164263332173937,
+  "flagged": []
+ }
+}

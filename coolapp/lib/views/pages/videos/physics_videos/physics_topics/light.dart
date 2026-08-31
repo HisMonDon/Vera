@@ -2,6 +2,7 @@ import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/views/pages/videos/physics_videos/curriculum_topic_filters.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/topic_registry.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/topic_widgets.dart';
 
 class Light extends StatefulWidget {
@@ -39,15 +40,19 @@ class Light extends StatefulWidget {
 }
 
 class _LightState extends State<Light> {
+  /// This page's topic. All display copy is looked up from it, so the
+  /// name here cannot disagree with Explore, the lesson page or the player.
+  static const String _topicKey = CurriculumTopicFilters.light;
+
   final double _width = 400;
   final double _height = 200;
   Map<int, bool> hoveredStates = {};
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    globals.topicTitle = 'Light';
+    globals.topicTitle = TopicRegistry.nameOf(_topicKey);
     final visibleVideos = CurriculumTopicFilters.filterUnits(
-      courseTitle: globals.courseTitle,
+      courseKey: globals.courseKey,
       topicKey: CurriculumTopicFilters.light,
       units: Light.videos,
     );
@@ -60,11 +65,10 @@ class _LightState extends State<Light> {
             children: [
               SizedBox(width: 2, height: 10),
               TopicWidgets.buildTopLayout(
-                title: globals.topicTitle,
+                title: TopicRegistry.nameOf(_topicKey),
                 context: context,
-                description:
-                    'The study of light as electromagnetic radiation, its wave properties, diffraction, polarization, and interference patterns',
-                topIcon: Icons.wb_sunny,
+                description: TopicRegistry.descriptionOf(_topicKey),
+                topIcon: TopicRegistry.byKey(_topicKey)!.icon,
               ),
               SizedBox(width: 2, height: 20),
               Column(

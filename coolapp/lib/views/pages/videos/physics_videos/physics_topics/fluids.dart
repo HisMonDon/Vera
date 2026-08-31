@@ -2,6 +2,7 @@ import 'package:coolapp/widgets/timed_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/views/pages/videos/physics_videos/curriculum_topic_filters.dart';
+import 'package:coolapp/views/pages/videos/physics_videos/topic_registry.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/physics_topics/topic_widgets.dart';
 
 class Fluids extends StatefulWidget {
@@ -60,15 +61,19 @@ class Fluids extends StatefulWidget {
 }
 
 class _FluidsState extends State<Fluids> {
+  /// This page's topic. All display copy is looked up from it, so the
+  /// name here cannot disagree with Explore, the lesson page or the player.
+  static const String _topicKey = CurriculumTopicFilters.fluids;
+
   final double _width = 400;
   final double _height = 200;
   Map<int, bool> hoveredStates = {};
   @override
   Widget build(BuildContext context) {
     // add an immediate check in build method
-    globals.topicTitle = 'Fluids';
+    globals.topicTitle = TopicRegistry.nameOf(_topicKey);
     final visibleVideos = CurriculumTopicFilters.filterUnits(
-      courseTitle: globals.courseTitle,
+      courseKey: globals.courseKey,
       topicKey: CurriculumTopicFilters.fluids,
       units: Fluids.videos,
     );
@@ -81,11 +86,10 @@ class _FluidsState extends State<Fluids> {
             children: [
               SizedBox(width: 2, height: 10),
               TopicWidgets.buildTopLayout(
-                title: globals.topicTitle,
+                title: TopicRegistry.nameOf(_topicKey),
                 context: context,
-                description:
-                    'The study of liquids and gases at rest and in motion, including pressure, buoyancy, and flow behavior',
-                topIcon: Icons.water_drop,
+                description: TopicRegistry.descriptionOf(_topicKey),
+                topIcon: TopicRegistry.byKey(_topicKey)!.icon,
               ),
               SizedBox(width: 2, height: 20),
               Column(

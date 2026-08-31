@@ -1,0 +1,532 @@
+WEBVTT
+NOTE 1D Motion Analysis
+
+1
+00:00:00.460 --> 00:00:03.200
+Hey guys, in this video, we will be
+starting
+
+2
+00:00:03.200 --> 00:00:06.000
+off with our first ever unit in physics,
+and
+
+3
+00:00:06.000 --> 00:00:10.040
+that is kinematics. So, first of all, what
+is
+
+4
+00:00:10.040 --> 00:00:12.880
+kinematics? Kinematics belongs to the
+stream
+
+5
+00:00:12.880 --> 00:00:17.420
+of physics of mechanics, which deals with
+the
+
+6
+00:00:17.420 --> 00:00:21.520
+motion of objects. For example, once we
+learn
+
+7
+00:00:21.520 --> 00:00:24.220
+kinematics, we'll be able to calculate a
+lot
+
+8
+00:00:24.220 --> 00:00:26.620
+of different motion, we'll learn the
+difference
+
+9
+00:00:26.620 --> 00:00:32.600
+between velocity, acceleration, and
+displacement
+
+10
+00:00:32.600 --> 00:00:37.180
+or position, and we'll be able to
+calculate
+
+11
+00:00:37.180 --> 00:00:39.960
+a lot of these questions. Let's first
+start
+
+12
+00:00:39.960 --> 00:00:44.260
+by reviewing velocity, displacement, and
+acceleration.
+
+13
+00:00:45.320 --> 00:00:48.600
+So, I'll be introducing velocity and
+acceleration,
+
+14
+00:00:49.060 --> 00:00:51.500
+and based on what we've learned in the
+past,
+
+15
+00:00:51.500 --> 00:00:57.800
+displacement, we know, is the change in
+position,
+
+16
+00:00:58.560 --> 00:01:02.820
+delta-x, which is equal to the final
+position
+
+17
+00:01:04.100 --> 00:01:06.580
+minus the initial position.
+
+18
+00:01:09.960 --> 00:01:12.280
+And keep in mind, in physics, when we use
+this
+
+19
+00:01:12.280 --> 00:01:16.960
+triangle, it represents delta, which means
+change
+
+20
+00:01:16.960 --> 00:01:19.760
+in, change in.
+
+21
+00:01:19.880 --> 00:01:22.400
+So, in this case, it would be change in x
+or
+
+22
+00:01:22.400 --> 00:01:28.260
+position. Now, since displacement is a
+vector,
+
+23
+00:01:29.060 --> 00:01:34.540
+it only accounts for the initial position
+and
+
+24
+00:01:34.540 --> 00:01:36.720
+the final position, it does not matter
+what
+
+25
+00:01:36.720 --> 00:01:39.960
+path you take. And that is the same thing
+for
+
+26
+00:01:39.960 --> 00:01:42.460
+velocity. Velocity.
+
+27
+00:01:44.330 --> 00:01:49.910
+Now, velocity is the displacement over a
+period
+
+28
+00:01:49.910 --> 00:01:53.710
+of time, sorry, the displacement over a
+period
+
+29
+00:01:53.710 --> 00:01:58.390
+of time. And delta-t means change in time.
+
+30
+00:02:01.480 --> 00:02:04.120
+Now, since we know that velocity is a
+vector,
+
+31
+00:02:05.100 --> 00:02:07.660
+that means that it has to have a position
+as
+
+32
+00:02:07.660 --> 00:02:13.710
+well, sorry, a direction as well. And
+since
+
+33
+00:02:13.710 --> 00:02:17.670
+we're dealing with 1D kinematics, usually
+it's
+
+34
+00:02:17.670 --> 00:02:20.430
+going to be on one dimension.
+
+35
+00:02:20.750 --> 00:02:26.110
+And let's say we have a cart, and this
+cart
+
+36
+00:02:26.110 --> 00:02:30.630
+moves to the right. Well then, right will
+be
+
+37
+00:02:30.630 --> 00:02:35.990
+the direction. For example, its velocity
+was
+
+38
+00:02:35.990 --> 00:02:38.150
+4 metres per second.
+
+39
+00:02:39.150 --> 00:02:42.290
+If the magnitude of the velocity was 4
+metres
+
+40
+00:02:42.290 --> 00:02:45.870
+per second, then the velocity would be
+depicted
+
+41
+00:02:45.870 --> 00:02:50.450
+as v equals 4 metres per second, right.
+
+42
+00:02:52.010 --> 00:02:55.830
+So make sure that for all of these, you
+have
+
+43
+00:02:55.830 --> 00:02:59.330
+to include a direction. Vectors always
+must
+
+44
+00:02:59.330 --> 00:03:02.670
+have a direction. Unless a question asks
+you
+
+45
+00:03:02.670 --> 00:03:06.230
+for the magnitude of the velocity or
+whatever
+
+46
+00:03:06.230 --> 00:03:09.330
+you're calculating, you must always state
+up,
+
+47
+00:03:09.590 --> 00:03:12.090
+down, right, north, and so on.
+
+48
+00:03:13.810 --> 00:03:18.530
+Another way of depicting direction is
+positive
+
+49
+00:03:18.530 --> 00:03:23.150
+or negative. And this usually is used only
+in
+
+50
+00:03:23.150 --> 00:03:25.590
+1D kinematics, not in 2D or 3D.
+
+51
+00:03:25.590 --> 00:03:29.510
+And this means that we're going to treat
+right
+
+52
+00:03:29.510 --> 00:03:32.390
+as a positive side and left as a negative
+side.
+
+53
+00:03:32.870 --> 00:03:36.150
+So let's say if we have this cart going
+this
+
+54
+00:03:36.150 --> 00:03:40.850
+way now at a speed of 3 metres per second,
+then
+
+55
+00:03:40.850 --> 00:03:44.490
+the new velocity, v new, would be equal
+to,
+
+56
+00:03:44.490 --> 00:03:47.870
+well, we're using sine as a direction, so
+it
+
+57
+00:03:47.870 --> 00:03:50.250
+would be negative 3 metres per second.
+
+58
+00:03:51.130 --> 00:03:54.650
+So usually right is positive and left is
+negative,
+
+59
+00:03:54.930 --> 00:03:57.070
+up is also positive, and down is negative.
+
+60
+00:03:59.660 --> 00:04:02.580
+Now, onto our next value.
+
+61
+00:04:04.360 --> 00:04:11.160
+We're going to have acceleration. So, you
+might
+
+62
+00:04:11.160 --> 00:04:14.600
+have heard of acceleration before, but
+you've
+
+63
+00:04:14.600 --> 00:04:18.500
+probably never actually known the formula
+for
+
+64
+00:04:18.500 --> 00:04:21.720
+this. You've probably known velocity, it's
+metres
+
+65
+00:04:21.720 --> 00:04:27.500
+per second. But acceleration is just
+delta-v
+
+66
+00:04:27.500 --> 00:04:34.560
+over delta-t. It's just how much velocity
+changes
+
+67
+00:04:34.560 --> 00:04:38.260
+over time. So basically it's the same
+thing
+
+68
+00:04:38.260 --> 00:04:43.340
+as delta-x over delta-t squared, if you
+sub
+
+69
+00:04:43.340 --> 00:04:45.380
+it in. And these both work.
+
+70
+00:04:45.780 --> 00:04:49.000
+It's basically the slope of the velocity,
+how
+
+71
+00:04:49.000 --> 00:04:51.040
+much the velocity changes over time.
+
+72
+00:04:51.980 --> 00:04:54.660
+So, if you think about it, if acceleration
+is
+
+73
+00:04:54.660 --> 00:04:59.520
+zero, then there still can be velocity.
+
+74
+00:05:00.540 --> 00:05:04.200
+But if acceleration is positive, velocity
+is
+
+75
+00:05:04.200 --> 00:05:08.300
+going to go up, and if acceleration is
+negative,
+
+76
+00:05:08.540 --> 00:05:15.100
+it's going to go down. So, now keep in
+mind
+
+77
+00:05:15.100 --> 00:05:17.400
+that acceleration also has a vector.
+
+78
+00:05:18.940 --> 00:05:21.920
+And let's say that we have a question for
+this
+
+79
+00:05:21.920 --> 00:05:25.520
+cart, or we have a question for this cart
+right
+
+80
+00:05:25.520 --> 00:05:32.400
+now. And at x equals 1, the cart starts
+off,
+
+81
+00:05:33.040 --> 00:05:40.720
+so we're going to have a cart. And
+
+82
+00:05:40.720 --> 00:05:48.440
+at x equals 5, the cart is at position x
+
+83
+00:05:48.440 --> 00:05:52.640
+equals 5, and it takes, let's say, 10
+seconds
+
+84
+00:05:52.640 --> 00:05:55.300
+for this cart to go from here to there.
+
+85
+00:05:56.680 --> 00:05:59.740
+And you want to calculate the velocity.
+
+86
+00:06:00.880 --> 00:06:04.500
+Well, let's first establish our
+directions.
+
+87
+00:06:04.500 --> 00:06:07.480
+If it's going from here to there, then
+it's
+
+88
+00:06:07.480 --> 00:06:09.280
+going in the positive direction. This is
+the
+
+89
+00:06:09.280 --> 00:06:11.300
+positive direction, this is the negative
+direction,
+
+90
+00:06:11.300 --> 00:06:14.320
+so the velocity will be positive.
+
+91
+00:06:15.700 --> 00:06:18.920
+We know that velocity is delta-x over
+delta
+
+92
+00:06:18.920 --> 00:06:21.380
+t, change in position over change in time.
+
+93
+00:06:21.940 --> 00:06:24.460
+So we can write that delta-x over delta-t.
+
+94
+00:06:24.960 --> 00:06:30.920
+We know that delta-t is 10. delta-x is the
+final
+
+95
+00:06:30.920 --> 00:06:33.760
+x position, 5 minus the initial.
+
+96
+00:06:34.100 --> 00:06:37.200
+Delta is always final minus initial. And
+you
+
+97
+00:06:37.200 --> 00:06:41.340
+would get 2 over 5 metres per second,
+don't
+
+98
+00:06:41.340 --> 00:06:45.240
+forget the positive as well. And that
+would
+
+99
+00:06:45.240 --> 00:06:51.140
+be the basics of how we calculate 1D
+kinematics.
+
+100
+00:06:53.000 --> 00:06:57.720
+So, now that's basically all for the
+introduction
+
+101
+00:06:57.720 --> 00:07:01.200
+of kinematics. We've learned about
+displacement,
+
+102
+00:07:01.360 --> 00:07:05.780
+acceleration, and velocity. And these are
+basically
+
+103
+00:07:05.780 --> 00:07:08.720
+the main things that we're going to be
+dealing
+
+104
+00:07:08.720 --> 00:07:12.080
+with in kinematics. There's really nothing
+other
+
+105
+00:07:12.080 --> 00:07:15.280
+than this in this unit itself that you're
+going
+
+106
+00:07:15.280 --> 00:07:19.420
+to have to know. And after we get into 2D
+kinematics,
+
+107
+00:07:19.620 --> 00:07:22.060
+which you'll find pretty similar, we're
+going
+
+108
+00:07:22.060 --> 00:07:24.840
+to be going over the formulae that we can
+use
+
+109
+00:07:24.840 --> 00:07:28.400
+to calculate a lot of these questions. But
+that's
+
+110
+00:07:28.400 --> 00:07:30.980
+it for this video, I hope you enjoyed, and
+we'll
+
+111
+00:07:30.980 --> 00:07:32.420
+see you in the next one. Bye!

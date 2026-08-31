@@ -1,0 +1,594 @@
+WEBVTT
+NOTE Pendulums
+
+1
+00:00:02.380 --> 00:00:05.640
+Today, we're studying pendulums, which are
+a
+
+2
+00:00:05.640 --> 00:00:08.340
+classic example of oscillations and
+periodic
+
+3
+00:00:08.340 --> 00:00:14.620
+motions, and a pendulum is basically a bob
+on
+
+4
+00:00:14.620 --> 00:00:19.660
+a string that goes back and forth, and to
+do
+
+5
+00:00:19.660 --> 00:00:24.140
+pendulum problems, we would probably need
+to
+
+6
+00:00:24.140 --> 00:00:27.760
+find the period, which is a really common
+question.
+
+7
+00:00:27.760 --> 00:00:31.680
+And what you'll see later is that the cool
+thing
+
+8
+00:00:31.680 --> 00:00:34.520
+about pendulum is that mass doesn't really
+affect
+
+9
+00:00:34.520 --> 00:00:38.420
+the period at all. What is a pendulum?
+
+10
+00:00:38.840 --> 00:00:46.120
+A simple pendulum needed is having a bob,
+which
+
+11
+00:00:46.120 --> 00:00:51.700
+is this small mass, let's call this a bob,
+attached
+
+12
+00:00:51.700 --> 00:00:56.450
+to a string of length L.
+
+13
+00:00:57.090 --> 00:00:59.970
+So this would have a length of L. And it's
+gonna
+
+14
+00:00:59.970 --> 00:01:02.990
+swing back and forth across a pivot.
+
+15
+00:01:04.450 --> 00:01:08.310
+Now, there are some key vocabulary you
+will
+
+16
+00:01:08.310 --> 00:01:15.170
+need. There is a period, or t, which is
+the
+
+17
+00:01:15.170 --> 00:01:20.650
+time it takes to complete one full
+oscillation.
+
+18
+00:01:20.650 --> 00:01:26.400
+To complete one.
+
+19
+00:01:28.040 --> 00:01:34.060
+So it's basically the same thing as a
+period
+
+20
+00:01:34.060 --> 00:01:40.680
+in trigonometry. The time, or the length
+of
+
+21
+00:01:40.680 --> 00:01:49.740
+x that it takes to have one full, you
+know,
+
+22
+00:01:51.700 --> 00:01:59.510
+rotation. And frequency is the number
+
+23
+00:01:59.510 --> 00:02:05.120
+of cycles per second. So if you think
+about
+
+24
+00:02:05.120 --> 00:02:10.260
+it, frequency is the same, basically the
+opposite
+
+25
+00:02:10.260 --> 00:02:13.220
+of period. Frequency is one over t.
+
+26
+00:02:13.660 --> 00:02:18.140
+Because period, we're measuring the time
+off
+
+27
+00:02:18.140 --> 00:02:21.200
+of the number of oscillations. And
+frequency,
+
+28
+00:02:21.220 --> 00:02:23.420
+we're measuring the number of oscillations
+off
+
+29
+00:02:23.420 --> 00:02:29.300
+of time. Now, what are the forces on a
+pendulum
+
+30
+00:02:29.300 --> 00:02:32.660
+ball? Well, when we map it out, we would
+have
+
+31
+00:02:32.660 --> 00:02:34.820
+the force of gravity.
+
+32
+00:02:36.120 --> 00:02:41.290
+We have the tension force, f t.
+
+33
+00:02:41.450 --> 00:02:43.990
+And that's basically all we have. The
+reason
+
+34
+00:02:43.990 --> 00:02:47.410
+why, in this case, the ball goes this way
+is
+
+35
+00:02:47.410 --> 00:02:50.570
+because of a component in the tension
+force,
+
+36
+00:02:50.690 --> 00:02:55.190
+the x component, that actually makes it
+go.
+
+37
+00:02:57.140 --> 00:03:01.200
+And that is called the tangential
+component.
+
+38
+00:03:02.900 --> 00:03:07.320
+So we call this tangential component.
+
+39
+00:03:09.860 --> 00:03:13.020
+And keep in mind that this is not a force,
+it's
+
+40
+00:03:13.020 --> 00:03:15.280
+just a component of the tension force.
+
+41
+00:03:17.480 --> 00:03:21.040
+Now, there is a key formula that you will
+have
+
+42
+00:03:21.040 --> 00:03:27.600
+to use. And this formula is t equals two
+pi
+
+43
+00:03:27.600 --> 00:03:30.160
+root l over g.
+
+44
+00:03:31.840 --> 00:03:36.540
+And basically what this says is that the
+period
+
+45
+00:03:36.540 --> 00:03:39.840
+is equal to two pi times the length over
+the
+
+46
+00:03:39.840 --> 00:03:43.560
+acceleration of gravity. However, there is
+one
+
+47
+00:03:43.560 --> 00:03:47.280
+key important thing to note, especially in
+experimental
+
+48
+00:03:47.280 --> 00:03:49.120
+physics when you're actually doing the
+lab,
+
+49
+00:03:49.640 --> 00:03:51.360
+and I'm sure your teachers will also
+stress
+
+50
+00:03:51.360 --> 00:03:55.060
+this as well. This formula approximates
+small
+
+51
+00:03:55.060 --> 00:04:02.320
+angle. So what that means is that this
+
+52
+00:04:02.320 --> 00:04:05.360
+formula only works when your angle is
+relatively
+
+53
+00:04:05.360 --> 00:04:07.560
+small, when theta is relatively small.
+
+54
+00:04:07.880 --> 00:04:10.840
+If it's large, when your theta is large,
+this
+
+55
+00:04:10.840 --> 00:04:13.740
+formula will probably not work. That's why
+when
+
+56
+00:04:13.740 --> 00:04:17.820
+doing experiments, try to set the pendulum
+off
+
+57
+00:04:17.820 --> 00:04:20.080
+at a relatively small arc.
+
+58
+00:04:21.440 --> 00:04:25.040
+Now, one other important thing to note is
+that
+
+59
+00:04:25.040 --> 00:04:29.420
+mass doesn't affect the period.
+
+60
+00:04:29.780 --> 00:04:32.420
+As you can see in this formula, you don't
+see
+
+61
+00:04:32.420 --> 00:04:35.560
+mass anywhere. The period only depends on
+the
+
+62
+00:04:35.560 --> 00:04:38.620
+length of the string, and of course
+gravity,
+
+63
+00:04:38.700 --> 00:04:41.260
+but that's really basically what planet
+you're
+
+64
+00:04:41.260 --> 00:04:43.440
+on, and usually it's conducted on Earth.
+
+65
+00:04:44.640 --> 00:04:47.960
+So that means that it doesn't matter
+whether
+
+66
+00:04:47.960 --> 00:04:52.460
+this ball is one gram, one kilogram, or
+even
+
+67
+00:04:52.460 --> 00:04:56.520
+one ton at that matter, the period will
+always
+
+68
+00:04:56.520 --> 00:04:58.940
+be the same as long as the length of the
+string
+
+69
+00:04:58.940 --> 00:05:03.540
+is the same. And this formula is basically
+all
+
+70
+00:05:03.540 --> 00:05:08.040
+you need to know for AP and IB in regards
+to
+
+71
+00:05:08.040 --> 00:05:12.340
+pendulum motion, because you can calculate
+everything
+
+72
+00:05:12.340 --> 00:05:15.440
+you need. If a multiple choice question,
+let's
+
+73
+00:05:15.440 --> 00:05:18.380
+say, asks you what will happen to the
+length
+
+74
+00:05:18.380 --> 00:05:21.320
+if the period doubles, well, you know that
+the
+
+75
+00:05:21.320 --> 00:05:24.680
+length will increase by four, because the
+length
+
+76
+00:05:24.680 --> 00:05:26.840
+is proportional to the square of the
+period,
+
+77
+00:05:27.040 --> 00:05:30.640
+because it's square-rooted here. And if
+the
+
+78
+00:05:30.640 --> 00:05:32.460
+question asks what if the mass has
+doubled,
+
+79
+00:05:32.460 --> 00:05:34.900
+well, you know that the period doesn't
+change.
+
+80
+00:05:35.100 --> 00:05:37.980
+So just base all your answers off of this
+formula.
+
+81
+00:05:39.160 --> 00:05:42.700
+Let's say we have a question that asks us
+to
+
+82
+00:05:42.700 --> 00:05:45.740
+solve the period. Let's say we have a
+pendulum
+
+83
+00:05:45.740 --> 00:05:53.160
+of mass of one kilogram, and
+
+84
+00:05:53.160 --> 00:05:59.120
+the length of the string is 0.850 metres,
+and
+
+85
+00:05:59.120 --> 00:06:02.900
+you have to find its period. Well, we just
+plug
+
+86
+00:06:02.900 --> 00:06:08.500
+this in. T equals 2 pi root L over g.
+
+87
+00:06:09.780 --> 00:06:15.740
+We know L is 0.85 metres, and mass really
+doesn't
+
+88
+00:06:15.740 --> 00:06:18.220
+matter, because you don't need mass.
+
+89
+00:06:18.220 --> 00:06:25.310
+g is 9.81, and you can
+
+90
+00:06:25.310 --> 00:06:35.970
+see that 0.85 over 9.81 would be 0.0866,
+
+91
+00:06:36.110 --> 00:06:38.610
+so the square root of that would be 0.294.
+
+92
+00:06:39.550 --> 00:06:43.010
+And the ultimate period would be 1.85
+seconds,
+
+93
+00:06:43.230 --> 00:06:46.590
+because period is the time it takes for
+one
+
+94
+00:06:46.590 --> 00:06:50.150
+pole oscillation. So that's basically it
+for
+
+95
+00:06:50.150 --> 00:06:54.050
+periods, and it's applied in real world as
+well.
+
+96
+00:06:54.490 --> 00:07:02.200
+In, for example, pendulum clocks, they use
+the
+
+97
+00:07:02.200 --> 00:07:07.460
+period of their pendulum to time-keep, and
+it
+
+98
+00:07:07.460 --> 00:07:10.860
+really depends on a stable period, so it
+must
+
+99
+00:07:10.860 --> 00:07:18.600
+be very, very accurate. Seismometers, I
+
+100
+00:07:18.600 --> 00:07:23.600
+think that's how you spell it, are
+basically
+
+101
+00:07:23.600 --> 00:07:27.860
+pendulum-like systems that are used to
+detect
+
+102
+00:07:27.860 --> 00:07:30.080
+vibrations, like earthquakes.
+
+103
+00:07:30.900 --> 00:07:35.000
+And also, another real-world application
+that
+
+104
+00:07:35.000 --> 00:07:38.120
+you guys probably know a lot of is
+playground
+
+105
+00:07:38.120 --> 00:07:46.040
+swings. And basically, using
+
+106
+00:07:46.040 --> 00:07:50.620
+your newly formed formula, you can
+basically
+
+107
+00:07:50.620 --> 00:07:53.680
+approximate, let's assume that you swing
+on
+
+108
+00:07:53.680 --> 00:07:57.420
+small angles, the amount, the time it
+takes
+
+109
+00:07:57.420 --> 00:08:00.280
+for you to do a swing really doesn't
+depend
+
+110
+00:08:00.280 --> 00:08:04.460
+on how high you are. It takes more time
+when
+
+111
+00:08:04.460 --> 00:08:07.300
+you're higher or lower, as long as it's a
+small
+
+112
+00:08:07.300 --> 00:08:09.960
+angle, the time it takes for you to do one
+swing
+
+113
+00:08:09.960 --> 00:08:12.880
+is approximately always the same.
+
+114
+00:08:13.780 --> 00:08:16.520
+That is, of course, you don't take into
+account
+
+115
+00:08:16.520 --> 00:08:18.800
+air resistance, and you assume there's no
+other
+
+116
+00:08:18.800 --> 00:08:21.420
+factors like wind or things, but that's a
+really,
+
+117
+00:08:21.760 --> 00:08:24.400
+really cool thing to know. And that's
+basically
+
+118
+00:08:24.400 --> 00:08:27.520
+it about pendulums. Just remember this
+formula,
+
+119
+00:08:27.760 --> 00:08:30.560
+and remember that mass does not affect the
+pendulum
+
+120
+00:08:30.560 --> 00:08:35.640
+at all. Also make sure that you don't draw
+this
+
+121
+00:08:35.640 --> 00:08:39.780
+force over here. It's a component of the
+tension
+
+122
+00:08:39.780 --> 00:08:43.760
+force that the bob is being exerted on.
+
+123
+00:08:44.420 --> 00:08:46.140
+Thank you for watching, and I hope you
+learned
+
+124
+00:08:46.140 --> 00:08:47.060
+something from this video.

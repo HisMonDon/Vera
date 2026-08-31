@@ -1,0 +1,824 @@
+{
+ "lesson": {
+  "topicKey": "harmonics",
+  "curriculumKey": "pendulum",
+  "title": "Pendulums",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/oscillations/Unit%201%20Pendulums.mp4",
+  "source": "harmonics.dart"
+ },
+ "segments": [
+  {
+   "start": 2.38,
+   "end": 27.76,
+   "text": "Today, we're studying pendulums, which are a classic example of oscillations and periodic motions, and a pendulum is basically a bob on a string that goes back and forth, and to do pendulum problems, we would probably need to find the period, which is a really common question.",
+   "avg_logprob": -0.13974669622996497
+  },
+  {
+   "start": 27.76,
+   "end": 58.59,
+   "text": "And what you'll see later is that the cool thing about pendulum is that mass doesn't really affect the period at all. What is a pendulum? A simple pendulum needed is having a bob, which is this small mass, let's call this a bob, attached to a string of length L. So this would have a length of L.",
+   "avg_logprob": -0.08952907422507131
+  },
+  {
+   "start": 58.59,
+   "end": 80.65,
+   "text": "And it's gonna swing back and forth across a pivot. Now, there are some key vocabulary you will need. There is a period, or t, which is the time it takes to complete one full oscillation.",
+   "avg_logprob": -0.09665093101237131
+  },
+  {
+   "start": 80.65,
+   "end": 112.2,
+   "text": "To complete one. So it's basically the same thing as a period in trigonometry. The time, or the length of x that it takes to have one full, you know, rotation.",
+   "avg_logprob": -0.18427314502852304
+  },
+  {
+   "start": 113.28,
+   "end": 143.9,
+   "text": "And frequency is the number of cycles per second. So if you think about it, frequency is the same, basically the opposite of period. Frequency is one over t. Because period, we're measuring the time off of the number of oscillations. And frequency, we're measuring the number of oscillations off of time.",
+   "avg_logprob": -0.08758254673170007
+  },
+  {
+   "start": 146.18,
+   "end": 175.19,
+   "text": "Now, what are the forces on a pendulum ball? Well, when we map it out, we would have the force of gravity. We have the tension force, f t. And that's basically all we have. The reason why, in this case, the ball goes this way is because of a component in the tension force, the x component, that actually makes it go.",
+   "avg_logprob": -0.09992490363557165
+  },
+  {
+   "start": 177.14,
+   "end": 195.28,
+   "text": "And that is called the tangential component. So we call this tangential component. And keep in mind that this is not a force, it's just a component of the tension force.",
+   "avg_logprob": -0.08319883084013349
+  },
+  {
+   "start": 197.48,
+   "end": 221.16,
+   "text": "Now, there is a key formula that you will have to use. And this formula is t equals two pi root l over g. And basically what this says is that the period is equal to two pi times the length over the acceleration of gravity.",
+   "avg_logprob": -0.10474511553291921
+  },
+  {
+   "start": 222.02,
+   "end": 235.42,
+   "text": "However, there is one key important thing to note, especially in experimental physics when you're actually doing the lab, and I'm sure your teachers will also stress this as well. This formula approximates small angle.",
+   "avg_logprob": -0.08646265044808388
+  },
+  {
+   "start": 238.86,
+   "end": 252.62,
+   "text": "So what that means is that this formula only works when your angle is relatively small, when theta is relatively small. If it's large, when your theta is large, this formula will probably not work.",
+   "avg_logprob": -0.08646265044808388
+  },
+  {
+   "start": 252.62,
+   "end": 260.08,
+   "text": "That's why when doing experiments, try to set the pendulum off at a relatively small arc.",
+   "avg_logprob": -0.05274740490933944
+  },
+  {
+   "start": 261.44,
+   "end": 273.06,
+   "text": "Now, one other important thing to note is that mass doesn't affect the period. As you can see in this formula, you don't see mass anywhere.",
+   "avg_logprob": -0.05274740490933944
+  },
+  {
+   "start": 273.06,
+   "end": 283.44,
+   "text": "The period only depends on the length of the string, and of course gravity, but that's really basically what planet you're on, and usually it's conducted on Earth.",
+   "avg_logprob": -0.09866439045845778
+  },
+  {
+   "start": 284.64,
+   "end": 299.6,
+   "text": "So that means that it doesn't matter whether this ball is one gram, one kilogram, or even one ton at that matter, the period will always be the same as long as the length of the string is the same.",
+   "avg_logprob": -0.09866439045845778
+  },
+  {
+   "start": 301.2,
+   "end": 312.8,
+   "text": "And this formula is basically all you need to know for AP and IB in regards to pendulum motion, because you can calculate everything you need.",
+   "avg_logprob": -0.08066734769842127
+  },
+  {
+   "start": 313.44,
+   "end": 328.28,
+   "text": "If a multiple choice question, let's say, asks you what will happen to the length if the period doubles, well, you know that the length will increase by four, because the length is proportional to the square of the period, because it's square-rooted here.",
+   "avg_logprob": -0.08066734769842127
+  },
+  {
+   "start": 329.76,
+   "end": 337.98,
+   "text": "And if the question asks what if the mass has doubled, well, you know that the period doesn't change. So just base all your answers off of this formula.",
+   "avg_logprob": -0.1346757333529623
+  },
+  {
+   "start": 339.16,
+   "end": 360.12,
+   "text": "Let's say we have a question that asks us to solve the period. Let's say we have a pendulum of mass of one kilogram, and the length of the string is 0.850 meters, and you have to find its period.",
+   "avg_logprob": -0.07595486304274311
+  },
+  {
+   "start": 360.12,
+   "end": 378.22,
+   "text": "Well, we just plug this in. T equals 2 pi root L over g. We know L is 0.85 meters, and mass really doesn't matter, because you don't need mass.",
+   "avg_logprob": -0.10271231593056158
+  },
+  {
+   "start": 378.22,
+   "end": 398.61,
+   "text": "g is 9.81, and you can see that 0.85 over 9.81 would be 0.0866, so the square root of that would be 0.294.",
+   "avg_logprob": -0.06840937996088568
+  },
+  {
+   "start": 399.55,
+   "end": 407.49,
+   "text": "And the ultimate period would be 1.85 seconds, because period is the time it takes for one pole oscillation.",
+   "avg_logprob": -0.06840937996088568
+  },
+  {
+   "start": 407.49,
+   "end": 432.1,
+   "text": "So that's basically it for periods, and it's applied in real world as well. In, for example, pendulum clocks, they use the period of their pendulum to time-keep, and it really depends on a stable period, so it must be very, very accurate.",
+   "avg_logprob": -0.11614878415580719
+  },
+  {
+   "start": 436.44,
+   "end": 450.08,
+   "text": "Seismometers, I think that's how you spell it, are basically pendulum-like systems that are used to detect vibrations, like earthquakes.",
+   "avg_logprob": -0.1795018420499914
+  },
+  {
+   "start": 450.9,
+   "end": 458.58,
+   "text": "And also, another real-world application that you guys probably know a lot of is playground swings.",
+   "avg_logprob": -0.12203975177059571
+  },
+  {
+   "start": 462.34,
+   "end": 481.7,
+   "text": "And basically, using your newly formed formula, you can basically approximate, let's assume that you swing on small angles, the amount, the time it takes for you to do a swing really doesn't depend on how high you are.",
+   "avg_logprob": -0.12203975177059571
+  },
+  {
+   "start": 482.64,
+   "end": 492.88,
+   "text": "It takes more time when you're higher or lower, as long as it's a small angle, the time it takes for you to do one swing is approximately always the same.",
+   "avg_logprob": -0.03800953226163983
+  },
+  {
+   "start": 493.78,
+   "end": 503.0,
+   "text": "That is, of course, you don't take into account air resistance, and you assume there's no other factors like wind or things, but that's a really, really cool thing to know.",
+   "avg_logprob": -0.03800953226163983
+  },
+  {
+   "start": 503.52,
+   "end": 511.26,
+   "text": "And that's basically it about pendulums. Just remember this formula, and remember that mass does not affect the pendulum at all.",
+   "avg_logprob": -0.03800953226163983
+  },
+  {
+   "start": 511.26,
+   "end": 523.76,
+   "text": "Also make sure that you don't draw this force over here. It's a component of the tension force that the bob is being exerted on.",
+   "avg_logprob": -0.05219637496130807
+  },
+  {
+   "start": 524.42,
+   "end": 527.06,
+   "text": "Thank you for watching, and I hope you learned something from this video.",
+   "avg_logprob": -0.05219637496130807
+  }
+ ],
+ "cues": [
+  {
+   "start": 2.38,
+   "end": 5.64,
+   "text": "Today, we're studying pendulums, which are a"
+  },
+  {
+   "start": 5.64,
+   "end": 8.34,
+   "text": "classic example of oscillations and periodic"
+  },
+  {
+   "start": 8.34,
+   "end": 14.62,
+   "text": "motions, and a pendulum is basically a bob on"
+  },
+  {
+   "start": 14.62,
+   "end": 19.66,
+   "text": "a string that goes back and forth, and to do"
+  },
+  {
+   "start": 19.66,
+   "end": 24.14,
+   "text": "pendulum problems, we would probably need to"
+  },
+  {
+   "start": 24.14,
+   "end": 27.76,
+   "text": "find the period, which is a really common question."
+  },
+  {
+   "start": 27.76,
+   "end": 31.68,
+   "text": "And what you'll see later is that the cool thing"
+  },
+  {
+   "start": 31.68,
+   "end": 34.52,
+   "text": "about pendulum is that mass doesn't really affect"
+  },
+  {
+   "start": 34.52,
+   "end": 38.42,
+   "text": "the period at all. What is a pendulum?"
+  },
+  {
+   "start": 38.84,
+   "end": 46.12,
+   "text": "A simple pendulum needed is having a bob, which"
+  },
+  {
+   "start": 46.12,
+   "end": 51.7,
+   "text": "is this small mass, let's call this a bob, attached"
+  },
+  {
+   "start": 51.7,
+   "end": 56.45,
+   "text": "to a string of length L."
+  },
+  {
+   "start": 57.09,
+   "end": 59.97,
+   "text": "So this would have a length of L. And it's gonna"
+  },
+  {
+   "start": 59.97,
+   "end": 62.99,
+   "text": "swing back and forth across a pivot."
+  },
+  {
+   "start": 64.45,
+   "end": 68.31,
+   "text": "Now, there are some key vocabulary you will"
+  },
+  {
+   "start": 68.31,
+   "end": 75.17,
+   "text": "need. There is a period, or t, which is the"
+  },
+  {
+   "start": 75.17,
+   "end": 80.65,
+   "text": "time it takes to complete one full oscillation."
+  },
+  {
+   "start": 80.65,
+   "end": 86.4,
+   "text": "To complete one."
+  },
+  {
+   "start": 88.04,
+   "end": 94.06,
+   "text": "So it's basically the same thing as a period"
+  },
+  {
+   "start": 94.06,
+   "end": 100.68,
+   "text": "in trigonometry. The time, or the length of"
+  },
+  {
+   "start": 100.68,
+   "end": 109.74,
+   "text": "x that it takes to have one full, you know,"
+  },
+  {
+   "start": 111.7,
+   "end": 119.51,
+   "text": "rotation. And frequency is the number"
+  },
+  {
+   "start": 119.51,
+   "end": 125.12,
+   "text": "of cycles per second. So if you think about"
+  },
+  {
+   "start": 125.12,
+   "end": 130.26,
+   "text": "it, frequency is the same, basically the opposite"
+  },
+  {
+   "start": 130.26,
+   "end": 133.22,
+   "text": "of period. Frequency is one over t."
+  },
+  {
+   "start": 133.66,
+   "end": 138.14,
+   "text": "Because period, we're measuring the time off"
+  },
+  {
+   "start": 138.14,
+   "end": 141.2,
+   "text": "of the number of oscillations. And frequency,"
+  },
+  {
+   "start": 141.22,
+   "end": 143.42,
+   "text": "we're measuring the number of oscillations off"
+  },
+  {
+   "start": 143.42,
+   "end": 149.3,
+   "text": "of time. Now, what are the forces on a pendulum"
+  },
+  {
+   "start": 149.3,
+   "end": 152.66,
+   "text": "ball? Well, when we map it out, we would have"
+  },
+  {
+   "start": 152.66,
+   "end": 154.82,
+   "text": "the force of gravity."
+  },
+  {
+   "start": 156.12,
+   "end": 161.29,
+   "text": "We have the tension force, f t."
+  },
+  {
+   "start": 161.45,
+   "end": 163.99,
+   "text": "And that's basically all we have. The reason"
+  },
+  {
+   "start": 163.99,
+   "end": 167.41,
+   "text": "why, in this case, the ball goes this way is"
+  },
+  {
+   "start": 167.41,
+   "end": 170.57,
+   "text": "because of a component in the tension force,"
+  },
+  {
+   "start": 170.69,
+   "end": 175.19,
+   "text": "the x component, that actually makes it go."
+  },
+  {
+   "start": 177.14,
+   "end": 181.2,
+   "text": "And that is called the tangential component."
+  },
+  {
+   "start": 182.9,
+   "end": 187.32,
+   "text": "So we call this tangential component."
+  },
+  {
+   "start": 189.86,
+   "end": 193.02,
+   "text": "And keep in mind that this is not a force, it's"
+  },
+  {
+   "start": 193.02,
+   "end": 195.28,
+   "text": "just a component of the tension force."
+  },
+  {
+   "start": 197.48,
+   "end": 201.04,
+   "text": "Now, there is a key formula that you will have"
+  },
+  {
+   "start": 201.04,
+   "end": 207.6,
+   "text": "to use. And this formula is t equals two pi"
+  },
+  {
+   "start": 207.6,
+   "end": 210.16,
+   "text": "root l over g."
+  },
+  {
+   "start": 211.84,
+   "end": 216.54,
+   "text": "And basically what this says is that the period"
+  },
+  {
+   "start": 216.54,
+   "end": 219.84,
+   "text": "is equal to two pi times the length over the"
+  },
+  {
+   "start": 219.84,
+   "end": 223.56,
+   "text": "acceleration of gravity. However, there is one"
+  },
+  {
+   "start": 223.56,
+   "end": 227.28,
+   "text": "key important thing to note, especially in experimental"
+  },
+  {
+   "start": 227.28,
+   "end": 229.12,
+   "text": "physics when you're actually doing the lab,"
+  },
+  {
+   "start": 229.64,
+   "end": 231.36,
+   "text": "and I'm sure your teachers will also stress"
+  },
+  {
+   "start": 231.36,
+   "end": 235.06,
+   "text": "this as well. This formula approximates small"
+  },
+  {
+   "start": 235.06,
+   "end": 242.32,
+   "text": "angle. So what that means is that this"
+  },
+  {
+   "start": 242.32,
+   "end": 245.36,
+   "text": "formula only works when your angle is relatively"
+  },
+  {
+   "start": 245.36,
+   "end": 247.56,
+   "text": "small, when theta is relatively small."
+  },
+  {
+   "start": 247.88,
+   "end": 250.84,
+   "text": "If it's large, when your theta is large, this"
+  },
+  {
+   "start": 250.84,
+   "end": 253.74,
+   "text": "formula will probably not work. That's why when"
+  },
+  {
+   "start": 253.74,
+   "end": 257.82,
+   "text": "doing experiments, try to set the pendulum off"
+  },
+  {
+   "start": 257.82,
+   "end": 260.08,
+   "text": "at a relatively small arc."
+  },
+  {
+   "start": 261.44,
+   "end": 265.04,
+   "text": "Now, one other important thing to note is that"
+  },
+  {
+   "start": 265.04,
+   "end": 269.42,
+   "text": "mass doesn't affect the period."
+  },
+  {
+   "start": 269.78,
+   "end": 272.42,
+   "text": "As you can see in this formula, you don't see"
+  },
+  {
+   "start": 272.42,
+   "end": 275.56,
+   "text": "mass anywhere. The period only depends on the"
+  },
+  {
+   "start": 275.56,
+   "end": 278.62,
+   "text": "length of the string, and of course gravity,"
+  },
+  {
+   "start": 278.7,
+   "end": 281.26,
+   "text": "but that's really basically what planet you're"
+  },
+  {
+   "start": 281.26,
+   "end": 283.44,
+   "text": "on, and usually it's conducted on Earth."
+  },
+  {
+   "start": 284.64,
+   "end": 287.96,
+   "text": "So that means that it doesn't matter whether"
+  },
+  {
+   "start": 287.96,
+   "end": 292.46,
+   "text": "this ball is one gram, one kilogram, or even"
+  },
+  {
+   "start": 292.46,
+   "end": 296.52,
+   "text": "one ton at that matter, the period will always"
+  },
+  {
+   "start": 296.52,
+   "end": 298.94,
+   "text": "be the same as long as the length of the string"
+  },
+  {
+   "start": 298.94,
+   "end": 303.54,
+   "text": "is the same. And this formula is basically all"
+  },
+  {
+   "start": 303.54,
+   "end": 308.04,
+   "text": "you need to know for AP and IB in regards to"
+  },
+  {
+   "start": 308.04,
+   "end": 312.34,
+   "text": "pendulum motion, because you can calculate everything"
+  },
+  {
+   "start": 312.34,
+   "end": 315.44,
+   "text": "you need. If a multiple choice question, let's"
+  },
+  {
+   "start": 315.44,
+   "end": 318.38,
+   "text": "say, asks you what will happen to the length"
+  },
+  {
+   "start": 318.38,
+   "end": 321.32,
+   "text": "if the period doubles, well, you know that the"
+  },
+  {
+   "start": 321.32,
+   "end": 324.68,
+   "text": "length will increase by four, because the length"
+  },
+  {
+   "start": 324.68,
+   "end": 326.84,
+   "text": "is proportional to the square of the period,"
+  },
+  {
+   "start": 327.04,
+   "end": 330.64,
+   "text": "because it's square-rooted here. And if the"
+  },
+  {
+   "start": 330.64,
+   "end": 332.46,
+   "text": "question asks what if the mass has doubled,"
+  },
+  {
+   "start": 332.46,
+   "end": 334.9,
+   "text": "well, you know that the period doesn't change."
+  },
+  {
+   "start": 335.1,
+   "end": 337.98,
+   "text": "So just base all your answers off of this formula."
+  },
+  {
+   "start": 339.16,
+   "end": 342.7,
+   "text": "Let's say we have a question that asks us to"
+  },
+  {
+   "start": 342.7,
+   "end": 345.74,
+   "text": "solve the period. Let's say we have a pendulum"
+  },
+  {
+   "start": 345.74,
+   "end": 353.16,
+   "text": "of mass of one kilogram, and"
+  },
+  {
+   "start": 353.16,
+   "end": 359.12,
+   "text": "the length of the string is 0.850 metres, and"
+  },
+  {
+   "start": 359.12,
+   "end": 362.9,
+   "text": "you have to find its period. Well, we just plug"
+  },
+  {
+   "start": 362.9,
+   "end": 368.5,
+   "text": "this in. T equals 2 pi root L over g."
+  },
+  {
+   "start": 369.78,
+   "end": 375.74,
+   "text": "We know L is 0.85 metres, and mass really doesn't"
+  },
+  {
+   "start": 375.74,
+   "end": 378.22,
+   "text": "matter, because you don't need mass."
+  },
+  {
+   "start": 378.22,
+   "end": 385.31,
+   "text": "g is 9.81, and you can"
+  },
+  {
+   "start": 385.31,
+   "end": 395.97,
+   "text": "see that 0.85 over 9.81 would be 0.0866,"
+  },
+  {
+   "start": 396.11,
+   "end": 398.61,
+   "text": "so the square root of that would be 0.294."
+  },
+  {
+   "start": 399.55,
+   "end": 403.01,
+   "text": "And the ultimate period would be 1.85 seconds,"
+  },
+  {
+   "start": 403.23,
+   "end": 406.59,
+   "text": "because period is the time it takes for one"
+  },
+  {
+   "start": 406.59,
+   "end": 410.15,
+   "text": "pole oscillation. So that's basically it for"
+  },
+  {
+   "start": 410.15,
+   "end": 414.05,
+   "text": "periods, and it's applied in real world as well."
+  },
+  {
+   "start": 414.49,
+   "end": 422.2,
+   "text": "In, for example, pendulum clocks, they use the"
+  },
+  {
+   "start": 422.2,
+   "end": 427.46,
+   "text": "period of their pendulum to time-keep, and it"
+  },
+  {
+   "start": 427.46,
+   "end": 430.86,
+   "text": "really depends on a stable period, so it must"
+  },
+  {
+   "start": 430.86,
+   "end": 438.6,
+   "text": "be very, very accurate. Seismometers, I"
+  },
+  {
+   "start": 438.6,
+   "end": 443.6,
+   "text": "think that's how you spell it, are basically"
+  },
+  {
+   "start": 443.6,
+   "end": 447.86,
+   "text": "pendulum-like systems that are used to detect"
+  },
+  {
+   "start": 447.86,
+   "end": 450.08,
+   "text": "vibrations, like earthquakes."
+  },
+  {
+   "start": 450.9,
+   "end": 455.0,
+   "text": "And also, another real-world application that"
+  },
+  {
+   "start": 455.0,
+   "end": 458.12,
+   "text": "you guys probably know a lot of is playground"
+  },
+  {
+   "start": 458.12,
+   "end": 466.04,
+   "text": "swings. And basically, using"
+  },
+  {
+   "start": 466.04,
+   "end": 470.62,
+   "text": "your newly formed formula, you can basically"
+  },
+  {
+   "start": 470.62,
+   "end": 473.68,
+   "text": "approximate, let's assume that you swing on"
+  },
+  {
+   "start": 473.68,
+   "end": 477.42,
+   "text": "small angles, the amount, the time it takes"
+  },
+  {
+   "start": 477.42,
+   "end": 480.28,
+   "text": "for you to do a swing really doesn't depend"
+  },
+  {
+   "start": 480.28,
+   "end": 484.46,
+   "text": "on how high you are. It takes more time when"
+  },
+  {
+   "start": 484.46,
+   "end": 487.3,
+   "text": "you're higher or lower, as long as it's a small"
+  },
+  {
+   "start": 487.3,
+   "end": 489.96,
+   "text": "angle, the time it takes for you to do one swing"
+  },
+  {
+   "start": 489.96,
+   "end": 492.88,
+   "text": "is approximately always the same."
+  },
+  {
+   "start": 493.78,
+   "end": 496.52,
+   "text": "That is, of course, you don't take into account"
+  },
+  {
+   "start": 496.52,
+   "end": 498.8,
+   "text": "air resistance, and you assume there's no other"
+  },
+  {
+   "start": 498.8,
+   "end": 501.42,
+   "text": "factors like wind or things, but that's a really,"
+  },
+  {
+   "start": 501.76,
+   "end": 504.4,
+   "text": "really cool thing to know. And that's basically"
+  },
+  {
+   "start": 504.4,
+   "end": 507.52,
+   "text": "it about pendulums. Just remember this formula,"
+  },
+  {
+   "start": 507.76,
+   "end": 510.56,
+   "text": "and remember that mass does not affect the pendulum"
+  },
+  {
+   "start": 510.56,
+   "end": 515.64,
+   "text": "at all. Also make sure that you don't draw this"
+  },
+  {
+   "start": 515.64,
+   "end": 519.78,
+   "text": "force over here. It's a component of the tension"
+  },
+  {
+   "start": 519.78,
+   "end": 523.76,
+   "text": "force that the bob is being exerted on."
+  },
+  {
+   "start": 524.42,
+   "end": 526.14,
+   "text": "Thank you for watching, and I hope you learned"
+  },
+  {
+   "start": 526.14,
+   "end": 527.06,
+   "text": "something from this video."
+  }
+ ],
+ "report": {
+  "key": "harmonics__pendulum",
+  "title": "Pendulums",
+  "topicKey": "harmonics",
+  "duration": 527.6373125,
+  "cues": 124,
+  "corrections": 2,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.18427314502852304,
+  "flagged": []
+ }
+}

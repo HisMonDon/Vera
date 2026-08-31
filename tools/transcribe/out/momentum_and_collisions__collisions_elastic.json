@@ -1,0 +1,1644 @@
+{
+ "lesson": {
+  "topicKey": "momentum_and_collisions",
+  "curriculumKey": "collisions_elastic",
+  "title": "Inelastic and Elastic Momentum Questions",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/momentum_and_collisions/Inelastic%20and%20Elastic%20Momentum%20Questions%20(Conservation).mp4",
+  "source": "momentum_and_collisions.dart"
+ },
+ "segments": [
+  {
+   "start": 0.66,
+   "end": 11.88,
+   "text": "In this video, we will be going over two momentum problems. And before that, we will learn about elastic versus inelastic momentum collisions.",
+   "avg_logprob": -0.12887524148902377
+  },
+  {
+   "start": 13.64,
+   "end": 29.6,
+   "text": "So, first of all, what are elastic collisions? Elastic collisions are collisions that do not have energy lost. So, that means that there is a conservation of momentum and a conservation of energy.",
+   "avg_logprob": -0.12887524148902377
+  },
+  {
+   "start": 29.6,
+   "end": 42.0,
+   "text": "However, on the other hand, inelastic collisions have a loss of energy. Even though momentum is conserved, there will be a loss of energy. I'll show you what I mean in these questions.",
+   "avg_logprob": -0.08042629799623599
+  },
+  {
+   "start": 42.76,
+   "end": 53.0,
+   "text": "So, first of all, our first question is a 2kg cart moving at 4m per second collides elastically with a 1kg cart initially at rest on a frictionless track.",
+   "avg_logprob": -0.08042629799623599
+  },
+  {
+   "start": 53.0,
+   "end": 68.34,
+   "text": "And you want to calculate the final velocities of both carts. So, if we think about this, there will be a cart over here weighing 2kg and it is going at 4m per second.",
+   "avg_logprob": -0.07166934544327615
+  },
+  {
+   "start": 69.22,
+   "end": 82.26,
+   "text": "And there is a cart with 1kg and it is at rest, so it has a speed of 0m per second. And we want to calculate the final velocities of both carts.",
+   "avg_logprob": -0.07166934544327615
+  },
+  {
+   "start": 82.26,
+   "end": 91.76,
+   "text": "Now, let's first use the conservation of momentum we got here. The total momentum of the system is always the same.",
+   "avg_logprob": -0.07714914207188588
+  },
+  {
+   "start": 93.2,
+   "end": 106.0,
+   "text": "So, P before equals the sum of the momentums after. So, what are the momentums before?",
+   "avg_logprob": -0.07714914207188588
+  },
+  {
+   "start": 106.93,
+   "end": 115.42,
+   "text": "Well, there is the momentum of this cart, let's call this cart A, and the momentum of this cart, call this cart B.",
+   "avg_logprob": -0.11466689313214923
+  },
+  {
+   "start": 116.16,
+   "end": 127.9,
+   "text": "Now, the momentum of cart A is mass times velocity, so mass A times vA. And that is mass B times vB.",
+   "avg_logprob": -0.11466689313214923
+  },
+  {
+   "start": 127.9,
+   "end": 137.0,
+   "text": "But you notice that cart B is at rest, which means vB is 0. So, this whole expression will be equal to 0.",
+   "avg_logprob": -0.10055641968582951
+  },
+  {
+   "start": 137.12,
+   "end": 141.38,
+   "text": "So, the total momentum of the system is only that of cart A.",
+   "avg_logprob": -0.10055641968582951
+  },
+  {
+   "start": 142.78,
+   "end": 156.18,
+   "text": "Now, for cart, the total momentum after, what we have is the mass of A, which is constant, the final velocity of cart A, so vA final.",
+   "avg_logprob": -0.10055641968582951
+  },
+  {
+   "start": 156.98,
+   "end": 169.78,
+   "text": "The mass of B, and the final velocity of this cart, so vB final.",
+   "avg_logprob": -0.1156818945991232
+  },
+  {
+   "start": 170.74,
+   "end": 180.72,
+   "text": "And also don't forget that these are unknowns. So, we just need to first plug in our numbers.",
+   "avg_logprob": -0.1156818945991232
+  },
+  {
+   "start": 181.8,
+   "end": 195.72,
+   "text": "The mass here is 2, velocity is 4, the mass here is 2 vAF plus 1, or just vBF.",
+   "avg_logprob": -0.13510772213339806
+  },
+  {
+   "start": 196.86,
+   "end": 201.78,
+   "text": "So, we get 8 equals 2 vAF plus vBF.",
+   "avg_logprob": -0.13510772213339806
+  },
+  {
+   "start": 203.04,
+   "end": 208.4,
+   "text": "And now, we are left with this equation, with two unknowns. How do we solve this problem?",
+   "avg_logprob": -0.13510772213339806
+  },
+  {
+   "start": 209.44,
+   "end": 216.68,
+   "text": "Well, the next thing we have to consider is since it's an elastic collision, energy is conserved.",
+   "avg_logprob": -0.09810118736433131
+  },
+  {
+   "start": 217.58,
+   "end": 230.82,
+   "text": "Now, if energy is conserved, that means that the total Ke before, Ke before, is equal to the total kinetic energy after.",
+   "avg_logprob": -0.09810118736433131
+  },
+  {
+   "start": 233.19,
+   "end": 243.11,
+   "text": "So, the total kinetic energy before is 1 over 2 ma vA squared.",
+   "avg_logprob": -0.1533021141843098
+  },
+  {
+   "start": 244.15,
+   "end": 249.17,
+   "text": "And there's no kinetic energy in B because it's not moving, the speed is 0.",
+   "avg_logprob": -0.1533021141843098
+  },
+  {
+   "start": 250.05,
+   "end": 265.15,
+   "text": "The total kinetic energy after is 1 over 2 ma vAF, the final velocity squared, plus 1 over 2 mB vBF squared.",
+   "avg_logprob": -0.07954273562310106
+  },
+  {
+   "start": 265.65,
+   "end": 272.57,
+   "text": "Now, all of these 1 over 2's cancel out when you factor them, and now we can start putting in numbers.",
+   "avg_logprob": -0.07954273562310106
+  },
+  {
+   "start": 272.57,
+   "end": 282.17,
+   "text": "So, ma is 2, I believe, 2 kilograms, and velocity is 4, so 4 squared times 2 would be 32.",
+   "avg_logprob": -0.10810016887262464
+  },
+  {
+   "start": 284.47,
+   "end": 293.89,
+   "text": "2 vAF squared plus vBF squared, since mB is 1.",
+   "avg_logprob": -0.10810016887262464
+  },
+  {
+   "start": 294.65,
+   "end": 299.61,
+   "text": "And now, what we can do is we can just solve our numbers.",
+   "avg_logprob": -0.10810016887262464
+  },
+  {
+   "start": 299.61,
+   "end": 308.75,
+   "text": "We have vAF and we have vBF, which means that we have 2 equations with 2 unknowns.",
+   "avg_logprob": -0.08511068299412727
+  },
+  {
+   "start": 309.41,
+   "end": 314.89,
+   "text": "Now, this is just simple math, so you can see how physics kind of relates to math, in a sense.",
+   "avg_logprob": -0.08511068299412727
+  },
+  {
+   "start": 315.57,
+   "end": 323.07,
+   "text": "So, I'm just going to really quickly do this. I see that vBF can be substituted in.",
+   "avg_logprob": -0.08511068299412727
+  },
+  {
+   "start": 323.07,
+   "end": 330.37,
+   "text": "vBF equals 8 minus 2 vAF. So, I'm going to substitute that into this equation.",
+   "avg_logprob": -0.11538435022036235
+  },
+  {
+   "start": 331.43,
+   "end": 344.89,
+   "text": "So, what I'll get is 32 equals 2 vAF squared plus 8 minus 2 vAF squared.",
+   "avg_logprob": -0.11538435022036235
+  },
+  {
+   "start": 344.89,
+   "end": 353.21,
+   "text": "And now, we can just solve that. So, 32 equals... Let's call vAF x, so it's easier.",
+   "avg_logprob": -0.1241454165133219
+  },
+  {
+   "start": 353.31,
+   "end": 356.03,
+   "text": "I don't have to write vAF every single time.",
+   "avg_logprob": -0.1241454165133219
+  },
+  {
+   "start": 356.51,
+   "end": 367.03,
+   "text": "So, 32 equals 2x squared plus 64 minus 32x plus 4x squared.",
+   "avg_logprob": -0.1241454165133219
+  },
+  {
+   "start": 368.15,
+   "end": 380.07,
+   "text": "And now, we just continue solving this. 32 equals 6x squared plus 64 minus 32x.",
+   "avg_logprob": -0.10091651069081348
+  },
+  {
+   "start": 380.61,
+   "end": 386.37,
+   "text": "So, 0 equals 3x squared. I'm moving this to the side and dividing by 2.",
+   "avg_logprob": -0.10091651069081348
+  },
+  {
+   "start": 386.37,
+   "end": 402.27,
+   "text": "Plus 16x plus 16. And when we solve for x using the quadratic formula or factoring,",
+   "avg_logprob": -0.18264293670654297
+  },
+  {
+   "start": 403.45,
+   "end": 405.77,
+   "text": "I think you can only use the quadratic formula here.",
+   "avg_logprob": -0.18264293670654297
+  },
+  {
+   "start": 405.77,
+   "end": 416.17,
+   "text": "So, 16 plus root 16 squared minus 4, 3, 16 over 2 times 3.",
+   "avg_logprob": -0.12447941546537439
+  },
+  {
+   "start": 416.57,
+   "end": 435.08,
+   "text": "You would get x is equal to 4. And you would also get x is equal to 1.33 meters per second.",
+   "avg_logprob": -0.12447941546537439
+  },
+  {
+   "start": 436.12,
+   "end": 441.04,
+   "text": "Now, how do you know which one is the right answer?",
+   "avg_logprob": -0.06870397843602227
+  },
+  {
+   "start": 441.48,
+   "end": 446.7,
+   "text": "Well, you know that the initial speed of this cart is 4 meters per second.",
+   "avg_logprob": -0.06870397843602227
+  },
+  {
+   "start": 447.06,
+   "end": 455.62,
+   "text": "So, when it's transferring energy, what we solved is the possible speeds of the carts.",
+   "avg_logprob": -0.06870397843602227
+  },
+  {
+   "start": 456.1,
+   "end": 461.06,
+   "text": "And you know this is the initial, so we want the final. So, x must be 1.33.",
+   "avg_logprob": -0.06870397843602227
+  },
+  {
+   "start": 461.06,
+   "end": 467.36,
+   "text": "So, the final speed of cart A must be 1.33 meters per second.",
+   "avg_logprob": -0.09151870087732243
+  },
+  {
+   "start": 467.64,
+   "end": 469.92,
+   "text": "And this would be your answer for this cart.",
+   "avg_logprob": -0.09151870087732243
+  },
+  {
+   "start": 470.42,
+   "end": 476.88,
+   "text": "Now, one final step is to calculate the speed of the other cart, just plugging this into this formula.",
+   "avg_logprob": -0.09151870087732243
+  },
+  {
+   "start": 477.72,
+   "end": 484.48,
+   "text": "So, we get vbf equals 8 minus 2vaf, which is 1.33.",
+   "avg_logprob": -0.09151870087732243
+  },
+  {
+   "start": 484.48,
+   "end": 493.9,
+   "text": "And you would get 5.33 meters per second.",
+   "avg_logprob": -0.09277872959772746
+  },
+  {
+   "start": 493.94,
+   "end": 496.7,
+   "text": "And that would be your final answer for cart 2.",
+   "avg_logprob": -0.09277872959772746
+  },
+  {
+   "start": 498.48,
+   "end": 503.4,
+   "text": "And so, you can see how we can relate momentum with conservation of energy.",
+   "avg_logprob": -0.09277872959772746
+  },
+  {
+   "start": 503.94,
+   "end": 507.18,
+   "text": "And this is basically how you do it for elastic collisions.",
+   "avg_logprob": -0.09277872959772746
+  },
+  {
+   "start": 508.26,
+   "end": 511.78,
+   "text": "Now, however, what if the collisions are inelastic?",
+   "avg_logprob": -0.09277872959772746
+  },
+  {
+   "start": 511.78,
+   "end": 517.34,
+   "text": "Well, if it's inelastic, then momentum is conserved, but energy is lost.",
+   "avg_logprob": -0.0772678280621767
+  },
+  {
+   "start": 517.76,
+   "end": 522.38,
+   "text": "And I find inelastic collisions way, way easier, it's way, way faster as well,",
+   "avg_logprob": -0.0772678280621767
+  },
+  {
+   "start": 522.64,
+   "end": 528.46,
+   "text": "because there's also no big math calculations like we had to do over here.",
+   "avg_logprob": -0.0772678280621767
+  },
+  {
+   "start": 529.46,
+   "end": 530.34,
+   "text": "Let's see this question.",
+   "avg_logprob": -0.0772678280621767
+  },
+  {
+   "start": 530.74,
+   "end": 537.72,
+   "text": "A 0.5 kilogram ball moving at 6 meters per second collides with a 1.5 kilogram stationary ball,",
+   "avg_logprob": -0.0772678280621767
+  },
+  {
+   "start": 537.72,
+   "end": 543.88,
+   "text": "or a ball at rest, 1.5 kg and 0.5.",
+   "avg_logprob": -0.08460853442753831
+  },
+  {
+   "start": 544.5,
+   "end": 547.16,
+   "text": "And it's moving at 6 meters per second.",
+   "avg_logprob": -0.08460853442753831
+  },
+  {
+   "start": 547.78,
+   "end": 550.38,
+   "text": "After the collisions, the two balls stick together.",
+   "avg_logprob": -0.08460853442753831
+  },
+  {
+   "start": 550.8,
+   "end": 554.2,
+   "text": "When they stick together, you know the collision is inelastic.",
+   "avg_logprob": -0.08460853442753831
+  },
+  {
+   "start": 559.34,
+   "end": 562.7,
+   "text": "And the question didn't state what you want to solve,",
+   "avg_logprob": -0.08460853442753831
+  },
+  {
+   "start": 562.7,
+   "end": 571.82,
+   "text": "but let's say you want to solve the final speed of both balls,",
+   "avg_logprob": -0.11164099142393645
+  },
+  {
+   "start": 573.36,
+   "end": 581.6,
+   "text": "both balls, and be the loss of kinetic energy, loss of Ke.",
+   "avg_logprob": -0.11164099142393645
+  },
+  {
+   "start": 582.6,
+   "end": 586.14,
+   "text": "Now, the final speed of each ball is the same because they stick together,",
+   "avg_logprob": -0.11164099142393645
+  },
+  {
+   "start": 586.14,
+   "end": 589.52,
+   "text": "and we can use the conservation of momentum to do this.",
+   "avg_logprob": -0.11164099142393645
+  },
+  {
+   "start": 589.52,
+   "end": 594.42,
+   "text": "And this time we don't have two different variables because the final speed is the same.",
+   "avg_logprob": -0.06801849887484596
+  },
+  {
+   "start": 595.4,
+   "end": 599.06,
+   "text": "So once they collide, you can think of them as one system,",
+   "avg_logprob": -0.06801849887484596
+  },
+  {
+   "start": 599.34,
+   "end": 605.34,
+   "text": "a combined mass moving at a certain amount of speed, and that's what we want to find.",
+   "avg_logprob": -0.06801849887484596
+  },
+  {
+   "start": 605.66,
+   "end": 610.82,
+   "text": "So the combined mass would be 0.5 plus 1.5, which is 2 kg.",
+   "avg_logprob": -0.06801849887484596
+  },
+  {
+   "start": 611.94,
+   "end": 617.36,
+   "text": "So using the conservation of momentum, we know that P, let's call this ball A and ball B,",
+   "avg_logprob": -0.06801849887484596
+  },
+  {
+   "start": 617.36,
+   "end": 623.4,
+   "text": "the momentum of A plus the momentum of B is equal to the momentum of A plus B,",
+   "avg_logprob": -0.05594287154736457
+  },
+  {
+   "start": 623.5,
+   "end": 628.02,
+   "text": "because after they collide, they stick together, and you can treat it as one system.",
+   "avg_logprob": -0.05594287154736457
+  },
+  {
+   "start": 629.42,
+   "end": 633.86,
+   "text": "The momentum of A is equal to 0.5 times 6.",
+   "avg_logprob": -0.05594287154736457
+  },
+  {
+   "start": 634.52,
+   "end": 641.02,
+   "text": "The momentum of B is equal to 1.5 times 0, which is 0.",
+   "avg_logprob": -0.05594287154736457
+  },
+  {
+   "start": 642.3,
+   "end": 649.56,
+   "text": "And the momentum of both the things after they stick together is their total mass,",
+   "avg_logprob": -0.09055714309215546
+  },
+  {
+   "start": 649.64,
+   "end": 656.16,
+   "text": "which we calculated over here, 0.5 plus 1.5, times their final speed.",
+   "avg_logprob": -0.09055714309215546
+  },
+  {
+   "start": 657.38,
+   "end": 663.98,
+   "text": "So 0.5 times 6 is 3, and 0.5 plus 1.5 is 2 times vf.",
+   "avg_logprob": -0.09055714309215546
+  },
+  {
+   "start": 664.32,
+   "end": 671.02,
+   "text": "So that's pretty straightforward. We get the final velocity of both balls is 1.5 m per second.",
+   "avg_logprob": -0.09055714309215546
+  },
+  {
+   "start": 671.02,
+   "end": 674.66,
+   "text": "That would be your final answer for A.",
+   "avg_logprob": -0.09937989984599638
+  },
+  {
+   "start": 676.08,
+   "end": 677.9,
+   "text": "Now, let's move on to question B.",
+   "avg_logprob": -0.09937989984599638
+  },
+  {
+   "start": 678.92,
+   "end": 681.38,
+   "text": "Question B asks us for the loss of Ke.",
+   "avg_logprob": -0.09937989984599638
+  },
+  {
+   "start": 682.26,
+   "end": 690.12,
+   "text": "Well, the loss of kinetic energy could be written as the initial kinetic energy value",
+   "avg_logprob": -0.09937989984599638
+  },
+  {
+   "start": 691.38,
+   "end": 698.6,
+   "text": "minus the final kinetic energy value, because that would be the loss.",
+   "avg_logprob": -0.09937989984599638
+  },
+  {
+   "start": 699.66,
+   "end": 704.48,
+   "text": "And the initial kinetic energy is the total kinetic energy of both balls.",
+   "avg_logprob": -0.09808347695930437
+  },
+  {
+   "start": 705.38,
+   "end": 709.0,
+   "text": "Ball B is stationary, so it doesn't have any kinetic energy.",
+   "avg_logprob": -0.09808347695930437
+  },
+  {
+   "start": 709.7,
+   "end": 716.0,
+   "text": "So ball A is basic. The kinetic energy in ball A is the total kinetic energy initially.",
+   "avg_logprob": -0.09808347695930437
+  },
+  {
+   "start": 716.5,
+   "end": 721.02,
+   "text": "So it would be 1 over 2 ma va squared minus,",
+   "avg_logprob": -0.09808347695930437
+  },
+  {
+   "start": 721.66,
+   "end": 726.26,
+   "text": "and now after, when both systems are combined and there is only one big system,",
+   "avg_logprob": -0.09808347695930437
+  },
+  {
+   "start": 726.26,
+   "end": 733.4,
+   "text": "it is minus 1 over 2 times the combined mass times the combined speed squared.",
+   "avg_logprob": -0.06631562906580094
+  },
+  {
+   "start": 734.44,
+   "end": 736.62,
+   "text": "I would factor out 1 over 2 over here.",
+   "avg_logprob": -0.06631562906580094
+  },
+  {
+   "start": 737.04,
+   "end": 739.96,
+   "text": "Mass of A is 0.5.",
+   "avg_logprob": -0.06631562906580094
+  },
+  {
+   "start": 741.12,
+   "end": 747.04,
+   "text": "The velocity is 6, so 6 squared minus mass of AB is 2.",
+   "avg_logprob": -0.06631562906580094
+  },
+  {
+   "start": 748.12,
+   "end": 754.28,
+   "text": "The velocity of AB is what we calculated over here, so 1.5 squared.",
+   "avg_logprob": -0.06631562906580094
+  },
+  {
+   "start": 755.3,
+   "end": 758.04,
+   "text": "And now it's just a matter of calculating.",
+   "avg_logprob": -0.09229973110962998
+  },
+  {
+   "start": 759.18,
+   "end": 762.16,
+   "text": "I will just type this directly in my calculator,",
+   "avg_logprob": -0.09229973110962998
+  },
+  {
+   "start": 763.48,
+   "end": 767.46,
+   "text": "because we have shown basically all the logic steps.",
+   "avg_logprob": -0.09229973110962998
+  },
+  {
+   "start": 768.34,
+   "end": 769.36,
+   "text": "Times 1.5 squared.",
+   "avg_logprob": -0.09229973110962998
+  },
+  {
+   "start": 770.26,
+   "end": 777.64,
+   "text": "And you'll get 6.75 joules of energy lost.",
+   "avg_logprob": -0.09229973110962998
+  },
+  {
+   "start": 777.82,
+   "end": 780.42,
+   "text": "And that will be your final answer for part B.",
+   "avg_logprob": -0.09229973110962998
+  },
+  {
+   "start": 781.3,
+   "end": 783.94,
+   "text": "And that's it on how to solve elastic collisions.",
+   "avg_logprob": -0.09229973110962998
+  },
+  {
+   "start": 784.64,
+   "end": 786.24,
+   "text": "And elastic collisions.",
+   "avg_logprob": -0.08931117318570614
+  },
+  {
+   "start": 786.54,
+   "end": 789.84,
+   "text": "So just remember, elastic collisions energy is conserved,",
+   "avg_logprob": -0.08931117318570614
+  },
+  {
+   "start": 790.0,
+   "end": 794.7,
+   "text": "and you will likely end up with two different formulas that you will have to solve for this.",
+   "avg_logprob": -0.08931117318570614
+  },
+  {
+   "start": 795.74,
+   "end": 801.78,
+   "text": "However, in elastic equations, you will likely only have to solve one formula,",
+   "avg_logprob": -0.08931117318570614
+  },
+  {
+   "start": 801.78,
+   "end": 805.14,
+   "text": "because the systems combine into one big system,",
+   "avg_logprob": -0.08931117318570614
+  },
+  {
+   "start": 805.52,
+   "end": 809.56,
+   "text": "so you're just solving for whatever you want for that one big system.",
+   "avg_logprob": -0.08931117318570614
+  },
+  {
+   "start": 810.48,
+   "end": 813.68,
+   "text": "Thank you, and I hope you learned how to solve these types of problems.",
+   "avg_logprob": -0.08250894201429267
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.66,
+   "end": 4.26,
+   "text": "In this video, we will be going over two momentum"
+  },
+  {
+   "start": 4.26,
+   "end": 9.0,
+   "text": "problems. And before that, we will learn about"
+  },
+  {
+   "start": 9.0,
+   "end": 11.88,
+   "text": "elastic versus inelastic momentum collisions."
+  },
+  {
+   "start": 13.64,
+   "end": 17.24,
+   "text": "So, first of all, what are elastic collisions?"
+  },
+  {
+   "start": 18.26,
+   "end": 21.34,
+   "text": "Elastic collisions are collisions that do not"
+  },
+  {
+   "start": 21.34,
+   "end": 25.4,
+   "text": "have energy lost. So, that means that there"
+  },
+  {
+   "start": 25.4,
+   "end": 29.04,
+   "text": "is a conservation of momentum and a conservation"
+  },
+  {
+   "start": 29.04,
+   "end": 32.36,
+   "text": "of energy. However, on the other hand, inelastic"
+  },
+  {
+   "start": 32.36,
+   "end": 35.78,
+   "text": "collisions have a loss of energy."
+  },
+  {
+   "start": 36.16,
+   "end": 38.34,
+   "text": "Even though momentum is conserved, there will"
+  },
+  {
+   "start": 38.34,
+   "end": 40.92,
+   "text": "be a loss of energy. I'll show you what I mean"
+  },
+  {
+   "start": 40.92,
+   "end": 43.78,
+   "text": "in these questions. So, first of all, our first"
+  },
+  {
+   "start": 43.78,
+   "end": 47.52,
+   "text": "question is a 2kg cart moving at 4m per second"
+  },
+  {
+   "start": 47.52,
+   "end": 50.58,
+   "text": "collides elastically with a 1kg cart initially"
+  },
+  {
+   "start": 50.58,
+   "end": 53.0,
+   "text": "at rest on a frictionless track."
+  },
+  {
+   "start": 53.0,
+   "end": 55.78,
+   "text": "And you want to calculate the final velocities"
+  },
+  {
+   "start": 55.78,
+   "end": 60.78,
+   "text": "of both carts. So, if we think about this, there"
+  },
+  {
+   "start": 60.78,
+   "end": 65.8,
+   "text": "will be a cart over here weighing 2kg and it"
+  },
+  {
+   "start": 65.8,
+   "end": 68.34,
+   "text": "is going at 4m per second."
+  },
+  {
+   "start": 69.22,
+   "end": 76.26,
+   "text": "And there is a cart with 1kg and it is at"
+  },
+  {
+   "start": 76.26,
+   "end": 79.02,
+   "text": "rest, so it has a speed of 0m per second."
+  },
+  {
+   "start": 79.24,
+   "end": 81.48,
+   "text": "And we want to calculate the final velocities"
+  },
+  {
+   "start": 81.48,
+   "end": 86.36,
+   "text": "of both carts. Now, let's first use the conservation"
+  },
+  {
+   "start": 86.36,
+   "end": 88.66,
+   "text": "of momentum we got here."
+  },
+  {
+   "start": 88.98,
+   "end": 91.52,
+   "text": "The total momentum of the system is always the"
+  },
+  {
+   "start": 91.52,
+   "end": 98.64,
+   "text": "same. So, P before equals the sum of the"
+  },
+  {
+   "start": 98.64,
+   "end": 105.6,
+   "text": "momentums after. So, what are the momentums"
+  },
+  {
+   "start": 105.6,
+   "end": 109.6,
+   "text": "before? Well, there is the momentum of this"
+  },
+  {
+   "start": 109.6,
+   "end": 112.56,
+   "text": "cart, let's call this cart A, and the momentum"
+  },
+  {
+   "start": 112.56,
+   "end": 115.42,
+   "text": "of this cart, call this cart B."
+  },
+  {
+   "start": 116.16,
+   "end": 120.18,
+   "text": "Now, the momentum of cart A is mass times velocity,"
+  },
+  {
+   "start": 120.34,
+   "end": 122.76,
+   "text": "so mass A times vA."
+  },
+  {
+   "start": 123.56,
+   "end": 127.9,
+   "text": "And that is mass B times vB."
+  },
+  {
+   "start": 127.9,
+   "end": 131.88,
+   "text": "But you notice that cart B is at rest, which"
+  },
+  {
+   "start": 131.88,
+   "end": 136.14,
+   "text": "means vB is 0. So, this whole expression will"
+  },
+  {
+   "start": 136.14,
+   "end": 138.62,
+   "text": "be equal to 0. So, the total momentum of the"
+  },
+  {
+   "start": 138.62,
+   "end": 141.38,
+   "text": "system is only that of cart A."
+  },
+  {
+   "start": 142.78,
+   "end": 146.82,
+   "text": "Now, for cart, the total momentum after, what"
+  },
+  {
+   "start": 146.82,
+   "end": 150.6,
+   "text": "we have is the mass of A, which is constant,"
+  },
+  {
+   "start": 151.28,
+   "end": 156.18,
+   "text": "the final velocity of cart A, so vA final."
+  },
+  {
+   "start": 156.98,
+   "end": 165.36,
+   "text": "The mass of B, and the final velocity of this"
+  },
+  {
+   "start": 165.36,
+   "end": 169.78,
+   "text": "cart, so vB final."
+  },
+  {
+   "start": 170.74,
+   "end": 176.1,
+   "text": "And also don't forget that these are unknowns."
+  },
+  {
+   "start": 176.1,
+   "end": 180.72,
+   "text": "So, we just need to first plug in our numbers."
+  },
+  {
+   "start": 181.8,
+   "end": 187.84,
+   "text": "The mass here is 2, velocity is 4, the mass"
+  },
+  {
+   "start": 187.84,
+   "end": 194.88,
+   "text": "here is 2 vAF plus 1, or just"
+  },
+  {
+   "start": 194.88,
+   "end": 201.78,
+   "text": "vBF. So, we get 8 equals 2 vAF plus vBF."
+  },
+  {
+   "start": 203.04,
+   "end": 205.7,
+   "text": "And now, we are left with this equation, with"
+  },
+  {
+   "start": 205.7,
+   "end": 208.4,
+   "text": "two unknowns. How do we solve this problem?"
+  },
+  {
+   "start": 209.44,
+   "end": 212.92,
+   "text": "Well, the next thing we have to consider is"
+  },
+  {
+   "start": 212.92,
+   "end": 216.68,
+   "text": "since it's an elastic collision, energy is conserved."
+  },
+  {
+   "start": 217.58,
+   "end": 220.06,
+   "text": "Now, if energy is conserved, that means that"
+  },
+  {
+   "start": 220.06,
+   "end": 228.46,
+   "text": "the total Ke before, Ke before, is"
+  },
+  {
+   "start": 228.46,
+   "end": 230.82,
+   "text": "equal to the total kinetic energy after."
+  },
+  {
+   "start": 233.19,
+   "end": 238.31,
+   "text": "So, the total kinetic energy before is 1 over"
+  },
+  {
+   "start": 238.31,
+   "end": 243.11,
+   "text": "2 ma vA squared."
+  },
+  {
+   "start": 244.15,
+   "end": 247.61,
+   "text": "And there's no kinetic energy in B because it's"
+  },
+  {
+   "start": 247.61,
+   "end": 251.17,
+   "text": "not moving, the speed is 0. The total kinetic"
+  },
+  {
+   "start": 251.17,
+   "end": 258.19,
+   "text": "energy after is 1 over 2 ma vAF, the final velocity"
+  },
+  {
+   "start": 258.19,
+   "end": 265.15,
+   "text": "squared, plus 1 over 2 mB vBF squared."
+  },
+  {
+   "start": 265.65,
+   "end": 269.01,
+   "text": "Now, all of these 1 over 2's cancel out when"
+  },
+  {
+   "start": 269.01,
+   "end": 272.01,
+   "text": "you factor them, and now we can start putting"
+  },
+  {
+   "start": 272.01,
+   "end": 276.05,
+   "text": "in numbers. So, ma is 2, I believe, 2 kilograms,"
+  },
+  {
+   "start": 277.07,
+   "end": 281.49,
+   "text": "and velocity is 4, so 4 squared times 2 would"
+  },
+  {
+   "start": 281.49,
+   "end": 289.51,
+   "text": "be 32. 2 vAF squared"
+  },
+  {
+   "start": 289.51,
+   "end": 293.89,
+   "text": "plus vBF squared, since mB is 1."
+  },
+  {
+   "start": 294.65,
+   "end": 297.45,
+   "text": "And now, what we can do is we can just solve"
+  },
+  {
+   "start": 297.45,
+   "end": 299.61,
+   "text": "our numbers."
+  },
+  {
+   "start": 299.61,
+   "end": 304.67,
+   "text": "We have vAF and we have vBF, which means that"
+  },
+  {
+   "start": 304.67,
+   "end": 308.75,
+   "text": "we have 2 equations with 2 unknowns."
+  },
+  {
+   "start": 309.41,
+   "end": 312.01,
+   "text": "Now, this is just simple math, so you can see"
+  },
+  {
+   "start": 312.01,
+   "end": 314.89,
+   "text": "how physics kind of relates to math, in a sense."
+  },
+  {
+   "start": 315.57,
+   "end": 318.15,
+   "text": "So, I'm just going to really quickly do this."
+  },
+  {
+   "start": 318.53,
+   "end": 323.07,
+   "text": "I see that vBF can be substituted in."
+  },
+  {
+   "start": 323.07,
+   "end": 327.65,
+   "text": "vBF equals 8 minus 2 vAF."
+  },
+  {
+   "start": 328.07,
+   "end": 330.37,
+   "text": "So, I'm going to substitute that into this equation."
+  },
+  {
+   "start": 331.43,
+   "end": 338.53,
+   "text": "So, what I'll get is 32 equals 2 vAF"
+  },
+  {
+   "start": 338.53,
+   "end": 344.89,
+   "text": "squared plus 8 minus 2 vAF squared."
+  },
+  {
+   "start": 344.89,
+   "end": 349.71,
+   "text": "And now, we can just solve that. So, 32 equals..."
+  },
+  {
+   "start": 349.71,
+   "end": 353.21,
+   "text": "Let's call vAF x, so it's easier."
+  },
+  {
+   "start": 353.31,
+   "end": 356.03,
+   "text": "I don't have to write vAF every single time."
+  },
+  {
+   "start": 356.51,
+   "end": 364.43,
+   "text": "So, 32 equals 2x squared plus 64 minus 32x"
+  },
+  {
+   "start": 364.43,
+   "end": 367.03,
+   "text": "plus 4x squared."
+  },
+  {
+   "start": 368.15,
+   "end": 371.49,
+   "text": "And now, we just continue solving this."
+  },
+  {
+   "start": 372.31,
+   "end": 380.07,
+   "text": "32 equals 6x squared plus 64 minus 32x."
+  },
+  {
+   "start": 380.61,
+   "end": 383.49,
+   "text": "So, 0 equals 3x squared."
+  },
+  {
+   "start": 383.63,
+   "end": 386.07,
+   "text": "I'm moving this to the side and dividing by"
+  },
+  {
+   "start": 386.07,
+   "end": 393.05,
+   "text": "2. Plus 16x plus 16."
+  },
+  {
+   "start": 396.85,
+   "end": 401.13,
+   "text": "And when we solve for x using the quadratic"
+  },
+  {
+   "start": 401.13,
+   "end": 404.55,
+   "text": "formula or factoring, I think you can only use"
+  },
+  {
+   "start": 404.55,
+   "end": 407.89,
+   "text": "the quadratic formula here. So, 16 plus root"
+  },
+  {
+   "start": 407.89,
+   "end": 414.91,
+   "text": "16 squared minus 4, 3, 16 over"
+  },
+  {
+   "start": 414.91,
+   "end": 419.67,
+   "text": "2 times 3. You would get x is equal to 4."
+  },
+  {
+   "start": 423.14,
+   "end": 433.48,
+   "text": "And you would also get x is equal to 1.33"
+  },
+  {
+   "start": 433.48,
+   "end": 438.12,
+   "text": "metres per second. Now, how do you know which"
+  },
+  {
+   "start": 438.12,
+   "end": 441.04,
+   "text": "one is the right answer?"
+  },
+  {
+   "start": 441.48,
+   "end": 445.06,
+   "text": "Well, you know that the initial speed of this"
+  },
+  {
+   "start": 445.06,
+   "end": 448.44,
+   "text": "cart is 4 metres per second. So, when it's transferring"
+  },
+  {
+   "start": 448.44,
+   "end": 453.68,
+   "text": "energy, what we solved is the possible speeds"
+  },
+  {
+   "start": 453.68,
+   "end": 457.38,
+   "text": "of the carts. And you know this is the initial,"
+  },
+  {
+   "start": 457.92,
+   "end": 461.06,
+   "text": "so we want the final. So, x must be 1.33."
+  },
+  {
+   "start": 461.06,
+   "end": 466.66,
+   "text": "So, the final speed of cart A must be 1.33 metres"
+  },
+  {
+   "start": 466.66,
+   "end": 469.48,
+   "text": "per second. And this would be your answer for"
+  },
+  {
+   "start": 469.48,
+   "end": 473.1,
+   "text": "this cart. Now, one final step is to calculate"
+  },
+  {
+   "start": 473.1,
+   "end": 475.16,
+   "text": "the speed of the other cart, just plugging this"
+  },
+  {
+   "start": 475.16,
+   "end": 481.32,
+   "text": "into this formula. So, we get vbf equals 8 minus"
+  },
+  {
+   "start": 481.32,
+   "end": 484.48,
+   "text": "2vaf, which is 1.33."
+  },
+  {
+   "start": 484.48,
+   "end": 492.14,
+   "text": "And you would get 5.33 metres"
+  },
+  {
+   "start": 492.14,
+   "end": 495.54,
+   "text": "per second. And that would be your final answer"
+  },
+  {
+   "start": 495.54,
+   "end": 500.94,
+   "text": "for cart 2. And so, you can see how we can relate"
+  },
+  {
+   "start": 500.94,
+   "end": 503.4,
+   "text": "momentum with conservation of energy."
+  },
+  {
+   "start": 503.94,
+   "end": 506.76,
+   "text": "And this is basically how you do it for elastic"
+  },
+  {
+   "start": 506.76,
+   "end": 510.32,
+   "text": "collisions. Now, however, what if the collisions"
+  },
+  {
+   "start": 510.32,
+   "end": 514.5,
+   "text": "are inelastic? Well, if it's inelastic, then"
+  },
+  {
+   "start": 514.5,
+   "end": 517.34,
+   "text": "momentum is conserved, but energy is lost."
+  },
+  {
+   "start": 517.76,
+   "end": 520.72,
+   "text": "And I find inelastic collisions way, way easier,"
+  },
+  {
+   "start": 520.98,
+   "end": 523.62,
+   "text": "it's way, way faster as well, because there's"
+  },
+  {
+   "start": 523.62,
+   "end": 527.68,
+   "text": "also no big math calculations like we had to"
+  },
+  {
+   "start": 527.68,
+   "end": 530.34,
+   "text": "do over here. Let's see this question."
+  },
+  {
+   "start": 530.74,
+   "end": 534.14,
+   "text": "A 0.5 kilogram ball moving at 6 metres per second"
+  },
+  {
+   "start": 534.14,
+   "end": 537.72,
+   "text": "collides with a 1.5 kilogram stationary ball,"
+  },
+  {
+   "start": 537.72,
+   "end": 543.88,
+   "text": "or a ball at rest, 1.5 kg and 0.5."
+  },
+  {
+   "start": 544.5,
+   "end": 547.16,
+   "text": "And it's moving at 6 metres per second."
+  },
+  {
+   "start": 547.78,
+   "end": 550.38,
+   "text": "After the collisions, the two balls stick together."
+  },
+  {
+   "start": 550.8,
+   "end": 552.78,
+   "text": "When they stick together, you know the collision"
+  },
+  {
+   "start": 552.78,
+   "end": 559.94,
+   "text": "is inelastic. And the"
+  },
+  {
+   "start": 559.94,
+   "end": 562.7,
+   "text": "question didn't state what you want to solve,"
+  },
+  {
+   "start": 562.7,
+   "end": 569.86,
+   "text": "but let's say you want to solve the final speed"
+  },
+  {
+   "start": 569.86,
+   "end": 576.92,
+   "text": "of both balls, both balls, and be"
+  },
+  {
+   "start": 576.92,
+   "end": 581.6,
+   "text": "the loss of kinetic energy, loss of Ke."
+  },
+  {
+   "start": 582.6,
+   "end": 585.04,
+   "text": "Now, the final speed of each ball is the same"
+  },
+  {
+   "start": 585.04,
+   "end": 587.42,
+   "text": "because they stick together, and we can use"
+  },
+  {
+   "start": 587.42,
+   "end": 589.52,
+   "text": "the conservation of momentum to do this."
+  },
+  {
+   "start": 589.52,
+   "end": 592.8,
+   "text": "And this time we don't have two different variables"
+  },
+  {
+   "start": 592.8,
+   "end": 596.18,
+   "text": "because the final speed is the same. So once"
+  },
+  {
+   "start": 596.18,
+   "end": 599.06,
+   "text": "they collide, you can think of them as one system,"
+  },
+  {
+   "start": 599.34,
+   "end": 603.92,
+   "text": "a combined mass moving at a certain amount of"
+  },
+  {
+   "start": 603.92,
+   "end": 605.94,
+   "text": "speed, and that's what we want to find. So the"
+  },
+  {
+   "start": 605.94,
+   "end": 610.1,
+   "text": "combined mass would be 0.5 plus 1.5, which is"
+  },
+  {
+   "start": 610.1,
+   "end": 613.48,
+   "text": "2 kg. So using the conservation of momentum,"
+  },
+  {
+   "start": 614.08,
+   "end": 617.06,
+   "text": "we know that P, let's call this ball A and ball"
+  },
+  {
+   "start": 617.06,
+   "end": 620.46,
+   "text": "B, the momentum of A plus the momentum of B"
+  },
+  {
+   "start": 620.46,
+   "end": 624.0,
+   "text": "is equal to the momentum of A plus B, because"
+  },
+  {
+   "start": 624.0,
+   "end": 626.2,
+   "text": "after they collide, they stick together, and"
+  },
+  {
+   "start": 626.2,
+   "end": 629.82,
+   "text": "you can treat it as one system. The momentum"
+  },
+  {
+   "start": 629.82,
+   "end": 633.86,
+   "text": "of A is equal to 0.5 times 6."
+  },
+  {
+   "start": 634.52,
+   "end": 639.64,
+   "text": "The momentum of B is equal to 1.5 times 0, which"
+  },
+  {
+   "start": 639.64,
+   "end": 646.74,
+   "text": "is 0. And the momentum of both the"
+  },
+  {
+   "start": 646.74,
+   "end": 649.14,
+   "text": "things after they stick together is their total"
+  },
+  {
+   "start": 649.14,
+   "end": 652.7,
+   "text": "mass, which we calculated over here, 0.5 plus"
+  },
+  {
+   "start": 652.7,
+   "end": 656.16,
+   "text": "1.5, times their final speed."
+  },
+  {
+   "start": 657.38,
+   "end": 663.56,
+   "text": "So 0.5 times 6 is 3, and 0.5 plus 1.5 is 2 times"
+  },
+  {
+   "start": 663.56,
+   "end": 666.1,
+   "text": "vf. So that's pretty straightforward."
+  },
+  {
+   "start": 666.28,
+   "end": 670.14,
+   "text": "We get the final velocity of both balls is 1.5"
+  },
+  {
+   "start": 670.14,
+   "end": 674.1,
+   "text": "m per second. That would be your final answer"
+  },
+  {
+   "start": 674.1,
+   "end": 677.9,
+   "text": "for A. Now, let's move on to question B."
+  },
+  {
+   "start": 678.92,
+   "end": 681.38,
+   "text": "Question B asks us for the loss of Ke."
+  },
+  {
+   "start": 682.26,
+   "end": 687.08,
+   "text": "Well, the loss of kinetic energy could be written"
+  },
+  {
+   "start": 687.08,
+   "end": 692.62,
+   "text": "as the initial kinetic energy value minus the"
+  },
+  {
+   "start": 692.62,
+   "end": 697.86,
+   "text": "final kinetic energy value, because that would"
+  },
+  {
+   "start": 697.86,
+   "end": 702.12,
+   "text": "be the loss. And the initial kinetic energy"
+  },
+  {
+   "start": 702.12,
+   "end": 704.48,
+   "text": "is the total kinetic energy of both balls."
+  },
+  {
+   "start": 705.38,
+   "end": 708.16,
+   "text": "Ball B is stationary, so it doesn't have any"
+  },
+  {
+   "start": 708.16,
+   "end": 712.04,
+   "text": "kinetic energy. So ball A is basic."
+  },
+  {
+   "start": 712.34,
+   "end": 714.92,
+   "text": "The kinetic energy in ball A is the total kinetic"
+  },
+  {
+   "start": 714.92,
+   "end": 718.54,
+   "text": "energy initially. So it would be 1 over 2 ma"
+  },
+  {
+   "start": 718.54,
+   "end": 723.74,
+   "text": "va squared minus, and now after, when both systems"
+  },
+  {
+   "start": 723.74,
+   "end": 726.26,
+   "text": "are combined and there is only one big system,"
+  },
+  {
+   "start": 726.26,
+   "end": 730.46,
+   "text": "it is minus 1 over 2 times the combined mass"
+  },
+  {
+   "start": 730.46,
+   "end": 733.4,
+   "text": "times the combined speed squared."
+  },
+  {
+   "start": 734.44,
+   "end": 736.62,
+   "text": "I would factor out 1 over 2 over here."
+  },
+  {
+   "start": 737.04,
+   "end": 739.96,
+   "text": "Mass of A is 0.5."
+  },
+  {
+   "start": 741.12,
+   "end": 745.9,
+   "text": "The velocity is 6, so 6 squared minus mass of"
+  },
+  {
+   "start": 745.9,
+   "end": 751.46,
+   "text": "AB is 2. The velocity of AB is what we calculated"
+  },
+  {
+   "start": 751.46,
+   "end": 754.28,
+   "text": "over here, so 1.5 squared."
+  },
+  {
+   "start": 755.3,
+   "end": 758.04,
+   "text": "And now it's just a matter of calculating."
+  },
+  {
+   "start": 759.18,
+   "end": 762.16,
+   "text": "I will just type this directly in my calculator,"
+  },
+  {
+   "start": 763.48,
+   "end": 766.94,
+   "text": "because we have shown basically all the logic"
+  },
+  {
+   "start": 766.94,
+   "end": 769.36,
+   "text": "steps. Times 1.5 squared."
+  },
+  {
+   "start": 770.26,
+   "end": 777.64,
+   "text": "And you'll get 6.75 joules of energy lost."
+  },
+  {
+   "start": 777.82,
+   "end": 780.2,
+   "text": "And that will be your final answer for part"
+  },
+  {
+   "start": 780.2,
+   "end": 783.94,
+   "text": "B. And that's it on how to solve elastic collisions."
+  },
+  {
+   "start": 784.64,
+   "end": 788.04,
+   "text": "And elastic collisions. So just remember, elastic"
+  },
+  {
+   "start": 788.04,
+   "end": 790.6,
+   "text": "collisions energy is conserved, and you will"
+  },
+  {
+   "start": 790.6,
+   "end": 793.3,
+   "text": "likely end up with two different formulas that"
+  },
+  {
+   "start": 793.3,
+   "end": 797.0,
+   "text": "you will have to solve for this. However, in"
+  },
+  {
+   "start": 797.0,
+   "end": 800.32,
+   "text": "elastic equations, you will likely only have"
+  },
+  {
+   "start": 800.32,
+   "end": 803.96,
+   "text": "to solve one formula, because the systems combine"
+  },
+  {
+   "start": 803.96,
+   "end": 806.44,
+   "text": "into one big system, so you're just solving"
+  },
+  {
+   "start": 806.44,
+   "end": 809.56,
+   "text": "for whatever you want for that one big system."
+  },
+  {
+   "start": 810.48,
+   "end": 812.72,
+   "text": "Thank you, and I hope you learned how to solve"
+  },
+  {
+   "start": 812.72,
+   "end": 813.68,
+   "text": "these types of problems."
+  }
+ ],
+ "report": {
+  "key": "momentum_and_collisions__collisions_elastic",
+  "title": "Inelastic and Elastic Momentum Questions",
+  "topicKey": "momentum_and_collisions",
+  "duration": 815.2106875,
+  "cues": 192,
+  "corrections": 6,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.18264293670654297,
+  "flagged": []
+ }
+}

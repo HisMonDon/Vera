@@ -1,0 +1,1079 @@
+{
+ "lesson": {
+  "topicKey": "dynamics",
+  "curriculumKey": "forces_friction",
+  "title": "Friction",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/dynamics/friction.mp4",
+  "source": "dynamics.dart"
+ },
+ "segments": [
+  {
+   "start": 1.2,
+   "end": 7.78,
+   "text": "Now, we are going to move on to friction, and we are going to continue the problem that we left off in the previous videos.",
+   "avg_logprob": -0.15956854307523338
+  },
+  {
+   "start": 9.18,
+   "end": 14.64,
+   "text": "So, let's go back and quickly redraw the free-body diagram we have drawn.",
+   "avg_logprob": -0.15956854307523338
+  },
+  {
+   "start": 16.58,
+   "end": 21.86,
+   "text": "So, there is going to be a force of gravity, Fg,",
+   "avg_logprob": -0.15956854307523338
+  },
+  {
+   "start": 22.84,
+   "end": 33.02,
+   "text": "there is going to be a normal force, Fn, F applied, and there will be a friction force.",
+   "avg_logprob": -0.15956854307523338
+  },
+  {
+   "start": 35.76,
+   "end": 43.42,
+   "text": "Now, we are going to identify which forces form an action-reaction pair according to Newton's third law.",
+   "avg_logprob": -0.13471690105630996
+  },
+  {
+   "start": 44.18,
+   "end": 48.88,
+   "text": "So, in case you guys forgot what's Newton's third law, I have it up here. For every action,",
+   "avg_logprob": -0.13471690105630996
+  },
+  {
+   "start": 49.06,
+   "end": 55.54,
+   "text": "there is an equal and opposite reaction, and that typically occurs on two different objects.",
+   "avg_logprob": -0.13471690105630996
+  },
+  {
+   "start": 56.1,
+   "end": 62.9,
+   "text": "For example, if you punch a piece of wood, the two objects being analyzed here are your hand",
+   "avg_logprob": -0.13471690105630996
+  },
+  {
+   "start": 62.9,
+   "end": 67.52,
+   "text": "and that piece of wood. If you catch a baseball, it would be your hand and a baseball. It's never",
+   "avg_logprob": -0.07351220056817338
+  },
+  {
+   "start": 67.52,
+   "end": 74.82,
+   "text": "on one object. So, with that in mind, I can only think of one action-reaction pair on",
+   "avg_logprob": -0.07351220056817338
+  },
+  {
+   "start": 75.54,
+   "end": 84.66,
+   "text": "the physical level, and that would be the table and the box regarding the force of friction.",
+   "avg_logprob": -0.07351220056817338
+  },
+  {
+   "start": 86.06,
+   "end": 95.72,
+   "text": "This is because the table exerts a force of friction on the box, and that box exerts the",
+   "avg_logprob": -0.1200252797533857
+  },
+  {
+   "start": 95.72,
+   "end": 102.8,
+   "text": "same force of friction on the table, and that's just the definition of an action-reaction pair.",
+   "avg_logprob": -0.1200252797533857
+  },
+  {
+   "start": 103.68,
+   "end": 109.76,
+   "text": "So, next question. Determine whether the car accelerates or moves with constant velocity.",
+   "avg_logprob": -0.1200252797533857
+  },
+  {
+   "start": 110.66,
+   "end": 116.26,
+   "text": "Well, this one, we have to know, first of all, how to do the force of friction. The",
+   "avg_logprob": -0.1200252797533857
+  },
+  {
+   "start": 116.26,
+   "end": 122.54,
+   "text": "force of friction is really, really simple. It's just one straightforward formula. Force of friction",
+   "avg_logprob": -0.1400067218835803
+  },
+  {
+   "start": 122.54,
+   "end": 132.94,
+   "text": "equals normal force, or f of n or n, f of n times mu, where f of n is normal force",
+   "avg_logprob": -0.1400067218835803
+  },
+  {
+   "start": 135.48,
+   "end": 145.78,
+   "text": "and mu is the coefficient of friction, which is usually given. The coefficient of friction is",
+   "avg_logprob": -0.1400067218835803
+  },
+  {
+   "start": 145.78,
+   "end": 154.08,
+   "text": "always determined experimentally in real life. There is no shortcut or a formula to derive the",
+   "avg_logprob": -0.06717973351478576
+  },
+  {
+   "start": 154.08,
+   "end": 159.48,
+   "text": "coefficient of friction. Everything we know about the coefficient of friction is derived",
+   "avg_logprob": -0.06717973351478576
+  },
+  {
+   "start": 159.48,
+   "end": 166.82,
+   "text": "experimentally. That's a fun fact, and yeah, this is basically the main formula for today's",
+   "avg_logprob": -0.06717973351478576
+  },
+  {
+   "start": 166.82,
+   "end": 174.18,
+   "text": "video, and we are going to put it in good use. So, determine whether the car accelerates or",
+   "avg_logprob": -0.06717973351478576
+  },
+  {
+   "start": 174.18,
+   "end": 182.1,
+   "text": "moves with constant velocity. Well, in order to do that, we have to know about and calculate",
+   "avg_logprob": -0.07740607112646103
+  },
+  {
+   "start": 182.1,
+   "end": 192.12,
+   "text": "the net force. The net force is basically the overall force that an object undergoes,",
+   "avg_logprob": -0.07740607112646103
+  },
+  {
+   "start": 192.12,
+   "end": 200.34,
+   "text": "so all these forces combined. Well, first of all, the combination of the normal force",
+   "avg_logprob": -0.07740607112646103
+  },
+  {
+   "start": 200.34,
+   "end": 209.68,
+   "text": "and the force of gravity cross out, so the net force going up and down vertically is zero.",
+   "avg_logprob": -0.07644456384910478
+  },
+  {
+   "start": 209.88,
+   "end": 214.64,
+   "text": "There's no net force going up and down. The box stays where it is. However, horizontally,",
+   "avg_logprob": -0.07644456384910478
+  },
+  {
+   "start": 214.82,
+   "end": 220.32,
+   "text": "it's a different story. The net force, if we treat to the right as the positive direction,",
+   "avg_logprob": -0.07644456384910478
+  },
+  {
+   "start": 223.28,
+   "end": 228.3,
+   "text": "it's the applied force subtracted by the force of friction, because the force of friction",
+   "avg_logprob": -0.07644456384910478
+  },
+  {
+   "start": 228.3,
+   "end": 239.02,
+   "text": "is going here, so f app minus f app, and getting the net force is crucial, and it's basically",
+   "avg_logprob": -0.09415253472160286
+  },
+  {
+   "start": 239.02,
+   "end": 245.08,
+   "text": "the start to every dynamics problem. You have to get the overall force that the object undergoes",
+   "avg_logprob": -0.09415253472160286
+  },
+  {
+   "start": 245.08,
+   "end": 250.8,
+   "text": "to even know and comprehend how it's going to move. In this case, it's pretty simple.",
+   "avg_logprob": -0.09415253472160286
+  },
+  {
+   "start": 251.26,
+   "end": 261.82,
+   "text": "The applied force, we know it is 18 newtons. The force of friction is, we know the normal force.",
+   "avg_logprob": -0.10374153997091685
+  },
+  {
+   "start": 262.54,
+   "end": 268.96,
+   "text": "The normal force is positive because it's going up, and it's the magnitude of gravity,",
+   "avg_logprob": -0.10374153997091685
+  },
+  {
+   "start": 269.46,
+   "end": 276.98,
+   "text": "which is mass of the crate times the acceleration to gravity, and now that's our",
+   "avg_logprob": -0.10374153997091685
+  },
+  {
+   "start": 276.98,
+   "end": 283.74,
+   "text": "normal force, and now we have to have the coefficient of friction, so times mu, so it'd",
+   "avg_logprob": -0.1317717573221992
+  },
+  {
+   "start": 283.74,
+   "end": 298.34,
+   "text": "just be 18 minus 5.0 times 9.81 times the coefficient is 0.30. And we should get around",
+   "avg_logprob": -0.1317717573221992
+  },
+  {
+   "start": 300.16,
+   "end": 313.36,
+   "text": "3.2, 3.3 because of sig figs, 3.3 newtons. And keep in mind that it's positive, which means",
+   "avg_logprob": -0.07807923516347295
+  },
+  {
+   "start": 313.36,
+   "end": 321.77,
+   "text": "the net force is going that way with a magnitude of 3.3 newtons. And what does that",
+   "avg_logprob": -0.07807923516347295
+  },
+  {
+   "start": 321.77,
+   "end": 330.23,
+   "text": "tell us? Well, that means that the box undergoes a constant force of 3.3 newtons to the right,",
+   "avg_logprob": -0.07807923516347295
+  },
+  {
+   "start": 330.23,
+   "end": 338.89,
+   "text": "and that's its overall force. All of these forces combine to make an overall force going 3.3 newtons",
+   "avg_logprob": -0.05900084675365203
+  },
+  {
+   "start": 338.89,
+   "end": 344.95,
+   "text": "to the right, and no other force matters unless there's an external force, as we talked about.",
+   "avg_logprob": -0.05900084675365203
+  },
+  {
+   "start": 345.97,
+   "end": 355.54,
+   "text": "So what does that mean? Well, that means that it's going to accelerate. Why? Because there is",
+   "avg_logprob": -0.05900084675365203
+  },
+  {
+   "start": 355.54,
+   "end": 363.22,
+   "text": "constant force applied to this, and force is mass times acceleration. If this is constant,",
+   "avg_logprob": -0.07595414432386557
+  },
+  {
+   "start": 363.84,
+   "end": 370.92,
+   "text": "then acceleration will be constant. There will be a constant acceleration being undergone",
+   "avg_logprob": -0.07595414432386557
+  },
+  {
+   "start": 371.74,
+   "end": 379.9,
+   "text": "by the box, and that will be the answer to that part. Calculate the magnitude and direction",
+   "avg_logprob": -0.07595414432386557
+  },
+  {
+   "start": 379.9,
+   "end": 386.94,
+   "text": "of the acceleration. Well, we already did 70% of the problem by calculating this force.",
+   "avg_logprob": -0.09678912327131804
+  },
+  {
+   "start": 387.56,
+   "end": 394.44,
+   "text": "So how about you first pause the video and try doing this question, and we'll take it up.",
+   "avg_logprob": -0.09678912327131804
+  },
+  {
+   "start": 396.22,
+   "end": 406.68,
+   "text": "Okay, so now what we have is we have f net is equal to the mass times acceleration,",
+   "avg_logprob": -0.09678912327131804
+  },
+  {
+   "start": 406.68,
+   "end": 413.96,
+   "text": "the net acceleration of the object. We have f net over here, and we want to calculate the",
+   "avg_logprob": -0.09085969959159156
+  },
+  {
+   "start": 413.96,
+   "end": 419.2,
+   "text": "acceleration. Do we have the mass? Yes, we do. The mass is given in the problem, and it says",
+   "avg_logprob": -0.09085969959159156
+  },
+  {
+   "start": 419.2,
+   "end": 430.18,
+   "text": "5 kilograms. Acceleration, a net. So what would the acceleration be? Well, we just isolate for",
+   "avg_logprob": -0.09085969959159156
+  },
+  {
+   "start": 430.18,
+   "end": 446.62,
+   "text": "it. It's f net over m 3.3 over 5, and that would give you 3.3 divided by 5, 0.66 meters per second",
+   "avg_logprob": -0.1170192556756158
+  },
+  {
+   "start": 446.62,
+   "end": 456.46,
+   "text": "squared. And it also asks you to put a direction. We know it's positive, which means it's going to",
+   "avg_logprob": -0.1170192556756158
+  },
+  {
+   "start": 456.46,
+   "end": 465.14,
+   "text": "this way, which is to the right. The question didn't specify, so we're just going to say it",
+   "avg_logprob": -0.08575388176800454
+  },
+  {
+   "start": 465.14,
+   "end": 471.56,
+   "text": "goes in the positive direction, because this is positive. Oh, it does say to the right. So",
+   "avg_logprob": -0.08575388176800454
+  },
+  {
+   "start": 471.56,
+   "end": 481.66,
+   "text": "yeah, it's going to be towards the right. Right. And that will be your answer for this",
+   "avg_logprob": -0.08575388176800454
+  },
+  {
+   "start": 481.66,
+   "end": 489.9,
+   "text": "question. Oh, that's an ugly box. And that's basically it for the force of friction,",
+   "avg_logprob": -0.0595571122960084
+  },
+  {
+   "start": 489.9,
+   "end": 496.46,
+   "text": "and we went a little extra, and we talked about how to do these types of dynamics problems.",
+   "avg_logprob": -0.0595571122960084
+  },
+  {
+   "start": 497.98,
+   "end": 505.82,
+   "text": "Basically, the number one tip I'm going to give you here is to always try to find the net force.",
+   "avg_logprob": -0.0595571122960084
+  },
+  {
+   "start": 505.82,
+   "end": 512.7,
+   "text": "Always, always, always try to find the net force, even if it's in components. If you're dealing with",
+   "avg_logprob": -0.06168675304136493
+  },
+  {
+   "start": 512.7,
+   "end": 517.44,
+   "text": "harder questions, you might have to find the net force horizontally and the net force vertically",
+   "avg_logprob": -0.06168675304136493
+  },
+  {
+   "start": 517.44,
+   "end": 523.64,
+   "text": "separately, and then you can deal with those numbers later. But you have to combine vectors",
+   "avg_logprob": -0.06168675304136493
+  },
+  {
+   "start": 523.64,
+   "end": 532.16,
+   "text": "to get the overall motion that the object is undergoing. And yeah, that's it for the",
+   "avg_logprob": -0.06168675304136493
+  },
+  {
+   "start": 532.16,
+   "end": 537.66,
+   "text": "force of friction and an introduction to how to solve real dynamics problems. Thank you.",
+   "avg_logprob": -0.15054738223552705
+  }
+ ],
+ "cues": [
+  {
+   "start": 1.2,
+   "end": 4.06,
+   "text": "Now, we are going to move on to friction, and"
+  },
+  {
+   "start": 4.06,
+   "end": 6.12,
+   "text": "we are going to continue the problem that we"
+  },
+  {
+   "start": 6.12,
+   "end": 10.42,
+   "text": "left off in the previous videos. So, let's go"
+  },
+  {
+   "start": 10.42,
+   "end": 13.62,
+   "text": "back and quickly redraw the free-body diagram"
+  },
+  {
+   "start": 13.62,
+   "end": 20.56,
+   "text": "we have drawn. So, there is going to be a force"
+  },
+  {
+   "start": 20.56,
+   "end": 24.54,
+   "text": "of gravity, Fg, there is going to be a normal"
+  },
+  {
+   "start": 24.54,
+   "end": 31.72,
+   "text": "force, Fn, F applied, and there will be"
+  },
+  {
+   "start": 31.72,
+   "end": 38.14,
+   "text": "a friction force. Now, we are going to identify"
+  },
+  {
+   "start": 38.14,
+   "end": 41.72,
+   "text": "which forces form an action-reaction pair according"
+  },
+  {
+   "start": 41.72,
+   "end": 45.26,
+   "text": "to Newton's third law. So, in case you guys"
+  },
+  {
+   "start": 45.26,
+   "end": 47.38,
+   "text": "forgot what's Newton's third law, I have it"
+  },
+  {
+   "start": 47.38,
+   "end": 49.7,
+   "text": "up here. For every action, there is an equal"
+  },
+  {
+   "start": 49.7,
+   "end": 52.92,
+   "text": "and opposite reaction, and that typically occurs"
+  },
+  {
+   "start": 52.92,
+   "end": 55.54,
+   "text": "on two different objects."
+  },
+  {
+   "start": 56.1,
+   "end": 60.2,
+   "text": "For example, if you punch a piece of wood, the"
+  },
+  {
+   "start": 60.2,
+   "end": 62.9,
+   "text": "two objects being analyzed here are your hand"
+  },
+  {
+   "start": 62.9,
+   "end": 65.38,
+   "text": "and that piece of wood. If you catch a baseball,"
+  },
+  {
+   "start": 65.58,
+   "end": 67.52,
+   "text": "it would be your hand and a baseball. It's never"
+  },
+  {
+   "start": 67.52,
+   "end": 71.4,
+   "text": "on one object. So, with that in mind, I can"
+  },
+  {
+   "start": 71.4,
+   "end": 76.08,
+   "text": "only think of one action-reaction pair on the"
+  },
+  {
+   "start": 76.08,
+   "end": 80.58,
+   "text": "physical level, and that would be the table"
+  },
+  {
+   "start": 80.58,
+   "end": 84.66,
+   "text": "and the box regarding the force of friction."
+  },
+  {
+   "start": 86.06,
+   "end": 92.26,
+   "text": "This is because the table exerts a force of"
+  },
+  {
+   "start": 92.26,
+   "end": 95.72,
+   "text": "friction on the box, and that box exerts the"
+  },
+  {
+   "start": 95.72,
+   "end": 98.06,
+   "text": "same force of friction on the table, and that's"
+  },
+  {
+   "start": 98.06,
+   "end": 102.8,
+   "text": "just the definition of an action-reaction pair."
+  },
+  {
+   "start": 103.68,
+   "end": 106.64,
+   "text": "So, next question. Determine whether the car"
+  },
+  {
+   "start": 106.64,
+   "end": 109.76,
+   "text": "accelerates or moves with constant velocity."
+  },
+  {
+   "start": 110.66,
+   "end": 113.72,
+   "text": "Well, this one, we have to know, first of all,"
+  },
+  {
+   "start": 113.9,
+   "end": 116.58,
+   "text": "how to do the force of friction. The force of"
+  },
+  {
+   "start": 116.58,
+   "end": 119.06,
+   "text": "friction is really, really simple. It's just"
+  },
+  {
+   "start": 119.06,
+   "end": 122.54,
+   "text": "one straightforward formula. Force of friction"
+  },
+  {
+   "start": 122.54,
+   "end": 128.2,
+   "text": "equals normal force, or f of n or n, f of n"
+  },
+  {
+   "start": 128.2,
+   "end": 135.83,
+   "text": "times mu, where f of n is normal force and"
+  },
+  {
+   "start": 135.83,
+   "end": 139.99,
+   "text": "mu is the coefficient of friction, which is"
+  },
+  {
+   "start": 139.99,
+   "end": 145.78,
+   "text": "usually given. The coefficient of friction is"
+  },
+  {
+   "start": 145.78,
+   "end": 148.98,
+   "text": "always determined experimentally in real life."
+  },
+  {
+   "start": 149.64,
+   "end": 153.86,
+   "text": "There is no shortcut or a formula to derive"
+  },
+  {
+   "start": 153.86,
+   "end": 157.66,
+   "text": "the coefficient of friction. Everything we know"
+  },
+  {
+   "start": 157.66,
+   "end": 159.48,
+   "text": "about the coefficient of friction is derived"
+  },
+  {
+   "start": 159.48,
+   "end": 163.72,
+   "text": "experimentally. That's a fun fact, and yeah,"
+  },
+  {
+   "start": 163.8,
+   "end": 166.82,
+   "text": "this is basically the main formula for today's"
+  },
+  {
+   "start": 166.82,
+   "end": 169.24,
+   "text": "video, and we are going to put it in good use."
+  },
+  {
+   "start": 171.22,
+   "end": 174.18,
+   "text": "So, determine whether the car accelerates or"
+  },
+  {
+   "start": 174.18,
+   "end": 178.28,
+   "text": "moves with constant velocity. Well, in order"
+  },
+  {
+   "start": 178.28,
+   "end": 182.1,
+   "text": "to do that, we have to know about and calculate"
+  },
+  {
+   "start": 182.1,
+   "end": 187.12,
+   "text": "the net force. The net force is basically the"
+  },
+  {
+   "start": 187.12,
+   "end": 192.68,
+   "text": "overall force that an object undergoes, so all"
+  },
+  {
+   "start": 192.68,
+   "end": 196.94,
+   "text": "these forces combined. Well, first of all, the"
+  },
+  {
+   "start": 196.94,
+   "end": 201.02,
+   "text": "combination of the normal force and the force"
+  },
+  {
+   "start": 201.02,
+   "end": 206.68,
+   "text": "of gravity cross out, so the net force going"
+  },
+  {
+   "start": 206.68,
+   "end": 209.68,
+   "text": "up and down vertically is zero."
+  },
+  {
+   "start": 209.88,
+   "end": 211.66,
+   "text": "There's no net force going up and down. The"
+  },
+  {
+   "start": 211.66,
+   "end": 214.64,
+   "text": "box stays where it is. However, horizontally,"
+  },
+  {
+   "start": 214.82,
+   "end": 216.96,
+   "text": "it's a different story. The net force, if we"
+  },
+  {
+   "start": 216.96,
+   "end": 220.32,
+   "text": "treat to the right as the positive direction,"
+  },
+  {
+   "start": 223.28,
+   "end": 226.86,
+   "text": "it's the applied force subtracted by the force"
+  },
+  {
+   "start": 226.86,
+   "end": 228.52,
+   "text": "of friction, because the force of friction is"
+  },
+  {
+   "start": 228.52,
+   "end": 235.08,
+   "text": "going here, so f app minus f app, and getting"
+  },
+  {
+   "start": 235.08,
+   "end": 239.02,
+   "text": "the net force is crucial, and it's basically"
+  },
+  {
+   "start": 239.02,
+   "end": 241.5,
+   "text": "the start to every dynamics problem."
+  },
+  {
+   "start": 241.6,
+   "end": 244.46,
+   "text": "You have to get the overall force that the object"
+  },
+  {
+   "start": 244.46,
+   "end": 248.28,
+   "text": "undergoes to even know and comprehend how it's"
+  },
+  {
+   "start": 248.28,
+   "end": 250.8,
+   "text": "going to move. In this case, it's pretty simple."
+  },
+  {
+   "start": 251.26,
+   "end": 256.8,
+   "text": "The applied force, we know it is 18 newtons."
+  },
+  {
+   "start": 257.74,
+   "end": 261.48,
+   "text": "The force of friction is, we know the normal"
+  },
+  {
+   "start": 261.48,
+   "end": 266.26,
+   "text": "force. The normal force is positive because"
+  },
+  {
+   "start": 266.26,
+   "end": 268.96,
+   "text": "it's going up, and it's the magnitude of gravity,"
+  },
+  {
+   "start": 269.46,
+   "end": 274.06,
+   "text": "which is mass of the crate times the acceleration"
+  },
+  {
+   "start": 274.06,
+   "end": 277.74,
+   "text": "to gravity, and now that's our normal force,"
+  },
+  {
+   "start": 278.88,
+   "end": 281.12,
+   "text": "and now we have to have the coefficient of friction,"
+  },
+  {
+   "start": 281.64,
+   "end": 287.3,
+   "text": "so times mu, so it'd just be 18 minus 5.0 times"
+  },
+  {
+   "start": 287.3,
+   "end": 291.48,
+   "text": "9.81 times the coefficient is 0.30."
+  },
+  {
+   "start": 294.46,
+   "end": 304.38,
+   "text": "And we should get around 3.2, 3.3"
+  },
+  {
+   "start": 304.38,
+   "end": 309.84,
+   "text": "because of sig figs, 3.3 newtons."
+  },
+  {
+   "start": 311.34,
+   "end": 313.36,
+   "text": "And keep in mind that it's positive, which means"
+  },
+  {
+   "start": 313.36,
+   "end": 318.63,
+   "text": "the net force is going that way with a magnitude"
+  },
+  {
+   "start": 318.63,
+   "end": 322.47,
+   "text": "of 3.3 newtons. And what does that tell us?"
+  },
+  {
+   "start": 322.97,
+   "end": 326.33,
+   "text": "Well, that means that the box undergoes a constant"
+  },
+  {
+   "start": 326.33,
+   "end": 330.97,
+   "text": "force of 3.3 newtons to the right, and that's"
+  },
+  {
+   "start": 330.97,
+   "end": 335.45,
+   "text": "its overall force. All of these forces combine"
+  },
+  {
+   "start": 335.45,
+   "end": 339.09,
+   "text": "to make an overall force going 3.3 newtons to"
+  },
+  {
+   "start": 339.09,
+   "end": 342.57,
+   "text": "the right, and no other force matters unless"
+  },
+  {
+   "start": 342.57,
+   "end": 344.95,
+   "text": "there's an external force, as we talked about."
+  },
+  {
+   "start": 345.97,
+   "end": 349.65,
+   "text": "So what does that mean? Well, that means that"
+  },
+  {
+   "start": 349.65,
+   "end": 351.87,
+   "text": "it's going to accelerate."
+  },
+  {
+   "start": 354.08,
+   "end": 357.92,
+   "text": "Why? Because there is constant force applied"
+  },
+  {
+   "start": 357.92,
+   "end": 362.14,
+   "text": "to this, and force is mass times acceleration."
+  },
+  {
+   "start": 362.32,
+   "end": 364.86,
+   "text": "If this is constant, then acceleration will"
+  },
+  {
+   "start": 364.86,
+   "end": 367.7,
+   "text": "be constant. There will be a constant acceleration"
+  },
+  {
+   "start": 367.7,
+   "end": 374.9,
+   "text": "being undergone by the box, and"
+  },
+  {
+   "start": 374.9,
+   "end": 377.18,
+   "text": "that will be the answer to that part."
+  },
+  {
+   "start": 377.86,
+   "end": 380.26,
+   "text": "Calculate the magnitude and direction of the"
+  },
+  {
+   "start": 380.26,
+   "end": 384.64,
+   "text": "acceleration. Well, we already did 70% of the"
+  },
+  {
+   "start": 384.64,
+   "end": 386.94,
+   "text": "problem by calculating this force."
+  },
+  {
+   "start": 387.56,
+   "end": 390.82,
+   "text": "So how about you first pause the video and try"
+  },
+  {
+   "start": 390.82,
+   "end": 394.44,
+   "text": "doing this question, and we'll take it up."
+  },
+  {
+   "start": 396.22,
+   "end": 403.34,
+   "text": "Okay, so now what we have is we have f net is"
+  },
+  {
+   "start": 403.34,
+   "end": 407.14,
+   "text": "equal to the mass times acceleration, the net"
+  },
+  {
+   "start": 407.14,
+   "end": 410.7,
+   "text": "acceleration of the object. We have f net over"
+  },
+  {
+   "start": 410.7,
+   "end": 414.46,
+   "text": "here, and we want to calculate the acceleration."
+  },
+  {
+   "start": 414.88,
+   "end": 417.74,
+   "text": "Do we have the mass? Yes, we do. The mass is"
+  },
+  {
+   "start": 417.74,
+   "end": 420.6,
+   "text": "given in the problem, and it says 5 kilograms."
+  },
+  {
+   "start": 424.02,
+   "end": 426.3,
+   "text": "Acceleration, a net."
+  },
+  {
+   "start": 426.76,
+   "end": 429.32,
+   "text": "So what would the acceleration be? Well, we"
+  },
+  {
+   "start": 429.32,
+   "end": 433.78,
+   "text": "just isolate for it. It's f net over m 3.3 over"
+  },
+  {
+   "start": 433.78,
+   "end": 441.08,
+   "text": "5, and that would give you 3.3 divided by 5,"
+  },
+  {
+   "start": 442.0,
+   "end": 446.88,
+   "text": "0.66 metres per second squared."
+  },
+  {
+   "start": 448.3,
+   "end": 452.22,
+   "text": "And it also asks you to put a direction."
+  },
+  {
+   "start": 453.48,
+   "end": 456.1,
+   "text": "We know it's positive, which means it's going"
+  },
+  {
+   "start": 456.1,
+   "end": 458.78,
+   "text": "to this way, which is to the right."
+  },
+  {
+   "start": 460.68,
+   "end": 464.58,
+   "text": "The question didn't specify, so we're just going"
+  },
+  {
+   "start": 464.58,
+   "end": 467.96,
+   "text": "to say it goes in the positive direction, because"
+  },
+  {
+   "start": 467.96,
+   "end": 470.82,
+   "text": "this is positive. Oh, it does say to the right."
+  },
+  {
+   "start": 471.42,
+   "end": 474.14,
+   "text": "So yeah, it's going to be towards the right."
+  },
+  {
+   "start": 477.3,
+   "end": 481.66,
+   "text": "Right. And that will be your answer for this"
+  },
+  {
+   "start": 481.66,
+   "end": 484.74,
+   "text": "question. Oh, that's an ugly box."
+  },
+  {
+   "start": 485.44,
+   "end": 489.9,
+   "text": "And that's basically it for the force of friction,"
+  },
+  {
+   "start": 489.9,
+   "end": 493.02,
+   "text": "and we went a little extra, and we talked about"
+  },
+  {
+   "start": 493.02,
+   "end": 496.46,
+   "text": "how to do these types of dynamics problems."
+  },
+  {
+   "start": 497.98,
+   "end": 501.78,
+   "text": "Basically, the number one tip I'm going to give"
+  },
+  {
+   "start": 501.78,
+   "end": 505.82,
+   "text": "you here is to always try to find the net force."
+  },
+  {
+   "start": 505.82,
+   "end": 509.24,
+   "text": "Always, always, always try to find the net force,"
+  },
+  {
+   "start": 509.32,
+   "end": 511.7,
+   "text": "even if it's in components."
+  },
+  {
+   "start": 511.7,
+   "end": 513.52,
+   "text": "If you're dealing with harder questions, you"
+  },
+  {
+   "start": 513.52,
+   "end": 515.82,
+   "text": "might have to find the net force horizontally"
+  },
+  {
+   "start": 515.82,
+   "end": 518.82,
+   "text": "and the net force vertically separately, and"
+  },
+  {
+   "start": 518.82,
+   "end": 521.14,
+   "text": "then you can deal with those numbers later."
+  },
+  {
+   "start": 521.14,
+   "end": 524.88,
+   "text": "But you have to combine vectors to get the overall"
+  },
+  {
+   "start": 524.88,
+   "end": 529.18,
+   "text": "motion that the object is undergoing."
+  },
+  {
+   "start": 530.06,
+   "end": 532.9,
+   "text": "And yeah, that's it for the force of friction"
+  },
+  {
+   "start": 532.9,
+   "end": 536.4,
+   "text": "and an introduction to how to solve real dynamics"
+  },
+  {
+   "start": 536.4,
+   "end": 537.66,
+   "text": "problems. Thank you."
+  }
+ ],
+ "report": {
+  "key": "dynamics__forces_friction",
+  "title": "Friction",
+  "topicKey": "dynamics",
+  "duration": 538.304,
+  "cues": 133,
+  "corrections": 1,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.15956854307523338,
+  "flagged": []
+ }
+}

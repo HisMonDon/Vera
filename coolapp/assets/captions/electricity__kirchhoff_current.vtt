@@ -1,0 +1,503 @@
+WEBVTT
+NOTE Kirchhoff's Current Law
+
+1
+00:00:01.810 --> 00:00:04.750
+In this video, we will be talking about
+the
+
+2
+00:00:04.750 --> 00:00:07.910
+junction rule and Kirchhoff's current law.
+
+3
+00:00:09.410 --> 00:00:11.490
+So what is Kirchhoff's current law?
+
+4
+00:00:12.570 --> 00:00:15.910
+Well, Kirchhoff's current law states that
+the
+
+5
+00:00:15.910 --> 00:00:20.110
+total current passing through a junction
+is
+
+6
+00:00:20.110 --> 00:00:22.990
+equal to zero. What does that mean?
+
+7
+00:00:24.110 --> 00:00:29.680
+Well, first I'll write the formula. Let's
+say
+
+8
+00:00:29.680 --> 00:00:31.960
+we have a junction like this.
+
+9
+00:00:33.360 --> 00:00:41.180
+And the current going over here gets
+
+10
+00:00:41.180 --> 00:00:46.460
+distributed here. Let's call this I1, I2,
+and
+
+11
+00:00:46.460 --> 00:00:53.920
+I3. Well, I1 plus I2 plus I3
+
+12
+00:00:53.920 --> 00:00:59.180
+equals zero. Now, the thing is that you
+might
+
+13
+00:00:59.180 --> 00:01:03.800
+be wondering is that means that some of
+these
+
+14
+00:01:03.800 --> 00:01:06.380
+values have to be negative for them to be
+zero,
+
+15
+00:01:06.480 --> 00:01:09.060
+or they have to be zero, which they
+probably
+
+16
+00:01:09.060 --> 00:01:11.140
+aren't. How does that work?
+
+17
+00:01:11.940 --> 00:01:14.720
+Well, whether it's negative or positive,
+that
+
+18
+00:01:14.720 --> 00:01:16.880
+doesn't mean the current itself is
+negative
+
+19
+00:01:16.880 --> 00:01:19.840
+or positive. That just means the
+direction.
+
+20
+00:01:19.840 --> 00:01:22.540
+The sign indicates the direction.
+
+21
+00:01:23.660 --> 00:01:27.080
+When there's a current going towards a
+junction,
+
+22
+00:01:28.180 --> 00:01:31.540
+something like this, the sign would be
+positive.
+
+23
+00:01:31.860 --> 00:01:33.900
+If it's going away, it's negative.
+
+24
+00:01:34.880 --> 00:01:38.380
+Let's have an example over here. Let's say
+we
+
+25
+00:01:38.380 --> 00:01:42.220
+have a junction over here, and there is a
+current
+
+26
+00:01:42.220 --> 00:01:47.740
+I1 with a current of 5 amps.
+
+27
+00:01:49.620 --> 00:01:54.280
+And I2 will have a current of negative 3
+amps.
+
+28
+00:01:54.980 --> 00:01:57.480
+So we want to find I3.
+
+29
+00:01:59.020 --> 00:02:02.780
+Well, since the sum of all the currents is
+equal
+
+30
+00:02:02.780 --> 00:02:09.780
+to zero, we know that I1 plus I2 plus I3
+
+31
+00:02:09.780 --> 00:02:13.620
+is equal to zero. So, negative 3, since
+it's
+
+32
+00:02:13.620 --> 00:02:15.300
+negative, it means that the current is
+going
+
+33
+00:02:15.300 --> 00:02:20.660
+away. This current is going towards, and
+we
+
+34
+00:02:20.660 --> 00:02:27.540
+need to find this. So, I3 plus 5 plus 3
+equals
+
+35
+00:02:27.540 --> 00:02:32.580
+zero. Sorry, minus 3 equals zero, because
+that's
+
+36
+00:02:32.580 --> 00:02:35.980
+negative 3. Minus 3 equals zero.
+
+37
+00:02:36.700 --> 00:02:39.800
+So, I3 would be equal to negative 2.
+
+38
+00:02:40.600 --> 00:02:44.320
+Since I3 is equal to negative 2, that
+means
+
+39
+00:02:44.320 --> 00:02:47.420
+that the current will be going away.
+However,
+
+40
+00:02:47.600 --> 00:02:50.840
+in some cases, when I3 or whatever you're
+calculating
+
+41
+00:02:50.840 --> 00:02:53.940
+is positive, then the current would be
+going
+
+42
+00:02:53.940 --> 00:02:56.180
+towards the junction. It would look
+something
+
+43
+00:02:56.180 --> 00:03:03.220
+like this. Let's say I1 is 5 again, and
+
+44
+00:03:03.220 --> 00:03:09.880
+however, I2 this time is negative 7 amps.
+
+45
+00:03:10.480 --> 00:03:12.660
+So we need to calculate I3.
+
+46
+00:03:13.320 --> 00:03:15.700
+First of all, let's look at the direction.
+Since
+
+47
+00:03:15.700 --> 00:03:19.520
+this is negative, this will be going away
+from
+
+48
+00:03:19.520 --> 00:03:22.720
+the junction, and this would be going
+towards,
+
+49
+00:03:22.960 --> 00:03:29.900
+since it's positive. 5 minus 7 plus I3
+equals
+
+50
+00:03:29.900 --> 00:03:36.860
+zero. So, in that case, then I3 is
+positive
+
+51
+00:03:36.860 --> 00:03:39.860
+2, equals positive 2.
+
+52
+00:03:40.940 --> 00:03:43.500
+What this means is that since it's
+positive,
+
+53
+00:03:43.720 --> 00:03:46.080
+it would be going towards the junction.
+So,
+
+54
+00:03:47.160 --> 00:03:50.380
+the current would be going somewhere like
+this.
+
+55
+00:03:50.840 --> 00:03:55.060
+These two go towards here, which gets
+outputted
+
+56
+00:03:55.060 --> 00:03:59.260
+into I2. So, it really depends on the sign
+to
+
+57
+00:03:59.260 --> 00:04:01.360
+see and know the direction of the current.
+
+58
+00:04:02.360 --> 00:04:04.600
+Let's have a harder example.
+
+59
+00:04:06.680 --> 00:04:10.440
+Let's say we have a 5-way junction.
+
+60
+00:04:10.800 --> 00:04:18.240
+It goes here, 1, 2, 3, 4, 5.
+
+61
+00:04:20.320 --> 00:04:27.500
+And what we're given is 3 of
+
+62
+00:04:27.500 --> 00:04:34.640
+the values over here. So, I5, let's try to
+calculate
+
+63
+00:04:34.640 --> 00:04:39.860
+I5 and I3. And what we're given is I3
+equals
+
+64
+00:04:39.860 --> 00:04:42.160
+2I5.
+
+65
+00:04:43.300 --> 00:04:47.740
+And I2 would be, let's say, negative 8
+amps.
+
+66
+00:04:48.980 --> 00:04:52.040
+I1 equals 6 amps.
+
+67
+00:04:52.920 --> 00:04:57.360
+And I4 is equal to negative 25 amps.
+
+68
+00:04:58.660 --> 00:05:02.660
+First of all, let's illustrate and try to
+depict
+
+69
+00:05:02.660 --> 00:05:07.620
+what is going to happen over here. Since
+I1
+
+70
+00:05:07.620 --> 00:05:09.760
+is positive, it's going to be going
+towards
+
+71
+00:05:09.760 --> 00:05:12.580
+the junction. Well, these two negative
+ones
+
+72
+00:05:12.580 --> 00:05:18.280
+will be going away from the junction. Now,
+let's
+
+73
+00:05:18.280 --> 00:05:22.520
+use Kirchhoff's Law. The sum of the
+currents
+
+74
+00:05:22.520 --> 00:05:29.560
+is equal to zero. So, I1 plus I2
+
+75
+00:05:29.560 --> 00:05:37.220
+plus I3 plus I4 plus I5 is
+
+76
+00:05:37.220 --> 00:05:40.580
+equal to zero. We can substitute this into
+our
+
+77
+00:05:40.580 --> 00:05:46.560
+equation. Just convert this into 2 times
+I5,
+
+78
+00:05:47.340 --> 00:05:50.620
+2I5. And we could also plug in all our
+other
+
+79
+00:05:50.620 --> 00:05:57.860
+values. So, 6 minus 8 plus 2I5 plus
+
+80
+00:05:57.860 --> 00:06:05.500
+negative 25 plus I5 equals
+
+81
+00:06:05.500 --> 00:06:08.920
+to zero. So, when you combine this, you
+get
+
+82
+00:06:08.920 --> 00:06:15.260
+3I5 plus negative 8 minus 25 plus 6 would
+be
+
+83
+00:06:15.260 --> 00:06:20.140
+equal to negative 27. Negative 27 plus 3I5
+equals
+
+84
+00:06:20.140 --> 00:06:26.560
+zero. So, what we'll get is we will get
+3I5
+
+85
+00:06:26.560 --> 00:06:31.700
+equals 27. So, I5 will ultimately be equal
+to
+
+86
+00:06:31.700 --> 00:06:34.760
+9. I5 equals 9.
+
+87
+00:06:35.720 --> 00:06:38.500
+And since I5 equals 9 and we know I3
+equals
+
+88
+00:06:38.500 --> 00:06:45.800
+2I5, I3 equals 2I5, then I3 would
+
+89
+00:06:45.800 --> 00:06:50.820
+be equal to 2 times 9, which is equal to
+18
+
+90
+00:06:50.820 --> 00:06:55.940
+amps and 9 amps.
+
+91
+00:06:57.300 --> 00:07:01.460
+So, since these are positive, that means
+that
+
+92
+00:07:01.460 --> 00:07:05.520
+they are going to be going towards the
+junction.
+
+93
+00:07:07.020 --> 00:07:11.460
+So, what we can get from this is we used
+Kirchhoff's
+
+94
+00:07:11.460 --> 00:07:14.840
+law and some algebra from what we're given
+to
+
+95
+00:07:14.840 --> 00:07:18.260
+calculate the current and direction of two
+of
+
+96
+00:07:18.260 --> 00:07:22.420
+the junction segments. And this is really
+useful
+
+97
+00:07:22.420 --> 00:07:26.900
+in a lot of circuit problems and it's
+pretty
+
+98
+00:07:26.900 --> 00:07:29.340
+relatively easy to remember. Just remember
+that
+
+99
+00:07:29.340 --> 00:07:32.140
+the sum of all the currents is equal to
+zero
+
+100
+00:07:32.140 --> 00:07:36.380
+in a junction. Remember also that positive
+current
+
+101
+00:07:36.380 --> 00:07:38.780
+means it's going towards the junction,
+while
+
+102
+00:07:38.780 --> 00:07:41.080
+negative means it's going away. But
+positive
+
+103
+00:07:41.080 --> 00:07:44.440
+and negative don't actually mean that the
+magnitude
+
+104
+00:07:44.440 --> 00:07:47.260
+is positive or negative. It just
+symbolizes
+
+105
+00:07:47.260 --> 00:07:50.340
+and depicts a direction. Thank you for
+listening
+
+106
+00:07:50.340 --> 00:07:53.520
+and I hope you learned something from this
+video.
+
+107
+00:07:54.100 --> 00:07:54.200
+Bye!

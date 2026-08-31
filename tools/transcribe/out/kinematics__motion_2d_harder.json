@@ -1,0 +1,1292 @@
+{
+ "lesson": {
+  "topicKey": "kinematics",
+  "curriculumKey": "motion_2d_harder",
+  "title": "Harder 2D Kinematics Examples",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/Kinematics%20harder%20quesitons.mp4",
+  "source": "kinematics.dart"
+ },
+ "segments": [
+  {
+   "start": 0.82,
+   "end": 7.38,
+   "text": "Hey guys, in this video, we will be looking at some more advanced and harder problems for kinematics.",
+   "avg_logprob": -0.15082164582084207
+  },
+  {
+   "start": 8.4,
+   "end": 15.1,
+   "text": "So last time in last video, I've explained things slowly, but this time I'll be going way faster.",
+   "avg_logprob": -0.15082164582084207
+  },
+  {
+   "start": 15.84,
+   "end": 28.86,
+   "text": "So if you still aren't really familiar with those questions, feel free to ask me to release more videos or find some videos yourself to watch and learn.",
+   "avg_logprob": -0.15082164582084207
+  },
+  {
+   "start": 29.8,
+   "end": 35.28,
+   "text": "So a ball is thrown upwards from the ground at a speed of 25 metres per second.",
+   "avg_logprob": -0.10256633633061459
+  },
+  {
+   "start": 36.06,
+   "end": 40.66,
+   "text": "At the same instance, another ball is dropped from rest from a building 30 metres high.",
+   "avg_logprob": -0.10256633633061459
+  },
+  {
+   "start": 41.66,
+   "end": 44.68,
+   "text": "How many seconds will the two balls be at the same height?",
+   "avg_logprob": -0.10256633633061459
+  },
+  {
+   "start": 46.47,
+   "end": 58.79,
+   "text": "Okay, let's see. So, let's visualize it in a way where they're on the same x-axis.",
+   "avg_logprob": -0.14598874196614306
+  },
+  {
+   "start": 58.97,
+   "end": 64.75,
+   "text": "So what do I mean by that? Well, this is ball 1 being dropped and this is ball 2 being launched.",
+   "avg_logprob": -0.14598874196614306
+  },
+  {
+   "start": 66.59,
+   "end": 74.03,
+   "text": "So this bottom ball is going upwards at a speed of 25 metres per second.",
+   "avg_logprob": -0.14598874196614306
+  },
+  {
+   "start": 74.91,
+   "end": 85.67,
+   "text": "And this top ball is dropped from rest, so the initial velocity is just 0 metres per second.",
+   "avg_logprob": -0.1024122416973114
+  },
+  {
+   "start": 87.63,
+   "end": 96.41,
+   "text": "And it's dropped at a height of 30 metres, so I'll do 30 metres high.",
+   "avg_logprob": -0.1024122416973114
+  },
+  {
+   "start": 100.14,
+   "end": 114.74,
+   "text": "And what will happen is basically this ball is going to go down and this ball is going to go up until they meet at this point.",
+   "avg_logprob": -0.08304405698309773
+  },
+  {
+   "start": 114.9,
+   "end": 124.95,
+   "text": "Let's call this point P. And we need to know how long it takes for them to do it.",
+   "avg_logprob": -0.08304405698309773
+  },
+  {
+   "start": 126.56,
+   "end": 134.84,
+   "text": "Keep in mind that they both take the same time to get to point P because since they meet at point P, they take the same time to get to point P.",
+   "avg_logprob": -0.08304405698309773
+  },
+  {
+   "start": 137.82,
+   "end": 152.62,
+   "text": "So what I want to do for this question is I want to give both equations a kinematic formula in terms of its distance travelled and time.",
+   "avg_logprob": -0.08758894288364578
+  },
+  {
+   "start": 152.62,
+   "end": 162.62,
+   "text": "Because let's say this distance travelled is d1 and this distance travelled is d2.",
+   "avg_logprob": -0.103450323178156
+  },
+  {
+   "start": 163.74,
+   "end": 169.92,
+   "text": "Well, we know that d1 plus d2 is equal to 30, right?",
+   "avg_logprob": -0.103450323178156
+  },
+  {
+   "start": 171.1,
+   "end": 178.9,
+   "text": "Because when they meet, this is going down from 30, this is going up from 30, so d1 plus d2 equals 30 at point P.",
+   "avg_logprob": -0.103450323178156
+  },
+  {
+   "start": 180.37,
+   "end": 189.35,
+   "text": "So we need to express each balls, we need to express d1 in terms of t and d2 in terms of t.",
+   "avg_logprob": -0.08975474858148531
+  },
+  {
+   "start": 189.83,
+   "end": 193.57,
+   "text": "So d1 is for ball number 1, so let's get started on that.",
+   "avg_logprob": -0.08975474858148531
+  },
+  {
+   "start": 195.01,
+   "end": 207.5,
+   "text": "Looking at this formula sheet, I see three equations I can use, but the one that stands out to me the most for this question that is applicable for this question is this one.",
+   "avg_logprob": -0.08975474858148531
+  },
+  {
+   "start": 207.5,
+   "end": 218.86,
+   "text": "Don't worry if you can't spot it right away, when I was starting, it took me one or two minutes to actually find the equation first, but after practice, you'll get used to it.",
+   "avg_logprob": -0.15952500798132108
+  },
+  {
+   "start": 220.64,
+   "end": 222.48,
+   "text": "Yeah, it's the right equation.",
+   "avg_logprob": -0.23144867326374408
+  },
+  {
+   "start": 223.52,
+   "end": 226.56,
+   "text": "So, let's express d1.",
+   "avg_logprob": -0.23144867326374408
+  },
+  {
+   "start": 228.22,
+   "end": 230.04,
+   "text": "Let's first write down the raw equation.",
+   "avg_logprob": -0.23144867326374408
+  },
+  {
+   "start": 230.48,
+   "end": 239.94,
+   "text": "x equals x0 plus v0 vx0 t plus 1 over 2 ax t squared.",
+   "avg_logprob": -0.23144867326374408
+  },
+  {
+   "start": 239.94,
+   "end": 250.28,
+   "text": "Keep in mind that acceleration for everything, for both balls, is negative 10 meters per second squared, or negative 9.81, but I'll use negative 10.",
+   "avg_logprob": -0.08953410131590707
+  },
+  {
+   "start": 250.52,
+   "end": 253.1,
+   "text": "Don't forget it's negative because acceleration is going down.",
+   "avg_logprob": -0.08953410131590707
+  },
+  {
+   "start": 256.42,
+   "end": 262.08,
+   "text": "And now let's modify this equation so that we can use it for our equation.",
+   "avg_logprob": -0.08953410131590707
+  },
+  {
+   "start": 263.02,
+   "end": 266.28,
+   "text": "So, let's do it in blue, because this one's blue.",
+   "avg_logprob": -0.17781007573718116
+  },
+  {
+   "start": 267.48,
+   "end": 275.42,
+   "text": "Well, d1 is x, because x is the distance traveled, or x is here.",
+   "avg_logprob": -0.17781007573718116
+  },
+  {
+   "start": 277.9,
+   "end": 290.06,
+   "text": "So, x should actually be d2, because at point P, x will be at d2.",
+   "avg_logprob": -0.17781007573718116
+  },
+  {
+   "start": 290.06,
+   "end": 305.28,
+   "text": "So, d2 equals, and x0 is just 30, because it starts at 30 meters, plus vx0.",
+   "avg_logprob": -0.12314249322099506
+  },
+  {
+   "start": 305.5,
+   "end": 311.1,
+   "text": "Well, it's being dropped at a speed of 0 meters per second, it's being dropped from rest.",
+   "avg_logprob": -0.12314249322099506
+  },
+  {
+   "start": 311.1,
+   "end": 328.82,
+   "text": "So, this is just 0, so this whole thing is just 0, and 1 over 2, gravity, negative 10, t squared.",
+   "avg_logprob": -0.1128743157722056
+  },
+  {
+   "start": 329.26,
+   "end": 334.34,
+   "text": "So, d2 equals 30 minus 5t squared.",
+   "avg_logprob": -0.1128743157722056
+  },
+  {
+   "start": 334.64,
+   "end": 345.1,
+   "text": "I wouldn't factor it for now, because we're going to be using another equation to solve for t, but we will see if we need to do that later.",
+   "avg_logprob": -0.1128743157722056
+  },
+  {
+   "start": 346.2,
+   "end": 358.42,
+   "text": "And for this one, we have initial velocity, we have t, we have d2, and yeah.",
+   "avg_logprob": -0.12531964621453914
+  },
+  {
+   "start": 359.42,
+   "end": 366.06,
+   "text": "So, since we have those values, we can also use the same equation as we did last time, so this equation.",
+   "avg_logprob": -0.12531964621453914
+  },
+  {
+   "start": 367.06,
+   "end": 375.68,
+   "text": "So, I'll be doing ball 1, and ball 2.",
+   "avg_logprob": -0.15760894450876448
+  },
+  {
+   "start": 376.6,
+   "end": 382.18,
+   "text": "But sometimes, you might have to use different equations, if there is another case.",
+   "avg_logprob": -0.15760894450876448
+  },
+  {
+   "start": 384.08,
+   "end": 398.68,
+   "text": "Well, we know that the ball's position is also d2, because at point P, both of them are at this position, which is d2.",
+   "avg_logprob": -0.13213051069113943
+  },
+  {
+   "start": 399.98,
+   "end": 407.9,
+   "text": "Well, x naught is 0, because it starts on the ground, which is y equals 0.",
+   "avg_logprob": -0.12918990988422324
+  },
+  {
+   "start": 409.8,
+   "end": 423.1,
+   "text": "The original velocity is 25 times t, plus 1 over 2, the acceleration is still gravity, which is negative 10, t squared.",
+   "avg_logprob": -0.12918990988422324
+  },
+  {
+   "start": 424.6,
+   "end": 434.65,
+   "text": "And now you get d2 equals 25t minus 5t squared.",
+   "avg_logprob": -0.13572190966336958
+  },
+  {
+   "start": 437.36,
+   "end": 441.08,
+   "text": "And now we can just solve for t.",
+   "avg_logprob": -0.13572190966336958
+  },
+  {
+   "start": 442.64,
+   "end": 448.0,
+   "text": "Since both of them are describing t2s, we can just set those equal.",
+   "avg_logprob": -0.13572190966336958
+  },
+  {
+   "start": 448.52,
+   "end": 451.28,
+   "text": "Just sub in one equation into the other, simple math.",
+   "avg_logprob": -0.13572190966336958
+  },
+  {
+   "start": 451.28,
+   "end": 457.44,
+   "text": "So, since d2 equals d2, we can use this one.",
+   "avg_logprob": -0.10067539623585241
+  },
+  {
+   "start": 457.88,
+   "end": 465.08,
+   "text": "30 minus 5t squared equals 25t minus 5t squared.",
+   "avg_logprob": -0.10067539623585241
+  },
+  {
+   "start": 466.9,
+   "end": 473.6,
+   "text": "And now let's factor out 5, so we get 6 minus t squared equals 5t minus t squared.",
+   "avg_logprob": -0.10067539623585241
+  },
+  {
+   "start": 475.46,
+   "end": 483.04,
+   "text": "Add t squared on both sides, so 6 equals 5t, and you'll get t equals 6 over 5.",
+   "avg_logprob": -0.12436905047472785
+  },
+  {
+   "start": 485.43,
+   "end": 491.98,
+   "text": "And when you do that, 6 over 5 is 1.2, I believe.",
+   "avg_logprob": -0.12436905047472785
+  },
+  {
+   "start": 492.9,
+   "end": 497.14,
+   "text": "My brain is not breathing. Yep, 1.2 seconds.",
+   "avg_logprob": -0.12436905047472785
+  },
+  {
+   "start": 499.46,
+   "end": 501.22,
+   "text": "And that will be your answer.",
+   "avg_logprob": -0.12436905047472785
+  },
+  {
+   "start": 501.86,
+   "end": 507.12,
+   "text": "They will be at the same height after 1.2 seconds.",
+   "avg_logprob": -0.12436905047472785
+  },
+  {
+   "start": 508.98,
+   "end": 520.11,
+   "text": "So, a car accelerates from rest along a straight road with an acceleration of 2 meters per second squared.",
+   "avg_logprob": -0.09012793689623647
+  },
+  {
+   "start": 520.67,
+   "end": 524.73,
+   "text": "And you want to know how fast it will be moving after it has traveled 100 meters.",
+   "avg_logprob": -0.09012793689623647
+  },
+  {
+   "start": 525.71,
+   "end": 530.49,
+   "text": "Well, you know the acceleration is obviously 2 meters per second squared, positive,",
+   "avg_logprob": -0.09012793689623647
+  },
+  {
+   "start": 531.67,
+   "end": 537.37,
+   "text": "because this question, it's an easier question, we're just dealing with a one-dimensional question.",
+   "avg_logprob": -0.09012793689623647
+  },
+  {
+   "start": 537.37,
+   "end": 541.93,
+   "text": "And you want to know the final velocity.",
+   "avg_logprob": -0.09052424008647601
+  },
+  {
+   "start": 542.71,
+   "end": 548.87,
+   "text": "You know the initial velocity is equal to 0, because it accelerates from rest.",
+   "avg_logprob": -0.09052424008647601
+  },
+  {
+   "start": 550.27,
+   "end": 559.11,
+   "text": "Let's say the initial distance is 0, because it's starting at a distance of 0 from the starting point.",
+   "avg_logprob": -0.09052424008647601
+  },
+  {
+   "start": 560.89,
+   "end": 563.97,
+   "text": "And you know, that's all you know, I think.",
+   "avg_logprob": -0.09052424008647601
+  },
+  {
+   "start": 565.37,
+   "end": 567.97,
+   "text": "So, looking at these formulas...",
+   "avg_logprob": -0.10469865308088415
+  },
+  {
+   "start": 573.59,
+   "end": 577.53,
+   "text": "Oh, sorry, I didn't see that it has traveled 100 meters. I was so confused.",
+   "avg_logprob": -0.10469865308088415
+  },
+  {
+   "start": 578.15,
+   "end": 580.55,
+   "text": "So, you know, it has traveled 100 meters.",
+   "avg_logprob": -0.10469865308088415
+  },
+  {
+   "start": 581.49,
+   "end": 585.03,
+   "text": "So, the final position will be 100 meters.",
+   "avg_logprob": -0.10469865308088415
+  },
+  {
+   "start": 587.15,
+   "end": 595.09,
+   "text": "And now you can actually see that you can use this formula,",
+   "avg_logprob": -0.10469865308088415
+  },
+  {
+   "start": 595.47,
+   "end": 598.51,
+   "text": "because you have all those values for that formula.",
+   "avg_logprob": -0.10469865308088415
+  },
+  {
+   "start": 598.51,
+   "end": 600.21,
+   "text": "So, let's just list it out.",
+   "avg_logprob": -0.11857256967019528
+  },
+  {
+   "start": 600.39,
+   "end": 611.05,
+   "text": "vx squared equals vx naught squared plus 2ax x minus x naught.",
+   "avg_logprob": -0.11857256967019528
+  },
+  {
+   "start": 612.19,
+   "end": 618.15,
+   "text": "And v of x squared, that's the final velocity, so that's what we want to find.",
+   "avg_logprob": -0.11857256967019528
+  },
+  {
+   "start": 618.35,
+   "end": 620.01,
+   "text": "So, let's just isolate for it.",
+   "avg_logprob": -0.11857256967019528
+  },
+  {
+   "start": 620.15,
+   "end": 621.91,
+   "text": "v of x is the same thing as v of f.",
+   "avg_logprob": -0.11857256967019528
+  },
+  {
+   "start": 622.47,
+   "end": 624.67,
+   "text": "It's just the square root of the whole thing.",
+   "avg_logprob": -0.11857256967019528
+  },
+  {
+   "start": 628.48,
+   "end": 632.44,
+   "text": "And now, you just plug in all the numbers.",
+   "avg_logprob": -0.08832835253848824
+  },
+  {
+   "start": 632.58,
+   "end": 634.42,
+   "text": "This is a really simple question.",
+   "avg_logprob": -0.08832835253848824
+  },
+  {
+   "start": 635.64,
+   "end": 643.38,
+   "text": "The square root of the initial velocity is 0, because it starts from rest, plus 2.",
+   "avg_logprob": -0.08832835253848824
+  },
+  {
+   "start": 644.74,
+   "end": 646.52,
+   "text": "The initial acceleration is 2.",
+   "avg_logprob": -0.08832835253848824
+  },
+  {
+   "start": 646.86,
+   "end": 650.5,
+   "text": "x minus x naught is just 100 minus 0, which is 100.",
+   "avg_logprob": -0.08832835253848824
+  },
+  {
+   "start": 652.92,
+   "end": 656.88,
+   "text": "And you can take this 2 out, and 100 is 10 squared, so you get 2 times 10.",
+   "avg_logprob": -0.08832835253848824
+  },
+  {
+   "start": 656.88,
+   "end": 663.32,
+   "text": "And then you get 20 meters per second, which is your final velocity,",
+   "avg_logprob": -0.07851148119721657
+  },
+  {
+   "start": 663.34,
+   "end": 666.16,
+   "text": "how fast it will be moving after it has traveled 100 meters.",
+   "avg_logprob": -0.07851148119721657
+  },
+  {
+   "start": 666.64,
+   "end": 667.82,
+   "text": "And that's how you solve this question.",
+   "avg_logprob": -0.07851148119721657
+  },
+  {
+   "start": 669.6,
+   "end": 674.68,
+   "text": "So, yeah, that's all for these examples.",
+   "avg_logprob": -0.07851148119721657
+  },
+  {
+   "start": 675.42,
+   "end": 678.44,
+   "text": "I hope you have learned something, and I hope this was useful.",
+   "avg_logprob": -0.07851148119721657
+  },
+  {
+   "start": 678.9,
+   "end": 679.24,
+   "text": "Thank you!",
+   "avg_logprob": -0.07851148119721657
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.82,
+   "end": 3.52,
+   "text": "Hey guys, in this video, we will be looking"
+  },
+  {
+   "start": 3.52,
+   "end": 6.72,
+   "text": "at some more advanced and harder problems for"
+  },
+  {
+   "start": 6.72,
+   "end": 10.7,
+   "text": "kinematics. So last time in last video, I've"
+  },
+  {
+   "start": 10.7,
+   "end": 13.82,
+   "text": "explained things slowly, but this time I'll"
+  },
+  {
+   "start": 13.82,
+   "end": 18.68,
+   "text": "be going way faster. So if you still aren't"
+  },
+  {
+   "start": 18.68,
+   "end": 22.18,
+   "text": "really familiar with those questions, feel free"
+  },
+  {
+   "start": 22.18,
+   "end": 26.7,
+   "text": "to ask me to release more videos or find some"
+  },
+  {
+   "start": 26.7,
+   "end": 28.86,
+   "text": "videos yourself to watch and learn."
+  },
+  {
+   "start": 29.8,
+   "end": 32.3,
+   "text": "So a ball is thrown upwards from the ground"
+  },
+  {
+   "start": 32.3,
+   "end": 35.28,
+   "text": "at a speed of 25 metres per second."
+  },
+  {
+   "start": 36.06,
+   "end": 38.26,
+   "text": "At the same instance, another ball is dropped"
+  },
+  {
+   "start": 38.26,
+   "end": 40.66,
+   "text": "from rest from a building 30 metres high."
+  },
+  {
+   "start": 41.66,
+   "end": 44.08,
+   "text": "How many seconds will the two balls be at the"
+  },
+  {
+   "start": 44.08,
+   "end": 50.79,
+   "text": "same height? Okay, let's see."
+  },
+  {
+   "start": 51.61,
+   "end": 57.47,
+   "text": "So, let's visualize it in a way where they're"
+  },
+  {
+   "start": 57.47,
+   "end": 59.91,
+   "text": "on the same x-axis. So what do I mean by that?"
+  },
+  {
+   "start": 60.29,
+   "end": 62.79,
+   "text": "Well, this is ball 1 being dropped and this"
+  },
+  {
+   "start": 62.79,
+   "end": 69.05,
+   "text": "is ball 2 being launched. So this bottom ball"
+  },
+  {
+   "start": 69.05,
+   "end": 73.59,
+   "text": "is going upwards at a speed of 25 metres per"
+  },
+  {
+   "start": 73.59,
+   "end": 78.49,
+   "text": "second. And this top ball is dropped from rest,"
+  },
+  {
+   "start": 78.83,
+   "end": 85.29,
+   "text": "so the initial velocity is just 0 metres per"
+  },
+  {
+   "start": 85.29,
+   "end": 91.59,
+   "text": "second. And it's dropped at a height of 30 metres,"
+  },
+  {
+   "start": 92.73,
+   "end": 96.41,
+   "text": "so I'll do 30 metres high."
+  },
+  {
+   "start": 100.14,
+   "end": 103.46,
+   "text": "And what will happen is basically this ball"
+  },
+  {
+   "start": 103.46,
+   "end": 108.57,
+   "text": "is going to go down and this ball is going to"
+  },
+  {
+   "start": 108.57,
+   "end": 114.74,
+   "text": "go up until they meet at this point."
+  },
+  {
+   "start": 114.9,
+   "end": 117.54,
+   "text": "Let's call this point P."
+  },
+  {
+   "start": 120.43,
+   "end": 123.91,
+   "text": "And we need to know how long it takes for them"
+  },
+  {
+   "start": 123.91,
+   "end": 129.52,
+   "text": "to do it. Keep in mind that they both take the"
+  },
+  {
+   "start": 129.52,
+   "end": 132.2,
+   "text": "same time to get to point P because since they"
+  },
+  {
+   "start": 132.2,
+   "end": 134.1,
+   "text": "meet at point P, they take the same time to"
+  },
+  {
+   "start": 134.1,
+   "end": 140.94,
+   "text": "get to point P. So what I want to do for this"
+  },
+  {
+   "start": 140.94,
+   "end": 145.92,
+   "text": "question is I want to give both equations a"
+  },
+  {
+   "start": 145.92,
+   "end": 150.08,
+   "text": "kinematic formula in terms of its distance travelled"
+  },
+  {
+   "start": 150.08,
+   "end": 152.62,
+   "text": "and time."
+  },
+  {
+   "start": 152.62,
+   "end": 157.06,
+   "text": "Because let's say this distance travelled is"
+  },
+  {
+   "start": 157.06,
+   "end": 162.62,
+   "text": "d1 and this distance travelled is d2."
+  },
+  {
+   "start": 163.74,
+   "end": 169.32,
+   "text": "Well, we know that d1 plus d2 is equal to 30,"
+  },
+  {
+   "start": 169.6,
+   "end": 173.84,
+   "text": "right? Because when they meet, this is going"
+  },
+  {
+   "start": 173.84,
+   "end": 176.72,
+   "text": "down from 30, this is going up from 30, so d1"
+  },
+  {
+   "start": 176.72,
+   "end": 178.9,
+   "text": "plus d2 equals 30 at point P."
+  },
+  {
+   "start": 180.37,
+   "end": 185.43,
+   "text": "So we need to express each balls, we need to"
+  },
+  {
+   "start": 185.43,
+   "end": 189.01,
+   "text": "express d1 in terms of t and d2 in terms of"
+  },
+  {
+   "start": 189.01,
+   "end": 192.85,
+   "text": "t. So d1 is for ball number 1, so let's get"
+  },
+  {
+   "start": 192.85,
+   "end": 196.71,
+   "text": "started on that. Looking at this formula sheet,"
+  },
+  {
+   "start": 199.02,
+   "end": 201.76,
+   "text": "I see three equations I can use, but the one"
+  },
+  {
+   "start": 201.76,
+   "end": 204.9,
+   "text": "that stands out to me the most for this question"
+  },
+  {
+   "start": 204.9,
+   "end": 207.24,
+   "text": "that is applicable for this question is this"
+  },
+  {
+   "start": 207.24,
+   "end": 209.54,
+   "text": "one. Don't worry if you can't spot it right"
+  },
+  {
+   "start": 209.54,
+   "end": 212.62,
+   "text": "away, when I was starting, it took me one or"
+  },
+  {
+   "start": 212.62,
+   "end": 214.84,
+   "text": "two minutes to actually find the equation first,"
+  },
+  {
+   "start": 215.32,
+   "end": 218.86,
+   "text": "but after practice, you'll get used to it."
+  },
+  {
+   "start": 220.64,
+   "end": 226.14,
+   "text": "Yeah, it's the right equation. So, let's express"
+  },
+  {
+   "start": 226.14,
+   "end": 230.04,
+   "text": "d1. Let's first write down the raw equation."
+  },
+  {
+   "start": 230.48,
+   "end": 238.12,
+   "text": "x equals x0 plus v0 vx0 t plus 1 over 2"
+  },
+  {
+   "start": 238.12,
+   "end": 241.3,
+   "text": "ax t squared. Keep in mind that acceleration"
+  },
+  {
+   "start": 241.3,
+   "end": 244.64,
+   "text": "for everything, for both balls, is negative"
+  },
+  {
+   "start": 244.64,
+   "end": 249.02,
+   "text": "10 metres per second squared, or negative 9.81,"
+  },
+  {
+   "start": 249.16,
+   "end": 251.22,
+   "text": "but I'll use negative 10. Don't forget it's"
+  },
+  {
+   "start": 251.22,
+   "end": 253.1,
+   "text": "negative because acceleration is going down."
+  },
+  {
+   "start": 256.42,
+   "end": 260.5,
+   "text": "And now let's modify this equation so that we"
+  },
+  {
+   "start": 260.5,
+   "end": 264.98,
+   "text": "can use it for our equation. So, let's do it"
+  },
+  {
+   "start": 264.98,
+   "end": 269.26,
+   "text": "in blue, because this one's blue. Well, d1 is"
+  },
+  {
+   "start": 269.26,
+   "end": 273.78,
+   "text": "x, because x is the distance traveled, or x"
+  },
+  {
+   "start": 273.78,
+   "end": 280.98,
+   "text": "is here. So, x"
+  },
+  {
+   "start": 280.98,
+   "end": 288.66,
+   "text": "should actually be d2, because at point P, x"
+  },
+  {
+   "start": 288.66,
+   "end": 296.17,
+   "text": "will be at d2. So, d2 equals, and"
+  },
+  {
+   "start": 296.17,
+   "end": 302.42,
+   "text": "x0 is just 30, because it starts at 30 metres,"
+  },
+  {
+   "start": 303.3,
+   "end": 308.32,
+   "text": "plus vx0. Well, it's being dropped at a speed"
+  },
+  {
+   "start": 308.32,
+   "end": 310.76,
+   "text": "of 0 metres per second, it's being dropped from"
+  },
+  {
+   "start": 310.76,
+   "end": 317.48,
+   "text": "rest. So, this is just 0, so this whole thing"
+  },
+  {
+   "start": 317.48,
+   "end": 326.04,
+   "text": "is just 0, and 1 over 2, gravity,"
+  },
+  {
+   "start": 326.76,
+   "end": 328.82,
+   "text": "negative 10, t squared."
+  },
+  {
+   "start": 329.26,
+   "end": 334.34,
+   "text": "So, d2 equals 30 minus 5t squared."
+  },
+  {
+   "start": 334.64,
+   "end": 337.24,
+   "text": "I wouldn't factor it for now, because we're"
+  },
+  {
+   "start": 337.24,
+   "end": 340.92,
+   "text": "going to be using another equation to solve"
+  },
+  {
+   "start": 340.92,
+   "end": 344.84,
+   "text": "for t, but we will see if we need to do that"
+  },
+  {
+   "start": 344.84,
+   "end": 350.4,
+   "text": "later. And for this one, we have initial velocity,"
+  },
+  {
+   "start": 352.12,
+   "end": 358.42,
+   "text": "we have t, we have d2, and yeah."
+  },
+  {
+   "start": 359.42,
+   "end": 362.08,
+   "text": "So, since we have those values, we can also"
+  },
+  {
+   "start": 362.08,
+   "end": 365.3,
+   "text": "use the same equation as we did last time, so"
+  },
+  {
+   "start": 365.3,
+   "end": 373.62,
+   "text": "this equation. So, I'll be doing ball 1, and"
+  },
+  {
+   "start": 373.62,
+   "end": 375.68,
+   "text": "ball 2."
+  },
+  {
+   "start": 376.6,
+   "end": 378.64,
+   "text": "But sometimes, you might have to use different"
+  },
+  {
+   "start": 378.64,
+   "end": 382.18,
+   "text": "equations, if there is another case."
+  },
+  {
+   "start": 384.08,
+   "end": 390.04,
+   "text": "Well, we know that the ball's position is also"
+  },
+  {
+   "start": 390.04,
+   "end": 397.08,
+   "text": "d2, because at point P, both of them are at"
+  },
+  {
+   "start": 397.08,
+   "end": 402.76,
+   "text": "this position, which is d2. Well, x-initial is"
+  },
+  {
+   "start": 402.76,
+   "end": 406.76,
+   "text": "0, because it starts on the ground, which is"
+  },
+  {
+   "start": 406.76,
+   "end": 414.96,
+   "text": "y equals 0. The original velocity is 25 times"
+  },
+  {
+   "start": 414.96,
+   "end": 419.56,
+   "text": "t, plus 1 over 2, the acceleration is still"
+  },
+  {
+   "start": 419.56,
+   "end": 423.1,
+   "text": "gravity, which is negative 10, t squared."
+  },
+  {
+   "start": 424.6,
+   "end": 432.93,
+   "text": "And now you get d2 equals 25t minus"
+  },
+  {
+   "start": 432.93,
+   "end": 440.04,
+   "text": "5t squared. And now we can just"
+  },
+  {
+   "start": 440.04,
+   "end": 445.2,
+   "text": "solve for t. Since both of them are describing"
+  },
+  {
+   "start": 445.2,
+   "end": 448.0,
+   "text": "t2s, we can just set those equal."
+  },
+  {
+   "start": 448.52,
+   "end": 450.88,
+   "text": "Just sub in one equation into the other, simple"
+  },
+  {
+   "start": 450.88,
+   "end": 457.1,
+   "text": "math. So, since d2 equals d2, we can use this"
+  },
+  {
+   "start": 457.1,
+   "end": 464.62,
+   "text": "one. 30 minus 5t squared equals 25t minus 5t"
+  },
+  {
+   "start": 464.62,
+   "end": 469.08,
+   "text": "squared. And now let's factor out 5, so we get"
+  },
+  {
+   "start": 469.08,
+   "end": 473.6,
+   "text": "6 minus t squared equals 5t minus t squared."
+  },
+  {
+   "start": 475.46,
+   "end": 479.66,
+   "text": "Add t squared on both sides, so 6 equals 5t,"
+  },
+  {
+   "start": 480.1,
+   "end": 483.04,
+   "text": "and you'll get t equals 6 over 5."
+  },
+  {
+   "start": 485.43,
+   "end": 491.98,
+   "text": "And when you do that, 6 over 5 is 1.2, I believe."
+  },
+  {
+   "start": 492.9,
+   "end": 497.14,
+   "text": "My brain is not breathing. Yep, 1.2 seconds."
+  },
+  {
+   "start": 499.46,
+   "end": 504.94,
+   "text": "And that will be your answer. They will be at"
+  },
+  {
+   "start": 504.94,
+   "end": 507.12,
+   "text": "the same height after 1.2 seconds."
+  },
+  {
+   "start": 508.98,
+   "end": 516.23,
+   "text": "So, a car accelerates from rest"
+  },
+  {
+   "start": 516.23,
+   "end": 518.71,
+   "text": "along a straight road with an acceleration of"
+  },
+  {
+   "start": 518.71,
+   "end": 521.29,
+   "text": "2 metres per second squared. And you want to"
+  },
+  {
+   "start": 521.29,
+   "end": 523.55,
+   "text": "know how fast it will be moving after it has"
+  },
+  {
+   "start": 523.55,
+   "end": 527.13,
+   "text": "traveled 100 metres. Well, you know the acceleration"
+  },
+  {
+   "start": 527.13,
+   "end": 530.49,
+   "text": "is obviously 2 metres per second squared, positive,"
+  },
+  {
+   "start": 531.67,
+   "end": 534.63,
+   "text": "because this question, it's an easier question,"
+  },
+  {
+   "start": 534.71,
+   "end": 537.37,
+   "text": "we're just dealing with a one-dimensional question."
+  },
+  {
+   "start": 537.37,
+   "end": 541.93,
+   "text": "And you want to know the final velocity."
+  },
+  {
+   "start": 542.71,
+   "end": 546.77,
+   "text": "You know the initial velocity is equal to 0,"
+  },
+  {
+   "start": 547.01,
+   "end": 551.45,
+   "text": "because it accelerates from rest. Let's say"
+  },
+  {
+   "start": 551.45,
+   "end": 555.89,
+   "text": "the initial distance is 0, because it's starting"
+  },
+  {
+   "start": 555.89,
+   "end": 559.11,
+   "text": "at a distance of 0 from the starting point."
+  },
+  {
+   "start": 560.89,
+   "end": 563.97,
+   "text": "And you know, that's all you know, I think."
+  },
+  {
+   "start": 565.37,
+   "end": 567.97,
+   "text": "So, looking at these formulas..."
+  },
+  {
+   "start": 573.59,
+   "end": 576.01,
+   "text": "Oh, sorry, I didn't see that it has traveled"
+  },
+  {
+   "start": 576.01,
+   "end": 578.59,
+   "text": "100 metres. I was so confused. So, you know,"
+  },
+  {
+   "start": 578.81,
+   "end": 583.79,
+   "text": "it has traveled 100 metres. So, the final position"
+  },
+  {
+   "start": 583.79,
+   "end": 589.03,
+   "text": "will be 100 metres. And now you can actually"
+  },
+  {
+   "start": 589.03,
+   "end": 596.61,
+   "text": "see that you can use this formula, because you"
+  },
+  {
+   "start": 596.61,
+   "end": 598.77,
+   "text": "have all those values for that formula. So,"
+  },
+  {
+   "start": 599.01,
+   "end": 602.75,
+   "text": "let's just list it out. vx squared equals vx"
+  },
+  {
+   "start": 602.75,
+   "end": 610.15,
+   "text": "naught squared plus 2ax x minus"
+  },
+  {
+   "start": 610.15,
+   "end": 616.35,
+   "text": "x-initial. And v of x squared, that's the final"
+  },
+  {
+   "start": 616.35,
+   "end": 618.53,
+   "text": "velocity, so that's what we want to find. So,"
+  },
+  {
+   "start": 618.59,
+   "end": 620.87,
+   "text": "let's just isolate for it. v of x is the same"
+  },
+  {
+   "start": 620.87,
+   "end": 624.09,
+   "text": "thing as v of f. It's just the square root of"
+  },
+  {
+   "start": 624.09,
+   "end": 631.22,
+   "text": "the whole thing. And now, you just"
+  },
+  {
+   "start": 631.22,
+   "end": 633.58,
+   "text": "plug in all the numbers. This is a really simple"
+  },
+  {
+   "start": 633.58,
+   "end": 638.22,
+   "text": "question. The square root of the initial velocity"
+  },
+  {
+   "start": 638.22,
+   "end": 643.38,
+   "text": "is 0, because it starts from rest, plus 2."
+  },
+  {
+   "start": 644.74,
+   "end": 647.88,
+   "text": "The initial acceleration is 2. x minus x-initial"
+  },
+  {
+   "start": 647.88,
+   "end": 650.5,
+   "text": "is just 100 minus 0, which is 100."
+  },
+  {
+   "start": 652.92,
+   "end": 655.56,
+   "text": "And you can take this 2 out, and 100 is 10 squared,"
+  },
+  {
+   "start": 655.68,
+   "end": 659.12,
+   "text": "so you get 2 times 10. And then you get 20 metres"
+  },
+  {
+   "start": 659.12,
+   "end": 663.64,
+   "text": "per second, which is your final velocity, how"
+  },
+  {
+   "start": 663.64,
+   "end": 665.54,
+   "text": "fast it will be moving after it has traveled"
+  },
+  {
+   "start": 665.54,
+   "end": 667.82,
+   "text": "100 metres. And that's how you solve this question."
+  },
+  {
+   "start": 669.6,
+   "end": 674.68,
+   "text": "So, yeah, that's all for these examples."
+  },
+  {
+   "start": 675.42,
+   "end": 677.7,
+   "text": "I hope you have learned something, and I hope"
+  },
+  {
+   "start": 677.7,
+   "end": 679.24,
+   "text": "this was useful. Thank you!"
+  }
+ ],
+ "report": {
+  "key": "kinematics__motion_2d_harder",
+  "title": "Harder 2D Kinematics Examples",
+  "topicKey": "kinematics",
+  "duration": 679.616,
+  "cues": 148,
+  "corrections": 14,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.23144867326374408,
+  "flagged": []
+ }
+}

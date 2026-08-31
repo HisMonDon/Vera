@@ -1,0 +1,719 @@
+{
+ "lesson": {
+  "topicKey": "magnetism",
+  "curriculumKey": "rhr",
+  "title": "Right Hand Rule",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/electricity_and_magnetism/5%20Right%20hand%20rule.mp4",
+  "source": "magnetism.dart"
+ },
+ "segments": [
+  {
+   "start": 0.98,
+   "end": 6.04,
+   "text": "In this video, we will be talking about the right-hand rule and how to actually use it.",
+   "avg_logprob": -0.13484086179071003
+  },
+  {
+   "start": 6.6,
+   "end": 19.96,
+   "text": "First of all, what is the right-hand rule? The right-hand rule is a rule that works for positively charged particles that can determine either its field, motion, or current, and by field, magnetic field.",
+   "avg_logprob": -0.13484086179071003
+  },
+  {
+   "start": 20.86,
+   "end": 30.5,
+   "text": "The motion is the force being exerted. A magnetic field with a current always exerts a force on a charged object.",
+   "avg_logprob": -0.1093966481089592
+  },
+  {
+   "start": 31.14,
+   "end": 37.04,
+   "text": "However, it is important to note that the right-hand rule only works for positively charged particles.",
+   "avg_logprob": -0.1093966481089592
+  },
+  {
+   "start": 48.71,
+   "end": 59.93,
+   "text": "However, if you want to use it for negatively charged particles, you would have to reverse the direction of the motion.",
+   "avg_logprob": -0.1391764594749971
+  },
+  {
+   "start": 60.13,
+   "end": 68.85,
+   "text": "So, if you use your right-hand rule and you got the motion would be going to the right, then for an electron, it would be going to the other side.",
+   "avg_logprob": -0.1391764594749971
+  },
+  {
+   "start": 69.39,
+   "end": 83.11,
+   "text": "This is because the force of a charged particle is given by qvb, where q is the charge of the particle, b is the magnetic field, and v is the velocity.",
+   "avg_logprob": -0.09464925461832215
+  },
+  {
+   "start": 83.65,
+   "end": 89.95,
+   "text": "But as you can see, if charge is negative, the force would be in a different direction because it's a vector.",
+   "avg_logprob": -0.09464925461832215
+  },
+  {
+   "start": 91.47,
+   "end": 95.23,
+   "text": "So, let's have this question over here.",
+   "avg_logprob": -0.08432903863263852
+  },
+  {
+   "start": 96.23,
+   "end": 105.79,
+   "text": "And we want to determine the direction a positively charged particle would be going if it was brought near a wire.",
+   "avg_logprob": -0.08432903863263852
+  },
+  {
+   "start": 107.55,
+   "end": 109.75,
+   "text": "Now, first of all, what do these dots mean?",
+   "avg_logprob": -0.08432903863263852
+  },
+  {
+   "start": 110.89,
+   "end": 115.13,
+   "text": "Well, these dots represent the direction of the magnetic field.",
+   "avg_logprob": -0.08432903863263852
+  },
+  {
+   "start": 116.27,
+   "end": 129.71,
+   "text": "X's represent when the magnetic field is pointing into the page, while dots are representing the magnetic field pointing out of the page.",
+   "avg_logprob": -0.09558883647123972
+  },
+  {
+   "start": 130.17,
+   "end": 133.69,
+   "text": "So actually, the magnetic field is kind of going around in a circle.",
+   "avg_logprob": -0.09558883647123972
+  },
+  {
+   "start": 134.67,
+   "end": 143.17,
+   "text": "But if the particle is above, then it's going to be within the magnetic field part that is pointing out of the page.",
+   "avg_logprob": -0.09558883647123972
+  },
+  {
+   "start": 144.43,
+   "end": 146.97,
+   "text": "Let's say the current is going towards the right.",
+   "avg_logprob": -0.05598023347556591
+  },
+  {
+   "start": 147.25,
+   "end": 156.47,
+   "text": "So we have a current going towards the right, and since the particle is above the wire, it's going to be having a magnetic field pointing out of the page.",
+   "avg_logprob": -0.05598023347556591
+  },
+  {
+   "start": 156.97,
+   "end": 167.19,
+   "text": "So what we want to do is we want to match the current with our middle finger towards the right, the field pointing out of the page,",
+   "avg_logprob": -0.05598023347556591
+  },
+  {
+   "start": 167.19,
+   "end": 174.29,
+   "text": "and we would get that the motion would be going upwards.",
+   "avg_logprob": -0.10390671061687783
+  },
+  {
+   "start": 175.77,
+   "end": 179.11,
+   "text": "So this would be going upwards.",
+   "avg_logprob": -0.10390671061687783
+  },
+  {
+   "start": 179.97,
+   "end": 185.59,
+   "text": "However, for an electron, it is different because we can't use the magnetic right hand rule.",
+   "avg_logprob": -0.10390671061687783
+  },
+  {
+   "start": 186.85,
+   "end": 194.89,
+   "text": "We could either first switch it to a positively charged particle.",
+   "avg_logprob": -0.10390671061687783
+  },
+  {
+   "start": 196.37,
+   "end": 202.25,
+   "text": "We could either switch it to a positively charged particle, or we could use our left hand rule.",
+   "avg_logprob": -0.07311255759314488
+  },
+  {
+   "start": 202.97,
+   "end": 205.97,
+   "text": "Because when we use our left hand, the motion will be switched.",
+   "avg_logprob": -0.07311255759314488
+  },
+  {
+   "start": 206.25,
+   "end": 211.61,
+   "text": "So either use right hand rule on a positive, and then reverse it, or just use your other hand.",
+   "avg_logprob": -0.07311255759314488
+  },
+  {
+   "start": 211.97,
+   "end": 213.39,
+   "text": "Let's try using our other hand.",
+   "avg_logprob": -0.07311255759314488
+  },
+  {
+   "start": 213.93,
+   "end": 221.15,
+   "text": "We would point our index finger out of the page, and then the current to the right.",
+   "avg_logprob": -0.07311255759314488
+  },
+  {
+   "start": 222.03,
+   "end": 226.91,
+   "text": "So we would have our force pointed downwards.",
+   "avg_logprob": -0.10231575727462769
+  },
+  {
+   "start": 228.23,
+   "end": 233.49,
+   "text": "And as you can see, it's the exact opposite as what a positively charged particle would do.",
+   "avg_logprob": -0.10231575727462769
+  },
+  {
+   "start": 234.75,
+   "end": 237.75,
+   "text": "Another way to use our right hand rule is to use this.",
+   "avg_logprob": -0.10231575727462769
+  },
+  {
+   "start": 238.65,
+   "end": 247.69,
+   "text": "And the palm would be representing the direction of the force, the fingers would be representing the direction of the field,",
+   "avg_logprob": -0.10231575727462769
+  },
+  {
+   "start": 247.69,
+   "end": 251.27,
+   "text": "and the thumb would be representing the direction of the current.",
+   "avg_logprob": -0.051180714330115874
+  },
+  {
+   "start": 253.51,
+   "end": 255.77,
+   "text": "In a solenoid, it is very different.",
+   "avg_logprob": -0.051180714330115874
+  },
+  {
+   "start": 256.69,
+   "end": 262.69,
+   "text": "A solenoid is basically a wire wrapped around in a circle.",
+   "avg_logprob": -0.051180714330115874
+  },
+  {
+   "start": 263.27,
+   "end": 268.53,
+   "text": "And our right hand grip rule actually governs the force.",
+   "avg_logprob": -0.051180714330115874
+  },
+  {
+   "start": 269.73,
+   "end": 274.31,
+   "text": "When you wrap your fingers around the direction of the current of the solenoid,",
+   "avg_logprob": -0.051180714330115874
+  },
+  {
+   "start": 274.31,
+   "end": 280.63,
+   "text": "your thumb will be pointing towards the force of the thing.",
+   "avg_logprob": -0.06480962140485644
+  },
+  {
+   "start": 280.83,
+   "end": 286.47,
+   "text": "So for example, if we would have a positively charged object inside the solenoid,",
+   "avg_logprob": -0.06480962140485644
+  },
+  {
+   "start": 286.51,
+   "end": 290.49,
+   "text": "it would have a force going towards the left in this case.",
+   "avg_logprob": -0.06480962140485644
+  },
+  {
+   "start": 292.31,
+   "end": 295.27,
+   "text": "And that's it for right hand rules.",
+   "avg_logprob": -0.06480962140485644
+  },
+  {
+   "start": 296.09,
+   "end": 302.45,
+   "text": "Another tip of advice is right hand rule is very easy to grasp the concept,",
+   "avg_logprob": -0.06480962140485644
+  },
+  {
+   "start": 302.45,
+   "end": 306.63,
+   "text": "but in order to be good at it, you need a lot, a lot of practice.",
+   "avg_logprob": -0.0913652643022767
+  },
+  {
+   "start": 306.93,
+   "end": 313.05,
+   "text": "So the number one key thing to mastering the right hand rule, and magnetism in general,",
+   "avg_logprob": -0.0913652643022767
+  },
+  {
+   "start": 313.55,
+   "end": 319.77,
+   "text": "is just to find a lot of practice questions and be able to do these really, really quickly.",
+   "avg_logprob": -0.0913652643022767
+  },
+  {
+   "start": 320.69,
+   "end": 323.97,
+   "text": "Thank you for watching, and I hope you found this video helpful. Bye.",
+   "avg_logprob": -0.0913652643022767
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.98,
+   "end": 3.92,
+   "text": "In this video, we will be talking about the"
+  },
+  {
+   "start": 3.92,
+   "end": 6.04,
+   "text": "right-hand rule and how to actually use it."
+  },
+  {
+   "start": 6.6,
+   "end": 8.96,
+   "text": "First of all, what is the right-hand rule? The"
+  },
+  {
+   "start": 8.96,
+   "end": 12.16,
+   "text": "right-hand rule is a rule that works for positively"
+  },
+  {
+   "start": 12.16,
+   "end": 14.78,
+   "text": "charged particles that can determine either"
+  },
+  {
+   "start": 14.78,
+   "end": 18.88,
+   "text": "its field, motion, or current, and by field,"
+  },
+  {
+   "start": 19.32,
+   "end": 22.96,
+   "text": "magnetic field. The motion is the force being"
+  },
+  {
+   "start": 22.96,
+   "end": 27.1,
+   "text": "exerted. A magnetic field with a current always"
+  },
+  {
+   "start": 27.1,
+   "end": 30.5,
+   "text": "exerts a force on a charged object."
+  },
+  {
+   "start": 31.14,
+   "end": 33.94,
+   "text": "However, it is important to note that the right-hand"
+  },
+  {
+   "start": 33.94,
+   "end": 37.04,
+   "text": "rule only works for positively charged particles."
+  },
+  {
+   "start": 48.71,
+   "end": 55.59,
+   "text": "However, if you want to use it for negatively"
+  },
+  {
+   "start": 55.59,
+   "end": 57.85,
+   "text": "charged particles, you would have to reverse"
+  },
+  {
+   "start": 57.85,
+   "end": 59.93,
+   "text": "the direction of the motion."
+  },
+  {
+   "start": 60.13,
+   "end": 62.01,
+   "text": "So, if you use your right-hand rule and you"
+  },
+  {
+   "start": 62.01,
+   "end": 64.85,
+   "text": "got the motion would be going to the right,"
+  },
+  {
+   "start": 65.21,
+   "end": 68.41,
+   "text": "then for an electron, it would be going to the"
+  },
+  {
+   "start": 68.41,
+   "end": 72.75,
+   "text": "other side. This is because the force of a charged"
+  },
+  {
+   "start": 72.75,
+   "end": 79.97,
+   "text": "particle is given by qvb, where q is the charge"
+  },
+  {
+   "start": 79.97,
+   "end": 82.25,
+   "text": "of the particle, b is the magnetic field, and"
+  },
+  {
+   "start": 82.25,
+   "end": 85.69,
+   "text": "v is the velocity. But as you can see, if charge"
+  },
+  {
+   "start": 85.69,
+   "end": 88.59,
+   "text": "is negative, the force would be in a different"
+  },
+  {
+   "start": 88.59,
+   "end": 93.29,
+   "text": "direction because it's a vector. So, let's have"
+  },
+  {
+   "start": 93.29,
+   "end": 97.29,
+   "text": "this question over here. And we want to determine"
+  },
+  {
+   "start": 97.29,
+   "end": 102.21,
+   "text": "the direction a positively charged particle"
+  },
+  {
+   "start": 102.21,
+   "end": 105.79,
+   "text": "would be going if it was brought near a wire."
+  },
+  {
+   "start": 107.55,
+   "end": 109.75,
+   "text": "Now, first of all, what do these dots mean?"
+  },
+  {
+   "start": 110.89,
+   "end": 114.19,
+   "text": "Well, these dots represent the direction of"
+  },
+  {
+   "start": 114.19,
+   "end": 118.57,
+   "text": "the magnetic field. X's represent when the magnetic"
+  },
+  {
+   "start": 118.57,
+   "end": 125.29,
+   "text": "field is pointing into the page, while dots"
+  },
+  {
+   "start": 125.29,
+   "end": 128.91,
+   "text": "are representing the magnetic field pointing"
+  },
+  {
+   "start": 128.91,
+   "end": 131.53,
+   "text": "out of the page. So actually, the magnetic field"
+  },
+  {
+   "start": 131.53,
+   "end": 133.69,
+   "text": "is kind of going around in a circle."
+  },
+  {
+   "start": 134.67,
+   "end": 139.71,
+   "text": "But if the particle is above, then it's going"
+  },
+  {
+   "start": 139.71,
+   "end": 141.85,
+   "text": "to be within the magnetic field part that is"
+  },
+  {
+   "start": 141.85,
+   "end": 145.63,
+   "text": "pointing out of the page. Let's say the current"
+  },
+  {
+   "start": 145.63,
+   "end": 147.87,
+   "text": "is going towards the right. So we have a current"
+  },
+  {
+   "start": 147.87,
+   "end": 151.67,
+   "text": "going towards the right, and since the particle"
+  },
+  {
+   "start": 151.67,
+   "end": 154.77,
+   "text": "is above the wire, it's going to be having a"
+  },
+  {
+   "start": 154.77,
+   "end": 157.13,
+   "text": "magnetic field pointing out of the page. So"
+  },
+  {
+   "start": 157.13,
+   "end": 160.09,
+   "text": "what we want to do is we want to match the current"
+  },
+  {
+   "start": 160.09,
+   "end": 164.23,
+   "text": "with our middle finger towards the right, the"
+  },
+  {
+   "start": 164.23,
+   "end": 169.05,
+   "text": "field pointing out of the page, and we would"
+  },
+  {
+   "start": 169.05,
+   "end": 174.29,
+   "text": "get that the motion would be going upwards."
+  },
+  {
+   "start": 175.77,
+   "end": 179.11,
+   "text": "So this would be going upwards."
+  },
+  {
+   "start": 179.97,
+   "end": 183.29,
+   "text": "However, for an electron, it is different because"
+  },
+  {
+   "start": 183.29,
+   "end": 185.59,
+   "text": "we can't use the magnetic right hand rule."
+  },
+  {
+   "start": 186.85,
+   "end": 192.55,
+   "text": "We could either first switch it to a positively"
+  },
+  {
+   "start": 192.55,
+   "end": 194.89,
+   "text": "charged particle."
+  },
+  {
+   "start": 196.37,
+   "end": 199.11,
+   "text": "We could either switch it to a positively charged"
+  },
+  {
+   "start": 199.11,
+   "end": 202.25,
+   "text": "particle, or we could use our left hand rule."
+  },
+  {
+   "start": 202.97,
+   "end": 205.25,
+   "text": "Because when we use our left hand, the motion"
+  },
+  {
+   "start": 205.25,
+   "end": 207.49,
+   "text": "will be switched. So either use right hand rule"
+  },
+  {
+   "start": 207.49,
+   "end": 210.41,
+   "text": "on a positive, and then reverse it, or just"
+  },
+  {
+   "start": 210.41,
+   "end": 213.11,
+   "text": "use your other hand. Let's try using our other"
+  },
+  {
+   "start": 213.11,
+   "end": 218.17,
+   "text": "hand. We would point our index finger out of"
+  },
+  {
+   "start": 218.17,
+   "end": 221.15,
+   "text": "the page, and then the current to the right."
+  },
+  {
+   "start": 222.03,
+   "end": 226.91,
+   "text": "So we would have our force pointed downwards."
+  },
+  {
+   "start": 228.23,
+   "end": 230.61,
+   "text": "And as you can see, it's the exact opposite"
+  },
+  {
+   "start": 230.61,
+   "end": 233.21,
+   "text": "as what a positively charged particle would"
+  },
+  {
+   "start": 233.21,
+   "end": 236.71,
+   "text": "do. Another way to use our right hand rule is"
+  },
+  {
+   "start": 236.71,
+   "end": 243.27,
+   "text": "to use this. And the palm would be representing"
+  },
+  {
+   "start": 243.27,
+   "end": 245.65,
+   "text": "the direction of the force, the fingers would"
+  },
+  {
+   "start": 245.65,
+   "end": 247.69,
+   "text": "be representing the direction of the field,"
+  },
+  {
+   "start": 247.69,
+   "end": 250.61,
+   "text": "and the thumb would be representing the direction"
+  },
+  {
+   "start": 250.61,
+   "end": 255.77,
+   "text": "of the current. In a solenoid, it is very different."
+  },
+  {
+   "start": 256.69,
+   "end": 261.81,
+   "text": "A solenoid is basically a wire wrapped around"
+  },
+  {
+   "start": 261.81,
+   "end": 267.05,
+   "text": "in a circle. And our right hand grip rule actually"
+  },
+  {
+   "start": 267.05,
+   "end": 271.57,
+   "text": "governs the force. When you wrap your fingers"
+  },
+  {
+   "start": 271.57,
+   "end": 274.31,
+   "text": "around the direction of the current of the solenoid,"
+  },
+  {
+   "start": 274.31,
+   "end": 278.21,
+   "text": "your thumb will be pointing towards the force"
+  },
+  {
+   "start": 278.21,
+   "end": 280.63,
+   "text": "of the thing."
+  },
+  {
+   "start": 280.83,
+   "end": 283.95,
+   "text": "So for example, if we would have a positively"
+  },
+  {
+   "start": 283.95,
+   "end": 287.19,
+   "text": "charged object inside the solenoid, it would"
+  },
+  {
+   "start": 287.19,
+   "end": 290.05,
+   "text": "have a force going towards the left in this"
+  },
+  {
+   "start": 290.05,
+   "end": 295.27,
+   "text": "case. And that's it for right hand rules."
+  },
+  {
+   "start": 296.09,
+   "end": 299.55,
+   "text": "Another tip of advice is right hand rule is"
+  },
+  {
+   "start": 299.55,
+   "end": 303.47,
+   "text": "very easy to grasp the concept, but in order"
+  },
+  {
+   "start": 303.47,
+   "end": 306.63,
+   "text": "to be good at it, you need a lot, a lot of practice."
+  },
+  {
+   "start": 306.93,
+   "end": 309.93,
+   "text": "So the number one key thing to mastering the"
+  },
+  {
+   "start": 309.93,
+   "end": 313.95,
+   "text": "right hand rule, and magnetism in general, is"
+  },
+  {
+   "start": 313.95,
+   "end": 317.35,
+   "text": "just to find a lot of practice questions and"
+  },
+  {
+   "start": 317.35,
+   "end": 319.77,
+   "text": "be able to do these really, really quickly."
+  },
+  {
+   "start": 320.69,
+   "end": 322.23,
+   "text": "Thank you for watching, and I hope you found"
+  },
+  {
+   "start": 322.23,
+   "end": 323.97,
+   "text": "this video helpful. Bye."
+  }
+ ],
+ "report": {
+  "key": "magnetism__rhr",
+  "title": "Right Hand Rule",
+  "topicKey": "magnetism",
+  "duration": 324.5226875,
+  "cues": 85,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.1391764594749971,
+  "flagged": []
+ }
+}

@@ -1,0 +1,933 @@
+{
+ "lesson": {
+  "topicKey": "kinematics",
+  "curriculumKey": "motion_1d",
+  "title": "1D Motion Analysis",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/Unit%201%201D%20Kinematics.mp4",
+  "source": "kinematics.dart"
+ },
+ "segments": [
+  {
+   "start": 0.46,
+   "end": 7.08,
+   "text": "Hey guys, in this video, we will be starting off with our first ever unit in physics, and that is kinematics.",
+   "avg_logprob": -0.13152084627536811
+  },
+  {
+   "start": 8.62,
+   "end": 18.68,
+   "text": "So, first of all, what is kinematics? Kinematics belongs to the stream of physics of mechanics, which deals with the motion of objects.",
+   "avg_logprob": -0.13152084627536811
+  },
+  {
+   "start": 19.5,
+   "end": 29.86,
+   "text": "For example, once we learn kinematics, we'll be able to calculate a lot of different motion, we'll learn the difference between velocity, acceleration,",
+   "avg_logprob": -0.13152084627536811
+  },
+  {
+   "start": 31.32,
+   "end": 38.34,
+   "text": "and displacement or position, and we'll be able to calculate a lot of these questions.",
+   "avg_logprob": -0.08983861816426118
+  },
+  {
+   "start": 39.2,
+   "end": 44.26,
+   "text": "Let's first start by reviewing velocity, displacement, and acceleration.",
+   "avg_logprob": -0.08983861816426118
+  },
+  {
+   "start": 45.32,
+   "end": 51.5,
+   "text": "So, I'll be introducing velocity and acceleration, and based on what we've learned in the past,",
+   "avg_logprob": -0.08983861816426118
+  },
+  {
+   "start": 51.5,
+   "end": 66.58,
+   "text": "displacement, we know, is the change in position, delta x, which is equal to the final position minus the initial position.",
+   "avg_logprob": -0.08812089602152506
+  },
+  {
+   "start": 69.96,
+   "end": 79.76,
+   "text": "And keep in mind, in physics, when we use this triangle, it represents delta, which means change in, change in.",
+   "avg_logprob": -0.08812089602152506
+  },
+  {
+   "start": 79.88,
+   "end": 83.18,
+   "text": "So, in this case, it would be change in x or position.",
+   "avg_logprob": -0.08812089602152506
+  },
+  {
+   "start": 84.96,
+   "end": 97.52,
+   "text": "Now, since displacement is a vector, it only accounts for the initial position and the final position, it does not matter what path you take.",
+   "avg_logprob": -0.09782739864154295
+  },
+  {
+   "start": 98.46,
+   "end": 100.48,
+   "text": "And that is the same thing for velocity.",
+   "avg_logprob": -0.09782739864154295
+  },
+  {
+   "start": 101.86,
+   "end": 114.67,
+   "text": "Velocity. Now, velocity is the displacement over a period of time, sorry, the displacement over a period of time.",
+   "avg_logprob": -0.08716312529785293
+  },
+  {
+   "start": 115.99,
+   "end": 118.39,
+   "text": "And delta t means change in time.",
+   "avg_logprob": -0.08716312529785293
+  },
+  {
+   "start": 121.48,
+   "end": 129.5,
+   "text": "Now, since we know that velocity is a vector, that means that it has to have a position as well, sorry, a direction as well.",
+   "avg_logprob": -0.08716312529785293
+  },
+  {
+   "start": 132.57,
+   "end": 140.43,
+   "text": "And since we're dealing with 1D kinematics, usually it's going to be on one dimension.",
+   "avg_logprob": -0.11133293915485991
+  },
+  {
+   "start": 140.75,
+   "end": 147.97,
+   "text": "And let's say we have a cart, and this cart moves to the right.",
+   "avg_logprob": -0.11133293915485991
+  },
+  {
+   "start": 148.79,
+   "end": 152.31,
+   "text": "Well then, right will be the direction.",
+   "avg_logprob": -0.11133293915485991
+  },
+  {
+   "start": 152.51,
+   "end": 158.15,
+   "text": "For example, its velocity was 4 meters per second.",
+   "avg_logprob": -0.11133293915485991
+  },
+  {
+   "start": 159.15,
+   "end": 170.45,
+   "text": "If the magnitude of the velocity was 4 meters per second, then the velocity would be depicted as v equals 4 meters per second, right.",
+   "avg_logprob": -0.07991487129789884
+  },
+  {
+   "start": 172.01,
+   "end": 177.27,
+   "text": "So make sure that for all of these, you have to include a direction.",
+   "avg_logprob": -0.07991487129789884
+  },
+  {
+   "start": 177.97,
+   "end": 180.43,
+   "text": "Vectors always must have a direction.",
+   "avg_logprob": -0.07991487129789884
+  },
+  {
+   "start": 181.37,
+   "end": 192.09,
+   "text": "Unless a question asks you for the magnitude of the velocity or whatever you're calculating, you must always state up, down, right, north, and so on.",
+   "avg_logprob": -0.05432821039317383
+  },
+  {
+   "start": 193.81,
+   "end": 199.21,
+   "text": "Another way of depicting direction is positive or negative.",
+   "avg_logprob": -0.05432821039317383
+  },
+  {
+   "start": 199.91,
+   "end": 205.59,
+   "text": "And this usually is used only in 1D kinematics, not in 2D or 3D.",
+   "avg_logprob": -0.05432821039317383
+  },
+  {
+   "start": 205.59,
+   "end": 212.39,
+   "text": "And this means that we're going to treat right as a positive side and left as a negative side.",
+   "avg_logprob": -0.07845660062397228
+  },
+  {
+   "start": 212.87,
+   "end": 219.85,
+   "text": "So let's say if we have this cart going this way now at a speed of 3 meters per second,",
+   "avg_logprob": -0.07845660062397228
+  },
+  {
+   "start": 220.73,
+   "end": 230.25,
+   "text": "then the new velocity, v new, would be equal to, well, we're using sine as a direction, so it would be negative 3 meters per second.",
+   "avg_logprob": -0.07845660062397228
+  },
+  {
+   "start": 231.13,
+   "end": 237.07,
+   "text": "So usually right is positive and left is negative, up is also positive, and down is negative.",
+   "avg_logprob": -0.11942835016684099
+  },
+  {
+   "start": 239.66,
+   "end": 242.58,
+   "text": "Now, onto our next value.",
+   "avg_logprob": -0.11942835016684099
+  },
+  {
+   "start": 244.36,
+   "end": 246.16,
+   "text": "We're going to have acceleration.",
+   "avg_logprob": -0.11942835016684099
+  },
+  {
+   "start": 248.6,
+   "end": 258.76,
+   "text": "So, you might have heard of acceleration before, but you've probably never actually known the formula for this.",
+   "avg_logprob": -0.11942835016684099
+  },
+  {
+   "start": 258.76,
+   "end": 262.42,
+   "text": "You've probably known velocity, it's meters per second.",
+   "avg_logprob": -0.0929806771732512
+  },
+  {
+   "start": 263.3,
+   "end": 268.98,
+   "text": "But acceleration is just delta v over delta t.",
+   "avg_logprob": -0.0929806771732512
+  },
+  {
+   "start": 270.08,
+   "end": 275.2,
+   "text": "It's just how much velocity changes over time.",
+   "avg_logprob": -0.0929806771732512
+  },
+  {
+   "start": 276.58,
+   "end": 283.84,
+   "text": "So basically it's the same thing as delta x over delta t squared, if you sub it in.",
+   "avg_logprob": -0.0929806771732512
+  },
+  {
+   "start": 283.84,
+   "end": 291.04,
+   "text": "And these both work. It's basically the slope of the velocity, how much the velocity changes over time.",
+   "avg_logprob": -0.09094893589223686
+  },
+  {
+   "start": 291.98,
+   "end": 299.52,
+   "text": "So, if you think about it, if acceleration is zero, then there still can be velocity.",
+   "avg_logprob": -0.09094893589223686
+  },
+  {
+   "start": 300.54,
+   "end": 309.3,
+   "text": "But if acceleration is positive, velocity is going to go up, and if acceleration is negative, it's going to go down.",
+   "avg_logprob": -0.09094893589223686
+  },
+  {
+   "start": 312.14,
+   "end": 317.4,
+   "text": "So, now keep in mind that acceleration also has a vector.",
+   "avg_logprob": -0.10324879426222582
+  },
+  {
+   "start": 318.94,
+   "end": 326.2,
+   "text": "And let's say that we have a question for this cart, or we have a question for this cart right now.",
+   "avg_logprob": -0.10324879426222582
+  },
+  {
+   "start": 328.24,
+   "end": 334.36,
+   "text": "And at x equals 1, the cart starts off, so we're going to have a cart.",
+   "avg_logprob": -0.10324879426222582
+  },
+  {
+   "start": 339.74,
+   "end": 355.3,
+   "text": "And at x equals 5, the cart is at position x equals 5, and it takes, let's say, 10 seconds for this cart to go from here to there.",
+   "avg_logprob": -0.08386676348745822
+  },
+  {
+   "start": 356.68,
+   "end": 359.74,
+   "text": "And you want to calculate the velocity.",
+   "avg_logprob": -0.08386676348745822
+  },
+  {
+   "start": 360.88,
+   "end": 364.5,
+   "text": "Well, let's first establish our directions.",
+   "avg_logprob": -0.08386676348745822
+  },
+  {
+   "start": 364.5,
+   "end": 368.76,
+   "text": "If it's going from here to there, then it's going in the positive direction.",
+   "avg_logprob": -0.06831618321352992
+  },
+  {
+   "start": 368.86,
+   "end": 374.32,
+   "text": "This is the positive direction, this is the negative direction, so the velocity will be positive.",
+   "avg_logprob": -0.06831618321352992
+  },
+  {
+   "start": 375.7,
+   "end": 381.38,
+   "text": "We know that velocity is delta x over delta t, change in position over change in time.",
+   "avg_logprob": -0.06831618321352992
+  },
+  {
+   "start": 381.94,
+   "end": 384.46,
+   "text": "So we can write that delta x over delta t.",
+   "avg_logprob": -0.06831618321352992
+  },
+  {
+   "start": 384.96,
+   "end": 386.7,
+   "text": "We know that delta t is 10.",
+   "avg_logprob": -0.06831618321352992
+  },
+  {
+   "start": 387.96,
+   "end": 395.84,
+   "text": "Delta x is the final x position, 5 minus the initial. Delta is always final minus initial.",
+   "avg_logprob": -0.09221754424155705
+  },
+  {
+   "start": 396.98,
+   "end": 402.66,
+   "text": "And you would get 2 over 5 meters per second, don't forget the positive as well.",
+   "avg_logprob": -0.09221754424155705
+  },
+  {
+   "start": 404.14,
+   "end": 411.14,
+   "text": "And that would be the basics of how we calculate 1D kinematics.",
+   "avg_logprob": -0.09221754424155705
+  },
+  {
+   "start": 413.0,
+   "end": 418.46,
+   "text": "So, now that's basically all for the introduction of kinematics.",
+   "avg_logprob": -0.07811635242480981
+  },
+  {
+   "start": 419.46,
+   "end": 422.66,
+   "text": "We've learned about displacement, acceleration, and velocity.",
+   "avg_logprob": -0.07811635242480981
+  },
+  {
+   "start": 423.18,
+   "end": 429.94,
+   "text": "And these are basically the main things that we're going to be dealing with in kinematics.",
+   "avg_logprob": -0.07811635242480981
+  },
+  {
+   "start": 430.14,
+   "end": 435.88,
+   "text": "There's really nothing other than this in this unit itself that you're going to have to know.",
+   "avg_logprob": -0.07811635242480981
+  },
+  {
+   "start": 436.74,
+   "end": 441.32,
+   "text": "And after we get into 2D kinematics, which you'll find pretty similar,",
+   "avg_logprob": -0.0762716629733778
+  },
+  {
+   "start": 441.72,
+   "end": 446.66,
+   "text": "we're going to be going over the formulae that we can use to calculate a lot of these questions.",
+   "avg_logprob": -0.0762716629733778
+  },
+  {
+   "start": 447.86,
+   "end": 452.42,
+   "text": "But that's it for this video, I hope you enjoyed, and we'll see you in the next one. Bye!",
+   "avg_logprob": -0.0762716629733778
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.46,
+   "end": 3.2,
+   "text": "Hey guys, in this video, we will be starting"
+  },
+  {
+   "start": 3.2,
+   "end": 6.0,
+   "text": "off with our first ever unit in physics, and"
+  },
+  {
+   "start": 6.0,
+   "end": 10.04,
+   "text": "that is kinematics. So, first of all, what is"
+  },
+  {
+   "start": 10.04,
+   "end": 12.88,
+   "text": "kinematics? Kinematics belongs to the stream"
+  },
+  {
+   "start": 12.88,
+   "end": 17.42,
+   "text": "of physics of mechanics, which deals with the"
+  },
+  {
+   "start": 17.42,
+   "end": 21.52,
+   "text": "motion of objects. For example, once we learn"
+  },
+  {
+   "start": 21.52,
+   "end": 24.22,
+   "text": "kinematics, we'll be able to calculate a lot"
+  },
+  {
+   "start": 24.22,
+   "end": 26.62,
+   "text": "of different motion, we'll learn the difference"
+  },
+  {
+   "start": 26.62,
+   "end": 32.6,
+   "text": "between velocity, acceleration, and displacement"
+  },
+  {
+   "start": 32.6,
+   "end": 37.18,
+   "text": "or position, and we'll be able to calculate"
+  },
+  {
+   "start": 37.18,
+   "end": 39.96,
+   "text": "a lot of these questions. Let's first start"
+  },
+  {
+   "start": 39.96,
+   "end": 44.26,
+   "text": "by reviewing velocity, displacement, and acceleration."
+  },
+  {
+   "start": 45.32,
+   "end": 48.6,
+   "text": "So, I'll be introducing velocity and acceleration,"
+  },
+  {
+   "start": 49.06,
+   "end": 51.5,
+   "text": "and based on what we've learned in the past,"
+  },
+  {
+   "start": 51.5,
+   "end": 57.8,
+   "text": "displacement, we know, is the change in position,"
+  },
+  {
+   "start": 58.56,
+   "end": 62.82,
+   "text": "delta-x, which is equal to the final position"
+  },
+  {
+   "start": 64.1,
+   "end": 66.58,
+   "text": "minus the initial position."
+  },
+  {
+   "start": 69.96,
+   "end": 72.28,
+   "text": "And keep in mind, in physics, when we use this"
+  },
+  {
+   "start": 72.28,
+   "end": 76.96,
+   "text": "triangle, it represents delta, which means change"
+  },
+  {
+   "start": 76.96,
+   "end": 79.76,
+   "text": "in, change in."
+  },
+  {
+   "start": 79.88,
+   "end": 82.4,
+   "text": "So, in this case, it would be change in x or"
+  },
+  {
+   "start": 82.4,
+   "end": 88.26,
+   "text": "position. Now, since displacement is a vector,"
+  },
+  {
+   "start": 89.06,
+   "end": 94.54,
+   "text": "it only accounts for the initial position and"
+  },
+  {
+   "start": 94.54,
+   "end": 96.72,
+   "text": "the final position, it does not matter what"
+  },
+  {
+   "start": 96.72,
+   "end": 99.96,
+   "text": "path you take. And that is the same thing for"
+  },
+  {
+   "start": 99.96,
+   "end": 102.46,
+   "text": "velocity. Velocity."
+  },
+  {
+   "start": 104.33,
+   "end": 109.91,
+   "text": "Now, velocity is the displacement over a period"
+  },
+  {
+   "start": 109.91,
+   "end": 113.71,
+   "text": "of time, sorry, the displacement over a period"
+  },
+  {
+   "start": 113.71,
+   "end": 118.39,
+   "text": "of time. And delta-t means change in time."
+  },
+  {
+   "start": 121.48,
+   "end": 124.12,
+   "text": "Now, since we know that velocity is a vector,"
+  },
+  {
+   "start": 125.1,
+   "end": 127.66,
+   "text": "that means that it has to have a position as"
+  },
+  {
+   "start": 127.66,
+   "end": 133.71,
+   "text": "well, sorry, a direction as well. And since"
+  },
+  {
+   "start": 133.71,
+   "end": 137.67,
+   "text": "we're dealing with 1D kinematics, usually it's"
+  },
+  {
+   "start": 137.67,
+   "end": 140.43,
+   "text": "going to be on one dimension."
+  },
+  {
+   "start": 140.75,
+   "end": 146.11,
+   "text": "And let's say we have a cart, and this cart"
+  },
+  {
+   "start": 146.11,
+   "end": 150.63,
+   "text": "moves to the right. Well then, right will be"
+  },
+  {
+   "start": 150.63,
+   "end": 155.99,
+   "text": "the direction. For example, its velocity was"
+  },
+  {
+   "start": 155.99,
+   "end": 158.15,
+   "text": "4 metres per second."
+  },
+  {
+   "start": 159.15,
+   "end": 162.29,
+   "text": "If the magnitude of the velocity was 4 metres"
+  },
+  {
+   "start": 162.29,
+   "end": 165.87,
+   "text": "per second, then the velocity would be depicted"
+  },
+  {
+   "start": 165.87,
+   "end": 170.45,
+   "text": "as v equals 4 metres per second, right."
+  },
+  {
+   "start": 172.01,
+   "end": 175.83,
+   "text": "So make sure that for all of these, you have"
+  },
+  {
+   "start": 175.83,
+   "end": 179.33,
+   "text": "to include a direction. Vectors always must"
+  },
+  {
+   "start": 179.33,
+   "end": 182.67,
+   "text": "have a direction. Unless a question asks you"
+  },
+  {
+   "start": 182.67,
+   "end": 186.23,
+   "text": "for the magnitude of the velocity or whatever"
+  },
+  {
+   "start": 186.23,
+   "end": 189.33,
+   "text": "you're calculating, you must always state up,"
+  },
+  {
+   "start": 189.59,
+   "end": 192.09,
+   "text": "down, right, north, and so on."
+  },
+  {
+   "start": 193.81,
+   "end": 198.53,
+   "text": "Another way of depicting direction is positive"
+  },
+  {
+   "start": 198.53,
+   "end": 203.15,
+   "text": "or negative. And this usually is used only in"
+  },
+  {
+   "start": 203.15,
+   "end": 205.59,
+   "text": "1D kinematics, not in 2D or 3D."
+  },
+  {
+   "start": 205.59,
+   "end": 209.51,
+   "text": "And this means that we're going to treat right"
+  },
+  {
+   "start": 209.51,
+   "end": 212.39,
+   "text": "as a positive side and left as a negative side."
+  },
+  {
+   "start": 212.87,
+   "end": 216.15,
+   "text": "So let's say if we have this cart going this"
+  },
+  {
+   "start": 216.15,
+   "end": 220.85,
+   "text": "way now at a speed of 3 metres per second, then"
+  },
+  {
+   "start": 220.85,
+   "end": 224.49,
+   "text": "the new velocity, v new, would be equal to,"
+  },
+  {
+   "start": 224.49,
+   "end": 227.87,
+   "text": "well, we're using sine as a direction, so it"
+  },
+  {
+   "start": 227.87,
+   "end": 230.25,
+   "text": "would be negative 3 metres per second."
+  },
+  {
+   "start": 231.13,
+   "end": 234.65,
+   "text": "So usually right is positive and left is negative,"
+  },
+  {
+   "start": 234.93,
+   "end": 237.07,
+   "text": "up is also positive, and down is negative."
+  },
+  {
+   "start": 239.66,
+   "end": 242.58,
+   "text": "Now, onto our next value."
+  },
+  {
+   "start": 244.36,
+   "end": 251.16,
+   "text": "We're going to have acceleration. So, you might"
+  },
+  {
+   "start": 251.16,
+   "end": 254.6,
+   "text": "have heard of acceleration before, but you've"
+  },
+  {
+   "start": 254.6,
+   "end": 258.5,
+   "text": "probably never actually known the formula for"
+  },
+  {
+   "start": 258.5,
+   "end": 261.72,
+   "text": "this. You've probably known velocity, it's metres"
+  },
+  {
+   "start": 261.72,
+   "end": 267.5,
+   "text": "per second. But acceleration is just delta-v"
+  },
+  {
+   "start": 267.5,
+   "end": 274.56,
+   "text": "over delta-t. It's just how much velocity changes"
+  },
+  {
+   "start": 274.56,
+   "end": 278.26,
+   "text": "over time. So basically it's the same thing"
+  },
+  {
+   "start": 278.26,
+   "end": 283.34,
+   "text": "as delta-x over delta-t squared, if you sub"
+  },
+  {
+   "start": 283.34,
+   "end": 285.38,
+   "text": "it in. And these both work."
+  },
+  {
+   "start": 285.78,
+   "end": 289.0,
+   "text": "It's basically the slope of the velocity, how"
+  },
+  {
+   "start": 289.0,
+   "end": 291.04,
+   "text": "much the velocity changes over time."
+  },
+  {
+   "start": 291.98,
+   "end": 294.66,
+   "text": "So, if you think about it, if acceleration is"
+  },
+  {
+   "start": 294.66,
+   "end": 299.52,
+   "text": "zero, then there still can be velocity."
+  },
+  {
+   "start": 300.54,
+   "end": 304.2,
+   "text": "But if acceleration is positive, velocity is"
+  },
+  {
+   "start": 304.2,
+   "end": 308.3,
+   "text": "going to go up, and if acceleration is negative,"
+  },
+  {
+   "start": 308.54,
+   "end": 315.1,
+   "text": "it's going to go down. So, now keep in mind"
+  },
+  {
+   "start": 315.1,
+   "end": 317.4,
+   "text": "that acceleration also has a vector."
+  },
+  {
+   "start": 318.94,
+   "end": 321.92,
+   "text": "And let's say that we have a question for this"
+  },
+  {
+   "start": 321.92,
+   "end": 325.52,
+   "text": "cart, or we have a question for this cart right"
+  },
+  {
+   "start": 325.52,
+   "end": 332.4,
+   "text": "now. And at x equals 1, the cart starts off,"
+  },
+  {
+   "start": 333.04,
+   "end": 340.72,
+   "text": "so we're going to have a cart. And"
+  },
+  {
+   "start": 340.72,
+   "end": 348.44,
+   "text": "at x equals 5, the cart is at position x"
+  },
+  {
+   "start": 348.44,
+   "end": 352.64,
+   "text": "equals 5, and it takes, let's say, 10 seconds"
+  },
+  {
+   "start": 352.64,
+   "end": 355.3,
+   "text": "for this cart to go from here to there."
+  },
+  {
+   "start": 356.68,
+   "end": 359.74,
+   "text": "And you want to calculate the velocity."
+  },
+  {
+   "start": 360.88,
+   "end": 364.5,
+   "text": "Well, let's first establish our directions."
+  },
+  {
+   "start": 364.5,
+   "end": 367.48,
+   "text": "If it's going from here to there, then it's"
+  },
+  {
+   "start": 367.48,
+   "end": 369.28,
+   "text": "going in the positive direction. This is the"
+  },
+  {
+   "start": 369.28,
+   "end": 371.3,
+   "text": "positive direction, this is the negative direction,"
+  },
+  {
+   "start": 371.3,
+   "end": 374.32,
+   "text": "so the velocity will be positive."
+  },
+  {
+   "start": 375.7,
+   "end": 378.92,
+   "text": "We know that velocity is delta-x over delta"
+  },
+  {
+   "start": 378.92,
+   "end": 381.38,
+   "text": "t, change in position over change in time."
+  },
+  {
+   "start": 381.94,
+   "end": 384.46,
+   "text": "So we can write that delta-x over delta-t."
+  },
+  {
+   "start": 384.96,
+   "end": 390.92,
+   "text": "We know that delta-t is 10. delta-x is the final"
+  },
+  {
+   "start": 390.92,
+   "end": 393.76,
+   "text": "x position, 5 minus the initial."
+  },
+  {
+   "start": 394.1,
+   "end": 397.2,
+   "text": "Delta is always final minus initial. And you"
+  },
+  {
+   "start": 397.2,
+   "end": 401.34,
+   "text": "would get 2 over 5 metres per second, don't"
+  },
+  {
+   "start": 401.34,
+   "end": 405.24,
+   "text": "forget the positive as well. And that would"
+  },
+  {
+   "start": 405.24,
+   "end": 411.14,
+   "text": "be the basics of how we calculate 1D kinematics."
+  },
+  {
+   "start": 413.0,
+   "end": 417.72,
+   "text": "So, now that's basically all for the introduction"
+  },
+  {
+   "start": 417.72,
+   "end": 421.2,
+   "text": "of kinematics. We've learned about displacement,"
+  },
+  {
+   "start": 421.36,
+   "end": 425.78,
+   "text": "acceleration, and velocity. And these are basically"
+  },
+  {
+   "start": 425.78,
+   "end": 428.72,
+   "text": "the main things that we're going to be dealing"
+  },
+  {
+   "start": 428.72,
+   "end": 432.08,
+   "text": "with in kinematics. There's really nothing other"
+  },
+  {
+   "start": 432.08,
+   "end": 435.28,
+   "text": "than this in this unit itself that you're going"
+  },
+  {
+   "start": 435.28,
+   "end": 439.42,
+   "text": "to have to know. And after we get into 2D kinematics,"
+  },
+  {
+   "start": 439.62,
+   "end": 442.06,
+   "text": "which you'll find pretty similar, we're going"
+  },
+  {
+   "start": 442.06,
+   "end": 444.84,
+   "text": "to be going over the formulae that we can use"
+  },
+  {
+   "start": 444.84,
+   "end": 448.4,
+   "text": "to calculate a lot of these questions. But that's"
+  },
+  {
+   "start": 448.4,
+   "end": 450.98,
+   "text": "it for this video, I hope you enjoyed, and we'll"
+  },
+  {
+   "start": 450.98,
+   "end": 452.42,
+   "text": "see you in the next one. Bye!"
+  }
+ ],
+ "report": {
+  "key": "kinematics__motion_1d",
+  "title": "1D Motion Analysis",
+  "topicKey": "kinematics",
+  "duration": 453.2266875,
+  "cues": 111,
+  "corrections": 18,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.13152084627536811,
+  "flagged": []
+ }
+}

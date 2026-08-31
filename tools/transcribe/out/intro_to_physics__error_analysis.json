@@ -1,0 +1,1247 @@
+{
+ "lesson": {
+  "topicKey": "intro_to_physics",
+  "curriculumKey": "error_analysis",
+  "title": "Error Analysis and Measurement",
+  "videoLink": "https://pub-56767059a1844d06818006869a91df08.r2.dev/intro_to_physics/Unit%202%20Lab%20Work%20and%20Uncertainties.mp4",
+  "source": "intro_to_physics.dart"
+ },
+ "segments": [
+  {
+   "start": 0.46,
+   "end": 9.08,
+   "text": "In this video, we will be talking about types of uncertainties, significant figures, and how to calculate with uncertainties.",
+   "avg_logprob": -0.14129149122163653
+  },
+  {
+   "start": 10.74,
+   "end": 13.32,
+   "text": "Why do uncertainties matter, first of all?",
+   "avg_logprob": -0.1648698899990473
+  },
+  {
+   "start": 13.94,
+   "end": 20.46,
+   "text": "Well, uncertainties matter because no physical measurement in real life is exact.",
+   "avg_logprob": -0.1648698899990473
+  },
+  {
+   "start": 21.1,
+   "end": 23.54,
+   "text": "Every single measurement is limited by something.",
+   "avg_logprob": -0.1648698899990473
+  },
+  {
+   "start": 23.54,
+   "end": 45.02,
+   "text": "For example, instrument precision, or experimental technique, or environmental errors.",
+   "avg_logprob": -0.19685758484734428
+  },
+  {
+   "start": 46.97,
+   "end": 48.49,
+   "text": "So, environment.",
+   "avg_logprob": -0.12701552752721107
+  },
+  {
+   "start": 51.84,
+   "end": 60.54,
+   "text": "And because physics relies on a lot of measured data, each value has to include an uncertainty.",
+   "avg_logprob": -0.12701552752721107
+  },
+  {
+   "start": 60.92,
+   "end": 65.38,
+   "text": "And without it, you can't really do it effectively.",
+   "avg_logprob": -0.12701552752721107
+  },
+  {
+   "start": 66.16,
+   "end": 75.28,
+   "text": "A measurement is written as x equals x measured plus minus the uncertainty.",
+   "avg_logprob": -0.12701552752721107
+  },
+  {
+   "start": 78.78,
+   "end": 83.64,
+   "text": "For example, let's say you want to measure the length of a book.",
+   "avg_logprob": -0.06938360485376097
+  },
+  {
+   "start": 84.0,
+   "end": 91.16,
+   "text": "You could say the length would be equal to 12.4 plus minus 0.1 centimetres.",
+   "avg_logprob": -0.06938360485376097
+  },
+  {
+   "start": 91.82,
+   "end": 94.4,
+   "text": "And this is the uncertainty.",
+   "avg_logprob": -0.06938360485376097
+  },
+  {
+   "start": 95.28,
+   "end": 105.24,
+   "text": "This basically tells the readers, or the examiner, that your book has a length between 12.3 and 12.5.",
+   "avg_logprob": -0.09753374225002225
+  },
+  {
+   "start": 109.06,
+   "end": 112.06,
+   "text": "There are two types of uncertainties.",
+   "avg_logprob": -0.09753374225002225
+  },
+  {
+   "start": 113.24,
+   "end": 121.12,
+   "text": "There's random uncertainty and systematic uncertainty.",
+   "avg_logprob": -0.09753374225002225
+  },
+  {
+   "start": 124.96,
+   "end": 129.3,
+   "text": "Both of these are really stressed in IB.",
+   "avg_logprob": -0.09753374225002225
+  },
+  {
+   "start": 129.3,
+   "end": 134.14,
+   "text": "If you're doing AP, this is probably not going to be that important.",
+   "avg_logprob": -0.0846983960857897
+  },
+  {
+   "start": 134.28,
+   "end": 140.04,
+   "text": "But if you're doing IB and you're going to be doing labs, this is very, very important to know.",
+   "avg_logprob": -0.0846983960857897
+  },
+  {
+   "start": 140.7,
+   "end": 146.24,
+   "text": "Random uncertainty is caused by unpredictable fluctuations.",
+   "avg_logprob": -0.0846983960857897
+  },
+  {
+   "start": 151.02,
+   "end": 154.2,
+   "text": "And it varies from trial to trial.",
+   "avg_logprob": -0.0846983960857897
+  },
+  {
+   "start": 154.2,
+   "end": 163.67,
+   "text": "For example, when you're doing a stopwatch, there could be a difference in reaction time.",
+   "avg_logprob": -0.08754502497022114
+  },
+  {
+   "start": 166.85,
+   "end": 175.05,
+   "text": "However, systematic uncertainty is a consistent error, or a consistent bias, in one direction.",
+   "avg_logprob": -0.08754502497022114
+  },
+  {
+   "start": 178.57,
+   "end": 183.75,
+   "text": "And it can't be reduced by repetition, while random can be reduced by repetition.",
+   "avg_logprob": -0.08754502497022114
+  },
+  {
+   "start": 183.75,
+   "end": 190.73,
+   "text": "Can't be reduced by repetition.",
+   "avg_logprob": -0.13129624396562575
+  },
+  {
+   "start": 192.09,
+   "end": 203.91,
+   "text": "An example of this could be a ruler that has a missed painting, or the etch marks on the ruler are not even.",
+   "avg_logprob": -0.13129624396562575
+  },
+  {
+   "start": 205.31,
+   "end": 213.23,
+   "text": "Etch marks on ruler are not even.",
+   "avg_logprob": -0.13129624396562575
+  },
+  {
+   "start": 213.23,
+   "end": 217.61,
+   "text": "So basically, systematic uncertainty skews all your data in one direction,",
+   "avg_logprob": -0.0916620389914807
+  },
+  {
+   "start": 217.61,
+   "end": 225.23,
+   "text": "while a random uncertainty is basically the more you do the experiment, the less random uncertainty there will be.",
+   "avg_logprob": -0.0916620389914807
+  },
+  {
+   "start": 227.74,
+   "end": 231.74,
+   "text": "How do you estimate uncertainty from instruments? How do you actually get the instruments?",
+   "avg_logprob": -0.0916620389914807
+  },
+  {
+   "start": 232.52,
+   "end": 242.88,
+   "text": "Well, for analog instruments, which means things that you can read, for example, a ruler.",
+   "avg_logprob": -0.0916620389914807
+  },
+  {
+   "start": 243.62,
+   "end": 251.38,
+   "text": "Or, a good thing in chemistry would be a graduated cylinder. You could read the etch markings.",
+   "avg_logprob": -0.14069064192368952
+  },
+  {
+   "start": 252.82,
+   "end": 257.16,
+   "text": "It would be plus-minus-half the smallest division.",
+   "avg_logprob": -0.14069064192368952
+  },
+  {
+   "start": 261.28,
+   "end": 262.62,
+   "text": "So what do I mean by this?",
+   "avg_logprob": -0.14069064192368952
+  },
+  {
+   "start": 263.42,
+   "end": 271.42,
+   "text": "Well, let's say this ruler goes up by one centimetre, as most rulers do.",
+   "avg_logprob": -0.14069064192368952
+  },
+  {
+   "start": 271.42,
+   "end": 280.78,
+   "text": "So when you're measuring it, the uncertainty of whatever you're measuring with this ruler would be plus-minus-0.5 centimetres.",
+   "avg_logprob": -0.09964887129849401
+  },
+  {
+   "start": 281.74,
+   "end": 283.08,
+   "text": "And this would be your uncertainty.",
+   "avg_logprob": -0.09964887129849401
+  },
+  {
+   "start": 284.6,
+   "end": 289.18,
+   "text": "However, let's say you're measuring with a digital instrument.",
+   "avg_logprob": -0.09964887129849401
+  },
+  {
+   "start": 290.06,
+   "end": 292.58,
+   "text": "Digital instrument.",
+   "avg_logprob": -0.11686416376720775
+  },
+  {
+   "start": 293.6,
+   "end": 298.88,
+   "text": "And the uncertainty would be plus-minus the least significant figure.",
+   "avg_logprob": -0.11686416376720775
+  },
+  {
+   "start": 300.26,
+   "end": 303.76,
+   "text": "Least sig dig.",
+   "avg_logprob": -0.11686416376720775
+  },
+  {
+   "start": 304.9,
+   "end": 315.9,
+   "text": "So basically, in this case, it means that you want to plus-minus one of the furthest decimal places.",
+   "avg_logprob": -0.11686416376720775
+  },
+  {
+   "start": 315.9,
+   "end": 322.68,
+   "text": "So let's say you have a stopwatch, and your stopwatch measures, let's say, 2.36.",
+   "avg_logprob": -0.0715246166413029
+  },
+  {
+   "start": 323.32,
+   "end": 329.82,
+   "text": "Well, the least decimal place here would be two after the one.",
+   "avg_logprob": -0.0715246166413029
+  },
+  {
+   "start": 330.2,
+   "end": 335.74,
+   "text": "So the uncertainty here would be 0.01 seconds.",
+   "avg_logprob": -0.0715246166413029
+  },
+  {
+   "start": 336.84,
+   "end": 341.6,
+   "text": "And that's basically how to get the uncertainty in an experiment.",
+   "avg_logprob": -0.0715246166413029
+  },
+  {
+   "start": 341.6,
+   "end": 346.0,
+   "text": "You're going to probably learn this in class for IB, but it's good to know earlier.",
+   "avg_logprob": -0.07503942077358564
+  },
+  {
+   "start": 348.43,
+   "end": 351.75,
+   "text": "Now, how do you calculate with uncertainties?",
+   "avg_logprob": -0.07503942077358564
+  },
+  {
+   "start": 352.47,
+   "end": 358.65,
+   "text": "Let's say you want to calculate the velocity or speed of an object.",
+   "avg_logprob": -0.07503942077358564
+  },
+  {
+   "start": 359.49,
+   "end": 366.4,
+   "text": "Velocity is distance over time.",
+   "avg_logprob": -0.07503942077358564
+  },
+  {
+   "start": 367.4,
+   "end": 378.76,
+   "text": "And let's say your distance is measured as 5.0 plus-minus one metres.",
+   "avg_logprob": -0.09285200606374179
+  },
+  {
+   "start": 379.88,
+   "end": 389.24,
+   "text": "And your time using your stopwatch could be, let's use this, 2.36 seconds plus-minus 0.01 seconds.",
+   "avg_logprob": -0.09285200606374179
+  },
+  {
+   "start": 389.24,
+   "end": 400.72,
+   "text": "So when you're multiplying or dividing uncertainties, and this is really, really important in labs for both physics and chemistry,",
+   "avg_logprob": -0.07282688477358153
+  },
+  {
+   "start": 401.48,
+   "end": 405.28,
+   "text": "you want to first take the percentage uncertainty.",
+   "avg_logprob": -0.07282688477358153
+  },
+  {
+   "start": 405.7,
+   "end": 412.76,
+   "text": "If you're not doing IB or high school and you're focusing on AP, you don't really need to worry about this.",
+   "avg_logprob": -0.07282688477358153
+  },
+  {
+   "start": 413.2,
+   "end": 414.24,
+   "text": "This is for lab work.",
+   "avg_logprob": -0.07282688477358153
+  },
+  {
+   "start": 415.76,
+   "end": 418.62,
+   "text": "So let's first focus on the distance.",
+   "avg_logprob": -0.07282688477358153
+  },
+  {
+   "start": 418.62,
+   "end": 428.1,
+   "text": "The percent uncertainty for distance would be one, let's say, or 0.1 metres would be a more reasonable uncertainty.",
+   "avg_logprob": -0.1320994572205977
+  },
+  {
+   "start": 430.86,
+   "end": 433.6,
+   "text": "So 0.1.",
+   "avg_logprob": -0.1320994572205977
+  },
+  {
+   "start": 433.8,
+   "end": 440.7,
+   "text": "So the percent uncertainty here would be 0.1 over 5.0 times 100%.",
+   "avg_logprob": -0.1320994572205977
+  },
+  {
+   "start": 442.14,
+   "end": 450.95,
+   "text": "And when you do that, you would get a percent uncertainty of 2.0%.",
+   "avg_logprob": -0.08330367383409719
+  },
+  {
+   "start": 451.99,
+   "end": 463.76,
+   "text": "Same thing for the time, and you get 0.01 over 2.36 times 100%.",
+   "avg_logprob": -0.08330367383409719
+  },
+  {
+   "start": 463.76,
+   "end": 468.84,
+   "text": "And that would be equal to 0.01 divided by 2.36 times 100.",
+   "avg_logprob": -0.08330367383409719
+  },
+  {
+   "start": 468.84,
+   "end": 475.12,
+   "text": "The total uncertainty would be 0.4, 0.42.",
+   "avg_logprob": -0.15115096783492624
+  },
+  {
+   "start": 477.28,
+   "end": 480.36,
+   "text": "Sorry, 0.4, yeah, 0.4%.",
+   "avg_logprob": -0.15115096783492624
+  },
+  {
+   "start": 481.52,
+   "end": 486.24,
+   "text": "And how do you get the total uncertainty?",
+   "avg_logprob": -0.15115096783492624
+  },
+  {
+   "start": 486.84,
+   "end": 489.16,
+   "text": "Well, this is what you have to do.",
+   "avg_logprob": -0.15115096783492624
+  },
+  {
+   "start": 489.22,
+   "end": 490.34,
+   "text": "You just add them.",
+   "avg_logprob": -0.15115096783492624
+  },
+  {
+   "start": 490.82,
+   "end": 496.92,
+   "text": "Once you have all the uncertainties required for division or multiplication, you could just add the uncertainties.",
+   "avg_logprob": -0.15115096783492624
+  },
+  {
+   "start": 496.92,
+   "end": 500.98,
+   "text": "And the total uncertainty would be 2.4%.",
+   "avg_logprob": -0.05780307513972124
+  },
+  {
+   "start": 500.98,
+   "end": 511.16,
+   "text": "So once you calculate what your final velocity is, you would get 2.1 metres per second.",
+   "avg_logprob": -0.05780307513972124
+  },
+  {
+   "start": 511.6,
+   "end": 517.06,
+   "text": "You would take this 2.4 uncertainty and you would put it into here.",
+   "avg_logprob": -0.05780307513972124
+  },
+  {
+   "start": 517.98,
+   "end": 530.92,
+   "text": "So if you do this, divided by 100 times 2.1, you get an uncertainty of plus minus 0.04 metres per second.",
+   "avg_logprob": -0.07702545022618944
+  },
+  {
+   "start": 531.96,
+   "end": 535.54,
+   "text": "And that would be your final answer.",
+   "avg_logprob": -0.07702545022618944
+  },
+  {
+   "start": 536.06,
+   "end": 541.3,
+   "text": "Make sure that your final digit also matches the uncertainty here.",
+   "avg_logprob": -0.07702545022618944
+  },
+  {
+   "start": 541.68,
+   "end": 545.36,
+   "text": "So you would have to add an extra figure here.",
+   "avg_logprob": -0.07702545022618944
+  },
+  {
+   "start": 545.36,
+   "end": 550.84,
+   "text": "But basically that's how you calculate uncertainties when you're dividing and multiplying.",
+   "avg_logprob": -0.09389571937513941
+  },
+  {
+   "start": 551.54,
+   "end": 552.74,
+   "text": "What if you're adding two values?",
+   "avg_logprob": -0.09389571937513941
+  },
+  {
+   "start": 552.96,
+   "end": 562.08,
+   "text": "Let's say you want to add two distances, 5.0 plus minus 0.1 metres, 0.1 metres.",
+   "avg_logprob": -0.09389571937513941
+  },
+  {
+   "start": 562.9,
+   "end": 569.04,
+   "text": "And then you add that with another distance calculation, let's say 6.0 plus minus 0.2 metres.",
+   "avg_logprob": -0.09389571937513941
+  },
+  {
+   "start": 570.32,
+   "end": 577.66,
+   "text": "Well, when you're adding or subtracting, it's way easier than when you have to multiply and you have to get all the percent uncertainties and adding them.",
+   "avg_logprob": -0.05820640809433435
+  },
+  {
+   "start": 578.06,
+   "end": 580.16,
+   "text": "You could just add the uncertainties directly.",
+   "avg_logprob": -0.05820640809433435
+  },
+  {
+   "start": 580.32,
+   "end": 588.02,
+   "text": "Because if you think about it, these uncertainties cover the ranges of what you have to measure.",
+   "avg_logprob": -0.05820640809433435
+  },
+  {
+   "start": 588.18,
+   "end": 592.1,
+   "text": "So by adding them, you are accounting for both the ranges.",
+   "avg_logprob": -0.05820640809433435
+  },
+  {
+   "start": 593.32,
+   "end": 595.66,
+   "text": "And that's how you calculate uncertainty.",
+   "avg_logprob": -0.05820640809433435
+  },
+  {
+   "start": 595.66,
+   "end": 604.28,
+   "text": "Remember, for multiplying and dividing, you have to convert it to percent uncertainties, add it, and then apply it to your final answer.",
+   "avg_logprob": -0.06852636925161701
+  },
+  {
+   "start": 604.7,
+   "end": 607.36,
+   "text": "However, for adding, you could just directly add the uncertainties.",
+   "avg_logprob": -0.06852636925161701
+  },
+  {
+   "start": 608.48,
+   "end": 613.74,
+   "text": "I hope this will give you a head start on lab work, and I hope this helped you.",
+   "avg_logprob": -0.06852636925161701
+  },
+  {
+   "start": 614.28,
+   "end": 614.64,
+   "text": "Thank you.",
+   "avg_logprob": -0.06852636925161701
+  }
+ ],
+ "cues": [
+  {
+   "start": 0.46,
+   "end": 3.5,
+   "text": "In this video, we will be talking about types"
+  },
+  {
+   "start": 3.5,
+   "end": 7.6,
+   "text": "of uncertainties, significant figures, and how"
+  },
+  {
+   "start": 7.6,
+   "end": 12.3,
+   "text": "to calculate with uncertainties. Why do uncertainties"
+  },
+  {
+   "start": 12.3,
+   "end": 15.7,
+   "text": "matter, first of all? Well, uncertainties matter"
+  },
+  {
+   "start": 15.7,
+   "end": 19.7,
+   "text": "because no physical measurement in real life"
+  },
+  {
+   "start": 19.7,
+   "end": 22.94,
+   "text": "is exact. Every single measurement is limited"
+  },
+  {
+   "start": 22.94,
+   "end": 26.36,
+   "text": "by something. For example, instrument precision,"
+  },
+  {
+   "start": 30.58,
+   "end": 41.94,
+   "text": "or experimental technique, or"
+  },
+  {
+   "start": 41.94,
+   "end": 45.02,
+   "text": "environmental errors."
+  },
+  {
+   "start": 46.97,
+   "end": 54.6,
+   "text": "So, environment. And because physics relies"
+  },
+  {
+   "start": 54.6,
+   "end": 58.92,
+   "text": "on a lot of measured data, each value has to"
+  },
+  {
+   "start": 58.92,
+   "end": 63.22,
+   "text": "include an uncertainty. And without it, you"
+  },
+  {
+   "start": 63.22,
+   "end": 65.38,
+   "text": "can't really do it effectively."
+  },
+  {
+   "start": 66.16,
+   "end": 71.96,
+   "text": "A measurement is written as x equals x measured"
+  },
+  {
+   "start": 71.96,
+   "end": 75.28,
+   "text": "plus minus the uncertainty."
+  },
+  {
+   "start": 78.78,
+   "end": 81.7,
+   "text": "For example, let's say you want to measure the"
+  },
+  {
+   "start": 81.7,
+   "end": 85.56,
+   "text": "length of a book. You could say the length would"
+  },
+  {
+   "start": 85.56,
+   "end": 91.16,
+   "text": "be equal to 12.4 plus minus 0.1 centimetres."
+  },
+  {
+   "start": 91.82,
+   "end": 94.4,
+   "text": "And this is the uncertainty."
+  },
+  {
+   "start": 95.28,
+   "end": 99.32,
+   "text": "This basically tells the readers, or the examiner,"
+  },
+  {
+   "start": 99.92,
+   "end": 103.9,
+   "text": "that your book has a length between 12.3 and"
+  },
+  {
+   "start": 103.9,
+   "end": 111.16,
+   "text": "12.5. There are two types"
+  },
+  {
+   "start": 111.16,
+   "end": 114.72,
+   "text": "of uncertainties. There's random uncertainty"
+  },
+  {
+   "start": 114.72,
+   "end": 121.12,
+   "text": "and systematic uncertainty."
+  },
+  {
+   "start": 124.96,
+   "end": 129.3,
+   "text": "Both of these are really stressed in IB."
+  },
+  {
+   "start": 129.3,
+   "end": 133.2,
+   "text": "If you're doing AP, this is probably not going"
+  },
+  {
+   "start": 133.2,
+   "end": 135.46,
+   "text": "to be that important. But if you're doing IB"
+  },
+  {
+   "start": 135.46,
+   "end": 138.76,
+   "text": "and you're going to be doing labs, this is very,"
+  },
+  {
+   "start": 138.94,
+   "end": 142.42,
+   "text": "very important to know. Random uncertainty is"
+  },
+  {
+   "start": 142.42,
+   "end": 146.24,
+   "text": "caused by unpredictable fluctuations."
+  },
+  {
+   "start": 151.02,
+   "end": 154.2,
+   "text": "And it varies from trial to trial."
+  },
+  {
+   "start": 154.2,
+   "end": 160.21,
+   "text": "For example, when you're doing a stopwatch,"
+  },
+  {
+   "start": 160.67,
+   "end": 163.67,
+   "text": "there could be a difference in reaction time."
+  },
+  {
+   "start": 166.85,
+   "end": 170.37,
+   "text": "However, systematic uncertainty is a consistent"
+  },
+  {
+   "start": 170.37,
+   "end": 175.05,
+   "text": "error, or a consistent bias, in one direction."
+  },
+  {
+   "start": 178.57,
+   "end": 181.55,
+   "text": "And it can't be reduced by repetition, while"
+  },
+  {
+   "start": 181.55,
+   "end": 183.75,
+   "text": "random can be reduced by repetition."
+  },
+  {
+   "start": 183.75,
+   "end": 190.73,
+   "text": "Can't be reduced by repetition."
+  },
+  {
+   "start": 192.09,
+   "end": 197.99,
+   "text": "An example of this could be a ruler that has"
+  },
+  {
+   "start": 197.99,
+   "end": 202.75,
+   "text": "a missed painting, or the etch marks on the"
+  },
+  {
+   "start": 202.75,
+   "end": 211.47,
+   "text": "ruler are not even. Etch marks on ruler are"
+  },
+  {
+   "start": 211.47,
+   "end": 215.49,
+   "text": "not even. So basically, systematic uncertainty"
+  },
+  {
+   "start": 215.49,
+   "end": 217.87,
+   "text": "skews all your data in one direction, while"
+  },
+  {
+   "start": 217.87,
+   "end": 221.91,
+   "text": "a random uncertainty is basically the more you"
+  },
+  {
+   "start": 221.91,
+   "end": 224.57,
+   "text": "do the experiment, the less random uncertainty"
+  },
+  {
+   "start": 224.57,
+   "end": 229.32,
+   "text": "there will be. How do you estimate uncertainty"
+  },
+  {
+   "start": 229.32,
+   "end": 231.26,
+   "text": "from instruments? How do you actually get the"
+  },
+  {
+   "start": 231.26,
+   "end": 239.04,
+   "text": "instruments? Well, for analog instruments, which"
+  },
+  {
+   "start": 239.04,
+   "end": 242.16,
+   "text": "means things that you can read, for example,"
+  },
+  {
+   "start": 242.38,
+   "end": 246.72,
+   "text": "a ruler. Or, a good thing in chemistry would"
+  },
+  {
+   "start": 246.72,
+   "end": 250.8,
+   "text": "be a graduated cylinder. You could read the"
+  },
+  {
+   "start": 250.8,
+   "end": 256.38,
+   "text": "etch markings. It would be plus-minus-half the"
+  },
+  {
+   "start": 256.38,
+   "end": 262.62,
+   "text": "smallest division. So what do I mean by this?"
+  },
+  {
+   "start": 263.42,
+   "end": 268.62,
+   "text": "Well, let's say this ruler goes up by one centimetre,"
+  },
+  {
+   "start": 269.08,
+   "end": 271.42,
+   "text": "as most rulers do."
+  },
+  {
+   "start": 271.42,
+   "end": 273.94,
+   "text": "So when you're measuring it, the uncertainty"
+  },
+  {
+   "start": 273.94,
+   "end": 276.84,
+   "text": "of whatever you're measuring with this ruler"
+  },
+  {
+   "start": 276.84,
+   "end": 280.78,
+   "text": "would be plus-minus-0.5 centimetres."
+  },
+  {
+   "start": 281.74,
+   "end": 285.04,
+   "text": "And this would be your uncertainty. However,"
+  },
+  {
+   "start": 285.58,
+   "end": 289.18,
+   "text": "let's say you're measuring with a digital instrument."
+  },
+  {
+   "start": 290.06,
+   "end": 292.58,
+   "text": "Digital instrument."
+  },
+  {
+   "start": 293.6,
+   "end": 296.52,
+   "text": "And the uncertainty would be plus-minus the"
+  },
+  {
+   "start": 296.52,
+   "end": 298.88,
+   "text": "least significant figure."
+  },
+  {
+   "start": 300.26,
+   "end": 303.76,
+   "text": "Least sig dig."
+  },
+  {
+   "start": 304.9,
+   "end": 309.9,
+   "text": "So basically, in this case, it means that you"
+  },
+  {
+   "start": 309.9,
+   "end": 315.56,
+   "text": "want to plus-minus one of the furthest decimal"
+  },
+  {
+   "start": 315.56,
+   "end": 318.52,
+   "text": "places. So let's say you have a stopwatch, and"
+  },
+  {
+   "start": 318.52,
+   "end": 322.68,
+   "text": "your stopwatch measures, let's say, 2.36."
+  },
+  {
+   "start": 323.32,
+   "end": 326.82,
+   "text": "Well, the least decimal place here would be"
+  },
+  {
+   "start": 326.82,
+   "end": 329.82,
+   "text": "two after the one."
+  },
+  {
+   "start": 330.2,
+   "end": 335.74,
+   "text": "So the uncertainty here would be 0.01 seconds."
+  },
+  {
+   "start": 336.84,
+   "end": 340.62,
+   "text": "And that's basically how to get the uncertainty"
+  },
+  {
+   "start": 340.62,
+   "end": 343.04,
+   "text": "in an experiment. You're going to probably learn"
+  },
+  {
+   "start": 343.04,
+   "end": 345.54,
+   "text": "this in class for IB, but it's good to know"
+  },
+  {
+   "start": 345.54,
+   "end": 351.75,
+   "text": "earlier. Now, how do you calculate with uncertainties?"
+  },
+  {
+   "start": 352.47,
+   "end": 357.01,
+   "text": "Let's say you want to calculate the velocity"
+  },
+  {
+   "start": 357.01,
+   "end": 363.13,
+   "text": "or speed of an object. Velocity is distance"
+  },
+  {
+   "start": 364.64,
+   "end": 371.74,
+   "text": "over time. And let's say your distance is"
+  },
+  {
+   "start": 371.74,
+   "end": 378.76,
+   "text": "measured as 5.0 plus-minus one metres."
+  },
+  {
+   "start": 379.88,
+   "end": 382.64,
+   "text": "And your time using your stopwatch could be,"
+  },
+  {
+   "start": 382.64,
+   "end": 388.64,
+   "text": "let's use this, 2.36 seconds plus-minus 0.01"
+  },
+  {
+   "start": 388.64,
+   "end": 394.68,
+   "text": "seconds. So when you're multiplying or dividing"
+  },
+  {
+   "start": 394.68,
+   "end": 397.74,
+   "text": "uncertainties, and this is really, really important"
+  },
+  {
+   "start": 397.74,
+   "end": 402.12,
+   "text": "in labs for both physics and chemistry, you"
+  },
+  {
+   "start": 402.12,
+   "end": 405.28,
+   "text": "want to first take the percentage uncertainty."
+  },
+  {
+   "start": 405.7,
+   "end": 410.28,
+   "text": "If you're not doing IB or high school and you're"
+  },
+  {
+   "start": 410.28,
+   "end": 412.26,
+   "text": "focusing on AP, you don't really need to worry"
+  },
+  {
+   "start": 412.26,
+   "end": 417.26,
+   "text": "about this. This is for lab work. So let's first"
+  },
+  {
+   "start": 417.26,
+   "end": 420.32,
+   "text": "focus on the distance. The percent uncertainty"
+  },
+  {
+   "start": 420.32,
+   "end": 425.92,
+   "text": "for distance would be one, let's say, or 0.1"
+  },
+  {
+   "start": 425.92,
+   "end": 428.1,
+   "text": "metres would be a more reasonable uncertainty."
+  },
+  {
+   "start": 430.86,
+   "end": 433.6,
+   "text": "So 0.1."
+  },
+  {
+   "start": 433.8,
+   "end": 436.88,
+   "text": "So the percent uncertainty here would be 0.1"
+  },
+  {
+   "start": 436.88,
+   "end": 440.7,
+   "text": "over 5.0 times 100%."
+  },
+  {
+   "start": 442.14,
+   "end": 448.65,
+   "text": "And when you do that, you would get a percent"
+  },
+  {
+   "start": 448.65,
+   "end": 450.95,
+   "text": "uncertainty of 2.0%."
+  },
+  {
+   "start": 451.99,
+   "end": 459.76,
+   "text": "Same thing for the time, and you get 0.01 over"
+  },
+  {
+   "start": 459.76,
+   "end": 463.76,
+   "text": "2.36 times 100%."
+  },
+  {
+   "start": 463.76,
+   "end": 467.84,
+   "text": "And that would be equal to 0.01 divided by 2.36"
+  },
+  {
+   "start": 467.84,
+   "end": 471.82,
+   "text": "times 100. The total uncertainty would be 0.4,"
+  },
+  {
+   "start": 471.92,
+   "end": 475.12,
+   "text": "0.42."
+  },
+  {
+   "start": 477.28,
+   "end": 480.36,
+   "text": "Sorry, 0.4, yeah, 0.4%."
+  },
+  {
+   "start": 481.52,
+   "end": 486.24,
+   "text": "And how do you get the total uncertainty?"
+  },
+  {
+   "start": 486.84,
+   "end": 489.16,
+   "text": "Well, this is what you have to do."
+  },
+  {
+   "start": 489.22,
+   "end": 492.8,
+   "text": "You just add them. Once you have all the uncertainties"
+  },
+  {
+   "start": 492.8,
+   "end": 495.3,
+   "text": "required for division or multiplication, you"
+  },
+  {
+   "start": 495.3,
+   "end": 498.96,
+   "text": "could just add the uncertainties. And the total"
+  },
+  {
+   "start": 498.96,
+   "end": 500.98,
+   "text": "uncertainty would be 2.4%."
+  },
+  {
+   "start": 500.98,
+   "end": 504.32,
+   "text": "So once you calculate what your final velocity"
+  },
+  {
+   "start": 504.32,
+   "end": 511.16,
+   "text": "is, you would get 2.1 metres per second."
+  },
+  {
+   "start": 511.6,
+   "end": 515.42,
+   "text": "You would take this 2.4 uncertainty and you"
+  },
+  {
+   "start": 515.42,
+   "end": 522.06,
+   "text": "would put it into here. So if you do this, divided"
+  },
+  {
+   "start": 522.06,
+   "end": 526.46,
+   "text": "by 100 times 2.1, you get an uncertainty of"
+  },
+  {
+   "start": 526.46,
+   "end": 530.92,
+   "text": "plus minus 0.04 metres per second."
+  },
+  {
+   "start": 531.96,
+   "end": 535.54,
+   "text": "And that would be your final answer."
+  },
+  {
+   "start": 536.06,
+   "end": 540.24,
+   "text": "Make sure that your final digit also matches"
+  },
+  {
+   "start": 540.24,
+   "end": 543.6,
+   "text": "the uncertainty here. So you would have to add"
+  },
+  {
+   "start": 543.6,
+   "end": 547.64,
+   "text": "an extra figure here. But basically that's how"
+  },
+  {
+   "start": 547.64,
+   "end": 550.16,
+   "text": "you calculate uncertainties when you're dividing"
+  },
+  {
+   "start": 550.16,
+   "end": 552.74,
+   "text": "and multiplying. What if you're adding two values?"
+  },
+  {
+   "start": 552.96,
+   "end": 556.06,
+   "text": "Let's say you want to add two distances, 5.0"
+  },
+  {
+   "start": 556.06,
+   "end": 562.08,
+   "text": "plus minus 0.1 metres, 0.1 metres."
+  },
+  {
+   "start": 562.9,
+   "end": 564.9,
+   "text": "And then you add that with another distance"
+  },
+  {
+   "start": 564.9,
+   "end": 569.04,
+   "text": "calculation, let's say 6.0 plus minus 0.2 metres."
+  },
+  {
+   "start": 570.32,
+   "end": 573.26,
+   "text": "Well, when you're adding or subtracting, it's"
+  },
+  {
+   "start": 573.26,
+   "end": 575.16,
+   "text": "way easier than when you have to multiply and"
+  },
+  {
+   "start": 575.16,
+   "end": 576.86,
+   "text": "you have to get all the percent uncertainties"
+  },
+  {
+   "start": 576.86,
+   "end": 579.64,
+   "text": "and adding them. You could just add the uncertainties"
+  },
+  {
+   "start": 579.64,
+   "end": 582.86,
+   "text": "directly. Because if you think about it, these"
+  },
+  {
+   "start": 582.86,
+   "end": 587.46,
+   "text": "uncertainties cover the ranges of what you have"
+  },
+  {
+   "start": 587.46,
+   "end": 590.56,
+   "text": "to measure. So by adding them, you are accounting"
+  },
+  {
+   "start": 590.56,
+   "end": 595.04,
+   "text": "for both the ranges. And that's how you calculate"
+  },
+  {
+   "start": 595.04,
+   "end": 598.66,
+   "text": "uncertainty. Remember, for multiplying and dividing,"
+  },
+  {
+   "start": 599.18,
+   "end": 601.26,
+   "text": "you have to convert it to percent uncertainties,"
+  },
+  {
+   "start": 601.58,
+   "end": 604.28,
+   "text": "add it, and then apply it to your final answer."
+  },
+  {
+   "start": 604.7,
+   "end": 606.52,
+   "text": "However, for adding, you could just directly"
+  },
+  {
+   "start": 606.52,
+   "end": 609.94,
+   "text": "add the uncertainties. I hope this will give"
+  },
+  {
+   "start": 609.94,
+   "end": 613.18,
+   "text": "you a head start on lab work, and I hope this"
+  },
+  {
+   "start": 613.18,
+   "end": 614.64,
+   "text": "helped you. Thank you."
+  }
+ ],
+ "report": {
+  "key": "intro_to_physics__error_analysis",
+  "title": "Error Analysis and Measurement",
+  "topicKey": "intro_to_physics",
+  "duration": 615.0186875,
+  "cues": 139,
+  "corrections": 0,
+  "lowConfidenceSegments": 0,
+  "worstLogprob": -0.19685758484734428,
+  "flagged": []
+ }
+}
