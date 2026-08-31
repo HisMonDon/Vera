@@ -19,7 +19,7 @@ import 'dart:ui' as ui;
 import 'package:beamer/beamer.dart';
 //import 'package:media_kit_video/media_kit_video.dart';
 //import 'dart:io';
-//import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:coolapp/widgets/pet.dart';
 import 'package:coolapp/main.dart';
 
