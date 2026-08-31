@@ -226,6 +226,18 @@ class _AboutThisAppPageState extends State<AboutThisAppPage> {
                       foregroundColor: const Color.fromARGB(255, 15, 48, 40),
                     ),
                   ),
+                  SizedBox(width: 20),
+                  ElevatedButton.icon(
+                    onPressed: () {
+                      launchUrl(Uri.parse("https://github.com/HisMonDon"));
+                    },
+                    icon: const Icon(Icons.code),
+                    label: const Text("GitHub"),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 167, 198, 131),
+                      foregroundColor: const Color.fromARGB(255, 15, 48, 40),
+                    ),
+                  ),
                 ]),
               ],
             ),
