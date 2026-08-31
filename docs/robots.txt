@@ -1,0 +1,7 @@
+# Vera Physics (veraphysics.com)
+# Built by Chenyu Lu - https://www.chenyulu.dev - https://github.com/HisMonDon
+
+User-agent: *
+Allow: /
+
+Sitemap: https://veraphysics.com/sitemap.xml
