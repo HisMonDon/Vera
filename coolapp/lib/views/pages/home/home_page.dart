@@ -60,6 +60,7 @@ class _HomePageState extends State {
     _scheduleNextPetQuirk();
   }
 
+//.
   void _scheduleNextPetQuirk() {
     final wait = Duration(seconds: 4 + Random().nextInt(5));
     _petQuirkTimer = Timer(wait, () {
