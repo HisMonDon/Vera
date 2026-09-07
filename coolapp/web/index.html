@@ -85,6 +85,68 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <!--
+    This site's UI is a client-rendered Flutter app, so a crawler that does not execute
+    JavaScript (or that gives up before CanvasKit/WASM finishes loading) would otherwise see
+    no text at all. The block below mirrors the app's real content in plain, semantic HTML
+    purely for that audience (search indexers, AI crawlers, screen readers with scripting
+    disabled). It is never shown to a JS-enabled browser and has no effect on the app's
+    rendered layout or styling.
+  -->
+  <noscript>
+    <main>
+      <h1>Vera — Free AP &amp; IB Physics Video Lessons</h1>
+      <p>
+        Vera is a free, curriculum-aligned online physics platform built for AP and IB
+        Physics students. It breaks each course into short, structured video lessons with
+        clear visuals, guided examples, and walkthroughs of real past exam questions, with
+        saved progress once you create an account.
+      </p>
+
+      <h2>Courses</h2>
+      <ul>
+        <li>
+          <strong>IB Physics HL</strong> — Complete International Baccalaureate Higher Level
+          physics curriculum with focus on experimental skills and data analysis.
+        </li>
+        <li>
+          <strong>IB Physics SL</strong> — Core International Baccalaureate Standard Level
+          physics curriculum, building a strong foundation in key physics principles.
+        </li>
+        <li>
+          <strong>AP Physics 1</strong> — Preparation videos for the AP Physics 1 exam
+          covering kinematics, Newton's laws, circular motion, and simple harmonic oscillators.
+        </li>
+        <li>
+          <strong>AP Physics 2</strong> — Algebra-based physics covering fluid mechanics,
+          thermodynamics, electricity, magnetism, optics, and quantum phenomena.
+        </li>
+        <li>
+          <strong>Grade 11 Physics</strong> — Videos and tutorials for the Grade 11 Physics
+          Ontario curriculum.
+        </li>
+        <li>
+          <strong>Grade 12 Physics</strong> — Videos and tutorials for the Grade 12 Physics
+          Ontario curriculum.
+        </li>
+      </ul>
+
+      <h2>Topics Covered</h2>
+      <p>
+        Introduction to Physics, Kinematics, Forces and Dynamics, Work and Energy, Circuits
+        and Electricity, Momentum and Collisions, Magnetism, Optics, Light, Fluids, Harmonics,
+        Electrostatics, Rotational Motion, Thermal Physics, and Modern Physics.
+      </p>
+
+      <h2>About</h2>
+      <p>
+        Vera is built and maintained by
+        <a href="https://www.chenyulu.dev">Chenyu Lu</a>, founder of his school's Physics
+        Club, along with student contributors who help create tutorials. Source code is
+        available on <a href="https://github.com/HisMonDon/Vera">GitHub</a>.
+      </p>
+    </main>
+  </noscript>
   <script src="flutter_config.js"></script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
