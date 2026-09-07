@@ -86,14 +86,17 @@
 </head>
 <body>
   <!--
-    This site's UI is a client-rendered Flutter app, so a crawler that does not execute
-    JavaScript (or that gives up before CanvasKit/WASM finishes loading) would otherwise see
-    no text at all. The block below mirrors the app's real content in plain, semantic HTML
-    purely for that audience (search indexers, AI crawlers, screen readers with scripting
-    disabled). It is never shown to a JS-enabled browser and has no effect on the app's
-    rendered layout or styling.
+    This site's UI is a client-rendered Flutter app, so a crawler that does not fully render
+    JavaScript (or that gives up before CanvasKit/WASM finishes loading) would otherwise see no
+    text at all. The block below mirrors the app's real content in plain, semantic HTML so it's
+    present in the raw HTML response for every crawler, JS-executing or not — <noscript> is not
+    used here because most crawlers (including modern search and AI crawlers) declare scripting
+    as enabled, which makes browsers/parsers skip <noscript> content entirely by spec, regardless
+    of whether the crawler actually runs the script. It also acts as this page's real loading
+    screen, and is hidden once Flutter reports its first frame (see script below), so a
+    JS-enabled human visitor only sees it briefly during load, not stacked behind the app.
   -->
-  <noscript>
+  <div id="seo-fallback">
     <main>
       <h1>Vera — Free AP &amp; IB Physics Video Lessons</h1>
       <p>
@@ -146,7 +149,13 @@
         available on <a href="https://github.com/HisMonDon/Vera">GitHub</a>.
       </p>
     </main>
-  </noscript>
+  </div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var fallback = document.getElementById('seo-fallback');
+      if (fallback) { fallback.style.display = 'none'; }
+    });
+  </script>
   <script src="flutter_config.js"></script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
