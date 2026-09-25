@@ -290,8 +290,10 @@ class AuthService {
     String idToken,
   ) async {
     if (uid.isEmpty || idToken.isEmpty) return;
+    // updateMask limits the PATCH to this field; without it Firestore
+    // replaces the whole document and erases the theme and past videos.
     final url =
-        'https://firestore.googleapis.com/v1/projects/vera-a4111/databases/(default)/documents/users/$uid';
+        'https://firestore.googleapis.com/v1/projects/vera-a4111/databases/(default)/documents/users/$uid?updateMask.fieldPaths=name';
 
     final response = await http.patch(
       Uri.parse(url),
@@ -338,7 +340,7 @@ class AuthService {
   ) async {
     if (uid.isEmpty || idToken.isEmpty) return;
     final url =
-        'https://firestore.googleapis.com/v1/projects/vera-a4111/databases/(default)/documents/users/$uid';
+        'https://firestore.googleapis.com/v1/projects/vera-a4111/databases/(default)/documents/users/$uid?updateMask.fieldPaths=isLightTheme';
 
     await http.patch(
       Uri.parse(url),
@@ -397,7 +399,7 @@ Future<void> savePastVideosToFirestore(
   if (freshToken.isEmpty) return;
 
   final url =
-      'https://firestore.googleapis.com/v1/projects/vera-a4111/databases/(default)/documents/users/$uid';
+      'https://firestore.googleapis.com/v1/projects/vera-a4111/databases/(default)/documents/users/$uid?updateMask.fieldPaths=pastVideos';
 
   final videoValues = pastVideos
       .map((video) => {'stringValue': video})
