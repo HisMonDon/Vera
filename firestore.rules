@@ -3,17 +3,32 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // This rule allows anyone with your Firestore database reference to view, edit,
-    // and delete all data in your Firestore database. It is useful for getting
-    // started, but it is configured to expire after 30 days because it
-    // leaves your app open to attackers. At that time, all client
-    // requests to your Firestore database will be denied.
-    //
-    // Make sure to write security rules for your app before that time, or else
-    // all client requests to your Firestore database will be denied until you Update
-    // your rules
-    match /{document=**} {
-      allow read, write: if request.time < timestamp.date(2025, 8, 7);
+    // Each signed-in user may read and write only their own profile document.
+    // Every other path is denied by default.
+    match /users/{uid} {
+      function isOwner() {
+        return request.auth != null && request.auth.uid == uid;
+      }
+
+      // The only fields the app writes (coolapp/lib/services/auth_service.dart).
+      function allowedKeys() {
+        return ['name', 'isLightTheme', 'pastVideos'];
+      }
+
+      // Bounds sizes so scripted sign-ups cannot fill documents with junk.
+      function validFields(d) {
+        return (!('name' in d) || (d.name is string && d.name.size() <= 100))
+          && (!('isLightTheme' in d) || d.isLightTheme is bool)
+          && (!('pastVideos' in d) || (d.pastVideos is list && d.pastVideos.size() <= 5));
+      }
+
+      allow read: if isOwner();
+      allow create: if isOwner()
+        && request.resource.data.keys().hasOnly(allowedKeys())
+        && validFields(request.resource.data);
+      allow update: if isOwner()
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(allowedKeys())
+        && validFields(request.resource.data);
     }
   }
 }
