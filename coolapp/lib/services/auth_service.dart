@@ -282,6 +282,20 @@ class AuthService {
     await prefs.remove(_refreshTokenKey);
     await prefs.remove(_userEmailKey);
     await prefs.remove(_expiryTimeKey);
+    // Also drop the account's personal data so the next person on a shared
+    // computer does not see it. Theme and pet settings belong to the device.
+    await prefs.remove('userId');
+    await prefs.remove('user_name');
+    await prefs.remove('past_videos');
+    await prefs.remove('past_videos_list');
+
+    // The video player saves history whenever userId and idToken are set, so
+    // leaving them in memory kept writing to the signed-out account.
+    globals.isLoggedIn = false;
+    globals.userId = '';
+    globals.idToken = '';
+    globals.userName = '';
+    globals.pastVideos = List<String>.filled(5, '', growable: true);
   }
 
   Future<void> saveUserNameToFirestore(
