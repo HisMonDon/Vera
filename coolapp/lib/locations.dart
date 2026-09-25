@@ -1,11 +1,13 @@
 import 'package:beamer/beamer.dart';
 import 'package:coolapp/globals.dart' as globals;
 import 'package:coolapp/views/pages/videos/lesson_summary_content.dart';
+import 'package:coolapp/views/pages/videos/not_logged_in.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/topic_registry.dart';
 import 'package:coolapp/views/pages/videos/physics_videos/video_catalog.dart';
 import 'package:coolapp/views/pages/videos/summary_page.dart';
 import 'package:coolapp/views/pages/videos/video_player.dart';
 import 'package:coolapp/views/widget_tree.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 
 class HomeLocation extends BeamLocation<BeamState> {
@@ -57,6 +59,17 @@ class HomeLocation extends BeamLocation<BeamState> {
     String curriculumKey, {
     required bool showPlayer,
   }) {
+    // Same web-only gate as the courses and topics pages. Without it a pasted
+    // /videos/watch or /videos/play link skipped the lock screen. Checked
+    // before the globals below are set so a blocked visit leaves no state.
+    if (kIsWeb && !globals.isLoggedIn) {
+      return const BeamPage(
+        key: ValueKey('video-locked'),
+        title: 'Vera',
+        child: NotLoggedIn(),
+      );
+    }
+
     Map<String, dynamic>? entry;
     String topicTitle;
     Map<String, dynamic>? nextEntry;
