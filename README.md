@@ -160,6 +160,8 @@ On Windows, replace `python3.11` with `py -3.11`.
 
 Pushing to `main` deploys the web build to GitHub Pages automatically through GitHub Actions (the `FIREBASE_API_KEY` repository secret must be set). Firestore rules are deployed with `firebase deploy --only firestore:rules`.
 
----
+## License
 
-2026 Copyright Chenyu Lu
+The source code is released under the [MIT License](LICENSE).
+
+The lesson videos and their captions (`app/assets/captions/`) are not covered by the MIT License. They are © 2026 Chenyu Lu, all rights reserved.
