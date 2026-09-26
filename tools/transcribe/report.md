@@ -7,7 +7,7 @@ equations, named laws, and units. This queue ranks lessons by the model's own
 confidence so review effort goes where it is most likely to be needed.
 
 **Reviewing is not optional.** A caption that misstates a formula is worse than
-no caption. Fix the `.vtt` files in `coolapp/assets/captions/` directly; add any
+no caption. Fix the `.vtt` files in `app/assets/captions/` directly; add any
 error you see more than once to `corrections.yaml` instead.
 
 ## Summary

@@ -1,0 +1,118 @@
+import 'package:vera/widgets/timed_app_bar.dart';
+import 'package:flutter/material.dart';
+import 'package:vera/globals.dart' as globals;
+import 'package:vera/views/pages/videos/physics_videos/curriculum_topic_filters.dart';
+import 'package:vera/views/pages/videos/physics_videos/topic_registry.dart';
+import 'package:vera/views/pages/videos/physics_videos/physics_topics/topic_widgets.dart';
+
+//not done
+class MomentumAndCollisions extends StatefulWidget {
+  const MomentumAndCollisions({super.key});
+
+  static const List<Map<String, dynamic>> videos = [
+    {
+      'curriculumKey': 'momentum_intro',
+      'title': 'Introduction to Momentum',
+      'description':
+          'Introduction to momentum, apply basic momentum formulae to moving objects',
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/momentum_and_collisions/Unit%201%20Introduction%20to%20Momentum.mp4', //completed 2025/12/21
+    },
+    {
+      'curriculumKey': 'collisions_elastic',
+      'title': 'Inelastic and Elastic Momentum Questions',
+      'description':
+          'Questions on inelastic and elastic collisions, conservation of momentum and energy.',
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/momentum_and_collisions/Inelastic%20and%20Elastic%20Momentum%20Questions%20(Conservation).mp4', //completed 2025/12/22
+    },
+    {
+      'curriculumKey': 'momentum_2d',
+      'title': 'Momentum in 2D',
+      'description':
+          'Break momentum into x and y components and apply conservation in both directions to solve planar collision problems.',
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/momentum_and_collisions/Momentum%20in%202D.mp4', //completed 2025/12/22
+    },
+    {
+      'curriculumKey': 'momentum_2d_practice',
+      'title': '2D Momentum Practice',
+      'description':
+          'Extra example on 2D momentum, breaking vectors into x and y components',
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/momentum_and_collisions/AP%20Physics%201%20While%20playing%20a%20game%20of%20billiards%2C%20your%200.17%20kg%20cue%20ball%2C%20travelling%20at%201.9%20m%20s%2C%20glan%20(1080p60)%20(1).mp4', //completed 2025/12/22
+    },
+    {
+      'curriculumKey': 'impulse',
+      'title': 'Impulse and Momentum Change',
+      'description':
+          'How forces change momentum over time, force-time graphs, real world applications',
+      'videoLink':
+          'https://pub-56767059a1844d06818006869a91df08.r2.dev/momentum_and_collisions/Impulse.mp4', //completed 2025/12/22
+    },
+  ];
+
+  @override
+  State<MomentumAndCollisions> createState() => _MomentumAndCollisionsState();
+}
+
+class _MomentumAndCollisionsState extends State<MomentumAndCollisions> {
+  /// This page's topic. All display copy is looked up from it, so the
+  /// name here cannot disagree with Explore, the lesson page or the player.
+  static const String _topicKey = CurriculumTopicFilters.momentumAndCollisions;
+
+  final double _width = 400;
+  final double _height = 200;
+  Map<int, bool> hoveredStates = {};
+  @override
+  Widget build(BuildContext context) {
+    // add an immediate check in build method
+    globals.topicTitle = TopicRegistry.nameOf(_topicKey);
+    //print("topic title: Momentum and collisions, unit title reset");
+    final visibleVideos = CurriculumTopicFilters.filterUnits(
+      courseKey: globals.courseKey,
+      topicKey: CurriculumTopicFilters.momentumAndCollisions,
+      units: MomentumAndCollisions.videos,
+    );
+    return Scaffold(
+      appBar: TimedAppBar(),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.all(20),
+          child: Column(
+            children: [
+              SizedBox(width: 2, height: 10),
+              TopicWidgets.buildTopLayout(
+                title: TopicRegistry.nameOf(_topicKey),
+                context: context,
+                description: TopicRegistry.descriptionOf(_topicKey),
+                topIcon: TopicRegistry.byKey(_topicKey)!.icon,
+              ),
+              SizedBox(width: 2, height: 20),
+              Column(
+                children: List.generate(visibleVideos.length, (index) {
+                  final video = visibleVideos[index];
+                  return TopicWidgets.buildVideoButton(
+                    title: video['title'] ?? '',
+                    description: video['description'] ?? '',
+                    index: index,
+                    topicKey: CurriculumTopicFilters.momentumAndCollisions,
+                    videosList: visibleVideos,
+                    context: context,
+                    hoveredStates: hoveredStates,
+                    onHoverChanged: (index, isHovered) {
+                      setState(() {
+                        hoveredStates[index] = isHovered;
+                      });
+                    },
+                  );
+                }),
+              ),
+              TopicWidgets.buildBackButton(context: context),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

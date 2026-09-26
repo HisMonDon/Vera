@@ -1,0 +1,834 @@
+import 'dart:async';
+import 'dart:math';
+
+import 'package:beamer/beamer.dart';
+import 'package:chewie/chewie.dart';
+import 'package:vera/views/pages/videos/physics_videos/physics_topics/sample_videos.dart';
+import 'package:flutter/gestures.dart';
+import 'package:flutter/material.dart';
+import 'package:vera/widgets/timed_app_bar.dart';
+import 'package:vera/widgets/pet.dart';
+import 'package:vera/main.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:vera/globals.dart' as globals;
+import 'package:url_launcher/url_launcher.dart';
+import 'package:video_player/video_player.dart';
+
+class AboutThisAppPage extends StatefulWidget {
+  const AboutThisAppPage({super.key});
+
+  @override
+  State<AboutThisAppPage> createState() => _AboutThisAppPageState();
+}
+
+class _AboutThisAppPageState extends State<AboutThisAppPage> {
+  @override
+  void initState() {
+    super.initState();
+    _startAutoScroll();
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    _sampleImagesController.dispose();
+    super.dispose();
+  }
+
+  final ScrollController _sampleImagesController = ScrollController();
+  final GlobalKey _cardTextKey = GlobalKey();
+  double? _cardHeight;
+  Timer? _timer;
+
+  void _measureCardHeight([Duration? _]) {
+    final renderBox =
+        _cardTextKey.currentContext?.findRenderObject() as RenderBox?;
+    final height = renderBox?.size.height;
+    if (height != null && height != _cardHeight && mounted) {
+      setState(() => _cardHeight = height);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    WidgetsBinding.instance.addPostFrameCallback(_measureCardHeight);
+    return Scaffold(
+      appBar: TimedAppBar(),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
+          child: Column(
+            children: [
+              _buildTitleHeader(context),
+              const SizedBox(height: 48),
+              _buildChenyuLuSection(context),
+              const SizedBox(height: 48),
+              _buildWhatIsVeraSection(context),
+              const SizedBox(height: 48),
+              _buildIntroVideoSection(context),
+              const SizedBox(height: 48),
+              _buildSignUpButton(),
+              const SizedBox(height: 48),
+              _buildBottomCopyright(),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildTitleHeader(BuildContext context) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.baseline,
+      textBaseline: TextBaseline.alphabetic,
+      children: [
+        Text(
+          'Vera',
+          style: GoogleFonts.mPlus1(
+            fontSize: 48.0,
+            fontWeight: FontWeight.bold,
+            color: globals.isLight
+                ? const Color.fromARGB(255, 15, 48, 40)
+                : Colors.white,
+          ),
+        ),
+        const SizedBox(width: 10),
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+          decoration: BoxDecoration(
+            color: globals.isLight
+                ? const Color.fromARGB(255, 15, 48, 40)
+                : const Color.fromARGB(255, 167, 198, 131),
+            borderRadius: BorderRadius.circular(8),
+          ),
+          child: Text(
+            'Web',
+            style: GoogleFonts.montserrat(
+              fontSize: 16.0,
+              fontWeight: FontWeight.w600,
+              color: globals.isLight
+                  ? Colors.white
+                  : const Color.fromARGB(255, 15, 48, 40),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildChenyuLuSection(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Color.fromARGB(255, 18, 59, 49),
+            Color.fromARGB(214, 10, 97, 80),
+          ],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        borderRadius: BorderRadius.circular(20),
+        boxShadow: const [
+          BoxShadow(
+            color: Color.fromARGB(73, 0, 0, 0),
+            blurRadius: 15,
+            offset: Offset(0, 8),
+          ),
+        ],
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Column(
+            children: [
+              CircleAvatar(
+                radius: 60,
+                backgroundImage: AssetImage('images/chenyuluPFP.png'),
+              ),
+              const SizedBox(height: 12),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(35),
+                child: Image.asset(
+                  'images/str_logo.png',
+                  height: 80,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(width: 24),
+          Expanded(
+            flex: 3,
+            child: Column(
+              key: _cardTextKey,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Chenyu Lu",
+                  style: GoogleFonts.mPlus1(
+                    fontSize: 32,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                Text(
+                  "Founder, CEO, Lead Developer & Physics Instructor",
+                  style: GoogleFonts.montserrat(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                    color: const Color.fromARGB(255, 195, 215, 181),
+                  ),
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  "• St. Robert Physics Club Executive Trainer\n• 3rd Place in the Canadian Young Physics Tournament\n• 5 On AP Physics 1, AP Calculus BC, AP Chemistry, and AP Computer Science A\n• 17th Place in OAPT 2026",
+                  style: GoogleFonts.roboto(
+                    fontSize: 16,
+                    color: const Color.fromARGB(
+                      255,
+                      246,
+                      248,
+                      247,
+                    ).withOpacity(0.9),
+                    height: 1.5,
+                  ),
+                ),
+                const SizedBox(height: 20),
+                Row(children: [
+                  ElevatedButton.icon(
+                    onPressed: () {
+                      launchUrl(Uri.parse("https://www.chenyulu.dev"));
+                    },
+                    icon: const Icon(Icons.web),
+                    label: const Text("Visit My Website"),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 167, 198, 131),
+                      foregroundColor: const Color.fromARGB(255, 15, 48, 40),
+                    ),
+                  ),
+                  SizedBox(width: 20),
+                  ElevatedButton.icon(
+                    onPressed: () async {
+                      final uri = Uri(
+                        scheme: 'mailto',
+                        path: 'eric.luchenyu@gmail.com',
+                      );
+                      final ok = await launchUrl(uri);
+                      if (!ok) {
+                        print("error launching email?");
+                      }
+                    },
+                    icon: const Icon(Icons.email_outlined),
+                    label: const Text("Email me"),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 167, 198, 131),
+                      foregroundColor: const Color.fromARGB(255, 15, 48, 40),
+                    ),
+                  ),
+                  SizedBox(width: 20),
+                  ElevatedButton.icon(
+                    onPressed: () {
+                      launchUrl(Uri.parse("https://github.com/HisMonDon"));
+                    },
+                    icon: const Icon(Icons.code),
+                    label: const Text("GitHub"),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 167, 198, 131),
+                      foregroundColor: const Color.fromARGB(255, 15, 48, 40),
+                    ),
+                  ),
+                ]),
+              ],
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: SizedBox(
+              height: _cardHeight ?? 230,
+              child: ValueListenableBuilder<bool>(
+                valueListenable: MyApp.petEnabledNotifier,
+                builder: (context, petEnabled, _) {
+                  if (!petEnabled) return const SizedBox.shrink();
+                  return LayoutBuilder(
+                    builder: (context, constraints) {
+                      return _RunningPet(
+                        trackWidth: constraints.maxWidth,
+                        petWidth: 100,
+                      );
+                    },
+                  );
+                },
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildWhatIsVeraSection(BuildContext context) {
+    return Column(
+      children: [
+        Row(
+          children: [
+            const Expanded(
+              child: Divider(),
+            ),
+          ],
+        ),
+        SizedBox(height: 20),
+        Text(
+          "What is Vera?",
+          style: GoogleFonts.mPlus1(
+            fontSize: 36,
+            fontWeight: FontWeight.bold,
+            color: globals.isLight
+                ? const Color.fromARGB(255, 7, 77, 53)
+                : const Color.fromARGB(255, 255, 255, 255),
+          ),
+        ),
+        const SizedBox(height: 8),
+        Text(
+          "Vera is a video platform made with Flutter and Dart dedicated to making learning physics accessible and easy for everyone. From high school IB curricula to advanced AP topics, our study paths break concepts into short, structured lessons with clear visuals, guided examples, and real past AP exam problems so that you understand physics completely. \n\n Plus, it’s 100% FREE TO USE, with UNLIMITED courses available anytime.",
+          textAlign: TextAlign.center,
+          style: GoogleFonts.mPlus1(
+            fontSize: 20,
+            color: globals.isLight
+                ? const Color.fromARGB(221, 0, 0, 0)
+                : const Color.fromARGB(221, 255, 255, 255),
+            height: 1.6,
+          ),
+        ),
+        const SizedBox(height: 32),
+        _buildSampleImagesRow(),
+      ],
+    );
+  }
+
+  void _startAutoScroll() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+
+      _timer = Timer.periodic(const Duration(milliseconds: 30), (timer) {
+        if (!mounted || !_sampleImagesController.hasClients) {
+          timer.cancel();
+          return;
+        }
+
+        final double maxScrollExtent =
+            _sampleImagesController.position.maxScrollExtent;
+        final double currentOffset = _sampleImagesController.offset;
+        const double scrollAmount = 1;
+
+        if (currentOffset >= maxScrollExtent) {
+          _sampleImagesController.jumpTo(0);
+        } else {
+          _sampleImagesController.jumpTo(currentOffset + scrollAmount);
+        }
+      });
+    });
+  }
+
+  final List displayPaths = [
+    'images_tutorial/display1.png',
+    'images_tutorial/display2.png',
+    'images_tutorial/display3.png',
+    'images_tutorial/display6.png',
+    'images_tutorial/display4.png',
+    'images_tutorial/display5.png',
+    'images_tutorial/display7.png',
+  ];
+
+  Widget _buildSampleImagesRow() {
+    return SingleChildScrollView(
+      controller: _sampleImagesController,
+      scrollDirection: Axis.horizontal,
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(0, 0, 0, 20),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: List.generate(displayPaths.length, (index) {
+            return Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: Container(
+                width: 600,
+                height: 300,
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 18, 59, 49),
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.grey),
+                    image: DecorationImage(
+                        image: AssetImage(displayPaths[index]),
+                        fit: BoxFit.cover)),
+              ),
+            );
+          }),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildIntroVideoSection(BuildContext context) {
+    return Column(
+      children: [
+        Row(
+          children: [
+            const Expanded(
+              child: Divider(),
+            ),
+          ],
+        ),
+        SizedBox(height: 20),
+        Text(
+          "Introduction Video",
+          style: GoogleFonts.mPlus1(
+            fontSize: 36,
+            fontWeight: FontWeight.bold,
+            color: globals.isLight
+                ? const Color.fromARGB(255, 7, 77, 53)
+                : Colors.white,
+          ),
+        ),
+        const SizedBox(height: 20),
+        Center(
+          child: Container(
+            width: MediaQuery.of(context).size.width - 400,
+            color: Colors.black,
+            child: _IntroVideoPlayer(),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildSignUpButton() {
+    return Column(
+      children: [
+        ElevatedButton(
+          onPressed: () {
+            Beamer.of(context, root: true).beamToNamed('/profile');
+          },
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color.fromARGB(255, 167, 198, 131),
+            foregroundColor: const Color.fromARGB(255, 15, 48, 40),
+            padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(30),
+            ),
+          ),
+          child: Text(
+            "Click Here to Sign Up Now",
+            style: GoogleFonts.montserrat(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        SizedBox(height: 30),
+        Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              const Expanded(
+                child: Divider(),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15),
+                child: Text(
+                  'OR',
+                  style: GoogleFonts.mPlus1(),
+                ),
+              ),
+              const Expanded(
+                child: Divider(),
+              ),
+            ]),
+        SizedBox(height: 30),
+        ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => SampleVideos(),
+              ),
+            );
+          },
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color.fromARGB(255, 167, 198, 131),
+            foregroundColor: const Color.fromARGB(255, 15, 48, 40),
+            padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(30),
+            ),
+          ),
+          child: Text(
+            "Watch a Sample Video",
+            style: GoogleFonts.montserrat(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildBottomCopyright() {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          "2026 Chenyu Studios",
+          style: TextStyle(
+            fontSize: 10,
+            color: globals.isLight
+                ? const Color.fromARGB(255, 0, 0, 0)
+                : const Color.fromARGB(255, 255, 255, 255),
+          ),
+        ),
+        const SizedBox(width: 3),
+        Icon(
+          Icons.copyright_sharp,
+          size: 15,
+          color: globals.isLight
+              ? const Color.fromARGB(255, 0, 0, 0)
+              : const Color.fromARGB(255, 255, 255, 255),
+        ),
+      ],
+    );
+  }
+}
+
+class _IntroVideoPlayer extends StatefulWidget {
+  // @override
+  @override
+  _IntroVideoPlayerState createState() => _IntroVideoPlayerState();
+}
+
+class _IntroVideoPlayerState extends State<_IntroVideoPlayer> {
+  late VideoPlayerController _videoPlayerController;
+  ChewieController? _chewieController;
+  bool _isLoading = true;
+  String? _errorMessage;
+  bool _hasVideoController = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _initializePlayer();
+  }
+
+  Future _initializePlayer() async {
+    setState(() {
+      _isLoading = true;
+      _errorMessage = null;
+    });
+
+    _chewieController?.dispose();
+    _chewieController = null;
+
+    if (_hasVideoController) {
+      await _videoPlayerController.dispose();
+      _hasVideoController = false;
+    }
+
+    _videoPlayerController = VideoPlayerController.networkUrl(Uri.parse(
+        'https://pub-56767059a1844d06818006869a91df08.r2.dev/Vera%20Introduction.mp4'));
+    _hasVideoController = true;
+
+    _videoPlayerController.addListener(() {
+      if (mounted) setState(() {});
+    });
+
+    try {
+      //'images_tutorial/display1.png',
+      _chewieController = ChewieController(
+        videoPlayerController: _videoPlayerController,
+        autoPlay: false,
+        looping: false,
+        aspectRatio: 16 / 9,
+        // allowedScreenSleep: false,
+        playbackSpeeds: [0.5, 1.0, 1.5, 2.0, 2.5],
+        materialProgressColors: ChewieProgressColors(
+          playedColor: const Color.fromARGB(255, 167, 198, 131),
+          handleColor: const Color.fromARGB(255, 195, 226, 172),
+          backgroundColor: const Color.fromARGB(255, 5, 85, 58),
+          bufferedColor: const Color.fromARGB(255, 5, 85, 58),
+        ),
+        placeholder: Image.asset(
+          'images_tutorial/vera_intro_thumbnail.png',
+        ),
+        // placeholder: Container(
+        //   color: Colors.grey,
+        // ),
+        autoInitialize: true,
+      );
+      setState(() {
+        _isLoading = false;
+      });
+    } catch (e) {
+      setState(() {
+        _isLoading = false;
+        _errorMessage = e.toString();
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return _buildPlayer();
+  }
+
+  Widget _buildPlayer() {
+    if (_isLoading) {
+      return const AspectRatio(
+        aspectRatio: 16 / 9,
+        child: ColoredBox(
+          color: Colors.black,
+          child: Center(child: CircularProgressIndicator()),
+        ),
+      );
+    }
+
+    if (_errorMessage != null) {
+      return AspectRatio(
+        aspectRatio: 16 / 9,
+        child: Container(color: Colors.black, child: _buildErrorDisplay()),
+      );
+    }
+
+    if (_chewieController == null) {
+      return const AspectRatio(
+        aspectRatio: 16 / 9,
+        child: ColoredBox(
+          color: Colors.black,
+          child: Center(child: CircularProgressIndicator()),
+        ),
+      );
+    }
+
+    final v = _videoPlayerController.value;
+    final aspect = v.isInitialized ? v.aspectRatio : (16 / 9);
+
+    final showThumb = !v.isInitialized ||
+        (!v.isPlaying && v.position <= const Duration(milliseconds: 200));
+    return AspectRatio(
+      aspectRatio: aspect,
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          Chewie(controller: _chewieController!),
+          if (showThumb) ...[
+            Positioned.fill(
+              child: Image.asset(
+                'images_tutorial/vera_intro_thumbnail.png',
+                fit: BoxFit.cover,
+              ),
+            ),
+            Positioned.fill(
+              child: Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  onTap: () async {
+                    if (!_videoPlayerController.value.isInitialized) {
+                      await _videoPlayerController.initialize();
+                      if (mounted) setState(() {});
+                    }
+                    await _videoPlayerController.play();
+                  },
+                  child: Center(
+                    child: Container(
+                      width: 72,
+                      height: 72,
+                      decoration: BoxDecoration(
+                        color: Colors.black.withOpacity(0.45),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(
+                        Icons.play_arrow_rounded,
+                        size: 48,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+
+  Widget _buildErrorDisplay() {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        const Icon(
+          Icons.error_outline,
+          color: Color.fromARGB(255, 2, 110, 74),
+          size: 48,
+        ),
+        const SizedBox(height: 16),
+        Text(
+          'Failed to load video: $_errorMessage',
+          style: const TextStyle(color: Colors.white),
+        ),
+        const Text(
+          '\nPlease check your internet connection',
+          style: TextStyle(color: Colors.white),
+        ),
+        const SizedBox(height: 16),
+        ElevatedButton(
+          onPressed: _initializePlayer,
+          child: const Text('Retry'),
+        ),
+      ],
+    );
+  }
+
+  @override
+  void dispose() {
+    if (_hasVideoController) {
+      _videoPlayerController.dispose();
+    }
+    _chewieController?.dispose();
+    super.dispose();
+  }
+}
+
+class _RunningPet extends StatefulWidget {
+  const _RunningPet({required this.trackWidth, required this.petWidth});
+
+  final double trackWidth;
+  final double petWidth;
+
+  @override
+  State<_RunningPet> createState() => _RunningPetState();
+}
+
+class _RunningPetState extends State<_RunningPet>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _controller;
+  late Animation<double> _position;
+  bool _goingRight = true;
+  bool _isRunning = false;
+  bool _isHovering = false;
+  Timer? _idleTimer;
+
+  double get _trackRange =>
+      (widget.trackWidth - widget.petWidth).clamp(0, double.infinity);
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 4),
+    )..addStatusListener(_onStatusChanged);
+    _position = Tween<double>(begin: 0, end: _trackRange).animate(_controller);
+    _scheduleNextRun();
+  }
+
+  void _onStatusChanged(AnimationStatus status) {
+    if (status == AnimationStatus.completed) {
+      _goingRight = false;
+      _scheduleNextRun();
+    } else if (status == AnimationStatus.dismissed) {
+      _goingRight = true;
+      _scheduleNextRun();
+    }
+  }
+
+  // Idle roughly 60% of the time, running the other 40%.
+  void _scheduleNextRun() {
+    setState(() => _isRunning = false);
+    _idleTimer = Timer(Duration(seconds: 5 + Random().nextInt(5)), () {
+      if (!mounted) return;
+      setState(() => _isRunning = true);
+      if (_goingRight) {
+        _controller.forward();
+      } else {
+        _controller.reverse();
+      }
+    });
+  }
+
+  void _onHoverEnter(PointerEnterEvent _) {
+    _idleTimer?.cancel();
+    if (_isRunning) {
+      _controller.stop();
+    }
+    setState(() => _isHovering = true);
+  }
+
+  void _onHoverExit(PointerExitEvent _) {
+    setState(() => _isHovering = false);
+    if (_isRunning) {
+      if (_goingRight) {
+        _controller.forward();
+      } else {
+        _controller.reverse();
+      }
+    } else {
+      _scheduleNextRun();
+    }
+  }
+
+  @override
+  void didUpdateWidget(covariant _RunningPet oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.trackWidth != widget.trackWidth ||
+        oldWidget.petWidth != widget.petWidth) {
+      _position =
+          Tween<double>(begin: 0, end: _trackRange).animate(_controller);
+    }
+  }
+
+  @override
+  void dispose() {
+    _idleTimer?.cancel();
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      clipBehavior: Clip.none,
+      children: [
+        const SizedBox.expand(),
+        AnimatedBuilder(
+          animation: _controller,
+          builder: (context, child) {
+            return Positioned(
+              left: _position.value,
+              bottom: 0,
+              child: Transform(
+                alignment: Alignment.center,
+                transform: (_isRunning && !_goingRight && !_isHovering)
+                    ? Matrix4.diagonal3Values(-1.0, 1.0, 1.0)
+                    : Matrix4.identity(),
+                child: child,
+              ),
+            );
+          },
+          child: MouseRegion(
+            onEnter: _onHoverEnter,
+            onExit: _onHoverExit,
+            child: VeraPet(
+              animation: _isHovering
+                  ? VeraAnimation.waving
+                  : (_isRunning
+                      ? VeraAnimation.runningRight
+                      : VeraAnimation.idle),
+              width: widget.petWidth,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}

@@ -4,7 +4,7 @@ Reads `manifest.json` (produced by build_manifest.py), downloads each video to a
 local cache, transcribes it with faster-whisper, re-cuts the result into
 readable caption cues, applies the physics correction map, and writes:
 
-  coolapp/assets/captions/<topicKey>__<curriculumKey>.vtt   shipped with the app
+  app/assets/captions/<topicKey>__<curriculumKey>.vtt   shipped with the app
   tools/transcribe/out/<topicKey>__<curriculumKey>.json     source for lesson copy
   tools/transcribe/report.md                                hand-correction triage
 
@@ -34,7 +34,7 @@ MANIFEST = HERE / "manifest.json"
 CORRECTIONS = HERE / "corrections.yaml"
 CACHE = HERE / "cache"
 JSON_OUT = HERE / "out"
-VTT_OUT = REPO / "coolapp" / "assets" / "captions"
+VTT_OUT = REPO / "app" / "assets" / "captions"
 REPORT = HERE / "report.md"
 
 # Cloudflare R2 returns 403 to the default "Python-urllib" User-Agent.
@@ -389,7 +389,7 @@ def write_report(rows: list[dict], model: str) -> None:
         "confidence so review effort goes where it is most likely to be needed.",
         "",
         "**Reviewing is not optional.** A caption that misstates a formula is worse than",
-        "no caption. Fix the `.vtt` files in `coolapp/assets/captions/` directly; add any",
+        "no caption. Fix the `.vtt` files in `app/assets/captions/` directly; add any",
         "error you see more than once to `corrections.yaml` instead.",
         "",
     ]

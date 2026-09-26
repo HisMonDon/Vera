@@ -1,0 +1,389 @@
+import 'package:vera/views/pages/videos/not_logged_in.dart';
+import 'package:vera/views/pages/videos/physics_videos/physics_courses/ap_physics_1.dart';
+import 'package:vera/views/pages/videos/physics_videos/physics_courses/ap_physics_2.dart';
+import 'package:vera/views/pages/videos/physics_videos/physics_courses/grade_11_physics.dart';
+import 'package:vera/views/pages/videos/physics_videos/physics_courses/grade_12_physics.dart';
+import 'package:vera/views/pages/videos/physics_videos/physics_courses/ib_physics_hl.dart';
+import 'package:vera/views/pages/videos/physics_videos/physics_courses/ib_physics_sl.dart';
+import 'package:vera/views/pages/videos/video_pages/topics_page.dart';
+import 'package:vera/views/pages/videos/physics_videos/course_registry.dart';
+import 'package:vera/widgets/timed_app_bar.dart';
+import 'package:flutter/material.dart';
+import 'package:vera/globals.dart' as globals;
+import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
+
+class CoursePage extends StatefulWidget {
+  const CoursePage({super.key});
+
+  @override
+  State<CoursePage> createState() => _CoursePageState();
+}
+
+class _CoursePageState extends State<CoursePage> {
+  Widget _combineButtons() {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(14),
+        color: const Color.fromARGB(255, 15, 48, 40),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 12,
+            offset: Offset(0, 5),
+          ),
+        ],
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          _buildButtons(
+            icon: Icons.arrow_back_rounded,
+            label: "Previous",
+            isEnabled: false,
+          ),
+          SizedBox(width: 16),
+          Container(height: 30, width: 1, color: Colors.white),
+          SizedBox(width: 16),
+          _buildButtons(
+            icon: Icons.arrow_forward_rounded,
+            label: "Topics",
+            isEnabled: true,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildButtons({
+    required IconData icon, // "left" or "right"
+    required String label,
+    required bool isEnabled,
+  }) {
+    return ElevatedButton.icon(
+      icon: Icon(icon, size: 20, color: const Color.fromARGB(255, 15, 48, 40)),
+      label: Text(
+        label,
+        style: TextStyle(color: const Color.fromARGB(255, 15, 48, 40)),
+      ),
+      style: ElevatedButton.styleFrom(
+        backgroundColor: isEnabled
+            ? Color.fromARGB(255, 167, 198, 131)
+            : const Color.fromARGB(255, 238, 238, 238),
+        foregroundColor:
+            isEnabled ? Colors.white : const Color.fromARGB(255, 158, 158, 158),
+        disabledBackgroundColor: const Color.fromARGB(255, 238, 238, 238),
+        disabledForegroundColor: const Color.fromARGB(255, 158, 158, 158),
+        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        textStyle: TextStyle(
+          fontWeight: FontWeight.w600,
+          color: const Color.fromARGB(255, 15, 48, 40),
+        ),
+        elevation: isEnabled ? 0 : 0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      ),
+      onPressed: () {
+        if (isEnabled) {
+          print("Forward Pressed");
+          Navigator.pushReplacement(
+            context,
+            PageRouteBuilder(
+              transitionDuration: const Duration(milliseconds: 200),
+              pageBuilder: (context, animation, secondaryAnimation) =>
+                  const TopicsPage(),
+              transitionsBuilder:
+                  (context, animation, secondaryAnimation, child) {
+                return SlideTransition(
+                  position: animation.drive(
+                    Tween(begin: const Offset(1, 0), end: Offset.zero),
+                  ),
+                  child: child,
+                );
+              },
+            ),
+          );
+        }
+      },
+    );
+  }
+
+  Widget _buildVideoButton(CourseInfo course, int index) {
+    final Widget Function()? pageBuilder = _coursePages[course.key];
+    assert(pageBuilder != null, 'No page registered for course "${course.key}"');
+    if (pageBuilder == null) return const SizedBox.shrink();
+    final String title = course.name;
+    final String imagePath = course.imageAsset;
+    final String description = course.description;
+    if (!globals.isLoggedIn && kIsWeb) {
+      return NotLoggedIn(); //keep in mind that this js does the message in every single button
+    }
+    bool isHovered = hoveredStates[index] ?? false;
+    return MouseRegion(
+      onEnter: (_) => setState(() => hoveredStates[index] = true),
+      onExit: (_) => setState(() => hoveredStates[index] = false),
+      child: AnimatedContainer(
+        height: 20,
+        duration: Duration(milliseconds: 200),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(5),
+          boxShadow: [
+            BoxShadow(
+              color: isHovered
+                  ? Color(0xFF0A4D3B).withOpacity(0.3)
+                  : Colors.black.withOpacity(0.15),
+              blurRadius: isHovered ? 12 : 8,
+              offset: isHovered ? Offset(0, 6) : Offset(0, 4),
+              spreadRadius: isHovered ? 1 : 0,
+            ),
+          ],
+        ),
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            borderRadius: BorderRadius.circular(15),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => pageBuilder()),
+              );
+            },
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: isHovered
+                      ? [Color(0xFF0A6150), Color(0xFF073D33)]
+                      : [Color(0xFF084D3F), Color(0xFF052E27)],
+                ),
+                borderRadius: BorderRadius.circular(15),
+              ),
+              padding: EdgeInsets.all(20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: GoogleFonts.montserrat(
+                      fontSize: 26,
+                      fontWeight: FontWeight.w700,
+                      color: const Color.fromARGB(255, 255, 255, 255),
+                      letterSpacing: 0.3,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8.0),
+                    child: Container(
+                      height: 2,
+                      width: 60,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 167, 198, 131),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                  ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(8),
+                    child: Image(
+                      image: AssetImage(imagePath),
+                      fit: BoxFit.cover,
+                      height: 200,
+                      width: double.infinity,
+                    ),
+                  ),
+                  SizedBox(height: 16),
+                  Text(
+                    description,
+                    style: GoogleFonts.roboto(
+                      fontSize: 15,
+                      color: Color(0xFFCCF7E3),
+                      height: 1.4,
+                    ),
+                    maxLines: 3,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  Spacer(),
+                  Container(
+                    alignment: Alignment.centerRight,
+                    child: ElevatedButton.icon(
+                      icon: Icon(Icons.play_circle_outline, size: 18),
+                      label: Text("Start Course"),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color.fromARGB(255, 167, 198, 131),
+                        foregroundColor: Color.fromARGB(255, 15, 48, 40),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 16,
+                          vertical: 8,
+                        ),
+                        textStyle: TextStyle(fontWeight: FontWeight.w600),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (_) => pageBuilder()),
+                        );
+                      },
+                    ),
+                  ),
+                  SizedBox(height: 10),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Map<int, bool> hoveredStates = {};
+  /// Course key -> page widget. Presentation (name, image, blurb) comes from
+  /// CourseRegistry, so a rename cannot desync the card from the filter table.
+  static const Map<String, Widget Function()> _coursePages =
+      <String, Widget Function()>{
+    CourseRegistry.ibPhysicsHl: IbPhysicsHl.new,
+    CourseRegistry.ibPhysicsSl: IbPhysicsSl.new,
+    CourseRegistry.apPhysics1: ApPhysics1.new,
+    CourseRegistry.apPhysics2: ApPhysics2.new,
+    CourseRegistry.grade11Physics: Grade11Physics.new,
+    CourseRegistry.grade12Physics: Grade12Physics.new,
+  };
+
+  @override
+  Widget build(BuildContext context) {
+    // add an immediate check in build method
+    if (!globals.isLoggedIn && kIsWeb) {
+      return NotLoggedIn();
+    }
+    return Scaffold(
+      appBar: TimedAppBar(),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              globals.isLight
+                  ? Color.fromARGB(255, 146, 243, 198)
+                  : Color.fromARGB(255, 146, 243, 198).withOpacity(0.08),
+              // very light green tint
+              globals.isLight
+                  ? Color.fromARGB(200, 209, 250, 229)
+                  : Color.fromARGB(255, 209, 250, 229).withOpacity(0.04),
+            ],
+          ),
+        ),
+        child: Column(
+          children: [
+            if (kIsWeb)
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 5,
+                  horizontal: 20,
+                ),
+                width: double.infinity,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.baseline,
+                  textBaseline: TextBaseline.alphabetic,
+                  children: [
+                    Text(
+                      'Vera',
+                      style: GoogleFonts.mPlus1(
+                        fontSize: 48.0,
+                        fontWeight: FontWeight.bold,
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 15, 48, 40)
+                            : Colors.white,
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 10,
+                        vertical: 4,
+                      ),
+                      decoration: BoxDecoration(
+                        color: globals.isLight
+                            ? Color.fromARGB(255, 15, 48, 40)
+                            : Color.fromARGB(255, 167, 198, 131),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text(
+                        'Web',
+                        style: GoogleFonts.montserrat(
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w600,
+                          color: globals.isLight
+                              ? Colors.white
+                              : Color.fromARGB(255, 15, 48, 40),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            Expanded(
+              child: Stack(
+                children: [
+                  CustomScrollView(
+                    slivers: [
+                      SliverToBoxAdapter(
+                        child: Padding(
+                          padding: kIsWeb
+                              ? EdgeInsets.only(left: 16, top: 0, bottom: 20)
+                              : EdgeInsets.only(left: 16, top: 16, bottom: 20),
+                          child: Text(
+                            'Full Physics Courses',
+                            style: GoogleFonts.mPlus1(
+                              fontSize: 40,
+                              color: globals.isLight
+                                  ? Color.fromARGB(255, 7, 77, 53)
+                                  : Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SliverPadding(
+                        padding: EdgeInsets.symmetric(horizontal: 16),
+                        sliver: SliverGrid(
+                          gridDelegate:
+                              SliverGridDelegateWithMaxCrossAxisExtent(
+                            maxCrossAxisExtent: 500,
+                            crossAxisSpacing: 20,
+                            mainAxisSpacing: 20,
+                            childAspectRatio: 0.94,
+                          ),
+                          delegate: SliverChildBuilderDelegate((
+                            context,
+                            index,
+                          ) {
+                            return _buildVideoButton(
+                              CourseRegistry.all[index],
+                              index,
+                            );
+                          }, childCount: CourseRegistry.all.length),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Positioned(
+                    bottom: 20,
+                    left: MediaQuery.of(context).size.width / 2 -
+                        125, //change this when dealing with button
+                    child: _combineButtons(),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

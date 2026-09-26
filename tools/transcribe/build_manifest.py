@@ -14,7 +14,7 @@ import re
 import sys
 
 REPO = pathlib.Path(__file__).resolve().parents[2]
-PHYSICS = REPO / "coolapp" / "lib" / "views" / "pages" / "videos" / "physics_videos"
+PHYSICS = REPO / "app" / "lib" / "views" / "pages" / "videos" / "physics_videos"
 TOPICS_DIR = PHYSICS / "physics_topics"
 FILTERS = PHYSICS / "curriculum_topic_filters.dart"
 OUT = pathlib.Path(__file__).parent / "manifest.json"

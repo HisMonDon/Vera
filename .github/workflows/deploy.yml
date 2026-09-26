@@ -23,7 +23,7 @@ jobs:
 
       - name: Get dependencies
         run: flutter pub get
-        working-directory: ./coolapp
+        working-directory: ./app
 
       - name: Build Flutter web app
         run: |
@@ -31,19 +31,19 @@ jobs:
             --base-href / \
             --csp \
             --dart-define=FIREBASE_API_KEY=${{ secrets.FIREBASE_API_KEY }}
-        working-directory: ./coolapp
+        working-directory: ./app
 
       - name: Relax CSP
         run: |
-          sed -i "s|script-src 'self' blob: 'wasm-unsafe-eval'|script-src 'self' blob: 'wasm-unsafe-eval' static.cloudflareinsights.com www.gstatic.com|g" ./coolapp/build/web/index.html
+          sed -i "s|script-src 'self' blob: 'wasm-unsafe-eval'|script-src 'self' blob: 'wasm-unsafe-eval' static.cloudflareinsights.com www.gstatic.com|g" ./app/build/web/index.html
 
       - name: Add .nojekyll file
-        run: touch ./coolapp/build/web/.nojekyll
+        run: touch ./app/build/web/.nojekyll
       
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./coolapp/build/web
+          path: ./app/build/web
 
   deploy:
     needs: build

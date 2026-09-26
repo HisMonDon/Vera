@@ -10,7 +10,7 @@ service cloud.firestore {
         return request.auth != null && request.auth.uid == uid;
       }
 
-      // The only fields the app writes (coolapp/lib/services/auth_service.dart).
+      // The only fields the app writes (app/lib/services/auth_service.dart).
       function allowedKeys() {
         return ['name', 'isLightTheme', 'pastVideos'];
       }

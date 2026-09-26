@@ -32,19 +32,19 @@ Physics is the same physics whether a student is sitting IB, AP or the Ontario c
 
 | Component | Description |
 | --- | --- |
-| `coolapp/lib/main.dart` | App entry point, theming and router setup. |
-| `coolapp/lib/locations.dart` | Beamer route definitions, including deep links to individual lessons. |
-| `coolapp/lib/views/widget_tree.dart` | The app shell and navigation. |
-| `coolapp/lib/views/pages/videos/video_player.dart` | Lesson playback with captions. |
-| `coolapp/lib/views/pages/videos/lesson_summary_content.dart` | Lesson overview text, with per-topic and per-video overrides. |
-| `coolapp/lib/widgets/transcript_panel.dart` | Collapsible, seekable transcript. |
-| `coolapp/lib/widgets/pet.dart` | Vera, the animated sprite companion. |
-| `coolapp/lib/services/auth_service.dart` | Firebase Auth and Firestore over REST, token storage and refresh. |
-| `coolapp/lib/services/caption_loader.dart` | Loads bundled WebVTT caption files from `coolapp/assets/captions/`. |
+| `app/lib/main.dart` | App entry point, theming and router setup. |
+| `app/lib/locations.dart` | Beamer route definitions, including deep links to individual lessons. |
+| `app/lib/views/widget_tree.dart` | The app shell and navigation. |
+| `app/lib/views/pages/videos/video_player.dart` | Lesson playback with captions. |
+| `app/lib/views/pages/videos/lesson_summary_content.dart` | Lesson overview text, with per-topic and per-video overrides. |
+| `app/lib/widgets/transcript_panel.dart` | Collapsible, seekable transcript. |
+| `app/lib/widgets/pet.dart` | Vera, the animated sprite companion. |
+| `app/lib/services/auth_service.dart` | Firebase Auth and Firestore over REST, token storage and refresh. |
+| `app/lib/services/caption_loader.dart` | Loads bundled WebVTT caption files from `app/assets/captions/`. |
 
 ### Lesson Catalog
 
-All paths below are relative to `coolapp/lib/views/pages/videos/physics_videos/`.
+All paths below are relative to `app/lib/views/pages/videos/physics_videos/`.
 
 | Component | Description |
 | --- | --- |
@@ -107,7 +107,7 @@ python3.11 tools/transcribe/build_manifest.py
 python3.11 tools/transcribe/transcribe.py
 ```
 
-The new `coolapp/assets/captions/fluids__fluids_viscosity.vtt` is picked up by the player automatically.
+The new `app/assets/captions/fluids__fluids_viscosity.vtt` is picked up by the player automatically.
 
 ## Quick Start
 
@@ -119,7 +119,7 @@ The new `coolapp/assets/captions/fluids__fluids_viscosity.vtt` is picked up by t
 ### Run the App
 
 ```bash
-cd coolapp
+cd app
 flutter pub get
 flutter run -d chrome --dart-define=FIREBASE_API_KEY=your-web-api-key
 ```
@@ -131,13 +131,13 @@ Replace `chrome` with `windows`, `macos`, `linux` or a connected device to run e
 The web API key is passed in at build time through `--dart-define=FIREBASE_API_KEY`. The project ID (`vera-a4111`) is hardcoded in two places, which both need changing to point at another project:
 
 - `.firebaserc`, which the Firebase CLI deploys rules to.
-- The Firestore REST URLs in `coolapp/lib/services/auth_service.dart` (`projects/vera-a4111/databases/(default)/...`).
+- The Firestore REST URLs in `app/lib/services/auth_service.dart` (`projects/vera-a4111/databases/(default)/...`).
 
 Then deploy the rules to your project with `firebase deploy --only firestore:rules`.
 
 ### Test and Build
 
-From `coolapp/`:
+From `app/`:
 
 ```bash
 flutter test
