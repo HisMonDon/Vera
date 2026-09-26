@@ -1,14 +1,19 @@
 # Vera
 
-**Vera** is an online physics learning platform built from a single Flutter codebase that ships to the web, Windows, macOS, Linux, Android and iOS. It organises a growing library of hand-made physics lessons by course (IB Physics HL and SL, AP Physics 1 and 2, and Ontario Grade 11 and 12 Physics) and by topic, with auto-generated captions, a seekable transcript and an animated pixel-art companion named Vera. Live at [veraphysics.com](https://veraphysics.com).
+**Vera** is an online physics learning platform built from a single Flutter codebase that ships to the web, Windows, macOS, Linux, Android and iOS. 
 
-[*GIF, about 400px wide: Vera cycling through a few animations (idle, waving, jumping, running) on the home page, cropped tight around the sprite and a bit of the page behind it*]
+It organises a growing library of hand-made physics lessons by course (IB Physics HL and SL, AP Physics 1 and 2, and Ontario Grade 11 and 12 Physics) and by topic, with auto-generated captions, a seekable transcript and an animated pixel-art companion named Vera. 
+
+Live at [veraphysics.com](https://veraphysics.com).
+
+<img width="1917" height="980" alt="image" src="https://github.com/user-attachments/assets/9a714454-bc8a-47dc-b265-07ad4b6818b1" />
 
 ## Core Philosophy: One Lesson, Every Curriculum
 
 Physics is the same physics whether a student is sitting IB, AP or the Ontario curriculum. What differs is which units each course covers. Vera records every lesson once, tags it by topic, and uses a central curriculum filter table to show each student exactly the lessons their course requires, and nothing it does not. Everything else, from captions to deep links, is built so that adding a lesson is a single catalog entry (see [Adding a Lesson](#adding-a-lesson)).
 
-[*Screenshot: a course page (e.g. AP Physics 1) showing its topic list, ideally side by side with the same topic under a different course so the filtering is visible*]
+<img width="1917" height="976" alt="image" src="https://github.com/user-attachments/assets/58c99a69-f309-4cc1-9a2f-e84616fa46fc" />
+
 
 ## Features
 
@@ -24,7 +29,8 @@ Physics is the same physics whether a student is sitting IB, AP or the Ontario c
 - **Locked-Down Data:** Firestore rules let each user read and write only their own profile, restrict writes to three whitelisted fields and bound their sizes. Everything else is denied.
 - **Continuous Deployment:** Every push to `main` builds the web app with a strict CSP and deploys it to GitHub Pages.
 
-[*Screenshot: the video player mid-lesson with captions on and the transcript panel expanded below it, with the current sentence highlighted*]
+<img width="1917" height="982" alt="image" src="https://github.com/user-attachments/assets/09de28a0-d033-498a-97d9-9f822061b9d6" />
+
 
 ## Architecture
 
