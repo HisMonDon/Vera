@@ -2,7 +2,7 @@
 
 **Vera** is an online physics learning platform built from a single Flutter codebase that ships to the web, Windows, macOS, Linux, Android and iOS. It organises a growing library of hand-made physics lessons by course (IB Physics HL and SL, AP Physics 1 and 2, and Ontario Grade 11 and 12 Physics) and by topic, with auto-generated captions, a seekable transcript and an animated pixel-art companion named Vera. Live at [veraphysics.com](https://veraphysics.com).
 
-[*GIF, about 400px wide: Vera cycling through a few animations (idle, waving, jumping, running) on the home page, cropped tight around the sprite and a bit of the page behind it*]
+<img width="1917" height="980" alt="image" src="https://github.com/user-attachments/assets/9a714454-bc8a-47dc-b265-07ad4b6818b1" />
 
 ## Core Philosophy: One Lesson, Every Curriculum
 
