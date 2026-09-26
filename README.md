@@ -12,7 +12,7 @@ Physics is the same physics whether a student is sitting IB, AP or the Ontario c
 
 ## Features
 
-- **Cross-Platform Flutter App:** One Dart codebase for web, desktop and mobile, with a Windows installer built through Inno Setup.
+- **Cross-Platform Flutter App:** One Dart codebase for web, desktop and mobile.
 - **Six Courses, Fifteen Physics Topics:** Introductory physics, kinematics, dynamics, work and energy, momentum and collisions, harmonics, thermal physics, electricity, magnetism, electrostatics, rotational motion, fluids, optics, light and modern physics.
 - **Curriculum-Aware Filtering:** Shared topic pages display only the lessons in the active course, keyed by stable course IDs so renaming a course can never silently unfilter it.
 - **Deep-Linkable Lessons:** Beamer routes such as `/videos/watch/:topicKey/:curriculumKey` resolve directly from the video catalog without building the widget tree first.
