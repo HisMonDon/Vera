@@ -2,15 +2,21 @@
 
 **Vera** is an online physics learning platform built from a single Flutter codebase that ships to the web, Windows, macOS, Linux, Android and iOS. 
 
-It organises a growing library of hand-made physics lessons by course (IB Physics HL and SL, AP Physics 1 and 2, and Ontario Grade 11 and 12 Physics) and by topic, with auto-generated captions, a seekable transcript and an animated pixel-art companion named Vera. 
+It organises a growing library of hand-made physics lessons by course (IB Physics HL and SL, AP Physics 1 and 2, and Ontario Grade 11 and 12 Physics) and by topic. Selected lessons have captions and a seekable transcript; an animated pixel-art companion named Vera guides students through the app. 
 
 Live at [veraphysics.com](https://veraphysics.com).
 
 <img width="1917" height="980" alt="image" src="https://github.com/user-attachments/assets/9a714454-bc8a-47dc-b265-07ad4b6818b1" />
 
+## Why I Built Vera
+
+I started Vera after struggling to find accessible physics explanations that matched what I was studying. In Physics Club, I saw other students looking for help with the same concepts. I began recording lessons and built a free place to organise them, so students could find an explanation by their course and the topic they were stuck on.
+
+Building the library was only the first step. I asked several students to work through physics questions, use Vera, and explain what still confused them. Their feedback showed me that finding a video was not always enough: some wanted to revisit a sentence they had missed, while others needed to know what a lesson would cover before starting. I added lesson overviews and a seekable transcript for captioned videos, and built a captioning pipeline to expand that support across the library. The project keeps changing as I learn how students actually use it.
+
 ## Core Philosophy: One Lesson, Every Curriculum
 
-Physics is the same physics whether a student is sitting IB, AP or the Ontario curriculum. What differs is which units each course covers. Vera records every lesson once, tags it by topic, and uses a central curriculum filter table to show each student exactly the lessons their course requires, and nothing it does not. Everything else, from captions to deep links, is built so that adding a lesson is a single catalog entry (see [Adding a Lesson](#adding-a-lesson)).
+Physics is the same physics whether a student is sitting IB, AP or the Ontario curriculum. What differs is which units each course covers. Vera records every lesson once, tags it by topic, and uses a central curriculum filter table to select lessons for each course. The catalog keeps lessons reusable across courses; adding a lesson begins with one entry, with an extra filter update when a course specifies individual lessons (see [Adding a Lesson](#adding-a-lesson)).
 
 <img width="1917" height="976" alt="image" src="https://github.com/user-attachments/assets/58c99a69-f309-4cc1-9a2f-e84616fa46fc" />
 
@@ -21,8 +27,8 @@ Physics is the same physics whether a student is sitting IB, AP or the Ontario c
 - **Six Courses, Fifteen Physics Topics:** Introductory physics, kinematics, dynamics, work and energy, momentum and collisions, harmonics, thermal physics, electricity, magnetism, electrostatics, rotational motion, fluids, optics, light and modern physics.
 - **Curriculum-Aware Filtering:** Shared topic pages display only the lessons in the active course, keyed by stable course IDs so renaming a course can never silently unfilter it.
 - **Deep-Linkable Lessons:** Beamer routes such as `/videos/watch/:topicKey/:curriculumKey` resolve directly from the video catalog without building the widget tree first.
-- **Automatic Caption Pipeline:** A faster-whisper tool transcribes every lesson into broadcast-style WebVTT captions with a physics-specific correction map and a confidence-ranked review queue.
-- **Seekable Transcript Panel:** A collapsible transcript under the player lets students re-read and jump to any sentence, added after testers found the narration hard to follow.
+- **Automatic Caption Pipeline:** A faster-whisper tool generates broadcast-style WebVTT captions for cataloged lessons, with a physics-specific correction map and a confidence-ranked review queue. Caption coverage is being expanded.
+- **Seekable Transcript Panel:** For lessons with captions, a collapsible transcript under the player lets students re-read and jump to a sentence, added after testers found the narration hard to follow.
 - **Lesson Overviews:** Each lesson has a summary page describing what it covers and its prerequisites, with per-topic defaults and per-video overrides.
 - **Vera the Companion:** A sprite-sheet animated pet with nine animations (idle, running left, running right, waving, jumping, waiting, working, review, failed) that reacts across the home, onboarding, profile and settings pages.
 - **Lightweight Auth:** Firebase Authentication and Firestore through their REST APIs, with token refresh, persisted sessions, per-user theme and recently watched lessons.
