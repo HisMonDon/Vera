@@ -10,9 +10,9 @@ Live at [veraphysics.com](https://veraphysics.com).
 
 ## Why I Built Vera
 
-I started Vera after struggling to find accessible physics explanations that matched what I was studying. In Physics Club, I saw other students looking for help with the same concepts. I began recording lessons and built a free place to organise them, so students could find an explanation by their course and the topic they were stuck on.
+I started Vera because I struggled to find accessible physics explanations that matched what I was learning, and I saw other students looking for the same kind of help in Physics Club. I began recording lessons and built a free platform where students could find them by course and topic. I also spoke with the head of my school's physics department about how to organise the content across curricula.
 
-Building the library was only the first step. I asked several students to work through physics questions, use Vera, and explain what still confused them. Their feedback showed me that finding a video was not always enough: some wanted to revisit a sentence they had missed, while others needed to know what a lesson would cover before starting. I added lesson overviews and a seekable transcript for captioned videos, and built a captioning pipeline to expand that support across the library. The project keeps changing as I learn how students actually use it.
+I later interviewed students about the concepts they found difficult and asked them to work through physics questions, use Vera, and explain their reasoning on follow-up questions. Their feedback showed me problems I had missed while building it: some students wanted to revisit parts of the narration, and others needed more context before starting a lesson. I added lesson overviews and a seekable transcript for captioned videos, and built a captioning pipeline to extend that support to more lessons. Vera has grown through making lessons, watching how students use them, and revising the platform in response.
 
 ## Core Philosophy: One Lesson, Every Curriculum
 
