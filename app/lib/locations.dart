@@ -26,14 +26,9 @@ class HomeLocation extends BeamLocation<BeamState> {
     final topicKey = state.pathParameters['topicKey'];
     final curriculumKey = state.pathParameters['curriculumKey'];
     final isPlayerRoute = state.uri.pathSegments.contains('play');
-    final videosRootPage = BeamPage(
-      key: const ValueKey('videos'),
-      title: 'Vera',
-      child: const WidgetTree(pageName: 'videos'),
-    );
     if (topicKey != null && curriculumKey != null) {
       return [
-        videosRootPage,
+        _tabsPage('videos'),
         _buildVideoPage(
           topicKey,
           curriculumKey,
@@ -45,13 +40,32 @@ class HomeLocation extends BeamLocation<BeamState> {
     final pageName = state.pathParameters['pageName'];
     final current = (pageName == null || pageName.isEmpty) ? 'home' : pageName;
 
-    return [
-      BeamPage(
-        key: ValueKey(current),
-        title: 'Vera',
-        child: WidgetTree(pageName: current),
-      ),
-    ];
+    return [_tabsPage(current)];
+  }
+
+  /// Every nav bar tab shares this one page key, so switching tabs updates the
+  /// existing route in place and [WidgetTree] swaps the tab itself. A key per
+  /// tab pushed a whole new route on every tap, which replayed the page
+  /// transition over a nav bar that had already switched.
+  BeamPage _tabsPage(String pageName) {
+    return BeamPage(
+      key: const ValueKey('tabs'),
+      title: 'Vera',
+      child: WidgetTree(pageName: pageName),
+      routeBuilder: (context, settings, child) {
+        late final PageRouteBuilder route;
+        route = PageRouteBuilder(
+          settings: settings,
+          // Read the child from the route's current page, not the first one.
+          // Beamer's default builder captures the original child, so the tab
+          // would never change when the page is updated.
+          pageBuilder: (_, __, ___) => (route.settings as BeamPage).child,
+          transitionDuration: Duration.zero,
+          reverseTransitionDuration: Duration.zero,
+        );
+        return route;
+      },
+    );
   }
 
   BeamPage _buildVideoPage(

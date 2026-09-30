@@ -55,11 +55,13 @@ class _WidgetTreeState extends State<WidgetTree> {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.pageName != widget.pageName) {
       final newIndex = _pageKeys.indexOf(widget.pageName);
-      if (newIndex >= 0 && _controller.index != newIndex) {
-        setState(() {
+      if (newIndex >= 0) {
+        // A nav bar tap has already switched the tab by the time the URL
+        // catches up, so only move the controller for back/forward or links.
+        globals.selectedIndex = newIndex;
+        if (_controller.index != newIndex) {
           _controller.index = newIndex;
-          globals.selectedIndex = newIndex;
-        });
+        }
       }
     }
   }
@@ -72,12 +74,16 @@ class _WidgetTreeState extends State<WidgetTree> {
   }
 
   List<Widget> _buildScreens() {
-    return [
+    final screens = <Widget>[
       AboutThisAppPage(),
       ProfilePage(),
       HomePage(),
       const CoursePage(),
       const HelpPage(),
+    ];
+    return [
+      for (var i = 0; i < screens.length; i++)
+        _TabFadeIn(controller: _controller, index: i, child: screens[i]),
     ];
   }
 
@@ -158,6 +164,68 @@ class _WidgetTreeState extends State<WidgetTree> {
       stateManagement: true,
       navBarStyle: NavBarStyle.style1,
       onItemSelected: _onItemSelected,
+    );
+  }
+}
+
+/// Fades a tab in each time it becomes the selected one.
+class _TabFadeIn extends StatefulWidget {
+  final PersistentTabController controller;
+  final int index;
+  final Widget child;
+
+  const _TabFadeIn({
+    required this.controller,
+    required this.index,
+    required this.child,
+  });
+
+  @override
+  State<_TabFadeIn> createState() => _TabFadeInState();
+}
+
+class _TabFadeInState extends State<_TabFadeIn>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _fade = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 220),
+    value: 1,
+  );
+  late final Animation<double> _curve =
+      CurvedAnimation(parent: _fade, curve: Curves.easeOut);
+  late final Animation<double> _scale =
+      Tween(begin: 0.98, end: 1.0).animate(_curve);
+  late int _lastIndex = widget.controller.index;
+
+  @override
+  void initState() {
+    super.initState();
+    widget.controller.addListener(_onTabChanged);
+  }
+
+  void _onTabChanged() {
+    final index = widget.controller.index;
+    if (index == widget.index && _lastIndex != widget.index) {
+      _fade.forward(from: 0);
+    }
+    _lastIndex = index;
+  }
+
+  @override
+  void dispose() {
+    widget.controller.removeListener(_onTabChanged);
+    _fade.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return FadeTransition(
+      opacity: _curve,
+      child: ScaleTransition(
+        scale: _scale,
+        child: widget.child,
+      ),
     );
   }
 }
