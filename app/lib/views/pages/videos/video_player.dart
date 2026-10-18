@@ -33,6 +33,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   late VideoPlayerController _videoPlayerController;
   ChewieController? _chewieController;
   bool _hasSavedPastVideos = false;
+  bool _isSavingPastVideos = false;
+  bool _hasRecordedWatch = false;
   String stackedTitle = '';
   bool _isLoading = true;
   String? _errorMessage;
@@ -42,7 +44,6 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   void initState() {
     super.initState();
     _initializePlayer();
-    _updatePastVideos();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
       Beamer.of(context).removeLastHistoryElement();
@@ -50,55 +51,48 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   }
 
   void _updatePastVideos() {
-    int dupeIndex = -1;
-    bool isDuped = false;
     if (globals.unitTitle == '') {
       print("Error?? Blank Unit Title");
       return;
     }
-    for (int x = 0; x < 5; x++) {
-      if (globals.pastVideos[x] ==
-          '${globals.topicTitle}, ${globals.unitTitle}') {
-        isDuped = true;
-        dupeIndex = x;
-        break;
-      }
+    final entry = '${globals.topicTitle}, ${globals.unitTitle}';
+    final updated = <String>[
+      entry,
+      ...globals.pastVideos.where((v) => v.isNotEmpty && v != entry),
+    ].take(5).toList();
+    while (updated.length < 5) {
+      updated.add('');
     }
-    if (isDuped) {
-      for (int x = dupeIndex; x > 0; x--) {
-        globals.pastVideos[x] = globals.pastVideos[x - 1];
-      }
-      globals.pastVideos[0] = "${globals.topicTitle}, ${globals.unitTitle}";
-      return;
-    }
-    for (int x = 0; x < 5; x++) {
-      if (globals.pastVideos[x] == '') {
-        globals.pastVideos[x] = '${globals.topicTitle}, ${globals.unitTitle}';
-        return;
-      }
-    }
-    for (int x = 4; x > 0; x--) {
-      globals.pastVideos[x] = globals.pastVideos[x - 1];
-    }
-    globals.pastVideos[0] = "${globals.topicTitle}, ${globals.unitTitle}";
+    globals.pastVideos = updated;
+  }
+
+  void _onPlaybackChanged() {
+    if (_hasRecordedWatch || !_videoPlayerController.value.isPlaying) return;
+    _hasRecordedWatch = true;
+    _videoPlayerController.removeListener(_onPlaybackChanged);
+    _updatePastVideos();
+    _savePastVideos();
   }
 
   Future<void> _savePastVideos() async {
-    if (_hasSavedPastVideos) return;
-    final authService = AuthService();
-    await authService.savePastVideos(globals.pastVideos);
-    if (globals.userId.isNotEmpty && globals.idToken.isNotEmpty) {
-      try {
-        await savePastVideosToFirestore(
-          globals.userId,
-          globals.pastVideos,
-          globals.idToken,
-        );
-      } catch (e) {
-        print('Error saving to Firestore: $e');
+    if (_hasSavedPastVideos || _isSavingPastVideos) return;
+    _isSavingPastVideos = true;
+    try {
+      final authService = AuthService();
+      await authService.savePastVideos(globals.pastVideos);
+      if (globals.userId.isEmpty) {
+        _hasSavedPastVideos = true;
+        return;
       }
+      _hasSavedPastVideos = await savePastVideosToFirestore(
+        globals.userId,
+        globals.pastVideos,
+      );
+    } catch (e) {
+      print('Error saving to Firestore: $e');
+    } finally {
+      _isSavingPastVideos = false;
     }
-    _hasSavedPastVideos = true;
   }
 
   Future<void> _initializePlayer() async {
@@ -151,10 +145,11 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
         ),
         autoInitialize: true,
       );
+      if (!mounted) return;
+      _videoPlayerController.addListener(_onPlaybackChanged);
       setState(() {
         _isLoading = false;
       });
-      WidgetsBinding.instance.addPostFrameCallback((_) => _savePastVideos());
     } catch (e) {
       setState(() {
         _isLoading = false;
@@ -165,6 +160,9 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
 
   @override
   void dispose() {
+    if (_hasRecordedWatch && !_hasSavedPastVideos) {
+      _savePastVideos();
+    }
     _videoPlayerController.dispose();
     _chewieController?.dispose();
     super.dispose();
