@@ -36,6 +36,7 @@ void main() async {
 Future _initializeAuthState() async {
   try {
     final authService = AuthService();
+    await authService.refreshToken();
     globals.isLoggedIn = await authService.isLoggedIn();
     print('App initialized with isLoggedIn: ${globals.isLoggedIn}');
     print('App initialized with isLight: ${globals.isLight}');

@@ -212,56 +212,79 @@ class AuthService {
     globals.idToken = token;
   }
 
-  Future<void> refreshToken() async {
+  Future<bool> refreshToken() async {
     final prefs = await SharedPreferences.getInstance();
     final refreshToken = prefs.getString(_refreshTokenKey);
 
-    if (refreshToken == null) return;
+    if (refreshToken == null) return false;
 
     final expiryTimeString = prefs.getString(_expiryTimeKey);
     if (expiryTimeString != null) {
-      final expiryTime = DateTime.parse(expiryTimeString);
-      if (expiryTime.isAfter(DateTime.now().add(Duration(minutes: 5)))) {
-        return;
+      final expiryTime = DateTime.tryParse(expiryTimeString);
+      if (expiryTime != null &&
+          expiryTime.isAfter(DateTime.now().add(const Duration(minutes: 5)))) {
+        return true;
       }
     }
 
-    final response = await http.post(
-      Uri.parse('$_tokenRefreshUrl?key=$apiKey'),
-      headers: {'Content-Type': 'application/json'},
-      body: json.encode({
-        'grant_type': 'refresh_token',
-        'refresh_token': refreshToken,
-      }),
-    );
+    try {
+      final response = await http
+          .post(
+            Uri.parse('$_tokenRefreshUrl?key=$apiKey'),
+            headers: {'Content-Type': 'application/json'},
+            body: json.encode({
+              'grant_type': 'refresh_token',
+              'refresh_token': refreshToken,
+            }),
+          )
+          .timeout(const Duration(seconds: 10));
 
-    if (response.statusCode == 200) {
-      final data = json.decode(response.body);
-      final email = prefs.getString(_userEmailKey) ?? '';
-      final mappedData = {
-        'idToken': data['id_token'],
-        'refreshToken': data['refresh_token'],
-        'expiresIn': data['expires_in'],
-        'localId': data['user_id'],
-      };
-      await _saveAuthData(mappedData, email);
-      print("Token refreshed successfully.");
-    } else {
-      print("Failed to refresh token");
+      if (response.statusCode == 200) {
+        final data = json.decode(response.body);
+        final email = prefs.getString(_userEmailKey) ?? '';
+        final mappedData = {
+          'idToken': data['id_token'],
+          'refreshToken': data['refresh_token'],
+          'expiresIn': data['expires_in'],
+          'localId': data['user_id'],
+        };
+        await _saveAuthData(mappedData, email);
+        print("Token refreshed successfully.");
+        return true;
+      }
+
+      print("Failed to refresh token: ${response.statusCode}");
+      if (response.statusCode >= 400 && response.statusCode < 500) {
+        await _clearCredentials(prefs);
+        globals.isLoggedIn = false;
+        globals.userId = '';
+        globals.idToken = '';
+      }
+      return false;
+    } catch (e) {
+      print("Token refresh error: $e");
+      return false;
     }
+  }
+
+  Future<void> _clearCredentials(SharedPreferences prefs) async {
+    await prefs.remove(_tokenKey);
+    await prefs.remove(_refreshTokenKey);
+    await prefs.remove(_userEmailKey);
+    await prefs.remove(_expiryTimeKey);
   }
 
   Future<bool> isLoggedIn() async {
     try {
       final prefs = await SharedPreferences.getInstance();
       final token = prefs.getString(_tokenKey);
+      if (token == null) return false;
+
+      if (prefs.getString(_refreshTokenKey) != null) return true;
+
       final expiryTimeString = prefs.getString(_expiryTimeKey);
-
-      if (token == null || expiryTimeString == null) return false;
-
-      final expiryTime = DateTime.parse(expiryTimeString);
-      final now = DateTime.now();
-      return expiryTime.isAfter(now);
+      if (expiryTimeString == null) return false;
+      return DateTime.parse(expiryTimeString).isAfter(DateTime.now());
     } catch (e) {
       return false;
     }
@@ -278,10 +301,7 @@ class AuthService {
 
   Future<void> signOut() async {
     final prefs = await SharedPreferences.getInstance();
-    await prefs.remove(_tokenKey);
-    await prefs.remove(_refreshTokenKey);
-    await prefs.remove(_userEmailKey);
-    await prefs.remove(_expiryTimeKey);
+    await _clearCredentials(prefs);
     // Also drop the account's personal data so the next person on a shared
     // computer does not see it. Theme and pet settings belong to the device.
     await prefs.remove('userId');
