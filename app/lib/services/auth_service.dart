@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -37,47 +38,85 @@ class AuthService {
     await prefs.setStringList('past_videos_list', videos);
   }
 
+  static String _describeAuthError(String? code) {
+    final key = (code ?? '').split(' : ').first.trim();
+    switch (key) {
+      case 'EMAIL_NOT_FOUND':
+      case 'INVALID_PASSWORD':
+      case 'INVALID_LOGIN_CREDENTIALS':
+        return 'Incorrect email or password.';
+      case 'INVALID_EMAIL':
+        return 'That email address is not valid.';
+      case 'USER_DISABLED':
+        return 'This account has been disabled.';
+      case 'TOO_MANY_ATTEMPTS_TRY_LATER':
+        return 'Too many attempts. Please wait a few minutes and try again.';
+      case 'EMAIL_EXISTS':
+        return 'An account with this email already exists.';
+      case 'WEAK_PASSWORD':
+        return 'Password must be at least 6 characters.';
+      case 'OPERATION_NOT_ALLOWED':
+        return 'Email sign-in is currently unavailable.';
+      case '':
+        return 'Something went wrong. Please try again.';
+      default:
+        return key;
+    }
+  }
+
+  static String _describeException(Object error) {
+    if (error is TimeoutException) {
+      return 'The request timed out. Please check your connection.';
+    }
+    return 'Could not reach the server. Please check your connection.';
+  }
+
   Future<bool> signInWithEmail(String email, String password) async {
+    globals.errorMessage = '';
     try {
-      final response = await http.post(
-        Uri.parse('$_signInUrl?key=$apiKey'),
-        headers: {'Content-Type': 'application/json'},
-        body: json.encode({
-          'email': email,
-          'password': password,
-          'returnSecureToken': true,
-        }),
-      );
+      final response = await http
+          .post(
+            Uri.parse('$_signInUrl?key=$apiKey'),
+            headers: {'Content-Type': 'application/json'},
+            body: json.encode({
+              'email': email,
+              'password': password,
+              'returnSecureToken': true,
+            }),
+          )
+          .timeout(const Duration(seconds: 15));
 
-      if (response.statusCode == 200) {
-        final data = json.decode(response.body);
-
-        await _saveAuthData(data, email);
-
-        try {
-          final name = await getUserNameFromFirestore(
-            data['localId'],
-            data['idToken'],
-          );
-          if (name != null) {
-            globals.userName = name;
-            await saveUserName(name);
-          }
-        } catch (firestoreError) {
-          print("Firestore error: $firestoreError");
-        }
-        globals.isLoggedIn = true;
-        globals.userId = data['localId'];
-        globals.idToken = data['idToken'];
-
-        return true;
-      } else {
+      if (response.statusCode != 200) {
         final error = json.decode(response.body);
-        print("Login error: ${error['error']['message']}");
-        throw Exception(error['error']['message']);
+        final code = error['error']?['message'] as String?;
+        print("Login error: $code");
+        globals.errorMessage = _describeAuthError(code);
+        return false;
       }
+
+      final data = json.decode(response.body);
+      await _saveAuthData(data, email);
+
+      try {
+        final name = await getUserNameFromFirestore(
+          data['localId'],
+          data['idToken'],
+        );
+        if (name != null) {
+          globals.userName = name;
+          await saveUserName(name);
+        }
+      } catch (firestoreError) {
+        print("Firestore error: $firestoreError");
+      }
+      globals.isLoggedIn = true;
+      globals.userId = data['localId'];
+      globals.idToken = data['idToken'];
+
+      return true;
     } catch (e) {
       print("Login exception: $e");
+      globals.errorMessage = _describeException(e);
       return false;
     }
   }
@@ -161,34 +200,51 @@ class AuthService {
     String email,
     String password,
     String name,
-    List<String> pastVideos,
   ) async {
+    globals.errorMessage = '';
     try {
-      final response = await http.post(
-        Uri.parse('$_signUpUrl?key=$apiKey'),
-        headers: {'Content-Type': 'application/json'},
-        body: json.encode({
-          'email': email,
-          'password': password,
-          'returnSecureToken': true,
-        }),
-      );
+      final response = await http
+          .post(
+            Uri.parse('$_signUpUrl?key=$apiKey'),
+            headers: {'Content-Type': 'application/json'},
+            body: json.encode({
+              'email': email,
+              'password': password,
+              'returnSecureToken': true,
+            }),
+          )
+          .timeout(const Duration(seconds: 15));
 
-      if (response.statusCode == 200) {
-        final data = json.decode(response.body);
-        await _saveAuthData(data, email);
+      if (response.statusCode != 200) {
+        final error = json.decode(response.body);
+        final code = error['error']?['message'] as String?;
+        print("Registration error: $code");
+        globals.errorMessage = _describeAuthError(code);
+        return false;
+      }
+
+      final data = json.decode(response.body);
+      await _saveAuthData(data, email);
+      globals.isLoggedIn = true;
+      globals.userId = data['localId'];
+      globals.idToken = data['idToken'];
+      globals.userName = name;
+      await saveUserName(name);
+
+      try {
         await saveUserNameToFirestore(data['localId'], name, data['idToken']);
         await saveThemePreferenceToFirestore(
           data['localId'],
           globals.isLight,
           data['idToken'],
         );
-        return true;
-      } else {
-        final error = json.decode(response.body);
-        throw Exception(error['error']['message']);
+      } catch (firestoreError) {
+        print("Firestore error during registration: $firestoreError");
       }
+      return true;
     } catch (e) {
+      print("Registration exception: $e");
+      globals.errorMessage = _describeException(e);
       return false;
     }
   }
@@ -428,17 +484,14 @@ Future<void> savePastVideos(List<String> videos) async {
   await prefs.setStringList('past_videos_list', videos);
 }
 
-Future<void> savePastVideosToFirestore(
+Future<bool> savePastVideosToFirestore(
   String uid,
   List<String> pastVideos,
-  String idToken,
 ) async {
-  if (uid.isEmpty) return;
-  final authService = AuthService();
-  await authService.refreshToken();
+  if (uid.isEmpty) return false;
 
-  final freshToken = globals.idToken;
-  if (freshToken.isEmpty) return;
+  final freshToken = await AuthService().validIdToken();
+  if (freshToken.isEmpty) return false;
 
   final url =
       'https://firestore.googleapis.com/v1/projects/vera-a4111/databases/(default)/documents/users/$uid?updateMask.fieldPaths=pastVideos';
@@ -447,30 +500,33 @@ Future<void> savePastVideosToFirestore(
       .map((video) => {'stringValue': video})
       .toList();
 
-  final response = await http.patch(
-    Uri.parse(url),
-    headers: {
-      'Authorization': 'Bearer $freshToken',
-      'Content-Type': 'application/json',
-    },
-    body: json.encode({
-      'fields': {
-        'pastVideos': {
-          'arrayValue': {'values': videoValues},
+  final response = await http
+      .patch(
+        Uri.parse(url),
+        headers: {
+          'Authorization': 'Bearer $freshToken',
+          'Content-Type': 'application/json',
         },
-      },
-    }),
-  );
+        body: json.encode({
+          'fields': {
+            'pastVideos': {
+              'arrayValue': {'values': videoValues},
+            },
+          },
+        }),
+      )
+      .timeout(const Duration(seconds: 15));
 
   if (response.statusCode == 200) {
     globals.pastVideos = pastVideos;
     await savePastVideosLocally(pastVideos);
     print("Successfully saved past videos to Firestore.");
-  } else {
-    print(
-      "Failed to save past videos to Firestore. Status: ${response.statusCode}, Body: ${response.body}",
-    );
+    return true;
   }
+  print(
+    "Failed to save past videos to Firestore. Status: ${response.statusCode}, Body: ${response.body}",
+  );
+  return false;
 }
 
 Future<List<String>> getPastVideosFromFirestore(

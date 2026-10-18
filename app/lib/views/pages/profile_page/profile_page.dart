@@ -351,17 +351,10 @@ class _ProfilePageState extends State<ProfilePage> {
           _passwordController.text,
         );
       } else {
-        //collect video URLs from controllers
-        final videoUrls = _videoControllers
-            .map((controller) => controller.text.trim())
-            .where((url) => url.isNotEmpty)
-            .toList();
-
         success = await _authService.registerWithEmail(
           _emailController.text.trim(),
           _passwordController.text,
-          _userNameController.text,
-          videoUrls,
+          _userNameController.text.trim(),
         );
       }
 
@@ -391,9 +384,11 @@ class _ProfilePageState extends State<ProfilePage> {
         }
       } else {
         setState(() {
-          _errorMessage = _isLogin
-              ? 'Login failed. Please check your credentials.'
-              : 'Registration failed. Please try again.';
+          _errorMessage = globals.errorMessage.isNotEmpty
+              ? globals.errorMessage
+              : (_isLogin
+                  ? 'Login failed. Please check your credentials.'
+                  : 'Registration failed. Please try again.');
         });
       }
     } catch (e) {
@@ -410,6 +405,9 @@ class _ProfilePageState extends State<ProfilePage> {
   Future<void> _signOut() async {
     try {
       await _authService.signOut();
+      for (final controller in _videoControllers) {
+        controller.clear();
+      }
       setState(() {
         isLoggedIn = false;
         _userEmail = '';
