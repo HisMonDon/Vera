@@ -267,6 +267,14 @@ class AuthService {
     }
   }
 
+  Future<String> validIdToken() async {
+    await refreshToken();
+    final prefs = await SharedPreferences.getInstance();
+    final token = prefs.getString(_tokenKey) ?? '';
+    globals.idToken = token;
+    return token;
+  }
+
   Future<void> _clearCredentials(SharedPreferences prefs) async {
     await prefs.remove(_tokenKey);
     await prefs.remove(_refreshTokenKey);

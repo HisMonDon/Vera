@@ -297,8 +297,9 @@ class _ProfilePageState extends State<ProfilePage> {
         final name = await _authService.getSavedUserName();
         final recentVideos = await getPastVideosLocally();
         //load new firestore
+        final idToken = await _authService.validIdToken();
         final isLightFromFirestore = await _authService
-            .getThemePreferenceFromFirestore(globals.userId, globals.idToken);
+            .getThemePreferenceFromFirestore(globals.userId, idToken);
 
         if (isLightFromFirestore != null &&
             isLightFromFirestore != globals.isLight) {

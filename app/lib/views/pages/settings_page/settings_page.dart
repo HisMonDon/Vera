@@ -42,14 +42,15 @@ class _HelpPageState extends State<HelpPage> {
 
     globals.isLight = isLight;
     //save to firestore
-    if (globals.isLoggedIn &&
-        globals.userId.isNotEmpty &&
-        globals.idToken.isNotEmpty) {
-      await _authService.saveThemePreferenceToFirestore(
-        globals.userId,
-        isLight,
-        globals.idToken,
-      );
+    if (globals.isLoggedIn && globals.userId.isNotEmpty) {
+      final idToken = await _authService.validIdToken();
+      if (idToken.isNotEmpty) {
+        await _authService.saveThemePreferenceToFirestore(
+          globals.userId,
+          isLight,
+          idToken,
+        );
+      }
     }
 
     setState(() {
