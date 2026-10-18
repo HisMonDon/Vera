@@ -99,9 +99,12 @@ class _HomePageState extends State {
 
   Future _loadAuthData() async {
     final prefs = await SharedPreferences.getInstance();
+    final userId = prefs.getString('userId') ?? '';
+    final idToken = await _authService.validIdToken();
+    if (!mounted) return;
     setState(() {
-      globals.userId = prefs.getString('userId') ?? '';
-      globals.idToken = prefs.getString('auth_token') ?? '';
+      globals.userId = userId;
+      globals.idToken = idToken;
     });
   }
 
@@ -213,7 +216,7 @@ class _HomePageState extends State {
                   await _authService.saveUserName(_displayName);
                   if (newName.isNotEmpty) {
                     final uid = globals.userId;
-                    final idToken = globals.idToken;
+                    final idToken = await _authService.validIdToken();
                     if (uid.isNotEmpty && idToken.isNotEmpty) {
                       await _authService.saveUserNameToFirestore(
                         uid,
